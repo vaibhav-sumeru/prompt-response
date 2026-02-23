@@ -1,0 +1,240 @@
+{
+  "totalAudits": 400,
+  "meta": {
+    "generatedAt": "2024-01-15T09:30:00Z",
+    "sortBy": "finalizationPercent"
+  },
+  "bucketMapping": {
+    "completion": [
+      "COMPLETED",
+      "CLOSED",
+      "FINALIZED"
+    ],
+    "inProgress": [
+      "IN_PROGRESS",
+      "ONGOING",
+      "EXECUTING"
+    ],
+    "lapsed": [
+      "LAPSED",
+      "EXPIRED",
+      "TIMEOUT"
+    ],
+    "reAudit": [
+      "RE_AUDIT",
+      "REOPENED",
+      "REVIEW"
+    ],
+    "cancelled": [
+      "CANCELLED",
+      "ABORTED",
+      "WITHDRAWN"
+    ],
+    "notStarted": [
+      "NOT_STARTED",
+      "PENDING",
+      "SCHEDULED"
+    ]
+  },
+  "zoneSummary": {
+    "description": "Zone-wise audit execution breakdown",
+    "items": [
+      {
+        "zone": "North Zone",
+        "total": 150,
+        "counts": {
+          "completion": 80,
+          "inProgress": 30,
+          "lapsed": 15,
+          "reAudit": 10,
+          "cancelled": 10,
+          "notStarted": 5
+        },
+        "percent": {
+          "completion": 53.33,
+          "inProgress": 20,
+          "lapsed": 10,
+          "notStarted": 3.33
+        }
+      },
+      {
+        "zone": "South Zone",
+        "total": 100,
+        "counts": {
+          "completion": 60,
+          "inProgress": 20,
+          "lapsed": 10,
+          "reAudit": 5,
+          "cancelled": 3,
+          "notStarted": 2
+        },
+        "percent": {
+          "completion": 60,
+          "inProgress": 20,
+          "lapsed": 10,
+          "reAudit": 5,
+          "cancelled": 3
+        }
+      },
+      {
+        "zone": "East Zone",
+        "total": 80,
+        "counts": {
+          "completion": 50,
+          "inProgress": 15,
+          "lapsed": 8,
+          "reAudit": 4,
+          "cancelled": 2,
+          "notStarted": 1
+        },
+        "percent": {
+          "completion": 62.5,
+          "inProgress": 18.75,
+          "reAudit": 5,
+          "cancelled": 2.5,
+          "notStarted": 1.25
+        }
+      },
+      {
+        "zone": "West Zone",
+        "total": 70,
+        "counts": {
+          "completion": 40,
+          "inProgress": 18,
+          "lapsed": 5,
+          "reAudit": 3,
+          "cancelled": 2,
+          "notStarted": 2
+        },
+        "percent": {
+          "completion": 57.14,
+          "lapsed": 7.14,
+          "reAudit": 4.29,
+          "cancelled": 2.86,
+          "notStarted": 2.86
+        }
+      }
+    ]
+  },
+  "auditeeTypeDistribution": {
+    "description": "Distribution by auditee entity type",
+    "items": [
+      {
+        "auditeeType": "Internal",
+        "total": 200,
+        "counts": {
+          "completion": 120,
+          "inProgress": 40,
+          "lapsed": 20,
+          "reAudit": 10,
+          "cancelled": 6,
+          "notStarted": 4
+        },
+        "percent": {
+          "completion": 60,
+          "inProgress": 20,
+          "lapsed": 10,
+          "cancelled": 3,
+          "notStarted": 2
+        }
+      },
+      {
+        "auditeeType": "External",
+        "total": 120,
+        "counts": {
+          "completion": 70,
+          "inProgress": 25,
+          "lapsed": 12,
+          "reAudit": 8,
+          "cancelled": 3,
+          "notStarted": 2
+        },
+        "percent": {
+          "completion": 58.33,
+          "inProgress": 20.83,
+          "lapsed": 10,
+          "reAudit": 6.67,
+          "notStarted": 1.67
+        }
+      },
+      {
+        "auditeeType": "Vendor",
+        "total": 50,
+        "counts": {
+          "completion": 30,
+          "inProgress": 10,
+          "lapsed": 5,
+          "reAudit": 3,
+          "cancelled": 1,
+          "notStarted": 1
+        },
+        "percent": {
+          "completion": 60,
+          "inProgress": 20,
+          "lapsed": 10,
+          "reAudit": 6,
+          "cancelled": 2,
+          "notStarted": 2
+        }
+      },
+      {
+        "auditeeType": "Partner",
+        "total": 30,
+        "counts": {
+          "completion": 10,
+          "inProgress": 8,
+          "lapsed": 1,
+          "reAudit": 1,
+          "cancelled": 7,
+          "notStarted": 3
+        },
+        "percent": {
+          "completion": 33.33,
+          "inProgress": 26.67,
+          "lapsed": 3.33,
+          "reAudit": 3.33,
+          "cancelled": 23.33,
+          "notStarted": 10
+        }
+      }
+    ]
+  },
+  "executionStatusSummary": {
+    "description": "Overall execution status summary",
+    "data": {
+      "counts": {
+        "completion": 230,
+        "inProgress": 83,
+        "lapsed": 38,
+        "reAudit": 22,
+        "cancelled": 17,
+        "notStarted": 10
+      },
+      "percent": {
+        "completion": 57.5,
+        "inProgress": 20.75,
+        "lapsed": 9.5,
+        "reAudit": 5.5,
+        "cancelled": 4.25,
+        "notStarted": 2.5
+      }
+    }
+  },
+  "timelineAnalysis": {
+    "description": "Timeline adherence analysis",
+    "started": {
+      "onOrBeforePlanned": 300,
+      "onOrBeforePlannedPercent": 75,
+      "late": "",
+      "latePercent": "",
+      "avgLateDays": 0
+    },
+    "completionVsPlan": {
+      "completedWithinPlan": "",
+      "completedWithinPlanPercent": "",
+      "exceededPlan": 150,
+      "exceededPlanPercent": 37.5,
+      "avgDelayDays": 12.5
+    }
+  }
+}

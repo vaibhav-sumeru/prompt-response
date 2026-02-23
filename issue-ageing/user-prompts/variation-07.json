@@ -1,0 +1,253 @@
+{
+  "generatedAt": "2026-02-15T10:30:00.000Z",
+  "totalIssues": 250,
+  "riskWiseAging": {
+    "_description": "Issue aging distribution across 5 buckets for each risk level. Aging = CurrentDate - DueDate (for unresolved) or ClosureDate - DueDate (for resolved). Risk levels: zero_tolerance, high, medium, low.",
+    "items": [
+      {
+        "_description": "Aging bucket distribution for zero_tolerance risk level",
+        "riskLevel": "zero_tolerance",
+        "totalIssues": 20,
+        "buckets": {
+          "noDue": {
+            "count": 1,
+            "percent": 5
+          },
+          "within7Days": {
+            "count": 2,
+            "percent": 10
+          },
+          "days7to21": {
+            "count": 3,
+            "percent": 15
+          },
+          "days22to28": {
+            "count": 4,
+            "percent": 20
+          },
+          "moreThan28Days": {
+            "count": 10,
+            "percent": 50
+          }
+        }
+      },
+      {
+        "_description": "Aging bucket distribution for high risk level",
+        "riskLevel": "high",
+        "totalIssues": 60,
+        "buckets": {
+          "noDue": {
+            "count": 3,
+            "percent": 5
+          },
+          "within7Days": {
+            "count": 6,
+            "percent": 10
+          },
+          "days7to21": {
+            "count": 12,
+            "percent": 20
+          },
+          "days22to28": {
+            "count": 15,
+            "percent": 25
+          },
+          "moreThan28Days": {
+            "count": 24,
+            "percent": 40
+          }
+        }
+      },
+      {
+        "_description": "Aging bucket distribution for medium risk level",
+        "riskLevel": "medium",
+        "totalIssues": 100,
+        "buckets": {
+          "noDue": {
+            "count": 5,
+            "percent": 5
+          },
+          "within7Days": {
+            "count": 15,
+            "percent": 15
+          },
+          "days7to21": {
+            "count": 25,
+            "percent": 25
+          },
+          "days22to28": {
+            "count": 25,
+            "percent": 25
+          },
+          "moreThan28Days": {
+            "count": 30,
+            "percent": 30
+          }
+        }
+      },
+      {
+        "_description": "Aging bucket distribution for low risk level",
+        "riskLevel": "low",
+        "totalIssues": 70,
+        "buckets": {
+          "noDue": {
+            "count": 4,
+            "percent": 5.71
+          },
+          "within7Days": {
+            "count": 10,
+            "percent": 14.29
+          },
+          "days7to21": {
+            "count": 16,
+            "percent": 22.86
+          },
+          "days22to28": {
+            "count": 20,
+            "percent": 28.57
+          },
+          "moreThan28Days": {
+            "count": 20,
+            "percent": 28.57
+          }
+        }
+      }
+    ]
+  },
+  "zoneWiseAging": {
+    "_description": "Issue aging distribution across 5 buckets for each zone. Shows which zones have disproportionately high overdue issues, especially beyond 21 and 28 days.",
+    "items": [
+      {
+        "_description": "Aging bucket distribution for Central Zone",
+        "zoneName": "Central Zone",
+        "totalIssues": 250,
+        "buckets": {
+          "noDue": {
+            "count": 13,
+            "percent": 5.2
+          },
+          "within7Days": {
+            "count": 33,
+            "percent": 13.2
+          },
+          "days7to21": {
+            "count": 56,
+            "percent": 22.4
+          },
+          "days22to28": {
+            "count": 64,
+            "percent": 25.6
+          },
+          "moreThan28Days": {
+            "count": 84,
+            "percent": 33.6
+          }
+        }
+      }
+    ]
+  },
+  "topAuditees": {
+    "_description": "Top 3 auditees by count of issues aging more than 21 days. Sorted descending by highAgingCount. Used to identify auditees requiring immediate follow-up or escalation.",
+    "items": [
+      {
+        "rank": 1,
+        "auditeeName": "Mumbai HQ",
+        "highAgingCount": 45,
+        "totalIssues": 80,
+        "highAgingPercent": 56.25
+      },
+      {
+        "rank": 2,
+        "auditeeName": "Pune Branch",
+        "highAgingCount": 38,
+        "totalIssues": 65,
+        "highAgingPercent": 58.46
+      },
+      {
+        "rank": 3,
+        "auditeeName": "Nagpur Office",
+        "highAgingCount": 30,
+        "totalIssues": 55,
+        "highAgingPercent": 54.55
+      }
+    ]
+  },
+  "topGroups": {
+    "_description": "Top 3 groups by count of issues aging more than 21 days. Sorted descending by highAgingCount. Used to identify operational or functional groups with consistently high issue closure delays.",
+    "items": [
+      {
+        "rank": 1,
+        "groupName": "Credit Risk Unit",
+        "highAgingCount": 40,
+        "totalIssues": 70,
+        "highAgingPercent": 57.14
+      },
+      {
+        "rank": 2,
+        "groupName": "Operations Team A",
+        "highAgingCount": 35,
+        "totalIssues": 60,
+        "highAgingPercent": 58.33
+      },
+      {
+        "rank": 3,
+        "groupName": "Compliance Cell",
+        "highAgingCount": 28,
+        "totalIssues": 52,
+        "highAgingPercent": 53.85
+      }
+    ]
+  },
+  "topRecurringIssues": {
+    "_description": "Top 3 recurring issue categories by count of recurring issues aging more than 21 days. Recurring = RecurringTagging NOT 'New'. Used to highlight persistent control weaknesses that remain unresolved.",
+    "items": [
+      {
+        "rank": 1,
+        "recurringTag": "Recurring",
+        "highAgingCount": 25,
+        "totalIssues": 42,
+        "highAgingPercent": 59.52
+      },
+      {
+        "rank": 2,
+        "recurringTag": "Repeat",
+        "highAgingCount": 18,
+        "totalIssues": 32,
+        "highAgingPercent": 56.25
+      },
+      {
+        "rank": 3,
+        "recurringTag": "Persistent",
+        "highAgingCount": 12,
+        "totalIssues": 22,
+        "highAgingPercent": 54.55
+      }
+    ]
+  },
+  "topReopenedCheckpoints": {
+    "_description": "Top 3 checkpoints by count of reopened issues aging more than 21 days. Reopened = IssueStatus === 'reopened' OR IssueReopenedDate is not null. Used to pinpoint gaps in resolution quality and validation processes.",
+    "items": [
+      {
+        "rank": 1,
+        "checkpointIntent": "Documentation",
+        "highAgingCount": 15,
+        "totalReopenedIssues": 25,
+        "highAgingPercent": 60
+      },
+      {
+        "rank": 2,
+        "checkpointIntent": "Verification",
+        "highAgingCount": 12,
+        "totalReopenedIssues": 20,
+        "highAgingPercent": 60
+      },
+      {
+        "rank": 3,
+        "checkpointIntent": "Approval",
+        "highAgingCount": 8,
+        "totalReopenedIssues": 15,
+        "highAgingPercent": 53.33
+      }
+    ]
+  }
+}

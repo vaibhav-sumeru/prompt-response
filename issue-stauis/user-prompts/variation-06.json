@@ -1,0 +1,349 @@
+{
+  "generatedAt": "2026-02-15T10:30:00.000Z",
+  "totalIssues": 300,
+  "resolutionProgress": {
+    "global": {
+      "_description": "Global resolution progress metrics. Resolution progress = (Resolved + Closed + Accepted) / Total Issues × 100",
+      "resolvedCount": 120,
+      "totalIssues": 300,
+      "resolutionPercent": 40
+    },
+    "zones": [
+      {
+        "_description": "Zone-level resolution metrics with top 3 regions by resolution count",
+        "zoneName": "North Zone",
+        "resolvedCount": 60,
+        "totalIssues": 120,
+        "resolutionPercent": 50,
+        "avgResolutionTimeDays": 10,
+        "topRegions": [
+          {
+            "_description": "Region ranked by resolution count (descending)",
+            "rank": 1,
+            "regionName": "Punjab",
+            "resolvedCount": 25,
+            "totalIssues": 50
+          },
+          {
+            "_description": "Region ranked by resolution count (descending)",
+            "rank": 2,
+            "regionName": "Haryana",
+            "resolvedCount": 20,
+            "totalIssues": 40
+          },
+          {
+            "_description": "Region ranked by resolution count (descending)",
+            "rank": 3,
+            "regionName": "Delhi",
+            "resolvedCount": 15,
+            "totalIssues": 30
+          }
+        ]
+      },
+      {
+        "_description": "Zone-level resolution metrics with top 3 regions by resolution count",
+        "zoneName": "South Zone",
+        "resolvedCount": 40,
+        "totalIssues": 100,
+        "resolutionPercent": 40,
+        "avgResolutionTimeDays": 14,
+        "topRegions": [
+          {
+            "_description": "Region ranked by resolution count (descending)",
+            "rank": 1,
+            "regionName": "Karnataka",
+            "resolvedCount": 20,
+            "totalIssues": 45
+          },
+          {
+            "_description": "Region ranked by resolution count (descending)",
+            "rank": 2,
+            "regionName": "Tamil Nadu",
+            "resolvedCount": 15,
+            "totalIssues": 35
+          },
+          {
+            "_description": "Region ranked by resolution count (descending)",
+            "rank": 3,
+            "regionName": "Kerala",
+            "resolvedCount": 5,
+            "totalIssues": 20
+          }
+        ]
+      },
+      {
+        "_description": "Zone-level resolution metrics with top 3 regions by resolution count",
+        "zoneName": "East Zone",
+        "resolvedCount": 20,
+        "totalIssues": 80,
+        "resolutionPercent": 25,
+        "avgResolutionTimeDays": 18,
+        "topRegions": [
+          {
+            "_description": "Region ranked by resolution count (descending)",
+            "rank": 1,
+            "regionName": "West Bengal",
+            "resolvedCount": 10,
+            "totalIssues": 35
+          },
+          {
+            "_description": "Region ranked by resolution count (descending)",
+            "rank": 2,
+            "regionName": "Odisha",
+            "resolvedCount": 7,
+            "totalIssues": 25
+          },
+          {
+            "_description": "Region ranked by resolution count (descending)",
+            "rank": 3,
+            "regionName": "Jharkhand",
+            "resolvedCount": 3,
+            "totalIssues": 20
+          }
+        ]
+      }
+    ]
+  },
+  "backlogHealth": {
+    "global": {
+      "_description": "Global backlog metrics. Backlog = issues NOT in (Closed, Accepted) status",
+      "backlogCount": 180,
+      "totalIssues": 300,
+      "backlogPercent": 60
+    },
+    "zones": [
+      {
+        "_description": "Zone-level backlog metrics with top 3 regions by backlog count and overdue analysis",
+        "zoneName": "North Zone",
+        "backlogCount": 60,
+        "totalIssues": 120,
+        "backlogPercent": 50,
+        "overdueCount": 0,
+        "topRegions": [
+          {
+            "_description": "Region ranked by backlog count (descending)",
+            "rank": 1,
+            "regionName": "Punjab",
+            "backlogCount": 25,
+            "totalIssues": 50
+          },
+          {
+            "_description": "Region ranked by backlog count (descending)",
+            "rank": 2,
+            "regionName": "Haryana",
+            "backlogCount": 20,
+            "totalIssues": 40
+          },
+          {
+            "_description": "Region ranked by backlog count (descending)",
+            "rank": 3,
+            "regionName": "Delhi",
+            "backlogCount": 15,
+            "totalIssues": 30
+          }
+        ]
+      },
+      {
+        "_description": "Zone-level backlog metrics with top 3 regions by backlog count and overdue analysis",
+        "zoneName": "South Zone",
+        "backlogCount": 60,
+        "totalIssues": 100,
+        "backlogPercent": 60,
+        "overdueCount": 25,
+        "topRegions": [
+          {
+            "_description": "Region ranked by backlog count (descending)",
+            "rank": 1,
+            "regionName": "Karnataka",
+            "backlogCount": 25,
+            "totalIssues": 45
+          },
+          {
+            "_description": "Region ranked by backlog count (descending)",
+            "rank": 2,
+            "regionName": "Tamil Nadu",
+            "backlogCount": 20,
+            "totalIssues": 35
+          },
+          {
+            "_description": "Region ranked by backlog count (descending)",
+            "rank": 3,
+            "regionName": "Kerala",
+            "backlogCount": 15,
+            "totalIssues": 20
+          }
+        ]
+      },
+      {
+        "_description": "Zone-level backlog metrics with top 3 regions by backlog count and overdue analysis",
+        "zoneName": "East Zone",
+        "backlogCount": 60,
+        "totalIssues": 80,
+        "backlogPercent": 75,
+        "overdueCount": 0,
+        "topRegions": [
+          {
+            "_description": "Region ranked by backlog count (descending)",
+            "rank": 1,
+            "regionName": "West Bengal",
+            "backlogCount": 25,
+            "totalIssues": 35
+          },
+          {
+            "_description": "Region ranked by backlog count (descending)",
+            "rank": 2,
+            "regionName": "Odisha",
+            "backlogCount": 18,
+            "totalIssues": 25
+          },
+          {
+            "_description": "Region ranked by backlog count (descending)",
+            "rank": 3,
+            "regionName": "Jharkhand",
+            "backlogCount": 17,
+            "totalIssues": 20
+          }
+        ]
+      }
+    ]
+  },
+  "issueAging": {
+    "global": {
+      "_description": "Global average aging. Aging = currentDate - IssueCreatedAt (for unresolved issues only)",
+      "avgAgingDays": 40
+    },
+    "zones": [
+      {
+        "_description": "Average aging per zone for unresolved issues",
+        "zoneName": "North Zone",
+        "avgAgingDays": 35
+      },
+      {
+        "_description": "Average aging per zone for unresolved issues",
+        "zoneName": "South Zone",
+        "avgAgingDays": 42
+      },
+      {
+        "_description": "Average aging per zone for unresolved issues",
+        "zoneName": "East Zone",
+        "avgAgingDays": 48
+      }
+    ]
+  },
+  "highRiskExposure": {
+    "global": {
+      "_description": "Global high-risk issue metrics. High-risk = RiskLevel IN ('high', 'zero_tolerance')",
+      "totalHighRiskCount": 80,
+      "unresolvedReopenedHighRiskCount": 45,
+      "unresolvedReopenedPercent": 56.25,
+      "overdueHighRiskCount": 35,
+      "overdueHighRiskPercent": 43.75
+    },
+    "zones": [
+      {
+        "_description": "Zone-level high-risk metrics",
+        "zoneName": "North Zone",
+        "totalHighRiskCount": 0,
+        "unresolvedReopenedHighRiskCount": 0,
+        "unresolvedReopenedPercent": 0,
+        "overdueHighRiskCount": 0,
+        "overdueHighRiskPercent": 0
+      },
+      {
+        "_description": "Zone-level high-risk metrics",
+        "zoneName": "South Zone",
+        "totalHighRiskCount": 45,
+        "unresolvedReopenedHighRiskCount": 25,
+        "unresolvedReopenedPercent": 55.56,
+        "overdueHighRiskCount": 20,
+        "overdueHighRiskPercent": 44.44
+      },
+      {
+        "_description": "Zone-level high-risk metrics",
+        "zoneName": "East Zone",
+        "totalHighRiskCount": 35,
+        "unresolvedReopenedHighRiskCount": 20,
+        "unresolvedReopenedPercent": 57.14,
+        "overdueHighRiskCount": 15,
+        "overdueHighRiskPercent": 42.86
+      }
+    ]
+  },
+  "topAuditTypes": {
+    "_description": "Top 3 audit types by count of high-risk unresolved/reopened issues. Sorted descending by issue count.",
+    "items": [
+      {
+        "rank": 1,
+        "auditTypeName": "Process Compliance Audit",
+        "highRiskUnresolvedReopenedCount": 25,
+        "totalHighRiskCount": 40
+      },
+      {
+        "rank": 2,
+        "auditTypeName": "Financial Controls Audit",
+        "highRiskUnresolvedReopenedCount": 18,
+        "totalHighRiskCount": 30
+      },
+      {
+        "rank": 3,
+        "auditTypeName": "IT Security Audit",
+        "highRiskUnresolvedReopenedCount": 0,
+        "totalHighRiskCount": 20
+      }
+    ]
+  },
+  "topCheckpointIntents": {
+    "_description": "Top 3 checkpoint intents by count of high-risk unresolved/reopened issues. Sorted descending by issue count.",
+    "items": [
+      {
+        "rank": 1,
+        "checkpointIntent": "ID Verification",
+        "highRiskUnresolvedReopenedCount": 15,
+        "totalHighRiskCount": 22
+      },
+      {
+        "rank": 2,
+        "checkpointIntent": "Access Control",
+        "highRiskUnresolvedReopenedCount": 10,
+        "totalHighRiskCount": 16
+      },
+      {
+        "rank": 3,
+        "checkpointIntent": "Data Encryption",
+        "highRiskUnresolvedReopenedCount": 0,
+        "totalHighRiskCount": 12
+      }
+    ]
+  },
+  "reopenRate": {
+    "global": {
+      "_description": "Global reopen rate. Reopened issues = IssueStatus === 'reopened'",
+      "reopenedCount": 20,
+      "totalIssues": 300,
+      "reopenPercent": 6.67
+    },
+    "zones": [
+      {
+        "_description": "Zone-level reopen rate",
+        "zoneName": "North Zone",
+        "reopenedCount": 0,
+        "totalIssues": 120,
+        "reopenPercent": 0
+      },
+      {
+        "_description": "Zone-level reopen rate",
+        "zoneName": "South Zone",
+        "reopenedCount": 15,
+        "totalIssues": 100,
+        "reopenPercent": 15
+      },
+      {
+        "_description": "Zone-level reopen rate",
+        "zoneName": "East Zone",
+        "reopenedCount": 5,
+        "totalIssues": 80,
+        "reopenPercent": 6.25
+      }
+    ]
+  }
+}

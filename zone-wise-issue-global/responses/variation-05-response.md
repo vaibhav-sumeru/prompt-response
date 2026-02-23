@@ -1,0 +1,3 @@
+**Risk Concentration:** Total issues are 450. **South Zone** has 120 issues with 48 combined critical issues (40%), comprising **12 zero-tolerance (10%)** and **36 high-risk (30%)** issues. **Karnataka** has the highest with **12 zero-tolerance** and **36 high-risk** issues. West Zone has 32 critical issues, a spread of 16 issues.
+
+**Closure Effectiveness:** **South Zone** has **24 overdue issues (20%)** out of 120 total issues. **Karnataka** region has **24 overdue (20%)** issues. East Zone has no overdue issues. Reopened issues are present, with East Zone having **4 reopened (4%)**. The overdue percentage spread is 20 percentage points.

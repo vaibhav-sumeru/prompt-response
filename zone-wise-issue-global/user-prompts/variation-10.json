@@ -1,0 +1,313 @@
+{
+  "generatedAt": "2026-02-15T10:30:00.000Z",
+  "hierarchyLevel": "zone",
+  "totalIssues": 320,
+  "globalRegionSummary": {
+    "_description": "Summary of all regions across all zones. Only present at zone level. Shows risk concentration and closure effectiveness for each region globally.",
+    "items": [
+      {
+        "regionName": "Delhi",
+        "zoneName": "North Zone",
+        "riskConcentration": {
+          "zero_tolerance": {
+            "count": 11,
+            "percent": 12.94
+          },
+          "high": {
+            "count": 32,
+            "percent": 37.65
+          },
+          "medium": {
+            "count": 28,
+            "percent": 32.94
+          },
+          "low": {
+            "count": 14,
+            "percent": 16.47
+          }
+        },
+        "closureEffectiveness": {
+          "totalIssues": 85,
+          "overdueCount": 30,
+          "overduePercent": 35.29,
+          "reopenedCount": null,
+          "reopenedPercent": null
+        }
+      },
+      {
+        "regionName": "Chandigarh",
+        "zoneName": "North Zone",
+        "riskConcentration": {
+          "zero_tolerance": {
+            "count": 7,
+            "percent": 12.73
+          },
+          "high": {
+            "count": 20,
+            "percent": 36.36
+          },
+          "medium": {
+            "count": 17,
+            "percent": 30.91
+          },
+          "low": {
+            "count": 11,
+            "percent": 20
+          }
+        },
+        "closureEffectiveness": {
+          "totalIssues": 55,
+          "overdueCount": 18,
+          "overduePercent": 32.73,
+          "reopenedCount": 5,
+          "reopenedPercent": 9.09
+        }
+      },
+      {
+        "regionName": "Chennai",
+        "zoneName": "South Zone",
+        "riskConcentration": {
+          "zero_tolerance": {
+            "count": 7,
+            "percent": 11.67
+          },
+          "high": {
+            "count": 22,
+            "percent": 36.67
+          },
+          "medium": {
+            "count": 20,
+            "percent": 33.33
+          },
+          "low": {
+            "count": 11,
+            "percent": 18.33
+          }
+        },
+        "closureEffectiveness": {
+          "totalIssues": 60,
+          "overdueCount": 19,
+          "overduePercent": 31.67,
+          "reopenedCount": 4,
+          "reopenedPercent": 6.67
+        }
+      },
+      {
+        "regionName": "Bangalore",
+        "zoneName": "South Zone",
+        "riskConcentration": {
+          "zero_tolerance": {
+            "count": 5,
+            "percent": 10
+          },
+          "high": {
+            "count": 18,
+            "percent": 36
+          },
+          "medium": {
+            "count": 18,
+            "percent": 36
+          },
+          "low": {
+            "count": 9,
+            "percent": 18
+          }
+        },
+        "closureEffectiveness": {
+          "totalIssues": 50,
+          "overdueCount": 16,
+          "overduePercent": 32,
+          "reopenedCount": 4,
+          "reopenedPercent": 8
+        }
+      },
+      {
+        "regionName": "Kolkata",
+        "zoneName": "East Zone",
+        "riskConcentration": {
+          "zero_tolerance": {
+            "count": 6,
+            "percent": 13.33
+          },
+          "high": {
+            "count": 16,
+            "percent": 35.56
+          },
+          "medium": {
+            "count": 15,
+            "percent": 33.33
+          },
+          "low": {
+            "count": 8,
+            "percent": 17.78
+          }
+        },
+        "closureEffectiveness": {
+          "totalIssues": 45,
+          "overdueCount": 16,
+          "overduePercent": 35.56,
+          "reopenedCount": 3,
+          "reopenedPercent": 6.67
+        }
+      },
+      {
+        "regionName": "Mumbai",
+        "zoneName": "West Zone",
+        "riskConcentration": {
+          "zero_tolerance": {
+            "count": 3,
+            "percent": 12
+          },
+          "high": {
+            "count": 9,
+            "percent": 36
+          },
+          "medium": {
+            "count": 8,
+            "percent": 32
+          },
+          "low": {
+            "count": 5,
+            "percent": 20
+          }
+        },
+        "closureEffectiveness": {
+          "totalIssues": 25,
+          "overdueCount": 9,
+          "overduePercent": 36,
+          "reopenedCount": 2,
+          "reopenedPercent": 8
+        }
+      }
+    ]
+  },
+  "zones": {
+    "_description": "Risk concentration and closure effectiveness per zone",
+    "items": [
+      {
+        "zoneName": "North Zone",
+        "totalIssues": 140,
+        "riskConcentration": {
+          "_description": "Issue count and percentage breakdown by risk level. Identifies zones with highest concentration of high/critical risk issues.",
+          "zero_tolerance": {
+            "count": 18,
+            "percent": 12.86
+          },
+          "high": {
+            "count": 52,
+            "percent": 37.14
+          },
+          "medium": {
+            "count": 45,
+            "percent": 32.14
+          },
+          "low": {
+            "count": 25,
+            "percent": 17.86
+          }
+        },
+        "closureEffectiveness": {
+          "_description": "Timeliness metrics showing overdue and reopened issues. Highlights delays and closure quality issues.",
+          "totalIssues": 140,
+          "overdueCount": 48,
+          "overduePercent": 34.29,
+          "reopenedCount": null,
+          "reopenedPercent": null
+        }
+      },
+      {
+        "zoneName": "South Zone",
+        "totalIssues": 110,
+        "riskConcentration": {
+          "_description": "Issue count and percentage breakdown by risk level. Identifies zones with highest concentration of high/critical risk issues.",
+          "zero_tolerance": {
+            "count": 12,
+            "percent": 10.91
+          },
+          "high": {
+            "count": 40,
+            "percent": 36.36
+          },
+          "medium": {
+            "count": 38,
+            "percent": 34.55
+          },
+          "low": {
+            "count": 20,
+            "percent": 18.18
+          }
+        },
+        "closureEffectiveness": {
+          "_description": "Timeliness metrics showing overdue and reopened issues. Highlights delays and closure quality issues.",
+          "totalIssues": 110,
+          "overdueCount": 35,
+          "overduePercent": 31.82,
+          "reopenedCount": 8,
+          "reopenedPercent": 7.27
+        }
+      },
+      {
+        "zoneName": "East Zone",
+        "totalIssues": 45,
+        "riskConcentration": {
+          "_description": "Issue count and percentage breakdown by risk level. Identifies zones with highest concentration of high/critical risk issues.",
+          "zero_tolerance": {
+            "count": 6,
+            "percent": 13.33
+          },
+          "high": {
+            "count": 16,
+            "percent": 35.56
+          },
+          "medium": {
+            "count": 15,
+            "percent": 33.33
+          },
+          "low": {
+            "count": 8,
+            "percent": 17.78
+          }
+        },
+        "closureEffectiveness": {
+          "_description": "Timeliness metrics showing overdue and reopened issues. Highlights delays and closure quality issues.",
+          "totalIssues": 45,
+          "overdueCount": 16,
+          "overduePercent": 35.56,
+          "reopenedCount": 3,
+          "reopenedPercent": 6.67
+        }
+      },
+      {
+        "zoneName": "West Zone",
+        "totalIssues": 25,
+        "riskConcentration": {
+          "_description": "Issue count and percentage breakdown by risk level. Identifies zones with highest concentration of high/critical risk issues.",
+          "zero_tolerance": {
+            "count": 3,
+            "percent": 12
+          },
+          "high": {
+            "count": 9,
+            "percent": 36
+          },
+          "medium": {
+            "count": 8,
+            "percent": 32
+          },
+          "low": {
+            "count": 5,
+            "percent": 20
+          }
+        },
+        "closureEffectiveness": {
+          "_description": "Timeliness metrics showing overdue and reopened issues. Highlights delays and closure quality issues.",
+          "totalIssues": 25,
+          "overdueCount": 9,
+          "overduePercent": 36,
+          "reopenedCount": 2,
+          "reopenedPercent": 8
+        }
+      }
+    ]
+  }
+}

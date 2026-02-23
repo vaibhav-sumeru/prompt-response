@@ -1,0 +1,3 @@
+**Risk Concentration:** Within North (Zone), 180 issues are distributed across 2 regions. **Punjab** has 45 combined critical issues (32.14%) out of 140, comprising **10 zero-tolerance (7.14%)** and **35 high (25.00%)** issues. Haryana has 24 combined critical issues. This represents a 21-issue difference in critical risk concentration.
+
+**Closure Effectiveness:** **Haryana** has **32 overdue issues (80.00%)** and **8 reopened (20.00%)** out of 40 issues. This is compared to Punjab at 10.00% overdue and 2.14% reopened. The overdue rate difference between regions is 70 percentage points.

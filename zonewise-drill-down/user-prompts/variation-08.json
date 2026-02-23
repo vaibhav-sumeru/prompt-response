@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-03-20T14:45:00.000Z",
+  "hierarchyLevel": "region",
+  "filterContext": {
+    "_description": "Parent filter applied to generate this drill-down",
+    "zone": "West"
+  },
+  "totalIssues": 250,
+  "items": [
+    {
+      "_description": "Risk concentration and closure effectiveness for Maharashtra region",
+      "name": "Maharashtra",
+      "totalIssues": 150,
+      "riskConcentration": {
+        "_description": "Issue count and percentage breakdown by risk level",
+        "zero_tolerance": {
+          "count": 25,
+          "percent": 16.67
+        },
+        "high": {
+          "count": 60,
+          "percent": 40
+        },
+        "medium": {
+          "count": 45,
+          "percent": 30
+        },
+        "low": {
+          "count": 20,
+          "percent": 13.33
+        }
+      },
+      "closureEffectiveness": {
+        "_description": "Timeliness and closure quality metrics",
+        "totalIssues": 150,
+        "overdueCount": 0,
+        "overduePercent": 0,
+        "reopenedCount": 0,
+        "reopenedPercent": 0
+      }
+    },
+    {
+      "_description": "Risk concentration and closure effectiveness for Gujarat region",
+      "name": "Gujarat",
+      "totalIssues": 100,
+      "riskConcentration": {
+        "_description": "Issue count and percentage breakdown by risk level",
+        "zero_tolerance": {
+          "count": 10,
+          "percent": 10
+        },
+        "high": {
+          "count": 35,
+          "percent": 35
+        },
+        "medium": {
+          "count": 40,
+          "percent": 40
+        },
+        "low": {
+          "count": 15,
+          "percent": 15
+        }
+      },
+      "closureEffectiveness": {
+        "_description": "Timeliness and closure quality metrics",
+        "totalIssues": 100,
+        "overdueCount": 0,
+        "overduePercent": 0,
+        "reopenedCount": 0,
+        "reopenedPercent": 0
+      }
+    }
+  ]
+}

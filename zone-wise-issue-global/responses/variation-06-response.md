@@ -1,0 +1,3 @@
+**Risk Concentration:** Total issues are 450. **South Zone** has 150 issues with 70 combined critical issues (46.66%), comprising **20 zero-tolerance (13.33%)** and **50 high-risk (33.33%)** issues. **Tamil Nadu** has the highest with **12 ZT** and **30 high-risk** issues. West Zone has 36 critical issues, a spread of 34 issues.
+
+**Closure Effectiveness:** **West Zone** has 80 issues with **25 overdue (31.25%)**. **Maharashtra** has **16 overdue (32.00%)** out of 50 issues. South Zone has no overdue issues, a spread of 31.25 percentage points. South Zone also records **12 reopened (8.00%)** issues.

@@ -1,0 +1,3 @@
+**Risk Concentration:** Within South (Zone), 85 issues are recorded across 1 region. **South Central** has 40 combined critical issues (47.06%), comprising **12 zero-tolerance (14.12%)** and **28 high (32.94%)** issues. This is also the region with the lowest critical risk, resulting in a 0-issue spread.
+
+**Closure Effectiveness:** **South Central** has **34 overdue issues (40.00%)** out of 85 total issues, and **9 reopened (10.59%)**. This is also the region with the lowest overdue percentage, resulting in a 0.00 percentage point spread in closure effectiveness.

@@ -1,0 +1,3 @@
+**Risk Concentration:** Within South (Zone), 250 issues are distributed across 2 regions. **Tamil Nadu** has 60 combined critical issues (42.86%) out of 140 total, comprising **20 zero-tolerance (14.29%)** and **40 high-risk (28.57%)** issues. Kerala has 47 combined critical issues. The critical risk spread is 13 issues.
+
+**Closure Effectiveness:** **Tamil Nadu** has **45 overdue issues (32.14%)** out of 140 total and **11 reopened (7.86%)**. Kerala has 35 overdue issues (31.82%). The overdue percentage spread is 0.32 percentage points.

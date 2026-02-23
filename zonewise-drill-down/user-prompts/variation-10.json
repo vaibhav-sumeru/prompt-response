@@ -1,0 +1,75 @@
+{
+  "generatedAt": "2026-03-22T09:15:45.000Z",
+  "hierarchyLevel": "region",
+  "filterContext": {
+    "_description": "Parent filter applied to generate this drill-down",
+    "zone": "South Zone"
+  },
+  "totalIssues": 243,
+  "items": [
+    {
+      "_description": "Risk concentration and closure effectiveness for Tamil Nadu region",
+      "name": "Tamil Nadu",
+      "totalIssues": 145,
+      "riskConcentration": {
+        "_description": "Issue count and percentage breakdown by risk level",
+        "zero_tolerance": {
+          "count": 22,
+          "percent": 15.17
+        },
+        "high": {
+          "count": 48,
+          "percent": 33.1
+        },
+        "medium": {
+          "count": 45,
+          "percent": 31.03
+        },
+        "low": {
+          "count": 30,
+          "percent": 20.69
+        }
+      },
+      "closureEffectiveness": {
+        "_description": "Timeliness and closure quality metrics",
+        "totalIssues": 145,
+        "overdueCount": 58,
+        "overduePercent": 40,
+        "reopenedCount": null,
+        "reopenedPercent": null
+      }
+    },
+    {
+      "_description": "Risk concentration and closure effectiveness for Karnataka region",
+      "name": "Karnataka",
+      "totalIssues": 98,
+      "riskConcentration": {
+        "_description": "Issue count and percentage breakdown by risk level",
+        "zero_tolerance": {
+          "count": 12,
+          "percent": 12.24
+        },
+        "high": {
+          "count": 35,
+          "percent": 35.71
+        },
+        "medium": {
+          "count": 31,
+          "percent": 31.63
+        },
+        "low": {
+          "count": 20,
+          "percent": 20.41
+        }
+      },
+      "closureEffectiveness": {
+        "_description": "Timeliness and closure quality metrics",
+        "totalIssues": 98,
+        "overdueCount": 33,
+        "overduePercent": 33.67,
+        "reopenedCount": 8,
+        "reopenedPercent": 8.16
+      }
+    }
+  ]
+}

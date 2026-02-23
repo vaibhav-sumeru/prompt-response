@@ -1,0 +1,183 @@
+{
+  "generatedAt": "2026-02-15T10:30:00.000Z",
+  "totalIssues": 320,
+  "resolutionProgress": {
+    "global": {
+      "_description": "Global resolution progress metrics. Resolution progress = (Resolved + Closed + Accepted) / Total Issues × 100",
+      "resolvedCount": 128,
+      "totalIssues": 320,
+      "resolutionPercent": 40
+    },
+    "zones": [
+      {
+        "_description": "Zone-level resolution metrics with top 3 regions by resolution count",
+        "zoneName": "Central Zone",
+        "resolvedCount": 128,
+        "totalIssues": 320,
+        "resolutionPercent": 40,
+        "avgResolutionTimeDays": 14,
+        "topRegions": [
+          {
+            "_description": "Region ranked by resolution count (descending)",
+            "rank": 1,
+            "regionName": "Maharashtra Region",
+            "resolvedCount": 58,
+            "totalIssues": 145
+          },
+          {
+            "_description": "Region ranked by resolution count (descending)",
+            "rank": 2,
+            "regionName": "Madhya Pradesh Region",
+            "resolvedCount": 42,
+            "totalIssues": 105
+          },
+          {
+            "_description": "Region ranked by resolution count (descending)",
+            "rank": 3,
+            "regionName": "Chhattisgarh Region",
+            "resolvedCount": 28,
+            "totalIssues": 70
+          }
+        ]
+      }
+    ]
+  },
+  "backlogHealth": {
+    "global": {
+      "_description": "Global backlog metrics. Backlog = issues NOT in (Closed, Accepted) status",
+      "backlogCount": 192,
+      "totalIssues": 320,
+      "backlogPercent": 60
+    },
+    "zones": [
+      {
+        "_description": "Zone-level backlog metrics with top 3 regions by backlog count and overdue analysis",
+        "zoneName": "Central Zone",
+        "backlogCount": 192,
+        "totalIssues": 320,
+        "backlogPercent": 60,
+        "overdueCount": 115,
+        "topRegions": [
+          {
+            "_description": "Region ranked by backlog count (descending)",
+            "rank": 1,
+            "regionName": "Maharashtra Region",
+            "backlogCount": 87,
+            "totalIssues": 145
+          },
+          {
+            "_description": "Region ranked by backlog count (descending)",
+            "rank": 2,
+            "regionName": "Madhya Pradesh Region",
+            "backlogCount": 63,
+            "totalIssues": 105
+          },
+          {
+            "_description": "Region ranked by backlog count (descending)",
+            "rank": 3,
+            "regionName": "Chhattisgarh Region",
+            "backlogCount": 42,
+            "totalIssues": 70
+          }
+        ]
+      }
+    ]
+  },
+  "issueAging": {
+    "global": {
+      "_description": "Global average aging. Aging = currentDate - IssueCreatedAt (for unresolved issues only)",
+      "avgAgingDays": 48
+    },
+    "zones": [
+      {
+        "_description": "Average aging per zone for unresolved issues",
+        "zoneName": "Central Zone",
+        "avgAgingDays": 48
+      }
+    ]
+  },
+  "highRiskExposure": {
+    "global": {
+      "_description": "Global high-risk issue metrics. High-risk = RiskLevel IN ('high', 'zero_tolerance')",
+      "totalHighRiskCount": 85,
+      "unresolvedReopenedHighRiskCount": 58,
+      "unresolvedReopenedPercent": 68.24,
+      "overdueHighRiskCount": 42,
+      "overdueHighRiskPercent": 49.41
+    },
+    "zones": [
+      {
+        "_description": "Zone-level high-risk metrics",
+        "zoneName": "Central Zone",
+        "totalHighRiskCount": 85,
+        "unresolvedReopenedHighRiskCount": 58,
+        "unresolvedReopenedPercent": 68.24,
+        "overdueHighRiskCount": 42,
+        "overdueHighRiskPercent": 49.41
+      }
+    ]
+  },
+  "topAuditTypes": {
+    "_description": "Top 3 audit types by count of high-risk unresolved/reopened issues. Sorted descending by issue count.",
+    "items": [
+      {
+        "rank": 1,
+        "auditTypeName": "Process Compliance Audit",
+        "highRiskUnresolvedReopenedCount": 24,
+        "totalHighRiskCount": 38
+      },
+      {
+        "rank": 2,
+        "auditTypeName": "Financial Controls Audit",
+        "highRiskUnresolvedReopenedCount": 19,
+        "totalHighRiskCount": 30
+      },
+      {
+        "rank": 3,
+        "auditTypeName": "IT Security Audit",
+        "highRiskUnresolvedReopenedCount": 15,
+        "totalHighRiskCount": 25
+      }
+    ]
+  },
+  "topCheckpointIntents": {
+    "_description": "Top 3 checkpoint intents by count of high-risk unresolved/reopened issues. Sorted descending by issue count.",
+    "items": [
+      {
+        "rank": 1,
+        "checkpointIntent": "ID Verification",
+        "highRiskUnresolvedReopenedCount": 14,
+        "totalHighRiskCount": 20
+      },
+      {
+        "rank": 2,
+        "checkpointIntent": "Access Control",
+        "highRiskUnresolvedReopenedCount": 11,
+        "totalHighRiskCount": 17
+      },
+      {
+        "rank": 3,
+        "checkpointIntent": "Data Encryption",
+        "highRiskUnresolvedReopenedCount": 9,
+        "totalHighRiskCount": 14
+      }
+    ]
+  },
+  "reopenRate": {
+    "global": {
+      "_description": "Global reopen rate. Reopened issues = IssueStatus === 'reopened'",
+      "reopenedCount": 22,
+      "totalIssues": 320,
+      "reopenPercent": 6.88
+    },
+    "zones": [
+      {
+        "_description": "Zone-level reopen rate",
+        "zoneName": "Central Zone",
+        "reopenedCount": 22,
+        "totalIssues": 320,
+        "reopenPercent": 6.88
+      }
+    ]
+  }
+}
