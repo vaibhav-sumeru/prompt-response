@@ -1,0 +1,6 @@
+- **Resolution Progress:** Global resolution is 180 of 450 issues (40.00%). **East Zone** has the lowest resolution at **27.50%** with 18 days average resolution time, compared to North Zone at 47.22%, a 19.72% spread.
+- **Backlog Health:** The global backlog is 270 of 450 issues (60.00%). **East Zone** has the highest backlog at **87 (72.50%)** with **65 overdue issues**. East Region A (40/55), East Region B (30/42), and East Region C (17/23) are the top contributors.
+- **Issue Aging:** Global average issue aging is 45 days. **East Zone** has the highest average aging at **55 days**, while North Zone has the lowest at 38 days, a 17-day difference.
+- **High-Risk Exposure:** There are **145 total high-risk issues**, with **98 unresolved/reopened (67.59%)** and **72 overdue (49.66%)**. **East Zone** has the highest unresolved/reopened exposure at **31 (73.81%)**.
+- **Top Contributors:** "Process Compliance Audit" is the top audit type with **28 high-risk unresolved/reopened issues**. "ID Verification" is the top checkpoint intent with **15 high-risk unresolved/reopened issues**, accounting for a smaller volume.
+- **Reopen Rate:** The global reopen rate is **32 (7.11%)** of total issues. **East Zone** has the highest reopen rate at **10 (8.33%)**, while the remaining zones have a combined total of **22** reopened issues.

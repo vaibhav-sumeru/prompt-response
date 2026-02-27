@@ -1,0 +1,102 @@
+[
+  {
+    "id": "variation-01",
+    "category": "normal-balanced",
+    "description": "Balanced data across zones, moderate metrics"
+  },
+  {
+    "id": "variation-02",
+    "category": "normal-balanced",
+    "description": "Balanced data across zones, moderate metrics"
+  },
+  {
+    "id": "variation-03",
+    "category": "extreme-skew",
+    "description": "One zone has extreme values (very high/low)"
+  },
+  {
+    "id": "variation-04",
+    "category": "extreme-skew",
+    "description": "One zone has extreme values (very high/low)"
+  },
+  {
+    "id": "variation-05",
+    "category": "zero-values",
+    "description": "Some metrics are 0 (test conditional bolding)"
+  },
+  {
+    "id": "variation-06",
+    "category": "zero-values",
+    "description": "Some metrics are 0 (test conditional bolding)"
+  },
+  {
+    "id": "variation-07",
+    "category": "single-zone",
+    "description": "Only 1 zone present (edge case)"
+  },
+  {
+    "id": "variation-08",
+    "category": "all-perfect",
+    "description": "100% resolution, 0 overdue, 0 reopen (happy path)"
+  },
+  {
+    "id": "variation-09",
+    "category": "all-worst",
+    "description": "Very low resolution, high overdue, high reopen"
+  },
+  {
+    "id": "variation-10",
+    "category": "missing-fields",
+    "description": "Some optional fields are null/missing"
+  },
+  {
+    "id": "variation-11",
+    "category": "identical-periods",
+    "description": "T1 and T2 values are exactly the same (change=0), testing zero variation"
+  },
+  {
+    "id": "variation-12",
+    "category": "entity-cluster",
+    "description": "MUST set entityType to 'cluster', entityLevel to 'Cluster', and entityPath to ['Cluster:<entityName>']"
+  },
+  {
+    "id": "variation-13",
+    "category": "entity-audit-type",
+    "description": "MUST set entityType to 'auditType', entityLevel to 'Audit Type', and entityPath to ['Audit Type:<entityName>']"
+  },
+  {
+    "id": "variation-14",
+    "category": "entity-audit-type",
+    "description": "MUST set entityType to 'auditType', entityLevel to 'Audit Type', and entityPath to ['Audit Type:<entityName>']"
+  },
+  {
+    "id": "variation-15",
+    "category": "entity-audit-type",
+    "description": "MUST set entityType to 'auditType', entityLevel to 'Audit Type', and entityPath to ['Audit Type:<entityName>']"
+  },
+  {
+    "id": "variation-16",
+    "category": "entity-audit-type",
+    "description": "MUST set entityType to 'auditType', entityLevel to 'Audit Type', and entityPath to ['Audit Type:<entityName>']"
+  },
+  {
+    "id": "variation-17",
+    "category": "entity-audit-type",
+    "description": "MUST set entityType to 'auditType', entityLevel to 'Audit Type', and entityPath to ['Audit Type:<entityName>']"
+  },
+  {
+    "id": "variation-18",
+    "category": "complex-dates",
+    "description": "Use date labels that contain 'to' (e.g., '01-Jul-25 to 15-Jul-25') to stress test formatting"
+  },
+  {
+    "id": "variation-19",
+    "category": "missing-change-pct",
+    "description": "change_diff_pct and changePct fields are completely null or missing to test the Not Available rule"
+  },
+  {
+    "id": "variation-20",
+    "category": "all-improved",
+    "description": "All counts significantly decreased, testing that bolding rules (only bold negative signals/risk increase) are respected"
+  }
+]

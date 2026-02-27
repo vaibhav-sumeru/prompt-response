@@ -1,3 +1,0 @@
-**Risk Concentration:** Within East Zone (Zone), 150 issues are across 2 regions. **West Bengal** has 40 combined critical issues (47.06%), comprising no zero-tolerance issues and **40 high-risk (47.06%)** issues. Odisha has 30 combined critical issues, including **5 zero-tolerance (7.69%)** issues. The critical risk spread is 10 issues.
-
-**Closure Effectiveness:** **Odisha** has **15 overdue issues (23.08%)** and no reopened issues. In contrast, **West Bengal** has no overdue issues but records **8 reopened (9.41%)** issues. The overdue percentage spread is 23.08 percentage points.

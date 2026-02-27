@@ -1,3 +1,0 @@
-**Risk Concentration:** Within West (Zone), 230 issues are across 2 regions. **Mumbai Metropolitan** has 56 combined critical issues (43.08%), comprising **16 zero-tolerance (12.31%)** and **40 high (30.77%)** issues. Pune Division has 42 combined critical issues. The critical risk spread is 14 issues.
-
-**Closure Effectiveness:** **Pune Division** has **33 overdue issues (33.00%)** and **9 reopened (9.00%)**, from 100 total issues. This compares to Mumbai Metropolitan at 32.31% overdue. The overdue percentage spread is 0.69 percentage points.

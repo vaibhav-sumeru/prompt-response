@@ -1,3 +1,0 @@
-**Risk Concentration:** Total issues across all zones are 450. **North Zone** has 180 issues with 81 combined critical issues (45%), comprising **18 zero-tolerance (10%)** and **63 high-risk (35%)** issues. **Delhi** has the highest with **10 ZT** and **35 high-risk** issues. West Zone has 25 critical issues, a spread of 56 issues.
-
-**Closure Effectiveness:** **East Zone** has 85 issues with **30 overdue issues (35.29%)** and **7 reopened (8.24%)**. **Kolkata** region has 85 issues with **30 overdue (35.29%)**. South Zone has 32.31% overdue issues, a spread of 2.98 percentage points.

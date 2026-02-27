@@ -1,3 +1,0 @@
-**Risk Concentration:** Within West (Zone), 400 issues are recorded across 2 regions. **Maharashtra** has 165 combined critical issues (66.00%) out of 250, comprising **45 zero-tolerance (18.00%)** and **120 high (48.00%)** issues. Gujarat has 42 combined critical issues. The critical risk spread is 123 issues.
-
-**Closure Effectiveness:** **Maharashtra** has **187 overdue issues (74.80%)** and **45 reopened (18.00%)** out of 250 issues. This is compared to Gujarat at 10.00% overdue. The overdue percentage spread is 64.80 percentage points.

@@ -1,3 +1,0 @@
-**Risk Concentration:** Within North Zone (Zone), 155 issues are across 2 regions. **Delhi NCR** has 40 combined critical issues (42.11%), comprising no zero-tolerance issues and **40 high-risk (42.11%)** issues. Punjab Region has 30 combined critical issues. The critical risk spread is 10 issues. Punjab Region records **8 zero-tolerance (13.33%)** issues.
-
-**Closure Effectiveness:** **Punjab Region** has **24 overdue issues (40.00%)** and no reopened issues, from a total of 60 issues. Delhi NCR records **12 reopened issues (12.63%)** and has 0% overdue. The overdue percentage spread is 40 percentage points.

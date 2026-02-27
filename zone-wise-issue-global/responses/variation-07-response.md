@@ -1,3 +1,0 @@
-**Risk Concentration:** Total issues are 150. **Central** zone has 150 issues with 70 combined critical issues (46.66%), comprising **20 zero-tolerance (13.33%)** and **50 high-risk (33.33%)** issues. **Bhopal** region has the highest with **8 ZT** and **20 high-risk** issues. Central zone has 70 critical issues, a spread of 0 issues.
-
-**Closure Effectiveness:** **Central** zone has **45 overdue issues (30.00%)** out of 150 total issues and **12 reopened (8.00%)**. **Bhopal** region has **18 overdue (30.00%)** out of 60 issues. Central zone has 30.00% overdue issues, a spread of 0.00 percentage points.

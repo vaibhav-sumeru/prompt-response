@@ -1,0 +1,111 @@
+{
+  "_description": "Risk-level issue count comparison for a single entity (Zone / Cluster / Audit Type) across two time ranges. Output is a single object, not an array. Filtered by entityType + entityValue.",
+  "entityType": "auditType",
+  "entityType_description": "Dimension being analysed. zone → ZoneName, cluster → ClusterName, auditType → AuditTypeName.",
+  "entityValue": "Internal Audit",
+  "entityValue_description": "The specific entity name to filter on. Only issues matching this value in the entityType source field are included. Case-insensitive match. Example: 'N Zone', 'Howrah Bridge'.",
+  "entityName": "Internal Audit",
+  "entityName_description": "Entity name resolved from source data (same as entityValue, normalised from source field).",
+  "entityLevel": "Audit Type",
+  "entityLevel_description": "UI display label for the entity dimension.",
+  "entityPath": [
+    "Audit Type:Internal Audit"
+  ],
+  "entityPath_description": "Hierarchical breadcrumb for drill-down navigation.",
+  "dateField": "IssueCreatedAt",
+  "dateField_description": "Source field used to assign each issue to T1 or T2. Only issues whose IssueCreatedAt falls within a range window are counted.",
+  "ranges": {
+    "T1": {
+      "label": "Jul–Sep 2023",
+      "start": "2023-07-01",
+      "end": "2023-09-30"
+    },
+    "T2": {
+      "label": "Oct–Dec 2023",
+      "start": "2023-10-01",
+      "end": "2023-12-31"
+    }
+  },
+  "counts": {
+    "byRisk": {
+      "_description": "Issue count broken down by the four risk levels. change = T2 − T1.",
+      "zero_tolerance": {
+        "T1": 5,
+        "T2": 3,
+        "change": -2,
+        "contribution_T1_pct": "10.00%",
+        "contribution_T2_pct": "6.25%",
+        "change_diff_pct": "-3.75%"
+      },
+      "high": {
+        "T1": 10,
+        "T2": 8,
+        "change": -2,
+        "contribution_T1_pct": "20.00%",
+        "contribution_T2_pct": "16.67%",
+        "change_diff_pct": "-3.33%"
+      },
+      "medium": {
+        "T1": 15,
+        "T2": 12,
+        "change": -3,
+        "contribution_T1_pct": "30.00%",
+        "contribution_T2_pct": "25.00%",
+        "change_diff_pct": "-5.00%"
+      },
+      "low": {
+        "T1": 20,
+        "T2": 25,
+        "change": 5,
+        "contribution_T1_pct": "40.00%",
+        "contribution_T2_pct": "52.08%",
+        "change_diff_pct": "12.08%"
+      }
+    },
+    "totalIssues": {
+      "_description": "Total issues for this entity in each period. change = T2 − T1.",
+      "T1": 50,
+      "T2": 48,
+      "change": -2
+    },
+    "ztPlusHigh": {
+      "_description": "Critical-risk issues: count where RiskLevel is 'zero_tolerance' OR 'high'. change = T2 − T1.",
+      "T1": 15,
+      "T2": 11,
+      "change": -4
+    },
+    "ztPlusHighPctOfTotal": {
+      "_description": "ztPlusHigh as % of totalIssues — measures critical-risk concentration. changePct = T2_pct − T1_pct (absolute percentage-point diff).",
+      "T1": "30.00%",
+      "T2": "22.92%",
+      "changePct": "-7.08%"
+    },
+    "ztPlusHigh_RT_true": {
+      "_description": "Recurring critical issues: ztPlusHigh issues where RecurringTagging IN ['Recurring', 'Repeat']. Signals persistent, unresolved control failures. change = T2 − T1.",
+      "T1": 3,
+      "T2": 5,
+      "change": 2
+    },
+    "ztPlusHigh_RT_true_pctOfZtPlusHigh": {
+      "_description": "ztPlusHigh_RT_true as % of ztPlusHigh — measures recurring proportion of critical issues. changePct = T2_pct − T1_pct. A rising value signals worsening repeat failures.",
+      "T1": "20.00%",
+      "T2": "45.45%",
+      "changePct": "25.45%"
+    }
+  },
+  "meta": {
+    "rtValues": [
+      "Recurring",
+      "Repeat"
+    ],
+    "rtValues_description": "Fixed, non-configurable. RecurringTagging field values that qualify an issue as 'recurring'.",
+    "rtDefinition": "RecurringTagging in [\"Recurring\", \"Repeat\"] — fixed, not configurable",
+    "filtersApplied": {
+      "entityType": "auditType",
+      "entityValue": "Internal Audit"
+    },
+    "sourceCount": 200,
+    "generatedAt": "2024-01-01T12:00:00Z",
+    "notes": "Issues assigned to T1/T2 by IssueCreatedAt. ztPlusHigh = zero_tolerance + high. ztPlusHigh_RT_true requires RecurringTagging IN ['Recurring','Repeat']. changePct = absolute ppt difference (T2_pct − T1_pct)."
+  }
+}

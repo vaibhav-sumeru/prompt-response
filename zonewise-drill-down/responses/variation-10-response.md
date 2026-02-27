@@ -1,3 +1,0 @@
-**Risk Concentration:** Within South Zone (Zone), 243 issues are distributed across 2 regions. **Tamil Nadu** has 70 combined critical issues (48.28%), comprising **22 zero-tolerance (15.17%)** and **48 high (33.1%)** issues. Karnataka has 47 combined critical issues. The risk concentration spread is 23 issues.
-
-**Closure Effectiveness:** **Tamil Nadu** has **58 overdue issues (40%)** out of 145 total issues, with no reopened issues. Karnataka has 33 overdue issues (33.67%) and **8 reopened (8.16%)**. The overdue percentage spread is 6.33 percentage points.

@@ -1,0 +1,10 @@
+{
+  "claude-code.environmentVariables": {
+    "ANTHROPIC_BASE_URL": "https://api.portkey.ai/v1",
+    "ANTHROPIC_API_KEY": "${env:PORTKEY_API_KEY}",
+    "ANTHROPIC_MODEL": "@kimi-k25/gpt-oss-120b",
+    "ANTHROPIC_DISABLE_TOOLS": "1",
+    "ANTHROPIC_CUSTOM_HEADERS": "x-portkey-api-key:${env:PORTKEY_API_KEY}"
+  },
+  "claude-code.defaultModel": "@kimi-k25/gpt-oss-120b"
+}
