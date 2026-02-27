@@ -1,0 +1,5 @@
+#### Zone: North Zone Risk Comparison: (2023-07-01 to 2023-09-30) vs (2023-10-01 to 2023-12-31)
+
+- **Zero Tolerance & High Risk Overview:** For North Zone, Zero Tolerance issues remained at 0 from (*Jul–Sep 2023 (baseline period)*) to (*Oct–Dec 2023 (comparison period)*), with a 0.00% change. High risk issues also remained at 0, showing a 0.00% change.
+- **High Risk Detailed Comparison:** High risk issues for North Zone remained at 0 from (*Jul–Sep 2023 (baseline period)*) to (*Oct–Dec 2023 (comparison period)*), reflecting a change of 0 issues.
+- **Recurring Critical Risk Comparison:** Recurring critical issues for North Zone were 0 (*Jul–Sep 2023 (baseline period)*) and 0 (*Oct–Dec 2023 (comparison period)*). Their proportion of critical issues was 0.00% in both periods, with a 0.00% change.

@@ -1,0 +1,5 @@
+#### Zone: North Zone Risk Comparison: (2024-07-01 to 2024-09-30) vs (2024-10-01 to 2024-12-31)
+
+- **Zero Tolerance & High Risk Overview:** For North Zone, Zero Tolerance issues decreased from 5 to 3, a change of -3.75% from (*Jul–Sep 2024*) to (*Oct–Dec 2024*). High risk issues decreased from 10 to 8, a change of -3.33% in the same period.
+- **High Risk Detailed Comparison:** High risk issues for North Zone decreased from 10 issues in (*Jul–Sep 2024*) to 8 issues in (*Oct–Dec 2024*), representing a change of -2 issues.
+- **Recurring Critical Risk Comparison:** Recurring critical issues for North Zone decreased from 3 issues (*Jul–Sep 2024*) to 2 issues (*Oct–Dec 2024*). These issues represented 20.00% of critical issues in (*Jul–Sep 2024*) and 18.18% in (*Oct–Dec 2024*), a change of -1.82 percentage points.
