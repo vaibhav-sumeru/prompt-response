@@ -1,0 +1,8 @@
+{
+  "variationId": "variation-06",
+  "overallScore": "FAIL",
+  "overallScoreNumeric": 0,
+  "error": "Failed to parse evaluation JSON",
+  "rawResponse": null,
+  "category": "zero-values"
+}

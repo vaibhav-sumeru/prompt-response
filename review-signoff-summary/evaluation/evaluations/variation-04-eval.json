@@ -1,0 +1,74 @@
+{
+  "variationId": "variation-04",
+  "overallScore": "PASS",
+  "overallScoreNumeric": 100,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 50,
+      "totalNumbersInResponse": 0,
+      "correctNumbers": 0,
+      "mismatches": []
+    },
+    "entityAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 15,
+      "details": [
+        "All entities mentioned (e.g., 'Schedule Closure Trend', 'Sub-Audit Bottleneck Analysis', 'Risk-Level Blocking Analysis', 'schedule IDs', 'sub-audits', 'Zero Tolerance', 'High risk levels') are consistent with the widget context and system prompt. The AI correctly states that data for these entities is 'Not Available' due to the invalid input."
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "details": [
+        "The AI correctly identified that ranking data (e.g., 'top three sub-audits', 'worst-performing schedule') was 'Not Available' given the invalid input."
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "100/100",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "missingDataPoints": [],
+      "details": [
+        "The AI explicitly addressed the absence of all required data points for each section by stating 'Not Available', adhering to the 'Missing field policy' in the system prompt. This constitutes complete coverage of the *absence* of data."
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "issues": [
+        "Exactly 3 dash bullets, each starting with '- **Section Label:**'.",
+        "Single newline separation between bullets.",
+        "Bullet lengths are within the specified ranges (60 words for bullet 1, 60 words for bullet 2, 60 words for bullet 3).",
+        "Tone is clinical and data-dense.",
+        "No numbers or percentages to format, so no issues there.",
+        "No bolding applied as no positive values were present, which is correct.",
+        "No banned phrases used.",
+        "No date formatting issues as no dates were present."
+      ]
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "No calculations or derived values were reported, as the input data was invalid. The AI correctly stated data was 'Not Available', thus maintaining mathematical consistency by not attempting any computations."
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 50,
+    "entityAccuracy": 15,
+    "rankingAccuracy": 10,
+    "coverageCompleteness": 10,
+    "formattingCompliance": 10,
+    "mathematicalConsistency": 5,
+    "total": 100
+  },
+  "suggestions": [],
+  "category": "extreme-skew"
+}

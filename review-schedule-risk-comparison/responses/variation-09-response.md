@@ -1,0 +1,2 @@
+- **Critical Risk Breakdown:** "Q2 2026 Regional Audit" records 150 total issues, with **35 (23.3%)** comprising 30 (20.0%) High Risk issues and **6 (4.0%)** Zero Tolerance issues.
+- **Risk Trend:** Critical Risk for "Q2 2026 Regional Audit" is **35 (23.3%)**, an increase from "Q1 2026 Regional Audit" which recorded 28 (20.0%). This represents a change of **+7** issues and **+3.3%**.

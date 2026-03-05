@@ -1,0 +1,119 @@
+{
+  "variationId": "variation-11",
+  "overallScore": "FAIL",
+  "overallScoreNumeric": 29,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 50,
+      "totalNumbersInResponse": 28,
+      "correctNumbers": 0,
+      "mismatches": [
+        {
+          "foundInResponse": "10",
+          "expectedValue": "none",
+          "context": "Across 10 sub-audits",
+          "jsonPath": "no matching path",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "1250",
+          "expectedValue": "none",
+          "context": "total of **1250** issues",
+          "jsonPath": "no matching path",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "500",
+          "expectedValue": "none",
+          "context": "**500** issues",
+          "jsonPath": "no matching path",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "40.00",
+          "expectedValue": "none",
+          "context": "**40.00**%",
+          "jsonPath": "no matching path",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "3",
+          "expectedValue": "none",
+          "context": "3 previous schedules",
+          "jsonPath": "no matching path",
+          "severity": "CRITICAL",
+          "paragraph": "Trend Movement"
+        },
+        {
+          "foundInResponse": "10.0",
+          "expectedValue": "none",
+          "context": "10.0% threshold",
+          "jsonPath": "no matching path",
+          "severity": "CRITICAL",
+          "paragraph": "Persistent Threshold Breaches"
+        }
+      ]
+    },
+    "entityAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 15,
+      "details": [
+        "Hallucinated entity names (e.g., 'Sub-Audit A', 'Sub-Audit B') not present in input schema data",
+        "No subAuditName or other entities exist in the provided input_data, which is only the schema definition"
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 10,
+      "details": [
+        "Cannot verify rankings (e.g., 'leads with', 'followed by') as no actual data values or sorted arrays provided in input",
+        "Top items and trends invented without basis in input schema"
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "15/16",
+      "scoreNumeric": 93.75,
+      "weight": 10,
+      "missingDataPoints": [
+        "meta.currentScheduleId (not explicitly mentioned in Trend Movement paragraph)"
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "issues": []
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "Derived percentages (e.g., 40+24+16=80% implied) consistent within response, though not verifiable against input",
+        "Change calculations (e.g., -33.33% for 40 vs 60) internally accurate"
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 0,
+    "entityAccuracy": 0,
+    "rankingAccuracy": 0,
+    "coverageCompleteness": 9.375,
+    "formattingCompliance": 10,
+    "mathematicalConsistency": 5,
+    "total": 24.375
+  },
+  "suggestions": [
+    "Provide populated JSON data instead of schema in input_data to enable accurate numeric and entity verification",
+    "Instruct AI to output 'Not Available' for all metrics when no actual data payload is provided"
+  ],
+  "category": "var-15-max-trend-buckets"
+}

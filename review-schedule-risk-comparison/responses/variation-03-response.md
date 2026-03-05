@@ -1,0 +1,2 @@
+- **Critical Risk Breakdown:** The Q1 2027 Branch Audit records 140 total issues, with **55 (39.3%)** comprising Critical Risk. This includes 40 High Risk issues and **15** Zero Tolerance issues, accounting for 28.6% and 10.7% of the total, respectively.
+- **Risk Trend:** Critical Risk for the Q1 2027 Branch Audit is 55 (39.3%), compared to 20 (16.7%) in the Q4 2026 Branch Audit. This represents a change of **+35** issues and **+22.6%** in Critical Risk.

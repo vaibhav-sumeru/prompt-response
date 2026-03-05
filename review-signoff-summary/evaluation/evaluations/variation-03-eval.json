@@ -1,0 +1,70 @@
+{
+  "variationId": "variation-03",
+  "overallScore": "PASS",
+  "overallScoreNumeric": 95.33,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 50,
+      "totalNumbersInResponse": 30,
+      "correctNumbers": 30,
+      "mismatches": []
+    },
+    "entityAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 15,
+      "details": [
+        "All schedule IDs, sub-audit names, and risk levels mentioned in the response are present in the input data and used in the correct context."
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "details": [
+        "Bullet 1: S-2023-Q3 (15.0) is correctly identified as having the lowest closure health score.",
+        "Bullet 2: 'Vendor Management' is correctly identified as leading with the highest non-accepted issues, followed by 'IT Security Audit' and 'Financial Controls' in correct order.",
+        "Bullet 3: 'Medium' risk is correctly identified as the highest non-critical tier by non-accepted count (15 issues vs 12 for Low)."
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "PARTIAL",
+      "scoreNumeric": 73.3,
+      "weight": 10,
+      "missingDataPoints": [
+        "Bullet 1: signoffStatusBySchedule.rows[1].scheduleId (S-2023-Q4) and its closureHealthScore (66.6) are missing.",
+        "Bullet 1: signoffStatusBySchedule.rows[2].scheduleId (S-2024-Q1) and its closureHealthScore (76.7) are missing."
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PARTIAL",
+      "scoreNumeric": 80,
+      "weight": 10,
+      "issues": [
+        "Percentage '46%' should be formatted as '46.0%' as per the 'XX.X%' rule.",
+        "The risk level name 'Zero Tolerance' should be bolded as it has the single highest nonAcceptedPctOfRisk (80.0%) across all 4 rows, as per bolding rules."
+      ]
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "All numerical values are directly extracted from the payload, adhering to the 'NO CALCULATION' rule."
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 50,
+    "entityAccuracy": 15,
+    "rankingAccuracy": 10,
+    "coverageCompleteness": 7.33,
+    "formattingCompliance": 8,
+    "mathematicalConsistency": 5,
+    "total": 95.33
+  },
+  "suggestions": [],
+  "category": "extreme-skew"
+}

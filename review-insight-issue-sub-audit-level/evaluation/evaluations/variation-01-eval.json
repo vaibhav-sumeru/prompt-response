@@ -1,0 +1,67 @@
+{
+  "variationId": "variation-01",
+  "overallScore": "PASS",
+  "overallScoreNumeric": 98,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 50,
+      "totalNumbersInResponse": 24,
+      "correctNumbers": 24,
+      "mismatches": []
+    },
+    "entityAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 15,
+      "details": [
+        "All sub-audit names (Financial Reporting, IT Infrastructure, Operations Management, Human Resources) match exactly with input data entities."
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "details": [
+        "Top issue rankings follow the descending order in topByTotalIssues; persistent items match sorted persistentTop; trend buckets correctly report empty as Not Available and list stable in order."
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "16/16",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "missingDataPoints": []
+    },
+    "formattingCompliance": {
+      "score": "PARTIAL",
+      "scoreNumeric": 80,
+      "weight": 10,
+      "issues": [
+        "Paragraph 2 exceeds 60-word limit (approximately 70 words)."
+      ]
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "All values are direct extractions; no derivations present, and percentages align with data (e.g., contributions sum appropriately)."
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 50,
+    "entityAccuracy": 15,
+    "rankingAccuracy": 10,
+    "coverageCompleteness": 10,
+    "formattingCompliance": 8,
+    "mathematicalConsistency": 5,
+    "total": 98
+  },
+  "suggestions": [
+    "FORMATTING: Enforce stricter word count limits in generation prompt to ensure 30-60 words per paragraph.",
+    "COVERAGE: Consider explicit checklist validation in self-check to confirm all required data points."
+  ],
+  "category": "var-05-all-stable"
+}

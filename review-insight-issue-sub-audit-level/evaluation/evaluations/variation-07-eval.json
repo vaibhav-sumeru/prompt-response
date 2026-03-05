@@ -1,0 +1,103 @@
+{
+  "variationId": "variation-07",
+  "overallScore": "FAIL",
+  "overallScoreNumeric": 29,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 50,
+      "totalNumbersInResponse": 28,
+      "correctNumbers": 0,
+      "mismatches": [
+        {
+          "foundInResponse": "10",
+          "expectedValue": "none",
+          "context": "Across 10 sub-audits",
+          "jsonPath": "none",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "1250",
+          "expectedValue": "none",
+          "context": "total of 1250 issues",
+          "jsonPath": "none",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "500",
+          "expectedValue": "none",
+          "context": "500 issues",
+          "jsonPath": "none",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "40.00%",
+          "expectedValue": "none",
+          "context": "40.00% of the total",
+          "jsonPath": "none",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        }
+      ]
+    },
+    "entityAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 15,
+      "details": [
+        "Hallucinated entity names: 'Sub-Audit A', 'Sub-Audit B', etc., do not exist in input data (schema only, no instance data)",
+        "No sub-audit names present in input JSON"
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "PARTIAL",
+      "scoreNumeric": 50,
+      "weight": 10,
+      "details": [
+        "Cannot verify rankings (e.g., 'Sub-Audit A' as top) due to absence of actual data in input",
+        "Response structure follows expected ordering, but un verifiable without data"
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "15/16",
+      "scoreNumeric": 94,
+      "weight": 10,
+      "missingDataPoints": [
+        "meta.currentScheduleId (not mentioned in Trend Movement paragraph)"
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "issues": []
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "Change percentages in Trend Movement align with provided current vs. previous average values (e.g., 50% for 120 vs 80)",
+        "No derived calculations mismatch internally"
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 0,
+    "entityAccuracy": 0,
+    "rankingAccuracy": 5,
+    "coverageCompleteness": 9,
+    "formattingCompliance": 10,
+    "mathematicalConsistency": 5,
+    "total": 29
+  },
+  "suggestions": [
+    "NUMERIC: Input data is schema only; provide actual instance data for accurate numeric verification",
+    "ENTITY: Ensure entity names are extracted directly from payload; flag hallucinations when no data present"
+  ],
+  "category": "var-11-one-prev-schedule"
+}

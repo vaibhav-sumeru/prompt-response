@@ -1,0 +1,215 @@
+{
+  "totalRecords": 20,
+  "meta": {
+    "generatedAt": "2023-10-01T12:00:00Z",
+    "currentScheduleId": "sch-2023-q4",
+    "prevScheduleCount": 3,
+    "prevScheduleIds": [
+      "sch-2022-q4",
+      "sch-2023-q1",
+      "sch-2023-q2"
+    ],
+    "totalScheduleCount": 4,
+    "thresholdPercent": 5
+  },
+  "totals": {
+    "totalSubAudits": 20,
+    "totalIssuesAllSchedules": 450,
+    "totalIssuesCurrentSchedule": 150,
+    "totalIssuesPreviousSchedules": 300
+  },
+  "topByTotalIssues": [
+    {
+      "subAuditName": "Financial Reporting Audit",
+      "totalIssuesAllSchedules": 50,
+      "averageIssuesAllSchedules": 12.5,
+      "contributionPercent": 11.11
+    },
+    {
+      "subAuditName": "Compliance Verification",
+      "totalIssuesAllSchedules": 50,
+      "averageIssuesAllSchedules": 12.5,
+      "contributionPercent": 11.11
+    },
+    {
+      "subAuditName": "Risk Assessment Review",
+      "totalIssuesAllSchedules": 50,
+      "averageIssuesAllSchedules": 12.5,
+      "contributionPercent": 11.11
+    },
+    {
+      "subAuditName": "Internal Controls Check",
+      "totalIssuesAllSchedules": 40,
+      "averageIssuesAllSchedules": 10,
+      "contributionPercent": 8.89
+    },
+    {
+      "subAuditName": "Operational Audit",
+      "totalIssuesAllSchedules": 30,
+      "averageIssuesAllSchedules": 7.5,
+      "contributionPercent": 6.67
+    }
+  ],
+  "trendBuckets": {
+    "increasing": [
+      {
+        "subAuditName": "Financial Reporting Audit",
+        "currentIssueCount": 20,
+        "previousAverageIssueCount": 10,
+        "changeCount": 10,
+        "changePercent": 100,
+        "direction": "increasing"
+      },
+      {
+        "subAuditName": "Compliance Verification",
+        "currentIssueCount": 15,
+        "previousAverageIssueCount": 12,
+        "changeCount": 3,
+        "changePercent": 25,
+        "direction": "increasing"
+      }
+    ],
+    "decreasing": [
+      {
+        "subAuditName": "Internal Controls Check",
+        "currentIssueCount": 5,
+        "previousAverageIssueCount": 15,
+        "changeCount": -10,
+        "changePercent": -66.67,
+        "direction": "decreasing"
+      },
+      {
+        "subAuditName": "Operational Audit",
+        "currentIssueCount": 8,
+        "previousAverageIssueCount": 10,
+        "changeCount": -2,
+        "changePercent": -20,
+        "direction": "decreasing"
+      }
+    ],
+    "stable": [
+      {
+        "subAuditName": "Risk Assessment Review",
+        "currentIssueCount": 12,
+        "previousAverageIssueCount": 12.5,
+        "changeCount": -0.5,
+        "changePercent": -4,
+        "direction": "stable"
+      },
+      {
+        "subAuditName": "Vendor Management Audit",
+        "currentIssueCount": 10,
+        "previousAverageIssueCount": 10,
+        "changeCount": 0,
+        "changePercent": 0,
+        "direction": "stable"
+      },
+      {
+        "subAuditName": "IT Security Review",
+        "currentIssueCount": 9,
+        "previousAverageIssueCount": 9.5,
+        "changeCount": -0.5,
+        "changePercent": -5.26,
+        "direction": "stable"
+      }
+    ]
+  },
+  "persistentTop": {
+    "totalPersistentCount": 2,
+    "items": [
+      {
+        "subAuditName": "Financial Reporting Audit",
+        "totalIssuesAllSchedules": 50,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sch-2022-q4",
+            "issueCount": 12,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-q1",
+            "issueCount": 13,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-q2",
+            "issueCount": 12,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-q4",
+            "issueCount": 13,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      },
+      {
+        "subAuditName": "Compliance Verification",
+        "totalIssuesAllSchedules": 50,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sch-2022-q4",
+            "issueCount": 12,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-q1",
+            "issueCount": 13,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-q2",
+            "issueCount": 12,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-q4",
+            "issueCount": 13,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      },
+      {
+        "subAuditName": "Risk Assessment Review",
+        "totalIssuesAllSchedules": 50,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sch-2022-q4",
+            "issueCount": 12,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-q1",
+            "issueCount": 13,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-q2",
+            "issueCount": 12,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-q4",
+            "issueCount": 13,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      }
+    ]
+  }
+}

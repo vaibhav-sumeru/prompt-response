@@ -1,0 +1,87 @@
+{
+  "currentScheduleId": "SCH-2026-Q1-001",
+  "previousSchedulesAvailable": 3,
+  "schedules": {
+    "current": {
+      "scheduleId": "SCH-2026-Q1-001",
+      "scheduleIdentity": "Q1 2026 Branch Audit",
+      "totalIssues": 120,
+      "highRisk": {
+        "count": 8,
+        "percent": 6.7
+      },
+      "zeroTolerance": {
+        "count": 3,
+        "percent": 2.5
+      },
+      "criticalRisk": {
+        "count": 11,
+        "percent": 9.2
+      }
+    },
+    "previous1": {
+      "scheduleId": "SCH-2025-Q4-042",
+      "scheduleIdentity": "Q4 2025 Branch Audit",
+      "totalIssues": 135,
+      "highRisk": {
+        "count": 25,
+        "percent": 18.5
+      },
+      "zeroTolerance": {
+        "count": 12,
+        "percent": 8.9
+      },
+      "criticalRisk": {
+        "count": 37,
+        "percent": 27.4
+      }
+    },
+    "previous2": {
+      "scheduleId": "SCH-2025-Q3-038",
+      "scheduleIdentity": "Q3 2025 Branch Audit",
+      "totalIssues": 140,
+      "highRisk": {
+        "count": 28,
+        "percent": 20
+      },
+      "zeroTolerance": {
+        "count": 8,
+        "percent": 5.7
+      },
+      "criticalRisk": {
+        "count": 36,
+        "percent": 25.7
+      }
+    },
+    "previous3": {
+      "scheduleId": "SCH-2025-Q2-029",
+      "scheduleIdentity": "Q2 2025 Branch Audit",
+      "totalIssues": 150,
+      "highRisk": {
+        "count": 30,
+        "percent": 20
+      },
+      "zeroTolerance": {
+        "count": 10,
+        "percent": 6.7
+      },
+      "criticalRisk": {
+        "count": 40,
+        "percent": 26.7
+      }
+    }
+  },
+  "criticalRiskTrend": {
+    "_description": "Comparison of Critical Risk (High Risk + Zero Tolerance combined) between current audit (Q1 2026) and immediately previous audit (Q4 2025). Positive deltas indicate risk is WORSENING (more critical issues now); negative deltas indicate risk is IMPROVING (fewer critical issues). This metric shows whether organizational risk management efforts are effective.",
+    "isComputable": true,
+    "countDelta": -26,
+    "percentageDelta": -18.2
+  },
+  "meta": {
+    "generatedAt": "2026-03-02T10:30:00Z",
+    "filters": {
+      "zone": "All Zones",
+      "auditType": "Branch Audit"
+    }
+  }
+}

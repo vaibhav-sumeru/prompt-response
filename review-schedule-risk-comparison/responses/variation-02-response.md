@@ -1,0 +1,2 @@
+- **Critical Risk Breakdown:** The "Q1 2026 Branch Audit" records 125 total issues, with **23 (18.4%)** classified as Critical Risk. This critical exposure comprises 19 High Risk issues and **4** Zero Tolerance issues, accounting for 15.2% and 3.2% of the total, respectively.
+- **Risk Trend:** Critical Risk for the "Q1 2026 Branch Audit" is **23 (18.4%)**, compared to 26 (20.0%) in the "Q4 2025 Branch Audit". This represents a change of -3 issues and -1.6% in Critical Risk from the previous schedule.

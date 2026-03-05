@@ -1,0 +1,104 @@
+{
+  "totalRecords": 5,
+  "meta": {
+    "generatedAt": "2023-10-05T10:00:00Z",
+    "currentScheduleId": "sch-2023-q3",
+    "prevScheduleCount": 2,
+    "prevScheduleIds": [
+      "sch-2023-q1",
+      "sch-2023-q2"
+    ],
+    "totalScheduleCount": 3,
+    "thresholdPercent": 10
+  },
+  "totals": {
+    "totalSubAudits": 5,
+    "totalIssuesAllSchedules": 140,
+    "totalIssuesCurrentSchedule": 50,
+    "totalIssuesPreviousSchedules": 90
+  },
+  "topByTotalIssues": [
+    {
+      "subAuditName": "Financial Reporting Audit",
+      "totalIssuesAllSchedules": 40,
+      "averageIssuesAllSchedules": 13.333333333333334,
+      "contributionPercent": 28.571428571428573
+    },
+    {
+      "subAuditName": "Compliance Verification",
+      "totalIssuesAllSchedules": 30,
+      "averageIssuesAllSchedules": 10,
+      "contributionPercent": 21.428571428571427
+    },
+    {
+      "subAuditName": "Vendor Assessment",
+      "totalIssuesAllSchedules": 27,
+      "averageIssuesAllSchedules": 9,
+      "contributionPercent": 19.285714285714285
+    },
+    {
+      "subAuditName": "Data Security Review",
+      "totalIssuesAllSchedules": 27,
+      "averageIssuesAllSchedules": 9,
+      "contributionPercent": 19.285714285714285
+    },
+    {
+      "subAuditName": "Employee Onboarding Audit",
+      "totalIssuesAllSchedules": 16,
+      "averageIssuesAllSchedules": 5.333333333333333,
+      "contributionPercent": 11.428571428571429
+    }
+  ],
+  "trendBuckets": {
+    "increasing": [
+      {
+        "subAuditName": "Financial Reporting Audit",
+        "currentIssueCount": 20,
+        "previousAverageIssueCount": 10,
+        "changeCount": 10,
+        "changePercent": 100,
+        "direction": "increasing"
+      },
+      {
+        "subAuditName": "Employee Onboarding Audit",
+        "currentIssueCount": 6,
+        "previousAverageIssueCount": 5,
+        "changeCount": 1,
+        "changePercent": 20,
+        "direction": "increasing"
+      },
+      {
+        "subAuditName": "Data Security Review",
+        "currentIssueCount": 10,
+        "previousAverageIssueCount": 8.5,
+        "changeCount": 1.5,
+        "changePercent": 17.64705882352941,
+        "direction": "increasing"
+      }
+    ],
+    "decreasing": [
+      {
+        "subAuditName": "Compliance Verification",
+        "currentIssueCount": 5,
+        "previousAverageIssueCount": 12.5,
+        "changeCount": -7.5,
+        "changePercent": -60,
+        "direction": "decreasing"
+      }
+    ],
+    "stable": [
+      {
+        "subAuditName": "Vendor Assessment",
+        "currentIssueCount": 9,
+        "previousAverageIssueCount": 9,
+        "changeCount": 0,
+        "changePercent": 0,
+        "direction": "stable"
+      }
+    ]
+  },
+  "persistentTop": {
+    "totalPersistentCount": 0,
+    "items": []
+  }
+}

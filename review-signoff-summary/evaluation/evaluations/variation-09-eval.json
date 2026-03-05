@@ -1,0 +1,75 @@
+{
+  "variationId": "variation-09",
+  "overallScore": "PASS",
+  "overallScoreNumeric": 95,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 50,
+      "totalNumbersInResponse": 32,
+      "correctNumbers": 32,
+      "mismatches": []
+    },
+    "entityAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 15,
+      "details": [
+        "All schedule IDs (S-2023-Q3, S-2024-Q2), sub-audit names (Financial Controls, IT Security, Operational Risk), and risk levels (Zero Tolerance, High, Medium) are correctly identified and used in context."
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "details": [
+        "Bullet 1: S-2023-Q3 correctly identified as having the lowest closure health (16.0).",
+        "Bullet 2: 'Financial Controls' correctly identified as having the highest non-accepted volume (150 issues) among sub-audits.",
+        "Bullet 3: 'Zero Tolerance' correctly identified as having the highest non-accepted proportion (90.0%) among risk levels.",
+        "Bullet 3: 'Medium' risk correctly identified as having the highest non-critical non-accepted count (205 issues)."
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "29/33",
+      "scoreNumeric": 87.87,
+      "weight": 10,
+      "missingDataPoints": [
+        "signoffStatusBySchedule.rows[1].scheduleId (S-2023-Q4)",
+        "signoffStatusBySchedule.rows[1].closureHealthScore (17.3)",
+        "signoffStatusBySchedule.rows[2].scheduleId (S-2024-Q1)",
+        "signoffStatusBySchedule.rows[2].closureHealthScore (18.3)"
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PARTIAL",
+      "scoreNumeric": 70,
+      "weight": 10,
+      "issues": [
+        "Bullet 3 exceeds the maximum word count (86 words; max 60 words)."
+      ]
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "All numerical values are directly extracted from the input payload without any recalculations or derived values."
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 50,
+    "entityAccuracy": 15,
+    "rankingAccuracy": 10,
+    "coverageCompleteness": 8.79,
+    "formattingCompliance": 7,
+    "mathematicalConsistency": 5,
+    "total": 95.79
+  },
+  "suggestions": [
+    "COVERAGE: Ensure all 4 schedule IDs and their closure health scores are explicitly mentioned in Bullet 1, as per the 'Required Data Points' list, even when describing a trend.",
+    "FORMATTING: Reduce the word count of Bullet 3 to adhere to the 30-60 word limit."
+  ],
+  "category": "all-worst"
+}

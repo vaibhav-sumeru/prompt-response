@@ -1,0 +1,56 @@
+{
+  "variationId": "variation-02",
+  "overallScore": "PASS",
+  "overallScoreNumeric": 100,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 50,
+      "totalNumbersInResponse": 27,
+      "correctNumbers": 27,
+      "mismatches": []
+    },
+    "entityAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 15,
+      "details": []
+    },
+    "rankingAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "details": []
+    },
+    "coverageCompleteness": {
+      "score": "16/16",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "missingDataPoints": []
+    },
+    "formattingCompliance": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "issues": []
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": []
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 50,
+    "entityAccuracy": 15,
+    "rankingAccuracy": 10,
+    "coverageCompleteness": 10,
+    "formattingCompliance": 10,
+    "mathematicalConsistency": 5,
+    "total": 100
+  },
+  "suggestions": [],
+  "category": "var-06-all-increasing"
+}

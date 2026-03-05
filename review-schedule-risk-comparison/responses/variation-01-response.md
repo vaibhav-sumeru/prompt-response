@@ -1,0 +1,2 @@
+- **Critical Risk Breakdown:** The "Q1 2026 Compliance Audit" records 150 total issues, with **36 (24.0%)** identified as Critical Risk. This Critical Risk category comprises 30 High Risk issues and **6** Zero Tolerance issues, accounting for 20.0% and 4.0% of the total, respectively.
+- **Risk Trend:** Critical Risk in the "Q1 2026 Compliance Audit" is **36 (24.0%)**, which represents a change of **+4** issues and **+1.1%** compared to the "Q4 2025 Compliance Audit", which had 32 (22.9%) Critical Risk issues.

@@ -1,0 +1,71 @@
+{
+  "variationId": "variation-02",
+  "overallScore": "PASS",
+  "overallScoreNumeric": 96.97,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 50,
+      "totalNumbersInResponse": 34,
+      "correctNumbers": 34,
+      "mismatches": []
+    },
+    "entityAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 15,
+      "details": [
+        "All schedule IDs (S-2023-Q4, S-2024-Q3), sub-audit names (Financial Controls, IT Security Review, Operational Efficiency), and risk levels (Zero Tolerance, High, Medium) are correctly identified and used in context."
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "details": [
+        "S-2023-Q4 (82.6) is correctly identified as having the lowest closure health score.",
+        "Financial Controls (10 non-accepted) is correctly identified as the sub-audit with the highest non-accepted issues, followed by IT Security Review (7) and Operational Efficiency (4).",
+        "Medium risk (9 non-accepted) is correctly identified as the highest non-critical risk tier by non-accepted count."
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "35/39",
+      "scoreNumeric": 89.74,
+      "weight": 10,
+      "missingDataPoints": [
+        "signoffStatusBySchedule.rows[1].scheduleId (S-2024-Q1)",
+        "signoffStatusBySchedule.rows[1].closureHealthScore (87.2)",
+        "signoffStatusBySchedule.rows[2].scheduleId (S-2024-Q2)",
+        "signoffStatusBySchedule.rows[2].closureHealthScore (89.9)"
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PARTIAL",
+      "scoreNumeric": 80,
+      "weight": 10,
+      "issues": [
+        "Bullet 3 exceeds the maximum word count (70 words; max 60 allowed)."
+      ]
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "All reported values are direct extractions from the payload. No new calculations were performed, and internal consistency checks (e.g., nonAccepted = pending + rejected) are valid."
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 50,
+    "entityAccuracy": 15,
+    "rankingAccuracy": 10,
+    "coverageCompleteness": 8.97,
+    "formattingCompliance": 8,
+    "mathematicalConsistency": 5,
+    "total": 96.97
+  },
+  "suggestions": [],
+  "category": "normal-balanced"
+}

@@ -1,0 +1,70 @@
+{
+  "variationId": "variation-04",
+  "overallScore": "PASS",
+  "overallScoreNumeric": 100,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 50,
+      "totalNumbersInResponse": 21,
+      "correctNumbers": 21,
+      "mismatches": []
+    },
+    "entityAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 15,
+      "details": [
+        "All mentioned sub-audit names (Financial Reporting Audit, Compliance Verification, Vendor Assessment) exist in the input data and are used in correct context."
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "details": [
+        "Top by total issues: Financial Reporting Audit correctly identified as leader with 40 issues.",
+        "Largest increase: Financial Reporting Audit with 100% change, correct.",
+        "Largest decrease: Compliance Verification with -60% change, correct.",
+        "Stable: Vendor Assessment with 0% change, correct."
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "18/18",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "missingDataPoints": []
+    },
+    "formattingCompliance": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "issues": [
+        "All paragraphs 30-60 words: Para1 ~48, Para2 ~58, Para3 ~38.",
+        "Correct bold labels and formatting.",
+        "No date issues."
+      ]
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "All percentages and comparisons directly from data, no derivations needed or present.",
+        "Contributions like 40/140 ≈ 28.57% consistent."
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 50,
+    "entityAccuracy": 15,
+    "rankingAccuracy": 10,
+    "coverageCompleteness": 10,
+    "formattingCompliance": 10,
+    "mathematicalConsistency": 5,
+    "total": 100
+  },
+  "suggestions": [],
+  "category": "var-08-no-persistent"
+}

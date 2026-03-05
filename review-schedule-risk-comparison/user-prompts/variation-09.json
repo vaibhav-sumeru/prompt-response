@@ -1,0 +1,55 @@
+{
+  "currentScheduleId": "SCH-2026-Q2-001",
+  "previousSchedulesAvailable": 1,
+  "schedules": {
+    "current": {
+      "scheduleId": "SCH-2026-Q2-001",
+      "scheduleIdentity": "Q2 2026 Regional Audit",
+      "totalIssues": 150,
+      "highRisk": {
+        "count": 30,
+        "percent": 20
+      },
+      "zeroTolerance": {
+        "count": 6,
+        "percent": 4
+      },
+      "criticalRisk": {
+        "count": 35,
+        "percent": 23.3
+      }
+    },
+    "previous1": {
+      "scheduleId": "SCH-2026-Q1-042",
+      "scheduleIdentity": "Q1 2026 Regional Audit",
+      "totalIssues": 140,
+      "highRisk": {
+        "count": 25,
+        "percent": 17.9
+      },
+      "zeroTolerance": {
+        "count": 4,
+        "percent": 2.9
+      },
+      "criticalRisk": {
+        "count": 28,
+        "percent": 20
+      }
+    },
+    "previous2": null,
+    "previous3": null
+  },
+  "criticalRiskTrend": {
+    "_description": "Comparison of Critical Risk (High Risk + Zero Tolerance combined) between current audit (Q1 2026) and immediately previous audit (Q4 2025). Positive deltas indicate risk is WORSENING (more critical issues now); negative deltas indicate risk is IMPROVING (fewer critical issues). This metric shows whether organizational risk management efforts are effective.",
+    "isComputable": true,
+    "countDelta": 7,
+    "percentageDelta": 3.3
+  },
+  "meta": {
+    "generatedAt": "2026-06-01T10:30:00Z",
+    "filters": {
+      "zone": "All Zones",
+      "auditType": "Regional Audit"
+    }
+  }
+}

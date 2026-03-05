@@ -1,0 +1,63 @@
+{
+  "variationId": "variation-01",
+  "overallScore": "PASS",
+  "overallScoreNumeric": 97,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 50,
+      "totalNumbersInResponse": 28,
+      "correctNumbers": 28,
+      "mismatches": []
+    },
+    "entityAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 15,
+      "details": []
+    },
+    "rankingAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "details": []
+    },
+    "coverageCompleteness": {
+      "score": "PARTIAL",
+      "scoreNumeric": 89.2,
+      "weight": 10,
+      "missingDataPoints": [
+        "signoffStatusBySchedule.rows[1].scheduleId (S-2023-Q4)",
+        "signoffStatusBySchedule.rows[1].closureHealthScore (84.1)",
+        "signoffStatusBySchedule.rows[2].scheduleId (S-2024-Q1)",
+        "signoffStatusBySchedule.rows[2].closureHealthScore (85.7)"
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PARTIAL",
+      "scoreNumeric": 90,
+      "weight": 10,
+      "issues": [
+        "The risk level name 'Zero Tolerance' was not bolded, despite having the highest nonAcceptedPctOfRisk (33.3%) as required by the prompt."
+      ]
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": []
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 50,
+    "entityAccuracy": 15,
+    "rankingAccuracy": 10,
+    "coverageCompleteness": 8.92,
+    "formattingCompliance": 9,
+    "mathematicalConsistency": 5,
+    "total": 97.92
+  },
+  "suggestions": [],
+  "category": "normal-balanced"
+}

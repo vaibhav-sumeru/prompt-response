@@ -1,0 +1,307 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Review Insight - Issue at Sub-Audit Level Schema",
+  "description": "JSON Schema defining the data contract for the review insight issue sub-audit level widget",
+  "type": "object",
+  "required": [
+    "totalRecords",
+    "meta",
+    "totals",
+    "topByTotalIssues",
+    "trendBuckets",
+    "persistentTop"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "totalRecords": {
+      "type": "integer",
+      "description": "Total number of sub-audits in the dataset"
+    },
+    "meta": {
+      "type": "object",
+      "required": [
+        "generatedAt",
+        "currentScheduleId",
+        "prevScheduleCount",
+        "prevScheduleIds",
+        "totalScheduleCount",
+        "thresholdPercent"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp when this data was generated"
+        },
+        "currentScheduleId": {
+          "type": "string",
+          "description": "Schedule ID for the current schedule"
+        },
+        "prevScheduleCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of previous schedules included in the comparison"
+        },
+        "prevScheduleIds": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "string"
+          },
+          "description": "Schedule IDs for previous schedules, ordered oldest to newest"
+        },
+        "totalScheduleCount": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total schedules included (current + previous)"
+        },
+        "thresholdPercent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percent threshold used for per-schedule threshold checks"
+        }
+      }
+    },
+    "totals": {
+      "type": "object",
+      "required": [
+        "totalSubAudits",
+        "totalIssuesAllSchedules",
+        "totalIssuesCurrentSchedule",
+        "totalIssuesPreviousSchedules"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "totalSubAudits": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of sub-audits"
+        },
+        "totalIssuesAllSchedules": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues across current and previous schedules"
+        },
+        "totalIssuesCurrentSchedule": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues in the current schedule"
+        },
+        "totalIssuesPreviousSchedules": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues across all previous schedules"
+        }
+      }
+    },
+    "topByTotalIssues": {
+      "type": "array",
+      "maxItems": 5,
+      "items": {
+        "$ref": "#/definitions/topVolumeItem"
+      },
+      "description": "Top sub-audits sorted by total issues across all included schedules (descending). Include up to 5 items; if fewer exist, include all."
+    },
+    "trendBuckets": {
+      "type": "object",
+      "required": [
+        "increasing",
+        "decreasing",
+        "stable"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "increasing": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/definitions/trendItem"
+          },
+          "description": "Sub-audits where current issues > previous average. Sort by changePercent descending. Include up to 3 items; if fewer exist, include all."
+        },
+        "decreasing": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/definitions/trendItem"
+          },
+          "description": "Sub-audits where current issues < previous average. Sort by changePercent ascending (more negative first). Include up to 3 items; if fewer exist, include all."
+        },
+        "stable": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "$ref": "#/definitions/trendItem"
+          },
+          "description": "Sub-audits where current issues are approximately equal to previous average (as defined by trend rule). Sort by absolute changePercent ascending. Include up to 3 items; if fewer exist, include all."
+        }
+      }
+    },
+    "persistentTop": {
+      "type": "object",
+      "required": [
+        "totalPersistentCount",
+        "items"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "totalPersistentCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of sub-audits that breached the threshold in all included schedules"
+        },
+        "items": {
+          "type": "array",
+          "maxItems": 5,
+          "items": {
+            "$ref": "#/definitions/persistentItem"
+          },
+          "description": "Top persistent sub-audits sorted by total issues across all schedules (descending). Include up to 5 items; if fewer exist, include all."
+        }
+      }
+    }
+  },
+  "definitions": {
+    "topVolumeItem": {
+      "type": "object",
+      "required": [
+        "subAuditName",
+        "totalIssuesAllSchedules",
+        "averageIssuesAllSchedules",
+        "contributionPercent"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "subAuditName": {
+          "type": "string",
+          "description": "Sub-audit name"
+        },
+        "totalIssuesAllSchedules": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues across current and previous schedules"
+        },
+        "averageIssuesAllSchedules": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Average issues per schedule across current + previous"
+        },
+        "contributionPercent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percent contribution to grand total issues"
+        }
+      }
+    },
+    "trendItem": {
+      "type": "object",
+      "required": [
+        "subAuditName",
+        "currentIssueCount",
+        "previousAverageIssueCount",
+        "changeCount",
+        "changePercent",
+        "direction"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "subAuditName": {
+          "type": "string",
+          "description": "Sub-audit name"
+        },
+        "currentIssueCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Issues in the current schedule"
+        },
+        "previousAverageIssueCount": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Average issues across previous schedules"
+        },
+        "changeCount": {
+          "type": "number",
+          "description": "Current issues minus previous average"
+        },
+        "changePercent": {
+          "type": "number",
+          "description": "Percent change versus previous average"
+        },
+        "direction": {
+          "type": "string",
+          "enum": [
+            "increasing",
+            "decreasing",
+            "stable"
+          ],
+          "description": "Trend classification based on change percent"
+        }
+      }
+    },
+    "persistentItem": {
+      "type": "object",
+      "required": [
+        "subAuditName",
+        "totalIssuesAllSchedules",
+        "scheduleBreakdown",
+        "allSchedulesThresholdBreached"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "subAuditName": {
+          "type": "string",
+          "description": "Sub-audit name"
+        },
+        "totalIssuesAllSchedules": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues across current and previous schedules"
+        },
+        "scheduleBreakdown": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/scheduleIssue"
+          },
+          "description": "Issue counts and threshold checks by schedule"
+        },
+        "allSchedulesThresholdBreached": {
+          "type": "boolean",
+          "description": "True if threshold breached in every included schedule"
+        }
+      }
+    },
+    "scheduleIssue": {
+      "type": "object",
+      "required": [
+        "scheduleId",
+        "issueCount",
+        "isCurrent",
+        "thresholdBreached"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "scheduleId": {
+          "type": "string",
+          "description": "Schedule identifier"
+        },
+        "issueCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Issue count for this schedule"
+        },
+        "isCurrent": {
+          "type": "boolean",
+          "description": "True if this schedule is the current schedule"
+        },
+        "thresholdBreached": {
+          "type": "boolean",
+          "description": "True if issues exceed threshold percent for this schedule"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "variationId": "variation-09",
+  "overallScore": "FAIL",
+  "overallScoreNumeric": 24,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 50,
+      "totalNumbersInResponse": 28,
+      "correctNumbers": 0,
+      "mismatches": [
+        {
+          "foundInResponse": "10",
+          "expectedValue": "none",
+          "context": "total sub-audits",
+          "jsonPath": "no match",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "1250",
+          "expectedValue": "none",
+          "context": "total issues all schedules",
+          "jsonPath": "no match",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "500",
+          "expectedValue": "none",
+          "context": "issues for Sub-Audit A",
+          "jsonPath": "no match",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "3",
+          "expectedValue": "none",
+          "context": "previous schedules",
+          "jsonPath": "no match",
+          "severity": "CRITICAL",
+          "paragraph": "Trend Movement"
+        },
+        {
+          "foundInResponse": "10.0",
+          "expectedValue": "none",
+          "context": "threshold percent",
+          "jsonPath": "no match",
+          "severity": "CRITICAL",
+          "paragraph": "Persistent Threshold Breaches"
+        }
+      ]
+    },
+    "entityAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 15,
+      "details": [
+        "All sub-audit names (e.g., 'Sub-Audit A', 'Sub-Audit B') hallucinated; no entities exist in input schema"
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 10,
+      "details": [
+        "Rankings (e.g., 'leads with', top contributors) cannot be verified; no data in input to confirm order or extremes"
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "15/16",
+      "scoreNumeric": 93.75,
+      "weight": 10,
+      "missingDataPoints": [
+        "meta.currentScheduleId"
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "issues": []
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "Derived percentages (e.g., 500/1250=40%, trend changes) consistent within the response's invented values"
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 0,
+    "entityAccuracy": 0,
+    "rankingAccuracy": 0,
+    "coverageCompleteness": 9.375,
+    "formattingCompliance": 10,
+    "mathematicalConsistency": 5,
+    "total": 24
+  },
+  "suggestions": [
+    "Input data is schema only, lacking actual payload; all numeric and entity values in response are hallucinated",
+    "Enforce strict validation against actual data instances, not schema, to prevent invention of values"
+  ],
+  "category": "var-13-extreme-skew"
+}

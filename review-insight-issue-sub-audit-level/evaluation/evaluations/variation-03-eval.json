@@ -1,0 +1,109 @@
+{
+  "variationId": "variation-03",
+  "overallScore": "FAIL",
+  "overallScoreNumeric": 24,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 50,
+      "totalNumbersInResponse": 28,
+      "correctNumbers": 0,
+      "mismatches": [
+        {
+          "foundInResponse": "10",
+          "expectedValue": "none",
+          "context": "Across 10 sub-audits",
+          "jsonPath": "no match in schema",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "1250",
+          "expectedValue": "none",
+          "context": "total of 1250 issues",
+          "jsonPath": "no match in schema",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "500",
+          "expectedValue": "none",
+          "context": "500 issues",
+          "jsonPath": "no match in schema",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "3",
+          "expectedValue": "none",
+          "context": "3 previous schedules",
+          "jsonPath": "no match in schema",
+          "severity": "CRITICAL",
+          "paragraph": "Trend Movement"
+        },
+        {
+          "foundInResponse": "10.0",
+          "expectedValue": "none",
+          "context": "10.0% threshold",
+          "jsonPath": "no match in schema",
+          "severity": "CRITICAL",
+          "paragraph": "Persistent Threshold Breaches"
+        }
+      ]
+    },
+    "entityAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 15,
+      "details": [
+        "All sub-audit names (e.g., 'Sub-Audit A', 'Sub-Audit B') are hallucinated; no entity names exist in the input schema"
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 10,
+      "details": [
+        "Rankings (e.g., top sub-audits, increasing/decreasing trends) cannot be verified; all appear hallucinated due to absence of instance data in schema"
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "14/15",
+      "scoreNumeric": 93,
+      "weight": 10,
+      "missingDataPoints": [
+        "meta.currentScheduleId (not mentioned in Trend Movement paragraph)"
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "issues": []
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "Internal calculations (e.g., 500/1250 = 40%, change percentages like (120-80)/80 = 50%) are consistent within the response"
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 0,
+    "entityAccuracy": 0,
+    "rankingAccuracy": 0,
+    "coverageCompleteness": 9,
+    "formattingCompliance": 10,
+    "mathematicalConsistency": 5,
+    "total": 24
+  },
+  "suggestions": [
+    "NUMERIC: Input data is schema only, not instance data; all numbers hallucinated. Provide actual JSON payload for evaluation.",
+    "ENTITY: Response invents sub-audit names; enforce 'Not Available' for missing instance data.",
+    "COVERAGE: Missing explicit mention of currentScheduleId; instruct to include or note as 'Not Available' if absent."
+  ],
+  "category": "var-07-all-decreasing"
+}

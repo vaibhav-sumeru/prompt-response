@@ -1,0 +1,212 @@
+{
+  "totalRecords": 5,
+  "meta": {
+    "generatedAt": "2024-10-01T12:00:00Z",
+    "currentScheduleId": "sch-2024-01",
+    "prevScheduleCount": 2,
+    "prevScheduleIds": [
+      "sch-2023-01",
+      "sch-2023-02"
+    ],
+    "totalScheduleCount": 3,
+    "thresholdPercent": 5
+  },
+  "totals": {
+    "totalSubAudits": 5,
+    "totalIssuesAllSchedules": 150,
+    "totalIssuesCurrentSchedule": 50,
+    "totalIssuesPreviousSchedules": 100
+  },
+  "topByTotalIssues": [
+    {
+      "subAuditName": "Financial Controls",
+      "totalIssuesAllSchedules": 30,
+      "averageIssuesAllSchedules": 10,
+      "contributionPercent": 20
+    },
+    {
+      "subAuditName": "Regulatory Compliance",
+      "totalIssuesAllSchedules": 30,
+      "averageIssuesAllSchedules": 10,
+      "contributionPercent": 20
+    },
+    {
+      "subAuditName": "Vendor Management",
+      "totalIssuesAllSchedules": 30,
+      "averageIssuesAllSchedules": 10,
+      "contributionPercent": 20
+    },
+    {
+      "subAuditName": "Data Privacy",
+      "totalIssuesAllSchedules": 30,
+      "averageIssuesAllSchedules": 10,
+      "contributionPercent": 20
+    },
+    {
+      "subAuditName": "Risk Assessment",
+      "totalIssuesAllSchedules": 30,
+      "averageIssuesAllSchedules": 10,
+      "contributionPercent": 20
+    }
+  ],
+  "trendBuckets": {
+    "increasing": [],
+    "decreasing": [],
+    "stable": [
+      {
+        "subAuditName": "Financial Controls",
+        "currentIssueCount": 10,
+        "previousAverageIssueCount": 10,
+        "changeCount": 0,
+        "changePercent": 0,
+        "direction": "stable"
+      },
+      {
+        "subAuditName": "Regulatory Compliance",
+        "currentIssueCount": 10,
+        "previousAverageIssueCount": 10,
+        "changeCount": 0,
+        "changePercent": 0,
+        "direction": "stable"
+      },
+      {
+        "subAuditName": "Vendor Management",
+        "currentIssueCount": 10,
+        "previousAverageIssueCount": 10,
+        "changeCount": 0,
+        "changePercent": 0,
+        "direction": "stable"
+      }
+    ]
+  },
+  "persistentTop": {
+    "totalPersistentCount": 5,
+    "items": [
+      {
+        "subAuditName": "Financial Controls",
+        "totalIssuesAllSchedules": 30,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sch-2023-01",
+            "issueCount": 10,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-02",
+            "issueCount": 10,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2024-01",
+            "issueCount": 10,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      },
+      {
+        "subAuditName": "Regulatory Compliance",
+        "totalIssuesAllSchedules": 30,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sch-2023-01",
+            "issueCount": 10,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-02",
+            "issueCount": 10,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2024-01",
+            "issueCount": 10,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      },
+      {
+        "subAuditName": "Vendor Management",
+        "totalIssuesAllSchedules": 30,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sch-2023-01",
+            "issueCount": 10,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-02",
+            "issueCount": 10,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2024-01",
+            "issueCount": 10,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      },
+      {
+        "subAuditName": "Data Privacy",
+        "totalIssuesAllSchedules": 30,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sch-2023-01",
+            "issueCount": 10,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-02",
+            "issueCount": 10,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2024-01",
+            "issueCount": 10,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      },
+      {
+        "subAuditName": "Risk Assessment",
+        "totalIssuesAllSchedules": 30,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sch-2023-01",
+            "issueCount": 10,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2023-02",
+            "issueCount": 10,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-2024-01",
+            "issueCount": 10,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      }
+    ]
+  }
+}

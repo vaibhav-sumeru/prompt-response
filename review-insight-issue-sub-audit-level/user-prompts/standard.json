@@ -1,0 +1,23 @@
+{
+  "totalRecords": 2,
+  "meta": {
+    "generatedAt": "2026-03-02T00:00:00Z",
+    "currentScheduleId": "S-2024-04",
+    "prevScheduleCount": 3,
+    "prevScheduleIds": ["S-2024-01","S-2024-02","S-2024-03"],
+    "totalScheduleCount": 4,
+    "thresholdPercent": 20
+  },
+  "totals": {
+    "totalSubAudits": 2,
+    "totalIssuesAllSchedules": 140,
+    "totalIssuesCurrentSchedule": 52,
+    "totalIssuesPreviousSchedules": 88
+  },
+  "topByTotalIssues": [
+    {"subAuditName":"Operational Controls","totalIssuesAllSchedules":121,"averageIssuesAllSchedules":30.3,"contributionPercent":86.4},
+    {"subAuditName":"Financial Audit","totalIssuesAllSchedules":33,"averageIssuesAllSchedules":8.3,"contributionPercent":23.6}
+  ],
+  "trendBuckets": {"increasing":[{"subAuditName":"Operational Controls","currentIssueCount":38,"previousAverageIssueCount":27.7,"changeCount":10.3,"changePercent":37.2,"direction":"increasing"}],"decreasing":[{"subAuditName":"Financial Audit","currentIssueCount":14,"previousAverageIssueCount":6.3,"changeCount":7.7,"changePercent":122.2,"direction":"decreasing"}],"stable":[]},
+  "persistentTop": {"totalPersistentCount":1,"items":[{"subAuditName":"Operational Controls","totalIssuesAllSchedules":121,"scheduleBreakdown":[{"scheduleId":"S-2024-01","issueCount":24,"isCurrent":false,"thresholdBreached":true},{"scheduleId":"S-2024-02","issueCount":28,"isCurrent":false,"thresholdBreached":true},{"scheduleId":"S-2024-03","issueCount":31,"isCurrent":false,"thresholdBreached":true},{"scheduleId":"S-2024-04","issueCount":38,"isCurrent":true,"thresholdBreached":true}],"allSchedulesThresholdBreached":true}]}
+}

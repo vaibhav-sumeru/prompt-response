@@ -1,0 +1,62 @@
+{
+  "variationId": "variation-10",
+  "overallScore": "PASS",
+  "overallScoreNumeric": 100,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 50,
+      "totalNumbersInResponse": 18,
+      "correctNumbers": 18,
+      "mismatches": []
+    },
+    "entityAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 15,
+      "details": [
+        "All sub-audit names (Financial Controls, Regulatory Compliance, Vendor Management, Data Privacy, Risk Assessment) match exactly and are used in correct contexts."
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "details": [
+        "TopByTotalIssues listed correctly (all tied at 30); trend buckets accurately reflect empty increasing/decreasing and stable items; persistent items ranked correctly (all tied)."
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "24/24",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "missingDataPoints": []
+    },
+    "formattingCompliance": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "issues": []
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "All percentages and totals consistent (e.g., 5 sub-audits at 20% each = 100%; 5*30=150 total issues)."
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 50,
+    "entityAccuracy": 15,
+    "rankingAccuracy": 10,
+    "coverageCompleteness": 10,
+    "formattingCompliance": 10,
+    "mathematicalConsistency": 5,
+    "total": 100
+  },
+  "suggestions": [],
+  "category": "var-14-uniform-distribution"
+}

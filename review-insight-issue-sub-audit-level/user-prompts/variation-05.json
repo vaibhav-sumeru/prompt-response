@@ -1,0 +1,229 @@
+{
+  "totalRecords": 10,
+  "meta": {
+    "generatedAt": "2024-10-01T12:00:00Z",
+    "currentScheduleId": "sch-003",
+    "prevScheduleCount": 2,
+    "prevScheduleIds": [
+      "sch-001",
+      "sch-002"
+    ],
+    "totalScheduleCount": 3,
+    "thresholdPercent": 20
+  },
+  "totals": {
+    "totalSubAudits": 10,
+    "totalIssuesAllSchedules": 430,
+    "totalIssuesCurrentSchedule": 150,
+    "totalIssuesPreviousSchedules": 280
+  },
+  "topByTotalIssues": [
+    {
+      "subAuditName": "Financial Reporting",
+      "totalIssuesAllSchedules": 75,
+      "averageIssuesAllSchedules": 25,
+      "contributionPercent": 17.44186046511628
+    },
+    {
+      "subAuditName": "Compliance Checks",
+      "totalIssuesAllSchedules": 75,
+      "averageIssuesAllSchedules": 25,
+      "contributionPercent": 17.44186046511628
+    },
+    {
+      "subAuditName": "Risk Assessment",
+      "totalIssuesAllSchedules": 75,
+      "averageIssuesAllSchedules": 25,
+      "contributionPercent": 17.44186046511628
+    },
+    {
+      "subAuditName": "Internal Controls",
+      "totalIssuesAllSchedules": 75,
+      "averageIssuesAllSchedules": 25,
+      "contributionPercent": 17.44186046511628
+    },
+    {
+      "subAuditName": "Vendor Management",
+      "totalIssuesAllSchedules": 50,
+      "averageIssuesAllSchedules": 16.666666666666668,
+      "contributionPercent": 11.627906976744185
+    }
+  ],
+  "trendBuckets": {
+    "increasing": [
+      {
+        "subAuditName": "Asset Management",
+        "currentIssueCount": 15,
+        "previousAverageIssueCount": 5,
+        "changeCount": 10,
+        "changePercent": 200,
+        "direction": "increasing"
+      },
+      {
+        "subAuditName": "Payroll Processing",
+        "currentIssueCount": 20,
+        "previousAverageIssueCount": 10,
+        "changeCount": 10,
+        "changePercent": 100,
+        "direction": "increasing"
+      },
+      {
+        "subAuditName": "Vendor Management",
+        "currentIssueCount": 20,
+        "previousAverageIssueCount": 15,
+        "changeCount": 5,
+        "changePercent": 33.333333333333336,
+        "direction": "increasing"
+      }
+    ],
+    "decreasing": [
+      {
+        "subAuditName": "IT Security",
+        "currentIssueCount": 3,
+        "previousAverageIssueCount": 15,
+        "changeCount": -12,
+        "changePercent": -80,
+        "direction": "decreasing"
+      },
+      {
+        "subAuditName": "Data Privacy",
+        "currentIssueCount": 5,
+        "previousAverageIssueCount": 10,
+        "changeCount": -5,
+        "changePercent": -50,
+        "direction": "decreasing"
+      }
+    ],
+    "stable": [
+      {
+        "subAuditName": "Financial Reporting",
+        "currentIssueCount": 25,
+        "previousAverageIssueCount": 25,
+        "changeCount": 0,
+        "changePercent": 0,
+        "direction": "stable"
+      },
+      {
+        "subAuditName": "Human Resources",
+        "currentIssueCount": 7,
+        "previousAverageIssueCount": 7,
+        "changeCount": 0,
+        "changePercent": 0,
+        "direction": "stable"
+      },
+      {
+        "subAuditName": "Procurement",
+        "currentIssueCount": 6,
+        "previousAverageIssueCount": 5,
+        "changeCount": 1,
+        "changePercent": 20,
+        "direction": "stable"
+      }
+    ]
+  },
+  "persistentTop": {
+    "totalPersistentCount": 4,
+    "items": [
+      {
+        "subAuditName": "Financial Reporting",
+        "totalIssuesAllSchedules": 75,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sch-001",
+            "issueCount": 25,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-002",
+            "issueCount": 25,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-003",
+            "issueCount": 25,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      },
+      {
+        "subAuditName": "Compliance Checks",
+        "totalIssuesAllSchedules": 75,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sch-001",
+            "issueCount": 25,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-002",
+            "issueCount": 25,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-003",
+            "issueCount": 25,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      },
+      {
+        "subAuditName": "Risk Assessment",
+        "totalIssuesAllSchedules": 75,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sch-001",
+            "issueCount": 25,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-002",
+            "issueCount": 25,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-003",
+            "issueCount": 25,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      },
+      {
+        "subAuditName": "Internal Controls",
+        "totalIssuesAllSchedules": 75,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sch-001",
+            "issueCount": 25,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-002",
+            "issueCount": 25,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sch-003",
+            "issueCount": 25,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      }
+    ]
+  }
+}

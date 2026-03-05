@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "generatedAt": "2024-05-15T10:00:00Z",
+    "currentScheduleId": "S-2024-Q2",
+    "schedulesIncluded": [
+      "S-2023-Q3",
+      "S-2023-Q4",
+      "S-2024-Q1",
+      "S-2024-Q2"
+    ]
+  },
+  "signoffStatusBySchedule": {
+    "description": "Trend of sign-off status and closure health across the current and previous three schedules.",
+    "rows": [
+      {
+        "scheduleId": "S-2023-Q3",
+        "scheduleTag": "Previous 3",
+        "totalIssues": 200,
+        "accepted": 20,
+        "acceptedPct": 10,
+        "rejected": 90,
+        "rejectedPct": 45,
+        "pending": 80,
+        "pendingPct": 40,
+        "directResolution": 10,
+        "directResolutionPct": 5,
+        "nonAcceptedPct": 85,
+        "closureHealthScore": 15
+      },
+      {
+        "scheduleId": "S-2023-Q4",
+        "scheduleTag": "Previous 2",
+        "totalIssues": 180,
+        "accepted": 100,
+        "acceptedPct": 55.6,
+        "rejected": 30,
+        "rejectedPct": 16.7,
+        "pending": 30,
+        "pendingPct": 16.7,
+        "directResolution": 20,
+        "directResolutionPct": 11.1,
+        "nonAcceptedPct": 33.4,
+        "closureHealthScore": 66.6
+      },
+      {
+        "scheduleId": "S-2024-Q1",
+        "scheduleTag": "Previous 1",
+        "totalIssues": 150,
+        "accepted": 90,
+        "acceptedPct": 60,
+        "rejected": 15,
+        "rejectedPct": 10,
+        "pending": 20,
+        "pendingPct": 13.3,
+        "directResolution": 25,
+        "directResolutionPct": 16.7,
+        "nonAcceptedPct": 23.3,
+        "closureHealthScore": 76.7
+      },
+      {
+        "scheduleId": "S-2024-Q2",
+        "scheduleTag": "Current",
+        "totalIssues": 160,
+        "accepted": 80,
+        "acceptedPct": 50,
+        "rejected": 25,
+        "rejectedPct": 15.6,
+        "pending": 25,
+        "pendingPct": 15.6,
+        "directResolution": 30,
+        "directResolutionPct": 18.8,
+        "nonAcceptedPct": 31.2,
+        "closureHealthScore": 68.8
+      }
+    ]
+  },
+  "subAuditBottleneckAnalysis": {
+    "description": "Sub-audit level sign-off bottleneck breakdown for the current schedule.",
+    "scopeScheduleId": "S-2024-Q2",
+    "totalSubAudits": 5,
+    "rows": [
+      {
+        "subAuditName": "Vendor Management",
+        "totalIssues": 60,
+        "accepted": 20,
+        "acceptedPct": 33.3,
+        "rejected": 20,
+        "rejectedPct": 33.3,
+        "pending": 15,
+        "pendingPct": 25,
+        "directResolution": 5,
+        "directResolutionPct": 8.3,
+        "nonAccepted": 35,
+        "nonAcceptedPct": 58.3,
+        "closureHealthScore": 41.7
+      },
+      {
+        "subAuditName": "IT Security Audit",
+        "totalIssues": 40,
+        "accepted": 25,
+        "acceptedPct": 62.5,
+        "rejected": 5,
+        "rejectedPct": 12.5,
+        "pending": 5,
+        "pendingPct": 12.5,
+        "directResolution": 5,
+        "directResolutionPct": 12.5,
+        "nonAccepted": 10,
+        "nonAcceptedPct": 25,
+        "closureHealthScore": 75
+      },
+      {
+        "subAuditName": "Financial Controls",
+        "totalIssues": 30,
+        "accepted": 20,
+        "acceptedPct": 66.7,
+        "rejected": 3,
+        "rejectedPct": 10,
+        "pending": 2,
+        "pendingPct": 6.7,
+        "directResolution": 5,
+        "directResolutionPct": 16.7,
+        "nonAccepted": 5,
+        "nonAcceptedPct": 16.7,
+        "closureHealthScore": 83.3
+      }
+    ]
+  },
+  "riskLevelBlockingAnalysis": {
+    "description": "Risk-level sign-off blocking breakdown for the current schedule.",
+    "scopeScheduleId": "S-2024-Q2",
+    "rows": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "totalIssues": 10,
+        "accepted": 2,
+        "acceptedPct": 20,
+        "rejected": 6,
+        "rejectedPct": 60,
+        "pending": 2,
+        "pendingPct": 20,
+        "directResolution": 0,
+        "directResolutionPct": 0,
+        "nonAccepted": 8,
+        "nonAcceptedPctOfRisk": 80,
+        "closureHealthScore": 20
+      },
+      {
+        "riskLevel": "High",
+        "totalIssues": 30,
+        "accepted": 10,
+        "acceptedPct": 33.3,
+        "rejected": 10,
+        "rejectedPct": 33.3,
+        "pending": 5,
+        "pendingPct": 16.7,
+        "directResolution": 5,
+        "directResolutionPct": 16.7,
+        "nonAccepted": 15,
+        "nonAcceptedPctOfRisk": 50,
+        "closureHealthScore": 50
+      },
+      {
+        "riskLevel": "Medium",
+        "totalIssues": 70,
+        "accepted": 40,
+        "acceptedPct": 57.1,
+        "rejected": 7,
+        "rejectedPct": 10,
+        "pending": 8,
+        "pendingPct": 11.4,
+        "directResolution": 15,
+        "directResolutionPct": 21.4,
+        "nonAccepted": 15,
+        "nonAcceptedPctOfRisk": 21.4,
+        "closureHealthScore": 78.6
+      },
+      {
+        "riskLevel": "Low",
+        "totalIssues": 50,
+        "accepted": 28,
+        "acceptedPct": 56,
+        "rejected": 2,
+        "rejectedPct": 4,
+        "pending": 10,
+        "pendingPct": 20,
+        "directResolution": 10,
+        "directResolutionPct": 20,
+        "nonAccepted": 12,
+        "nonAcceptedPctOfRisk": 24,
+        "closureHealthScore": 76
+      }
+    ],
+    "criticalSummary": {
+      "totalIssues": 40,
+      "pending": 7,
+      "pendingPct": 17.5,
+      "rejected": 16,
+      "rejectedPct": 40,
+      "nonAccepted": 23,
+      "nonAcceptedPctOfCritical": 57.5,
+      "nonAcceptedPctOfSchedule": 14.4,
+      "criticalShareOfTotalNonAccepted": 46
+    }
+  }
+}

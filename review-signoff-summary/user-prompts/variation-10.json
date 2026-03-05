@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-29T10:30:00Z",
+    "currentScheduleId": "S-2024-Q3",
+    "schedulesIncluded": [
+      "S-2024-Q1",
+      "S-2024-Q2",
+      "S-2024-Q3"
+    ]
+  },
+  "signoffStatusBySchedule": {
+    "description": "Sign-off status distribution across current and previous schedules.",
+    "rows": [
+      {
+        "scheduleId": "S-2024-Q1",
+        "scheduleTag": "Previous 2",
+        "totalIssues": 120,
+        "accepted": 90,
+        "acceptedPct": 75,
+        "rejected": 10,
+        "rejectedPct": 8.3,
+        "pending": 15,
+        "pendingPct": 12.5,
+        "directResolution": 5,
+        "directResolutionPct": 4.2,
+        "nonAcceptedPct": 20.8,
+        "closureHealthScore": 79.2
+      },
+      {
+        "scheduleId": "S-2024-Q2",
+        "scheduleTag": "Previous 1",
+        "totalIssues": 150,
+        "accepted": 100,
+        "acceptedPct": 66.7,
+        "rejected": 25,
+        "rejectedPct": 16.7,
+        "pending": 20,
+        "pendingPct": 13.3,
+        "directResolution": 5,
+        "directResolutionPct": 3.3,
+        "nonAcceptedPct": 30,
+        "closureHealthScore": 70
+      },
+      {
+        "scheduleId": "S-2024-Q3",
+        "scheduleTag": "Current",
+        "totalIssues": 180,
+        "accepted": 110,
+        "acceptedPct": 61.1,
+        "rejected": 35,
+        "rejectedPct": 19.4,
+        "pending": 30,
+        "pendingPct": 16.7,
+        "directResolution": 5,
+        "directResolutionPct": 2.8,
+        "nonAcceptedPct": 36.1,
+        "closureHealthScore": 63.9
+      }
+    ]
+  },
+  "subAuditBottleneckAnalysis": {
+    "description": "Sub-audit level sign-off bottleneck breakdown for the current schedule.",
+    "scopeScheduleId": "S-2024-Q3",
+    "totalSubAudits": 5,
+    "rows": [
+      {
+        "subAuditName": "Financial Controls Review",
+        "totalIssues": 70,
+        "accepted": 35,
+        "acceptedPct": 50,
+        "rejected": 20,
+        "rejectedPct": 28.6,
+        "pending": 15,
+        "pendingPct": 21.4,
+        "directResolution": 0,
+        "directResolutionPct": 0,
+        "nonAccepted": 35,
+        "nonAcceptedPct": 50,
+        "closureHealthScore": 50
+      },
+      {
+        "subAuditName": "IT Security Audit",
+        "totalIssues": 50,
+        "accepted": 30,
+        "acceptedPct": 60,
+        "rejected": 10,
+        "rejectedPct": 20,
+        "pending": 10,
+        "pendingPct": 20,
+        "directResolution": 0,
+        "directResolutionPct": 0,
+        "nonAccepted": 20,
+        "nonAcceptedPct": 40,
+        "closureHealthScore": 60
+      }
+    ]
+  },
+  "riskLevelBlockingAnalysis": {
+    "description": "Risk-level sign-off blocking breakdown for the current schedule.",
+    "scopeScheduleId": "S-2024-Q3",
+    "rows": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "totalIssues": 20,
+        "accepted": 8,
+        "acceptedPct": 40,
+        "rejected": 7,
+        "rejectedPct": 35,
+        "pending": 5,
+        "pendingPct": 25,
+        "directResolution": 0,
+        "directResolutionPct": 0,
+        "nonAccepted": 12,
+        "nonAcceptedPctOfRisk": 60,
+        "closureHealthScore": 40
+      },
+      {
+        "riskLevel": "High",
+        "totalIssues": 40,
+        "accepted": 20,
+        "acceptedPct": 50,
+        "rejected": 10,
+        "rejectedPct": 25,
+        "pending": 8,
+        "pendingPct": 20,
+        "directResolution": 2,
+        "directResolutionPct": 5,
+        "nonAccepted": 18,
+        "nonAcceptedPctOfRisk": 45,
+        "closureHealthScore": 55
+      },
+      {
+        "riskLevel": "Medium",
+        "totalIssues": 70,
+        "accepted": 45,
+        "acceptedPct": 64.3,
+        "rejected": 10,
+        "rejectedPct": 14.3,
+        "pending": 15,
+        "pendingPct": 21.4,
+        "directResolution": 0,
+        "directResolutionPct": 0,
+        "nonAccepted": 25,
+        "nonAcceptedPctOfRisk": 35.7,
+        "closureHealthScore": 64.3
+      },
+      {
+        "riskLevel": "Low",
+        "totalIssues": 50,
+        "accepted": 37,
+        "acceptedPct": 74,
+        "rejected": 0,
+        "rejectedPct": 0,
+        "pending": 10,
+        "pendingPct": 20,
+        "directResolution": 3,
+        "directResolutionPct": 6,
+        "nonAccepted": 10,
+        "nonAcceptedPctOfRisk": 20,
+        "closureHealthScore": 80
+      }
+    ],
+    "criticalSummary": {
+      "totalIssues": 60,
+      "pending": 13,
+      "pendingPct": 21.7,
+      "rejected": 17,
+      "rejectedPct": 28.3,
+      "nonAccepted": 30,
+      "nonAcceptedPctOfCritical": 50,
+      "nonAcceptedPctOfSchedule": 16.7,
+      "criticalShareOfTotalNonAccepted": 46.2
+    }
+  }
+}

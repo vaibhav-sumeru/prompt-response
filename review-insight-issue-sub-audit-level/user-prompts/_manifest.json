@@ -1,0 +1,57 @@
+[
+  {
+    "id": "variation-01",
+    "category": "var-05-all-stable",
+    "description": "All sub-audits have Stable trends. trendBuckets.increasing and decreasing arrays must be completely empty. Fill only the stable array."
+  },
+  {
+    "id": "variation-02",
+    "category": "var-06-all-increasing",
+    "description": "All sub-audits have Increasing trends. trendBuckets.stable and decreasing arrays must be completely empty. Fill only the increasing array."
+  },
+  {
+    "id": "variation-03",
+    "category": "var-07-all-decreasing",
+    "description": "All sub-audits have Decreasing trends. trendBuckets.stable and increasing arrays must be completely empty. Fill only the decreasing array."
+  },
+  {
+    "id": "variation-04",
+    "category": "var-08-no-persistent",
+    "description": "Zero sub-audits breach threshold persistently. persistentTop.totalPersistentCount must be 0 and persistentTop.items must be an empty array []."
+  },
+  {
+    "id": "variation-05",
+    "category": "var-09-multiple-persistent",
+    "description": "Multiple sub-audits (exactly 4) breach the threshold persistently across all schedules. persistentTop.totalPersistentCount is 4 and items contains 4 distinct objects."
+  },
+  {
+    "id": "variation-06",
+    "category": "var-10-tie-breaker-issues",
+    "description": "The top 3 sub-audits in topByTotalIssues have exactly the same identical totalIssuesAllSchedules and avergeIssuesAllSchedules. Test tie-breaking format."
+  },
+  {
+    "id": "variation-07",
+    "category": "var-11-one-prev-schedule",
+    "description": "Exactly 1 previous schedule exists. meta.prevScheduleCount = 1, meta.prevScheduleIds has 1 item, totalScheduleCount = 2."
+  },
+  {
+    "id": "variation-08",
+    "category": "var-12-zero-issues-current",
+    "description": "There are exactly 0 issues in the current schedule. totals.totalIssuesCurrentSchedule = 0. All currentIssueCounts in trends should be 0. All persistentTop items must have issueCount = 0 for the current schedule."
+  },
+  {
+    "id": "variation-09",
+    "category": "var-13-extreme-skew",
+    "description": "One single sub-audit accounts for 95% of total issues. topByTotalIssues first item has very high contributionPercent, the remaining are minimal (1% or 2%)."
+  },
+  {
+    "id": "variation-10",
+    "category": "var-14-uniform-distribution",
+    "description": "Exactly 5 sub-audits exist and all 5 have precisely the same issue counts resulting in 20% contribution each."
+  },
+  {
+    "id": "variation-11",
+    "category": "var-15-max-trend-buckets",
+    "description": "All three trend buckets (increasing, decreasing, stable) are filled to their maximum of 3 items each. 9 trend items total."
+  }
+]

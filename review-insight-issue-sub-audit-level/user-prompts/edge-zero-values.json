@@ -1,0 +1,8 @@
+{
+  "totalRecords": 3,
+  "meta": {"generatedAt":"2026-03-02T00:00:00Z","currentScheduleId":"S-2026-01","prevScheduleCount":3,"prevScheduleIds":["S-2025-10","S-2025-11","S-2025-12"],"totalScheduleCount":4,"thresholdPercent":20},
+  "totals": {"totalSubAudits":3,"totalIssuesAllSchedules":10,"totalIssuesCurrentSchedule":2,"totalIssuesPreviousSchedules":8},
+  "topByTotalIssues":[{"subAuditName":"Op Controls","totalIssuesAllSchedules":6,"averageIssuesAllSchedules":1.5,"contributionPercent":60},{"subAuditName":"IT Sec","totalIssuesAllSchedules":4,"averageIssuesAllSchedules":1,"contributionPercent":40}],
+  "trendBuckets":{"increasing":[{"subAuditName":"Op Controls","currentIssueCount":2,"previousAverageIssueCount":1.0,"changeCount":1.0,"changePercent":100.0,"direction":"increasing"}],"decreasing":[],"stable":[]},
+  "persistentTop":{"totalPersistentCount":0,"items":[]}
+}

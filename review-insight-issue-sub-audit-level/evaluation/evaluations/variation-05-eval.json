@@ -1,0 +1,68 @@
+{
+  "variationId": "variation-05",
+  "overallScore": "PASS",
+  "overallScoreNumeric": 98,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 50,
+      "totalNumbersInResponse": 22,
+      "correctNumbers": 22,
+      "mismatches": []
+    },
+    "entityAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 15,
+      "details": []
+    },
+    "rankingAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "details": []
+    },
+    "coverageCompleteness": {
+      "score": "41/48",
+      "scoreNumeric": 85,
+      "weight": 10,
+      "missingDataPoints": [
+        "topByTotalIssues[4].averageIssuesAllSchedules (Vendor Management average not mentioned)",
+        "trendBuckets.increasing[1].* (Payroll Processing details not covered)",
+        "trendBuckets.increasing[2].* (Vendor Management increasing details not covered)",
+        "trendBuckets.decreasing[1].* (Data Privacy details not covered)",
+        "trendBuckets.stable[2].currentIssueCount and previousAverageIssueCount (Procurement counts not mentioned)",
+        "trendBuckets.stable[1].currentIssueCount and previousAverageIssueCount (Human Resources counts not explicitly stated in trend paragraph)",
+        "totals.totalIssuesCurrentSchedule and totalIssuesPreviousSchedules (not mentioned)"
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "issues": []
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": []
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 50,
+    "entityAccuracy": 15,
+    "rankingAccuracy": 10,
+    "coverageCompleteness": 8.5,
+    "formattingCompliance": 10,
+    "mathematicalConsistency": 5,
+    "total": 98.5
+  },
+  "suggestions": [
+    "COVERAGE: Instruct to include averageIssuesAllSchedules for all topByTotalIssues items, even if briefly",
+    "COVERAGE: Require explicit mention of counts for at least two examples per trend bucket to improve completeness",
+    "TREND: Ensure stable bucket examples include current and previous counts for full data point coverage"
+  ],
+  "category": "var-09-multiple-persistent"
+}

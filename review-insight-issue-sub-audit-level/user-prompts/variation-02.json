@@ -1,0 +1,137 @@
+{
+  "totalRecords": 5,
+  "meta": {
+    "generatedAt": "2023-10-05T10:30:00Z",
+    "currentScheduleId": "sched-2023-Q3",
+    "prevScheduleCount": 2,
+    "prevScheduleIds": [
+      "sched-2023-Q1",
+      "sched-2023-Q2"
+    ],
+    "totalScheduleCount": 3,
+    "thresholdPercent": 10
+  },
+  "totals": {
+    "totalSubAudits": 5,
+    "totalIssuesAllSchedules": 250,
+    "totalIssuesCurrentSchedule": 150,
+    "totalIssuesPreviousSchedules": 100
+  },
+  "topByTotalIssues": [
+    {
+      "subAuditName": "Contract Management",
+      "totalIssuesAllSchedules": 70,
+      "averageIssuesAllSchedules": 23.333333333333332,
+      "contributionPercent": 28
+    },
+    {
+      "subAuditName": "Payment Verification",
+      "totalIssuesAllSchedules": 52,
+      "averageIssuesAllSchedules": 17.333333333333332,
+      "contributionPercent": 20.8
+    },
+    {
+      "subAuditName": "Data Privacy",
+      "totalIssuesAllSchedules": 50,
+      "averageIssuesAllSchedules": 16.666666666666668,
+      "contributionPercent": 20
+    },
+    {
+      "subAuditName": "Employee Onboarding",
+      "totalIssuesAllSchedules": 47,
+      "averageIssuesAllSchedules": 15.666666666666666,
+      "contributionPercent": 18.8
+    },
+    {
+      "subAuditName": "Asset Management",
+      "totalIssuesAllSchedules": 31,
+      "averageIssuesAllSchedules": 10.333333333333334,
+      "contributionPercent": 12.4
+    }
+  ],
+  "trendBuckets": {
+    "increasing": [
+      {
+        "subAuditName": "Data Privacy",
+        "currentIssueCount": 40,
+        "previousAverageIssueCount": 5,
+        "changeCount": 35,
+        "changePercent": 700,
+        "direction": "increasing"
+      },
+      {
+        "subAuditName": "Payment Verification",
+        "currentIssueCount": 30,
+        "previousAverageIssueCount": 11,
+        "changeCount": 19,
+        "changePercent": 172.72727272727272,
+        "direction": "increasing"
+      },
+      {
+        "subAuditName": "Contract Management",
+        "currentIssueCount": 40,
+        "previousAverageIssueCount": 15,
+        "changeCount": 25,
+        "changePercent": 166.66666666666666,
+        "direction": "increasing"
+      }
+    ],
+    "decreasing": [],
+    "stable": []
+  },
+  "persistentTop": {
+    "totalPersistentCount": 2,
+    "items": [
+      {
+        "subAuditName": "Contract Management",
+        "totalIssuesAllSchedules": 70,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sched-2023-Q1",
+            "issueCount": 15,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sched-2023-Q2",
+            "issueCount": 15,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sched-2023-Q3",
+            "issueCount": 40,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      },
+      {
+        "subAuditName": "Payment Verification",
+        "totalIssuesAllSchedules": 52,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "sched-2023-Q1",
+            "issueCount": 11,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sched-2023-Q2",
+            "issueCount": 11,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "sched-2023-Q3",
+            "issueCount": 30,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      }
+    ]
+  }
+}

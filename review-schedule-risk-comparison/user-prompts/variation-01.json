@@ -1,0 +1,87 @@
+{
+  "currentScheduleId": "SCH-2026-Q1-002",
+  "previousSchedulesAvailable": 3,
+  "schedules": {
+    "current": {
+      "scheduleId": "SCH-2026-Q1-002",
+      "scheduleIdentity": "Q1 2026 Compliance Audit",
+      "totalIssues": 150,
+      "highRisk": {
+        "count": 30,
+        "percent": 20
+      },
+      "zeroTolerance": {
+        "count": 6,
+        "percent": 4
+      },
+      "criticalRisk": {
+        "count": 36,
+        "percent": 24
+      }
+    },
+    "previous1": {
+      "scheduleId": "SCH-2025-Q4-046",
+      "scheduleIdentity": "Q4 2025 Compliance Audit",
+      "totalIssues": 140,
+      "highRisk": {
+        "count": 25,
+        "percent": 17.9
+      },
+      "zeroTolerance": {
+        "count": 7,
+        "percent": 5
+      },
+      "criticalRisk": {
+        "count": 32,
+        "percent": 22.9
+      }
+    },
+    "previous2": {
+      "scheduleId": "SCH-2025-Q3-039",
+      "scheduleIdentity": "Q3 2025 Compliance Audit",
+      "totalIssues": 135,
+      "highRisk": {
+        "count": 23,
+        "percent": 17
+      },
+      "zeroTolerance": {
+        "count": 5,
+        "percent": 3.7
+      },
+      "criticalRisk": {
+        "count": 28,
+        "percent": 20.7
+      }
+    },
+    "previous3": {
+      "scheduleId": "SCH-2025-Q2-030",
+      "scheduleIdentity": "Q2 2025 Compliance Audit",
+      "totalIssues": 130,
+      "highRisk": {
+        "count": 22,
+        "percent": 16.9
+      },
+      "zeroTolerance": {
+        "count": 4,
+        "percent": 3.1
+      },
+      "criticalRisk": {
+        "count": 26,
+        "percent": 20
+      }
+    }
+  },
+  "criticalRiskTrend": {
+    "_description": "Comparison of Critical Risk (High Risk + Zero Tolerance combined) between current audit (Q1 2026) and immediately previous audit (Q4 2025). Positive deltas indicate risk is WORSENING (more critical issues now); negative deltas indicate risk is IMPROVING (fewer critical issues). This metric shows whether organizational risk management efforts are effective.",
+    "isComputable": true,
+    "countDelta": 4,
+    "percentageDelta": 1.1
+  },
+  "meta": {
+    "generatedAt": "2026-04-01T09:00:00Z",
+    "filters": {
+      "zone": "All Zones",
+      "auditType": "Compliance Audit"
+    }
+  }
+}

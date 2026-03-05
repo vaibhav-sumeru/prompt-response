@@ -1,0 +1,150 @@
+{
+  "totalRecords": 10,
+  "meta": {
+    "generatedAt": "2023-10-05T10:30:00Z",
+    "currentScheduleId": "schedule-2023-Q4",
+    "prevScheduleCount": 3,
+    "prevScheduleIds": [
+      "schedule-2023-Q1",
+      "schedule-2023-Q2",
+      "schedule-2023-Q3"
+    ],
+    "totalScheduleCount": 4,
+    "thresholdPercent": 10
+  },
+  "totals": {
+    "totalSubAudits": 10,
+    "totalIssuesAllSchedules": 200,
+    "totalIssuesCurrentSchedule": 50,
+    "totalIssuesPreviousSchedules": 150
+  },
+  "topByTotalIssues": [
+    {
+      "subAuditName": "Financial Reporting",
+      "totalIssuesAllSchedules": 60,
+      "averageIssuesAllSchedules": 15,
+      "contributionPercent": 30
+    },
+    {
+      "subAuditName": "IT Infrastructure",
+      "totalIssuesAllSchedules": 48,
+      "averageIssuesAllSchedules": 12,
+      "contributionPercent": 24
+    },
+    {
+      "subAuditName": "Operations Management",
+      "totalIssuesAllSchedules": 40,
+      "averageIssuesAllSchedules": 10,
+      "contributionPercent": 20
+    },
+    {
+      "subAuditName": "Human Resources",
+      "totalIssuesAllSchedules": 32,
+      "averageIssuesAllSchedules": 8,
+      "contributionPercent": 16
+    },
+    {
+      "subAuditName": "Vendor Contracts",
+      "totalIssuesAllSchedules": 20,
+      "averageIssuesAllSchedules": 5,
+      "contributionPercent": 10
+    }
+  ],
+  "trendBuckets": {
+    "increasing": [],
+    "decreasing": [],
+    "stable": [
+      {
+        "subAuditName": "Financial Reporting",
+        "currentIssueCount": 15,
+        "previousAverageIssueCount": 15,
+        "changeCount": 0,
+        "changePercent": 0,
+        "direction": "stable"
+      },
+      {
+        "subAuditName": "IT Infrastructure",
+        "currentIssueCount": 12,
+        "previousAverageIssueCount": 12,
+        "changeCount": 0,
+        "changePercent": 0,
+        "direction": "stable"
+      },
+      {
+        "subAuditName": "Human Resources",
+        "currentIssueCount": 8,
+        "previousAverageIssueCount": 8,
+        "changeCount": 0,
+        "changePercent": 0,
+        "direction": "stable"
+      }
+    ]
+  },
+  "persistentTop": {
+    "totalPersistentCount": 2,
+    "items": [
+      {
+        "subAuditName": "Financial Reporting",
+        "totalIssuesAllSchedules": 60,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "schedule-2023-Q1",
+            "issueCount": 15,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "schedule-2023-Q2",
+            "issueCount": 15,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "schedule-2023-Q3",
+            "issueCount": 15,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "schedule-2023-Q4",
+            "issueCount": 15,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      },
+      {
+        "subAuditName": "IT Infrastructure",
+        "totalIssuesAllSchedules": 48,
+        "scheduleBreakdown": [
+          {
+            "scheduleId": "schedule-2023-Q1",
+            "issueCount": 12,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "schedule-2023-Q2",
+            "issueCount": 12,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "schedule-2023-Q3",
+            "issueCount": 12,
+            "isCurrent": false,
+            "thresholdBreached": true
+          },
+          {
+            "scheduleId": "schedule-2023-Q4",
+            "issueCount": 12,
+            "isCurrent": true,
+            "thresholdBreached": true
+          }
+        ],
+        "allSchedulesThresholdBreached": true
+      }
+    ]
+  }
+}

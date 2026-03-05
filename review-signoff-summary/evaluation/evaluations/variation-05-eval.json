@@ -1,0 +1,71 @@
+{
+  "variationId": "variation-05",
+  "overallScore": "PASS",
+  "overallScoreNumeric": 99.33,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 50,
+      "totalNumbersInResponse": 34,
+      "correctNumbers": 34,
+      "mismatches": []
+    },
+    "entityAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 15,
+      "details": [
+        "All schedule IDs (S-2023-Q3, S-2024-Q2, S-2023-Q4), sub-audit names (Vendor Due Diligence, Financial Reporting, Operational Efficiency), and risk levels (Zero Tolerance, High, Medium) are correctly identified and exist in the input data."
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "details": [
+        "S-2023-Q4 is correctly identified as having the lowest closure health score (70.9).",
+        "Vendor Due Diligence is correctly identified as the sub-audit with the highest non-accepted volume (18 issues).",
+        "Zero Tolerance is correctly identified as the risk level with the highest nonAcceptedPctOfRisk (46.6%).",
+        "Medium risk issues are correctly identified as the highest non-critical tier by non-accepted count (5 issues)."
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "28/30",
+      "scoreNumeric": 93.33,
+      "weight": 10,
+      "missingDataPoints": [
+        "signoffStatusBySchedule.rows[2].scheduleId (S-2024-Q1) - The prompt required 'All schedule IDs and their closureHealthScores' to appear, but S-2024-Q1 was not explicitly named.",
+        "signoffStatusBySchedule.rows[2].closureHealthScore (90.9) - The closure health score for S-2024-Q1 was not explicitly mentioned."
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "issues": []
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "All percentages and derived scores (nonAcceptedPct, closureHealthScore) are consistent with their component values in the input data.",
+        "Critical summary aggregations (nonAccepted, nonAcceptedPctOfCritical, criticalShareOfTotalNonAccepted) are mathematically consistent with their source data."
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 50,
+    "entityAccuracy": 15,
+    "rankingAccuracy": 10,
+    "coverageCompleteness": 9.33,
+    "formattingCompliance": 10,
+    "mathematicalConsistency": 5,
+    "total": 99.33
+  },
+  "suggestions": [
+    "COVERAGE: Ensure all four schedule IDs and their respective closure health scores are explicitly mentioned in the 'Schedule Closure Trend' bullet, as per the 'Required Data Points' instruction, even if intermediate schedules are also referenced by trend direction."
+  ],
+  "category": "zero-values"
+}

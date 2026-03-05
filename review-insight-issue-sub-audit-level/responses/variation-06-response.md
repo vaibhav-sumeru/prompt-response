@@ -1,0 +1,5 @@
+- **Top Issue Concentration:** Across 20 sub-audits, a total of **450** issues are recorded across all schedules. Financial Reporting Audit, Compliance Verification, and Risk Assessment Review each record **50** issues, contributing **11.11**% individually with an average of 12.5 issues. Internal Controls Check follows with **40** issues (**8.89**%), and Operational Audit with **30** issues (**6.67**%).
+
+- **Trend Movement:** For current schedule 'sch-2023-q4' compared to 3 previous schedules, Financial Reporting Audit shows a **100**% increase to **20** issues, and Compliance Verification increased **25**% to **15** issues. Internal Controls Check decreased **66.67**% to **5** issues, and Operational Audit decreased **20**% to **8** issues. Risk Assessment Review is stable at **12** issues with a **-4**% change.
+
+- **Persistent Threshold Breaches:** Two sub-audits persistently breached the 5% threshold across all schedules. Financial Reporting Audit records **50** total issues across all schedules. Compliance Verification also records **50** total issues across all schedules.

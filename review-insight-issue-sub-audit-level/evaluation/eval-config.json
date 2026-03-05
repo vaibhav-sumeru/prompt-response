@@ -1,0 +1,79 @@
+{
+  "widget": "review-insight-issue-sub-audit-level",
+  "activePrompt": "v3.md",
+  "variationCount": 11,
+  "schemaSource": "user-prompt.json",
+  "systemPromptPath": "prompts/v3.md",
+  "note": "IMPORTANT: Always use v3.md",
+  "evaluation": {
+    "model": "gemini-2.5-flash",
+    "evaluatorModel": "grok-4-fast-reasoning",
+    "evaluatorProvider": "portkey",
+    "evaluatorVirtualKey": "@kimi-k25",
+    "maxTokens": 4096,
+    "evaluatorMaxTokens": 51200,
+    "generateSystemPromptSuggestions": true,
+    "numericAccuracyWeight": 50,
+    "otherCriteriaWeight": 50
+  },
+  "variationStrategy": {
+    "description": "Generate variations 5 to 15 focusing on edge cases, trends, and persistent counts.",
+    "categories": [
+      {
+        "id": "var-05-all-stable",
+        "count": 1,
+        "description": "All sub-audits have Stable trends. trendBuckets.increasing and decreasing arrays must be completely empty. Fill only the stable array."
+      },
+      {
+        "id": "var-06-all-increasing",
+        "count": 1,
+        "description": "All sub-audits have Increasing trends. trendBuckets.stable and decreasing arrays must be completely empty. Fill only the increasing array."
+      },
+      {
+        "id": "var-07-all-decreasing",
+        "count": 1,
+        "description": "All sub-audits have Decreasing trends. trendBuckets.stable and increasing arrays must be completely empty. Fill only the decreasing array."
+      },
+      {
+        "id": "var-08-no-persistent",
+        "count": 1,
+        "description": "Zero sub-audits breach threshold persistently. persistentTop.totalPersistentCount must be 0 and persistentTop.items must be an empty array []."
+      },
+      {
+        "id": "var-09-multiple-persistent",
+        "count": 1,
+        "description": "Multiple sub-audits (exactly 4) breach the threshold persistently across all schedules. persistentTop.totalPersistentCount is 4 and items contains 4 distinct objects."
+      },
+      {
+        "id": "var-10-tie-breaker-issues",
+        "count": 1,
+        "description": "The top 3 sub-audits in topByTotalIssues have exactly the same identical totalIssuesAllSchedules and avergeIssuesAllSchedules. Test tie-breaking format."
+      },
+      {
+        "id": "var-11-one-prev-schedule",
+        "count": 1,
+        "description": "Exactly 1 previous schedule exists. meta.prevScheduleCount = 1, meta.prevScheduleIds has 1 item, totalScheduleCount = 2."
+      },
+      {
+        "id": "var-12-zero-issues-current",
+        "count": 1,
+        "description": "There are exactly 0 issues in the current schedule. totals.totalIssuesCurrentSchedule = 0. All currentIssueCounts in trends should be 0. All persistentTop items must have issueCount = 0 for the current schedule."
+      },
+      {
+        "id": "var-13-extreme-skew",
+        "count": 1,
+        "description": "One single sub-audit accounts for 95% of total issues. topByTotalIssues first item has very high contributionPercent, the remaining are minimal (1% or 2%)."
+      },
+      {
+        "id": "var-14-uniform-distribution",
+        "count": 1,
+        "description": "Exactly 5 sub-audits exist and all 5 have precisely the same issue counts resulting in 20% contribution each."
+      },
+      {
+        "id": "var-15-max-trend-buckets",
+        "count": 1,
+        "description": "All three trend buckets (increasing, decreasing, stable) are filled to their maximum of 3 items each. 9 trend items total."
+      }
+    ]
+  }
+}

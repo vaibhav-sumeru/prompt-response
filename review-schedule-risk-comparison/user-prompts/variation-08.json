@@ -1,0 +1,39 @@
+{
+  "currentScheduleId": "SCH-2026-Q1-001",
+  "previousSchedulesAvailable": 0,
+  "schedules": {
+    "current": {
+      "scheduleId": "SCH-2026-Q1-001",
+      "scheduleIdentity": "Q1 2026 Initial Branch Audit",
+      "totalIssues": 95,
+      "highRisk": {
+        "count": 18,
+        "percent": 18.9
+      },
+      "zeroTolerance": {
+        "count": 4,
+        "percent": 4.2
+      },
+      "criticalRisk": {
+        "count": 22,
+        "percent": 23.2
+      }
+    },
+    "previous1": null,
+    "previous2": null,
+    "previous3": null
+  },
+  "criticalRiskTrend": {
+    "_description": "Comparison of Critical Risk (High Risk + Zero Tolerance combined) between current audit (Q1 2026) and immediately previous audit (Q4 2025). Positive deltas indicate risk is WORSENING (more critical issues now); negative deltas indicate risk is IMPROVING (fewer critical issues). This metric shows whether organizational risk management efforts are effective.",
+    "isComputable": false,
+    "countDelta": null,
+    "percentageDelta": null
+  },
+  "meta": {
+    "generatedAt": "2026-03-15T14:45:00Z",
+    "filters": {
+      "zone": "All Zones",
+      "auditType": "Branch Audit"
+    }
+  }
+}

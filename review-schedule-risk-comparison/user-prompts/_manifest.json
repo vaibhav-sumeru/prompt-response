@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "normal-trend",
+    "description": "Normal data with 3 previous schedules showing a typical trend"
+  },
+  {
+    "id": "variation-02",
+    "category": "normal-trend",
+    "description": "Normal data with 3 previous schedules showing a typical trend"
+  },
+  {
+    "id": "variation-03",
+    "category": "extreme-worsening",
+    "description": "Critical risk sharply increasing in the current schedule (isComputable is true)"
+  },
+  {
+    "id": "variation-04",
+    "category": "extreme-worsening",
+    "description": "Critical risk sharply increasing in the current schedule (isComputable is true)"
+  },
+  {
+    "id": "variation-05",
+    "category": "extreme-improving",
+    "description": "Critical risk sharply decreasing in the current schedule (isComputable is true)"
+  },
+  {
+    "id": "variation-06",
+    "category": "zero-tolerance-spike",
+    "description": "Zero tolerance issues jump from 0 to >0 in the current schedule"
+  },
+  {
+    "id": "variation-07",
+    "category": "no-history",
+    "description": "First ever audit, no previous schedules available (isComputable is false, previous1, previous2, previous3 are null)"
+  },
+  {
+    "id": "variation-08",
+    "category": "no-history",
+    "description": "First ever audit, no previous schedules available (isComputable is false, previous1, previous2, previous3 are null)"
+  },
+  {
+    "id": "variation-09",
+    "category": "partial-history",
+    "description": "Only 1 previous schedule available (isComputable is true, previous2, previous3 are null)"
+  },
+  {
+    "id": "variation-10",
+    "category": "all-perfect",
+    "description": "0 high risk and 0 zero tolerance issues across all schedules"
+  }
+]

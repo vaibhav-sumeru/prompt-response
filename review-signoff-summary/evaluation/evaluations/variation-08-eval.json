@@ -1,0 +1,70 @@
+{
+  "variationId": "variation-08",
+  "overallScore": "PASS",
+  "overallScoreNumeric": 97.06,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 50,
+      "totalNumbersInResponse": 30,
+      "correctNumbers": 30,
+      "mismatches": []
+    },
+    "entityAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 15,
+      "details": [
+        "All schedule IDs, sub-audit names, and risk levels are correctly identified and used in context."
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 10,
+      "details": [
+        "The schedule with the lowest closure health score (S-2024-Q1) is correctly identified.",
+        "The top 3 sub-audits by non-accepted volume are correctly ranked.",
+        "The risk level with the highest non-accepted proportion (Zero Tolerance) is correctly identified.",
+        "The highest non-critical risk tier by non-accepted count (Medium) is correctly identified."
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "PARTIAL",
+      "scoreNumeric": 90.63,
+      "weight": 10,
+      "missingDataPoints": [
+        "signoffStatusBySchedule.rows[2].scheduleId (S-2024-Q2) was not explicitly mentioned.",
+        "signoffStatusBySchedule.rows[0].closureHealthScore (98.5 for S-2023-Q4) was not explicitly mentioned.",
+        "signoffStatusBySchedule.rows[2].closureHealthScore (98.2 for S-2024-Q2) was not explicitly mentioned."
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PARTIAL",
+      "scoreNumeric": 80,
+      "weight": 10,
+      "issues": [
+        "Bullet 3 exceeds the maximum word count (66 words; max 60 allowed)."
+      ]
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "All reported percentages and counts are consistent with the pre-computed values in the input data."
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 50,
+    "entityAccuracy": 15,
+    "rankingAccuracy": 10,
+    "coverageCompleteness": 9.06,
+    "formattingCompliance": 8,
+    "mathematicalConsistency": 5,
+    "total": 97.06
+  },
+  "category": "all-healthy"
+}

@@ -1,0 +1,103 @@
+{
+  "variationId": "variation-08",
+  "overallScore": "FAIL",
+  "overallScoreNumeric": 22,
+  "criteria": {
+    "numericAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 50,
+      "totalNumbersInResponse": 28,
+      "correctNumbers": 0,
+      "mismatches": [
+        {
+          "foundInResponse": "10",
+          "expectedValue": "none",
+          "context": "Across 10 sub-audits",
+          "jsonPath": "no match",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "1250",
+          "expectedValue": "none",
+          "context": "total of **1250** issues",
+          "jsonPath": "no match",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "500",
+          "expectedValue": "none",
+          "context": "**500** issues",
+          "jsonPath": "no match",
+          "severity": "CRITICAL",
+          "paragraph": "Top Issue Concentration"
+        },
+        {
+          "foundInResponse": "3",
+          "expectedValue": "none",
+          "context": "against 3 previous schedules",
+          "jsonPath": "no match",
+          "severity": "CRITICAL",
+          "paragraph": "Trend Movement"
+        }
+      ]
+    },
+    "entityAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 15,
+      "details": [
+        "All sub-audit names (e.g., 'Sub-Audit A', 'Sub-Audit B') are hallucinated; no entity names exist in the schema-only input data"
+      ]
+    },
+    "rankingAccuracy": {
+      "score": "FAIL",
+      "scoreNumeric": 0,
+      "weight": 10,
+      "details": [
+        "Cannot verify rankings (e.g., top sub-audits, increases/decreases) as no data values present in input; response fabricates order"
+      ]
+    },
+    "coverageCompleteness": {
+      "score": "15/16",
+      "scoreNumeric": 93.75,
+      "weight": 10,
+      "missingDataPoints": [
+        "meta.currentScheduleId (not explicitly mentioned in Paragraph 2)"
+      ]
+    },
+    "formattingCompliance": {
+      "score": "PARTIAL",
+      "scoreNumeric": 80,
+      "weight": 10,
+      "issues": [
+        "Paragraph 1 word count 67 (exceeds 30-60 limit)",
+        "Issue counts in Paragraph 2 (e.g., 120, 70) not bolded despite >0, inconsistent with bolding rule for counts"
+      ]
+    },
+    "mathematicalConsistency": {
+      "score": "PASS",
+      "scoreNumeric": 100,
+      "weight": 5,
+      "details": [
+        "Internal percentages consistent (e.g., 500/1250 = 40%, 300/1250 = 24%, 200/1250 = 16%); no derived errors"
+      ]
+    }
+  },
+  "weightedScore": {
+    "numericAccuracy": 0,
+    "entityAccuracy": 0,
+    "rankingAccuracy": 0,
+    "coverageCompleteness": 9.375,
+    "formattingCompliance": 8,
+    "mathematicalConsistency": 5,
+    "total": 22
+  },
+  "suggestions": [
+    "NUMERIC: Response hallucinates all numbers; instruct to use 'Not Available' for missing payload data beyond schema",
+    "ENTITY: Enforce strict no-hallucination for names; schema has no entities, so output should note absence"
+  ],
+  "category": "var-12-zero-issues-current"
+}

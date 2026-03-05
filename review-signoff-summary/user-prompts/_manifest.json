@@ -1,0 +1,67 @@
+[
+  {
+    "id": "variation-01",
+    "category": "normal-balanced",
+    "description": "Balanced sign-off distribution across 4 schedules and 4 risk levels."
+  },
+  {
+    "id": "variation-02",
+    "category": "normal-balanced",
+    "description": "Balanced sign-off distribution across 4 schedules and 4 risk levels."
+  },
+  {
+    "id": "variation-03",
+    "category": "extreme-skew",
+    "description": "One schedule has very high pending or rejected proportions."
+  },
+  {
+    "id": "variation-04",
+    "category": "extreme-skew",
+    "description": "One schedule has very high pending or rejected proportions."
+  },
+  {
+    "id": "variation-05",
+    "category": "zero-values",
+    "description": "Some rows contain 0 pending or 0 rejected to test bolding rules."
+  },
+  {
+    "id": "variation-06",
+    "category": "zero-values",
+    "description": "Some rows contain 0 pending or 0 rejected to test bolding rules."
+  },
+  {
+    "id": "variation-07",
+    "category": "single-schedule",
+    "description": "signoffStatusBySchedule.rows has exactly 1 item — the current schedule only (scheduleTag='Current'). NO previous schedules exist at all. meta.schedulesIncluded has 1 entry. Tests how the narrator handles zero trend context — no oldest/previous schedule to compare against. Should describe current metrics only without referencing any trend."
+  },
+  {
+    "id": "variation-08",
+    "category": "all-healthy",
+    "description": "Very high closureHealthScore across all schedules."
+  },
+  {
+    "id": "variation-09",
+    "category": "all-worst",
+    "description": "Very low closureHealthScore and high nonAcceptedPct across schedules."
+  },
+  {
+    "id": "variation-10",
+    "category": "missing-fields",
+    "description": "Some optional fields are null or missing in rows."
+  },
+  {
+    "id": "variation-11",
+    "category": "all-accepted-zero-nonaccepted",
+    "description": "Every row across all 3 sections has 0 pending and 0 rejected — 100% accepted, closureHealthScore=100. Tests zero-bolding rules: no pending/rejected should be bolded, no nonAcceptedPct to bold."
+  },
+  {
+    "id": "variation-12",
+    "category": "one-prior-schedule-only",
+    "description": "signoffStatusBySchedule.rows has exactly 2 items: one previous (scheduleTag='Previous 1') and one current. No Previous 2 or Previous 3 rows. Tests how the narrator handles minimal trend context with only 1 comparison point."
+  },
+  {
+    "id": "variation-13",
+    "category": "prior-fully-finalized-current-mixed",
+    "description": "2 rows: the single previous schedule is 100% accepted (closureHealthScore=100.0, nonAcceptedPct=0), current schedule has significant pending and rejected. Tests comparison narrative when baseline is perfect but current is degraded."
+  }
+]
