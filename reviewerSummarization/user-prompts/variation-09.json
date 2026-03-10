@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generatedAt": "2023-10-27T10:30:00Z",
+    "scheduleId": "SCH001009",
+    "auditId": "AUD789012",
+    "mainAuditName": "Quarterly Branch Operations Review - North Region",
+    "auditType": "Branch Audit",
+    "auditeeName": "North Region Operations",
+    "auditorName": "Aisha Sharma",
+    "currentExecutionStatus": "In Review"
+  },
+  "overallReviewerSummary": {
+    "description": "consolidated audit-level summary covering compliance, issues, closure status, coverage, and risk distribution for reviewer assessment.",
+    "currentExecutionStatus": "In Review",
+    "complianceScorePct": "",
+    "auditRating": "",
+    "totalIssues": 25,
+    "openIssues": 8,
+    "highAndZtIssues": 7,
+    "highIssues": 5,
+    "zeroToleranceIssues": 2,
+    "closedIssues": 17,
+    "closureRatePct": 68,
+    "totalAppliedCheckpoints": 120,
+    "totalCompletedCheckpoints": 85,
+    "coveragePct": 70.8
+  },
+  "auditorExecutionDurationSummary": {
+    "description": "auditor execution timeline analysis covering actual vs planned duration, submission delay, and start delay.",
+    "executionDurationDays": "",
+    "plannedAuditDurationDays": "",
+    "durationDifferenceDays": "",
+    "submissionDelayDays": 5,
+    "auditStartDelayDays": 3,
+    "currentExecutionStatus": "In Review"
+  },
+  "auditorEfficiencyRating": {
+    "description": "auditor efficiency scoring based on planned vs actual audit duration.",
+    "plannedDurationDays": "",
+    "actualDurationDays": "",
+    "efficiencyScorePct": "",
+    "efficiencyRating": ""
+  }
+}

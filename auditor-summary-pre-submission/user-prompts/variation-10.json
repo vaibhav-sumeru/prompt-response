@@ -1,0 +1,142 @@
+{
+  "meta": {
+    "generatedAt": "2024-03-15T10:30:00Z",
+    "auditId": "AUD-789012",
+    "auditName": "Q1 2024 Branch Compliance Audit - Pune Region",
+    "scheduleId": "SCH-PUNE-005",
+    "auditorName": "Priya Sharma",
+    "auditType": "Branch Audit",
+    "auditee": "ABC Bank, Pune Branch"
+  },
+  "auditStartSummary": {
+    "isAuditStarted": true,
+    "description": "Summary of audit initiation status, scope readiness, and early execution progress.",
+    "executionStatus": "In Progress",
+    "auditStartDate": "01-Mar-2024",
+    "scheduleStartedDate": "03-Mar-2024",
+    "startDelayDays": 2,
+    "totalAppliedCheckpoints": 200,
+    "totalCheckpointsAudited": 80,
+    "totalIssuesFound": 25,
+    "completionPct": 40,
+    "topNonCompliantGroups": [
+      {
+        "groupName": "Cash Management",
+        "issueCount": 10
+      },
+      {
+        "groupName": "Customer KYC",
+        "issueCount": 8
+      },
+      {
+        "groupName": "Data Privacy",
+        "issueCount": 7
+      }
+    ]
+  },
+  "multiDaySummary": {
+    "isApplicable": true,
+    "description": "Cumulative execution progress across multiple audit days, including day-by-day issue distribution and coverage trend.",
+    "scheduleStartedDate": "03-Mar-2024",
+    "currentScheduleDate": "05-Mar-2024",
+    "numberOfAuditDays": 3,
+    "totalIssuesFound": 25,
+    "issueFoundPct": 31.3,
+    "dailyBreakdown": [
+      {
+        "day": 1,
+        "date": "03-Mar-2024",
+        "totalCheckpointsAttempted": 30,
+        "completionPctDay": 15,
+        "completionPctOverall": 15,
+        "riskLevelIssueDistribution": {
+          "highRisk": 0,
+          "zeroTolerance": 5,
+          "medium": 0,
+          "low": 0
+        },
+        "totalIssues": 5
+      },
+      {
+        "day": 2,
+        "date": "04-Mar-2024",
+        "totalCheckpointsAttempted": 25,
+        "completionPctDay": 12.5,
+        "completionPctOverall": 27.5,
+        "riskLevelIssueDistribution": {
+          "highRisk": 0,
+          "zeroTolerance": 10,
+          "medium": 0,
+          "low": 0
+        },
+        "totalIssues": 10
+      },
+      {
+        "day": 3,
+        "date": "05-Mar-2024",
+        "totalCheckpointsAttempted": 25,
+        "completionPctDay": 12.5,
+        "completionPctOverall": 40,
+        "riskLevelIssueDistribution": {
+          "highRisk": 0,
+          "zeroTolerance": 10,
+          "medium": 0,
+          "low": 0
+        },
+        "totalIssues": 10
+      }
+    ],
+    "dailyTotals": {
+      "totalCheckpointsAttempted": 80,
+      "completionPctOverall": 40,
+      "riskLevelIssueDistribution": {
+        "highRisk": 0,
+        "zeroTolerance": 25,
+        "medium": 0,
+        "low": 0
+      },
+      "totalIssues": 25
+    }
+  },
+  "observationSummary": {
+    "isApplicable": true,
+    "description": "Observation grouping by risk level and identification of sub-audits with highest risk concentration.",
+    "totalIssues": 25,
+    "byRiskLevel": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 25,
+        "concentrationPct": 100
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 0,
+        "concentrationPct": 0
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 0,
+        "concentrationPct": 0
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 0,
+        "concentrationPct": 0
+      }
+    ],
+    "topSubAuditsWithHighRiskIssues": [
+      {
+        "subAuditName": "Branch Operations - Pune City",
+        "combinedHighZtCount": 15,
+        "highRiskCount": 0,
+        "ztCount": 15
+      },
+      {
+        "subAuditName": "Customer Service Desk - Pune",
+        "combinedHighZtCount": 10,
+        "highRiskCount": 0,
+        "ztCount": 10
+      }
+    ]
+  }
+}

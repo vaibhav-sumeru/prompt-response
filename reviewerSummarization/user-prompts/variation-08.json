@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generatedAt": "2023-10-27T10:30:00Z",
+    "scheduleId": "SCH-008",
+    "auditId": "AUD-008-01",
+    "mainAuditName": "Quarterly Compliance Review - Q3",
+    "auditType": "Compliance Audit",
+    "auditeeName": "Operations Dept. - Central Region",
+    "auditorName": "Jane Doe",
+    "currentExecutionStatus": "Submitted"
+  },
+  "overallReviewerSummary": {
+    "description": "Consolidated audit-level summary covering compliance, issues, closure status, coverage, and risk distribution for reviewer assessment.",
+    "currentExecutionStatus": "Submitted",
+    "complianceScorePct": 88.5,
+    "auditRating": "Satisfactory",
+    "totalIssues": 25,
+    "openIssues": 4,
+    "highAndZtIssues": 3,
+    "highIssues": 2,
+    "zeroToleranceIssues": 1,
+    "closedIssues": 21,
+    "closureRatePct": 84,
+    "totalAppliedCheckpoints": 120,
+    "totalCompletedCheckpoints": 108,
+    "coveragePct": 90
+  },
+  "auditorExecutionDurationSummary": {
+    "description": "Auditor execution timeline analysis covering actual vs planned duration, submission delay, and start delay.",
+    "executionDurationDays": 11,
+    "plannedAuditDurationDays": 10,
+    "durationDifferenceDays": 1,
+    "submissionDelayDays": 2,
+    "auditStartDelayDays": 1,
+    "currentExecutionStatus": "Submitted"
+  },
+  "auditorEfficiencyRating": {
+    "description": "Auditor efficiency scoring based on planned vs actual audit duration.",
+    "plannedDurationDays": 10,
+    "actualDurationDays": 11,
+    "efficiencyScorePct": 90.9,
+    "efficiencyRating": "Moderate"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "generatedAt": "2023-10-27T10:00:00Z",
+    "scheduleId": "SCH-2023-001-A",
+    "auditId": "AUD-2023-001",
+    "auditName": "Q3 Branch Performance Review",
+    "auditType": "Branch Audit",
+    "auditee": "Central Bank - Main Branch",
+    "auditorName": "Jane Doe",
+    "auditExecutionStatus": "Completed"
+  },
+  "previousAuditComparison": {
+    "description": "Explanation of what this section represents — comparison of current vs previous audit for common checkpoints, highlighting rectification effectiveness and recurring control failures.",
+    "isPreviousAuditAvailable": true,
+    "previousScheduleId": "SCH-2022-001-A",
+    "noOfIssuesInPreviousAudit": 50,
+    "closedPreviousAuditIssues": 42,
+    "rectificationRatePct": 84,
+    "recurringIssues": 8,
+    "totalIssuesCurrent": 25,
+    "recurrenceRatePct": 32
+  },
+  "auditorObservationTracking": {
+    "description": "Explanation of what this section represents — auditor observations and recommendations across current and previous audit schedules, supporting continuity tracking.",
+    "currentScheduleAuditorName": "Jane Doe",
+    "currentScheduleObservation": "Observed strong adherence to cash handling procedures and good branch security protocols.",
+    "currentScheduleRecommendation": "Recommend implementing a digital signature system for all high-value transactions to improve security.",
+    "isPreviousScheduleAvailable": true,
+    "previousScheduleId": "SCH-2022-001-A",
+    "previousScheduleAuditorName": "John Smith",
+    "previousScheduleObservation": "Previous audit noted some discrepancies in daily cash reconciliation processes and ledger entries.",
+    "previousScheduleRecommendation": "Previous audit recommended daily dual-control verification for all cash balances and transactions."
+  },
+  "auditCompletionSummary": {
+    "description": "Explanation of what this section represents — final audit execution outcome covering coverage %, compliance score, issue density, and schedule adherence at both audit start and end.",
+    "auditStartDate": "01-OCT-2023",
+    "scheduleStartedDate": "01-OCT-2023",
+    "auditStartDelayDelta": 0,
+    "totalAppliedCheckpoints": 120,
+    "totalCheckpointsAudited": 118,
+    "totalIssues": 25,
+    "completionPct": 98.3,
+    "issueFoundPct": 21.2,
+    "auditComplianceScore": 92.5,
+    "auditEndDate": "15-OCT-2023",
+    "scheduleEndDate": "15-OCT-2023",
+    "auditEndDelayDelta": 0
+  }
+}

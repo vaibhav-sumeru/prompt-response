@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-26T10:30:00Z",
+    "auditId": "AUD-2024-07-0012",
+    "auditName": "Q3 Branch Compliance Audit - Central Region",
+    "scheduleId": "SCH-2024-07-0012-A",
+    "auditorName": "Priya Sharma",
+    "auditType": "Branch Audit",
+    "auditee": "Axis Bank - Connaught Place Branch"
+  },
+  "auditStartSummary": {
+    "isAuditStarted": true,
+    "description": "audit initiation status, scope readiness, and early execution progress",
+    "executionStatus": "In Progress",
+    "auditStartDate": "23-JUL-2024",
+    "scheduleStartedDate": "26-JUL-2024",
+    "startDelayDays": 3,
+    "totalAppliedCheckpoints": 200,
+    "totalCheckpointsAudited": 70,
+    "totalIssuesFound": 15,
+    "completionPct": 35,
+    "topNonCompliantGroups": [
+      {
+        "groupName": "Cash Management Controls",
+        "issueCount": 6
+      },
+      {
+        "groupName": "KYC Documentation",
+        "issueCount": 4
+      }
+    ]
+  },
+  "multiDaySummary": {
+    "isApplicable": true,
+    "description": "cumulative execution progress across multiple audit days, including day-by-day issue distribution and coverage trend",
+    "scheduleStartedDate": "26-JUL-2024",
+    "currentScheduleDate": "28-JUL-2024",
+    "numberOfAuditDays": 3,
+    "totalIssuesFound": 15,
+    "issueFoundPct": 21.4,
+    "dailyBreakdown": [
+      {
+        "day": 1,
+        "date": "26-JUL-2024",
+        "totalCheckpointsAttempted": 20,
+        "completionPctDay": 10,
+        "completionPctOverall": 10,
+        "riskLevelIssueDistribution": {
+          "highRisk": 2,
+          "zeroTolerance": 1,
+          "medium": 2,
+          "low": 0
+        },
+        "totalIssues": 5
+      },
+      {
+        "day": 2,
+        "date": "27-JUL-2024",
+        "totalCheckpointsAttempted": 25,
+        "completionPctDay": 12.5,
+        "completionPctOverall": 22.5,
+        "riskLevelIssueDistribution": {
+          "highRisk": 3,
+          "zeroTolerance": 0,
+          "medium": 4,
+          "low": 1
+        },
+        "totalIssues": 8
+      },
+      {
+        "day": 3,
+        "date": "28-JUL-2024",
+        "totalCheckpointsAttempted": 25,
+        "completionPctDay": 12.5,
+        "completionPctOverall": 35,
+        "riskLevelIssueDistribution": {
+          "highRisk": 0,
+          "zeroTolerance": 0,
+          "medium": 2,
+          "low": 0
+        },
+        "totalIssues": 2
+      }
+    ],
+    "dailyTotals": {
+      "totalCheckpointsAttempted": 70,
+      "completionPctOverall": 35,
+      "riskLevelIssueDistribution": {
+        "highRisk": 5,
+        "zeroTolerance": 1,
+        "medium": 8,
+        "low": 1
+      },
+      "totalIssues": 15
+    }
+  },
+  "observationSummary": {
+    "isApplicable": true,
+    "description": "observation grouping by risk level and identification of sub-audits with highest risk concentration",
+    "totalIssues": 15,
+    "byRiskLevel": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 1,
+        "concentrationPct": 6.7
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 5,
+        "concentrationPct": 33.3
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 8,
+        "concentrationPct": 53.3
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 1,
+        "concentrationPct": 6.7
+      }
+    ],
+    "topSubAuditsWithHighRiskIssues": [
+      {
+        "subAuditName": "Cash Operations Review",
+        "combinedHighZtCount": 4,
+        "highRiskCount": 3,
+        "ztCount": 1
+      },
+      {
+        "subAuditName": "Customer Onboarding Compliance",
+        "combinedHighZtCount": 2,
+        "highRiskCount": 2,
+        "ztCount": 0
+      }
+    ]
+  }
+}

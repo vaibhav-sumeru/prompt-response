@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "generatedAt": "2024-05-15T10:30:00Z",
+    "scheduleId": "AUDIT-SCH-006",
+    "auditId": "AUDIT-006",
+    "auditName": "Q2 Branch Compliance Audit - South Region",
+    "auditType": "Branch Audit",
+    "auditee": "Mumbai Central Branch",
+    "auditorName": "Alice Johnson",
+    "auditExecutionStatus": "Completed"
+  },
+  "previousAuditComparison": {
+    "description": "Comparison of current vs previous audit for common checkpoints, highlighting rectification effectiveness and recurring control failures.",
+    "isPreviousAuditAvailable": true,
+    "previousScheduleId": "PREV-SCH-006A",
+    "noOfIssuesInPreviousAudit": 20,
+    "closedPreviousAuditIssues": 20,
+    "rectificationRatePct": 100,
+    "recurringIssues": 0,
+    "totalIssuesCurrent": 15,
+    "recurrenceRatePct": 0
+  },
+  "auditorObservationTracking": {
+    "description": "Auditor observations and recommendations across current and previous audit schedules, supporting continuity tracking.",
+    "currentScheduleAuditorName": "Alice Johnson",
+    "currentScheduleObservation": "Identified minor procedural gaps in data handling. System logs show inconsistencies.",
+    "currentScheduleRecommendation": "Implement automated data validation checks and regular log reviews.",
+    "isPreviousScheduleAvailable": true,
+    "previousScheduleId": "PREV-SCH-006A",
+    "previousScheduleAuditorName": "Bob Williams",
+    "previousScheduleObservation": "Previous audit noted some data entry errors. Manual process was error-prone.",
+    "previousScheduleRecommendation": "Recommended training for data entry staff and process standardization."
+  },
+  "auditCompletionSummary": {
+    "description": "Final audit execution outcome covering coverage %, compliance score, issue density, and schedule adherence at both audit start and end.",
+    "auditStartDate": "01-MAR-2024",
+    "scheduleStartedDate": "01-MAR-2024",
+    "auditStartDelayDelta": 0,
+    "totalAppliedCheckpoints": 100,
+    "totalCheckpointsAudited": 95,
+    "totalIssues": 15,
+    "completionPct": 95,
+    "issueFoundPct": 15.8,
+    "auditComplianceScore": 92.5,
+    "auditEndDate": "15-MAR-2024",
+    "scheduleEndDate": "14-MAR-2024",
+    "auditEndDelayDelta": -1
+  }
+}

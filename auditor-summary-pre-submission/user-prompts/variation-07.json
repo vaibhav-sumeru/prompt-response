@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "generatedAt": "2023-10-20T10:30:00Z",
+    "auditId": "AUD-987654",
+    "auditName": "Q4 2023 Branch Compliance Audit",
+    "scheduleId": "SCH-456789",
+    "auditorName": "Dr. Evelyn Reed",
+    "auditType": "Branch Audit",
+    "auditee": "Central Bank Corp."
+  },
+  "auditStartSummary": {
+    "isAuditStarted": true,
+    "description": "Summarises audit initiation status, scope readiness, and early execution progress.",
+    "executionStatus": "Delayed",
+    "auditStartDate": "10-Oct-2023",
+    "scheduleStartedDate": "17-Oct-2023",
+    "startDelayDays": 7,
+    "totalAppliedCheckpoints": 200,
+    "totalCheckpointsAudited": 45,
+    "totalIssuesFound": 15,
+    "completionPct": 22.5,
+    "topNonCompliantGroups": [
+      {
+        "groupName": "Cash Handling Procedures",
+        "issueCount": 6
+      },
+      {
+        "groupName": "KYC Document Verification",
+        "issueCount": 4
+      }
+    ]
+  },
+  "multiDaySummary": {
+    "isApplicable": true,
+    "description": "Cumulative execution progress across multiple audit days, including day-by-day issue distribution and coverage trend.",
+    "scheduleStartedDate": "17-Oct-2023",
+    "currentScheduleDate": "19-Oct-2023",
+    "numberOfAuditDays": 3,
+    "totalIssuesFound": 15,
+    "issueFoundPct": 33.3,
+    "dailyBreakdown": [
+      {
+        "day": 1,
+        "date": "17-Oct-2023",
+        "totalCheckpointsAttempted": 15,
+        "completionPctDay": 7.5,
+        "completionPctOverall": 7.5,
+        "riskLevelIssueDistribution": {
+          "highRisk": 1,
+          "zeroTolerance": 0,
+          "medium": 2,
+          "low": 1
+        },
+        "totalIssues": 4
+      },
+      {
+        "day": 2,
+        "date": "18-Oct-2023",
+        "totalCheckpointsAttempted": 15,
+        "completionPctDay": 7.5,
+        "completionPctOverall": 15,
+        "riskLevelIssueDistribution": {
+          "highRisk": 2,
+          "zeroTolerance": 1,
+          "medium": 3,
+          "low": 0
+        },
+        "totalIssues": 6
+      },
+      {
+        "day": 3,
+        "date": "19-Oct-2023",
+        "totalCheckpointsAttempted": 15,
+        "completionPctDay": 7.5,
+        "completionPctOverall": 22.5,
+        "riskLevelIssueDistribution": {
+          "highRisk": 0,
+          "zeroTolerance": 1,
+          "medium": 2,
+          "low": 2
+        },
+        "totalIssues": 5
+      }
+    ],
+    "dailyTotals": {
+      "totalCheckpointsAttempted": 45,
+      "completionPctOverall": 22.5,
+      "riskLevelIssueDistribution": {
+        "highRisk": 3,
+        "zeroTolerance": 2,
+        "medium": 7,
+        "low": 3
+      },
+      "totalIssues": 15
+    }
+  },
+  "observationSummary": {
+    "isApplicable": true,
+    "description": "Observation grouping by risk level and identification of sub-audits with highest risk concentration.",
+    "totalIssues": 15,
+    "byRiskLevel": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 2,
+        "concentrationPct": 13.3
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 3,
+        "concentrationPct": 20
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 7,
+        "concentrationPct": 46.7
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 3,
+        "concentrationPct": 20
+      }
+    ],
+    "topSubAuditsWithHighRiskIssues": [
+      {
+        "subAuditName": "Branch Operations - East",
+        "combinedHighZtCount": 3,
+        "highRiskCount": 2,
+        "ztCount": 1
+      },
+      {
+        "subAuditName": "Customer Onboarding - Central",
+        "combinedHighZtCount": 2,
+        "highRiskCount": 1,
+        "ztCount": 1
+      }
+    ]
+  }
+}

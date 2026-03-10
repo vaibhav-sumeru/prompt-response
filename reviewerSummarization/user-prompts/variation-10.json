@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generatedAt": "2023-10-27T10:30:00Z",
+    "scheduleId": "SCH-789012-ABC",
+    "auditId": "AUD-456789-DEF",
+    "mainAuditName": "Q4 Branch Audit - Bangalore Central",
+    "auditType": "Branch Audit",
+    "auditeeName": "Bangalore Central Branch",
+    "auditorName": "Rahul Singh",
+    "currentExecutionStatus": "In Review"
+  },
+  "overallReviewerSummary": {
+    "description": "Consolidated audit-level summary covering compliance, issues, closure status, coverage, and risk distribution for reviewer assessment.",
+    "currentExecutionStatus": "In Review",
+    "complianceScorePct": 85.5,
+    "auditRating": "",
+    "totalIssues": 30,
+    "openIssues": 9,
+    "highAndZtIssues": 5,
+    "highIssues": 4,
+    "zeroToleranceIssues": 1,
+    "closedIssues": 21,
+    "closureRatePct": 70,
+    "totalAppliedCheckpoints": 150,
+    "totalCompletedCheckpoints": 135,
+    "coveragePct": 90
+  },
+  "auditorExecutionDurationSummary": {
+    "description": "Auditor execution timeline analysis covering actual vs planned duration, submission delay, and start delay.",
+    "executionDurationDays": 18,
+    "plannedAuditDurationDays": 12,
+    "durationDifferenceDays": 6,
+    "submissionDelayDays": 4,
+    "auditStartDelayDays": 3,
+    "currentExecutionStatus": "In Review"
+  },
+  "auditorEfficiencyRating": {
+    "description": "Auditor efficiency scoring based on planned vs actual audit duration.",
+    "plannedDurationDays": 12,
+    "actualDurationDays": 18,
+    "efficiencyScorePct": 66.7,
+    "efficiencyRating": "Delayed"
+  }
+}

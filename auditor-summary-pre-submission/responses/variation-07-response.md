@@ -1,0 +1,7 @@
+- **Audit Start Summary:** Audit is Delayed, scheduled 10-Oct-2023, started 17-Oct-2023, 7-day delay. 45 of 200 checkpoints audited (**22.5**%), 15 issues found; top non-compliant groups: Cash Handling Procedures (6), KYC Document Verification (4).
+- **Multi-Day Execution Summary:** 3-day audit records 15 total issues across 45 checkpoints audited with a 33.3% issue-found rate; per-day breakdown below.
+  - **Day 1 (17-Oct-2023):** 15 checkpoints | 7.5% day / 7.5% overall | ZT: 0, High: **1**, Med: 2, Low: 1 — 4 issues
+  - **Day 2 (18-Oct-2023):** 15 checkpoints | 7.5% day / 15% overall | ZT: **1**, High: **2**, Med: 3, Low: 0 — 6 issues
+  - **Day 3 (19-Oct-2023):** 15 checkpoints | 7.5% day / 22.5% overall | ZT: **1**, High: 0, Med: 2, Low: 2 — 5 issues
+  - **Total:** 45 checkpoints | **22.5%** overall | ZT: **2**, High: **3**, Med: 7, Low: 3 — 15 issues
+- **Observation Summary:** 15 total issues — ZT: 2 (**13.3**%), High: 3 (**20**%), Med: 7 (46.7%), Low: 3 (20%). Top sub-audits by High+ZT: Branch Operations - East 3 combined (**2** High, **1** ZT); Customer Onboarding - Central 2 combined (**1** High, **1** ZT).

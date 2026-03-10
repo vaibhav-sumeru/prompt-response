@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z",
+    "scheduleId": "SCH-789012",
+    "auditId": "AUD-XYZ-002",
+    "mainAuditName": "Q3 2024 Branch Compliance Review - Pune",
+    "auditType": "Branch Audit",
+    "auditeeName": "Pune Main Branch",
+    "auditorName": "Rajesh Kumar",
+    "currentExecutionStatus": "Finalized"
+  },
+  "overallReviewerSummary": {
+    "description": "Consolidated audit-level summary covering compliance, issues, closure status, coverage, and risk distribution for reviewer assessment.",
+    "currentExecutionStatus": "Finalized",
+    "complianceScorePct": 95.5,
+    "auditRating": "Satisfactory",
+    "totalIssues": 8,
+    "openIssues": 0,
+    "highAndZtIssues": 0,
+    "highIssues": 0,
+    "zeroToleranceIssues": 0,
+    "closedIssues": 8,
+    "closureRatePct": 100,
+    "totalAppliedCheckpoints": 180,
+    "totalCompletedCheckpoints": 175,
+    "coveragePct": 97.2
+  },
+  "auditorExecutionDurationSummary": {
+    "description": "Auditor execution timeline analysis covering actual vs planned duration, submission delay, and start delay.",
+    "executionDurationDays": 12,
+    "plannedAuditDurationDays": 15,
+    "durationDifferenceDays": -3,
+    "submissionDelayDays": 0,
+    "auditStartDelayDays": 0,
+    "currentExecutionStatus": "Finalized"
+  },
+  "auditorEfficiencyRating": {
+    "description": "Auditor efficiency scoring based on planned vs actual audit duration.",
+    "plannedDurationDays": 15,
+    "actualDurationDays": 12,
+    "efficiencyScorePct": 125,
+    "efficiencyRating": "Efficient"
+  }
+}

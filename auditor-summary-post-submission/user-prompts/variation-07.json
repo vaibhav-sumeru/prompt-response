@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "generatedAt": "2023-10-27T10:00:00Z",
+    "scheduleId": "AUDIT-SCH-78901",
+    "auditId": "AUD-2023-007V7",
+    "auditName": "Q4 Branch Compliance Audit - South Zone",
+    "auditType": "Branch Audit",
+    "auditee": "Aurora Financial Services - Chennai Branch",
+    "auditorName": "Rajesh Kumar",
+    "auditExecutionStatus": "Completed"
+  },
+  "previousAuditComparison": {
+    "description": "Comparison of current vs previous audit for common checkpoints, highlighting rectification effectiveness and recurring control failures.",
+    "isPreviousAuditAvailable": true,
+    "previousScheduleId": "AUDIT-SCH-56789",
+    "noOfIssuesInPreviousAudit": 10,
+    "closedPreviousAuditIssues": 0,
+    "rectificationRatePct": 0,
+    "recurringIssues": 5,
+    "totalIssuesCurrent": 5,
+    "recurrenceRatePct": 100
+  },
+  "auditorObservationTracking": {
+    "description": "Auditor observations and recommendations across current and previous audit schedules, supporting continuity tracking.",
+    "currentScheduleAuditorName": "Rajesh Kumar",
+    "currentScheduleObservation": "High incidence of policy non-compliance in cash handling procedures.",
+    "currentScheduleRecommendation": "Implement daily reconciliation checks and provide refresher training.",
+    "isPreviousScheduleAvailable": true,
+    "previousScheduleId": "AUDIT-SCH-56789",
+    "previousScheduleAuditorName": "Priya Sharma",
+    "previousScheduleObservation": "Insufficient documentation for customer KYC processes identified.",
+    "previousScheduleRecommendation": "Standardize KYC document verification and record-keeping protocols."
+  },
+  "auditCompletionSummary": {
+    "description": "Final audit execution outcome covering coverage %, compliance score, issue density, and schedule adherence at both audit start and end.",
+    "auditStartDate": "01-Oct-2023",
+    "scheduleStartedDate": "05-Oct-2023",
+    "auditStartDelayDelta": 4,
+    "totalAppliedCheckpoints": 100,
+    "totalCheckpointsAudited": 70,
+    "totalIssues": 35,
+    "completionPct": 70,
+    "issueFoundPct": 50,
+    "auditComplianceScore": 25.5,
+    "auditEndDate": "15-Oct-2023",
+    "scheduleEndDate": "20-Oct-2023",
+    "auditEndDelayDelta": 5
+  }
+}

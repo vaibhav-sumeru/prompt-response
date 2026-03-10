@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z",
+    "scheduleId": "SCH-AUD-005",
+    "auditId": "AUD-BR-112233",
+    "mainAuditName": "Branch Operations Q3 FY24 Audit",
+    "auditType": "Branch Audit",
+    "auditeeName": "Sunrise Bank - Central Branch",
+    "auditorName": "Priya Sharma",
+    "currentExecutionStatus": "In Progress"
+  },
+  "currentAuditIssueSummary": {
+    "description": "Current audit issue summary covering total issues, severity distribution, closure status, and aging metrics.",
+    "totalIssues": 60,
+    "totalAppliedCheckpoints": 220,
+    "totalCompletedCheckpoints": 180,
+    "riskDistribution": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 5,
+        "percentOfTotal": 8.3
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 15,
+        "percentOfTotal": 25
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 25,
+        "percentOfTotal": 41.7
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 15,
+        "percentOfTotal": 25
+      }
+    ],
+    "averageIssueAgingDays": 38.5,
+    "averageIssueClosureTimeDays": 21.3,
+    "closedIssues": 25,
+    "closureRatePct": 41.7,
+    "issuePercentage": 20
+  },
+  "previousAuditComparison": {
+    "description": "Comparison of current vs previous audit covering compliance, issue count, and high-risk exposure trends.",
+    "isPreviousAuditAvailable": true,
+    "currentTotalIssues": 60,
+    "currentTotalCheckpoints": 200,
+    "currentCompliantCheckpoints": 180,
+    "currentCompliancePct": 90,
+    "currentHighAndZtIssues": 20,
+    "previousTotalIssues": 75,
+    "previousTotalCheckpoints": 180,
+    "previousCompliantCheckpoints": 160,
+    "previousCompliancePct": 88.9,
+    "previousHighAndZtIssues": 30,
+    "deltaCompliancePct": 1.1,
+    "deltaHighAndZtIssues": -10,
+    "deltaTotalIssues": -15
+  },
+  "repeatIssueAnalysis": {
+    "description": "Repeat/recurring issue analysis for the current audit, highlighting control weaknesses that remain unresolved.",
+    "totalIssues": 60,
+    "recurringIssues": 12,
+    "recurringPct": 20,
+    "isPreviousAuditAvailable": true,
+    "previousAuditRecurringPct": 15,
+    "recurringDelta": 5,
+    "recurringHighAndZtIssues": 7,
+    "topGroupsByRecurrence": [
+      {
+        "groupName": "Cash Management",
+        "recurringIssueCount": 5
+      },
+      {
+        "groupName": "Customer Onboarding",
+        "recurringIssueCount": 4
+      },
+      {
+        "groupName": "Regulatory Reporting",
+        "recurringIssueCount": 3
+      }
+    ]
+  },
+  "annexurePiSummary": {
+    "description": "Sub-audit level PI execution analysis, correlating process inspection counts with issue density and risk concentration.",
+    "isAuditTypeAnnexure": true,
+    "topSubAuditsByPiDefectRatio": [
+      {
+        "subAuditName": "Lending Operations",
+        "piExecuted": 90,
+        "issuesIdentified": 30,
+        "piDefectRatio": 0.333
+      },
+      {
+        "subAuditName": "Deposit Accounts",
+        "piExecuted": 80,
+        "issuesIdentified": 25,
+        "piDefectRatio": 0.313
+      },
+      {
+        "subAuditName": "Trade Finance",
+        "piExecuted": 100,
+        "issuesIdentified": 20,
+        "piDefectRatio": 0.2
+      }
+    ],
+    "topSubAuditsByMaxPiExecuted": [
+      {
+        "subAuditName": "Wealth Management",
+        "piExecuted": 150
+      },
+      {
+        "subAuditName": "Retail Banking",
+        "piExecuted": 120
+      },
+      {
+        "subAuditName": "Trade Finance",
+        "piExecuted": 100
+      }
+    ],
+    "topSubAuditsByLowestPiDefectRatio": [
+      {
+        "subAuditName": "Retail Banking",
+        "piExecuted": 120,
+        "issuesIdentified": 10,
+        "piDefectRatio": 0.083
+      },
+      {
+        "subAuditName": "Wealth Management",
+        "piExecuted": 150,
+        "issuesIdentified": 15,
+        "piDefectRatio": 0.1
+      },
+      {
+        "subAuditName": "Trade Finance",
+        "piExecuted": 100,
+        "issuesIdentified": 20,
+        "piDefectRatio": 0.2
+      }
+    ],
+    "topSubAuditsByHighRisk": [
+      {
+        "subAuditName": "Lending Operations",
+        "highAndZtIssues": 12
+      },
+      {
+        "subAuditName": "Deposit Accounts",
+        "highAndZtIssues": 10
+      },
+      {
+        "subAuditName": "Trade Finance",
+        "highAndZtIssues": 8
+      }
+    ]
+  },
+  "auditCoverageExecutionSummary": {
+    "description": "Audit coverage percentage, execution vs planned duration, and completion delay analysis.",
+    "totalCheckpointsInSchedule": 250,
+    "totalAppliedCheckpoints": 220,
+    "totalCompletedCheckpoints": 180,
+    "coveragePct": 81.8,
+    "executionDurationDays": 40,
+    "plannedAuditDurationDays": 35,
+    "durationDifferenceDays": 5,
+    "currentExecutionStatus": "In Progress",
+    "isFinalised": false,
+    "completionDelayDays": ""
+  },
+  "riskLevelComplianceSummary": {
+    "description": "Risk classification based on compliance score and high-severity issue exposure.",
+    "totalIssues": 60,
+    "highRiskIssues": 20,
+    "complianceScore": 85,
+    "auditRating": "",
+    "riskDistribution": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 5,
+        "percentOfTotal": 8.3
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 15,
+        "percentOfTotal": 25
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 25,
+        "percentOfTotal": 41.7
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 15,
+        "percentOfTotal": 25
+      }
+    ]
+  }
+}

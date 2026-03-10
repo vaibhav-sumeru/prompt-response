@@ -1,0 +1,7 @@
+- **Audit Start Summary:** Audit is In Progress, scheduled 01-Jan-2024, started 01-Jan-2024. 45 of 150 checkpoints audited (**30**%), 0 issues found.
+- **Multi-Day Execution Summary:** 3-day audit records 0 total issues across 45 checkpoints audited with a 0% issue-found rate; per-day breakdown below.
+  - **Day 1 (01-Jan-2024):** 10 checkpoints | 6.7% day / 6.7% overall | ZT: 0, High: 0, Med: 0, Low: 0 — 0 issues
+  - **Day 2 (02-Jan-2024):** 20 checkpoints | 13.3% day / 20% overall | ZT: 0, High: 0, Med: 0, Low: 0 — 0 issues
+  - **Day 3 (03-Jan-2024):** 15 checkpoints | 10% day / 30% overall | ZT: 0, High: 0, Med: 0, Low: 0 — 0 issues
+  - **Total:** 45 checkpoints | **30%** overall | ZT: 0, High: 0, Med: 0, Low: 0 — 0 issues
+- **Observation Summary:** 0 total issues — ZT: 0 (0%), High: 0 (0%), Med: 0 (0%), Low: 0 (0%).

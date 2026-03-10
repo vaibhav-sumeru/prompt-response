@@ -1,0 +1,7 @@
+- **Audit Start Summary:** Audit is In Progress, scheduled 01-Mar-2024, started 03-Mar-2024, 2-day delay. 80 of 200 checkpoints audited (**40**%), 25 issues found; top non-compliant groups: Cash Management (10), Customer KYC (8), Data Privacy (7).
+- **Multi-Day Execution Summary:** 3-day audit records 25 total issues across 80 checkpoints audited with a 31.3% issue-found rate; per-day breakdown below.
+  - **Day 1 (03-Mar-2024):** 30 checkpoints | 15% day / 15% overall | ZT: **5**, High: 0, Med: 0, Low: 0 — 5 issues
+  - **Day 2 (04-Mar-2024):** 25 checkpoints | 12.5% day / 27.5% overall | ZT: **10**, High: 0, Med: 0, Low: 0 — 10 issues
+  - **Day 3 (05-Mar-2024):** 25 checkpoints | 12.5% day / 40% overall | ZT: **10**, High: 0, Med: 0, Low: 0 — 10 issues
+  - **Total:** 80 checkpoints | **40%** overall | ZT: **25**, High: 0, Med: 0, Low: 0 — 25 issues
+- **Observation Summary:** 25 total issues — ZT: 25 (**100**%), High: 0 (0%), Med: 0 (0%), Low: 0 (0%). Top sub-audits by High+ZT: Branch Operations - Pune City 15 combined (0 High, **15** ZT); Customer Service Desk - Pune 10 combined (0 High, **10** ZT).

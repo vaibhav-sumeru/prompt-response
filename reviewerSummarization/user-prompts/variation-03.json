@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z",
+    "scheduleId": "SCH-AUD-789012",
+    "auditId": "AUD-XYZ-345678",
+    "mainAuditName": "Q2 Branch Compliance Audit - Central Region",
+    "auditType": "Branch Audit",
+    "auditeeName": "Mumbai Central Branch",
+    "auditorName": "Rajesh Kumar",
+    "currentExecutionStatus": "In Review"
+  },
+  "overallReviewerSummary": {
+    "description": "Consolidated audit-level summary covering compliance, issues, closure status, coverage, and risk distribution for reviewer assessment.",
+    "currentExecutionStatus": "In Review",
+    "complianceScorePct": 65.5,
+    "auditRating": "Unsatisfactory",
+    "totalIssues": 10,
+    "openIssues": 7,
+    "highAndZtIssues": 5,
+    "highIssues": 3,
+    "zeroToleranceIssues": 2,
+    "closedIssues": 3,
+    "closureRatePct": 30,
+    "totalAppliedCheckpoints": 100,
+    "totalCompletedCheckpoints": 75,
+    "coveragePct": 75
+  },
+  "auditorExecutionDurationSummary": {
+    "description": "Auditor execution timeline analysis covering actual vs planned duration, submission delay, and start delay.",
+    "executionDurationDays": 15,
+    "plannedAuditDurationDays": 10,
+    "durationDifferenceDays": 5,
+    "submissionDelayDays": 7,
+    "auditStartDelayDays": 3,
+    "currentExecutionStatus": "In Review"
+  },
+  "auditorEfficiencyRating": {
+    "description": "Auditor efficiency scoring based on planned vs actual audit duration.",
+    "plannedDurationDays": 10,
+    "actualDurationDays": 15,
+    "efficiencyScorePct": 66.7,
+    "efficiencyRating": "Delayed"
+  }
+}

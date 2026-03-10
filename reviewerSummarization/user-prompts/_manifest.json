@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "baseline-happy-path",
+    "description": "Moderate realistic metrics — compliance ~82%, 20+ issues, 70-80% closure rate, ~94% coverage, no start delay, efficient rating. Tests standard narration."
+  },
+  {
+    "id": "variation-02",
+    "category": "strong-audit-execution",
+    "description": "High compliance (>=90%), >=95% coverage, <=1 High+ZT issue, high closure rate (>90%), no delays, efficiency >100%. Tests suppression of all bold (no negative signals)."
+  },
+  {
+    "id": "variation-03",
+    "category": "weak-audit-execution",
+    "description": "Low compliance (<70%), <80% coverage, >=4 High+ZT issues, low closure rate (<50%), duration overrun, delayed efficiency rating. Tests all bold triggers firing."
+  },
+  {
+    "id": "variation-04",
+    "category": "zero-issues",
+    "description": "0 total issues, 0 open, 0 High+ZT, 0 closed, closureRatePct='', high coverage. Tests zero-value reporting and empty-string handling for closureRatePct."
+  },
+  {
+    "id": "variation-05",
+    "category": "all-high-zt-issues",
+    "description": "All issues are High or Zero Tolerance (e.g., 10 total, 10 High+ZT split as 7 High + 3 ZT). Tests High+ZT split narration when it equals totalIssues."
+  },
+  {
+    "id": "variation-06",
+    "category": "late-start-early-submission",
+    "description": "auditStartDelayDays > 0 (late start, bold), but submissionDelayDays < 0 (early submission, no bold) and durationDifferenceDays < 0 (ahead of plan). Tests mixed bold/no-bold in P2."
+  },
+  {
+    "id": "variation-07",
+    "category": "overrun-delayed-efficiency",
+    "description": "durationDifferenceDays > 0 (overrun, bold), submissionDelayDays > 0 (late submission), efficiencyRating='Delayed' (bold). Tests all P2+P3 negative bold triggers."
+  },
+  {
+    "id": "variation-08",
+    "category": "moderate-efficiency",
+    "description": "Delay <= 2 days, efficiencyRating='Moderate', efficiencyScorePct < 100. Tests that 'Moderate' is NOT bolded."
+  },
+  {
+    "id": "variation-09",
+    "category": "missing-fields",
+    "description": "complianceScorePct='', auditRating='', executionDurationDays='', plannedAuditDurationDays='', efficiencyScorePct=''. Tests 'Not Available' substitution and auditRating silent omission."
+  },
+  {
+    "id": "variation-10",
+    "category": "edge-case-no-rating",
+    "description": "auditRating='' with all other fields present and healthy. Tests that auditRating is silently omitted (no 'Not Available') while everything else narrates normally."
+  }
+]

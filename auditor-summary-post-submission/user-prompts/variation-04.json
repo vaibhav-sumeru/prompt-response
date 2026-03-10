@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-29T10:30:00Z",
+    "scheduleId": "SCH-789012",
+    "auditId": "AUD-2024-004",
+    "auditName": "Q3 2024 HR Policy Compliance Audit",
+    "auditType": "Compliance Audit",
+    "auditee": "Central Region HR Operations",
+    "auditorName": "Sarah Chen",
+    "auditExecutionStatus": "Completed"
+  },
+  "previousAuditComparison": {
+    "description": "Comparison of current vs previous audit for common checkpoints, highlighting rectification effectiveness and recurring control failures.",
+    "isPreviousAuditAvailable": true,
+    "previousScheduleId": "SCH-567890",
+    "noOfIssuesInPreviousAudit": 25,
+    "closedPreviousAuditIssues": 18,
+    "rectificationRatePct": 72,
+    "recurringIssues": 4,
+    "totalIssuesCurrent": 10,
+    "recurrenceRatePct": 40
+  },
+  "auditorObservationTracking": {
+    "description": "Auditor observations and recommendations across current and previous audit schedules, supporting continuity tracking.",
+    "currentScheduleAuditorName": "Sarah Chen",
+    "currentScheduleObservation": "Minor discrepancies in leave application process observed.",
+    "currentScheduleRecommendation": "Implement automated validation checks for all leave requests.",
+    "isPreviousScheduleAvailable": false,
+    "previousScheduleId": "",
+    "previousScheduleAuditorName": "",
+    "previousScheduleObservation": "",
+    "previousScheduleRecommendation": ""
+  },
+  "auditCompletionSummary": {
+    "description": "Final audit execution outcome covering coverage %, compliance score, issue density, and schedule adherence at both audit start and end.",
+    "auditStartDate": "15-JUL-2024",
+    "scheduleStartedDate": "18-JUL-2024",
+    "auditStartDelayDelta": 3,
+    "totalAppliedCheckpoints": 120,
+    "totalCheckpointsAudited": 78,
+    "totalIssues": 10,
+    "completionPct": 65,
+    "issueFoundPct": 12.8,
+    "auditComplianceScore": 75.3,
+    "auditEndDate": "25-JUL-2024",
+    "scheduleEndDate": "27-JUL-2024",
+    "auditEndDelayDelta": 2
+  }
+}

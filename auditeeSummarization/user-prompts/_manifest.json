@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "full-positive",
+    "description": "isPreviousAuditAvailable=true, isAuditTypeAnnexure=true, isFinalised=true. All 6 bullets expected with balanced realistic metrics."
+  },
+  {
+    "id": "variation-02",
+    "category": "full-positive",
+    "description": "isPreviousAuditAvailable=true, isAuditTypeAnnexure=true, isFinalised=true. All 6 bullets expected with balanced realistic metrics."
+  },
+  {
+    "id": "variation-03",
+    "category": "no-previous-audit",
+    "description": "isPreviousAuditAvailable=false. Paragraph 2 must be absent, and previousAuditRecurringPct/recurringDelta must be omitted from Paragraph 3."
+  },
+  {
+    "id": "variation-04",
+    "category": "non-annexure-audit",
+    "description": "isAuditTypeAnnexure=false. Paragraph 4 must be absent regardless of other values."
+  },
+  {
+    "id": "variation-05",
+    "category": "both-gates-off",
+    "description": "isPreviousAuditAvailable=false and isAuditTypeAnnexure=false. Exactly 4 bullets expected (P1, P3, P5, P6)."
+  },
+  {
+    "id": "variation-06",
+    "category": "not-finalised",
+    "description": "isFinalised=false with completionDelayDays empty string. Paragraph 5 must not narrate completion delay."
+  },
+  {
+    "id": "variation-07",
+    "category": "zero-issues",
+    "description": "totalIssues=0 across issue sections, closure and recurring rates as 0 or empty per schema. Tests explicit zero reporting and Not Available handling."
+  },
+  {
+    "id": "variation-08",
+    "category": "high-recurrence-worst-case",
+    "description": "High recurringPct (>25), recurringHighAndZtIssues > 0, compliance decline, and positive deltaHighAndZtIssues. Tests risk-heavy narration and conditional bolding."
+  },
+  {
+    "id": "variation-09",
+    "category": "improving-trend",
+    "description": "Negative deltaTotalIssues and deltaHighAndZtIssues with positive deltaCompliancePct. Tests correct directionality and sign-safe delta language."
+  },
+  {
+    "id": "variation-10",
+    "category": "missing-optional-fields",
+    "description": "Use empty-string allowed fields (e.g., averageIssueClosureTimeDays, issuePercentage, complianceScore, auditRating) to validate Missing Field Policy and no hallucination."
+  }
+]

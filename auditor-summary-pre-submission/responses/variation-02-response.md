@@ -1,0 +1,7 @@
+- **Audit Start Summary:** Audit is In Progress, scheduled 23-JUL-2024, started 26-JUL-2024, 3-day delay. 70 of 200 checkpoints audited (**35**%), 15 issues found; top non-compliant groups: Cash Management Controls (6), KYC Documentation (4).
+- **Multi-Day Execution Summary:** 3-day audit records 15 total issues across 70 checkpoints audited with a 21.4% issue-found rate; per-day breakdown below.
+  - **Day 1 (26-JUL-2024):** 20 checkpoints | 10% day / 10% overall | ZT: **1**, High: **2**, Med: 2, Low: 0 — 5 issues
+  - **Day 2 (27-JUL-2024):** 25 checkpoints | 12.5% day / 22.5% overall | ZT: 0, High: **3**, Med: 4, Low: 1 — 8 issues
+  - **Day 3 (28-JUL-2024):** 25 checkpoints | 12.5% day / 35% overall | ZT: 0, High: 0, Med: 2, Low: 0 — 2 issues
+  - **Total:** 70 checkpoints | **35%** overall | ZT: **1**, High: **5**, Med: 8, Low: 1 — 15 issues
+- **Observation Summary:** 15 total issues — ZT: 1 (**6.7**%), High: 5 (**33.3**%), Med: 8 (53.3%), Low: 1 (6.7%). Top sub-audits by High+ZT: Cash Operations Review 4 combined (**3** High, **1** ZT); Customer Onboarding Compliance 2 combined (**2** High, 0 ZT).

@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generatedAt": "2023-10-26T10:30:00Z",
+    "scheduleId": "SCH-78901",
+    "auditId": "AUD-45678",
+    "mainAuditName": "Q4-2023 Branch Compliance Review - East Region",
+    "auditType": "Branch Audit",
+    "auditeeName": "East Central Bank, Sector 18",
+    "auditorName": "Priya Sharma",
+    "currentExecutionStatus": "Submitted"
+  },
+  "overallReviewerSummary": {
+    "description": "Consolidated audit-level summary covering compliance, issues, closure status, coverage, and risk distribution for reviewer assessment.",
+    "currentExecutionStatus": "Submitted",
+    "complianceScorePct": 88.5,
+    "auditRating": "Satisfactory",
+    "totalIssues": 25,
+    "openIssues": 5,
+    "highAndZtIssues": 3,
+    "highIssues": 2,
+    "zeroToleranceIssues": 1,
+    "closedIssues": 20,
+    "closureRatePct": 80,
+    "totalAppliedCheckpoints": 100,
+    "totalCompletedCheckpoints": 90,
+    "coveragePct": 90
+  },
+  "auditorExecutionDurationSummary": {
+    "description": "Auditor execution timeline analysis covering actual vs planned duration, submission delay, and start delay.",
+    "executionDurationDays": 8,
+    "plannedAuditDurationDays": 10,
+    "durationDifferenceDays": -2,
+    "submissionDelayDays": -2,
+    "auditStartDelayDays": 3,
+    "currentExecutionStatus": "Submitted"
+  },
+  "auditorEfficiencyRating": {
+    "description": "Auditor efficiency scoring based on planned vs actual audit duration.",
+    "plannedDurationDays": 10,
+    "actualDurationDays": 8,
+    "efficiencyScorePct": 125,
+    "efficiencyRating": "Efficient"
+  }
+}

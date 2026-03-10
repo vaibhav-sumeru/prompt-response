@@ -1,0 +1,2 @@
+- **Audit Start Summary:** Audit is In Progress, scheduled 01-Jun-2023, started 01-Jun-2023. 105 of 250 checkpoints audited (**42**%), 28 issues found; top non-compliant groups: Cash Management Controls (8), Customer KYC Verification (6), Loan Disbursement Process (5).
+- **Observation Summary:** 28 total issues — ZT: 3 (**10.7**%), High: 7 (**25**%), Med: 12 (42.9%), Low: 6 (21.4%). Top sub-audits by High+ZT: Branch Vault Procedures 5 combined (**3** High, **2** ZT); Customer Service Desk Audit 3 combined (**3** High, 0 ZT).

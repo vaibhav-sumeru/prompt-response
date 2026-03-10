@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "all-sections-active",
+    "description": "All 3 sections applicable: audit started, multi-day active, observation active. Balanced metrics."
+  },
+  {
+    "id": "variation-02",
+    "category": "all-sections-active",
+    "description": "All 3 sections applicable: audit started, multi-day active, observation active. Balanced metrics."
+  },
+  {
+    "id": "variation-03",
+    "category": "audit-not-started",
+    "description": "isAuditStarted = false. Only Paragraph 1 renders. multiDaySummary.isApplicable and observationSummary.isApplicable both false."
+  },
+  {
+    "id": "variation-04",
+    "category": "single-day-audit",
+    "description": "Audit started, single day only (numberOfAuditDays = 1). multiDaySummary.isApplicable = false. observationSummary.isApplicable = true."
+  },
+  {
+    "id": "variation-05",
+    "category": "zero-issues",
+    "description": "Audit in progress, zero issues found across all sections. Tests zero-value handling and no bolding."
+  },
+  {
+    "id": "variation-06",
+    "category": "high-completion-high-risk",
+    "description": "Audit near completion (90%+), high ZT and High risk issue counts. Tests bold formatting on critical values."
+  },
+  {
+    "id": "variation-07",
+    "category": "delayed-start",
+    "description": "Audit started late (startDelayDays > 5). Low completion (< 30%). observationSummary with topSubAudits at max 3."
+  },
+  {
+    "id": "variation-08",
+    "category": "empty-top-groups",
+    "description": "topNonCompliantGroups is empty array. Tests missing segment handling in Paragraph 1."
+  },
+  {
+    "id": "variation-09",
+    "category": "multi-day-all-risk-zero",
+    "description": "Multi-day audit active but all riskLevelIssueDistribution values are 0 across all days. Tests zero-value row handling."
+  },
+  {
+    "id": "variation-10",
+    "category": "observation-only-zt",
+    "description": "All issues are Zero Tolerance only (ZT = totalIssues, High/Med/Low = 0). Tests bold/concentration rendering."
+  }
+]

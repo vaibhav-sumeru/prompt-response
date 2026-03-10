@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-29T10:30:00Z",
+    "scheduleId": "SCH-HRM-2024-001",
+    "auditId": "AUD-HRM-2024-001",
+    "auditName": "HRM Policy Compliance Audit Q3 2024",
+    "auditType": "Compliance Audit",
+    "auditee": "Human Resources Department",
+    "auditorName": "Alice Johnson",
+    "auditExecutionStatus": "Completed"
+  },
+  "previousAuditComparison": {
+    "description": "Comparison of current vs previous audit for common checkpoints, highlighting rectification effectiveness and recurring control failures.",
+    "isPreviousAuditAvailable": true,
+    "previousScheduleId": "SCH-HRM-2023-004",
+    "noOfIssuesInPreviousAudit": 20,
+    "closedPreviousAuditIssues": 15,
+    "rectificationRatePct": 75,
+    "recurringIssues": 4,
+    "totalIssuesCurrent": 10,
+    "recurrenceRatePct": 40
+  },
+  "auditorObservationTracking": {
+    "description": "Auditor observations and recommendations across current and previous audit schedules, supporting continuity tracking.",
+    "currentScheduleAuditorName": "Alice Johnson",
+    "currentScheduleObservation": "Several HR policy documents require immediate updates to reflect new labor laws.",
+    "currentScheduleRecommendation": "Implement a formal document review process for all HR policies annually.",
+    "isPreviousScheduleAvailable": true,
+    "previousScheduleId": "SCH-HRM-2023-004",
+    "previousScheduleAuditorName": "Bob Williams",
+    "previousScheduleObservation": "Lack of clear guidelines for employee onboarding procedures identified last cycle.",
+    "previousScheduleRecommendation": ""
+  },
+  "auditCompletionSummary": {
+    "description": "Final audit execution outcome covering coverage %, compliance score, issue density, and schedule adherence at both audit start and end.",
+    "auditStartDate": "01-Jan-2024",
+    "scheduleStartedDate": "03-Jan-2024",
+    "auditStartDelayDelta": 2,
+    "totalAppliedCheckpoints": 50,
+    "totalCheckpointsAudited": 35,
+    "totalIssues": 10,
+    "completionPct": 70,
+    "issueFoundPct": 28.6,
+    "auditComplianceScore": 85.5,
+    "auditEndDate": "15-Jan-2024",
+    "scheduleEndDate": "15-Jan-2024",
+    "auditEndDelayDelta": 0
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "meta": {
+    "generatedAt": "2023-10-27T10:30:00Z",
+    "scheduleId": "SCH-AUD-004",
+    "auditId": "AUD-BRN-004-2023-V4",
+    "mainAuditName": "Branch Operations Audit - Mumbai South",
+    "auditType": "Branch Audit",
+    "auditeeName": "Mumbai South Branch (MSB)",
+    "auditorName": "Priya Sharma",
+    "currentExecutionStatus": "Finalized"
+  },
+  "currentAuditIssueSummary": {
+    "description": "Summary of current audit issues including total count, severity, closure status, and aging.",
+    "totalIssues": 50,
+    "totalAppliedCheckpoints": 150,
+    "totalCompletedCheckpoints": 130,
+    "riskDistribution": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 5,
+        "percentOfTotal": 10
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 10,
+        "percentOfTotal": 20
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 20,
+        "percentOfTotal": 40
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 15,
+        "percentOfTotal": 30
+      }
+    ],
+    "averageIssueAgingDays": 75.5,
+    "averageIssueClosureTimeDays": 30.2,
+    "closedIssues": 15,
+    "closureRatePct": 30,
+    "issuePercentage": 25
+  },
+  "previousAuditComparison": {
+    "description": "Comparison of current audit performance against the previous audit for compliance, total issues, and critical-risk issues.",
+    "isPreviousAuditAvailable": true,
+    "currentTotalIssues": 50,
+    "currentTotalCheckpoints": 150,
+    "currentCompliantCheckpoints": 130,
+    "currentCompliancePct": 86.7,
+    "currentHighAndZtIssues": 15,
+    "previousTotalIssues": 60,
+    "previousTotalCheckpoints": 160,
+    "previousCompliantCheckpoints": 120,
+    "previousCompliancePct": 75,
+    "previousHighAndZtIssues": 20,
+    "deltaCompliancePct": 11.7,
+    "deltaHighAndZtIssues": -5,
+    "deltaTotalIssues": -10
+  },
+  "repeatIssueAnalysis": {
+    "description": "Analysis of recurring issues, recurrence rate, critical-severity recurring exposure, and top groups with repeat failures.",
+    "totalIssues": 50,
+    "recurringIssues": 15,
+    "recurringPct": 30,
+    "isPreviousAuditAvailable": true,
+    "previousAuditRecurringPct": 20,
+    "recurringDelta": 10,
+    "recurringHighAndZtIssues": 7,
+    "topGroupsByRecurrence": [
+      {
+        "groupName": "Cash Management",
+        "recurringIssueCount": 8
+      },
+      {
+        "groupName": "Customer Onboarding",
+        "recurringIssueCount": 5
+      },
+      {
+        "groupName": "Loan Processing",
+        "recurringIssueCount": 2
+      }
+    ]
+  },
+  "annexurePiSummary": {
+    "description": "Annexure PI summary (not applicable for this audit type).",
+    "isAuditTypeAnnexure": false,
+    "topSubAuditsByPiDefectRatio": [],
+    "topSubAuditsByMaxPiExecuted": [],
+    "topSubAuditsByLowestPiDefectRatio": [],
+    "topSubAuditsByHighRisk": []
+  },
+  "auditCoverageExecutionSummary": {
+    "description": "Summary of audit coverage, execution duration against plan, current status, and completion delay.",
+    "totalCheckpointsInSchedule": 200,
+    "totalAppliedCheckpoints": 150,
+    "totalCompletedCheckpoints": 130,
+    "coveragePct": 86.7,
+    "executionDurationDays": 25,
+    "plannedAuditDurationDays": 20,
+    "durationDifferenceDays": 5,
+    "currentExecutionStatus": "Finalized",
+    "isFinalised": true,
+    "completionDelayDays": 7
+  },
+  "riskLevelComplianceSummary": {
+    "description": "Overall compliance score, audit rating, and full risk severity distribution, providing the auditee's risk classification.",
+    "totalIssues": 50,
+    "highRiskIssues": 15,
+    "complianceScore": 65,
+    "auditRating": "Needs Improvement",
+    "riskDistribution": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 5,
+        "percentOfTotal": 10
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 10,
+        "percentOfTotal": 20
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 20,
+        "percentOfTotal": 40
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 15,
+        "percentOfTotal": 30
+      }
+    ]
+  }
+}

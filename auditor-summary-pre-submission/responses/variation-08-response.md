@@ -1,0 +1,7 @@
+- **Audit Start Summary:** Audit is In Progress, scheduled 01-Aug-2023, started 01-Aug-2023. 80 of 250 checkpoints audited (**32**%), 15 issues found.
+- **Multi-Day Execution Summary:** 3-day audit records 15 total issues across 80 checkpoints audited with a 18.8% issue-found rate; per-day breakdown below.
+  - **Day 1 (01-Aug-2023):** 30 checkpoints | 12% day / 12% overall | ZT: **1**, High: **2**, Med: 1, Low: 0 — 4 issues
+  - **Day 2 (02-Aug-2023):** 25 checkpoints | 10% day / 22% overall | ZT: 0, High: **2**, Med: 3, Low: 1 — 6 issues
+  - **Day 3 (03-Aug-2023):** 25 checkpoints | 10% day / 32% overall | ZT: **1**, High: **1**, Med: 2, Low: 1 — 5 issues
+  - **Total:** 80 checkpoints | **32%** overall | ZT: **2**, High: **5**, Med: 6, Low: 2 — 15 issues
+- **Observation Summary:** 15 total issues — ZT: 2 (**13.3**%), High: 5 (**33.3**%), Med: 6 (40%), Low: 2 (13.3%). Top sub-audits by High+ZT: Cash Management 4 combined (**3** High, **1** ZT); Loan Processing 3 combined (**2** High, **1** ZT).

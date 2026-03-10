@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generatedAt": "2023-10-27T10:30:00Z",
+    "scheduleId": "SCH-789012",
+    "auditId": "AUD-ZERO-101",
+    "mainAuditName": "Zero Issue Compliance Review",
+    "auditType": "Regulatory Compliance",
+    "auditeeName": "Global Financial Services Corp",
+    "auditorName": "Alice Johnson",
+    "currentExecutionStatus": "Finalized"
+  },
+  "overallReviewerSummary": {
+    "description": "Explanation of what this section represents — consolidated audit-level summary covering compliance, issues, closure status, coverage, and risk distribution for reviewer assessment.",
+    "currentExecutionStatus": "Finalized",
+    "complianceScorePct": 98.5,
+    "auditRating": "Satisfactory",
+    "totalIssues": 0,
+    "openIssues": 0,
+    "highAndZtIssues": 0,
+    "highIssues": 0,
+    "zeroToleranceIssues": 0,
+    "closedIssues": 0,
+    "closureRatePct": "",
+    "totalAppliedCheckpoints": 120,
+    "totalCompletedCheckpoints": 120,
+    "coveragePct": 100
+  },
+  "auditorExecutionDurationSummary": {
+    "description": "Explanation of what this section represents — auditor execution timeline analysis covering actual vs planned duration, submission delay, and start delay.",
+    "executionDurationDays": 10,
+    "plannedAuditDurationDays": 10,
+    "durationDifferenceDays": 0,
+    "submissionDelayDays": 0,
+    "auditStartDelayDays": 0,
+    "currentExecutionStatus": "Finalized"
+  },
+  "auditorEfficiencyRating": {
+    "description": "Explanation of what this section represents — auditor efficiency scoring based on planned vs actual audit duration.",
+    "plannedDurationDays": 10,
+    "actualDurationDays": 10,
+    "efficiencyScorePct": 100,
+    "efficiencyRating": "Efficient"
+  }
+}

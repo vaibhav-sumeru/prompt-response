@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z",
+    "scheduleId": "SCH-789012",
+    "auditId": "AUD-FULLDELAYS-001",
+    "auditName": "Q2 Branch Compliance Audit - South Zone",
+    "auditType": "Branch Audit",
+    "auditee": "Hyderabad Branch Operations",
+    "auditorName": "Rajesh Kumar",
+    "auditExecutionStatus": "Completed"
+  },
+  "previousAuditComparison": {
+    "description": "Comparison of current vs previous audit for common checkpoints, highlighting rectification effectiveness and recurring control failures.",
+    "isPreviousAuditAvailable": true,
+    "previousScheduleId": "SCH-P-5678",
+    "noOfIssuesInPreviousAudit": 60,
+    "closedPreviousAuditIssues": 48,
+    "rectificationRatePct": 80,
+    "recurringIssues": 6,
+    "totalIssuesCurrent": 30,
+    "recurrenceRatePct": 20
+  },
+  "auditorObservationTracking": {
+    "description": "Auditor observations and recommendations across current and previous audit schedules, supporting continuity tracking.",
+    "currentScheduleAuditorName": "Rajesh Kumar",
+    "currentScheduleObservation": "Identified several critical non-compliance issues related to data privacy protocols and access controls requiring immediate remediation actions.",
+    "currentScheduleRecommendation": "Implement robust multi-factor authentication across all sensitive systems and conduct mandatory quarterly privacy training for staff.",
+    "isPreviousScheduleAvailable": true,
+    "previousScheduleId": "SCH-P-5678",
+    "previousScheduleAuditorName": "Priya Sharma",
+    "previousScheduleObservation": "Observed inconsistent application of security patch management policies across various departmental servers leading to potential vulnerabilities.",
+    "previousScheduleRecommendation": "Standardize patch management procedures, enforce timely updates, and conduct regular vulnerability assessments to mitigate risks."
+  },
+  "auditCompletionSummary": {
+    "description": "Final audit execution outcome covering coverage %, compliance score, issue density, and schedule adherence at both audit start and end.",
+    "auditStartDate": "10-Mar-2023",
+    "scheduleStartedDate": "13-Mar-2023",
+    "auditStartDelayDelta": 3,
+    "totalAppliedCheckpoints": 120,
+    "totalCheckpointsAudited": 108,
+    "totalIssues": 30,
+    "completionPct": 90,
+    "issueFoundPct": 27.8,
+    "auditComplianceScore": 88.5,
+    "auditEndDate": "25-Mar-2023",
+    "scheduleEndDate": "28-Mar-2023",
+    "auditEndDelayDelta": 3
+  }
+}

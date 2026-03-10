@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "generatedAt": "2023-06-01T10:30:00Z",
+    "auditId": "AUD-2023-4567-V4",
+    "auditName": "Branch Operations Compliance Audit - North Zone (V4)",
+    "scheduleId": "SCH-2023-001-V4",
+    "auditorName": "Rajesh Kumar",
+    "auditType": "Branch Audit",
+    "auditee": "Northern Regional Bank Ltd."
+  },
+  "auditStartSummary": {
+    "isAuditStarted": true,
+    "description": "Audit initiation status, scope readiness, and early execution progress.",
+    "executionStatus": "In Progress",
+    "auditStartDate": "01-Jun-2023",
+    "scheduleStartedDate": "01-Jun-2023",
+    "startDelayDays": 0,
+    "totalAppliedCheckpoints": 250,
+    "totalCheckpointsAudited": 105,
+    "totalIssuesFound": 28,
+    "completionPct": 42,
+    "topNonCompliantGroups": [
+      {
+        "groupName": "Cash Management Controls",
+        "issueCount": 8
+      },
+      {
+        "groupName": "Customer KYC Verification",
+        "issueCount": 6
+      },
+      {
+        "groupName": "Loan Disbursement Process",
+        "issueCount": 5
+      }
+    ]
+  },
+  "multiDaySummary": {
+    "isApplicable": false,
+    "description": "Cumulative execution progress across multiple audit days, including day-by-day issue distribution and coverage trend.",
+    "scheduleStartedDate": "01-Jun-2023",
+    "currentScheduleDate": "01-Jun-2023",
+    "numberOfAuditDays": 1,
+    "totalIssuesFound": 28,
+    "issueFoundPct": 26.7,
+    "dailyBreakdown": [
+      {
+        "day": 1,
+        "date": "01-Jun-2023",
+        "totalCheckpointsAttempted": 105,
+        "completionPctDay": 42,
+        "completionPctOverall": 42,
+        "riskLevelIssueDistribution": {
+          "highRisk": 7,
+          "zeroTolerance": 3,
+          "medium": 12,
+          "low": 6
+        },
+        "totalIssues": 28
+      }
+    ],
+    "dailyTotals": {
+      "totalCheckpointsAttempted": 105,
+      "completionPctOverall": 42,
+      "riskLevelIssueDistribution": {
+        "highRisk": 7,
+        "zeroTolerance": 3,
+        "medium": 12,
+        "low": 6
+      },
+      "totalIssues": 28
+    }
+  },
+  "observationSummary": {
+    "isApplicable": true,
+    "description": "Observation grouping by risk level and identification of sub-audits with highest risk concentration.",
+    "totalIssues": 28,
+    "byRiskLevel": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 3,
+        "concentrationPct": 10.7
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 7,
+        "concentrationPct": 25
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 12,
+        "concentrationPct": 42.9
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 6,
+        "concentrationPct": 21.4
+      }
+    ],
+    "topSubAuditsWithHighRiskIssues": [
+      {
+        "subAuditName": "Branch Vault Procedures",
+        "combinedHighZtCount": 5,
+        "highRiskCount": 3,
+        "ztCount": 2
+      },
+      {
+        "subAuditName": "Customer Service Desk Audit",
+        "combinedHighZtCount": 3,
+        "highRiskCount": 3,
+        "ztCount": 0
+      }
+    ]
+  }
+}

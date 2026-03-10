@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-23T10:30:00Z",
+    "auditId": "AUD-2024-07-001",
+    "auditName": "Q3-2024 Branch Compliance Audit - Mumbai Region",
+    "scheduleId": "SCH-2024-07-001-A",
+    "auditorName": "Priya Sharma",
+    "auditType": "Branch Audit",
+    "auditee": "Mumbai Central Branch"
+  },
+  "auditStartSummary": {
+    "isAuditStarted": true,
+    "description": "audit initiation status, scope readiness, and early execution progress.",
+    "executionStatus": "In Progress",
+    "auditStartDate": "18-JUL-2024",
+    "scheduleStartedDate": "21-JUL-2024",
+    "startDelayDays": 3,
+    "totalAppliedCheckpoints": 200,
+    "totalCheckpointsAudited": 85,
+    "totalIssuesFound": 12,
+    "completionPct": 42.5,
+    "topNonCompliantGroups": [
+      {
+        "groupName": "Cash Handling Procedures",
+        "issueCount": 4
+      },
+      {
+        "groupName": "Customer KYC Verification",
+        "issueCount": 3
+      },
+      {
+        "groupName": "Data Privacy Compliance",
+        "issueCount": 2
+      }
+    ]
+  },
+  "multiDaySummary": {
+    "isApplicable": true,
+    "description": "cumulative execution progress across multiple audit days, including day-by-day issue distribution and coverage trend.",
+    "scheduleStartedDate": "21-JUL-2024",
+    "currentScheduleDate": "23-JUL-2024",
+    "numberOfAuditDays": 3,
+    "totalIssuesFound": 12,
+    "issueFoundPct": 14.1,
+    "dailyBreakdown": [
+      {
+        "day": 1,
+        "date": "21-JUL-2024",
+        "totalCheckpointsAttempted": 30,
+        "completionPctDay": 15,
+        "completionPctOverall": 15,
+        "riskLevelIssueDistribution": {
+          "highRisk": 1,
+          "zeroTolerance": 0,
+          "medium": 2,
+          "low": 1
+        },
+        "totalIssues": 4
+      },
+      {
+        "day": 2,
+        "date": "22-JUL-2024",
+        "totalCheckpointsAttempted": 35,
+        "completionPctDay": 17.5,
+        "completionPctOverall": 32.5,
+        "riskLevelIssueDistribution": {
+          "highRisk": 2,
+          "zeroTolerance": 1,
+          "medium": 1,
+          "low": 1
+        },
+        "totalIssues": 5
+      },
+      {
+        "day": 3,
+        "date": "23-JUL-2024",
+        "totalCheckpointsAttempted": 20,
+        "completionPctDay": 10,
+        "completionPctOverall": 42.5,
+        "riskLevelIssueDistribution": {
+          "highRisk": 1,
+          "zeroTolerance": 0,
+          "medium": 1,
+          "low": 1
+        },
+        "totalIssues": 3
+      }
+    ],
+    "dailyTotals": {
+      "totalCheckpointsAttempted": 85,
+      "completionPctOverall": 42.5,
+      "riskLevelIssueDistribution": {
+        "highRisk": 4,
+        "zeroTolerance": 1,
+        "medium": 4,
+        "low": 3
+      },
+      "totalIssues": 12
+    }
+  },
+  "observationSummary": {
+    "isApplicable": true,
+    "description": "observation grouping by risk level and identification of sub-audits with highest risk concentration.",
+    "totalIssues": 12,
+    "byRiskLevel": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 1,
+        "concentrationPct": 8.3
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 4,
+        "concentrationPct": 33.3
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 4,
+        "concentrationPct": 33.3
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 3,
+        "concentrationPct": 25
+      }
+    ],
+    "topSubAuditsWithHighRiskIssues": [
+      {
+        "subAuditName": "Loan Processing Review",
+        "combinedHighZtCount": 3,
+        "highRiskCount": 2,
+        "ztCount": 1
+      },
+      {
+        "subAuditName": "Customer Onboarding Compliance",
+        "combinedHighZtCount": 1,
+        "highRiskCount": 1,
+        "ztCount": 0
+      },
+      {
+        "subAuditName": "Fraud Detection Controls",
+        "combinedHighZtCount": 1,
+        "highRiskCount": 1,
+        "ztCount": 0
+      }
+    ]
+  }
+}

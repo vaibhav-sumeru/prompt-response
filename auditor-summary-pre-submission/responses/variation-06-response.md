@@ -1,0 +1,7 @@
+- **Audit Start Summary:** Audit is In Progress, scheduled 20-OCT-2023, started 20-OCT-2023. 1425 of 1500 checkpoints audited (95%), 180 issues found; top non-compliant groups: Cash Handling Procedures (55), Data Privacy Compliance (40), Loan Origination KYC (35).
+- **Multi-Day Execution Summary:** 3-day audit records 180 total issues across 1425 checkpoints audited with a 12.6% issue-found rate; per-day breakdown below.
+  - **Day 1 (20-OCT-2023):** 450 checkpoints | 30% day / 30% overall | ZT: **5**, High: **10**, Med: 15, Low: 5 — 35 issues
+  - **Day 2 (21-OCT-2023):** 500 checkpoints | 33.3% day / 63.3% overall | ZT: **15**, High: **25**, Med: 20, Low: 10 — 70 issues
+  - **Day 3 (22-OCT-2023):** 475 checkpoints | 31.7% day / 95% overall | ZT: **20**, High: **25**, Med: 20, Low: 10 — 75 issues
+  - **Total:** 1425 checkpoints | **95%** overall | ZT: **40**, High: **60**, Med: 55, Low: 25 — 180 issues
+- **Observation Summary:** 180 total issues — ZT: 40 (**22.2%**), High: 60 (**33.3%**), Med: 55 (30.6%), Low: 25 (13.9%). Top sub-audits by High+ZT: Branch-A Ops Review 35 combined (**20** High, **15** ZT); Digital Banking Controls 30 combined (**20** High, **10** ZT); Credit Card Processing 25 combined (**20** High, **5** ZT).

@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z",
+    "scheduleId": "SCH-AUD-2024-001",
+    "auditId": "AUD-BRN-2024-01-A",
+    "mainAuditName": "Branch Operations Audit Q1 2024 - Central Region",
+    "auditType": "Branch Audit",
+    "auditeeName": "Central Branch #45",
+    "auditorName": "Rajesh Kumar",
+    "currentExecutionStatus": "Finalized"
+  },
+  "currentAuditIssueSummary": {
+    "description": "Current audit issue summary covering total issues, severity distribution, closure status, and aging metrics.",
+    "totalIssues": 50,
+    "totalAppliedCheckpoints": 100,
+    "totalCompletedCheckpoints": 95,
+    "riskDistribution": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 5,
+        "percentOfTotal": 10
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 10,
+        "percentOfTotal": 20
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 20,
+        "percentOfTotal": 40
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 15,
+        "percentOfTotal": 30
+      }
+    ],
+    "averageIssueAgingDays": 75.5,
+    "averageIssueClosureTimeDays": 40.2,
+    "closedIssues": 20,
+    "closureRatePct": 40,
+    "issuePercentage": 25
+  },
+  "previousAuditComparison": {
+    "description": "Comparison of current vs previous audit covering compliance, issue count, and high-risk exposure trends.",
+    "isPreviousAuditAvailable": true,
+    "currentTotalIssues": 50,
+    "currentTotalCheckpoints": 100,
+    "currentCompliantCheckpoints": 68,
+    "currentCompliancePct": 68,
+    "currentHighAndZtIssues": 15,
+    "previousTotalIssues": 40,
+    "previousTotalCheckpoints": 100,
+    "previousCompliantCheckpoints": 85,
+    "previousCompliancePct": 85,
+    "previousHighAndZtIssues": 10,
+    "deltaCompliancePct": -17,
+    "deltaHighAndZtIssues": 5,
+    "deltaTotalIssues": 10
+  },
+  "repeatIssueAnalysis": {
+    "description": "Repeat/recurring issue analysis for the current audit, highlighting control weaknesses that remain unresolved.",
+    "totalIssues": 50,
+    "recurringIssues": 18,
+    "recurringPct": 36,
+    "isPreviousAuditAvailable": true,
+    "previousAuditRecurringPct": 20,
+    "recurringDelta": 16,
+    "recurringHighAndZtIssues": 7,
+    "topGroupsByRecurrence": [
+      {
+        "groupName": "Cash Management & Reconciliation",
+        "recurringIssueCount": 8
+      },
+      {
+        "groupName": "Customer Onboarding & KYC",
+        "recurringIssueCount": 6
+      },
+      {
+        "groupName": "Lending Operations",
+        "recurringIssueCount": 4
+      }
+    ]
+  },
+  "annexurePiSummary": {
+    "description": "Sub-audit level PI execution analysis, correlating process inspection counts with issue density and risk concentration.",
+    "isAuditTypeAnnexure": true,
+    "topSubAuditsByPiDefectRatio": [
+      {
+        "subAuditName": "Account Opening",
+        "piExecuted": 50,
+        "issuesIdentified": 12,
+        "piDefectRatio": 0.2
+      },
+      {
+        "subAuditName": "Loan Processing",
+        "piExecuted": 30,
+        "issuesIdentified": 5,
+        "piDefectRatio": 0.17
+      }
+    ],
+    "topSubAuditsByMaxPiExecuted": [
+      {
+        "subAuditName": "Cash Operations",
+        "piExecuted": 75
+      },
+      {
+        "subAuditName": "Account Opening",
+        "piExecuted": 50
+      },
+      {
+        "subAuditName": "Customer Service",
+        "piExecuted": 40
+      }
+    ],
+    "topSubAuditsByLowestPiDefectRatio": [
+      {
+        "subAuditName": "HR & Admin",
+        "piExecuted": 20,
+        "issuesIdentified": 0,
+        "piDefectRatio": 0
+      },
+      {
+        "subAuditName": "IT Infrastructure",
+        "piExecuted": 15,
+        "issuesIdentified": 1,
+        "piDefectRatio": 0.07
+      }
+    ],
+    "topSubAuditsByHighRisk": [
+      {
+        "subAuditName": "Lending Operations",
+        "highAndZtIssues": 6
+      },
+      {
+        "subAuditName": "Cash Management",
+        "highAndZtIssues": 5
+      },
+      {
+        "subAuditName": "Regulatory Compliance",
+        "highAndZtIssues": 4
+      }
+    ]
+  },
+  "auditCoverageExecutionSummary": {
+    "description": "Audit coverage percentage, execution vs planned duration, and completion delay analysis.",
+    "totalCheckpointsInSchedule": 150,
+    "totalAppliedCheckpoints": 100,
+    "totalCompletedCheckpoints": 95,
+    "coveragePct": 95,
+    "executionDurationDays": 25,
+    "plannedAuditDurationDays": 20,
+    "durationDifferenceDays": 5,
+    "currentExecutionStatus": "Finalized",
+    "isFinalised": true,
+    "completionDelayDays": 7
+  },
+  "riskLevelComplianceSummary": {
+    "description": "Risk classification based on compliance score and high-severity issue exposure.",
+    "totalIssues": 50,
+    "highRiskIssues": 15,
+    "complianceScore": 68,
+    "auditRating": "Needs Improvement",
+    "riskDistribution": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 5,
+        "percentOfTotal": 10
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 10,
+        "percentOfTotal": 20
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 20,
+        "percentOfTotal": 40
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 15,
+        "percentOfTotal": 30
+      }
+    ]
+  }
+}

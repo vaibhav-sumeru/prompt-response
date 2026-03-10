@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z",
+    "auditId": "AUD-2024-001-A3",
+    "auditName": "Q3-2024 Inventory Control Audit - Bengaluru Hub",
+    "scheduleId": "SCH-INV-001-BGL",
+    "auditorName": "Priya Sharma",
+    "auditType": "Inventory Audit",
+    "auditee": "Bengaluru Logistics Hub"
+  },
+  "auditStartSummary": {
+    "isAuditStarted": false,
+    "description": "audit initiation status, scope readiness, and early execution progress.",
+    "executionStatus": "Not Started",
+    "auditStartDate": "29-JUL-2024",
+    "scheduleStartedDate": "03-AUG-2024",
+    "startDelayDays": 5,
+    "totalAppliedCheckpoints": 185,
+    "totalCheckpointsAudited": 0,
+    "totalIssuesFound": 0,
+    "completionPct": 0,
+    "topNonCompliantGroups": []
+  },
+  "multiDaySummary": {
+    "isApplicable": false,
+    "description": "cumulative execution progress across multiple audit days, including day-by-day issue distribution and coverage trend.",
+    "scheduleStartedDate": "03-AUG-2024",
+    "currentScheduleDate": null,
+    "numberOfAuditDays": 0,
+    "totalIssuesFound": 0,
+    "issueFoundPct": 0,
+    "dailyBreakdown": [],
+    "dailyTotals": {
+      "totalCheckpointsAttempted": 0,
+      "completionPctOverall": 0,
+      "riskLevelIssueDistribution": {
+        "highRisk": 0,
+        "zeroTolerance": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "totalIssues": 0
+    }
+  },
+  "observationSummary": {
+    "isApplicable": false,
+    "description": "observation grouping by risk level and identification of sub-audits with highest risk concentration.",
+    "totalIssues": 0,
+    "byRiskLevel": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 0,
+        "concentrationPct": 0
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 0,
+        "concentrationPct": 0
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 0,
+        "concentrationPct": 0
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 0,
+        "concentrationPct": 0
+      }
+    ],
+    "topSubAuditsWithHighRiskIssues": []
+  }
+}

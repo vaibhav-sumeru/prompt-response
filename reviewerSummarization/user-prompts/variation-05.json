@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-29T10:30:00Z",
+    "scheduleId": "SCH-789012",
+    "auditId": "AUD-FCA-2023-Q3-005",
+    "mainAuditName": "Financial Compliance Audit Q3 2023",
+    "auditType": "Financial Compliance",
+    "auditeeName": "Apex Corp Pvt Ltd",
+    "auditorName": "John Doe",
+    "currentExecutionStatus": "In Review"
+  },
+  "overallReviewerSummary": {
+    "description": "Consolidated audit-level summary covering compliance, issues, closure status, coverage, and risk distribution for reviewer assessment.",
+    "currentExecutionStatus": "In Review",
+    "complianceScorePct": 78.5,
+    "auditRating": "",
+    "totalIssues": 15,
+    "openIssues": 9,
+    "highAndZtIssues": 15,
+    "highIssues": 10,
+    "zeroToleranceIssues": 5,
+    "closedIssues": 6,
+    "closureRatePct": 40,
+    "totalAppliedCheckpoints": 50,
+    "totalCompletedCheckpoints": 35,
+    "coveragePct": 70
+  },
+  "auditorExecutionDurationSummary": {
+    "description": "Auditor execution timeline analysis covering actual vs planned duration, submission delay, and start delay.",
+    "executionDurationDays": 18,
+    "plannedAuditDurationDays": 12,
+    "durationDifferenceDays": 6,
+    "submissionDelayDays": 3,
+    "auditStartDelayDays": 2,
+    "currentExecutionStatus": "In Review"
+  },
+  "auditorEfficiencyRating": {
+    "description": "Auditor efficiency scoring based on planned vs actual audit duration.",
+    "plannedDurationDays": 12,
+    "actualDurationDays": 18,
+    "efficiencyScorePct": 66.7,
+    "efficiencyRating": "Delayed"
+  }
+}

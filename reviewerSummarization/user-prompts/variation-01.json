@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "generatedAt": "2023-10-27T10:30:00Z",
+    "scheduleId": "SCH-78901",
+    "auditId": "AUD-2023-005",
+    "mainAuditName": "Q3 2023 Branch Operations Audit - Mumbai Region",
+    "auditType": "Branch Audit",
+    "auditeeName": "Mumbai Central Branch",
+    "auditorName": "Priya Sharma",
+    "currentExecutionStatus": "Submitted"
+  },
+  "overallReviewerSummary": {
+    "description": "Consolidated audit-level summary covering compliance, issues, closure status, coverage, and risk distribution for reviewer assessment.",
+    "currentExecutionStatus": "Submitted",
+    "complianceScorePct": 82.5,
+    "auditRating": "Satisfactory",
+    "totalIssues": 25,
+    "openIssues": 6,
+    "highAndZtIssues": 3,
+    "highIssues": 2,
+    "zeroToleranceIssues": 1,
+    "closedIssues": 19,
+    "closureRatePct": 76,
+    "totalAppliedCheckpoints": 100,
+    "totalCompletedCheckpoints": 94,
+    "coveragePct": 94
+  },
+  "auditorExecutionDurationSummary": {
+    "description": "Auditor execution timeline analysis covering actual vs planned duration, submission delay, and start delay.",
+    "executionDurationDays": 9,
+    "plannedAuditDurationDays": 10,
+    "durationDifferenceDays": -1,
+    "submissionDelayDays": -1,
+    "auditStartDelayDays": 0,
+    "currentExecutionStatus": "Submitted"
+  },
+  "auditorEfficiencyRating": {
+    "description": "Auditor efficiency scoring based on planned vs actual audit duration.",
+    "plannedDurationDays": 10,
+    "actualDurationDays": 9,
+    "efficiencyScorePct": 111.1,
+    "efficiencyRating": "Efficient"
+  }
+}

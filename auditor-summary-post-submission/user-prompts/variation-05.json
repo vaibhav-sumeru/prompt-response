@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-20T10:00:00Z",
+    "scheduleId": "SCH-AUD-2024-001-V5",
+    "auditId": "AUD-2024-OPS-001-V5",
+    "auditName": "Operational Efficiency Audit Q3 2024",
+    "auditType": "Operational Audit",
+    "auditee": "Logistics Department - Central Warehouse",
+    "auditorName": "Sarah Jenkins",
+    "auditExecutionStatus": "Completed"
+  },
+  "previousAuditComparison": {
+    "description": "Comparison of current vs previous audit for common checkpoints, highlighting rectification effectiveness and recurring control failures.",
+    "isPreviousAuditAvailable": false,
+    "previousScheduleId": "",
+    "noOfIssuesInPreviousAudit": "",
+    "closedPreviousAuditIssues": "",
+    "rectificationRatePct": "",
+    "recurringIssues": "",
+    "totalIssuesCurrent": "",
+    "recurrenceRatePct": ""
+  },
+  "auditorObservationTracking": {
+    "description": "Auditor observations and recommendations across current and previous audit schedules, supporting continuity tracking.",
+    "currentScheduleAuditorName": "Sarah Jenkins",
+    "currentScheduleObservation": "Identified several critical data discrepancies in inventory reconciliation processes, impacting accuracy.",
+    "currentScheduleRecommendation": "Implement automated reconciliation tools and enhance staff training on data entry protocols.",
+    "isPreviousScheduleAvailable": false,
+    "previousScheduleId": "",
+    "previousScheduleAuditorName": "",
+    "previousScheduleObservation": "",
+    "previousScheduleRecommendation": ""
+  },
+  "auditCompletionSummary": {
+    "description": "Final audit execution outcome covering coverage %, compliance score, issue density, and schedule adherence at both audit start and end.",
+    "auditStartDate": "01-JUL-2024",
+    "scheduleStartedDate": "03-JUL-2024",
+    "auditStartDelayDelta": 2,
+    "totalAppliedCheckpoints": 100,
+    "totalCheckpointsAudited": 75,
+    "totalIssues": 15,
+    "completionPct": 75,
+    "issueFoundPct": 20,
+    "auditComplianceScore": 88.5,
+    "auditEndDate": "15-JUL-2024",
+    "scheduleEndDate": "17-JUL-2024",
+    "auditEndDelayDelta": 2
+  }
+}

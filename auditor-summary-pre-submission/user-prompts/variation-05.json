@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "generatedAt": "2024-03-15T10:00:00Z",
+    "auditId": "AUD-2024-005-ZI",
+    "auditName": "Branch Operations Review - North Zone (Zero Issues)",
+    "scheduleId": "SCH-2024-005-ZI",
+    "auditorName": "Alice Johnson",
+    "auditType": "Branch Audit",
+    "auditee": "Northern Bank Co. - Main Branch"
+  },
+  "auditStartSummary": {
+    "isAuditStarted": true,
+    "description": "Summarises audit initiation status, scope readiness, and early execution progress.",
+    "executionStatus": "In Progress",
+    "auditStartDate": "01-Jan-2024",
+    "scheduleStartedDate": "01-Jan-2024",
+    "startDelayDays": 0,
+    "totalAppliedCheckpoints": 150,
+    "totalCheckpointsAudited": 45,
+    "totalIssuesFound": 0,
+    "completionPct": 30,
+    "topNonCompliantGroups": []
+  },
+  "multiDaySummary": {
+    "isApplicable": true,
+    "description": "Cumulative execution progress across multiple audit days, including day-by-day issue distribution and coverage trend.",
+    "scheduleStartedDate": "01-Jan-2024",
+    "currentScheduleDate": "03-Jan-2024",
+    "numberOfAuditDays": 3,
+    "totalIssuesFound": 0,
+    "issueFoundPct": 0,
+    "dailyBreakdown": [
+      {
+        "day": 1,
+        "date": "01-Jan-2024",
+        "totalCheckpointsAttempted": 10,
+        "completionPctDay": 6.7,
+        "completionPctOverall": 6.7,
+        "riskLevelIssueDistribution": {
+          "highRisk": 0,
+          "zeroTolerance": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "totalIssues": 0
+      },
+      {
+        "day": 2,
+        "date": "02-Jan-2024",
+        "totalCheckpointsAttempted": 20,
+        "completionPctDay": 13.3,
+        "completionPctOverall": 20,
+        "riskLevelIssueDistribution": {
+          "highRisk": 0,
+          "zeroTolerance": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "totalIssues": 0
+      },
+      {
+        "day": 3,
+        "date": "03-Jan-2024",
+        "totalCheckpointsAttempted": 15,
+        "completionPctDay": 10,
+        "completionPctOverall": 30,
+        "riskLevelIssueDistribution": {
+          "highRisk": 0,
+          "zeroTolerance": 0,
+          "medium": 0,
+          "low": 0
+        },
+        "totalIssues": 0
+      }
+    ],
+    "dailyTotals": {
+      "totalCheckpointsAttempted": 45,
+      "completionPctOverall": 30,
+      "riskLevelIssueDistribution": {
+        "highRisk": 0,
+        "zeroTolerance": 0,
+        "medium": 0,
+        "low": 0
+      },
+      "totalIssues": 0
+    }
+  },
+  "observationSummary": {
+    "isApplicable": true,
+    "description": "Observation grouping by risk level and identification of sub-audits with highest risk concentration.",
+    "totalIssues": 0,
+    "byRiskLevel": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 0,
+        "concentrationPct": 0
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 0,
+        "concentrationPct": 0
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 0,
+        "concentrationPct": 0
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 0,
+        "concentrationPct": 0
+      }
+    ],
+    "topSubAuditsWithHighRiskIssues": []
+  }
+}

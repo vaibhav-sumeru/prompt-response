@@ -1,0 +1,4 @@
+- **Current Issue Summary:** Total issues are 60, with 3 Zero Tolerance (5%) and 9 High (15%) risk issues. 35 issues are closed, showing a 58.3% closure rate. Average issue aging is **72.5** days, with average closure time at 45.1 days. Issues account for 33.3% of the schedule.
+- **Repeat Issue Analysis:** 15 recurring issues account for 25% of total issues, with **4** recurring High+ZT issues. Top recurring groups are Procurement Process (6), IT Security Controls (5), and Financial Reporting (4).
+- **Coverage & Execution:** 225 of 250 applied checkpoints are completed, showing 90% coverage. Execution duration is 32 days against a planned 28 days, a difference of **4** days. Audit status is In Progress.
+- **Risk & Compliance:** Compliance score is Not Available, and audit rating is Not Available. Total issues are 60, with **12** High+ZT issues. Risk distribution shows 3 Zero Tolerance (5%) and 9 High (15%) issues.

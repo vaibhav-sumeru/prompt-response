@@ -1,0 +1,129 @@
+{
+  "meta": {
+    "generatedAt": "2023-11-15T10:30:00Z",
+    "auditId": "AUD-2023-08-001-V8",
+    "auditName": "Branch Operations Audit - Mumbai South - Q3",
+    "scheduleId": "SCH-2023-08-001-V8",
+    "auditorName": "Priya Sharma",
+    "auditType": "Branch Audit",
+    "auditee": "Mumbai South Branch"
+  },
+  "auditStartSummary": {
+    "isAuditStarted": true,
+    "description": "audit initiation status, scope readiness, and early execution progress.",
+    "executionStatus": "In Progress",
+    "auditStartDate": "01-Aug-2023",
+    "scheduleStartedDate": "01-Aug-2023",
+    "startDelayDays": 0,
+    "totalAppliedCheckpoints": 250,
+    "totalCheckpointsAudited": 80,
+    "totalIssuesFound": 15,
+    "completionPct": 32,
+    "topNonCompliantGroups": []
+  },
+  "multiDaySummary": {
+    "isApplicable": true,
+    "description": "cumulative execution progress across multiple audit days, including day-by-day issue distribution and coverage trend.",
+    "scheduleStartedDate": "01-Aug-2023",
+    "currentScheduleDate": null,
+    "numberOfAuditDays": 3,
+    "totalIssuesFound": 15,
+    "issueFoundPct": 18.8,
+    "dailyBreakdown": [
+      {
+        "day": 1,
+        "date": "01-Aug-2023",
+        "totalCheckpointsAttempted": 30,
+        "completionPctDay": 12,
+        "completionPctOverall": 12,
+        "riskLevelIssueDistribution": {
+          "highRisk": 2,
+          "zeroTolerance": 1,
+          "medium": 1,
+          "low": 0
+        },
+        "totalIssues": 4
+      },
+      {
+        "day": 2,
+        "date": "02-Aug-2023",
+        "totalCheckpointsAttempted": 25,
+        "completionPctDay": 10,
+        "completionPctOverall": 22,
+        "riskLevelIssueDistribution": {
+          "highRisk": 2,
+          "zeroTolerance": 0,
+          "medium": 3,
+          "low": 1
+        },
+        "totalIssues": 6
+      },
+      {
+        "day": 3,
+        "date": "03-Aug-2023",
+        "totalCheckpointsAttempted": 25,
+        "completionPctDay": 10,
+        "completionPctOverall": 32,
+        "riskLevelIssueDistribution": {
+          "highRisk": 1,
+          "zeroTolerance": 1,
+          "medium": 2,
+          "low": 1
+        },
+        "totalIssues": 5
+      }
+    ],
+    "dailyTotals": {
+      "totalCheckpointsAttempted": 80,
+      "completionPctOverall": 32,
+      "riskLevelIssueDistribution": {
+        "highRisk": 5,
+        "zeroTolerance": 2,
+        "medium": 6,
+        "low": 2
+      },
+      "totalIssues": 15
+    }
+  },
+  "observationSummary": {
+    "isApplicable": true,
+    "description": "observation grouping by risk level and identification of sub-audits with highest risk concentration.",
+    "totalIssues": 15,
+    "byRiskLevel": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 2,
+        "concentrationPct": 13.3
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 5,
+        "concentrationPct": 33.3
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 6,
+        "concentrationPct": 40
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 2,
+        "concentrationPct": 13.3
+      }
+    ],
+    "topSubAuditsWithHighRiskIssues": [
+      {
+        "subAuditName": "Cash Management",
+        "combinedHighZtCount": 4,
+        "highRiskCount": 3,
+        "ztCount": 1
+      },
+      {
+        "subAuditName": "Loan Processing",
+        "combinedHighZtCount": 3,
+        "highRiskCount": 2,
+        "ztCount": 1
+      }
+    ]
+  }
+}

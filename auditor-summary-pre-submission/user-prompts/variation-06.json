@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "generatedAt": "2023-10-27T10:30:00Z",
+    "auditId": "AUD-2023-010-HRISK",
+    "auditName": "Q4 FY23 Compliance Audit - North Region",
+    "scheduleId": "SCH-2023-10-01",
+    "auditorName": "Rajesh Kumar",
+    "auditType": "Regulatory Compliance",
+    "auditee": "North Region Operations"
+  },
+  "auditStartSummary": {
+    "isAuditStarted": true,
+    "description": "audit initiation status, scope readiness, and early execution progress.",
+    "executionStatus": "In Progress",
+    "auditStartDate": "20-OCT-2023",
+    "scheduleStartedDate": "20-OCT-2023",
+    "startDelayDays": 0,
+    "totalAppliedCheckpoints": 1500,
+    "totalCheckpointsAudited": 1425,
+    "totalIssuesFound": 180,
+    "completionPct": 95,
+    "topNonCompliantGroups": [
+      {
+        "groupName": "Cash Handling Procedures",
+        "issueCount": 55
+      },
+      {
+        "groupName": "Data Privacy Compliance",
+        "issueCount": 40
+      },
+      {
+        "groupName": "Loan Origination KYC",
+        "issueCount": 35
+      }
+    ]
+  },
+  "multiDaySummary": {
+    "isApplicable": true,
+    "description": "cumulative execution progress across multiple audit days, including day-by-day issue distribution and coverage trend.",
+    "scheduleStartedDate": "20-OCT-2023",
+    "currentScheduleDate": "22-OCT-2023",
+    "numberOfAuditDays": 3,
+    "totalIssuesFound": 180,
+    "issueFoundPct": 12.6,
+    "dailyBreakdown": [
+      {
+        "day": 1,
+        "date": "20-OCT-2023",
+        "totalCheckpointsAttempted": 450,
+        "completionPctDay": 30,
+        "completionPctOverall": 30,
+        "riskLevelIssueDistribution": {
+          "highRisk": 10,
+          "zeroTolerance": 5,
+          "medium": 15,
+          "low": 5
+        },
+        "totalIssues": 35
+      },
+      {
+        "day": 2,
+        "date": "21-OCT-2023",
+        "totalCheckpointsAttempted": 500,
+        "completionPctDay": 33.3,
+        "completionPctOverall": 63.3,
+        "riskLevelIssueDistribution": {
+          "highRisk": 25,
+          "zeroTolerance": 15,
+          "medium": 20,
+          "low": 10
+        },
+        "totalIssues": 70
+      },
+      {
+        "day": 3,
+        "date": "22-OCT-2023",
+        "totalCheckpointsAttempted": 475,
+        "completionPctDay": 31.7,
+        "completionPctOverall": 95,
+        "riskLevelIssueDistribution": {
+          "highRisk": 25,
+          "zeroTolerance": 20,
+          "medium": 20,
+          "low": 10
+        },
+        "totalIssues": 75
+      }
+    ],
+    "dailyTotals": {
+      "totalCheckpointsAttempted": 1425,
+      "completionPctOverall": 95,
+      "riskLevelIssueDistribution": {
+        "highRisk": 60,
+        "zeroTolerance": 40,
+        "medium": 55,
+        "low": 25
+      },
+      "totalIssues": 180
+    }
+  },
+  "observationSummary": {
+    "isApplicable": true,
+    "description": "observation grouping by risk level and identification of sub-audits with highest risk concentration.",
+    "totalIssues": 180,
+    "byRiskLevel": [
+      {
+        "riskLevel": "Zero Tolerance",
+        "issueCount": 40,
+        "concentrationPct": 22.2
+      },
+      {
+        "riskLevel": "High",
+        "issueCount": 60,
+        "concentrationPct": 33.3
+      },
+      {
+        "riskLevel": "Medium",
+        "issueCount": 55,
+        "concentrationPct": 30.6
+      },
+      {
+        "riskLevel": "Low",
+        "issueCount": 25,
+        "concentrationPct": 13.9
+      }
+    ],
+    "topSubAuditsWithHighRiskIssues": [
+      {
+        "subAuditName": "Branch-A Ops Review",
+        "combinedHighZtCount": 35,
+        "highRiskCount": 20,
+        "ztCount": 15
+      },
+      {
+        "subAuditName": "Digital Banking Controls",
+        "combinedHighZtCount": 30,
+        "highRiskCount": 20,
+        "ztCount": 10
+      },
+      {
+        "subAuditName": "Credit Card Processing",
+        "combinedHighZtCount": 25,
+        "highRiskCount": 20,
+        "ztCount": 5
+      }
+    ]
+  }
+}

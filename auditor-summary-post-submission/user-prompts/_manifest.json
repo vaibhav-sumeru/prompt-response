@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "full-positive",
+    "description": "All flags true, moderate realistic metrics, no delays — baseline happy path"
+  },
+  {
+    "id": "variation-02",
+    "category": "full-positive-delays",
+    "description": "All flags true, both start and end delays present — tests delay bolding in P3"
+  },
+  {
+    "id": "variation-03",
+    "category": "no-prev-audit",
+    "description": "isPreviousAuditAvailable=false — P1 must be completely absent"
+  },
+  {
+    "id": "variation-04",
+    "category": "no-prev-schedule",
+    "description": "isPreviousAuditAvailable=true, isPreviousScheduleAvailable=false — P1 present, P2 shows only current auditor"
+  },
+  {
+    "id": "variation-05",
+    "category": "both-flags-false",
+    "description": "Both isPreviousAuditAvailable=false and isPreviousScheduleAvailable=false — only P2 (current only) and P3 generated"
+  },
+  {
+    "id": "variation-06",
+    "category": "perfect-rectification",
+    "description": "100% rectification rate, 0 recurring issues, 0% recurrence — tests zero-value handling and bold suppression"
+  },
+  {
+    "id": "variation-07",
+    "category": "worst-case",
+    "description": "0% rectification, 100% recurrence rate, very low completionPct (<80%), very low compliance score — tests all bold triggers"
+  },
+  {
+    "id": "variation-08",
+    "category": "zero-issues",
+    "description": "0 total issues found, high completion, 0% issueFoundPct — mandatory zero must be reported, not omitted"
+  },
+  {
+    "id": "variation-09",
+    "category": "low-completion",
+    "description": "completionPct below 80% with all other fields normal — tests completionPct bold trigger"
+  },
+  {
+    "id": "variation-10",
+    "category": "missing-text-fields",
+    "description": "Observation and recommendation are empty strings for both schedules; auditComplianceScore is empty string — tests None recorded substitution and Not Available for compliance score"
+  }
+]

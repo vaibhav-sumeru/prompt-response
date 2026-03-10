@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z",
+    "scheduleId": "AUDIT-SCHED-2024-008",
+    "auditId": "AUDIT-2024-008-01",
+    "auditName": "Q2 Financial Controls Review",
+    "auditType": "Financial Audit",
+    "auditee": "Acme Corp. North Division",
+    "auditorName": "Alice Johnson",
+    "auditExecutionStatus": "Completed"
+  },
+  "previousAuditComparison": {
+    "description": "Comparison of current vs previous audit for common checkpoints, highlighting rectification effectiveness and recurring control failures.",
+    "isPreviousAuditAvailable": true,
+    "previousScheduleId": "PREV-AUDIT-2023-001",
+    "noOfIssuesInPreviousAudit": 10,
+    "closedPreviousAuditIssues": 8,
+    "rectificationRatePct": 80,
+    "recurringIssues": 0,
+    "totalIssuesCurrent": 0,
+    "recurrenceRatePct": ""
+  },
+  "auditorObservationTracking": {
+    "description": "Auditor observations and recommendations across current and previous audit schedules, supporting continuity tracking.",
+    "currentScheduleAuditorName": "Alice Johnson",
+    "currentScheduleObservation": "Audit confirmed robust financial controls and compliance across departments.",
+    "currentScheduleRecommendation": "Maintain current control effectiveness and regularly review process documentation.",
+    "isPreviousScheduleAvailable": true,
+    "previousScheduleId": "PREV-SCHED-2023-001",
+    "previousScheduleAuditorName": "Bob Williams",
+    "previousScheduleObservation": "Identified minor discrepancies in inventory reconciliation procedures last cycle.",
+    "previousScheduleRecommendation": "Implement daily inventory checks and provide staff training on new system."
+  },
+  "auditCompletionSummary": {
+    "description": "Final audit execution outcome covering coverage %, compliance score, issue density, and schedule adherence at both audit start and end.",
+    "auditStartDate": "01-Jan-2024",
+    "scheduleStartedDate": "01-Jan-2024",
+    "auditStartDelayDelta": 0,
+    "totalAppliedCheckpoints": 100,
+    "totalCheckpointsAudited": 100,
+    "totalIssues": 0,
+    "completionPct": 100,
+    "issueFoundPct": 0,
+    "auditComplianceScore": 98.5,
+    "auditEndDate": "15-Jan-2024",
+    "scheduleEndDate": "17-Jan-2024",
+    "auditEndDelayDelta": 2
+  }
+}

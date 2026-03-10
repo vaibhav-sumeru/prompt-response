@@ -1,0 +1,49 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-29T10:30:00Z",
+    "scheduleId": "SCH-HRM-2024-001",
+    "auditId": "AUD-HRM-2024-001",
+    "auditName": "HR Policy Compliance Review 2024-Q3",
+    "auditType": "Compliance Audit",
+    "auditee": "Human Resources Department",
+    "auditorName": "Rajesh Kumar",
+    "auditExecutionStatus": "Completed"
+  },
+  "previousAuditComparison": {
+    "description": "Comparison of current vs previous audit for common checkpoints, highlighting rectification effectiveness and recurring control failures.",
+    "isPreviousAuditAvailable": false,
+    "previousScheduleId": "",
+    "noOfIssuesInPreviousAudit": "",
+    "closedPreviousAuditIssues": "",
+    "rectificationRatePct": "",
+    "recurringIssues": "",
+    "totalIssuesCurrent": "",
+    "recurrenceRatePct": ""
+  },
+  "auditorObservationTracking": {
+    "description": "Auditor observations and recommendations across current and previous audit schedules, supporting continuity tracking.",
+    "currentScheduleAuditorName": "Rajesh Kumar",
+    "currentScheduleObservation": "",
+    "currentScheduleRecommendation": "Implement bi-annual training for new HR policies.",
+    "isPreviousScheduleAvailable": false,
+    "previousScheduleId": "",
+    "previousScheduleAuditorName": "",
+    "previousScheduleObservation": "",
+    "previousScheduleRecommendation": ""
+  },
+  "auditCompletionSummary": {
+    "description": "Final audit execution outcome covering coverage %, compliance score, issue density, and schedule adherence at both audit start and end.",
+    "auditStartDate": "01-JUL-2024",
+    "scheduleStartedDate": "03-JUL-2024",
+    "auditStartDelayDelta": 2,
+    "totalAppliedCheckpoints": 150,
+    "totalCheckpointsAudited": 105,
+    "totalIssues": 12,
+    "completionPct": 70,
+    "issueFoundPct": 11.4,
+    "auditComplianceScore": "",
+    "auditEndDate": "20-JUL-2024",
+    "scheduleEndDate": "20-JUL-2024",
+    "auditEndDelayDelta": 0
+  }
+}

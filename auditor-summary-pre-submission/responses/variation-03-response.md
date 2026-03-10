@@ -1,0 +1,1 @@
+- **Audit Start Summary:** Audit is Not Started, scheduled 29-JUL-2024, started 03-AUG-2024, 5-day delay. 0 of 185 checkpoints audited (**0**%), 0 issues found.
