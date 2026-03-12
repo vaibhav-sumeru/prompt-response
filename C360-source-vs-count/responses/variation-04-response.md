@@ -1,0 +1,1 @@
+- **Source Type Open Issues:** 500 open issues are recorded across all source types for the selected period. Compliance Reviews has **350** open issues out of 800 compliances, representing **43.8%**. Regulatory Filings has **100** open issues out of 450 compliances, representing **22.2%**. Internal Audits has **50** open issues out of 200 compliances, representing **25.0%**.

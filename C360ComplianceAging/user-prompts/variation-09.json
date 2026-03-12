@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "generatedAt": "2024-10-26T14:30:00Z"
+  },
+  "totalOpenCompliances": 7850,
+  "agingBuckets": {
+    "bucket_0_7": {
+      "count": 2500,
+      "percent": 31.8
+    },
+    "bucket_8_30": {
+      "count": 2100,
+      "percent": 26.8
+    },
+    "bucket_31_60": {
+      "count": 1700,
+      "percent": 21.7
+    },
+    "bucket_over_60": {
+      "count": 1550,
+      "percent": 19.7
+    }
+  }
+}

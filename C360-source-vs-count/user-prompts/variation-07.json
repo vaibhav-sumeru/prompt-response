@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "generatedAt": "2026-03-12T00:00:00Z"
+  },
+  "sourceTypeContribution": {
+    "description": "Top 3 source types with the highest open-issue counts, sorted high to low",
+    "totalOpenIssues": 520,
+    "items": [
+      {
+        "sourceTypeName": "Policy Compliance",
+        "openIssueCount": 250,
+        "totalCompliances": 800,
+        "openIssuePercent": 31.3
+      },
+      {
+        "sourceTypeName": "Risk Assessment",
+        "openIssueCount": 180,
+        "totalCompliances": 650,
+        "openIssuePercent": 27.7
+      },
+      {
+        "sourceTypeName": "Regulatory Filings",
+        "openIssueCount": 90,
+        "totalCompliances": 0,
+        "openIssuePercent": ""
+      }
+    ]
+  }
+}

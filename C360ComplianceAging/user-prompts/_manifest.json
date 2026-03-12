@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "all-four-buckets",
+    "description": "All 4 buckets have data — balanced distribution across aging ranges"
+  },
+  {
+    "id": "variation-02",
+    "category": "all-four-buckets",
+    "description": "All 4 buckets have data — balanced distribution across aging ranges"
+  },
+  {
+    "id": "variation-03",
+    "category": "heavy-oldest-bucket",
+    "description": "bucket_over_60 has >50% share — backlog skewed to oldest"
+  },
+  {
+    "id": "variation-04",
+    "category": "heavy-oldest-bucket",
+    "description": "bucket_over_60 has >50% share — backlog skewed to oldest"
+  },
+  {
+    "id": "variation-05",
+    "category": "two-buckets-only",
+    "description": "Only 2 of 4 buckets are non-null — tests silent skipping of null buckets"
+  },
+  {
+    "id": "variation-06",
+    "category": "two-buckets-only",
+    "description": "Only 2 of 4 buckets are non-null — tests silent skipping of null buckets"
+  },
+  {
+    "id": "variation-07",
+    "category": "single-bucket-only",
+    "description": "Only 1 bucket is non-null (e.g., only bucket_over_60) — extreme edge case"
+  },
+  {
+    "id": "variation-08",
+    "category": "zero-total-compliances",
+    "description": "totalOpenCompliances = 0, all buckets null — edge case output"
+  },
+  {
+    "id": "variation-09",
+    "category": "large-numbers",
+    "description": "totalOpenCompliances > 5000 — verify comma formatting on counts"
+  },
+  {
+    "id": "variation-10",
+    "category": "fresh-backlog-only",
+    "description": "Only bucket_0_7 and bucket_8_30 are non-null — all items recent, no aged backlog"
+  }
+]

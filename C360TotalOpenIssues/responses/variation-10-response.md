@@ -1,0 +1,2 @@
+- **Open Issue Backlog:** Out of 850 total compliances, **210** open issues are recorded, representing a **24.7%** backlog.
+- **Backlog Concentration:** "Regulatory Compliance" accounts for **195** open issues out of 480 total compliances, representing **40.6%** of its compliance records.

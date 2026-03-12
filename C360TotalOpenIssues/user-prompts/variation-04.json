@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-29T10:30:00Z"
+  },
+  "openIssueBacklogSnapshot": {
+    "description": "Open issues backlog snapshot for the selected period",
+    "totalCompliances": 0,
+    "openIssueCount": 0,
+    "openIssuePercent": ""
+  },
+  "openIssueBacklogConcentration": {
+    "description": "Top 3 source types with the highest open-issue backlog, sorted high to low",
+    "items": []
+  }
+}

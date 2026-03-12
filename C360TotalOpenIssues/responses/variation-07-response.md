@@ -1,0 +1,2 @@
+- **Open Issue Backlog:** Out of 15,680 total compliances, **4,185** open issues are recorded, representing a **26.7%** backlog.
+- **Backlog Concentration:** Regulatory Compliance accounts for **1,420** open issues out of 5,800 total compliances (**24.5%**); IT Security Audit has **1,150** open issues out of 4,250 total compliances (**27.1%**); Operational Risk shows **890** open issues out of 3,100 total compliances (**28.7%**).

@@ -1,0 +1,1 @@
+- **Source Type Open Issues:** 3,343 open issues are recorded across all source types for the selected period, with External Audit showing **1,403** open issues out of 25,500 compliances (**5.5%**), Regulatory Filings showing **1,050** open issues out of 18,200 compliances (**5.8%**), and Internal Controls showing **890** open issues out of 12,800 compliances (**7.0%**).

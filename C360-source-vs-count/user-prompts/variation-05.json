@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "generatedAt": "2024-10-27T10:30:00Z"
+  },
+  "sourceTypeContribution": {
+    "description": "Top 3 source types with the highest open-issue counts, sorted high to low",
+    "totalOpenIssues": 500,
+    "items": [
+      {
+        "sourceTypeName": "Internal Audit",
+        "openIssueCount": 350,
+        "totalCompliances": 500,
+        "openIssuePercent": 70
+      },
+      {
+        "sourceTypeName": "Regulatory Filings",
+        "openIssueCount": 100,
+        "totalCompliances": 400,
+        "openIssuePercent": 25
+      },
+      {
+        "sourceTypeName": "Policy Exceptions",
+        "openIssueCount": 50,
+        "totalCompliances": 0,
+        "openIssuePercent": ""
+      }
+    ]
+  }
+}

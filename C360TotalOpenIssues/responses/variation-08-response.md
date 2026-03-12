@@ -1,0 +1,2 @@
+- **Open Issue Backlog:** For the selected period, 0 total compliances are recorded; open issue count and backlog percent are Not Available.
+- **Backlog Concentration:** Regulatory Audits accounts for **120** open issues out of 400 total compliances (**30.0%**); Internal Reviews accounts for **95** open issues out of 350 total compliances (**27.1%**); Third-Party Assessments accounts for **70** open issues out of 280 total compliances (**25.0%**).

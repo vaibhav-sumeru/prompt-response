@@ -1,0 +1,1 @@
+- **Source Type Open Issues:** 520 open issues are recorded across all source types for the selected period. Policy Compliance has **250** open issues out of 800 compliances, representing **31.3%**; Risk Assessment has **180** open issues out of 650 compliances, representing **27.7%**; and Regulatory Filings has **90** open issues out of 0 compliances, representing Not Available.

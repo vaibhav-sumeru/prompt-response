@@ -1,0 +1,2 @@
+- **Open Issue Backlog:** out of 1,560 total compliances, 0 open issues are recorded (0.0% backlog)
+- **Backlog Concentration:** Regulatory Compliance has **0** open issues out of 550 total compliances (**0.0%**); Data Privacy has **0** open issues out of 420 total compliances (**0.0%**); Operational Controls has **0** open issues out of 310 total compliances (**0.0%**).

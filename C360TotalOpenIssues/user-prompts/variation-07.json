@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "openIssueBacklogSnapshot": {
+    "description": "Open issues backlog snapshot for the selected period",
+    "totalCompliances": 15680,
+    "openIssueCount": 4185,
+    "openIssuePercent": 26.7
+  },
+  "openIssueBacklogConcentration": {
+    "description": "Top 3 source types with the highest open-issue backlog, sorted high to low",
+    "items": [
+      {
+        "sourceTypeName": "Regulatory Compliance",
+        "openIssueCount": 1420,
+        "totalCompliances": 5800,
+        "openIssuePercent": 24.5
+      },
+      {
+        "sourceTypeName": "IT Security Audit",
+        "openIssueCount": 1150,
+        "totalCompliances": 4250,
+        "openIssuePercent": 27.1
+      },
+      {
+        "sourceTypeName": "Operational Risk",
+        "openIssueCount": 890,
+        "totalCompliances": 3100,
+        "openIssuePercent": 28.7
+      }
+    ]
+  }
+}

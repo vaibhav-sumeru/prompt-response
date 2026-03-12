@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "generatedAt": "2024-10-27T10:30:00Z"
+  },
+  "sourceTypeContribution": {
+    "description": "Top 3 source types with the highest open-issue counts, sorted high to low",
+    "totalOpenIssues": 3343,
+    "items": [
+      {
+        "sourceTypeName": "External Audit",
+        "openIssueCount": 1403,
+        "totalCompliances": 25500,
+        "openIssuePercent": 5.5
+      },
+      {
+        "sourceTypeName": "Regulatory Filings",
+        "openIssueCount": 1050,
+        "totalCompliances": 18200,
+        "openIssuePercent": 5.8
+      },
+      {
+        "sourceTypeName": "Internal Controls",
+        "openIssueCount": 890,
+        "totalCompliances": 12800,
+        "openIssuePercent": 7
+      }
+    ]
+  }
+}

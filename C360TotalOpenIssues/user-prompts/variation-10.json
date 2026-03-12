@@ -1,0 +1,22 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T12:00:00Z"
+  },
+  "openIssueBacklogSnapshot": {
+    "description": "Open issues backlog snapshot for the selected period",
+    "totalCompliances": 850,
+    "openIssueCount": 210,
+    "openIssuePercent": 24.7
+  },
+  "openIssueBacklogConcentration": {
+    "description": "Top 3 source types with the highest open-issue backlog, sorted high to low",
+    "items": [
+      {
+        "sourceTypeName": "Regulatory Compliance",
+        "openIssueCount": 195,
+        "totalCompliances": 480,
+        "openIssuePercent": 40.6
+      }
+    ]
+  }
+}

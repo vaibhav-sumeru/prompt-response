@@ -1,0 +1,1 @@
+- **Compliance Backlog:** 1,200 total compliances recorded, with **960 open issues** accounting for **80.0%** of total compliances.

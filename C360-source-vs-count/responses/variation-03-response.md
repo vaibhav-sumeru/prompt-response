@@ -1,0 +1,1 @@
+- **Source Type Open Issues:** 0 open issues are recorded across all source types for the selected period.

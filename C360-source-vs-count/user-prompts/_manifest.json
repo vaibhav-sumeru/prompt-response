@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "normal-typical",
+    "description": "Typical mid-range values — 3 source types with moderate open issue counts"
+  },
+  {
+    "id": "variation-02",
+    "category": "normal-typical",
+    "description": "Typical mid-range values — 3 source types with moderate open issue counts"
+  },
+  {
+    "id": "variation-03",
+    "category": "zero-total-open-issues",
+    "description": "totalOpenIssues = 0, all items have openIssueCount = 0 — test zero-bolding path"
+  },
+  {
+    "id": "variation-04",
+    "category": "high-concentration",
+    "description": "Top source type has >60% of all open issues — one dominant source type"
+  },
+  {
+    "id": "variation-05",
+    "category": "high-concentration",
+    "description": "Top source type has >60% of all open issues — one dominant source type"
+  },
+  {
+    "id": "variation-06",
+    "category": "large-numbers",
+    "description": "totalCompliances > 10,000 — verify comma formatting on integers"
+  },
+  {
+    "id": "variation-07",
+    "category": "missing-item-percent",
+    "description": "One item has openIssuePercent = \"\" — test per-item Not Available handling"
+  },
+  {
+    "id": "variation-08",
+    "category": "single-source-type",
+    "description": "items has only 1 source type — must report without implying others exist"
+  },
+  {
+    "id": "variation-09",
+    "category": "empty-items",
+    "description": "items = [] — edge case: no source type data available"
+  },
+  {
+    "id": "variation-10",
+    "category": "low-open-issues",
+    "description": "openIssuePercent < 5 across all items — low backlog scenario"
+  }
+]

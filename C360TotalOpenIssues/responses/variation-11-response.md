@@ -1,0 +1,2 @@
+- **Open Issue Backlog:** Out of 875 total compliances, **219** open issues are recorded (**25.0%** backlog).
+- **Backlog Concentration:** No source type concentration data is available for the selected period.

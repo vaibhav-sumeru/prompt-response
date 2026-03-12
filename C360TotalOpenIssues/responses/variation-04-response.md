@@ -1,0 +1,2 @@
+- **Open Issue Backlog:** For the selected period, 0 total compliances are recorded; open issue count and backlog percent are Not Available.
+- **Backlog Concentration:** No source type concentration data is available for the selected period.

@@ -1,0 +1,1 @@
+- **Source Type Open Issues:** 550 open issues are recorded across all source types, with Internal Audit showing **220** open issues out of 750 compliances (**29.3%**), Regulatory Filings showing **160** open issues out of 600 compliances (**26.7%**), and Vendor Assessments showing **90** open issues out of 350 compliances (**25.7%**).

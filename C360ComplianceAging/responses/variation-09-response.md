@@ -1,0 +1,1 @@
+- **Compliance Aging:** There are 7,850 open compliances, with **1,550 (19.7%)** older than 60 days, **1,700 (21.7%)** 31–60 days, **2,100 (26.8%)** 8–30 days, and **2,500 (31.8%)** under 8 days.

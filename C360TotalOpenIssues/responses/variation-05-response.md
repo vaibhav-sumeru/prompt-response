@@ -1,0 +1,2 @@
+- **Open Issue Backlog:** For 1,500 total compliances, **1,125** open issues are recorded, representing a **75.0%** backlog.
+- **Backlog Concentration:** Regulatory Non-Compliance has **675** open issues out of 800 total compliances (**84.4%**); Data Privacy Violations has **250** open issues out of 400 total compliances (**62.5%**); and Internal Policy Breaches has **200** open issues out of 300 total compliances (**66.7%**).

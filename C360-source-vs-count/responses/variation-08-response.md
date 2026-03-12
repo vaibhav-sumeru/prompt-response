@@ -1,0 +1,1 @@
+- **Source Type Open Issues:** 45 open issues are recorded across all source types for the selected period. IT Security Audit has **45** open issues out of 0 compliances, representing Not Available.

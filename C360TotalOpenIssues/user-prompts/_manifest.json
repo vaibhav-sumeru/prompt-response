@@ -1,0 +1,57 @@
+[
+  {
+    "id": "variation-01",
+    "category": "normal-typical",
+    "description": "Typical values — moderate compliance count, moderate open issues, 3 source types present"
+  },
+  {
+    "id": "variation-02",
+    "category": "normal-typical",
+    "description": "Typical values — moderate compliance count, moderate open issues, 3 source types present"
+  },
+  {
+    "id": "variation-03",
+    "category": "zero-open-issues",
+    "description": "openIssueCount = 0, openIssuePercent = 0 — test no-bold path in Bullet 1; Bullet 2 items all show 0 open issues"
+  },
+  {
+    "id": "variation-04",
+    "category": "zero-total-compliances",
+    "description": "totalCompliances = 0 — Bullet 1 edge case: all derived metrics are Not Available"
+  },
+  {
+    "id": "variation-05",
+    "category": "high-backlog",
+    "description": "openIssuePercent > 70 — heavy open backlog; top source type dominates with >50% of open issues"
+  },
+  {
+    "id": "variation-06",
+    "category": "high-backlog",
+    "description": "openIssuePercent > 70 — heavy open backlog; top source type dominates with >50% of open issues"
+  },
+  {
+    "id": "variation-07",
+    "category": "large-numbers",
+    "description": "totalCompliances > 10,000 — verify comma formatting on integers in both bullets"
+  },
+  {
+    "id": "variation-08",
+    "category": "missing-snapshot-percent",
+    "description": "openIssuePercent = \"\" (empty string) in snapshot — test Not Available handling in Bullet 1"
+  },
+  {
+    "id": "variation-09",
+    "category": "missing-item-percent",
+    "description": "One concentration item has openIssuePercent = \"\" — test per-item Not Available in Bullet 2 only"
+  },
+  {
+    "id": "variation-10",
+    "category": "single-source-type",
+    "description": "items has only 1 source type — Bullet 2 must report that one entry without implying others exist"
+  },
+  {
+    "id": "variation-11",
+    "category": "empty-concentration",
+    "description": "items = [] — Bullet 2 edge case: no source type data available"
+  }
+]

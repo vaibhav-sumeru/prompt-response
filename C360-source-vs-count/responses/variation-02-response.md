@@ -1,0 +1,1 @@
+- **Source Type Open Issues:** 205 open issues are recorded across all source types, with Compliance Monitoring accounting for **95** open issues out of 320 compliances (**29.7%**), Internal Audit with **68** open issues out of 250 compliances (**27.2%**), and Risk Assessments with **42** open issues out of 180 compliances (**23.3%**).

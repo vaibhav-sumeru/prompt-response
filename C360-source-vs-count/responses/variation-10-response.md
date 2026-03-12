@@ -1,0 +1,1 @@
+- **Source Type Open Issues:** 18 open issues are recorded across all source types. Internal Audit has **10** open issues out of 300 compliances (**3.3%**); Regulatory Submissions has **8** open issues out of 250 compliances (**3.2%**); Vendor Risk Assessments has **0** open issues out of 0 compliances (Not Available).

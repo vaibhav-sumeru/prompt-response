@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "generatedAt": "2024-01-23T12:00:00Z"
+  },
+  "sourceTypeContribution": {
+    "description": "Top 3 source types with the highest open-issue counts, sorted high to low",
+    "totalOpenIssues": 500,
+    "items": [
+      {
+        "sourceTypeName": "Compliance Reviews",
+        "openIssueCount": 350,
+        "totalCompliances": 800,
+        "openIssuePercent": 43.8
+      },
+      {
+        "sourceTypeName": "Regulatory Filings",
+        "openIssueCount": 100,
+        "totalCompliances": 450,
+        "openIssuePercent": 22.2
+      },
+      {
+        "sourceTypeName": "Internal Audits",
+        "openIssueCount": 50,
+        "totalCompliances": 200,
+        "openIssuePercent": 25
+      }
+    ]
+  }
+}

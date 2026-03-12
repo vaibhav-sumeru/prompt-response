@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-29T10:30:00Z"
+  },
+  "sourceTypeContribution": {
+    "description": "Top 3 source types with the highest open-issue counts, sorted high to low",
+    "totalOpenIssues": 205,
+    "items": [
+      {
+        "sourceTypeName": "Compliance Monitoring",
+        "openIssueCount": 95,
+        "totalCompliances": 320,
+        "openIssuePercent": 29.7
+      },
+      {
+        "sourceTypeName": "Internal Audit",
+        "openIssueCount": 68,
+        "totalCompliances": 250,
+        "openIssuePercent": 27.2
+      },
+      {
+        "sourceTypeName": "Risk Assessments",
+        "openIssueCount": 42,
+        "totalCompliances": 180,
+        "openIssuePercent": 23.3
+      }
+    ]
+  }
+}

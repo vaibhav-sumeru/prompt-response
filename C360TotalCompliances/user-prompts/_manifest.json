@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "normal-typical",
+    "description": "Typical mid-range values — moderate compliance count, moderate open issues"
+  },
+  {
+    "id": "variation-02",
+    "category": "normal-typical",
+    "description": "Typical mid-range values — moderate compliance count, moderate open issues"
+  },
+  {
+    "id": "variation-03",
+    "category": "zero-open-issues",
+    "description": "openIssueCount = 0, openIssueBacklogPercent = 0 — test no-bold path"
+  },
+  {
+    "id": "variation-04",
+    "category": "zero-open-issues",
+    "description": "openIssueCount = 0, openIssueBacklogPercent = 0 — test no-bold path"
+  },
+  {
+    "id": "variation-05",
+    "category": "zero-total-compliances",
+    "description": "totalCompliances = 0 — edge case: both derived fields are Not Available"
+  },
+  {
+    "id": "variation-06",
+    "category": "high-backlog",
+    "description": "openIssueBacklogPercent > 70 — high open issue load"
+  },
+  {
+    "id": "variation-07",
+    "category": "high-backlog",
+    "description": "openIssueBacklogPercent > 70 — high open issue load"
+  },
+  {
+    "id": "variation-08",
+    "category": "large-numbers",
+    "description": "totalCompliances > 10000 — verify comma formatting"
+  },
+  {
+    "id": "variation-09",
+    "category": "missing-fields",
+    "description": "openIssueBacklogPercent is null — test Not Available handling"
+  },
+  {
+    "id": "variation-10",
+    "category": "low-backlog",
+    "description": "openIssueBacklogPercent < 5 — low open issue backlog"
+  }
+]

@@ -1,0 +1,29 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "sourceTypeContribution": {
+    "description": "Top 3 source types with the highest open-issue counts, sorted high to low",
+    "totalOpenIssues": 550,
+    "items": [
+      {
+        "sourceTypeName": "Internal Audit",
+        "openIssueCount": 220,
+        "totalCompliances": 750,
+        "openIssuePercent": 29.3
+      },
+      {
+        "sourceTypeName": "Regulatory Filings",
+        "openIssueCount": 160,
+        "totalCompliances": 600,
+        "openIssuePercent": 26.7
+      },
+      {
+        "sourceTypeName": "Vendor Assessments",
+        "openIssueCount": 90,
+        "totalCompliances": 350,
+        "openIssuePercent": 25.7
+      }
+    ]
+  }
+}

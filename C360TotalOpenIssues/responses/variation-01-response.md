@@ -1,0 +1,2 @@
+- **Open Issue Backlog:** Out of 850 total compliances, **230** open issues are recorded (**27.1%** backlog).
+- **Backlog Concentration:** Regulatory Compliance accounts for **95** open issues out of 320 total compliances (**29.7%**); Internal Audit accounts for **75** open issues out of 250 total compliances (**30.0%**); and Data Privacy accounts for **40** open issues out of 160 total compliances (**25.0%**).

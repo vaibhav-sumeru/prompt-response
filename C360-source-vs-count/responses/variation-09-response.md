@@ -1,0 +1,1 @@
+- **Source Type Open Issues:** No source type data is available for the selected period.
