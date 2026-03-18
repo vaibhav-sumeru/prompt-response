@@ -1,2 +1,0 @@
-- **Entity Risk Overview:** **Global Innovations Inc.** has a total of 7 layers. **3 (42.9%)** are High Risk, 2 (28.6%) are Medium Risk, and 2 (28.6%) are Low Risk.
-- **Layer Risk Breakdown:** High Risk: **Strategic Planning & Development** (85.2, 7 processes; **Weak controls**), **Product
