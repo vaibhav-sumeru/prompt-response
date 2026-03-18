@@ -1,0 +1,23 @@
+{
+  "_schemaDescription": "Risk Assessment – Entity Level sample payload. Entity: Tech Innovations Inc. 7 layers total, 0 scored. Categories: (empty). 7 layers unscored. This tests the zero-scored edge case.",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "entityName": "Tech Innovations Inc.",
+    "totalLayers": 7,
+    "scoredLayers": 0,
+    "unscoredLayers": 7
+  },
+  "riskDistribution": {
+    "description": "0 scored layers: All 7 layers are unscored.",
+    "categories": []
+  },
+  "priorityLayers": {
+    "description": "No layers currently have scores to prioritize for audit attention.",
+    "items": []
+  }
+}

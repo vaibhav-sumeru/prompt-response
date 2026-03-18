@@ -1,0 +1,25 @@
+{
+  "_schemaDescription": "Risk Assessment – Heat Map sample payload. Universe-level view: 10 entities total, 0 scored. All entities unscored. Color zones and priority items are empty as there are no scored items to categorize.",
+  "_drillDownExamples": {
+    "universe": "This payload (all entities in audit universe)",
+    "entity": "If user clicks 'DMI Finance' → viewContext.currentLevel becomes 'entity', itemType becomes 'layer', contextPath becomes 'DMI Finance', colorDistribution shows layers of DMI Finance",
+    "layer": "If user clicks 'Consumer Layer' → itemType becomes 'process', contextPath becomes 'DMI Finance > Consumer Layer'",
+    "process": "If user clicks 'Dealer Management' → itemType becomes 'risk', contextPath becomes 'DMI Finance > Consumer Layer > Dealer Management'"
+  },
+  "viewContext": {
+    "currentLevel": "universe",
+    "itemType": "entity",
+    "contextPath": "",
+    "totalItems": 10,
+    "scoredItems": 0,
+    "unscoredItems": 10
+  },
+  "colorDistribution": {
+    "description": "0 scored entities: All 10 entities are unscored. No risk distribution available.",
+    "zones": []
+  },
+  "priorityItems": {
+    "description": "No scored entities available to determine top priority items.",
+    "items": []
+  }
+}

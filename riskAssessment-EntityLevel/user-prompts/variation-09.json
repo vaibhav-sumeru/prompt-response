@@ -1,0 +1,47 @@
+{
+  "_schemaDescription": "Risk Assessment – Entity Level sample payload. Entity: Nexus Corp. 1 layer total, 1 scored. Categories: High Risk/Monthly (1 layer). 0 layers unscored. Control weakness derived from inherent × residual risk category per layer. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "entityName": "Nexus Corp",
+    "totalLayers": 1,
+    "scoredLayers": 1,
+    "unscoredLayers": 0
+  },
+  "riskDistribution": {
+    "description": "1 scored layer: 1 High Risk (Monthly). 0 layers unscored.",
+    "categories": [
+      {
+        "label": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "count": 1,
+        "percent": 100,
+        "topLayers": [
+          {
+            "layerName": "Critical Systems Operations",
+            "residualScore": 85.1,
+            "processCount": 7,
+            "controlWeakness": "Weak controls"
+          }
+        ]
+      }
+    ]
+  },
+  "priorityLayers": {
+    "description": "The single layer by residual score requiring immediate audit attention within Nexus Corp.",
+    "items": [
+      {
+        "layerName": "Critical Systems Operations",
+        "residualScore": 85.1,
+        "riskCategory": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "processCount": 7,
+        "controlWeakness": "Weak controls"
+      }
+    ]
+  }
+}

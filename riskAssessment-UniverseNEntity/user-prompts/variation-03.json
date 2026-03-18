@@ -1,0 +1,109 @@
+{
+  "_schemaDescription": "Risk Assessment – Audit Universe & Entity sample payload. 20 entities total, 18 scored. Categories: High Risk/Monthly (12 entities), Medium Risk/Quarterly (4), Low Risk/Yearly (2). 2 unscored entities. Control weakness derived from inherent × residual risk category per entity. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "totalEntities": 20,
+    "scoredEntities": 18,
+    "unscoredEntities": 2
+  },
+  "riskDistribution": {
+    "description": "18 scored entities: 12 High Risk (Monthly), 4 Medium Risk (Quarterly), 2 Low Risk (Yearly). 2 entities unscored.",
+    "categories": [
+      {
+        "label": "High Risk",
+        "auditFrequency": "Monthly",
+        "count": 12,
+        "percent": 66.7,
+        "topEntities": [
+          {
+            "entityName": "Global Financial Operations",
+            "residualScore": 9.2,
+            "controlWeakness": "Weak controls"
+          },
+          {
+            "entityName": "Cybersecurity Incident Response",
+            "residualScore": 8.9,
+            "controlWeakness": "Control failure / anomaly"
+          },
+          {
+            "entityName": "Supply Chain Logistics",
+            "residualScore": 8.5,
+            "controlWeakness": "Weak controls"
+          }
+        ]
+      },
+      {
+        "label": "Medium Risk",
+        "auditFrequency": "Quarterly",
+        "count": 4,
+        "percent": 22.2,
+        "topEntities": [
+          {
+            "entityName": "Customer Data Privacy",
+            "residualScore": 6.5,
+            "controlWeakness": "Strong controls"
+          },
+          {
+            "entityName": "Marketing & Communications",
+            "residualScore": 6.1,
+            "controlWeakness": "Strong controls"
+          },
+          {
+            "entityName": "HR Payroll Systems",
+            "residualScore": 5.8,
+            "controlWeakness": "Weak controls"
+          }
+        ]
+      },
+      {
+        "label": "Low Risk",
+        "auditFrequency": "Yearly",
+        "count": 2,
+        "percent": 11.1,
+        "topEntities": [
+          {
+            "entityName": "Office Administration",
+            "residualScore": 3.1,
+            "controlWeakness": "Low-risk area"
+          },
+          {
+            "entityName": "Internal Communications",
+            "residualScore": 2.8,
+            "controlWeakness": "Low-risk area"
+          }
+        ]
+      }
+    ]
+  },
+  "priorityEntities": {
+    "description": "Top 3 entities by residual score requiring immediate audit attention.",
+    "items": [
+      {
+        "entityName": "Global Financial Operations",
+        "residualScore": 9.2,
+        "riskCategory": "High Risk",
+        "auditFrequency": "Monthly",
+        "controlWeakness": "Weak controls"
+      },
+      {
+        "entityName": "Cybersecurity Incident Response",
+        "residualScore": 8.9,
+        "riskCategory": "High Risk",
+        "auditFrequency": "Monthly",
+        "controlWeakness": "Control failure / anomaly"
+      },
+      {
+        "entityName": "Supply Chain Logistics",
+        "residualScore": 8.5,
+        "riskCategory": "High Risk",
+        "auditFrequency": "Monthly",
+        "controlWeakness": "Weak controls"
+      }
+    ]
+  }
+}

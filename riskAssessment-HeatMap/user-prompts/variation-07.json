@@ -1,0 +1,92 @@
+{
+  "_schemaDescription": "Risk Assessment – Heat Map sample payload. Process-level view: 5 risks total, 5 scored. Color zones: Red/High Risk (2 risks), Yellow/Medium Risk (2 risks), Green/Low Risk (1 risk). 0 risks unscored. Color names and classification labels are client-configured — not hardcoded.",
+  "_drillDownExamples": {
+    "universe": "All entities in audit universe",
+    "entity": "Layers within 'DMI Finance'",
+    "layer": "Processes within 'DMI Finance > Consumer Layer'",
+    "process": "This payload (risks within 'DMI Finance > Consumer Layer > Dealer Management')"
+  },
+  "viewContext": {
+    "currentLevel": "process",
+    "itemType": "risk",
+    "contextPath": "DMI Finance > Consumer Layer > Dealer Management",
+    "totalItems": 5,
+    "scoredItems": 5,
+    "unscoredItems": 0
+  },
+  "colorDistribution": {
+    "description": "5 scored risks: 2 Red (High Risk), 2 Yellow (Medium Risk), 1 Green (Low Risk). 0 risks unscored.",
+    "zones": [
+      {
+        "colorName": "Red",
+        "label": "High Risk",
+        "count": 2,
+        "percent": 40,
+        "topItems": [
+          {
+            "name": "Compliance Violation Risk",
+            "residualScore": 8.5
+          },
+          {
+            "name": "Inventory Loss Risk",
+            "residualScore": 7.9
+          }
+        ]
+      },
+      {
+        "colorName": "Yellow",
+        "label": "Medium Risk",
+        "count": 2,
+        "percent": 40,
+        "topItems": [
+          {
+            "name": "Supply Chain Disruption Risk",
+            "residualScore": 5.2
+          },
+          {
+            "name": "Customer Data Breach Risk",
+            "residualScore": 4.8
+          }
+        ]
+      },
+      {
+        "colorName": "Green",
+        "label": "Low Risk",
+        "count": 1,
+        "percent": 20,
+        "topItems": [
+          {
+            "name": "Process Efficiency Risk",
+            "residualScore": 2.1
+          }
+        ]
+      }
+    ]
+  },
+  "priorityItems": {
+    "description": "Top 3 risks by residual score requiring immediate audit attention within 'DMI Finance > Consumer Layer > Dealer Management'.",
+    "items": [
+      {
+        "name": "Compliance Violation Risk",
+        "residualScore": 8.5,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": "DMI Finance > Consumer Layer > Dealer Management"
+      },
+      {
+        "name": "Inventory Loss Risk",
+        "residualScore": 7.9,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": "DMI Finance > Consumer Layer > Dealer Management"
+      },
+      {
+        "name": "Supply Chain Disruption Risk",
+        "residualScore": 5.2,
+        "colorZone": "Yellow",
+        "label": "Medium Risk",
+        "parentContext": "DMI Finance > Consumer Layer > Dealer Management"
+      }
+    ]
+  }
+}

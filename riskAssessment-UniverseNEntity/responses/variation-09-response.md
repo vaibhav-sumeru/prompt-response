@@ -1,0 +1,4 @@
+- **Universe Risk Overview:** There is a total of 1 entity, with 1 entity scored. **1 High Risk** entity accounts for **100%** of scored entities.
+- **Entity Risk Breakdown:** The **High Risk** category includes **Global Operations Unit** (score 8.5), which exhibits **Weak controls**.
+- **Audit Frequency Recommendation:** **Monthly** audit is recommended for **1** entity: **Global Operations Unit** (score 8.5).
+- **Priority Entities:** The top priority entity is **Global Operations Unit** (score 8.5), categorized as High Risk, recommended for Monthly audit, and exhibiting **Weak controls**.

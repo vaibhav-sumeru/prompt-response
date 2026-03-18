@@ -1,0 +1,68 @@
+{
+  "_schemaDescription": "Risk Assessment – Heat Map sample payload. Universe-level view: 10 entities total, 8 scored. Color zones: Yellow/Medium Risk (8 entities). 2 entities unscored. All items in a single color zone.",
+  "_drillDownExamples": {
+    "universe": "This payload (all entities in audit universe)",
+    "entity": "If user clicks 'Corporate Communications' → viewContext.currentLevel becomes 'entity', itemType becomes 'layer', contextPath becomes 'Corporate Communications', colorDistribution shows layers of Corporate Communications",
+    "layer": "If user clicks 'Marketing Layer' → itemType becomes 'process', contextPath becomes 'Corporate Communications > Marketing Layer'",
+    "process": "If user clicks 'Brand Management' → itemType becomes 'risk', contextPath becomes 'Corporate Communications > Marketing Layer > Brand Management'"
+  },
+  "viewContext": {
+    "currentLevel": "universe",
+    "itemType": "entity",
+    "contextPath": "",
+    "totalItems": 10,
+    "scoredItems": 8,
+    "unscoredItems": 2
+  },
+  "colorDistribution": {
+    "description": "8 scored entities: 8 Yellow (Medium Risk).",
+    "zones": [
+      {
+        "colorName": "Yellow",
+        "label": "Medium Risk",
+        "count": 8,
+        "percent": 100,
+        "topItems": [
+          {
+            "name": "Corporate Communications",
+            "residualScore": 5.9
+          },
+          {
+            "name": "IT Operations",
+            "residualScore": 5.5
+          },
+          {
+            "name": "Supply Chain Management",
+            "residualScore": 5.1
+          }
+        ]
+      }
+    ]
+  },
+  "priorityItems": {
+    "description": "Top 3 entities by residual score requiring audit attention.",
+    "items": [
+      {
+        "name": "Corporate Communications",
+        "residualScore": 5.9,
+        "colorZone": "Yellow",
+        "label": "Medium Risk",
+        "parentContext": ""
+      },
+      {
+        "name": "IT Operations",
+        "residualScore": 5.5,
+        "colorZone": "Yellow",
+        "label": "Medium Risk",
+        "parentContext": ""
+      },
+      {
+        "name": "Supply Chain Management",
+        "residualScore": 5.1,
+        "colorZone": "Yellow",
+        "label": "Medium Risk",
+        "parentContext": ""
+      }
+    ]
+  }
+}

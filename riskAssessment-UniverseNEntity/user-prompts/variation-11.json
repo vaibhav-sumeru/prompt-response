@@ -1,0 +1,22 @@
+{
+  "_schemaDescription": "Risk Assessment – Audit Universe & Entity sample payload. 7 entities total, 0 scored. All 7 entities are unscored. Categories: empty. Tests zero-scored scenario for graceful section collapse.",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "totalEntities": 7,
+    "scoredEntities": 0,
+    "unscoredEntities": 7
+  },
+  "riskDistribution": {
+    "description": "All 7 entities in the audit universe are currently unscored. Risk distribution cannot be determined.",
+    "categories": []
+  },
+  "priorityEntities": {
+    "description": "No entities have been scored; therefore, no priority entities can be identified.",
+    "items": []
+  }
+}

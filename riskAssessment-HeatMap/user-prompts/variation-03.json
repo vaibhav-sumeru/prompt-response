@@ -1,0 +1,88 @@
+{
+  "_schemaDescription": "Risk Assessment – Heat Map sample payload. Universe-level view: 12 entities total, 10 scored. Color zones: Red/High Risk (7 entities), Yellow/Medium Risk (3 entities). 2 entities unscored. Green zone absent as per 'universe-red-dominant' variation. Color names and classification labels are client-configured — not hardcoded.",
+  "_drillDownExamples": {
+    "universe": "This payload (all entities in audit universe)",
+    "entity": "If user clicks 'Global Operations' → viewContext.currentLevel becomes 'entity', itemType becomes 'layer', contextPath becomes 'Global Operations', colorDistribution shows layers of Global Operations",
+    "layer": "If user clicks 'Supply Chain Layer' → itemType becomes 'process', contextPath becomes 'Global Operations > Supply Chain Layer'",
+    "process": "If user clicks 'Supplier Management' → itemType becomes 'risk', contextPath becomes 'Global Operations > Supply Chain Layer > Supplier Management'"
+  },
+  "viewContext": {
+    "currentLevel": "universe",
+    "itemType": "entity",
+    "contextPath": "",
+    "totalItems": 12,
+    "scoredItems": 10,
+    "unscoredItems": 2
+  },
+  "colorDistribution": {
+    "description": "10 scored entities: 7 Red (High Risk), 3 Yellow (Medium Risk). 2 entities unscored.",
+    "zones": [
+      {
+        "colorName": "Red",
+        "label": "High Risk",
+        "count": 7,
+        "percent": 70,
+        "topItems": [
+          {
+            "name": "Global Operations",
+            "residualScore": 9.2
+          },
+          {
+            "name": "Research & Development",
+            "residualScore": 8.8
+          },
+          {
+            "name": "Manufacturing Division",
+            "residualScore": 8.5
+          }
+        ]
+      },
+      {
+        "colorName": "Yellow",
+        "label": "Medium Risk",
+        "count": 3,
+        "percent": 30,
+        "topItems": [
+          {
+            "name": "Marketing Department",
+            "residualScore": 5.9
+          },
+          {
+            "name": "Sales Region North",
+            "residualScore": 5.5
+          },
+          {
+            "name": "Customer Support",
+            "residualScore": 5.1
+          }
+        ]
+      }
+    ]
+  },
+  "priorityItems": {
+    "description": "Top 3 entities by residual score requiring immediate audit attention.",
+    "items": [
+      {
+        "name": "Global Operations",
+        "residualScore": 9.2,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": ""
+      },
+      {
+        "name": "Research & Development",
+        "residualScore": 8.8,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": ""
+      },
+      {
+        "name": "Manufacturing Division",
+        "residualScore": 8.5,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": ""
+      }
+    ]
+  }
+}

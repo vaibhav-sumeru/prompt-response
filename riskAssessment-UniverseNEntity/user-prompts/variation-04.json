@@ -1,0 +1,61 @@
+{
+  "_schemaDescription": "Risk Assessment – Audit Universe & Entity sample payload. 7 entities total, 5 scored. Categories: Low Risk/Yearly (5 entities). 2 unscored entities. Control weakness derived from inherent × residual risk category per entity. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "totalEntities": 7,
+    "scoredEntities": 5,
+    "unscoredEntities": 2
+  },
+  "riskDistribution": {
+    "description": "5 scored entities: 5 Low Risk (Yearly). 2 entities unscored.",
+    "categories": [
+      {
+        "label": "Low Risk",
+        "auditFrequency": "Yearly",
+        "count": 5,
+        "percent": 100,
+        "topEntities": [
+          {
+            "entityName": "Data Privacy Dept",
+            "residualScore": 2.5,
+            "controlWeakness": "Low-risk area"
+          },
+          {
+            "entityName": "HR Operations",
+            "residualScore": 2.1,
+            "controlWeakness": "Low-risk area"
+          },
+          {
+            "entityName": "Office Services",
+            "residualScore": 1.8,
+            "controlWeakness": "Low-risk area"
+          }
+        ]
+      }
+    ]
+  },
+  "priorityEntities": {
+    "description": "Top entities by residual score requiring immediate audit attention.",
+    "items": [
+      {
+        "entityName": "Data Privacy Dept",
+        "residualScore": 2.5,
+        "riskCategory": "Low Risk",
+        "auditFrequencyRecommendation": "Yearly",
+        "controlWeakness": "Low-risk area"
+      },
+      {
+        "entityName": "HR Operations",
+        "residualScore": 2.1,
+        "riskCategory": "Low Risk",
+        "auditFrequencyRecommendation": "Yearly",
+        "controlWeakness": "Low-risk area"
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "_schemaDescription": "Risk Assessment – Heat Map sample payload. Universe-level view: 10 entities total, 3 scored. Color zones: Red/Critical Risk (2 entities), Yellow/Moderate Risk (1 entity). 7 entities unscored. Color names and classification labels are client-configured — not hardcoded.",
+  "_drillDownExamples": {
+    "universe": "This payload (all entities in audit universe)",
+    "entity": "If user clicks 'Operations Audit Unit' → viewContext.currentLevel becomes 'entity', itemType becomes 'layer', contextPath becomes 'Operations Audit Unit', colorDistribution shows layers of Operations Audit Unit",
+    "layer": "If user clicks 'Financial Controls' → itemType becomes 'process', contextPath becomes 'Operations Audit Unit > Financial Controls'",
+    "process": "If user clicks 'Expense Management' → itemType becomes 'risk', contextPath becomes 'Operations Audit Unit > Financial Controls > Expense Management'"
+  },
+  "viewContext": {
+    "currentLevel": "universe",
+    "itemType": "entity",
+    "contextPath": "",
+    "totalItems": 10,
+    "scoredItems": 3,
+    "unscoredItems": 7
+  },
+  "colorDistribution": {
+    "description": "3 scored entities: 2 Red (Critical Risk), 1 Yellow (Moderate Risk). 7 entities unscored.",
+    "zones": [
+      {
+        "colorName": "Red",
+        "label": "Critical Risk",
+        "count": 2,
+        "percent": 66.7,
+        "topItems": [
+          {
+            "name": "Operations Audit Unit",
+            "residualScore": 8.5
+          },
+          {
+            "name": "Compliance Dept.",
+            "residualScore": 7.9
+          }
+        ]
+      },
+      {
+        "colorName": "Yellow",
+        "label": "Moderate Risk",
+        "count": 1,
+        "percent": 33.3,
+        "topItems": [
+          {
+            "name": "HR Division",
+            "residualScore": 5.2
+          }
+        ]
+      }
+    ]
+  },
+  "priorityItems": {
+    "description": "Top entities by residual score requiring immediate audit attention.",
+    "items": [
+      {
+        "name": "Operations Audit Unit",
+        "residualScore": 8.5,
+        "colorZone": "Red",
+        "label": "Critical Risk",
+        "parentContext": ""
+      },
+      {
+        "name": "Compliance Dept.",
+        "residualScore": 7.9,
+        "colorZone": "Red",
+        "label": "Critical Risk",
+        "parentContext": ""
+      },
+      {
+        "name": "HR Division",
+        "residualScore": 5.2,
+        "colorZone": "Yellow",
+        "label": "Moderate Risk",
+        "parentContext": ""
+      }
+    ]
+  }
+}

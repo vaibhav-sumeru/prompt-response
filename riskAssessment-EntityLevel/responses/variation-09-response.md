@@ -1,0 +1,4 @@
+- **Entity Risk Overview:** For **Nexus Corp**, the entity-level risk assessment identifies 1 total layer, all of which are scored. A significant **1** layer, accounting for **100%** of the total, is classified within the High Risk category.
+- **Layer Risk Breakdown:** For the High Risk category, the top layer identified is **Critical Systems Operations**, with a residual score of 85.1 and 7 associated processes. This layer exhibits **Weak controls**, indicating control effectiveness issues.
+- **Audit Frequency Recommendation:** A Monthly audit is recommended for **1** layer within this entity. This includes **Critical Systems Operations**, which has a residual score of 85.1, indicating a need for frequent review.
+- **Priority Layers:** The top priority layer is **Critical Systems Operations** (residual score 85.1), categorized as High Risk, recommended for Monthly audit, with 7 processes, and **Weak controls**.

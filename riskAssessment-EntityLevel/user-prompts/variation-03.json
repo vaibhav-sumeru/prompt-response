@@ -1,0 +1,121 @@
+{
+  "_schemaDescription": "Risk Assessment – Entity Level sample payload. Entity: GlobalTech Solutions. 15 layers total, 14 scored. Categories: High Risk/Monthly (9 layers), Medium Risk/Quarterly (3 layers), Low Risk/Yearly (2 layers). 1 layer unscored. Control weakness derived from inherent × residual risk category per layer. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "entityName": "GlobalTech Solutions",
+    "totalLayers": 15,
+    "scoredLayers": 14,
+    "unscoredLayers": 1
+  },
+  "riskDistribution": {
+    "description": "14 scored layers: 9 High Risk (Monthly), 3 Medium Risk (Quarterly), 2 Low Risk (Yearly). 1 layer unscored.",
+    "categories": [
+      {
+        "label": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "count": 9,
+        "percent": 64.3,
+        "topLayers": [
+          {
+            "layerName": "Core Payments Processing",
+            "residualScore": 92.1,
+            "processCount": 8,
+            "controlWeakness": "Weak controls"
+          },
+          {
+            "layerName": "Customer Data Management",
+            "residualScore": 88.5,
+            "processCount": 7,
+            "controlWeakness": "Control failure / anomaly"
+          },
+          {
+            "layerName": "Supply Chain Finance",
+            "residualScore": 85.2,
+            "processCount": 6,
+            "controlWeakness": "Weak controls"
+          }
+        ]
+      },
+      {
+        "label": "Medium Risk",
+        "auditFrequencyRecommendation": "Quarterly",
+        "count": 3,
+        "percent": 21.4,
+        "topLayers": [
+          {
+            "layerName": "Employee Benefits",
+            "residualScore": 55.7,
+            "processCount": 5,
+            "controlWeakness": "Strong controls"
+          },
+          {
+            "layerName": "Vendor Procurement",
+            "residualScore": 52.3,
+            "processCount": 4,
+            "controlWeakness": "Low-risk area"
+          },
+          {
+            "layerName": "Marketing & Sales Ops",
+            "residualScore": 48.9,
+            "processCount": 6,
+            "controlWeakness": "Strong controls"
+          }
+        ]
+      },
+      {
+        "label": "Low Risk",
+        "auditFrequencyRecommendation": "Yearly",
+        "count": 2,
+        "percent": 14.3,
+        "topLayers": [
+          {
+            "layerName": "Office Administration",
+            "residualScore": 21.5,
+            "processCount": 3,
+            "controlWeakness": "Low-risk area"
+          },
+          {
+            "layerName": "Facilities Management",
+            "residualScore": 19.8,
+            "processCount": 2,
+            "controlWeakness": "Low-risk area"
+          }
+        ]
+      }
+    ]
+  },
+  "priorityLayers": {
+    "description": "Top 3 layers by residual score requiring immediate audit attention within GlobalTech Solutions.",
+    "items": [
+      {
+        "layerName": "Core Payments Processing",
+        "residualScore": 92.1,
+        "riskCategory": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "processCount": 8,
+        "controlWeakness": "Weak controls"
+      },
+      {
+        "layerName": "Customer Data Management",
+        "residualScore": 88.5,
+        "riskCategory": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "processCount": 7,
+        "controlWeakness": "Control failure / anomaly"
+      },
+      {
+        "layerName": "Supply Chain Finance",
+        "residualScore": 85.2,
+        "riskCategory": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "processCount": 6,
+        "controlWeakness": "Weak controls"
+      }
+    ]
+  }
+}

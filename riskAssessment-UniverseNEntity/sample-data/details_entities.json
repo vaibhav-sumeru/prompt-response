@@ -1,0 +1,210 @@
+[
+    {
+        "id": 13,
+        "entity_name": "DMI Finance",
+        "description": "DMI Finance ",
+        "type": "Entity",
+        "is_layer_available": true,
+        "residual_score": 4,
+        "layers": [
+            {
+                "layer_id": 18,
+                "layer_name": "Consumer",
+                "type": "Layer",
+                "residual_score": 4,
+                "is_process_available": true,
+                "entity_processes": [
+                    {
+                        "process_id": 23,
+                        "process_name": "Dealer Management",
+                        "type": "Process",
+                        "is_risk_available": true,
+                        "residual_score": 4,
+                        "risks": [
+                            {
+                                "risk_id": 16,
+                                "risk_name": "Engagement Activity",
+                                "description": "1. Risk of dissatisfied dealers due to unaddressed issues raised by them. \n2. Risk of unawareness within DMI internal stakeholders for new products launched by OEMs and non monitoring of key business performance indicators leading to loss of potential business.\n3. Risk of obtaining incorrect KYC documents and generating duplicate dealer codes leading to improper blocking of all active codes of one dealer",
+                                "type": "Risk",
+                                "is_control_available": true,
+                                "residual_score": 1,
+                                "controls": [
+                                    {
+                                        "risk_control_id": 19,
+                                        "risk_control_name": "Dealer Issue Management System",
+                                        "description": "All dealer queries and grievances are logged, tracked, and closed through a centralized CRM with defined SLAs.",
+                                        "type": "Control"
+                                    },
+                                    {
+                                        "risk_control_id": 20,
+                                        "risk_control_name": "Periodic Engagement Reviews",
+                                        "description": "Conduct quarterly or monthly reviews with dealers to capture feedback and identify improvement areas.",
+                                        "type": "Control"
+                                    },
+                                    {
+                                        "risk_control_id": 21,
+                                        "risk_control_name": "Structured Communication Plan",
+                                        "description": "Circulate periodic newsletters, updates, and policy changes through official channels to keep dealers informed.",
+                                        "type": "Control"
+                                    },
+                                    {
+                                        "risk_control_id": 22,
+                                        "risk_control_name": "Dealer Satisfaction Survey",
+                                        "description": "Perform half-yearly or annual surveys to assess dealer experience and take corrective actions on feedback trends.",
+                                        "type": "Control"
+                                    }
+                                ]
+                            },
+                            {
+                                "risk_id": 17,
+                                "risk_name": " Scheme formulation, communication \u0026 payout",
+                                "description": "1. Risk of schemes being designed over and above allocated budget and rolled out without approval.\n2. Risk of erroneous calculation of incentive amount leading to incorrect payout and financial loss further compromising dealer relations",
+                                "type": "Risk",
+                                "is_control_available": true,
+                                "residual_score": 4,
+                                "controls": [
+                                    {
+                                        "risk_control_id": 23,
+                                        "risk_control_name": "Scheme Approval Workflow",
+                                        "description": " All schemes must pass through defined approval hierarchy (Business, Finance, Compliance) before release.",
+                                        "type": "Control"
+                                    },
+                                    {
+                                        "risk_control_id": 24,
+                                        "risk_control_name": " Scheme Communication Validation",
+                                        "description": "Schemes are published to dealers through an authorized channel (portal/email), with content reviewed for accuracy before release.\n",
+                                        "type": "Control"
+                                    },
+                                    {
+                                        "risk_control_id": 25,
+                                        "risk_control_name": "Automated Payout Calculation",
+                                        "description": "System-based validation and approval workflow for dealer incentive payout to avoid manual errors.",
+                                        "type": "Control"
+                                    }
+                                ]
+                            },
+                            {
+                                "risk_id": 18,
+                                "risk_name": "Dealer Financing",
+                                "description": "1. Risk of incorrect reconciliations and tracking of repayments\n2. Risk of incorrect credit evaluation relating to incorrect financing",
+                                "type": "Risk",
+                                "is_control_available": true,
+                                "residual_score": 7,
+                                "controls": [
+                                    {
+                                        "risk_control_id": 26,
+                                        "risk_control_name": "KYC and Dealer Code Validation",
+                                        "description": "Mandatory document verification and duplicate check (based on PAN/GST/Contact) before code creation.",
+                                        "type": "Control"
+                                    },
+                                    {
+                                        "risk_control_id": 27,
+                                        "risk_control_name": "Credit Limit Approval Control",
+                                        "description": "Credit limits and enhancements must be approved as per authority matrix and supported by credit evaluation.",
+                                        "type": "Control"
+                                    },
+                                    {
+                                        "risk_control_id": 28,
+                                        "risk_control_name": "Monitoring of Overdue Accounts",
+                                        "description": "Daily or weekly monitoring of overdue dealer accounts with automated alerts for breaches.",
+                                        "type": "Control"
+                                    },
+                                    {
+                                        "risk_control_id": 29,
+                                        "risk_control_name": "Periodic Dealer Review",
+                                        "description": "Conduct quarterly review of dealer performance and financial health for continued financing eligibility.",
+                                        "type": "Control"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 14,
+        "entity_name": "DemoEntityvd1",
+        "description": "DemoEntityvd1",
+        "type": "Entity",
+        "is_layer_available": true,
+        "residual_score": null,
+        "layers": [
+            {
+                "layer_id": 19,
+                "layer_name": "Entity Demo 1",
+                "type": "Layer",
+                "residual_score": null,
+                "is_process_available": true,
+                "entity_processes": [
+                    {
+                        "process_id": 24,
+                        "process_name": "Demo process  1",
+                        "type": "Process",
+                        "is_risk_available": true,
+                        "residual_score": null,
+                        "risks": [
+                            {
+                                "risk_id": 19,
+                                "risk_name": "Control risk",
+                                "description": "Control risk",
+                                "type": "Risk",
+                                "is_control_available": true,
+                                "residual_score": null,
+                                "controls": [
+                                    {
+                                        "risk_control_id": 30,
+                                        "risk_control_name": "Control name 1",
+                                        "description": "Control name 1",
+                                        "type": "Control"
+                                    },
+                                    {
+                                        "risk_control_id": 31,
+                                        "risk_control_name": "Control name 2",
+                                        "description": "Control name 2",
+                                        "type": "Control"
+                                    }
+                                ]
+                            },
+                            {
+                                "risk_id": 20,
+                                "risk_name": "Process risk",
+                                "description": "Process risk",
+                                "type": "Risk",
+                                "is_control_available": false,
+                                "residual_score": null,
+                                "controls": []
+                            }
+                        ]
+                    },
+                    {
+                        "process_id": 25,
+                        "process_name": "Demo process 2",
+                        "type": "Process",
+                        "is_risk_available": false,
+                        "residual_score": null,
+                        "risks": []
+                    }
+                ]
+            },
+            {
+                "layer_id": 20,
+                "layer_name": "Entity Demo 2",
+                "type": "Layer",
+                "residual_score": null,
+                "is_process_available": false,
+                "entity_processes": []
+            }
+        ]
+    },
+    {
+        "id": 15,
+        "entity_name": "DemoEntityvd2",
+        "description": "DemoEntityvd2",
+        "type": "Entity",
+        "is_layer_available": false,
+        "residual_score": null,
+        "layers": []
+    }
+]

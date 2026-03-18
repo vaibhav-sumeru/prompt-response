@@ -1,0 +1,3 @@
+- **Heat Map Overview:** The entity-level view for DMI Finance shows 4 total layers, all scored. There are **2 Red (High Risk) layers (50%)**, 1 Yellow (Medium Risk) layer (25%), and 1 Green (Low Risk) layer (25%).
+- **Color Zone Breakdown:** Within the **Red (High Risk)** zone, **Operations Layer** (8.5) and **IT Security Layer** (7.9) are identified. The Yellow (Medium Risk) zone includes Financial Reporting Layer (5.2). The Green (Low Risk) zone contains Compliance Layer (2.8).
+- **Priority Items:** The top priority layers are **Operations Layer** (8.5, Red High Risk) and **IT Security Layer** (7.9, Red High Risk), both within DMI Finance. Financial Reporting Layer (5.2, Yellow Medium Risk) is also a priority item within DMI Finance.

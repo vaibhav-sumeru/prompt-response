@@ -1,0 +1,100 @@
+{
+  "_schemaDescription": "Risk Assessment – Heat Map sample payload. Universe-level view: 7 entities total, 7 scored. Color zones: Red/High Risk (3 entities), Yellow/Medium Risk (2 entities), Green/Low Risk (2 entities). 0 entities unscored. Color names and classification labels are client-configured — not hardcoded.",
+  "_drillDownExamples": {
+    "universe": "This payload (all entities in audit universe)",
+    "entity": "If user clicks 'Global Retail Operations' → viewContext.currentLevel becomes 'entity', itemType becomes 'layer', contextPath becomes 'Global Retail Operations', colorDistribution shows layers of Global Retail Operations",
+    "layer": "If user clicks 'Sales Processes Layer' → itemType becomes 'process', contextPath becomes 'Global Retail Operations > Sales Processes Layer'",
+    "process": "If user clicks 'Customer Onboarding' → itemType becomes 'risk', contextPath becomes 'Global Retail Operations > Sales Processes Layer > Customer Onboarding'"
+  },
+  "viewContext": {
+    "currentLevel": "universe",
+    "itemType": "entity",
+    "contextPath": "",
+    "totalItems": 7,
+    "scoredItems": 7,
+    "unscoredItems": 0
+  },
+  "colorDistribution": {
+    "description": "7 scored entities: 3 Red (High Risk), 2 Yellow (Medium Risk), 2 Green (Low Risk).",
+    "zones": [
+      {
+        "colorName": "Red",
+        "label": "High Risk",
+        "count": 3,
+        "percent": 42.9,
+        "topItems": [
+          {
+            "name": "Global Retail Operations",
+            "residualScore": 9.2
+          },
+          {
+            "name": "Supply Chain Management",
+            "residualScore": 8.5
+          },
+          {
+            "name": "Digital Transformation Unit",
+            "residualScore": 7.9
+          }
+        ]
+      },
+      {
+        "colorName": "Yellow",
+        "label": "Medium Risk",
+        "count": 2,
+        "percent": 28.6,
+        "topItems": [
+          {
+            "name": "Customer Service Department",
+            "residualScore": 6.8
+          },
+          {
+            "name": "Product Development",
+            "residualScore": 5.1
+          }
+        ]
+      },
+      {
+        "colorName": "Green",
+        "label": "Low Risk",
+        "count": 2,
+        "percent": 28.6,
+        "topItems": [
+          {
+            "name": "Internal Audit Team",
+            "residualScore": 3.2
+          },
+          {
+            "name": "Legal & Regulatory Affairs",
+            "residualScore": 2.5
+          }
+        ]
+      }
+    ]
+  },
+  "priorityItems": {
+    "description": "Top 3 entities by residual score requiring immediate audit attention.",
+    "items": [
+      {
+        "name": "Global Retail Operations",
+        "residualScore": 9.2,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": ""
+      },
+      {
+        "name": "Supply Chain Management",
+        "residualScore": 8.5,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": ""
+      },
+      {
+        "name": "Digital Transformation Unit",
+        "residualScore": 7.9,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": ""
+      }
+    ]
+  }
+}

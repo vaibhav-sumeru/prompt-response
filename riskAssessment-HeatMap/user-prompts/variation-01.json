@@ -1,0 +1,100 @@
+{
+  "_schemaDescription": "Risk Assessment – Heat Map sample payload. Universe-level view: 7 entities total, 7 scored. Color zones: Red/High Risk (2 entities), Yellow/Medium Risk (3 entities), Green/Low Risk (2 entities). 0 entities unscored. Color names and classification labels are client-configured — not hardcoded.",
+  "_drillDownExamples": {
+    "universe": "This payload (all entities in audit universe)",
+    "entity": "If user clicks 'Global Banking Solutions' → viewContext.currentLevel becomes 'entity', itemType becomes 'layer', contextPath becomes 'Global Banking Solutions', colorDistribution shows layers of Global Banking Solutions",
+    "layer": "If user clicks 'Core Banking Layer' → itemType becomes 'process', contextPath becomes 'Global Banking Solutions > Core Banking Layer'",
+    "process": "If user clicks 'Loan Origination' → itemType becomes 'risk', contextPath becomes 'Global Banking Solutions > Core Banking Layer > Loan Origination'"
+  },
+  "viewContext": {
+    "currentLevel": "universe",
+    "itemType": "entity",
+    "contextPath": "",
+    "totalItems": 7,
+    "scoredItems": 7,
+    "unscoredItems": 0
+  },
+  "colorDistribution": {
+    "description": "7 scored entities: 2 Red (High Risk), 3 Yellow (Medium Risk), 2 Green (Low Risk).",
+    "zones": [
+      {
+        "colorName": "Red",
+        "label": "High Risk",
+        "count": 2,
+        "percent": 28.6,
+        "topItems": [
+          {
+            "name": "Global Banking Solutions",
+            "residualScore": 8.5
+          },
+          {
+            "name": "Enterprise Risk Management",
+            "residualScore": 7.9
+          }
+        ]
+      },
+      {
+        "colorName": "Yellow",
+        "label": "Medium Risk",
+        "count": 3,
+        "percent": 42.9,
+        "topItems": [
+          {
+            "name": "Digital Transformation Office",
+            "residualScore": 6.2
+          },
+          {
+            "name": "Customer Experience Dept.",
+            "residualScore": 5.8
+          },
+          {
+            "name": "Supply Chain Operations",
+            "residualScore": 5.1
+          }
+        ]
+      },
+      {
+        "colorName": "Green",
+        "label": "Low Risk",
+        "count": 2,
+        "percent": 28.6,
+        "topItems": [
+          {
+            "name": "IT Security Operations",
+            "residualScore": 3.5
+          },
+          {
+            "name": "Internal Audit Department",
+            "residualScore": 2.8
+          }
+        ]
+      }
+    ]
+  },
+  "priorityItems": {
+    "description": "Top 3 entities by residual score requiring immediate audit attention.",
+    "items": [
+      {
+        "name": "Global Banking Solutions",
+        "residualScore": 8.5,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": ""
+      },
+      {
+        "name": "Enterprise Risk Management",
+        "residualScore": 7.9,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": ""
+      },
+      {
+        "name": "Digital Transformation Office",
+        "residualScore": 6.2,
+        "colorZone": "Yellow",
+        "label": "Medium Risk",
+        "parentContext": ""
+      }
+    ]
+  }
+}

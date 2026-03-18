@@ -1,0 +1,91 @@
+{
+  "_schemaDescription": "Risk Assessment – Audit Universe & Entity sample payload. 12 entities total, 10 scored. Categories: High Risk/Monthly (6 entities), Medium Risk/Quarterly (4). No Low Risk entities. 2 unscored entities. Control weakness derived from inherent × residual risk category per entity. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "totalEntities": 12,
+    "scoredEntities": 10,
+    "unscoredEntities": 2
+  },
+  "riskDistribution": {
+    "description": "10 scored entities: 6 High Risk (Monthly), 4 Medium Risk (Quarterly). 2 entities unscored.",
+    "categories": [
+      {
+        "label": "High Risk",
+        "auditFrequency": "Monthly",
+        "count": 6,
+        "percent": 60,
+        "topEntities": [
+          {
+            "entityName": "Global Operations Inc.",
+            "residualScore": 8.9,
+            "controlWeakness": "Weak controls"
+          },
+          {
+            "entityName": "Financial Reporting Ltd.",
+            "residualScore": 8.2,
+            "controlWeakness": "Control failure / anomaly"
+          },
+          {
+            "entityName": "Supply Chain Solutions",
+            "residualScore": 7.5,
+            "controlWeakness": "Weak controls"
+          }
+        ]
+      },
+      {
+        "label": "Medium Risk",
+        "auditFrequency": "Quarterly",
+        "count": 4,
+        "percent": 40,
+        "topEntities": [
+          {
+            "entityName": "Customer Service Hub",
+            "residualScore": 5.8,
+            "controlWeakness": "Strong controls"
+          },
+          {
+            "entityName": "HR & Payroll Services",
+            "residualScore": 5.1,
+            "controlWeakness": "Strong controls"
+          },
+          {
+            "entityName": "Marketing & Brand Mgmt",
+            "residualScore": 4.5,
+            "controlWeakness": "Low-risk area"
+          }
+        ]
+      }
+    ]
+  },
+  "priorityEntities": {
+    "description": "Top 3 entities by residual score requiring immediate audit attention.",
+    "items": [
+      {
+        "entityName": "Global Operations Inc.",
+        "residualScore": 8.9,
+        "riskCategory": "High Risk",
+        "auditFrequency": "Monthly",
+        "controlWeakness": "Weak controls"
+      },
+      {
+        "entityName": "Financial Reporting Ltd.",
+        "residualScore": 8.2,
+        "riskCategory": "High Risk",
+        "auditFrequency": "Monthly",
+        "controlWeakness": "Control failure / anomaly"
+      },
+      {
+        "entityName": "Supply Chain Solutions",
+        "residualScore": 7.5,
+        "riskCategory": "High Risk",
+        "auditFrequency": "Monthly",
+        "controlWeakness": "Weak controls"
+      }
+    ]
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "_schemaDescription": "Risk Assessment – Audit Universe & Entity sample payload. 7 entities total, 6 scored. Categories: High Risk/Monthly (3 entities), Medium Risk/Quarterly (2), Low Risk/Yearly (1). 1 unscored entity. Control weakness derived from inherent × residual risk category per entity. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "totalEntities": 7,
+    "scoredEntities": 6,
+    "unscoredEntities": 1
+  },
+  "riskDistribution": {
+    "description": "6 scored entities: 3 High Risk (Monthly), 2 Medium Risk (Quarterly), 1 Low Risk (Yearly). 1 entity unscored.",
+    "categories": [
+      {
+        "label": "High Risk",
+        "auditFrequency": "Monthly",
+        "count": 3,
+        "percent": 50,
+        "topEntities": [
+          {
+            "entityName": "Global Operations",
+            "residualScore": 9.5,
+            "controlWeakness": "Control failure / anomaly"
+          },
+          {
+            "entityName": "Supply Chain Logistics",
+            "residualScore": 9.1,
+            "controlWeakness": "Weak controls"
+          },
+          {
+            "entityName": "Customer Data Platform",
+            "residualScore": 8.8,
+            "controlWeakness": "Control failure / anomaly"
+          }
+        ]
+      },
+      {
+        "label": "Medium Risk",
+        "auditFrequency": "Quarterly",
+        "count": 2,
+        "percent": 33.3,
+        "topEntities": [
+          {
+            "entityName": "HR Payroll Systems",
+            "residualScore": 6.2,
+            "controlWeakness": "Strong controls"
+          },
+          {
+            "entityName": "Marketing Compliance",
+            "residualScore": 5.9,
+            "controlWeakness": "Low-risk area"
+          }
+        ]
+      },
+      {
+        "label": "Low Risk",
+        "auditFrequency": "Yearly",
+        "count": 1,
+        "percent": 16.7,
+        "topEntities": [
+          {
+            "entityName": "Facilities Management",
+            "residualScore": 3.1,
+            "controlWeakness": "Low-risk area"
+          }
+        ]
+      }
+    ]
+  },
+  "priorityEntities": {
+    "description": "Top 3 entities by residual score requiring immediate audit attention.",
+    "items": [
+      {
+        "entityName": "Global Operations",
+        "residualScore": 9.5,
+        "riskCategory": "High Risk",
+        "auditFrequency": "Monthly",
+        "controlWeakness": "Control failure / anomaly"
+      },
+      {
+        "entityName": "Supply Chain Logistics",
+        "residualScore": 9.1,
+        "riskCategory": "High Risk",
+        "auditFrequency": "Monthly",
+        "controlWeakness": "Weak controls"
+      },
+      {
+        "entityName": "Customer Data Platform",
+        "residualScore": 8.8,
+        "riskCategory": "High Risk",
+        "auditFrequency": "Monthly",
+        "controlWeakness": "Control failure / anomaly"
+      }
+    ]
+  }
+}

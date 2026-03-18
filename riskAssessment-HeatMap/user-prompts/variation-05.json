@@ -1,0 +1,88 @@
+{
+  "_schemaDescription": "Risk Assessment – Heat Map sample payload. Entity-level view for 'DMI Finance': 4 layers total, all scored. Color zones: Red/High Risk (2 layers), Yellow/Medium Risk (1 layer), Green/Low Risk (1 layer). No unscored layers. Color names and classification labels are client-configured — not hardcoded.",
+  "_drillDownExamples": {
+    "universe": "All entities in audit universe → viewContext.currentLevel = 'universe', itemType = 'entity'",
+    "entity": "This payload (layers within 'DMI Finance') → viewContext.currentLevel = 'entity', itemType = 'layer', contextPath = 'DMI Finance'",
+    "layer": "If user clicks 'Operations Layer' → viewContext.currentLevel = 'layer', itemType = 'process', contextPath = 'DMI Finance > Operations Layer'",
+    "process": "If user clicks 'Inventory Management' → viewContext.currentLevel = 'process', itemType = 'risk', contextPath = 'DMI Finance > Operations Layer > Inventory Management'"
+  },
+  "viewContext": {
+    "currentLevel": "entity",
+    "itemType": "layer",
+    "contextPath": "DMI Finance",
+    "totalItems": 4,
+    "scoredItems": 4,
+    "unscoredItems": 0
+  },
+  "colorDistribution": {
+    "description": "4 scored layers: 2 Red (High Risk), 1 Yellow (Medium Risk), 1 Green (Low Risk).",
+    "zones": [
+      {
+        "colorName": "Red",
+        "label": "High Risk",
+        "count": 2,
+        "percent": 50,
+        "topItems": [
+          {
+            "name": "Operations Layer",
+            "residualScore": 8.5
+          },
+          {
+            "name": "IT Security Layer",
+            "residualScore": 7.9
+          }
+        ]
+      },
+      {
+        "colorName": "Yellow",
+        "label": "Medium Risk",
+        "count": 1,
+        "percent": 25,
+        "topItems": [
+          {
+            "name": "Financial Reporting Layer",
+            "residualScore": 5.2
+          }
+        ]
+      },
+      {
+        "colorName": "Green",
+        "label": "Low Risk",
+        "count": 1,
+        "percent": 25,
+        "topItems": [
+          {
+            "name": "Compliance Layer",
+            "residualScore": 2.8
+          }
+        ]
+      }
+    ]
+  },
+  "priorityItems": {
+    "description": "Top 3 layers by residual score requiring immediate audit attention within DMI Finance.",
+    "items": [
+      {
+        "name": "Operations Layer",
+        "residualScore": 8.5,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": "DMI Finance"
+      },
+      {
+        "name": "IT Security Layer",
+        "residualScore": 7.9,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": "DMI Finance"
+      },
+      {
+        "name": "Financial Reporting Layer",
+        "residualScore": 5.2,
+        "colorZone": "Yellow",
+        "label": "Medium Risk",
+        "parentContext": "DMI Finance"
+      }
+    ]
+  }
+}

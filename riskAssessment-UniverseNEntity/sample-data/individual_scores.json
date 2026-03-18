@@ -1,0 +1,74 @@
+{
+    "entities": [
+        {
+            "id": 13,
+            "entity_name": "DMI Finance",
+            "description": "DMI Finance ",
+            "type": "Entity",
+            "is_layer_available": true,
+            "residual_score": 4
+        },
+        {
+            "id": 14,
+            "entity_name": "DemoEntityvd1",
+            "description": "DemoEntityvd1",
+            "type": "Entity",
+            "is_layer_available": true,
+            "residual_score": null
+        },
+        {
+            "id": 15,
+            "entity_name": "DemoEntityvd2",
+            "description": "DemoEntityvd2",
+            "type": "Entity",
+            "is_layer_available": false,
+            "residual_score": null
+        }
+    ],
+    "layers": [
+        {
+            "layer_id": 18,
+            "layer_name": "Consumer",
+            "type": "Layer",
+            "residual_score": 4,
+            "is_process_available": true
+        },
+        {
+            "layer_id": 19,
+            "layer_name": "Entity Demo 1",
+            "type": "Layer",
+            "residual_score": null,
+            "is_process_available": true
+        },
+        {
+            "layer_id": 20,
+            "layer_name": "Entity Demo 2",
+            "type": "Layer",
+            "residual_score": null,
+            "is_process_available": false
+        }
+    ],
+    "processes": [
+        {
+            "process_id": 23,
+            "process_name": "Dealer Management",
+            "type": "Process",
+            "is_risk_available": true,
+            "residual_score": 4
+        },
+        {
+            "process_id": 24,
+            "process_name": "Demo process  1",
+            "type": "Process",
+            "is_risk_available": true,
+            "residual_score": null
+        },
+        {
+            "process_id": 25,
+            "process_name": "Demo process 2",
+            "type": "Process",
+            "is_risk_available": false,
+            "residual_score": null
+        }
+    ]
+}

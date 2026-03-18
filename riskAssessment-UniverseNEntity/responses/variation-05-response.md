@@ -1,0 +1,4 @@
+- **Universe Risk Overview:** Out of 10 total entities, 2 are scored. **1 High Risk** entity accounts for **50%** of scored entities, and 1 Medium Risk entity accounts for 50%. 8 entities remain unscored.
+- **Entity Risk Breakdown:** In the High Risk category, **Apex Ventures** has a residual score of 8.5, with **Weak controls**. For Medium Risk, Global Solutions has a residual score of 6.2, indicating Strong controls.
+- **Audit Frequency Recommendation:** Monthly audit is recommended for **1 entity**: **Apex Ventures** (8.5). Quarterly audit is recommended for 1 entity: Global Solutions (6.2).
+- **Priority Entities:** The top priority entity is **Apex Ventures**, with a residual score of 8.5 in the High Risk category, recommended for Monthly audit, and exhibiting **Weak controls**. Global Solutions is next, with a residual score of 6.2 in the Medium Risk category, recommended for Quarterly audit, and exhibiting Strong controls.

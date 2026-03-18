@@ -1,0 +1,108 @@
+{
+  "_schemaDescription": "Risk Assessment – Entity Level sample payload. Entity: Apex Innovations Inc. 9 layers total, 7 scored. Categories: High Risk/Monthly (3 layers), Medium Risk/Quarterly (4 layers). 2 layers unscored. Low Risk/Yearly category has 0 layers. Control weakness derived from inherent × residual risk category per layer. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "entityName": "Apex Innovations Inc.",
+    "totalLayers": 9,
+    "scoredLayers": 7,
+    "unscoredLayers": 2
+  },
+  "riskDistribution": {
+    "description": "7 scored layers: 3 High Risk (Monthly), 4 Medium Risk (Quarterly).",
+    "categories": [
+      {
+        "label": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "count": 3,
+        "percent": 42.9,
+        "topLayers": [
+          {
+            "layerName": "Product Development",
+            "residualScore": 85.1,
+            "processCount": 7,
+            "controlWeakness": "Weak controls"
+          },
+          {
+            "layerName": "Supply Chain Management",
+            "residualScore": 78.5,
+            "processCount": 6,
+            "controlWeakness": "Control failure / anomaly"
+          },
+          {
+            "layerName": "Customer Data Analytics",
+            "residualScore": 68.2,
+            "processCount": 5,
+            "controlWeakness": "Weak controls"
+          }
+        ]
+      },
+      {
+        "label": "Medium Risk",
+        "auditFrequencyRecommendation": "Quarterly",
+        "count": 4,
+        "percent": 57.1,
+        "topLayers": [
+          {
+            "layerName": "Financial Reporting",
+            "residualScore": 48.9,
+            "processCount": 8,
+            "controlWeakness": "Strong controls"
+          },
+          {
+            "layerName": "IT Security Operations",
+            "residualScore": 42.3,
+            "processCount": 5,
+            "controlWeakness": "Control failure / anomaly"
+          },
+          {
+            "layerName": "Human Resources",
+            "residualScore": 35.7,
+            "processCount": 4,
+            "controlWeakness": "Low-risk area"
+          }
+        ]
+      },
+      {
+        "label": "Low Risk",
+        "auditFrequencyRecommendation": "Yearly",
+        "count": 0,
+        "percent": 0,
+        "topLayers": []
+      }
+    ]
+  },
+  "priorityLayers": {
+    "description": "Top 3 layers by residual score requiring immediate audit attention within Apex Innovations Inc.",
+    "items": [
+      {
+        "layerName": "Product Development",
+        "residualScore": 85.1,
+        "riskCategory": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "processCount": 7,
+        "controlWeakness": "Weak controls"
+      },
+      {
+        "layerName": "Supply Chain Management",
+        "residualScore": 78.5,
+        "riskCategory": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "processCount": 6,
+        "controlWeakness": "Control failure / anomaly"
+      },
+      {
+        "layerName": "Customer Data Analytics",
+        "residualScore": 68.2,
+        "riskCategory": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "processCount": 5,
+        "controlWeakness": "Weak controls"
+      }
+    ]
+  }
+}

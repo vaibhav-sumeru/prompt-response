@@ -1,0 +1,57 @@
+[
+  {
+    "id": "variation-01",
+    "category": "normal-balanced",
+    "description": "6–8 layers, all 3 risk categories present (High/Medium/Low), all scored, mix of controlWeakness values ('Weak controls', 'Strong controls', 'Low-risk area'). Tests standard 4-bullet path, correct bolding of layer names and weak signals."
+  },
+  {
+    "id": "variation-02",
+    "category": "normal-balanced",
+    "description": "6–8 layers, all 3 risk categories present (High/Medium/Low), all scored, mix of controlWeakness values ('Weak controls', 'Strong controls', 'Low-risk area'). Tests standard 4-bullet path, correct bolding of layer names and weak signals."
+  },
+  {
+    "id": "variation-03",
+    "category": "high-skew-large",
+    "description": "10+ layers, majority High Risk (>60%), several layers with 'Weak controls' and 'Control failure / anomaly'. Tests top-3 cap in priorityLayers, bold formatting for multiple negative signals, processCount reporting."
+  },
+  {
+    "id": "variation-04",
+    "category": "all-low-risk",
+    "description": "All scored layers in Low Risk category, all 'Low-risk area' controlWeakness, all Yearly frequency. Tests zero-suppression for High/Medium categories and correct Yearly assignment with no urgency bolding."
+  },
+  {
+    "id": "variation-05",
+    "category": "many-unscored",
+    "description": "8 layers, only 2–3 scored, 5–6 unscored. Tests unscored count prominence in P1, and graceful handling when priorityLayers has only 2 items."
+  },
+  {
+    "id": "variation-06",
+    "category": "control-failure-anomaly",
+    "description": "Multiple layers with 'Control failure / anomaly' (Inherent Low + Residual High). Also includes some 'Weak controls'. Tests bold formatting for anomaly signal and accurate narration of control weakness type in P2 and P4."
+  },
+  {
+    "id": "variation-07",
+    "category": "two-categories-only",
+    "description": "Only High Risk and Medium Risk present — no Low Risk layers at all. Tests zero-suppression for Low Risk category and correct Yearly bracket omission in P3."
+  },
+  {
+    "id": "variation-08",
+    "category": "single-category",
+    "description": "All layers in a single risk category (e.g. all Medium Risk / Quarterly). Tests single-category narrative, 100% percent, and P3 with only one frequency bracket."
+  },
+  {
+    "id": "variation-09",
+    "category": "single-layer",
+    "description": "Only 1 layer in the entity (scored). Tests singular noun forms, 100% distribution, and priorityLayers with 1 item."
+  },
+  {
+    "id": "variation-10",
+    "category": "all-strong-controls",
+    "description": "Multiple High Risk layers all with 'Strong controls' (Inherent High + Residual Low). Tests that 'Strong controls' is NOT bolded (not a negative signal) while layer names are still bolded in P2."
+  },
+  {
+    "id": "variation-11",
+    "category": "zero-scored",
+    "description": "All layers unscored — riskDistribution.categories is empty, priorityLayers.items is empty. Tests graceful section collapse with 'Data not available for this section.' for P1/P2/P3/P4."
+  }
+]

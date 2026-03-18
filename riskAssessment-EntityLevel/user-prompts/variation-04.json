@@ -1,0 +1,89 @@
+{
+  "_schemaDescription": "Risk Assessment – Entity Level sample payload. Entity: SecureCorp Innovations. 7 layers total, 7 scored. Categories: High Risk/Monthly (0 layers), Medium Risk/Quarterly (0 layers), Low Risk/Yearly (7 layers). 0 layers unscored. Control weakness derived from inherent × residual risk category per layer. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "entityName": "SecureCorp Innovations",
+    "totalLayers": 7,
+    "scoredLayers": 7,
+    "unscoredLayers": 0
+  },
+  "riskDistribution": {
+    "description": "7 scored layers: 0 High Risk (Monthly), 0 Medium Risk (Quarterly), 7 Low Risk (Yearly). 0 layers unscored.",
+    "categories": [
+      {
+        "label": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "count": 0,
+        "percent": 0,
+        "topLayers": []
+      },
+      {
+        "label": "Medium Risk",
+        "auditFrequencyRecommendation": "Quarterly",
+        "count": 0,
+        "percent": 0,
+        "topLayers": []
+      },
+      {
+        "label": "Low Risk",
+        "auditFrequencyRecommendation": "Yearly",
+        "count": 7,
+        "percent": 100,
+        "topLayers": [
+          {
+            "layerName": "Data Privacy Compliance",
+            "residualScore": 12.5,
+            "processCount": 4,
+            "controlWeakness": "Low-risk area"
+          },
+          {
+            "layerName": "IT Security Operations",
+            "residualScore": 10.2,
+            "processCount": 3,
+            "controlWeakness": "Low-risk area"
+          },
+          {
+            "layerName": "Vendor Management",
+            "residualScore": 8.9,
+            "processCount": 5,
+            "controlWeakness": "Low-risk area"
+          }
+        ]
+      }
+    ]
+  },
+  "priorityLayers": {
+    "description": "Top 3 layers by residual score requiring immediate audit attention within SecureCorp Innovations.",
+    "items": [
+      {
+        "layerName": "Data Privacy Compliance",
+        "residualScore": 12.5,
+        "riskCategory": "Low Risk",
+        "auditFrequencyRecommendation": "Yearly",
+        "processCount": 4,
+        "controlWeakness": "Low-risk area"
+      },
+      {
+        "layerName": "IT Security Operations",
+        "residualScore": 10.2,
+        "riskCategory": "Low Risk",
+        "auditFrequencyRecommendation": "Yearly",
+        "processCount": 3,
+        "controlWeakness": "Low-risk area"
+      },
+      {
+        "layerName": "Vendor Management",
+        "residualScore": 8.9,
+        "riskCategory": "Low Risk",
+        "auditFrequencyRecommendation": "Yearly",
+        "processCount": 5,
+        "controlWeakness": "Low-risk area"
+      }
+    ]
+  }
+}

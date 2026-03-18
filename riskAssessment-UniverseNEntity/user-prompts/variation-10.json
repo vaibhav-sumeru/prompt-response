@@ -1,0 +1,109 @@
+{
+  "_schemaDescription": "Risk Assessment – Audit Universe & Entity sample payload for 'all-strong-controls' variation. 10 entities total, 8 scored. Categories: High Risk/Monthly (3 entities, all with Strong Controls), Medium Risk/Quarterly (3), Low Risk/Yearly (2). 2 unscored entities. Control weakness derived from inherent × residual risk category per entity. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "totalEntities": 10,
+    "scoredEntities": 8,
+    "unscoredEntities": 2
+  },
+  "riskDistribution": {
+    "description": "8 scored entities: 3 High Risk (Monthly), 3 Medium Risk (Quarterly), 2 Low Risk (Yearly). 2 entities unscored.",
+    "categories": [
+      {
+        "label": "High Risk",
+        "auditFrequency": "Monthly",
+        "count": 3,
+        "percent": 37.5,
+        "topEntities": [
+          {
+            "entityName": "Global Operations",
+            "residualScore": 3.8,
+            "controlWeakness": "Strong controls"
+          },
+          {
+            "entityName": "Supply Chain",
+            "residualScore": 3.5,
+            "controlWeakness": "Strong controls"
+          },
+          {
+            "entityName": "Digital Payments",
+            "residualScore": 3.2,
+            "controlWeakness": "Strong controls"
+          }
+        ]
+      },
+      {
+        "label": "Medium Risk",
+        "auditFrequency": "Quarterly",
+        "count": 3,
+        "percent": 37.5,
+        "topEntities": [
+          {
+            "entityName": "Customer Service",
+            "residualScore": 6.1,
+            "controlWeakness": "Weak controls"
+          },
+          {
+            "entityName": "Marketing & Sales",
+            "residualScore": 5.9,
+            "controlWeakness": "Control failure / anomaly"
+          },
+          {
+            "entityName": "HR & Recruitment",
+            "residualScore": 5.5,
+            "controlWeakness": "Strong controls"
+          }
+        ]
+      },
+      {
+        "label": "Low Risk",
+        "auditFrequency": "Yearly",
+        "count": 2,
+        "percent": 25,
+        "topEntities": [
+          {
+            "entityName": "Facilities Management",
+            "residualScore": 2.5,
+            "controlWeakness": "Low-risk area"
+          },
+          {
+            "entityName": "Internal Communications",
+            "residualScore": 2.1,
+            "controlWeakness": "Low-risk area"
+          }
+        ]
+      }
+    ]
+  },
+  "priorityEntities": {
+    "description": "Top 3 entities by residual score requiring immediate audit attention.",
+    "items": [
+      {
+        "entityName": "Customer Service",
+        "residualScore": 6.1,
+        "riskCategory": "Medium Risk",
+        "auditFrequencyRecommendation": "Quarterly",
+        "controlWeakness": "Weak controls"
+      },
+      {
+        "entityName": "Marketing & Sales",
+        "residualScore": 5.9,
+        "riskCategory": "Medium Risk",
+        "auditFrequencyRecommendation": "Quarterly",
+        "controlWeakness": "Control failure / anomaly"
+      },
+      {
+        "entityName": "HR & Recruitment",
+        "residualScore": 5.5,
+        "riskCategory": "Medium Risk",
+        "auditFrequencyRecommendation": "Quarterly",
+        "controlWeakness": "Strong controls"
+      }
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "_schemaDescription": "Risk Assessment – Heat Map sample payload. Universe-level view: 20 entities total, 17 scored. Color zones: Yellow/Medium Risk (4 entities), Green/Low Risk (13 entities). 3 entities unscored. Zero Red entities, demonstrating suppression of empty zones.",
+  "_drillDownExamples": {
+    "universe": "This payload (all entities in audit universe)",
+    "entity": "If user clicks 'Corporate Governance' → viewContext.currentLevel becomes 'entity', itemType becomes 'layer', contextPath becomes 'Corporate Governance', colorDistribution shows layers of Corporate Governance",
+    "layer": "If user clicks 'Financial Controls' → itemType becomes 'process', contextPath becomes 'Corporate Governance > Financial Controls'",
+    "process": "If user clicks 'Budget Approval' → itemType becomes 'risk', contextPath becomes 'Corporate Governance > Financial Controls > Budget Approval'"
+  },
+  "viewContext": {
+    "currentLevel": "universe",
+    "itemType": "entity",
+    "contextPath": "",
+    "totalItems": 20,
+    "scoredItems": 17,
+    "unscoredItems": 3
+  },
+  "colorDistribution": {
+    "description": "17 scored entities: 4 Yellow (Medium Risk), 13 Green (Low Risk). 3 entities unscored.",
+    "zones": [
+      {
+        "colorName": "Yellow",
+        "label": "Medium Risk",
+        "count": 4,
+        "percent": 23.5,
+        "topItems": [
+          {
+            "name": "Corporate Governance",
+            "residualScore": 5.8
+          },
+          {
+            "name": "Supplier Relations",
+            "residualScore": 5.1
+          },
+          {
+            "name": "Product Development",
+            "residualScore": 4.9
+          }
+        ]
+      },
+      {
+        "colorName": "Green",
+        "label": "Low Risk",
+        "count": 13,
+        "percent": 76.5,
+        "topItems": [
+          {
+            "name": "IT Security Operations",
+            "residualScore": 2.8
+          },
+          {
+            "name": "Customer Support",
+            "residualScore": 2.5
+          },
+          {
+            "name": "Warehouse Logistics",
+            "residualScore": 2.3
+          }
+        ]
+      }
+    ]
+  },
+  "priorityItems": {
+    "description": "Top 3 entities by residual score requiring immediate audit attention.",
+    "items": [
+      {
+        "name": "Corporate Governance",
+        "residualScore": 5.8,
+        "colorZone": "Yellow",
+        "label": "Medium Risk",
+        "parentContext": ""
+      },
+      {
+        "name": "Supplier Relations",
+        "residualScore": 5.1,
+        "colorZone": "Yellow",
+        "label": "Medium Risk",
+        "parentContext": ""
+      },
+      {
+        "name": "Product Development",
+        "residualScore": 4.9,
+        "colorZone": "Yellow",
+        "label": "Medium Risk",
+        "parentContext": ""
+      }
+    ]
+  }
+}

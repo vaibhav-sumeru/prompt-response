@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "universe-balanced",
+    "description": "Universe level (itemType=entity), 6–8 entities, balanced Red/Yellow/Green zones. All scored. Tests standard 4-bullet path: overview, zone breakdown with entity names, frequency recommendation, top 3 priority entities."
+  },
+  {
+    "id": "variation-02",
+    "category": "universe-balanced",
+    "description": "Universe level (itemType=entity), 6–8 entities, balanced Red/Yellow/Green zones. All scored. Tests standard 4-bullet path: overview, zone breakdown with entity names, frequency recommendation, top 3 priority entities."
+  },
+  {
+    "id": "variation-03",
+    "category": "universe-red-dominant",
+    "description": "Universe level, majority entities in Red zone (>60%), 0 Green entities. Tests zero-suppression for missing Green zone, correct bold on Red count and entity names, no mention of Green zone."
+  },
+  {
+    "id": "variation-04",
+    "category": "universe-green-dominant",
+    "description": "Universe level, majority entities in Green zone (>70%), 0 Red entities. Tests zero-suppression for missing Red zone, correct non-bolding of Green counts, and that the highest-urgency zone present is Yellow."
+  },
+  {
+    "id": "variation-05",
+    "category": "entity-level-drill",
+    "description": "Entity level drill-down (currentLevel=entity, itemType=layer, contextPath='DMI Finance'). 4 layers with Red/Yellow/Green distribution. Tests narrator uses 'layer' noun, references contextPath in P1, lists layer names per zone."
+  },
+  {
+    "id": "variation-06",
+    "category": "layer-level-drill",
+    "description": "Layer level drill-down (currentLevel=layer, itemType=process, contextPath='DMI Finance > Consumer Layer'). 3 processes across color zones. Tests 'process' noun usage and contextPath reference."
+  },
+  {
+    "id": "variation-07",
+    "category": "process-level-drill",
+    "description": "Process level drill-down (currentLevel=process, itemType=risk, contextPath='DMI Finance > Consumer Layer > Dealer Management'). 5 risks in Red/Yellow/Green zones. Tests 'risk' noun and deepest drill-down level."
+  },
+  {
+    "id": "variation-08",
+    "category": "many-unscored",
+    "description": "Universe level, 10 entities total, only 3 scored, 7 unscored. Tests unscored count prominence (unscoredItems > 0), sparse zone distribution with only 1–2 zones populated."
+  },
+  {
+    "id": "variation-09",
+    "category": "single-zone-only",
+    "description": "All items in a single color zone (e.g., all Yellow / Quarterly). 0 Red, 0 Green. Tests single-zone narrative, 100% distribution, correct handling of empty zones."
+  },
+  {
+    "id": "variation-10",
+    "category": "zero-scored",
+    "description": "All items unscored — colorDistribution.zones is empty, priorityItems.items is empty. Tests graceful section collapse with 'Data not available for this section.' for all 4 bullets."
+  }
+]

@@ -1,0 +1,96 @@
+{
+  "_schemaDescription": "Risk Assessment – Heat Map sample payload. Layer-level view: 7 processes total, 6 scored. Color zones: Red/High Risk (2 processes), Yellow/Medium Risk (3 processes), Green/Low Risk (1 process). 1 process unscored. Color names and classification labels are client-configured — not hardcoded.",
+  "_drillDownExamples": {
+    "universe": "All entities in audit universe",
+    "entity": "If user clicks 'DMI Finance' → viewContext.currentLevel becomes 'entity', itemType becomes 'layer', contextPath becomes 'DMI Finance', colorDistribution shows layers of DMI Finance",
+    "layer": "This payload (processes within 'DMI Finance > Consumer Layer')",
+    "process": "If user clicks 'Customer Onboarding Process' → itemType becomes 'risk', contextPath becomes 'DMI Finance > Consumer Layer > Customer Onboarding Process'"
+  },
+  "viewContext": {
+    "currentLevel": "layer",
+    "itemType": "process",
+    "contextPath": "DMI Finance > Consumer Layer",
+    "totalItems": 7,
+    "scoredItems": 6,
+    "unscoredItems": 1
+  },
+  "colorDistribution": {
+    "description": "6 scored processes: 2 Red (High Risk), 3 Yellow (Medium Risk), 1 Green (Low Risk). 1 process unscored.",
+    "zones": [
+      {
+        "colorName": "Red",
+        "label": "High Risk",
+        "count": 2,
+        "percent": 33.3,
+        "topItems": [
+          {
+            "name": "Customer Onboarding Process",
+            "residualScore": 8.5
+          },
+          {
+            "name": "Loan Origination & Approval",
+            "residualScore": 7.9
+          }
+        ]
+      },
+      {
+        "colorName": "Yellow",
+        "label": "Medium Risk",
+        "count": 3,
+        "percent": 50,
+        "topItems": [
+          {
+            "name": "Credit Risk Assessment",
+            "residualScore": 5.8
+          },
+          {
+            "name": "Fraud Detection & Prevention",
+            "residualScore": 4.7
+          },
+          {
+            "name": "Collections Management",
+            "residualScore": 4.1
+          }
+        ]
+      },
+      {
+        "colorName": "Green",
+        "label": "Low Risk",
+        "count": 1,
+        "percent": 16.7,
+        "topItems": [
+          {
+            "name": "Customer Service Inquiry",
+            "residualScore": 2.3
+          }
+        ]
+      }
+    ]
+  },
+  "priorityItems": {
+    "description": "Top 3 processes by residual score requiring immediate audit attention within DMI Finance > Consumer Layer.",
+    "items": [
+      {
+        "name": "Customer Onboarding Process",
+        "residualScore": 8.5,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": "DMI Finance > Consumer Layer"
+      },
+      {
+        "name": "Loan Origination & Approval",
+        "residualScore": 7.9,
+        "colorZone": "Red",
+        "label": "High Risk",
+        "parentContext": "DMI Finance > Consumer Layer"
+      },
+      {
+        "name": "Credit Risk Assessment",
+        "residualScore": 5.8,
+        "colorZone": "Yellow",
+        "label": "Medium Risk",
+        "parentContext": "DMI Finance > Consumer Layer"
+      }
+    ]
+  }
+}

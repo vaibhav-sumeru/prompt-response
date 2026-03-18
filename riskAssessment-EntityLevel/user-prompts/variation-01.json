@@ -1,0 +1,115 @@
+{
+  "_schemaDescription": "Risk Assessment – Entity Level sample payload. Entity: Global Innovations Inc. 7 layers total, 7 scored. Categories: High Risk/Monthly (3 layers), Medium Risk/Quarterly (2 layers), Low Risk/Yearly (2 layers). All layers scored. Control weakness derived from inherent × residual risk category per layer. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "entityName": "Global Innovations Inc.",
+    "totalLayers": 7,
+    "scoredLayers": 7,
+    "unscoredLayers": 0
+  },
+  "riskDistribution": {
+    "description": "7 scored layers: 3 High Risk (Monthly), 2 Medium Risk (Quarterly), 2 Low Risk (Yearly). All layers scored.",
+    "categories": [
+      {
+        "label": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "count": 3,
+        "percent": 42.9,
+        "topLayers": [
+          {
+            "layerName": "Strategic Planning & Development",
+            "residualScore": 85.2,
+            "processCount": 7,
+            "controlWeakness": "Weak controls"
+          },
+          {
+            "layerName": "Product Lifecycle Management",
+            "residualScore": 78.1,
+            "processCount": 6,
+            "controlWeakness": "Control failure / anomaly"
+          },
+          {
+            "layerName": "Supply Chain & Logistics",
+            "residualScore": 68.5,
+            "processCount": 8,
+            "controlWeakness": "Weak controls"
+          }
+        ]
+      },
+      {
+        "label": "Medium Risk",
+        "auditFrequencyRecommendation": "Quarterly",
+        "count": 2,
+        "percent": 28.6,
+        "topLayers": [
+          {
+            "layerName": "Customer Support Operations",
+            "residualScore": 45,
+            "processCount": 5,
+            "controlWeakness": "Strong controls"
+          },
+          {
+            "layerName": "Financial Reporting & Compliance",
+            "residualScore": 39.7,
+            "processCount": 4,
+            "controlWeakness": "Low-risk area"
+          }
+        ]
+      },
+      {
+        "label": "Low Risk",
+        "auditFrequencyRecommendation": "Yearly",
+        "count": 2,
+        "percent": 28.6,
+        "topLayers": [
+          {
+            "layerName": "Human Capital Management",
+            "residualScore": 22.3,
+            "processCount": 3,
+            "controlWeakness": "Low-risk area"
+          },
+          {
+            "layerName": "Facilities Management",
+            "residualScore": 15.6,
+            "processCount": 2,
+            "controlWeakness": "Strong controls"
+          }
+        ]
+      }
+    ]
+  },
+  "priorityLayers": {
+    "description": "Top 3 layers by residual score requiring immediate audit attention within Global Innovations Inc..",
+    "items": [
+      {
+        "layerName": "Strategic Planning & Development",
+        "residualScore": 85.2,
+        "riskCategory": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "processCount": 7,
+        "controlWeakness": "Weak controls"
+      },
+      {
+        "layerName": "Product Lifecycle Management",
+        "residualScore": 78.1,
+        "riskCategory": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "processCount": 6,
+        "controlWeakness": "Control failure / anomaly"
+      },
+      {
+        "layerName": "Supply Chain & Logistics",
+        "residualScore": 68.5,
+        "riskCategory": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "processCount": 8,
+        "controlWeakness": "Weak controls"
+      }
+    ]
+  }
+}

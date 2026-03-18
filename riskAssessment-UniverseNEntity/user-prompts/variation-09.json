@@ -1,0 +1,44 @@
+{
+  "_schemaDescription": "Risk Assessment – Audit Universe & Entity sample payload. 1 entity total, 1 scored. Category: High Risk/Monthly (1 entity). 0 unscored entities. Control weakness derived from inherent × residual risk category per entity. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "totalEntities": 1,
+    "scoredEntities": 1,
+    "unscoredEntities": 0
+  },
+  "riskDistribution": {
+    "description": "1 scored entity: 1 High Risk (Monthly).",
+    "categories": [
+      {
+        "label": "High Risk",
+        "auditFrequency": "Monthly",
+        "count": 1,
+        "percent": 100,
+        "topEntities": [
+          {
+            "entityName": "Global Operations Unit",
+            "residualScore": 8.5,
+            "controlWeakness": "Weak controls"
+          }
+        ]
+      }
+    ]
+  },
+  "priorityEntities": {
+    "description": "Top entity by residual score requiring immediate audit attention.",
+    "items": [
+      {
+        "entityName": "Global Operations Unit",
+        "residualScore": 8.5,
+        "riskCategory": "High Risk",
+        "auditFrequency": "Monthly",
+        "controlWeakness": "Weak controls"
+      }
+    ]
+  }
+}

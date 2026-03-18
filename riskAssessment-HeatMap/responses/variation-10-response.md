@@ -1,0 +1,3 @@
+- **Heat Map Overview:** The current universe view shows 10 entities in total. All **10** entities are unscored, with 0 entities currently scored. No risk distribution is available for scored entities.
+- **Color Zone Breakdown:** Data not available for this section.
+- **Priority Items:** Data not available for this section.

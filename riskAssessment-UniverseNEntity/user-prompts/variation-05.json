@@ -1,0 +1,64 @@
+{
+  "_schemaDescription": "Risk Assessment – Audit Universe & Entity sample payload. 10 entities total, 2 scored. Categories: High Risk/Monthly (1 entity), Medium Risk/Quarterly (1). 8 unscored entities. Control weakness derived from inherent × residual risk category per entity. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "totalEntities": 10,
+    "scoredEntities": 2,
+    "unscoredEntities": 8
+  },
+  "riskDistribution": {
+    "description": "2 scored entities: 1 High Risk (Monthly), 1 Medium Risk (Quarterly). 8 entities unscored.",
+    "categories": [
+      {
+        "label": "High Risk",
+        "auditFrequency": "Monthly",
+        "count": 1,
+        "percent": 50,
+        "topEntities": [
+          {
+            "entityName": "Apex Ventures",
+            "residualScore": 8.5,
+            "controlWeakness": "Weak controls"
+          }
+        ]
+      },
+      {
+        "label": "Medium Risk",
+        "auditFrequency": "Quarterly",
+        "count": 1,
+        "percent": 50,
+        "topEntities": [
+          {
+            "entityName": "Global Solutions",
+            "residualScore": 6.2,
+            "controlWeakness": "Strong controls"
+          }
+        ]
+      }
+    ]
+  },
+  "priorityEntities": {
+    "description": "Top 2 entities by residual score requiring immediate audit attention.",
+    "items": [
+      {
+        "entityName": "Apex Ventures",
+        "residualScore": 8.5,
+        "riskCategory": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "controlWeakness": "Weak controls"
+      },
+      {
+        "entityName": "Global Solutions",
+        "residualScore": 6.2,
+        "riskCategory": "Medium Risk",
+        "auditFrequencyRecommendation": "Quarterly",
+        "controlWeakness": "Strong controls"
+      }
+    ]
+  }
+}

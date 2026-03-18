@@ -1,0 +1,83 @@
+{
+  "_schemaDescription": "Risk Assessment – Entity Level sample payload. Entity: Global Solutions Inc. 8 layers total, 3 scored. Categories: High Risk/Monthly (1 layer), Medium Risk/Quarterly (1 layer), Low Risk/Yearly (1 layer). 5 layers unscored. Control weakness derived from inherent × residual risk category per layer. Category labels and audit frequency mappings are client-configured (not hardcoded).",
+  "_controlWeaknessRef": {
+    "Weak controls": "Inherent High + Residual High — controls not reducing risk",
+    "Strong controls": "Inherent High + Residual Low — controls working well",
+    "Low-risk area": "Inherent Low + Residual Low — inherently low risk, well managed",
+    "Control failure / anomaly": "Inherent Low + Residual High — unexpected high residual despite low inherent risk"
+  },
+  "meta": {
+    "entityName": "Global Solutions Inc.",
+    "totalLayers": 8,
+    "scoredLayers": 3,
+    "unscoredLayers": 5
+  },
+  "riskDistribution": {
+    "description": "3 scored layers: 1 High Risk (Monthly), 1 Medium Risk (Quarterly), 1 Low Risk (Yearly). 5 layers unscored.",
+    "categories": [
+      {
+        "label": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "count": 1,
+        "percent": 33.3,
+        "topLayers": [
+          {
+            "layerName": "Strategic Planning",
+            "residualScore": 85.1,
+            "processCount": 7,
+            "controlWeakness": "Weak controls"
+          }
+        ]
+      },
+      {
+        "label": "Medium Risk",
+        "auditFrequencyRecommendation": "Quarterly",
+        "count": 1,
+        "percent": 33.3,
+        "topLayers": [
+          {
+            "layerName": "Operational Logistics",
+            "residualScore": 65.7,
+            "processCount": 9,
+            "controlWeakness": "Control failure / anomaly"
+          }
+        ]
+      },
+      {
+        "label": "Low Risk",
+        "auditFrequencyRecommendation": "Yearly",
+        "count": 1,
+        "percent": 33.3,
+        "topLayers": [
+          {
+            "layerName": "Customer Support",
+            "residualScore": 22.3,
+            "processCount": 12,
+            "controlWeakness": "Low-risk area"
+          }
+        ]
+      }
+    ]
+  },
+  "priorityLayers": {
+    "description": "Top 2 layers by residual score requiring immediate audit attention within Global Solutions Inc.",
+    "items": [
+      {
+        "layerName": "Strategic Planning",
+        "residualScore": 85.1,
+        "riskCategory": "High Risk",
+        "auditFrequencyRecommendation": "Monthly",
+        "processCount": 7,
+        "controlWeakness": "Weak controls"
+      },
+      {
+        "layerName": "Operational Logistics",
+        "residualScore": 65.7,
+        "riskCategory": "Medium Risk",
+        "auditFrequencyRecommendation": "Quarterly",
+        "processCount": 9,
+        "controlWeakness": "Control failure / anomaly"
+      }
+    ]
+  }
+}
