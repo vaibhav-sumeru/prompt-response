@@ -1,0 +1,174 @@
+{
+  "totalRecords": 380,
+  "meta": {
+    "generatedAt": "2024-07-30T14:30:00Z"
+  },
+  "recurringAbove50": {
+    "description": "Main audit types where recurring issues exceed 50% of total issues. Sorted by recurringPercent descending. Top 5 shown out of 6 qualifying audits.",
+    "totalQualifyingAudits": 6,
+    "top5": [
+      {
+        "auditName": "Critical Infrastructure Audit",
+        "recurringCount": 49,
+        "totalIssues": 50,
+        "recurringPercent": 98
+      },
+      {
+        "auditName": "Data Management Audit",
+        "recurringCount": 35,
+        "totalIssues": 55,
+        "recurringPercent": 63.6
+      },
+      {
+        "auditName": "Supply Chain Integrity Audit",
+        "recurringCount": 28,
+        "totalIssues": 48,
+        "recurringPercent": 58.3
+      },
+      {
+        "auditName": "Fraud Prevention Audit",
+        "recurringCount": 20,
+        "totalIssues": 35,
+        "recurringPercent": 57.1
+      },
+      {
+        "auditName": "Operational Efficiency Audit",
+        "recurringCount": 15,
+        "totalIssues": 28,
+        "recurringPercent": 53.6
+      }
+    ]
+  },
+  "repeatAbove75": {
+    "description": "Main audit types where repeat issues exceed 75% of total issues. Sorted by repeatPercent descending. Top 5 shown out of 4 qualifying audits.",
+    "totalQualifyingAudits": 4,
+    "top5": [
+      {
+        "auditName": "Regulatory Compliance Check",
+        "repeatCount": 28,
+        "totalIssues": 29,
+        "repeatPercent": 96.6
+      },
+      {
+        "auditName": "IT Systems Resilience Audit",
+        "repeatCount": 20,
+        "totalIssues": 24,
+        "repeatPercent": 83.3
+      },
+      {
+        "auditName": "Vendor Risk Assessment",
+        "repeatCount": 18,
+        "totalIssues": 22,
+        "repeatPercent": 81.8
+      },
+      {
+        "auditName": "Financial Controls Audit",
+        "repeatCount": 15,
+        "totalIssues": 19,
+        "repeatPercent": 78.9
+      }
+    ]
+  },
+  "highZeroToleranceRisk": {
+    "description": "Top 3 main audit types by count of High and Zero Tolerance risk issues, split by recurring and repeat tagging.",
+    "byRecurring": {
+      "description": "Top 3 audits ranked by count of recurring issues with Risk Level = High or Zero Tolerance.",
+      "top3": [
+        {
+          "auditName": "Critical Infrastructure Audit",
+          "issueCount": 18
+        },
+        {
+          "auditName": "Data Management Audit",
+          "issueCount": 15
+        },
+        {
+          "auditName": "Supply Chain Integrity Audit",
+          "issueCount": 12
+        }
+      ]
+    },
+    "byRepeat": {
+      "description": "Top 3 audits ranked by count of repeat issues with Risk Level = High or Zero Tolerance.",
+      "top3": [
+        {
+          "auditName": "Regulatory Compliance Check",
+          "issueCount": 16
+        },
+        {
+          "auditName": "IT Systems Resilience Audit",
+          "issueCount": 13
+        },
+        {
+          "auditName": "Financial Controls Audit",
+          "issueCount": 9
+        }
+      ]
+    }
+  },
+  "groupDistribution": {
+    "description": "Top 3 groups with highest and bottom 3 groups with lowest recurring and repeat issue counts.",
+    "recurring": {
+      "description": "Groups ranked by recurring issue count — top 3 highest and bottom 3 lowest.",
+      "top3": [
+        {
+          "groupName": "Central Region",
+          "recurringCount": 55
+        },
+        {
+          "groupName": "North Region",
+          "recurringCount": 48
+        },
+        {
+          "groupName": "West Region",
+          "recurringCount": 40
+        }
+      ],
+      "bottom3": [
+        {
+          "groupName": "East Region",
+          "recurringCount": 8
+        },
+        {
+          "groupName": "South Region",
+          "recurringCount": 11
+        },
+        {
+          "groupName": "Northeast Region",
+          "recurringCount": 15
+        }
+      ]
+    },
+    "repeat": {
+      "description": "Groups ranked by repeat issue count — top 3 highest and bottom 3 lowest.",
+      "top3": [
+        {
+          "groupName": "Central Region",
+          "repeatCount": 50
+        },
+        {
+          "groupName": "North Region",
+          "repeatCount": 42
+        },
+        {
+          "groupName": "West Region",
+          "repeatCount": 35
+        }
+      ],
+      "bottom3": [
+        {
+          "groupName": "Northeast Region",
+          "repeatCount": 5
+        },
+        {
+          "groupName": "East Region",
+          "repeatCount": 9
+        },
+        {
+          "groupName": "South Region",
+          "repeatCount": 13
+        }
+      ]
+    }
+  }
+}

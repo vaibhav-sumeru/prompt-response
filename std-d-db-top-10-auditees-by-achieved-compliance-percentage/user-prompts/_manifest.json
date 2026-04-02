@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "var-01-all-three-buckets",
+    "description": "All 3 compliance buckets (81–95%, 96–99%, 100%) are occupied with auditeeCount >= 2 each. All 5 top5HighPerformers entries are populated. Zones list has 4–5 zones with varying highComplianceAuditCount values. Different zone names and auditee names across both variations."
+  },
+  {
+    "id": "variation-02",
+    "category": "var-01-all-three-buckets",
+    "description": "All 3 compliance buckets (81–95%, 96–99%, 100%) are occupied with auditeeCount >= 2 each. All 5 top5HighPerformers entries are populated. Zones list has 4–5 zones with varying highComplianceAuditCount values. Different zone names and auditee names across both variations."
+  },
+  {
+    "id": "variation-03",
+    "category": "var-02-only-perfect-bucket",
+    "description": "Only the 100% bucket is present in buckets[] (the other two are entirely absent). auditeeCount is 6+. top5HighPerformers has 5 entries all with achievedPercentage = 100.00. Tests zero-bucket skip for the 81–95% and 96–99% ranges — narrator must NOT mention those ranges."
+  },
+  {
+    "id": "variation-04",
+    "category": "var-03-two-buckets-missing-middle",
+    "description": "Only 100% and 81–95% buckets are present. The 96–99% bucket is entirely absent from buckets[]. Tests that narrator skips 96–99% silently and narrates the other two in correct order (100% first, then 81–95%)."
+  },
+  {
+    "id": "variation-05",
+    "category": "var-04-only-lowest-high-bucket",
+    "description": "Only the 81–95% bucket is present. auditeeCount = 5. top5HighPerformers has achievedPercentage values all between 81.0 and 95.0. 100% and 96–99% are absent. Tests that narrator mentions only 81–95% and does not invent the other buckets."
+  },
+  {
+    "id": "variation-06",
+    "category": "var-05-single-high-performer-per-bucket",
+    "description": "All 3 buckets present but each has auditeeCount = 1 and therefore top5HighPerformers has fewer than 5 items. Tests that narrator lists exactly the items present without inventing additional entries, and uses singular language where applicable."
+  },
+  {
+    "id": "variation-07",
+    "category": "var-06-empty-zones",
+    "description": "zoneComplianceOverview.zones[] is an empty array (no zone has any audit above 50%). complianceBuckets has all 3 buckets occupied. Tests the explicit empty-zones phrasing in Bullet 3 — narrator must start with 'No zones recorded audit schedules above 50% compliance'."
+  },
+  {
+    "id": "variation-08",
+    "category": "var-07-single-zone",
+    "description": "zoneComplianceOverview.zones[] contains exactly 1 zone. highComplianceAuditCount is large (20+). complianceBuckets has 2 occupied buckets. Tests single-zone narration without comparative language (no 'followed by')."
+  },
+  {
+    "id": "variation-09",
+    "category": "var-08-many-zones-high-counts",
+    "description": "zones[] has 6 zones with highComplianceAuditCount ranging from 40 down to 4. Top zone has count = 40. complianceBuckets has all 3 buckets with auditeeCount = 8, 7, 18 respectively. Tests descending zone narration with large counts across 6 zones."
+  },
+  {
+    "id": "variation-10",
+    "category": "var-09-all-perfect-achievers",
+    "description": "Only the 100% bucket is occupied with auditeeCount = 5. All 5 top5HighPerformers have achievedPercentage = 100.00. zones[] has 3–4 zones with highComplianceAuditCount > 0. Tests that narrator handles ties in achievedPercentage correctly — reports each auditee individually with 100.00% without merging them."
+  }
+]

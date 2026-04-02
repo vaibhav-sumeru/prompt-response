@@ -1,0 +1,168 @@
+{
+  "totalRecords": 100,
+  "meta": {
+    "generatedAt": "2024-07-26T10:30:00Z"
+  },
+  "zoneExecutionOverview": {
+    "description": "Zone-wise scheduling coverage and execution health. Zones sorted by totalSchedules descending. Execution buckets: Completed (finalized/accepted/closed), In-Progress (submitted/in_review/in_progress/provisionally_submitted), Lapsed (lapsed_not_started/lapsed_in_progress), Re-Audit (reaudit_submitted/reaudit_accepted/reaudit_in_progress).",
+    "zones": [
+      {
+        "zoneName": "Central Zone",
+        "totalSchedules": 100,
+        "pctOfTotal": 100,
+        "completedCount": 60,
+        "completedPct": 60,
+        "inProgressCount": 20,
+        "inProgressPct": 20,
+        "lapsedCount": 10,
+        "lapsedPct": 10,
+        "reauditCount": 10,
+        "reauditPct": 10
+      }
+    ],
+    "top3ClustersBySchedules": [
+      {
+        "clusterName": "Tech Park",
+        "totalSchedules": 45,
+        "pctOfTotal": 45
+      },
+      {
+        "clusterName": "Industrial Area",
+        "totalSchedules": 35,
+        "pctOfTotal": 35
+      },
+      {
+        "clusterName": "Downtown Hub",
+        "totalSchedules": 20,
+        "pctOfTotal": 20
+      }
+    ]
+  },
+  "clusterAuditeeBottlenecks": {
+    "description": "Cluster and auditee-level execution bottlenecks: highest schedule concentration, most delayed, and most reopened.",
+    "top3ClustersByVolume": [
+      {
+        "clusterName": "Tech Park",
+        "totalSchedules": 45,
+        "pctOfTotal": 45
+      },
+      {
+        "clusterName": "Industrial Area",
+        "totalSchedules": 35,
+        "pctOfTotal": 35
+      },
+      {
+        "clusterName": "Downtown Hub",
+        "totalSchedules": 20,
+        "pctOfTotal": 20
+      }
+    ],
+    "top3ClustersByDelay": [
+      {
+        "clusterName": "Industrial Area",
+        "delayedCount": 15,
+        "avgDelayDays": 15.5
+      },
+      {
+        "clusterName": "Downtown Hub",
+        "delayedCount": 10,
+        "avgDelayDays": 10.2
+      },
+      {
+        "clusterName": "Tech Park",
+        "delayedCount": 5,
+        "avgDelayDays": 7.8
+      }
+    ],
+    "top3ClustersByReopening": [
+      {
+        "clusterName": "Downtown Hub",
+        "reopenedCount": 7
+      },
+      {
+        "clusterName": "Industrial Area",
+        "reopenedCount": 4
+      },
+      {
+        "clusterName": "Tech Park",
+        "reopenedCount": 2
+      }
+    ],
+    "top3AuditeesByDelay": [
+      {
+        "auditeeName": "Auditee Alpha",
+        "delayedSchedules": 8
+      },
+      {
+        "auditeeName": "Auditee Beta",
+        "delayedSchedules": 6
+      },
+      {
+        "auditeeName": "Auditee Gamma",
+        "delayedSchedules": 4
+      }
+    ],
+    "top3AuditeesByReopening": [
+      {
+        "auditeeName": "Auditee Beta",
+        "reopenedSchedules": 5
+      },
+      {
+        "auditeeName": "Auditee Alpha",
+        "reopenedSchedules": 3
+      },
+      {
+        "auditeeName": "Auditee Delta",
+        "reopenedSchedules": 1
+      }
+    ]
+  },
+  "outcomeCorrelation": {
+    "description": "AuditRating distribution for delayed schedules and re-audited schedules. Delayed = (AuditStartDate < today OR AuditEndDate < today) AND ExecutionStatus NOT IN [finalized, accepted, closed]. Re-audited = ReAuditAcceptedAt IS NOT NULL OR ReAuditInProgressAt IS NOT NULL.",
+    "delayedSchedules": {
+      "total": 30,
+      "byRating": [
+        {
+          "auditRating": "Not Rated",
+          "count": 15,
+          "pctOfTotal": 50
+        },
+        {
+          "auditRating": "C",
+          "count": 8,
+          "pctOfTotal": 26.7
+        },
+        {
+          "auditRating": "B",
+          "count": 5,
+          "pctOfTotal": 16.7
+        },
+        {
+          "auditRating": "A",
+          "count": 2,
+          "pctOfTotal": 6.7
+        }
+      ]
+    },
+    "reauditSchedules": {
+      "total": 12,
+      "byRating": [
+        {
+          "auditRating": "Not Rated",
+          "count": 6,
+          "pctOfTotal": 50
+        },
+        {
+          "auditRating": "C",
+          "count": 4,
+          "pctOfTotal": 33.3
+        },
+        {
+          "auditRating": "B",
+          "count": 2,
+          "pctOfTotal": 16.7
+        }
+      ]
+    }
+  }
+}

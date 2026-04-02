@@ -1,0 +1,195 @@
+{
+  "totalRecords": 180,
+  "meta": {
+    "generatedAt": "2024-07-30T12:00:00Z"
+  },
+  "riskWiseZoneDistribution": {
+    "description": "Distribution of issues across Zero Tolerance, High, Medium, and Low risk levels for each zone. Percentages are relative to each zone's total issues.",
+    "zones": [
+      {
+        "zoneName": "South Zone",
+        "totalIssues": 50,
+        "riskBreakdown": [
+          {
+            "riskLevel": "Zero Tolerance",
+            "count": 7,
+            "percent": 14
+          },
+          {
+            "riskLevel": "High",
+            "count": 20,
+            "percent": 40
+          },
+          {
+            "riskLevel": "Medium",
+            "count": 15,
+            "percent": 30
+          },
+          {
+            "riskLevel": "Low",
+            "count": 8,
+            "percent": 16
+          }
+        ]
+      },
+      {
+        "zoneName": "East Zone",
+        "totalIssues": 45,
+        "riskBreakdown": [
+          {
+            "riskLevel": "Zero Tolerance",
+            "count": 5,
+            "percent": 11.1
+          },
+          {
+            "riskLevel": "High",
+            "count": 18,
+            "percent": 40
+          },
+          {
+            "riskLevel": "Medium",
+            "count": 14,
+            "percent": 31.1
+          },
+          {
+            "riskLevel": "Low",
+            "count": 8,
+            "percent": 17.8
+          }
+        ]
+      },
+      {
+        "zoneName": "North Zone",
+        "totalIssues": 40,
+        "riskBreakdown": [
+          {
+            "riskLevel": "Zero Tolerance",
+            "count": 8,
+            "percent": 20
+          },
+          {
+            "riskLevel": "High",
+            "count": 8,
+            "percent": 20
+          },
+          {
+            "riskLevel": "Medium",
+            "count": 14,
+            "percent": 35
+          },
+          {
+            "riskLevel": "Low",
+            "count": 10,
+            "percent": 25
+          }
+        ]
+      },
+      {
+        "zoneName": "West Zone",
+        "totalIssues": 45,
+        "riskBreakdown": [
+          {
+            "riskLevel": "Zero Tolerance",
+            "count": 4,
+            "percent": 8.9
+          },
+          {
+            "riskLevel": "High",
+            "count": 12,
+            "percent": 26.7
+          },
+          {
+            "riskLevel": "Medium",
+            "count": 17,
+            "percent": 37.8
+          },
+          {
+            "riskLevel": "Low",
+            "count": 12,
+            "percent": 26.7
+          }
+        ]
+      }
+    ]
+  },
+  "auditeesHighRiskConcentration": {
+    "description": "Top 3 auditees ranked by combined High and Zero Tolerance issue count, with individual breakdowns and contribution to total critical issues.",
+    "totalCriticalIssues": 82,
+    "top3": [
+      {
+        "auditeeName": "Global Financial Services",
+        "highRiskCount": 7,
+        "zeroToleranceCount": 7,
+        "totalCriticalCount": 14,
+        "contributionPercent": 17.1
+      },
+      {
+        "auditeeName": "Tech Solutions Inc.",
+        "highRiskCount": 8,
+        "zeroToleranceCount": 4,
+        "totalCriticalCount": 12,
+        "contributionPercent": 14.6
+      },
+      {
+        "auditeeName": "Urban Development Corp.",
+        "highRiskCount": 7,
+        "zeroToleranceCount": 3,
+        "totalCriticalCount": 10,
+        "contributionPercent": 12.2
+      }
+    ]
+  },
+  "recurringCriticalByZone": {
+    "description": "For each zone, count and percentage of High and Zero Tolerance issues that are flagged as recurring. Sorted by recurringCriticalPercent descending.",
+    "zones": [
+      {
+        "zoneName": "South Zone",
+        "totalCriticalIssues": 27,
+        "recurringCriticalCount": 15,
+        "recurringCriticalPercent": 55.6
+      },
+      {
+        "zoneName": "East Zone",
+        "totalCriticalIssues": 23,
+        "recurringCriticalCount": 10,
+        "recurringCriticalPercent": 43.5
+      },
+      {
+        "zoneName": "North Zone",
+        "totalCriticalIssues": 16,
+        "recurringCriticalCount": 6,
+        "recurringCriticalPercent": 37.5
+      },
+      {
+        "zoneName": "West Zone",
+        "totalCriticalIssues": 16,
+        "recurringCriticalCount": 4,
+        "recurringCriticalPercent": 25
+      }
+    ]
+  },
+  "recurringCriticalByGroup": {
+    "description": "Top 3 groups by count of High and Zero Tolerance issues that are also recurring, sorted by recurringCriticalCount descending.",
+    "totalRecurringCriticalIssues": 35,
+    "top3": [
+      {
+        "groupName": "Customer Relations Dept.",
+        "totalCriticalIssues": 20,
+        "recurringCriticalCount": 12,
+        "recurringCriticalPercent": 60
+      },
+      {
+        "groupName": "IT Operations",
+        "totalCriticalIssues": 18,
+        "recurringCriticalCount": 10,
+        "recurringCriticalPercent": 55.6
+      },
+      {
+        "groupName": "Product Development",
+        "totalCriticalIssues": 15,
+        "recurringCriticalCount": 8,
+        "recurringCriticalPercent": 53.3
+      }
+    ]
+  }
+}

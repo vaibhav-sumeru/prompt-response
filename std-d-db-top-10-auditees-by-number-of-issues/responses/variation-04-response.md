@@ -1,0 +1,3 @@
+- **Zone Issue Concentration:** No zone-level issue data is available in this payload; all zone concentration metrics are currently recorded as zero across the portfolio.
+- **Top Groups by Issues:** **Procurement Services** (Supply Chain Audit) leads with **28** issues; IT Infrastructure (Information Security Audit): 22; Product Development (Quality Audit): 18.
+- **High & Zero Tolerance Issues – Auditee Level:** Of 35 total critical issues, **Chennai R&D Center** has the highest with **13** (High: 8, Zero Tolerance: 5); Hyderabad Data Center: 11 (High: 7, Zero Tolerance: 4); Bangalore Manufacturing Unit: 11 (High: 6, Zero Tolerance: 5).

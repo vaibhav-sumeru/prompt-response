@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "normal-balanced",
+    "description": "Balanced data across sub-audits, moderate metrics"
+  },
+  {
+    "id": "variation-02",
+    "category": "normal-balanced",
+    "description": "Balanced data across sub-audits, moderate metrics"
+  },
+  {
+    "id": "variation-03",
+    "category": "extreme-skew",
+    "description": "One sub-audit significantly worse than others"
+  },
+  {
+    "id": "variation-04",
+    "category": "extreme-skew",
+    "description": "One sub-audit significantly worse than others"
+  },
+  {
+    "id": "variation-05",
+    "category": "zero-values",
+    "description": "Some metrics are zero"
+  },
+  {
+    "id": "variation-06",
+    "category": "zero-values",
+    "description": "Some metrics are zero"
+  },
+  {
+    "id": "variation-07",
+    "category": "all-perfect",
+    "description": "Ideal scenario - 100% resolution, no high risk issues"
+  },
+  {
+    "id": "variation-08",
+    "category": "all-perfect",
+    "description": "Ideal scenario - 100% resolution, no high risk issues"
+  },
+  {
+    "id": "variation-09",
+    "category": "missing-fields",
+    "description": "Data quality issues - optional fields missing"
+  },
+  {
+    "id": "variation-10",
+    "category": "missing-fields",
+    "description": "Data quality issues - optional fields missing"
+  }
+]

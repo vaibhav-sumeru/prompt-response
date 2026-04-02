@@ -1,0 +1,498 @@
+{
+  "totalRecords": 450,
+  "meta": {
+    "generatedAt": "2026-03-20T00:00:00Z",
+    "source": "main_audit_geo_analytics_data + schedule/issue joins",
+    "ratingLabels": [
+      "Excellent",
+      "Good",
+      "Average",
+      "Poor"
+    ],
+    "topLimit": 10
+  },
+  "overallPerformanceDistribution": {
+    "description": "Overall audit rating split across all schedules.",
+    "totalSchedules": 450,
+    "ratingDistribution": [
+      {
+        "auditRating": "Excellent",
+        "scheduleCount": 100,
+        "percentOfTotal": 22.2
+      },
+      {
+        "auditRating": "Good",
+        "scheduleCount": 180,
+        "percentOfTotal": 40
+      },
+      {
+        "auditRating": "Average",
+        "scheduleCount": 100,
+        "percentOfTotal": 22.2
+      },
+      {
+        "auditRating": "Poor",
+        "scheduleCount": 70,
+        "percentOfTotal": 15.6
+      }
+    ]
+  },
+  "clusterLevelPerformance": {
+    "description": "Cluster-level view of schedule volume, average achieved score, issue load, and rating mix.",
+    "totalClusters": 1,
+    "items": [
+      {
+        "clusterName": "National Portfolio",
+        "scheduleCount": 450,
+        "averageAchievedScore": 78.5,
+        "issueCount": 720,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 100,
+            "percentOfTotal": 22.2
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 180,
+            "percentOfTotal": 40
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 100,
+            "percentOfTotal": 22.2
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 70,
+            "percentOfTotal": 15.6
+          }
+        ]
+      }
+    ]
+  },
+  "auditeeTypeAnalysis": {
+    "description": "Rating distribution, average achieved score, and issue count grouped by auditee type category (e.g. Branch, Regional Office). Not to be confused with audit template names.",
+    "totalAuditeeTypes": 4,
+    "items": [
+      {
+        "auditeeType": "Branch",
+        "scheduleCount": 250,
+        "averageAchievedScore": 75,
+        "issueCount": 450,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 50,
+            "percentOfTotal": 20
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 100,
+            "percentOfTotal": 40
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 60,
+            "percentOfTotal": 24
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 40,
+            "percentOfTotal": 16
+          }
+        ]
+      },
+      {
+        "auditeeType": "Regional Office",
+        "scheduleCount": 100,
+        "averageAchievedScore": 77.5,
+        "issueCount": 180,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 25,
+            "percentOfTotal": 25
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 40,
+            "percentOfTotal": 40
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 25,
+            "percentOfTotal": 25
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 10,
+            "percentOfTotal": 10
+          }
+        ]
+      },
+      {
+        "auditeeType": "Corporate Office",
+        "scheduleCount": 60,
+        "averageAchievedScore": 85,
+        "issueCount": 50,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 20,
+            "percentOfTotal": 33.3
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 25,
+            "percentOfTotal": 41.7
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 10,
+            "percentOfTotal": 16.7
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 5,
+            "percentOfTotal": 8.3
+          }
+        ]
+      },
+      {
+        "auditeeType": "Warehouse",
+        "scheduleCount": 40,
+        "averageAchievedScore": "",
+        "issueCount": 40,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 5,
+            "percentOfTotal": 12.5
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 15,
+            "percentOfTotal": 37.5
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 5,
+            "percentOfTotal": 12.5
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 15,
+            "percentOfTotal": 37.5
+          }
+        ]
+      }
+    ]
+  },
+  "auditeeLevelHotspots": {
+    "description": "Top 10 individual auditees by schedule count with rating mix, issue load, and average achieved score.",
+    "topLimit": 10,
+    "items": [
+      {
+        "auditeeName": "High Street Branch",
+        "auditeeType": "Branch",
+        "clusterName": "National Portfolio",
+        "scheduleCount": 20,
+        "averageAchievedScore": 68,
+        "issueCount": 55,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 2,
+            "percentOfTotal": 10
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 5,
+            "percentOfTotal": 25
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 6,
+            "percentOfTotal": 30
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 7,
+            "percentOfTotal": 35
+          }
+        ]
+      },
+      {
+        "auditeeName": "Regional Hub North",
+        "auditeeType": "Regional Office",
+        "clusterName": "National Portfolio",
+        "scheduleCount": 18,
+        "averageAchievedScore": 81,
+        "issueCount": 25,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 5,
+            "percentOfTotal": 27.8
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 8,
+            "percentOfTotal": 44.4
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 4,
+            "percentOfTotal": 22.2
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 1,
+            "percentOfTotal": 5.6
+          }
+        ]
+      },
+      {
+        "auditeeName": "Main Street Branch",
+        "auditeeType": "Branch",
+        "clusterName": "National Portfolio",
+        "scheduleCount": 16,
+        "averageAchievedScore": 77,
+        "issueCount": 30,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 3,
+            "percentOfTotal": 18.8
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 7,
+            "percentOfTotal": 43.8
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 4,
+            "percentOfTotal": 25
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 2,
+            "percentOfTotal": 12.5
+          }
+        ]
+      },
+      {
+        "auditeeName": "Corporate HQ Tower",
+        "auditeeType": "Corporate Office",
+        "clusterName": "National Portfolio",
+        "scheduleCount": 15,
+        "averageAchievedScore": 92.5,
+        "issueCount": 0,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 8,
+            "percentOfTotal": 53.3
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 6,
+            "percentOfTotal": 40
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 1,
+            "percentOfTotal": 6.7
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 0,
+            "percentOfTotal": 0
+          }
+        ]
+      },
+      {
+        "auditeeName": "Downtown Branch",
+        "auditeeType": "Branch",
+        "clusterName": "National Portfolio",
+        "scheduleCount": 14,
+        "averageAchievedScore": 79.5,
+        "issueCount": 20,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 4,
+            "percentOfTotal": 28.6
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 6,
+            "percentOfTotal": 42.9
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 3,
+            "percentOfTotal": 21.4
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 1,
+            "percentOfTotal": 7.1
+          }
+        ]
+      },
+      {
+        "auditeeName": "Warehouse South",
+        "auditeeType": "Warehouse",
+        "clusterName": "National Portfolio",
+        "scheduleCount": 12,
+        "averageAchievedScore": "",
+        "issueCount": 15,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 2,
+            "percentOfTotal": 16.7
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 4,
+            "percentOfTotal": 33.3
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 3,
+            "percentOfTotal": 25
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 3,
+            "percentOfTotal": 25
+          }
+        ]
+      },
+      {
+        "auditeeName": "Tech Park Office",
+        "auditeeType": "Corporate Office",
+        "clusterName": "National Portfolio",
+        "scheduleCount": 11,
+        "averageAchievedScore": 88,
+        "issueCount": 10,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 5,
+            "percentOfTotal": 45.5
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 4,
+            "percentOfTotal": 36.4
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 2,
+            "percentOfTotal": 18.2
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 0,
+            "percentOfTotal": 0
+          }
+        ]
+      },
+      {
+        "auditeeName": "Industrial Unit A",
+        "auditeeType": "Warehouse",
+        "clusterName": "National Portfolio",
+        "scheduleCount": 10,
+        "averageAchievedScore": 72,
+        "issueCount": 18,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 1,
+            "percentOfTotal": 10
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 4,
+            "percentOfTotal": 40
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 3,
+            "percentOfTotal": 30
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 2,
+            "percentOfTotal": 20
+          }
+        ]
+      },
+      {
+        "auditeeName": "Suburb Branch",
+        "auditeeType": "Branch",
+        "clusterName": "National Portfolio",
+        "scheduleCount": 10,
+        "averageAchievedScore": 73,
+        "issueCount": 22,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 1,
+            "percentOfTotal": 10
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 3,
+            "percentOfTotal": 30
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 4,
+            "percentOfTotal": 40
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 2,
+            "percentOfTotal": 20
+          }
+        ]
+      },
+      {
+        "auditeeName": "East Side Branch",
+        "auditeeType": "Branch",
+        "clusterName": "National Portfolio",
+        "scheduleCount": 9,
+        "averageAchievedScore": 76,
+        "issueCount": 13,
+        "ratingDistribution": [
+          {
+            "auditRating": "Excellent",
+            "scheduleCount": 2,
+            "percentOfTotal": 22.2
+          },
+          {
+            "auditRating": "Good",
+            "scheduleCount": 4,
+            "percentOfTotal": 44.4
+          },
+          {
+            "auditRating": "Average",
+            "scheduleCount": 2,
+            "percentOfTotal": 22.2
+          },
+          {
+            "auditRating": "Poor",
+            "scheduleCount": 1,
+            "percentOfTotal": 11.1
+          }
+        ]
+      }
+    ]
+  }
+}

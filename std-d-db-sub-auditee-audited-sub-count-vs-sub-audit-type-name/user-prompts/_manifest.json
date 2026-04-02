@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "var-01-normal-balanced",
+    "description": "Realistic balanced payload. 3 items in topSubAuditsByPINotFound with piNotFoundCount ranging 6–18. piFoundVsNotFoundSummary.topSubAuditsByTotalPI has 3 sub-audits, one with piNotFoundCount = 0. piNotFoundReasonAnalysis has 5 sub-audits each with 3–5 reasons, at least 2 reason labels recurring across 3+ sub-audits. fullPIExecutionSubAudits has 2–4 sub-audits. Different names across both variations."
+  },
+  {
+    "id": "variation-02",
+    "category": "var-01-normal-balanced",
+    "description": "Realistic balanced payload. 3 items in topSubAuditsByPINotFound with piNotFoundCount ranging 6–18. piFoundVsNotFoundSummary.topSubAuditsByTotalPI has 3 sub-audits, one with piNotFoundCount = 0. piNotFoundReasonAnalysis has 5 sub-audits each with 3–5 reasons, at least 2 reason labels recurring across 3+ sub-audits. fullPIExecutionSubAudits has 2–4 sub-audits. Different names across both variations."
+  },
+  {
+    "id": "variation-03",
+    "category": "var-02-extreme-gap",
+    "description": "One sub-audit dominates with piNotFoundCount > 30 and piNotFoundPercent > 50%. The other 2 items in topSubAuditsByPINotFound have piNotFoundCount < 5. avgPINotFoundCount is high (>10). Tests that narrator correctly identifies and reports the extreme sub-audit without inferring causes."
+  },
+  {
+    "id": "variation-04",
+    "category": "var-03-zero-not-found",
+    "description": "All sub-audits have piNotFoundCount = 0. topSubAuditsByPINotFound.items = [] (empty). fullPIExecutionSubAudits.totalSubAuditsWithFullExecution equals totalSubAudits (all achieved 100%). avgPINotFoundCount = 0. Tests that narrator reports zero gaps and full execution for all sub-audits."
+  },
+  {
+    "id": "variation-05",
+    "category": "var-04-single-sub-audit-gap",
+    "description": "topSubAuditsByPINotFound.items has exactly 1 entry (only 1 sub-audit with PI Not Found). piNotFoundReasonAnalysis.topSubAuditsWithReasons has exactly 1 sub-audit. Tests single-entity narration for bullets 1 and 3."
+  },
+  {
+    "id": "variation-06",
+    "category": "var-05-all-full-execution",
+    "description": "fullPIExecutionSubAudits.totalSubAuditsWithFullExecution equals totalSubAudits. top5ByTotalPI has 5 items with varied totalPICount. piNotFoundReasonAnalysis.topSubAuditsWithReasons is empty or minimal. Tests that narrator reports 100% execution across all sub-audits correctly."
+  },
+  {
+    "id": "variation-07",
+    "category": "var-06-no-full-execution",
+    "description": "fullPIExecutionSubAudits.totalSubAuditsWithFullExecution = 0 and top5ByTotalPI = []. Every sub-audit has piNotFoundCount > 0. Tests that narrator correctly reports zero full-execution sub-audits without bolding and handles empty top5ByTotalPI."
+  },
+  {
+    "id": "variation-08",
+    "category": "var-07-single-recurring-reason",
+    "description": "All 5 sub-audits in topSubAuditsWithReasons have only 1 reason in topReasons[], and it is the same reason label across all 5. Tests that narrator identifies the single unanimous recurring reason correctly."
+  },
+  {
+    "id": "variation-09",
+    "category": "var-08-many-unique-reasons",
+    "description": "Each sub-audit in topSubAuditsWithReasons has completely distinct reason labels — no reason appears in more than 1 sub-audit. Tests that narrator correctly identifies the fallback to 2+ sub-audit threshold for recurring reasons, or reports no cross-cutting reasons if none qualify."
+  },
+  {
+    "id": "variation-10",
+    "category": "var-09-two-top-gaps-tied",
+    "description": "topSubAuditsByPINotFound.items[0] and items[1] have identical piNotFoundCount. piNotFoundPercent differs because totalPICount differs. Tests that narrator reports both items accurately without merging or incorrectly ranking them."
+  }
+]

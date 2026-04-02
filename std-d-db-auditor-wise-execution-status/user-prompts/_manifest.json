@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "var-01-normal-balanced",
+    "description": "Realistic balanced payload. Multiple zones present in topZones[]. averagePerAuditor is between 8–15. averageLapsedPerAuditor between 1–4. topReAuditAuditors has 8–10 items with reAuditPercentage spread across 40–85%. auditorStartedAfterSchedule has 6–8 entries with remainingCount > 0."
+  },
+  {
+    "id": "variation-02",
+    "category": "var-01-normal-balanced",
+    "description": "Realistic balanced payload. Multiple zones present in topZones[]. averagePerAuditor is between 8–15. averageLapsedPerAuditor between 1–4. topReAuditAuditors has 8–10 items with reAuditPercentage spread across 40–85%. auditorStartedAfterSchedule has 6–8 entries with remainingCount > 0."
+  },
+  {
+    "id": "variation-03",
+    "category": "var-02-zero-lapsed",
+    "description": "totalLapsedAudits = 0, totalAuditorsWithLapsed = 0, averageLapsedPerAuditor = 0. All zones have lapsedCount = 0 and notExecutedCount = 0, so totalDelayedAudits = 0 for all zones. Tests explicit zero reporting."
+  },
+  {
+    "id": "variation-04",
+    "category": "var-03-all-lapsed",
+    "description": "High lapsed scenario. totalLapsedAudits is 60+ across all auditors. averageLapsedPerAuditor is 10+. Leading zone has totalDelayedAudits over 40 with large notExecutedCount. averagePerAuditor for In Progress is low (< 5)."
+  },
+  {
+    "id": "variation-05",
+    "category": "var-04-single-zone",
+    "description": "topZones[] contains exactly 1 zone. That zone has all the delayed audits. Tests how narrator handles a single-zone delayed scenario without runner-up mention."
+  },
+  {
+    "id": "variation-06",
+    "category": "var-05-extreme-reaudit",
+    "description": "Top auditor in topReAuditAuditors has reAuditPercentage = 100.0% (all audits gone to re-audit). At least 3 auditors above 90%. Bottom auditors in the list are still above 70%. Tests high-end re-audit percentage reporting."
+  },
+  {
+    "id": "variation-07",
+    "category": "var-06-no-late-starts",
+    "description": "totalSchedulesWithLateStart = 0, totalUniqueAuditors = 0, displayedCount = 0, remainingCount = 0, items = []. Tests explicit zero / empty list handling for the late-start bullet."
+  },
+  {
+    "id": "variation-08",
+    "category": "var-07-exactly-five-late-starts",
+    "description": "totalSchedulesWithLateStart = 5, displayedCount = 5, remainingCount = 0, items[] has exactly 5 entries. Tests that the narrator does NOT append 'and 0 more' when remainingCount = 0."
+  },
+  {
+    "id": "variation-09",
+    "category": "var-08-overflow-late-starts",
+    "description": "totalSchedulesWithLateStart = 12, displayedCount = 5, remainingCount = 7. items[] has exactly 5 entries. Tests that the narrator appends 'and 7 more' correctly after listing the 5 auditor names."
+  },
+  {
+    "id": "variation-10",
+    "category": "var-09-zone-tie",
+    "description": "Top two zones in topZones[] have identical totalDelayedAudits count. Different lapsedCount and notExecutedCount breakdown. Tests how narrator handles a tie scenario where both zones are leading."
+  }
+]

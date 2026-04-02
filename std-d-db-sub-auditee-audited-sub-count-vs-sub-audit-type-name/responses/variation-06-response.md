@@ -1,0 +1,4 @@
+- **Top PI Gaps:** The top 3 sub-audits by PI volume, Digital KYC Audit (80 PIs), Compliance Check (70 PIs), and Operational Review (60 PIs), all record 0 PI Not Found counts (0.00%), indicating complete PI execution for these types.
+- **PI Execution Overview:** Across 5 sub-audits, the average PI execution shows 60 PIs found and 0 PIs not found, resulting in an average of 100.0% PI found. The highest volume sub-audits, Digital KYC Audit (80 PIs), Compliance Check (70 PIs), and Operational Review (60 PIs), each report 100.0% PI found with 0 PIs not found (0.00%).
+- **Common Not-Found Reasons:** Not Available. The data for PI Not Found reason analysis is not provided.
+- **100% PI Execution:** **5** sub-audits, representing 100.0% of all sub-audits, achieved full PI execution. **Digital KYC Audit** leads this group with 80 PIs, followed by Compliance Check (70 PIs), Operational Review (60 PIs), Risk Assessment (50 PIs), and System Access Audit (40 PIs).

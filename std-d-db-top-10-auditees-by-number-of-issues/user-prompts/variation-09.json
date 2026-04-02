@@ -1,0 +1,86 @@
+{
+  "totalRecords": 120,
+  "meta": {
+    "generatedAt": "2024-07-25T10:30:00Z",
+    "source": "audit_issue_tracker"
+  },
+  "zoneIssueConcentration": {
+    "description": "Per-zone breakdown of total open issues and distinct auditees contributing those issues, with average issues per auditee. Sorted descending by avgIssuesPerAuditee to surface the zone with the highest issue concentration.",
+    "zones": [
+      {
+        "zoneName": "North Zone",
+        "totalIssues": 35,
+        "distinctAuditees": 8,
+        "avgIssuesPerAuditee": 4.4
+      },
+      {
+        "zoneName": "West Zone",
+        "totalIssues": 28,
+        "distinctAuditees": 7,
+        "avgIssuesPerAuditee": 4
+      },
+      {
+        "zoneName": "South Zone",
+        "totalIssues": 20,
+        "distinctAuditees": 6,
+        "avgIssuesPerAuditee": 3.3
+      },
+      {
+        "zoneName": "East Zone",
+        "totalIssues": 15,
+        "distinctAuditees": 5,
+        "avgIssuesPerAuditee": 3
+      },
+      {
+        "zoneName": "Central Zone",
+        "totalIssues": 10,
+        "distinctAuditees": 4,
+        "avgIssuesPerAuditee": 2.5
+      }
+    ]
+  },
+  "topGroupsByIssues": {
+    "description": "Top 3 groups by total issue count, with their corresponding audit type names.",
+    "top3": [
+      {
+        "groupName": "Operations Dept",
+        "auditTypeName": "Process Audit",
+        "issueCount": 25
+      },
+      {
+        "groupName": "IT Security Team",
+        "auditTypeName": "Security Audit",
+        "issueCount": 18
+      },
+      {
+        "groupName": "Logistics Unit",
+        "auditTypeName": "Supply Chain Audit",
+        "issueCount": 12
+      }
+    ]
+  },
+  "topAuditeesByCriticalIssues": {
+    "description": "Top 3 auditees by combined High + Zero Tolerance issue count, with individual breakdown of each risk level.",
+    "totalCriticalIssues": 15,
+    "top3": [
+      {
+        "auditeeName": "Bangalore HQ Branch",
+        "highCount": 0,
+        "zeroToleranceCount": 7,
+        "combinedCriticalCount": 7
+      },
+      {
+        "auditeeName": "Chennai Regional Office",
+        "highCount": 0,
+        "zeroToleranceCount": 5,
+        "combinedCriticalCount": 5
+      },
+      {
+        "auditeeName": "Hyderabad Data Center",
+        "highCount": 0,
+        "zeroToleranceCount": 3,
+        "combinedCriticalCount": 3
+      }
+    ]
+  }
+}

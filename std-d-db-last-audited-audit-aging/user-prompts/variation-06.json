@@ -1,0 +1,16 @@
+{
+  "totalAuditees": 150,
+  "meta": {
+    "generatedAt": "2024-07-20T10:00:00Z",
+    "disclaimer": "* Auditees created without any schedules are not included in the above summary."
+  },
+  "agingAboveThreshold": {
+    "thresholdDays": 90,
+    "count": 0,
+    "percent": 0
+  },
+  "top5AgingAuditees": {
+    "description": "Top 5 auditees with the highest number of days since last audit among those not audited for more than 90 days.",
+    "items": []
+  }
+}

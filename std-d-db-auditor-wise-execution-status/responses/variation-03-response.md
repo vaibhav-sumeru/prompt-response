@@ -1,0 +1,5 @@
+- **Avg. Audits In Progress:** The team has **90** audits currently in progress across 6 auditors, averaging **15** audits per auditor.
+- **Avg. Lapsed Audits:** There are 0 total lapsed audits, with 0 auditors having lapsed items, resulting in an average of 0 lapsed audits per auditor.
+- **Zone with Max Delayed Audits:** The **East Zone** records 0 total delayed audits, comprising 0 lapsed and 0 not executed audits. Central Zone and South Zone also record 0 delayed audits each.
+- **Late-Start Auditors:** 8 audit schedules started late, involving 5 unique auditors. These include **Ananya Singh**, **Vikram Sharma**, **Pooja Das**, **Rajesh Kumar**, **Divya Rao**, and 3 more.
+- **Top Re-Audit Auditors:** **Ananya Singh** leads with **80**% re-audit rate from 20 re-audits out of 25 total. **Vikram Sharma** follows at **77.3**%. Other auditors include Pooja Das (70%), Rajesh Kumar (66.7%), Divya Rao (62.5%), Sanjay Gupta (57.9%), Meera Joshi (52.9%), Alok Patel (47.6%), Sneha Nair (43.8%), and Arjun Mehta (40%).

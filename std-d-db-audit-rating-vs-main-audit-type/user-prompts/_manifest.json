@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "var-01-normal-balanced",
+    "description": "Realistic balanced payload. All 4 rating buckets present for overall, all clusters have numeric averageAchievedScore, all auditee type categories have mixed ratings. Scores vary between 70 and 88."
+  },
+  {
+    "id": "variation-02",
+    "category": "var-01-normal-balanced",
+    "description": "Realistic balanced payload. All 4 rating buckets present for overall, all clusters have numeric averageAchievedScore, all auditee type categories have mixed ratings. Scores vary between 70 and 88."
+  },
+  {
+    "id": "variation-03",
+    "category": "var-03-poor-dominated",
+    "description": "Poor rating accounts for 60% or more of total schedules in overallPerformanceDistribution. Most cluster items also show Poor > 50%. averageAchievedScore values are low (below 65 for all clusters)."
+  },
+  {
+    "id": "variation-04",
+    "category": "var-04-excellent-dominated",
+    "description": "Excellent rating accounts for 70% or more of total schedules in overallPerformanceDistribution. All clusters show averageAchievedScore above 88. auditeeLevelHotspots items all have Poor scheduleCount = 0."
+  },
+  {
+    "id": "variation-05",
+    "category": "var-05-zero-poor",
+    "description": "Poor scheduleCount is exactly 0 across all rating distributions (overall, all clusters, all auditee types, all auditees). percentOfTotal for Poor must be 0.0 everywhere."
+  },
+  {
+    "id": "variation-06",
+    "category": "var-06-missing-scores",
+    "description": "All averageAchievedScore fields are empty string '' (non-computable) across all clusters and auditee types and auditees. scheduleCount and ratingDistribution data is still fully populated."
+  },
+  {
+    "id": "variation-07",
+    "category": "var-07-single-cluster",
+    "description": "clusterLevelPerformance.totalClusters is exactly 1. items[] contains only one cluster with scheduleCount equal to totalRecords. All other sections remain normally populated."
+  },
+  {
+    "id": "variation-08",
+    "category": "var-08-single-auditee-type",
+    "description": "auditeeTypeAnalysis.totalAuditeeTypes is exactly 1. items[] contains only one auditee type (e.g. Branch) covering all schedules. auditeeLevelHotspots still has 5+ items."
+  },
+  {
+    "id": "variation-09",
+    "category": "var-09-extreme-skew",
+    "description": "One cluster has 90%+ of all schedules. One auditee type has 85%+ of all schedules. Top auditee in hotspots has scheduleCount 5x higher than the second auditee."
+  },
+  {
+    "id": "variation-10",
+    "category": "var-10-tie-breaker",
+    "description": "Top 3 auditees in auditeeLevelHotspots have identical scheduleCount AND identical averageAchievedScore. All three show exactly the same Poor percent. Tests how narrator handles ties."
+  }
+]

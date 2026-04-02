@@ -1,0 +1,152 @@
+{
+  "totalRecords": 450,
+  "meta": {
+    "generatedAt": "2026-04-15T10:30:00Z",
+    "source": "audit_schedule_execution_data"
+  },
+  "avgAuditsInProgress": {
+    "description": "Average count of audits currently In Progress per auditor across the full team.",
+    "totalInProgressAudits": 72,
+    "totalAuditors": 8,
+    "averagePerAuditor": 9
+  },
+  "avgLapsedAudits": {
+    "description": "Average count of audits in Lapsed status per auditor across the team.",
+    "totalLapsedAudits": 28,
+    "totalAuditorsWithLapsed": 7,
+    "averageLapsedPerAuditor": 4
+  },
+  "zoneWithMaxDelayedAudits": {
+    "description": "Top zones ranked by total count of Lapsed or Not Executed audits.",
+    "topZones": [
+      {
+        "zoneName": "West Zone",
+        "totalDelayedAudits": 25,
+        "lapsedCount": 15,
+        "notExecutedCount": 10
+      },
+      {
+        "zoneName": "North Zone",
+        "totalDelayedAudits": 18,
+        "lapsedCount": 10,
+        "notExecutedCount": 8
+      },
+      {
+        "zoneName": "South Zone",
+        "totalDelayedAudits": 12,
+        "lapsedCount": 7,
+        "notExecutedCount": 5
+      }
+    ]
+  },
+  "auditorStartedAfterSchedule": {
+    "description": "Audit schedules where Audit Start Date is after the scheduled start date but within the audit end date.",
+    "totalSchedulesWithLateStart": 10,
+    "totalUniqueAuditors": 5,
+    "displayedCount": 5,
+    "remainingCount": 5,
+    "items": [
+      {
+        "auditorName": "Jayam Sharma",
+        "auditType": "Branch Compliance Audit",
+        "auditeeName": "MG Road Branch",
+        "scheduledStartDate": "2026-02-01",
+        "auditStartDate": "2026-02-04"
+      },
+      {
+        "auditorName": "Salim Khan",
+        "auditType": "Regional Office Audit",
+        "auditeeName": "NCR Regional Office",
+        "scheduledStartDate": "2026-02-05",
+        "auditStartDate": "2026-02-08"
+      },
+      {
+        "auditorName": "Priya Nair",
+        "auditType": "Fortification Audit",
+        "auditeeName": "Fort Branch",
+        "scheduledStartDate": "2026-02-08",
+        "auditStartDate": "2026-02-11"
+      },
+      {
+        "auditorName": "Rahul Verma",
+        "auditType": "Warehouse Audit",
+        "auditeeName": "MIDC Unit 5",
+        "scheduledStartDate": "2026-02-12",
+        "auditStartDate": "2026-02-15"
+      },
+      {
+        "auditorName": "Aishwarya Reddy",
+        "auditType": "Branch Compliance Audit",
+        "auditeeName": "Banjara Hills Branch",
+        "scheduledStartDate": "2026-02-15",
+        "auditStartDate": "2026-02-18"
+      }
+    ]
+  },
+  "topReAuditAuditors": {
+    "description": "Top 10 auditors by re-audit percentage: audits sent to re-audit divided by total audits.",
+    "topLimit": 10,
+    "items": [
+      {
+        "auditorName": "Rakesh Singh",
+        "totalAudits": 15,
+        "auditsGoneToReAudit": 15,
+        "reAuditPercentage": 100
+      },
+      {
+        "auditorName": "Meera Devi",
+        "totalAudits": 20,
+        "auditsGoneToReAudit": 19,
+        "reAuditPercentage": 95
+      },
+      {
+        "auditorName": "Arjun Prasad",
+        "totalAudits": 25,
+        "auditsGoneToReAudit": 23,
+        "reAuditPercentage": 92
+      },
+      {
+        "auditorName": "Neha Gupta",
+        "totalAudits": 18,
+        "auditsGoneToReAudit": 16,
+        "reAuditPercentage": 88.9
+      },
+      {
+        "auditorName": "Vikram Joshi",
+        "totalAudits": 22,
+        "auditsGoneToReAudit": 19,
+        "reAuditPercentage": 86.4
+      },
+      {
+        "auditorName": "Pooja Sharma",
+        "totalAudits": 16,
+        "auditsGoneToReAudit": 13,
+        "reAuditPercentage": 81.3
+      },
+      {
+        "auditorName": "Amit Kumar",
+        "totalAudits": 28,
+        "auditsGoneToReAudit": 22,
+        "reAuditPercentage": 78.6
+      },
+      {
+        "auditorName": "Deepak Singh",
+        "totalAudits": 22,
+        "auditsGoneToReAudit": 17,
+        "reAuditPercentage": 77.3
+      },
+      {
+        "auditorName": "Kavita Reddy",
+        "totalAudits": 21,
+        "auditsGoneToReAudit": 16,
+        "reAuditPercentage": 76.2
+      },
+      {
+        "auditorName": "Sanjay Rao",
+        "totalAudits": 20,
+        "auditsGoneToReAudit": 15,
+        "reAuditPercentage": 75
+      }
+    ]
+  }
+}

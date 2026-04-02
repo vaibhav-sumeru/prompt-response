@@ -1,0 +1,42 @@
+{
+  "totalAuditees": 350,
+  "meta": {
+    "generatedAt": "2024-03-24T00:00:00Z",
+    "disclaimer": "* Auditees created without any schedules are not included in the above summary."
+  },
+  "agingAboveThreshold": {
+    "thresholdDays": 90,
+    "count": 70,
+    "percent": 20
+  },
+  "top5AgingAuditees": {
+    "description": "Top 5 auditees with the highest number of days since last audit among those not audited for more than 90 days.",
+    "items": [
+      {
+        "auditeeName": "Financial Services HQ",
+        "lastScheduleCreatedDate": "28-Apr-2023",
+        "differenceInDays": 331
+      },
+      {
+        "auditeeName": "Manufacturing Plant A",
+        "lastScheduleCreatedDate": "17-Jun-2023",
+        "differenceInDays": 281
+      },
+      {
+        "auditeeName": "Retail Chain West",
+        "lastScheduleCreatedDate": "26-Aug-2023",
+        "differenceInDays": 210
+      },
+      {
+        "auditeeName": "Tech Hub South",
+        "lastScheduleCreatedDate": "25-Oct-2023",
+        "differenceInDays": 150
+      },
+      {
+        "auditeeName": "Logistics Center East",
+        "lastScheduleCreatedDate": "05-Dec-2023",
+        "differenceInDays": 110
+      }
+    ]
+  }
+}

@@ -1,0 +1,231 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "std-d-db-risk-level-wise-issue-count",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "totalRecords",
+    "meta",
+    "riskWiseZoneDistribution",
+    "auditeesHighRiskConcentration",
+    "recurringCriticalByZone",
+    "recurringCriticalByGroup"
+  ],
+  "properties": {
+    "totalRecords": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of distinct issues in this widget payload."
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt"],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "description": "Payload generation timestamp in ISO-8601 format."
+        }
+      }
+    },
+    "riskWiseZoneDistribution": {
+      "type": "object",
+      "description": "Section 1: For each zone, distribution of issues across all 4 risk levels with counts and percentages.",
+      "additionalProperties": false,
+      "required": ["description", "zones"],
+      "properties": {
+        "description": { "type": "string" },
+        "zones": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/zoneRiskDistributionItem" }
+        }
+      }
+    },
+    "auditeesHighRiskConcentration": {
+      "type": "object",
+      "description": "Section 2: Top 3 auditees by combined High + Zero Tolerance issue count. Includes each auditee's contribution % to total critical issues.",
+      "additionalProperties": false,
+      "required": ["description", "totalCriticalIssues", "top3"],
+      "properties": {
+        "description": { "type": "string" },
+        "totalCriticalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total High + Zero Tolerance issues across ALL auditees — denominator for contributionPercent."
+        },
+        "top3": {
+          "type": "array",
+          "maxItems": 3,
+          "items": { "$ref": "#/definitions/auditeeRiskItem" }
+        }
+      }
+    },
+    "recurringCriticalByZone": {
+      "type": "object",
+      "description": "Section 3: For every zone, count and percentage of High/Zero Tolerance issues that are also recurring.",
+      "additionalProperties": false,
+      "required": ["description", "zones"],
+      "properties": {
+        "description": { "type": "string" },
+        "zones": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/zoneRecurringCriticalItem" }
+        }
+      }
+    },
+    "recurringCriticalByGroup": {
+      "type": "object",
+      "description": "Section 4: Top 3 groups by count of High/Zero Tolerance issues that are also recurring.",
+      "additionalProperties": false,
+      "required": ["description", "totalRecurringCriticalIssues", "top3"],
+      "properties": {
+        "description": { "type": "string" },
+        "totalRecurringCriticalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total recurring High/Zero Tolerance issues across ALL groups — context for the top-3 ranking."
+        },
+        "top3": {
+          "type": "array",
+          "maxItems": 3,
+          "items": { "$ref": "#/definitions/groupRecurringCriticalItem" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "riskLevelBreakdownItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["riskLevel", "count", "percent"],
+      "properties": {
+        "riskLevel": {
+          "type": "string",
+          "enum": ["Zero Tolerance", "High", "Medium", "Low"],
+          "description": "Risk level label."
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of issues at this risk level in this zone."
+        },
+        "percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Pre-computed: (count / zone totalIssues) × 100, rounded to 1 decimal."
+        }
+      }
+    },
+    "zoneRiskDistributionItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["zoneName", "totalIssues", "riskBreakdown"],
+      "properties": {
+        "zoneName": {
+          "type": "string",
+          "description": "Zone name."
+        },
+        "totalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues in this zone across all risk levels."
+        },
+        "riskBreakdown": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Risk level breakdown for this zone, ordered Zero Tolerance → High → Medium → Low.",
+          "items": { "$ref": "#/definitions/riskLevelBreakdownItem" }
+        }
+      }
+    },
+    "auditeeRiskItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["auditeeName", "highRiskCount", "zeroToleranceCount", "totalCriticalCount", "contributionPercent"],
+      "properties": {
+        "auditeeName": {
+          "type": "string",
+          "description": "Auditee name."
+        },
+        "highRiskCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of High risk issues for this auditee."
+        },
+        "zeroToleranceCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of Zero Tolerance issues for this auditee."
+        },
+        "totalCriticalCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Pre-computed: highRiskCount + zeroToleranceCount."
+        },
+        "contributionPercent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Pre-computed: (totalCriticalCount / auditeesHighRiskConcentration.totalCriticalIssues) × 100, rounded to 1 decimal."
+        }
+      }
+    },
+    "zoneRecurringCriticalItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["zoneName", "totalCriticalIssues", "recurringCriticalCount", "recurringCriticalPercent"],
+      "properties": {
+        "zoneName": {
+          "type": "string",
+          "description": "Zone name."
+        },
+        "totalCriticalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total High + Zero Tolerance issues in this zone."
+        },
+        "recurringCriticalCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of High/Zero Tolerance issues in this zone that are also recurring."
+        },
+        "recurringCriticalPercent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Pre-computed: (recurringCriticalCount / totalCriticalIssues) × 100, rounded to 1 decimal."
+        }
+      }
+    },
+    "groupRecurringCriticalItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["groupName", "totalCriticalIssues", "recurringCriticalCount", "recurringCriticalPercent"],
+      "properties": {
+        "groupName": {
+          "type": "string",
+          "description": "Group name."
+        },
+        "totalCriticalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total High + Zero Tolerance issues in this group."
+        },
+        "recurringCriticalCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of High/Zero Tolerance issues in this group that are also recurring. Sort key."
+        },
+        "recurringCriticalPercent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Pre-computed: (recurringCriticalCount / totalCriticalIssues) × 100, rounded to 1 decimal."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "var-01-all-three-buckets",
+    "description": "All 3 compliance buckets (0–15%, 15–25%, 25–50%) are occupied with auditeeCount >= 2 each. All 3 top3LowPerformers entries are populated in each bucket. Zones list has 4–5 zones with varying lowComplianceAuditCount values."
+  },
+  {
+    "id": "variation-02",
+    "category": "var-01-all-three-buckets",
+    "description": "All 3 compliance buckets (0–15%, 15–25%, 25–50%) are occupied with auditeeCount >= 2 each. All 3 top3LowPerformers entries are populated in each bucket. Zones list has 4–5 zones with varying lowComplianceAuditCount values."
+  },
+  {
+    "id": "variation-03",
+    "category": "var-02-only-lowest-bucket",
+    "description": "Only the 0–15% bucket is present in buckets[] (the other two are entirely absent). auditeeCount is 6+. top3LowPerformers has 3 entries with very low achievedPercentage (0.0–14.9%). Tests zero-bucket skip for the 15–25% and 25–50% ranges."
+  },
+  {
+    "id": "variation-04",
+    "category": "var-03-two-buckets-missing-middle",
+    "description": "Only 0–15% and 25–50% buckets are present. The 15–25% bucket is entirely absent from buckets[]. Tests that narrator skips 15–25% silently and narrates the other two in correct order."
+  },
+  {
+    "id": "variation-05",
+    "category": "var-04-only-top-bucket",
+    "description": "Only the 25–50% bucket is present. auditeeCount = 3. top3LowPerformers has achievedPercentage values all between 25.0 and 49.9. 0–15% and 15–25% are absent. Tests that narrator mentions only 25–50%."
+  },
+  {
+    "id": "variation-06",
+    "category": "var-05-single-low-performer-per-bucket",
+    "description": "All 3 buckets present but each has auditeeCount = 1 and therefore top3LowPerformers has exactly 1 entry. Tests singular auditee narration within each bucket."
+  },
+  {
+    "id": "variation-07",
+    "category": "var-06-empty-zones",
+    "description": "zoneComplianceOverview.zones[] is an empty array (no zone has any audit below 50%). complianceBuckets has all 3 buckets. Tests the explicit empty-zones phrasing in Bullet 2."
+  },
+  {
+    "id": "variation-08",
+    "category": "var-07-single-zone",
+    "description": "zoneComplianceOverview.zones[] contains exactly 1 zone. lowComplianceAuditCount is large (20+). complianceBuckets has 2 occupied buckets. Tests single-zone narration without comparative language."
+  },
+  {
+    "id": "variation-09",
+    "category": "var-08-many-zones-high-counts",
+    "description": "zones[] has 6 zones with lowComplianceAuditCount ranging from 35 down to 5. Top zone has count = 35. complianceBuckets has all 3 buckets with auditeeCount = 5, 4, 3 respectively. Tests descending zone narration with high counts."
+  },
+  {
+    "id": "variation-10",
+    "category": "var-09-extreme-low-achievers",
+    "description": "0–15% bucket has achievedPercentage values of 0.0, 0.5, and 1.2 (near-zero compliance). 15–25% bucket is absent. 25–50% bucket has 2 entries. zones[] has 3 zones. Tests explicit zero achievedPercentage reporting."
+  }
+]

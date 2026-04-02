@@ -1,0 +1,3 @@
+- **Zone-Wise Volume:** Of 500 schedules — Central Zone: **500** (100.0%), led by Regulatory Compliance (200), Operational Efficiency (180), Data Security (120).
+- **Re-Audit & Re-Assess:** Of 500 schedules, **35 (7.0%)** are in re-audit and **20 (4.0%)** in re-assess; top audit types by combined rework: Operational Efficiency (re-audit: 15, re-assess: 8, combined: 23); Regulatory Compliance (re-audit: 10, re-assess: 7, combined: 17); Data Security (re-audit: 5, re-assess: 3, combined: 8).
+- **Execution Status:** Of 500 schedules — Finalized: 300 (60.0%); In Progress: 100 (20.0%); Lapsed: 40 (8.0%); Re-Audit: 35 (7.0%); Re-Assess: 20 (4.0%); Cancelled: 5 (1.0%).

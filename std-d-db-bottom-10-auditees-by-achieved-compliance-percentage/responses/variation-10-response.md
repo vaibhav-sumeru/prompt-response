@@ -1,0 +1,3 @@
+- **Auditee Compliance Buckets:** **4** auditees in the **0–15%** range; **2** auditees in the **25–50%** range.
+- **Top 3 Overall Low Performers:** **Dharavi Slum Redevelopment** at **0.00%**, **Anna Salai Metro** at **0.50%**, and **Jaipur Pink City Project** at **1.20%** achieved compliance.
+- **Zones with Low Compliance:** **West Zone** records **25** audit schedules below 50% compliance, followed by South Zone with 18 audits, and North Zone with 12 audits.

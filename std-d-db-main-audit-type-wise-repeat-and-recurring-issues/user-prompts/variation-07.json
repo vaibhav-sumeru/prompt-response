@@ -1,0 +1,174 @@
+{
+  "totalRecords": 285,
+  "meta": {
+    "generatedAt": "2024-07-20T14:30:00Z"
+  },
+  "recurringAbove50": {
+    "description": "Main audit types where recurring issues exceed 50% of total issues. Sorted by recurringPercent descending. Top 5 shown out of 6 qualifying audits.",
+    "totalQualifyingAudits": 6,
+    "top5": [
+      {
+        "auditName": "IT Infrastructure Audit",
+        "recurringCount": 15,
+        "totalIssues": 25,
+        "recurringPercent": 60
+      },
+      {
+        "auditName": "Regulatory Compliance Audit",
+        "recurringCount": 12,
+        "totalIssues": 20,
+        "recurringPercent": 60
+      },
+      {
+        "auditName": "Quality Assurance Audit",
+        "recurringCount": 10,
+        "totalIssues": 18,
+        "recurringPercent": 55.6
+      },
+      {
+        "auditName": "Supply Chain Audit",
+        "recurringCount": 9,
+        "totalIssues": 16,
+        "recurringPercent": 56.3
+      },
+      {
+        "auditName": "Data Privacy Audit",
+        "recurringCount": 8,
+        "totalIssues": 15,
+        "recurringPercent": 53.3
+      }
+    ]
+  },
+  "repeatAbove75": {
+    "description": "Main audit types where repeat issues exceed 75% of total issues. Sorted by repeatPercent descending. Top 5 shown out of 4 qualifying audits.",
+    "totalQualifyingAudits": 4,
+    "top5": [
+      {
+        "auditName": "Customer Service Audit",
+        "repeatCount": 18,
+        "totalIssues": 22,
+        "repeatPercent": 81.8
+      },
+      {
+        "auditName": "Fraud Detection Audit",
+        "repeatCount": 15,
+        "totalIssues": 19,
+        "repeatPercent": 78.9
+      },
+      {
+        "auditName": "Vendor Onboarding Audit",
+        "repeatCount": 12,
+        "totalIssues": 15,
+        "repeatPercent": 80
+      },
+      {
+        "auditName": "Environmental Audit",
+        "repeatCount": 10,
+        "totalIssues": 13,
+        "repeatPercent": 76.9
+      }
+    ]
+  },
+  "highZeroToleranceRisk": {
+    "description": "Top 3 main audit types by count of High and Zero Tolerance risk issues, split by recurring and repeat tagging.",
+    "byRecurring": {
+      "description": "Top 3 audits ranked by count of recurring issues with Risk Level = High or Zero Tolerance.",
+      "top3": [
+        {
+          "auditName": "Safety Protocol Audit",
+          "issueCount": 0
+        },
+        {
+          "auditName": "Financial Control Audit",
+          "issueCount": 0
+        },
+        {
+          "auditName": "Cybersecurity Audit",
+          "issueCount": 0
+        }
+      ]
+    },
+    "byRepeat": {
+      "description": "Top 3 audits ranked by count of repeat issues with Risk Level = High or Zero Tolerance.",
+      "top3": [
+        {
+          "auditName": "Legal Compliance Audit",
+          "issueCount": 0
+        },
+        {
+          "auditName": "HR Policy Audit",
+          "issueCount": 0
+        },
+        {
+          "auditName": "Operational Efficiency Audit",
+          "issueCount": 0
+        }
+      ]
+    }
+  },
+  "groupDistribution": {
+    "description": "Top 3 groups with highest and bottom 3 groups with lowest recurring and repeat issue counts.",
+    "recurring": {
+      "description": "Groups ranked by recurring issue count — top 3 highest and bottom 3 lowest.",
+      "top3": [
+        {
+          "groupName": "Mumbai Region",
+          "recurringCount": 38
+        },
+        {
+          "groupName": "Delhi Region",
+          "recurringCount": 30
+        },
+        {
+          "groupName": "Bengaluru Region",
+          "recurringCount": 25
+        }
+      ],
+      "bottom3": [
+        {
+          "groupName": "Kolkata Region",
+          "recurringCount": 5
+        },
+        {
+          "groupName": "Chennai Region",
+          "recurringCount": 8
+        },
+        {
+          "groupName": "Hyderabad Region",
+          "recurringCount": 11
+        }
+      ]
+    },
+    "repeat": {
+      "description": "Groups ranked by repeat issue count — top 3 highest and bottom 3 lowest.",
+      "top3": [
+        {
+          "groupName": "Delhi Region",
+          "repeatCount": 35
+        },
+        {
+          "groupName": "Mumbai Region",
+          "repeatCount": 28
+        },
+        {
+          "groupName": "Bengaluru Region",
+          "repeatCount": 20
+        }
+      ],
+      "bottom3": [
+        {
+          "groupName": "Hyderabad Region",
+          "repeatCount": 3
+        },
+        {
+          "groupName": "Kolkata Region",
+          "repeatCount": 6
+        },
+        {
+          "groupName": "Chennai Region",
+          "repeatCount": 9
+        }
+      ]
+    }
+  }
+}

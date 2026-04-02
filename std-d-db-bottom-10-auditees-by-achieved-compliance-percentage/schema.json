@@ -1,0 +1,175 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "std-d-db-bottom-10-auditees-by-achieved-compliance-percentage",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "totalRecords",
+    "meta",
+    "complianceBuckets",
+    "top3OverallLowPerformers",
+    "zoneComplianceOverview"
+  ],
+  "properties": {
+    "totalRecords": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of audit schedules included in this widget payload."
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt", "source"],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "description": "Payload generation timestamp in ISO-8601 format."
+        },
+        "source": {
+          "type": "string",
+          "description": "Source API or transformer identifier."
+        }
+      }
+    },
+
+    "complianceBuckets": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Section 1: Auditees grouped into 3 low-compliance buckets (0–15%, 15–25%, 25–50%) with auditee counts per occupied bucket.",
+      "required": ["description", "buckets"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of what this section represents."
+        },
+        "buckets": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 3,
+          "description": "Up to 3 compliance buckets. Only include a bucket if its auditeeCount > 0.",
+          "items": {
+            "$ref": "#/definitions/complianceBucketItem"
+          }
+        }
+      }
+    },
+
+    "top3OverallLowPerformers": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Section 2: The 3 auditees with the absolute lowest achieved compliance percentage across all buckets combined, sorted ascending by achievedPercentage.",
+      "required": ["description", "items"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of what this section represents."
+        },
+        "items": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 3,
+          "description": "Top 3 lowest-scoring auditees overall, sorted ascending by achievedPercentage.",
+          "items": {
+            "$ref": "#/definitions/lowPerformerItem"
+          }
+        }
+      }
+    },
+
+    "zoneComplianceOverview": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Section 2: Per-zone count of audit schedules where Achieved Percentage < 50%, sorted by count descending.",
+      "required": ["description", "lowComplianceThreshold", "zones"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of what this section represents."
+        },
+        "lowComplianceThreshold": {
+          "type": "number",
+          "description": "The threshold used to classify low-compliance audits (50.0).",
+          "enum": [50.0]
+        },
+        "zones": {
+          "type": "array",
+          "minItems": 0,
+          "description": "Zones sorted descending by lowComplianceAuditCount (most to least low-compliance). Include all zones with lowComplianceAuditCount > 0.",
+          "items": {
+            "$ref": "#/definitions/zoneComplianceItem"
+          }
+        }
+      }
+    }
+  },
+
+  "definitions": {
+    "complianceBucketItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "bucketLabel",
+        "bucketMin",
+        "bucketMax",
+        "auditeeCount"
+      ],
+      "properties": {
+        "bucketLabel": {
+          "type": "string",
+          "description": "Human-readable bucket range label, e.g., '0–15%', '15–25%', '25–50%'."
+        },
+        "bucketMin": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Lower bound of the compliance percentage range (inclusive)."
+        },
+        "bucketMax": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 50,
+          "description": "Upper bound of the compliance percentage range (exclusive for intermediate buckets, inclusive for last)."
+        },
+        "auditeeCount": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Total number of auditees in this compliance bucket."
+        }
+      }
+    },
+
+    "lowPerformerItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["auditeeName", "achievedPercentage"],
+      "properties": {
+        "auditeeName": {
+          "type": "string",
+          "description": "Name of the auditee entity (from Auditee Name column)."
+        },
+        "achievedPercentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 50,
+          "description": "Achieved compliance percentage for this auditee (from Achieved Percentage column)."
+        }
+      }
+    },
+
+    "zoneComplianceItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["zoneName", "lowComplianceAuditCount"],
+      "properties": {
+        "zoneName": {
+          "type": "string",
+          "description": "Name of the zone (from Zone Name column)."
+        },
+        "lowComplianceAuditCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of audit schedules in this zone where Achieved Percentage < 50%."
+        }
+      }
+    }
+  }
+}

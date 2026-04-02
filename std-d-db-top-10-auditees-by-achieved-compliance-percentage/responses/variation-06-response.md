@@ -1,0 +1,3 @@
+- **Auditee Compliance Buckets:** 1 auditee in the **100%** range, 1 auditee in the **96–99%** range, and 1 auditee in the **81–95%** range.
+- **Top 5 Overall High Performers:** **Mumbai Flagship Store** at **100.00%**, **Delhi Central Office** at **97.50%**, and **Kolkata Regional Hub** at **88.00%**.
+- **Zones with High Compliance:** **North Zone** records **10** audit schedules above 50% compliance, followed by South Zone with 8, East Zone with 5, Central Zone with 3, and West Zone with 1.

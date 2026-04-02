@@ -1,0 +1,128 @@
+{
+  "totalRecords": 500,
+  "meta": {
+    "generatedAt": "2026-03-20T00:00:00Z",
+    "source": "audit_schedule_execution_data"
+  },
+  "avgAuditsInProgress": {
+    "description": "Average count of audits currently In Progress per auditor across the full team.",
+    "totalInProgressAudits": 18,
+    "totalAuditors": 6,
+    "averagePerAuditor": 3
+  },
+  "avgLapsedAudits": {
+    "description": "Average count of audits in Lapsed status per auditor across the team.",
+    "totalLapsedAudits": 72,
+    "totalAuditorsWithLapsed": 6,
+    "averageLapsedPerAuditor": 12
+  },
+  "zoneWithMaxDelayedAudits": {
+    "description": "Top zones ranked by total count of Lapsed or Not Executed audits.",
+    "topZones": [
+      {
+        "zoneName": "South Zone",
+        "totalDelayedAudits": 48,
+        "lapsedCount": 18,
+        "notExecutedCount": 30
+      },
+      {
+        "zoneName": "East Zone",
+        "totalDelayedAudits": 35,
+        "lapsedCount": 25,
+        "notExecutedCount": 10
+      },
+      {
+        "zoneName": "North Zone",
+        "totalDelayedAudits": 28,
+        "lapsedCount": 19,
+        "notExecutedCount": 9
+      }
+    ]
+  },
+  "auditorStartedAfterSchedule": {
+    "description": "Audit schedules where Audit Start Date is after the scheduled start date but within the audit end date.",
+    "totalSchedulesWithLateStart": 10,
+    "totalUniqueAuditors": 7,
+    "displayedCount": 5,
+    "remainingCount": 5,
+    "items": [
+      {
+        "auditorName": "Vivek Kumar",
+        "auditType": "Branch Compliance Audit",
+        "auditeeName": "Chennai Main Branch",
+        "scheduledStartDate": "2026-02-01",
+        "auditStartDate": "2026-02-05"
+      },
+      {
+        "auditorName": "Sneha Gupta",
+        "auditType": "IT Security Audit",
+        "auditeeName": "Data Center West",
+        "scheduledStartDate": "2026-02-03",
+        "auditStartDate": "2026-02-07"
+      },
+      {
+        "auditorName": "Arjun Singh",
+        "auditType": "Warehouse Inventory Audit",
+        "auditeeName": "Mumbai Logistics Hub",
+        "scheduledStartDate": "2026-02-08",
+        "auditStartDate": "2026-02-12"
+      },
+      {
+        "auditorName": "Deepika Sharma",
+        "auditType": "Vendor Compliance Audit",
+        "auditeeName": "Tech Solutions Inc.",
+        "scheduledStartDate": "2026-02-10",
+        "auditStartDate": "2026-02-14"
+      },
+      {
+        "auditorName": "Prakash Raj",
+        "auditType": "Financial Statement Audit",
+        "auditeeName": "Head Office Bangalore",
+        "scheduledStartDate": "2026-02-15",
+        "auditStartDate": "2026-02-19"
+      }
+    ]
+  },
+  "topReAuditAuditors": {
+    "description": "Top 10 auditors by re-audit percentage: audits sent to re-audit divided by total audits.",
+    "topLimit": 10,
+    "items": [
+      {
+        "auditorName": "Vivek Kumar",
+        "totalAudits": 25,
+        "auditsGoneToReAudit": 20,
+        "reAuditPercentage": 80
+      },
+      {
+        "auditorName": "Sneha Gupta",
+        "totalAudits": 22,
+        "auditsGoneToReAudit": 17,
+        "reAuditPercentage": 77.3
+      },
+      {
+        "auditorName": "Arjun Singh",
+        "totalAudits": 20,
+        "auditsGoneToReAudit": 14,
+        "reAuditPercentage": 70
+      },
+      {
+        "auditorName": "Deepika Sharma",
+        "totalAudits": 18,
+        "auditsGoneToReAudit": 12,
+        "reAuditPercentage": 66.7
+      },
+      {
+        "auditorName": "Prakash Raj",
+        "totalAudits": 28,
+        "auditsGoneToReAudit": 18,
+        "reAuditPercentage": 64.3
+      },
+      {
+        "auditorName": "Meena Pillai",
+        "totalAudits": 15,
+        "auditsGoneToReAudit": 9,
+        "reAuditPercentage": 60
+      }
+    ]
+  }
+}

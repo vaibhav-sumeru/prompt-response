@@ -1,0 +1,85 @@
+{
+  "totalRecords": 150,
+  "meta": {
+    "generatedAt": "2026-04-15T10:30:00Z",
+    "source": "audit_schedule_compliance_data"
+  },
+  "complianceBuckets": {
+    "description": "High-performing auditees grouped into compliance percentage buckets (81–95%, 96–99%, 100%), showing auditee count per occupied bucket.",
+    "buckets": [
+      {
+        "bucketLabel": "100%",
+        "bucketMin": 100,
+        "bucketMax": 100,
+        "auditeeCount": 8
+      },
+      {
+        "bucketLabel": "96–99%",
+        "bucketMin": 96,
+        "bucketMax": 99,
+        "auditeeCount": 7
+      },
+      {
+        "bucketLabel": "81–95%",
+        "bucketMin": 81,
+        "bucketMax": 95,
+        "auditeeCount": 18
+      }
+    ]
+  },
+  "top5HighPerformers": {
+    "description": "Top 5 auditees with the absolute highest achieved compliance percentage across all high-compliance buckets combined, sorted descending by achievedPercentage.",
+    "items": [
+      {
+        "auditeeName": "Bengaluru Tech Hub",
+        "achievedPercentage": 100
+      },
+      {
+        "auditeeName": "Hyderabad Innovation Center",
+        "achievedPercentage": 99.5
+      },
+      {
+        "auditeeName": "Chennai Financial Services",
+        "achievedPercentage": 98.25
+      },
+      {
+        "auditeeName": "Mumbai Logistics Park",
+        "achievedPercentage": 97
+      },
+      {
+        "auditeeName": "Pune Manufacturing Unit",
+        "achievedPercentage": 96.1
+      }
+    ]
+  },
+  "zoneComplianceOverview": {
+    "description": "Count of audits per zone where Achieved Percentage > 50%, sorted by count descending.",
+    "highComplianceThreshold": 50,
+    "zones": [
+      {
+        "zoneName": "North Zone",
+        "highComplianceAuditCount": 40
+      },
+      {
+        "zoneName": "South Zone",
+        "highComplianceAuditCount": 30
+      },
+      {
+        "zoneName": "East Zone",
+        "highComplianceAuditCount": 20
+      },
+      {
+        "zoneName": "West Zone",
+        "highComplianceAuditCount": 15
+      },
+      {
+        "zoneName": "Central Zone",
+        "highComplianceAuditCount": 10
+      },
+      {
+        "zoneName": "Coastal Zone",
+        "highComplianceAuditCount": 4
+      }
+    ]
+  }
+}

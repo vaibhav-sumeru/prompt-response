@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "var-01-normal-balanced",
+    "description": "Realistic balanced payload. 4 zones each with all 4 risk levels present and counts > 0. 3 auditees in top3 with different highRiskCount and zeroToleranceCount values. All zones present in recurringCriticalByZone with varied recurringCriticalPercent (20%–55%). 3 groups in recurringCriticalByGroup.top3 with different recurringCriticalCount values. Different names across both variations."
+  },
+  {
+    "id": "variation-02",
+    "category": "var-01-normal-balanced",
+    "description": "Realistic balanced payload. 4 zones each with all 4 risk levels present and counts > 0. 3 auditees in top3 with different highRiskCount and zeroToleranceCount values. All zones present in recurringCriticalByZone with varied recurringCriticalPercent (20%–55%). 3 groups in recurringCriticalByGroup.top3 with different recurringCriticalCount values. Different names across both variations."
+  },
+  {
+    "id": "variation-03",
+    "category": "var-02-critical-dominated",
+    "description": "One zone has Zero Tolerance + High issues accounting for over 70% of its total issues. The remaining zones have moderate critical exposure (30–50%). All recurringCriticalByZone zones have recurringCriticalPercent > 40%. Tests that narrator correctly identifies and reports the extreme zone without inferring causes."
+  },
+  {
+    "id": "variation-04",
+    "category": "var-03-healthy-profile",
+    "description": "All zones have Zero Tolerance count = 0 and High count ≤ 10% of total zone issues. Medium and Low dominate every zone. All riskBreakdown[].count for Zero Tolerance = 0 across all zones. Tests that narrator correctly reports zero Zero Tolerance counts without bolding them."
+  },
+  {
+    "id": "variation-05",
+    "category": "var-04-zero-recurrence",
+    "description": "All zones in recurringCriticalByZone have recurringCriticalCount = 0 and recurringCriticalPercent = 0.0. recurringCriticalByGroup.top3 also has all recurringCriticalCount = 0. Sections 1 and 2 are normally populated. Tests that narrator reports all zeros explicitly and does not bold any zero values."
+  },
+  {
+    "id": "variation-06",
+    "category": "var-05-single-zone",
+    "description": "riskWiseZoneDistribution.zones[] has exactly 1 zone. recurringCriticalByZone.zones[] also has exactly 1 zone. auditeesHighRiskConcentration.top3 has 3 items normally. recurringCriticalByGroup.top3 has 3 items normally. Tests single-entity narration for zone-level bullets."
+  },
+  {
+    "id": "variation-07",
+    "category": "var-06-single-auditee-and-group",
+    "description": "auditeesHighRiskConcentration.top3 has exactly 1 item (only 1 qualifying auditee). recurringCriticalByGroup.top3 has exactly 1 item. Zones are normally populated (3+ zones). Tests single-entity narration for bullets 2 and 4."
+  },
+  {
+    "id": "variation-08",
+    "category": "var-07-empty-auditee-top3",
+    "description": "auditeesHighRiskConcentration.top3 = [] and totalCriticalIssues = 0. recurringCriticalByGroup.top3 = [] and totalRecurringCriticalIssues = 0. Zones are normally populated. Tests 'Not Available' contextual sentence handling for bullets 2 and 4."
+  },
+  {
+    "id": "variation-09",
+    "category": "var-08-high-count-equals-zero-tolerance",
+    "description": "For one zone, highRiskCount and zeroToleranceCount are equal (e.g., both 8). For the top-ranked auditee, highRiskCount = zeroToleranceCount = 7. Tests that narrator accurately reports both counts individually without merging or conflating them."
+  },
+  {
+    "id": "variation-10",
+    "category": "var-09-tie-recurring-critical",
+    "description": "Two groups in recurringCriticalByGroup.top3 share identical recurringCriticalCount (e.g., both 15) but different groupNames and different totalCriticalIssues (giving different recurringCriticalPercent). Two zones in recurringCriticalByZone share identical recurringCriticalPercent. Tests that narrator lists all tied items individually without skipping."
+  }
+]

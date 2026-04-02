@@ -1,0 +1,195 @@
+{
+  "totalRecords": 180,
+  "meta": {
+    "generatedAt": "2024-07-30T14:30:00Z"
+  },
+  "riskWiseZoneDistribution": {
+    "description": "Distribution of issues across Zero Tolerance, High, Medium, and Low risk levels for each zone. Percentages are relative to each zone's total issues.",
+    "zones": [
+      {
+        "zoneName": "South Zone",
+        "totalIssues": 60,
+        "riskBreakdown": [
+          {
+            "riskLevel": "Zero Tolerance",
+            "count": 9,
+            "percent": 15
+          },
+          {
+            "riskLevel": "High",
+            "count": 25,
+            "percent": 41.7
+          },
+          {
+            "riskLevel": "Medium",
+            "count": 18,
+            "percent": 30
+          },
+          {
+            "riskLevel": "Low",
+            "count": 8,
+            "percent": 13.3
+          }
+        ]
+      },
+      {
+        "zoneName": "East Zone",
+        "totalIssues": 50,
+        "riskBreakdown": [
+          {
+            "riskLevel": "Zero Tolerance",
+            "count": 6,
+            "percent": 12
+          },
+          {
+            "riskLevel": "High",
+            "count": 20,
+            "percent": 40
+          },
+          {
+            "riskLevel": "Medium",
+            "count": 15,
+            "percent": 30
+          },
+          {
+            "riskLevel": "Low",
+            "count": 9,
+            "percent": 18
+          }
+        ]
+      },
+      {
+        "zoneName": "North Zone",
+        "totalIssues": 40,
+        "riskBreakdown": [
+          {
+            "riskLevel": "Zero Tolerance",
+            "count": 4,
+            "percent": 10
+          },
+          {
+            "riskLevel": "High",
+            "count": 15,
+            "percent": 37.5
+          },
+          {
+            "riskLevel": "Medium",
+            "count": 12,
+            "percent": 30
+          },
+          {
+            "riskLevel": "Low",
+            "count": 9,
+            "percent": 22.5
+          }
+        ]
+      },
+      {
+        "zoneName": "West Zone",
+        "totalIssues": 30,
+        "riskBreakdown": [
+          {
+            "riskLevel": "Zero Tolerance",
+            "count": 3,
+            "percent": 10
+          },
+          {
+            "riskLevel": "High",
+            "count": 10,
+            "percent": 33.3
+          },
+          {
+            "riskLevel": "Medium",
+            "count": 10,
+            "percent": 33.3
+          },
+          {
+            "riskLevel": "Low",
+            "count": 7,
+            "percent": 23.3
+          }
+        ]
+      }
+    ]
+  },
+  "auditeesHighRiskConcentration": {
+    "description": "Top 3 auditees ranked by combined High and Zero Tolerance issue count, with individual breakdowns and contribution to total critical issues.",
+    "totalCriticalIssues": 92,
+    "top3": [
+      {
+        "auditeeName": "ABC Corp – Mumbai",
+        "highRiskCount": 18,
+        "zeroToleranceCount": 6,
+        "totalCriticalCount": 24,
+        "contributionPercent": 26.1
+      },
+      {
+        "auditeeName": "XYZ Services – Delhi",
+        "highRiskCount": 15,
+        "zeroToleranceCount": 4,
+        "totalCriticalCount": 19,
+        "contributionPercent": 20.7
+      },
+      {
+        "auditeeName": "PQR Solutions – Bengaluru",
+        "highRiskCount": 12,
+        "zeroToleranceCount": 3,
+        "totalCriticalCount": 15,
+        "contributionPercent": 16.3
+      }
+    ]
+  },
+  "recurringCriticalByZone": {
+    "description": "For each zone, count and percentage of High and Zero Tolerance issues that are flagged as recurring. Sorted by recurringCriticalPercent descending.",
+    "zones": [
+      {
+        "zoneName": "South Zone",
+        "totalCriticalIssues": 34,
+        "recurringCriticalCount": 0,
+        "recurringCriticalPercent": 0
+      },
+      {
+        "zoneName": "East Zone",
+        "totalCriticalIssues": 26,
+        "recurringCriticalCount": 0,
+        "recurringCriticalPercent": 0
+      },
+      {
+        "zoneName": "North Zone",
+        "totalCriticalIssues": 19,
+        "recurringCriticalCount": 0,
+        "recurringCriticalPercent": 0
+      },
+      {
+        "zoneName": "West Zone",
+        "totalCriticalIssues": 13,
+        "recurringCriticalCount": 0,
+        "recurringCriticalPercent": 0
+      }
+    ]
+  },
+  "recurringCriticalByGroup": {
+    "description": "Top 3 groups by count of High and Zero Tolerance issues that are also recurring, sorted by recurringCriticalCount descending.",
+    "totalRecurringCriticalIssues": 0,
+    "top3": [
+      {
+        "groupName": "Operations Group",
+        "totalCriticalIssues": 40,
+        "recurringCriticalCount": 0,
+        "recurringCriticalPercent": 0
+      },
+      {
+        "groupName": "Finance Group",
+        "totalCriticalIssues": 30,
+        "recurringCriticalCount": 0,
+        "recurringCriticalPercent": 0
+      },
+      {
+        "groupName": "Compliance Group",
+        "totalCriticalIssues": 25,
+        "recurringCriticalCount": 0,
+        "recurringCriticalPercent": 0
+      }
+    ]
+  }
+}

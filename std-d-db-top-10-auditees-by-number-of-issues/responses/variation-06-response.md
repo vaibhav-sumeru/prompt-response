@@ -1,0 +1,3 @@
+- **Zone Issue Concentration:** **North Zone** records **55** issues across 11 auditees (avg **5.0** per auditee), followed by South Zone: 48 issues, 13 auditees, avg 3.7 per auditee; West Zone: 35 issues, 10 auditees, avg 3.5 per auditee; East Zone: 20 issues, 8 auditees, avg 2.5 per auditee.
+- **Top Groups by Issues:** **Risk Management Dept** (Risk Assessment) leads with **40** issues; IT Operations (IT Audit): 32 issues; Customer Service (Operational Audit): 25 issues.
+- **High & Zero Tolerance Issues – Auditee Level:** No auditees with High or Zero Tolerance issues have been identified in this payload; total critical issues recorded across the portfolio stands at 0.

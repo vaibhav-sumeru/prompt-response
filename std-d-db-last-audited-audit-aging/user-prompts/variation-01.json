@@ -1,0 +1,42 @@
+{
+  "totalAuditees": 350,
+  "meta": {
+    "generatedAt": "2025-07-20T10:30:00Z",
+    "disclaimer": "* Auditees created without any schedules are not included in the above summary."
+  },
+  "agingAboveThreshold": {
+    "thresholdDays": 90,
+    "count": 75,
+    "percent": 21.4
+  },
+  "top5AgingAuditees": {
+    "description": "Top 5 auditees with the highest number of days since last audit among those not audited for more than 90 days.",
+    "items": [
+      {
+        "auditeeName": "Delhi Hub",
+        "lastScheduleCreatedDate": "05-Jun-2024",
+        "differenceInDays": 410
+      },
+      {
+        "auditeeName": "Mumbai Branch",
+        "lastScheduleCreatedDate": "05-Jul-2024",
+        "differenceInDays": 380
+      },
+      {
+        "auditeeName": "Chennai Operations",
+        "lastScheduleCreatedDate": "04-Aug-2024",
+        "differenceInDays": 350
+      },
+      {
+        "auditeeName": "Kolkata Division",
+        "lastScheduleCreatedDate": "03-Sep-2024",
+        "differenceInDays": 320
+      },
+      {
+        "auditeeName": "Bangalore Office",
+        "lastScheduleCreatedDate": "03-Oct-2024",
+        "differenceInDays": 290
+      }
+    ]
+  }
+}

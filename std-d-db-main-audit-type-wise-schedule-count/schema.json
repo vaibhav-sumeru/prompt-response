@@ -1,0 +1,184 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "std-d-db-main-audit-type-wise-schedule-count",
+  "description": "Main Audit Type Wise Schedule Count widget — zone-level schedule volume with top-3 audit types per zone, re-audit and re-assess activity with top-3 audit types by combined rework count, and a full execution-status summary.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["totalSchedules", "meta", "zoneVolume", "reAuditAndReAssess", "executionStatusSummary"],
+  "definitions": {
+    "auditTypeCount": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["auditTypeName", "count"],
+      "properties": {
+        "auditTypeName": {
+          "description": "Name of the audit type as stored in AuditTypeName field.",
+          "type": "string"
+        },
+        "count": {
+          "description": "Number of distinct MainAuditScheduleIds for this audit type.",
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "properties": {
+    "totalSchedules": {
+      "description": "Total count of distinct MainAuditScheduleIds across all zones and audit types.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt"],
+      "properties": {
+        "generatedAt": {
+          "description": "ISO 8601 timestamp when this payload was generated.",
+          "type": "string"
+        }
+      }
+    },
+    "zoneVolume": {
+      "description": "Per-zone schedule counts with percentage of total and top-3 audit types by volume.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "items"],
+      "properties": {
+        "description": { "type": "string" },
+        "items": {
+          "type": "array",
+          "minItems": 0,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["zoneName", "scheduleCount", "percent", "top3AuditTypes"],
+            "properties": {
+              "zoneName": {
+                "description": "Zone name as stored in ZoneName field.",
+                "type": "string"
+              },
+              "scheduleCount": {
+                "description": "Distinct MainAuditScheduleId count for this zone.",
+                "type": "integer",
+                "minimum": 0
+              },
+              "percent": {
+                "description": "(scheduleCount / totalSchedules) * 100, rounded to 1 decimal.",
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              },
+              "top3AuditTypes": {
+                "description": "Top 3 audit types by schedule count within this zone, sorted descending.",
+                "type": "array",
+                "minItems": 0,
+                "maxItems": 3,
+                "items": { "$ref": "#/definitions/auditTypeCount" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "reAuditAndReAssess": {
+      "description": "Overall re-audit and re-assess exposure, plus top-3 audit types by combined rework count.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "totalReAuditCount", "totalReAuditPercent", "totalReAssessCount", "totalReAssessPercent", "top3ByCombined"],
+      "properties": {
+        "description": { "type": "string" },
+        "totalReAuditCount": {
+          "description": "Total schedules with an active re-audit status (ReAuditInProgressAt or ReAuditSubmittedAt populated).",
+          "type": "integer",
+          "minimum": 0
+        },
+        "totalReAuditPercent": {
+          "description": "(totalReAuditCount / totalSchedules) * 100, rounded to 1 decimal.",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "totalReAssessCount": {
+          "description": "Total schedules with ReAssessAt populated.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "totalReAssessPercent": {
+          "description": "(totalReAssessCount / totalSchedules) * 100, rounded to 1 decimal.",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "top3ByCombined": {
+          "description": "Top 3 audit types ranked by (reAuditCount + reAssessCount) descending.",
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["mainAuditTypeName", "reAuditCount", "reAssessCount", "combinedCount"],
+            "properties": {
+              "mainAuditTypeName": {
+                "description": "Audit type name.",
+                "type": "string"
+              },
+              "reAuditCount": {
+                "description": "Schedules in re-audit for this audit type.",
+                "type": "integer",
+                "minimum": 0
+              },
+              "reAssessCount": {
+                "description": "Schedules in re-assess for this audit type.",
+                "type": "integer",
+                "minimum": 0
+              },
+              "combinedCount": {
+                "description": "reAuditCount + reAssessCount.",
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "executionStatusSummary": {
+      "description": "Count and percentage of schedules per execution-status bucket across the full dataset.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "items"],
+      "properties": {
+        "description": { "type": "string" },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["status", "count", "percent"],
+            "properties": {
+              "status": {
+                "description": "Human-readable status bucket label (e.g., Finalized, In Progress, Lapsed, Re-Audit, Re-Assess, Reopened, Cancelled, Not Started).",
+                "type": "string"
+              },
+              "count": {
+                "description": "Number of schedules in this status bucket.",
+                "type": "integer",
+                "minimum": 0
+              },
+              "percent": {
+                "description": "(count / totalSchedules) * 100, rounded to 1 decimal.",
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

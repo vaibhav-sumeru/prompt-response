@@ -1,0 +1,152 @@
+{
+  "totalRecords": 350,
+  "meta": {
+    "generatedAt": "2026-03-20T00:00:00Z",
+    "source": "audit_schedule_execution_data"
+  },
+  "avgAuditsInProgress": {
+    "description": "Average count of audits currently In Progress per auditor across the full team.",
+    "totalInProgressAudits": 90,
+    "totalAuditors": 6,
+    "averagePerAuditor": 15
+  },
+  "avgLapsedAudits": {
+    "description": "Average count of audits in Lapsed status per auditor across the team.",
+    "totalLapsedAudits": 0,
+    "totalAuditorsWithLapsed": 0,
+    "averageLapsedPerAuditor": 0
+  },
+  "zoneWithMaxDelayedAudits": {
+    "description": "Top zones ranked by total count of Lapsed or Not Executed audits.",
+    "topZones": [
+      {
+        "zoneName": "East Zone",
+        "totalDelayedAudits": 0,
+        "lapsedCount": 0,
+        "notExecutedCount": 0
+      },
+      {
+        "zoneName": "Central Zone",
+        "totalDelayedAudits": 0,
+        "lapsedCount": 0,
+        "notExecutedCount": 0
+      },
+      {
+        "zoneName": "South Zone",
+        "totalDelayedAudits": 0,
+        "lapsedCount": 0,
+        "notExecutedCount": 0
+      }
+    ]
+  },
+  "auditorStartedAfterSchedule": {
+    "description": "Audit schedules where Audit Start Date is after the scheduled start date but within the audit end date.",
+    "totalSchedulesWithLateStart": 8,
+    "totalUniqueAuditors": 5,
+    "displayedCount": 5,
+    "remainingCount": 3,
+    "items": [
+      {
+        "auditorName": "Ananya Singh",
+        "auditType": "Branch Compliance Audit",
+        "auditeeName": "Indiranagar Branch",
+        "scheduledStartDate": "2026-01-07",
+        "auditStartDate": "2026-01-11"
+      },
+      {
+        "auditorName": "Vikram Sharma",
+        "auditType": "Regional Office Audit",
+        "auditeeName": "Mumbai Regional Office",
+        "scheduledStartDate": "2026-01-12",
+        "auditStartDate": "2026-01-16"
+      },
+      {
+        "auditorName": "Pooja Das",
+        "auditType": "Branch Compliance Audit",
+        "auditeeName": "Park Street Branch",
+        "scheduledStartDate": "2026-01-15",
+        "auditStartDate": "2026-01-18"
+      },
+      {
+        "auditorName": "Rajesh Kumar",
+        "auditType": "Warehouse Audit",
+        "auditeeName": "Pune Logistics Hub",
+        "scheduledStartDate": "2026-01-20",
+        "auditStartDate": "2026-01-23"
+      },
+      {
+        "auditorName": "Divya Rao",
+        "auditType": "Branch Compliance Audit",
+        "auditeeName": "Jubilee Hills Branch",
+        "scheduledStartDate": "2026-01-22",
+        "auditStartDate": "2026-01-26"
+      }
+    ]
+  },
+  "topReAuditAuditors": {
+    "description": "Top 10 auditors by re-audit percentage: audits sent to re-audit divided by total audits.",
+    "topLimit": 10,
+    "items": [
+      {
+        "auditorName": "Ananya Singh",
+        "totalAudits": 25,
+        "auditsGoneToReAudit": 20,
+        "reAuditPercentage": 80
+      },
+      {
+        "auditorName": "Vikram Sharma",
+        "totalAudits": 22,
+        "auditsGoneToReAudit": 17,
+        "reAuditPercentage": 77.3
+      },
+      {
+        "auditorName": "Pooja Das",
+        "totalAudits": 20,
+        "auditsGoneToReAudit": 14,
+        "reAuditPercentage": 70
+      },
+      {
+        "auditorName": "Rajesh Kumar",
+        "totalAudits": 18,
+        "auditsGoneToReAudit": 12,
+        "reAuditPercentage": 66.7
+      },
+      {
+        "auditorName": "Divya Rao",
+        "totalAudits": 24,
+        "auditsGoneToReAudit": 15,
+        "reAuditPercentage": 62.5
+      },
+      {
+        "auditorName": "Sanjay Gupta",
+        "totalAudits": 19,
+        "auditsGoneToReAudit": 11,
+        "reAuditPercentage": 57.9
+      },
+      {
+        "auditorName": "Meera Joshi",
+        "totalAudits": 17,
+        "auditsGoneToReAudit": 9,
+        "reAuditPercentage": 52.9
+      },
+      {
+        "auditorName": "Alok Patel",
+        "totalAudits": 21,
+        "auditsGoneToReAudit": 10,
+        "reAuditPercentage": 47.6
+      },
+      {
+        "auditorName": "Sneha Nair",
+        "totalAudits": 16,
+        "auditsGoneToReAudit": 7,
+        "reAuditPercentage": 43.8
+      },
+      {
+        "auditorName": "Arjun Mehta",
+        "totalAudits": 25,
+        "auditsGoneToReAudit": 10,
+        "reAuditPercentage": 40
+      }
+    ]
+  }
+}

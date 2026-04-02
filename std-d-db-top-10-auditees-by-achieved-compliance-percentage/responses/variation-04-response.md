@@ -1,0 +1,3 @@
+- **Auditee Compliance Buckets:** There are **15** auditees in the **100%** range, and **50** auditees in the **81–95%** range.
+- **Top 5 Overall High Performers:** **Delhi Metro Project** achieved **100.00%**, **Mumbai Coastal Road** achieved **100.00%**, **Bengaluru Tech Park** achieved **93.50%**, **Hyderabad Pharma Unit** achieved **92.10%**, and **Chennai Automobile Plant** achieved **88.00%**.
+- **Zones with High Compliance:** **North Zone** leads with **20** audit schedules above 50% compliance, followed by South Zone with 15, West Zone with 10, East Zone with 8, and Central Zone with 5.

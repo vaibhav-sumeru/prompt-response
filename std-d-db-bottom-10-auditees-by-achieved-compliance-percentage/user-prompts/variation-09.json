@@ -1,0 +1,77 @@
+{
+  "totalRecords": 250,
+  "meta": {
+    "generatedAt": "2026-03-23T00:00:00Z",
+    "source": "audit_schedule_compliance_data"
+  },
+  "complianceBuckets": {
+    "description": "Low-performing auditees grouped into compliance percentage buckets (0–15%, 15–25%, 25–50%), showing auditee count per occupied bucket.",
+    "buckets": [
+      {
+        "bucketLabel": "0–15%",
+        "bucketMin": 0,
+        "bucketMax": 15,
+        "auditeeCount": 5
+      },
+      {
+        "bucketLabel": "15–25%",
+        "bucketMin": 15,
+        "bucketMax": 25,
+        "auditeeCount": 4
+      },
+      {
+        "bucketLabel": "25–50%",
+        "bucketMin": 25,
+        "bucketMax": 50,
+        "auditeeCount": 3
+      }
+    ]
+  },
+  "top3OverallLowPerformers": {
+    "description": "Top 3 auditees with the absolute lowest achieved compliance percentage across all low-compliance buckets combined, sorted ascending by achievedPercentage.",
+    "items": [
+      {
+        "auditeeName": "Hyderabad Tech Park",
+        "achievedPercentage": 3.15
+      },
+      {
+        "auditeeName": "Kolkata Downtown Branch",
+        "achievedPercentage": 6.7
+      },
+      {
+        "auditeeName": "Chennai Main Office",
+        "achievedPercentage": 10.9
+      }
+    ]
+  },
+  "zoneComplianceOverview": {
+    "description": "Count of audits per zone where Achieved Percentage < 50%, sorted by count descending.",
+    "lowComplianceThreshold": 50,
+    "zones": [
+      {
+        "zoneName": "North Zone",
+        "lowComplianceAuditCount": 35
+      },
+      {
+        "zoneName": "West Zone",
+        "lowComplianceAuditCount": 28
+      },
+      {
+        "zoneName": "East Zone",
+        "lowComplianceAuditCount": 21
+      },
+      {
+        "zoneName": "South Zone",
+        "lowComplianceAuditCount": 14
+      },
+      {
+        "zoneName": "Central Zone",
+        "lowComplianceAuditCount": 9
+      },
+      {
+        "zoneName": "Northeast Zone",
+        "lowComplianceAuditCount": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "totalRecords": 131,
+  "meta": {
+    "generatedAt": "2024-07-20T10:30:00Z",
+    "source": "audit_issues_data"
+  },
+  "zoneIssueConcentration": {
+    "description": "Per-zone breakdown of total open issues and distinct auditees contributing those issues, with average issues per auditee. Sorted descending by avgIssuesPerAuditee to surface the zone with the highest issue concentration.",
+    "zones": [
+      {
+        "zoneName": "North Zone",
+        "totalIssues": 45,
+        "distinctAuditees": 9,
+        "avgIssuesPerAuditee": 5
+      },
+      {
+        "zoneName": "South Zone",
+        "totalIssues": 38,
+        "distinctAuditees": 10,
+        "avgIssuesPerAuditee": 3.8
+      },
+      {
+        "zoneName": "West Zone",
+        "totalIssues": 28,
+        "distinctAuditees": 8,
+        "avgIssuesPerAuditee": 3.5
+      },
+      {
+        "zoneName": "East Zone",
+        "totalIssues": 20,
+        "distinctAuditees": 7,
+        "avgIssuesPerAuditee": 2.9
+      }
+    ]
+  },
+  "topGroupsByIssues": {
+    "description": "Top 3 groups by total issue count, with their corresponding audit type names.",
+    "top3": [
+      {
+        "groupName": "Risk Management Division",
+        "auditTypeName": "Compliance Audit",
+        "issueCount": 35
+      },
+      {
+        "groupName": "IT Infrastructure Team",
+        "auditTypeName": "Technology Audit",
+        "issueCount": 27
+      }
+    ]
+  },
+  "topAuditeesByCriticalIssues": {
+    "description": "Top 3 auditees by combined High + Zero Tolerance issue count, with individual breakdown of each risk level.",
+    "totalCriticalIssues": 35,
+    "top3": [
+      {
+        "auditeeName": "Bengaluru Data Center",
+        "highCount": 10,
+        "zeroToleranceCount": 5,
+        "combinedCriticalCount": 15
+      },
+      {
+        "auditeeName": "Chennai Operations Hub",
+        "highCount": 7,
+        "zeroToleranceCount": 4,
+        "combinedCriticalCount": 11
+      },
+      {
+        "auditeeName": "Hyderabad Sales Office",
+        "highCount": 6,
+        "zeroToleranceCount": 3,
+        "combinedCriticalCount": 9
+      }
+    ]
+  }
+}

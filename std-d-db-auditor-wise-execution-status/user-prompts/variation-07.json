@@ -1,0 +1,116 @@
+{
+  "totalRecords": 280,
+  "meta": {
+    "generatedAt": "2024-07-25T10:30:00Z",
+    "source": "audit_schedule_execution_data"
+  },
+  "avgAuditsInProgress": {
+    "description": "Average count of audits currently In Progress per auditor across the full team.",
+    "totalInProgressAudits": 75,
+    "totalAuditors": 5,
+    "averagePerAuditor": 15
+  },
+  "avgLapsedAudits": {
+    "description": "Average count of audits in Lapsed status per auditor across the team.",
+    "totalLapsedAudits": 10,
+    "totalAuditorsWithLapsed": 5,
+    "averageLapsedPerAuditor": 2
+  },
+  "zoneWithMaxDelayedAudits": {
+    "description": "Top zones ranked by total count of Lapsed or Not Executed audits.",
+    "topZones": [
+      {
+        "zoneName": "East Zone",
+        "totalDelayedAudits": 25,
+        "lapsedCount": 15,
+        "notExecutedCount": 10
+      },
+      {
+        "zoneName": "South Zone",
+        "totalDelayedAudits": 18,
+        "lapsedCount": 10,
+        "notExecutedCount": 8
+      },
+      {
+        "zoneName": "Central Zone",
+        "totalDelayedAudits": 12,
+        "lapsedCount": 7,
+        "notExecutedCount": 5
+      }
+    ]
+  },
+  "auditorStartedAfterSchedule": {
+    "description": "Audit schedules where Audit Start Date is after the scheduled start date but within the audit end date.",
+    "totalSchedulesWithLateStart": 0,
+    "totalUniqueAuditors": 0,
+    "displayedCount": 0,
+    "remainingCount": 0,
+    "items": []
+  },
+  "topReAuditAuditors": {
+    "description": "Top 10 auditors by re-audit percentage: audits sent to re-audit divided by total audits.",
+    "topLimit": 10,
+    "items": [
+      {
+        "auditorName": "Deepika Singh",
+        "totalAudits": 25,
+        "auditsGoneToReAudit": 20,
+        "reAuditPercentage": 80
+      },
+      {
+        "auditorName": "Arjun Mehta",
+        "totalAudits": 22,
+        "auditsGoneToReAudit": 17,
+        "reAuditPercentage": 77.3
+      },
+      {
+        "auditorName": "Kiran Rao",
+        "totalAudits": 20,
+        "auditsGoneToReAudit": 15,
+        "reAuditPercentage": 75
+      },
+      {
+        "auditorName": "Meera Das",
+        "totalAudits": 18,
+        "auditsGoneToReAudit": 13,
+        "reAuditPercentage": 72.2
+      },
+      {
+        "auditorName": "Sanjay Kumar",
+        "totalAudits": 28,
+        "auditsGoneToReAudit": 20,
+        "reAuditPercentage": 71.4
+      },
+      {
+        "auditorName": "Pooja Gupta",
+        "totalAudits": 15,
+        "auditsGoneToReAudit": 10,
+        "reAuditPercentage": 66.7
+      },
+      {
+        "auditorName": "Amit Sharma",
+        "totalAudits": 23,
+        "auditsGoneToReAudit": 15,
+        "reAuditPercentage": 65.2
+      },
+      {
+        "auditorName": "Rina Patel",
+        "totalAudits": 19,
+        "auditsGoneToReAudit": 12,
+        "reAuditPercentage": 63.2
+      },
+      {
+        "auditorName": "Vikram Singh",
+        "totalAudits": 21,
+        "auditsGoneToReAudit": 13,
+        "reAuditPercentage": 61.9
+      },
+      {
+        "auditorName": "Neha Sharma",
+        "totalAudits": 16,
+        "auditsGoneToReAudit": 9,
+        "reAuditPercentage": 56.3
+      }
+    ]
+  }
+}

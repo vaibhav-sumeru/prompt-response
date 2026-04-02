@@ -1,0 +1,204 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "std-d-db-zone-wise-number-of-schedule",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["totalRecords", "meta", "zoneExecutionOverview", "clusterAuditeeBottlenecks", "outcomeCorrelation"],
+  "properties": {
+    "totalRecords": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of audit schedule records in this payload."
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt"],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "description": "Payload generation timestamp in ISO-8601 format."
+        }
+      }
+    },
+    "zoneExecutionOverview": {
+      "type": "object",
+      "description": "Section 1: Zone-wise scheduling coverage and execution health. Each zone shows schedule volume and breakdown across four execution buckets.",
+      "additionalProperties": false,
+      "required": ["description", "zones", "top3ClustersBySchedules"],
+      "properties": {
+        "description": { "type": "string" },
+        "zones": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/zoneItem" }
+        },
+        "top3ClustersBySchedules": {
+          "type": "array",
+          "maxItems": 3,
+          "description": "Top 3 clusters overall (not per-zone) sorted by totalSchedules descending.",
+          "items": { "$ref": "#/definitions/clusterVolumeItem" }
+        }
+      }
+    },
+    "clusterAuditeeBottlenecks": {
+      "type": "object",
+      "description": "Section 2: Cluster and auditee-level execution bottlenecks — highest schedule volume, worst delay, and most reopenings.",
+      "additionalProperties": false,
+      "required": ["description", "top3ClustersByVolume", "top3ClustersByDelay", "top3ClustersByReopening", "top3AuditeesByDelay", "top3AuditeesByReopening"],
+      "properties": {
+        "description": { "type": "string" },
+        "top3ClustersByVolume": {
+          "type": "array",
+          "maxItems": 3,
+          "description": "Top 3 clusters by total schedule count, sorted descending.",
+          "items": { "$ref": "#/definitions/clusterVolumeItem" }
+        },
+        "top3ClustersByDelay": {
+          "type": "array",
+          "maxItems": 3,
+          "description": "Top 3 clusters by count of delayed schedules, sorted descending.",
+          "items": { "$ref": "#/definitions/clusterDelayItem" }
+        },
+        "top3ClustersByReopening": {
+          "type": "array",
+          "maxItems": 3,
+          "description": "Top 3 clusters by count of schedules with ReopenedAt set, sorted descending.",
+          "items": { "$ref": "#/definitions/clusterReopenItem" }
+        },
+        "top3AuditeesByDelay": {
+          "type": "array",
+          "maxItems": 3,
+          "description": "Top 3 auditees by count of delayed schedules, sorted descending.",
+          "items": { "$ref": "#/definitions/auditeeDelayItem" }
+        },
+        "top3AuditeesByReopening": {
+          "type": "array",
+          "maxItems": 3,
+          "description": "Top 3 auditees by count of reopened schedules, sorted descending.",
+          "items": { "$ref": "#/definitions/auditeeReopenItem" }
+        }
+      }
+    },
+    "outcomeCorrelation": {
+      "type": "object",
+      "description": "Section 3: AuditRating distribution for delayed and re-audited schedules.",
+      "additionalProperties": false,
+      "required": ["description", "delayedSchedules", "reauditSchedules"],
+      "properties": {
+        "description": { "type": "string" },
+        "delayedSchedules": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["total", "byRating"],
+          "properties": {
+            "total": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Count of schedules where (AuditStartDate < generatedAt OR AuditEndDate < generatedAt) AND ExecutionStatus NOT IN [finalized, accepted, closed]. Either date being overdue qualifies as delayed."
+            },
+            "byRating": {
+              "type": "array",
+              "description": "AuditRating distribution across all delayed schedules. Null AuditRating is represented as 'Not Rated'. Sorted by count descending.",
+              "items": { "$ref": "#/definitions/ratingItem" }
+            }
+          }
+        },
+        "reauditSchedules": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["total", "byRating"],
+          "properties": {
+            "total": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Count of schedules where ReAuditAcceptedAt IS NOT NULL OR ReAuditInProgressAt IS NOT NULL."
+            },
+            "byRating": {
+              "type": "array",
+              "description": "AuditRating distribution across all re-audited schedules. Null AuditRating is represented as 'Not Rated'. Sorted by count descending.",
+              "items": { "$ref": "#/definitions/ratingItem" }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "zoneItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["zoneName", "totalSchedules", "pctOfTotal", "completedCount", "completedPct", "inProgressCount", "inProgressPct", "lapsedCount", "lapsedPct", "reauditCount", "reauditPct"],
+      "properties": {
+        "zoneName": { "type": "string" },
+        "totalSchedules": { "type": "integer", "minimum": 0 },
+        "pctOfTotal": { "type": "number", "minimum": 0, "description": "Zone's share of total schedules (%)" },
+        "completedCount": { "type": "integer", "minimum": 0, "description": "ExecutionStatus IN [finalized, accepted, closed]" },
+        "completedPct": { "type": "number", "minimum": 0 },
+        "inProgressCount": { "type": "integer", "minimum": 0, "description": "ExecutionStatus IN [submitted, in_review, in_progress, provisionally_submitted]" },
+        "inProgressPct": { "type": "number", "minimum": 0 },
+        "lapsedCount": { "type": "integer", "minimum": 0, "description": "ExecutionStatus IN [lapsed_not_started, lapsed_in_progress]" },
+        "lapsedPct": { "type": "number", "minimum": 0 },
+        "reauditCount": { "type": "integer", "minimum": 0, "description": "ExecutionStatus IN [reaudit_submitted, reaudit_accepted, reaudit_in_progress]" },
+        "reauditPct": { "type": "number", "minimum": 0 }
+      }
+    },
+    "clusterVolumeItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["clusterName", "totalSchedules", "pctOfTotal"],
+      "properties": {
+        "clusterName": { "type": "string" },
+        "totalSchedules": { "type": "integer", "minimum": 0 },
+        "pctOfTotal": { "type": "number", "minimum": 0 }
+      }
+    },
+    "clusterDelayItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["clusterName", "delayedCount", "avgDelayDays"],
+      "properties": {
+        "clusterName": { "type": "string" },
+        "delayedCount": { "type": "integer", "minimum": 0 },
+        "avgDelayDays": { "type": "number", "minimum": 0, "description": "Average days overdue for delayed schedules in this cluster." }
+      }
+    },
+    "clusterReopenItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["clusterName", "reopenedCount"],
+      "properties": {
+        "clusterName": { "type": "string" },
+        "reopenedCount": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "auditeeDelayItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["auditeeName", "delayedSchedules"],
+      "properties": {
+        "auditeeName": { "type": "string" },
+        "delayedSchedules": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "auditeeReopenItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["auditeeName", "reopenedSchedules"],
+      "properties": {
+        "auditeeName": { "type": "string" },
+        "reopenedSchedules": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "ratingItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["auditRating", "count", "pctOfTotal"],
+      "properties": {
+        "auditRating": { "type": "string", "description": "AuditRating value from source. Null mapped to 'Not Rated'." },
+        "count": { "type": "integer", "minimum": 0 },
+        "pctOfTotal": { "type": "number", "minimum": 0 }
+      }
+    }
+  }
+}

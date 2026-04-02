@@ -1,0 +1,3 @@
+- **Zone Issue Concentration:** **North Zone** records **45** issues across 10 auditees (avg **4.5** per auditee).
+- **Top Groups by Issues:** **IT Security Group** (Cybersecurity Audit) leads with **20** issues; Logistics Operations (Operational Efficiency Audit): 15; Vendor Management (Compliance Audit): 10.
+- **High & Zero Tolerance Issues – Auditee Level:** Of 22 total critical issues, **Delhi Data Center** has the highest with **10** (High: 7, Zero Tolerance: 3); Gurgaon Regional Office: 7 (High: 5, Zero Tolerance: 2); Chandigarh Hub: 5 (High: 4, Zero Tolerance: 1).

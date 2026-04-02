@@ -1,0 +1,96 @@
+{
+  "totalRecords": 350,
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "resolutionAndBacklogHealth": {
+    "totalIssuesAcrossSubAudits": 350,
+    "topDelayedSubAudits": [
+      {
+        "subAuditTypeName": "Process Compliance",
+        "totalIssues": 85,
+        "issuesPendingOver21Days": 30,
+        "percentagePendingOver21Days": 35.29,
+        "issuesPendingOver28Days": 15,
+        "percentagePendingOver28Days": 17.65
+      },
+      {
+        "subAuditTypeName": "Financial Reconciliation",
+        "totalIssues": 70,
+        "issuesPendingOver21Days": 22,
+        "percentagePendingOver21Days": 31.43,
+        "issuesPendingOver28Days": 10,
+        "percentagePendingOver28Days": 14.29
+      }
+    ],
+    "topHealthySubAudits": [
+      {
+        "subAuditTypeName": "IT Security Protocols",
+        "totalIssues": 90,
+        "issuesResolvedWithin7Days": 70,
+        "percentageResolvedWithin7Days": 77.78
+      },
+      {
+        "subAuditTypeName": "HR Policy Adherence",
+        "totalIssues": 65,
+        "issuesResolvedWithin7Days": 48,
+        "percentageResolvedWithin7Days": 73.85
+      }
+    ]
+  },
+  "riskAndPriorityExposure": {
+    "totalHighRiskIssues": 80,
+    "percentageHighRisk": 22.86,
+    "totalZeroToleranceIssues": 18,
+    "recurringZeroToleranceIssues": 9,
+    "totalMediumRiskIssues": 130,
+    "topHighRiskSubAudits": [
+      {
+        "subAuditTypeName": "Process Compliance",
+        "combinedHighRiskAndZeroTolerance": 38,
+        "highRiskIssues": 30,
+        "zeroToleranceIssues": 8,
+        "recurringHighRiskAndZeroTolerance": 5
+      },
+      {
+        "subAuditTypeName": "Data Privacy",
+        "combinedHighRiskAndZeroTolerance": 25,
+        "highRiskIssues": 20,
+        "zeroToleranceIssues": 5,
+        "recurringHighRiskAndZeroTolerance": 3
+      },
+      {
+        "subAuditTypeName": "Vendor Management",
+        "combinedHighRiskAndZeroTolerance": 17,
+        "highRiskIssues": 15,
+        "zeroToleranceIssues": 2,
+        "recurringHighRiskAndZeroTolerance": 1
+      }
+    ]
+  },
+  "exceptionsAndHotspots": {
+    "topZonesByRiskAndAgeing": [
+      {
+        "zoneName": "East Zone",
+        "totalIssues": 95,
+        "highAndCriticalRiskIssues": 35,
+        "recurringIssues": 18,
+        "issuesPendingOver21Days": 28
+      },
+      {
+        "zoneName": "South Zone",
+        "totalIssues": 80,
+        "highAndCriticalRiskIssues": 28,
+        "recurringIssues": 15,
+        "issuesPendingOver21Days": 22
+      },
+      {
+        "zoneName": "North Zone",
+        "totalIssues": 75,
+        "highAndCriticalRiskIssues": 25,
+        "recurringIssues": 12,
+        "issuesPendingOver21Days": 20
+      }
+    ]
+  }
+}

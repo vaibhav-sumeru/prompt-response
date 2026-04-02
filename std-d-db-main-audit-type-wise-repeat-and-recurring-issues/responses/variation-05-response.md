@@ -1,0 +1,4 @@
+- **Recurring > 50% Audits:** One main audit type records recurring issues above 50%, with **Cybersecurity Policy Audit** at **75%** (**15** of 20 issues).
+- **Repeat > 75% Audits:** One main audit type records repeat issues above 75%, with **Data Privacy Compliance Audit** at **90%** (**18** of 20 issues).
+- **High & Zero Tolerance Risk:** High and Zero Tolerance risk issues by recurring tagging show Cybersecurity Policy Audit with **10** issues; by repeat tagging, Data Privacy Compliance Audit shows **14** issues.
+- **Group Distribution:** Recurring issues are highest in IT Department with **25** issues, and lowest in HR Department with 3 issues. Repeat issues are highest in Legal & Compliance with **20** issues, and lowest in Marketing Department with 2 issues.

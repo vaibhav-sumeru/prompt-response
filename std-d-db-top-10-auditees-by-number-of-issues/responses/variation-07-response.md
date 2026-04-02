@@ -1,0 +1,3 @@
+- **Zone Issue Concentration:** **North Zone** records **45** issues across 9 distinct auditees (avg **5.0** per auditee), followed by South Zone: 38 issues, 10 distinct auditees, avg 3.8; West Zone: 28 issues, 8 distinct auditees, avg 3.5; East Zone: 20 issues, 7 distinct auditees, avg 2.9.
+- **Top Groups by Issues:** **Risk Management Division** (Compliance Audit) leads with **35** issues; IT Infrastructure Team (Technology Audit): 27 issues.
+- **High & Zero Tolerance Issues – Auditee Level:** Of 35 total critical issues, **Bengaluru Data Center** has the highest with **15** (High: 10, Zero Tolerance: 5); Chennai Operations Hub: 11 (High: 7, Zero Tolerance: 4); Hyderabad Sales Office: 9 (High: 6, Zero Tolerance: 3).

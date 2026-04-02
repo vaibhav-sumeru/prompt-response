@@ -1,0 +1,77 @@
+{
+  "totalRecords": 145,
+  "meta": {
+    "generatedAt": "2024-07-20T10:30:00Z",
+    "source": "audit_schedule_compliance_data"
+  },
+  "complianceBuckets": {
+    "description": "High-performing auditees grouped into compliance percentage buckets (81–95%, 96–99%, 100%), showing auditee count per occupied bucket.",
+    "buckets": [
+      {
+        "bucketLabel": "100%",
+        "bucketMin": 100,
+        "bucketMax": 100,
+        "auditeeCount": 6
+      },
+      {
+        "bucketLabel": "96–99%",
+        "bucketMin": 96,
+        "bucketMax": 99,
+        "auditeeCount": 10
+      },
+      {
+        "bucketLabel": "81–95%",
+        "bucketMin": 81,
+        "bucketMax": 95,
+        "auditeeCount": 22
+      }
+    ]
+  },
+  "top5HighPerformers": {
+    "description": "Top 5 auditees with the absolute highest achieved compliance percentage across all high-compliance buckets combined, sorted descending by achievedPercentage.",
+    "items": [
+      {
+        "auditeeName": "Delhi Main Office",
+        "achievedPercentage": 100
+      },
+      {
+        "auditeeName": "Kolkata Regional Hub",
+        "achievedPercentage": 99.5
+      },
+      {
+        "auditeeName": "Ahmedabad Branch One",
+        "achievedPercentage": 98.75
+      },
+      {
+        "auditeeName": "Surat Zonal Center",
+        "achievedPercentage": 97.2
+      },
+      {
+        "auditeeName": "Jaipur City Division",
+        "achievedPercentage": 96.1
+      }
+    ]
+  },
+  "zoneComplianceOverview": {
+    "description": "Count of audits per zone where Achieved Percentage > 50%, sorted by count descending.",
+    "highComplianceThreshold": 50,
+    "zones": [
+      {
+        "zoneName": "Western Region",
+        "highComplianceAuditCount": 18
+      },
+      {
+        "zoneName": "Northern Region",
+        "highComplianceAuditCount": 14
+      },
+      {
+        "zoneName": "Eastern Region",
+        "highComplianceAuditCount": 11
+      },
+      {
+        "zoneName": "Southern Region",
+        "highComplianceAuditCount": 7
+      }
+    ]
+  }
+}

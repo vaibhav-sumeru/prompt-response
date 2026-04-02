@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "var-01-normal-balanced",
+    "description": "Realistic balanced payload. Both recurringAbove50 and repeatAbove75 have 5 items each in top5 (totalQualifyingAudits > 5). highZeroToleranceRisk.byRecurring and byRepeat both have 3 items. groupDistribution.recurring and .repeat both have 3 items in top3 and bottom3. All recurringPercent values > 50, all repeatPercent values > 75. Different audit names and group names across the two variations."
+  },
+  {
+    "id": "variation-02",
+    "category": "var-01-normal-balanced",
+    "description": "Realistic balanced payload. Both recurringAbove50 and repeatAbove75 have 5 items each in top5 (totalQualifyingAudits > 5). highZeroToleranceRisk.byRecurring and byRepeat both have 3 items. groupDistribution.recurring and .repeat both have 3 items in top3 and bottom3. All recurringPercent values > 50, all repeatPercent values > 75. Different audit names and group names across the two variations."
+  },
+  {
+    "id": "variation-03",
+    "category": "var-02-no-qualifying-recurring",
+    "description": "recurringAbove50.totalQualifyingAudits = 0 and top5 = []. repeatAbove75 is normally populated (3+ items). highZeroToleranceRisk and groupDistribution are fully populated. Tests narrator 'Not Available' handling for bullet 1."
+  },
+  {
+    "id": "variation-04",
+    "category": "var-03-no-qualifying-repeat",
+    "description": "repeatAbove75.totalQualifyingAudits = 0 and top5 = []. recurringAbove50 is normally populated (3+ items). highZeroToleranceRisk and groupDistribution are fully populated. Tests narrator 'Not Available' handling for bullet 2."
+  },
+  {
+    "id": "variation-05",
+    "category": "var-04-single-qualifying-audit",
+    "description": "recurringAbove50.totalQualifyingAudits = 1 and top5 has exactly 1 item. repeatAbove75.totalQualifyingAudits = 1 and top5 has exactly 1 item. highZeroToleranceRisk.byRecurring.top3 and byRepeat.top3 each have exactly 1 item. groupDistribution.recurring.top3 has 1 item, bottom3 has 1 item; same for repeat. Tests single-entity narration for all sections."
+  },
+  {
+    "id": "variation-06",
+    "category": "var-05-extreme-rates",
+    "description": "Top audit in recurringAbove50.top5 has recurringPercent = 98.0 (e.g., 49 of 50 issues). Top audit in repeatAbove75.top5 has repeatPercent = 96.6 (e.g., 28 of 29 issues). All other values are realistic. Tests correct reporting of extreme percentage values without rounding or approximation."
+  },
+  {
+    "id": "variation-07",
+    "category": "var-06-zero-risk-issues",
+    "description": "highZeroToleranceRisk.byRecurring.top3 all have issueCount = 0. highZeroToleranceRisk.byRepeat.top3 all have issueCount = 0. Sections 1, 2, and 4 are normally populated. Tests that narrator reports zero counts explicitly (not as 'Not Available') and does not bold zero values."
+  },
+  {
+    "id": "variation-08",
+    "category": "var-07-empty-risk-sections",
+    "description": "highZeroToleranceRisk.byRecurring.top3 = [] and highZeroToleranceRisk.byRepeat.top3 = []. Sections 1, 2, and 4 are normally populated. Tests that narrator writes 'Not Available' for both sub-groups of bullet 3."
+  },
+  {
+    "id": "variation-09",
+    "category": "var-08-large-qualifying-count",
+    "description": "recurringAbove50.totalQualifyingAudits = 18 but top5 has exactly 5 items. repeatAbove75.totalQualifyingAudits = 14 but top5 has exactly 5 items. Tests that narrator correctly states the full qualifying count (18, 14) and reports only the 5 shown as top 5 — without inferring the remaining audits."
+  },
+  {
+    "id": "variation-10",
+    "category": "var-09-tie-percent",
+    "description": "Two audits in recurringAbove50.top5 share identical recurringPercent (e.g., both at 65.0) but different recurringCounts and auditNames. Similarly in repeatAbove75.top5. Tests that narrator lists both items with their exact counts without merging or skipping duplicates."
+  }
+]

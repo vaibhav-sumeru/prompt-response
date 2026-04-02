@@ -1,0 +1,55 @@
+{
+  "totalRecords": 85,
+  "meta": {
+    "generatedAt": "2026-03-31T10:30:00Z",
+    "source": "issues_data"
+  },
+  "zoneIssueConcentration": {
+    "description": "Per-zone breakdown of total open issues and distinct auditees contributing those issues, with average issues per auditee. Sorted descending by avgIssuesPerAuditee to surface the zone with the highest issue concentration.",
+    "zones": []
+  },
+  "topGroupsByIssues": {
+    "description": "Top 3 groups by total issue count, with their corresponding audit type names.",
+    "top3": [
+      {
+        "groupName": "Procurement Services",
+        "auditTypeName": "Supply Chain Audit",
+        "issueCount": 28
+      },
+      {
+        "groupName": "IT Infrastructure",
+        "auditTypeName": "Information Security Audit",
+        "issueCount": 22
+      },
+      {
+        "groupName": "Product Development",
+        "auditTypeName": "Quality Audit",
+        "issueCount": 18
+      }
+    ]
+  },
+  "topAuditeesByCriticalIssues": {
+    "description": "Top 3 auditees by combined High + Zero Tolerance issue count, with individual breakdown of each risk level.",
+    "totalCriticalIssues": 35,
+    "top3": [
+      {
+        "auditeeName": "Chennai R&D Center",
+        "highCount": 8,
+        "zeroToleranceCount": 5,
+        "combinedCriticalCount": 13
+      },
+      {
+        "auditeeName": "Hyderabad Data Center",
+        "highCount": 7,
+        "zeroToleranceCount": 4,
+        "combinedCriticalCount": 11
+      },
+      {
+        "auditeeName": "Bangalore Manufacturing Unit",
+        "highCount": 6,
+        "zeroToleranceCount": 5,
+        "combinedCriticalCount": 11
+      }
+    ]
+  }
+}

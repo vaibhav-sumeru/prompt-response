@@ -1,0 +1,230 @@
+{
+  "totalRecords": 300,
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "zoneExecutionOverview": {
+    "description": "Zone-wise scheduling coverage and execution health. Zones sorted by totalSchedules descending. Execution buckets: Completed (finalized/accepted/closed), In-Progress (submitted/in_review/in_progress/provisionally_submitted), Lapsed (lapsed_not_started/lapsed_in_progress), Re-Audit (reaudit_submitted/reaudit_accepted/reaudit_in_progress).",
+    "zones": [
+      {
+        "zoneName": "South Zone",
+        "totalSchedules": 90,
+        "pctOfTotal": 30,
+        "completedCount": 40,
+        "completedPct": 44.4,
+        "inProgressCount": 20,
+        "inProgressPct": 22.2,
+        "lapsedCount": 10,
+        "lapsedPct": 11.1,
+        "reauditCount": 20,
+        "reauditPct": 22.2
+      },
+      {
+        "zoneName": "North Zone",
+        "totalSchedules": 75,
+        "pctOfTotal": 25,
+        "completedCount": 35,
+        "completedPct": 46.7,
+        "inProgressCount": 15,
+        "inProgressPct": 20,
+        "lapsedCount": 10,
+        "lapsedPct": 13.3,
+        "reauditCount": 15,
+        "reauditPct": 20
+      },
+      {
+        "zoneName": "East Zone",
+        "totalSchedules": 60,
+        "pctOfTotal": 20,
+        "completedCount": 25,
+        "completedPct": 41.7,
+        "inProgressCount": 10,
+        "inProgressPct": 16.7,
+        "lapsedCount": 5,
+        "lapsedPct": 8.3,
+        "reauditCount": 20,
+        "reauditPct": 33.3
+      },
+      {
+        "zoneName": "West Zone",
+        "totalSchedules": 45,
+        "pctOfTotal": 15,
+        "completedCount": 25,
+        "completedPct": 55.6,
+        "inProgressCount": 10,
+        "inProgressPct": 22.2,
+        "lapsedCount": 5,
+        "lapsedPct": 11.1,
+        "reauditCount": 5,
+        "reauditPct": 11.1
+      },
+      {
+        "zoneName": "Central Zone",
+        "totalSchedules": 30,
+        "pctOfTotal": 10,
+        "completedCount": 15,
+        "completedPct": 50,
+        "inProgressCount": 5,
+        "inProgressPct": 16.7,
+        "lapsedCount": 2,
+        "lapsedPct": 6.7,
+        "reauditCount": 8,
+        "reauditPct": 26.7
+      }
+    ],
+    "top3ClustersBySchedules": [
+      {
+        "clusterName": "Jayanagar",
+        "totalSchedules": 55,
+        "pctOfTotal": 18.3
+      },
+      {
+        "clusterName": "MG Road",
+        "totalSchedules": 48,
+        "pctOfTotal": 16
+      },
+      {
+        "clusterName": "Koramangala",
+        "totalSchedules": 42,
+        "pctOfTotal": 14
+      }
+    ]
+  },
+  "clusterAuditeeBottlenecks": {
+    "description": "Cluster and auditee-level execution bottlenecks: highest schedule concentration, most delayed, and most reopened.",
+    "top3ClustersByVolume": [
+      {
+        "clusterName": "Jayanagar",
+        "totalSchedules": 55,
+        "pctOfTotal": 18.3
+      },
+      {
+        "clusterName": "MG Road",
+        "totalSchedules": 48,
+        "pctOfTotal": 16
+      },
+      {
+        "clusterName": "Koramangala",
+        "totalSchedules": 42,
+        "pctOfTotal": 14
+      }
+    ],
+    "top3ClustersByDelay": [
+      {
+        "clusterName": "MG Road Cluster",
+        "delayedCount": 22,
+        "avgDelayDays": 15.1
+      },
+      {
+        "clusterName": "Whitefield",
+        "delayedCount": 18,
+        "avgDelayDays": 10.5
+      },
+      {
+        "clusterName": "Indiranagar",
+        "delayedCount": 15,
+        "avgDelayDays": 8.9
+      }
+    ],
+    "top3ClustersByReopening": [
+      {
+        "clusterName": "Jayanagar",
+        "reopenedCount": 15
+      },
+      {
+        "clusterName": "Koramangala",
+        "reopenedCount": 12
+      },
+      {
+        "clusterName": "MG Road Cluster",
+        "reopenedCount": 9
+      }
+    ],
+    "top3AuditeesByDelay": [
+      {
+        "auditeeName": "Auditee Alpha",
+        "delayedSchedules": 10
+      },
+      {
+        "auditeeName": "Auditee Beta",
+        "delayedSchedules": 8
+      },
+      {
+        "auditeeName": "Auditee Gamma",
+        "delayedSchedules": 6
+      }
+    ],
+    "top3AuditeesByReopening": [
+      {
+        "auditeeName": "Auditee X",
+        "reopenedSchedules": 9
+      },
+      {
+        "auditeeName": "Auditee Y",
+        "reopenedSchedules": 7
+      },
+      {
+        "auditeeName": "Auditee Z",
+        "reopenedSchedules": 5
+      }
+    ]
+  },
+  "outcomeCorrelation": {
+    "description": "AuditRating distribution for delayed schedules and re-audited schedules. Delayed = (AuditStartDate < today OR AuditEndDate < today) AND ExecutionStatus NOT IN [finalized, accepted, closed]. Re-audited = ReAuditAcceptedAt IS NOT NULL OR ReAuditInProgressAt IS NOT NULL.",
+    "delayedSchedules": {
+      "total": 65,
+      "byRating": [
+        {
+          "auditRating": "Not Rated",
+          "count": 30,
+          "pctOfTotal": 46.2
+        },
+        {
+          "auditRating": "c",
+          "count": 20,
+          "pctOfTotal": 30.8
+        },
+        {
+          "auditRating": "b",
+          "count": 10,
+          "pctOfTotal": 15.4
+        },
+        {
+          "auditRating": "a",
+          "count": 5,
+          "pctOfTotal": 7.7
+        }
+      ]
+    },
+    "reauditSchedules": {
+      "total": 68,
+      "byRating": [
+        {
+          "auditRating": "Not Rated",
+          "count": 25,
+          "pctOfTotal": 36.8
+        },
+        {
+          "auditRating": "c",
+          "count": 20,
+          "pctOfTotal": 29.4
+        },
+        {
+          "auditRating": "b",
+          "count": 15,
+          "pctOfTotal": 22.1
+        },
+        {
+          "auditRating": "a",
+          "count": 5,
+          "pctOfTotal": 7.4
+        },
+        {
+          "auditRating": "d",
+          "count": 3,
+          "pctOfTotal": 4.4
+        }
+      ]
+    }
+  }
+}

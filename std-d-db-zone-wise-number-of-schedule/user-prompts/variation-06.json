@@ -1,0 +1,115 @@
+{
+  "totalRecords": 200,
+  "meta": {
+    "generatedAt": "2024-07-20T10:30:00Z"
+  },
+  "zoneExecutionOverview": {
+    "description": "Zone-wise scheduling coverage and execution health. Zones sorted by totalSchedules descending. Execution buckets: Completed (finalized/accepted/closed), In-Progress (submitted/in_review/in_progress/provisionally_submitted), Lapsed (lapsed_not_started/lapsed_in_progress), Re-Audit (reaudit_submitted/reaudit_accepted/reaudit_in_progress).",
+    "zones": [
+      {
+        "zoneName": "S Zone",
+        "totalSchedules": 80,
+        "pctOfTotal": 40,
+        "completedCount": 80,
+        "completedPct": 100,
+        "inProgressCount": 0,
+        "inProgressPct": 0,
+        "lapsedCount": 0,
+        "lapsedPct": 0,
+        "reauditCount": 0,
+        "reauditPct": 0
+      },
+      {
+        "zoneName": "N Zone",
+        "totalSchedules": 60,
+        "pctOfTotal": 30,
+        "completedCount": 60,
+        "completedPct": 100,
+        "inProgressCount": 0,
+        "inProgressPct": 0,
+        "lapsedCount": 0,
+        "lapsedPct": 0,
+        "reauditCount": 0,
+        "reauditPct": 0
+      },
+      {
+        "zoneName": "E Zone",
+        "totalSchedules": 40,
+        "pctOfTotal": 20,
+        "completedCount": 40,
+        "completedPct": 100,
+        "inProgressCount": 0,
+        "inProgressPct": 0,
+        "lapsedCount": 0,
+        "lapsedPct": 0,
+        "reauditCount": 0,
+        "reauditPct": 0
+      },
+      {
+        "zoneName": "W Zone",
+        "totalSchedules": 20,
+        "pctOfTotal": 10,
+        "completedCount": 20,
+        "completedPct": 100,
+        "inProgressCount": 0,
+        "inProgressPct": 0,
+        "lapsedCount": 0,
+        "lapsedPct": 0,
+        "reauditCount": 0,
+        "reauditPct": 0
+      }
+    ],
+    "top3ClustersBySchedules": [
+      {
+        "clusterName": "Cluster Alpha",
+        "totalSchedules": 70,
+        "pctOfTotal": 35
+      },
+      {
+        "clusterName": "Cluster Beta",
+        "totalSchedules": 60,
+        "pctOfTotal": 30
+      },
+      {
+        "clusterName": "Cluster Gamma",
+        "totalSchedules": 40,
+        "pctOfTotal": 20
+      }
+    ]
+  },
+  "clusterAuditeeBottlenecks": {
+    "description": "Cluster and auditee-level execution bottlenecks: highest schedule concentration, most delayed, and most reopened.",
+    "top3ClustersByVolume": [
+      {
+        "clusterName": "Cluster Alpha",
+        "totalSchedules": 70,
+        "pctOfTotal": 35
+      },
+      {
+        "clusterName": "Cluster Beta",
+        "totalSchedules": 60,
+        "pctOfTotal": 30
+      },
+      {
+        "clusterName": "Cluster Gamma",
+        "totalSchedules": 40,
+        "pctOfTotal": 20
+      }
+    ],
+    "top3ClustersByDelay": [],
+    "top3ClustersByReopening": [],
+    "top3AuditeesByDelay": [],
+    "top3AuditeesByReopening": []
+  },
+  "outcomeCorrelation": {
+    "description": "AuditRating distribution for delayed schedules and re-audited schedules. Delayed = (AuditStartDate < today OR AuditEndDate < today) AND ExecutionStatus NOT IN [finalized, accepted, closed]. Re-audited = ReAuditAcceptedAt IS NOT NULL OR ReAuditInProgressAt IS NOT NULL.",
+    "delayedSchedules": {
+      "total": 0,
+      "byRating": []
+    },
+    "reauditSchedules": {
+      "total": 0,
+      "byRating": []
+    }
+  }
+}

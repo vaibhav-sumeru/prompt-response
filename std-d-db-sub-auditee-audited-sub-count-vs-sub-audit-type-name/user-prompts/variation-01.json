@@ -1,0 +1,6 @@
+{
+  "__rawResponse": null,
+  "__parseError": "Cannot read properties of null (reading 'trim')",
+  "__category": "var-01-normal-balanced",
+  "__note": "Raw LLM output captured because JSON parsing failed"
+}

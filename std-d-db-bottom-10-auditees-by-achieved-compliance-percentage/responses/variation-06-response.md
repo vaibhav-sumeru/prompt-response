@@ -1,0 +1,3 @@
+- **Auditee Compliance Buckets:** **1 auditee** in the **0–15%** range, **1 auditee** in the **15–25%** range, and **1 auditee** in the **25–50%** range.
+- **Top 3 Overall Low Performers:** **Kolkata Downtown Branch** recorded the lowest achieved compliance at **8.50%**.
+- **Zones with Low Compliance:** **West Zone** leads with **12** audit schedules below 50% compliance, followed by North Zone with 9, East Zone with 6, South Zone with 3, and Central Zone with 1.

@@ -1,0 +1,86 @@
+{
+  "totalRecords": 163,
+  "meta": {
+    "generatedAt": "2024-07-29T10:30:00Z",
+    "source": "audit_insights_platform"
+  },
+  "zoneIssueConcentration": {
+    "description": "Per-zone breakdown of total open issues and distinct auditees contributing those issues, with average issues per auditee. Sorted descending by avgIssuesPerAuditee to surface the zone with the highest issue concentration.",
+    "zones": [
+      {
+        "zoneName": "Central Operations Hub",
+        "totalIssues": 100,
+        "distinctAuditees": 5,
+        "avgIssuesPerAuditee": 20
+      },
+      {
+        "zoneName": "North Region",
+        "totalIssues": 25,
+        "distinctAuditees": 6,
+        "avgIssuesPerAuditee": 4.2
+      },
+      {
+        "zoneName": "West District",
+        "totalIssues": 18,
+        "distinctAuditees": 5,
+        "avgIssuesPerAuditee": 3.6
+      },
+      {
+        "zoneName": "South Division",
+        "totalIssues": 12,
+        "distinctAuditees": 4,
+        "avgIssuesPerAuditee": 3
+      },
+      {
+        "zoneName": "East Sector",
+        "totalIssues": 8,
+        "distinctAuditees": 3,
+        "avgIssuesPerAuditee": 2.7
+      }
+    ]
+  },
+  "topGroupsByIssues": {
+    "description": "Top 3 groups by total issue count, with their corresponding audit type names.",
+    "top3": [
+      {
+        "groupName": "Global Risk Management",
+        "auditTypeName": "Enterprise Risk Audit",
+        "issueCount": 65
+      },
+      {
+        "groupName": "Digital Transformation Unit",
+        "auditTypeName": "IT Governance Audit",
+        "issueCount": 40
+      },
+      {
+        "groupName": "Supply Chain Logistics",
+        "auditTypeName": "Operational Efficiency Audit",
+        "issueCount": 30
+      }
+    ]
+  },
+  "topAuditeesByCriticalIssues": {
+    "description": "Top 3 auditees by combined High + Zero Tolerance issue count, with individual breakdown of each risk level.",
+    "totalCriticalIssues": 85,
+    "top3": [
+      {
+        "auditeeName": "Headquarters Branch",
+        "highCount": 20,
+        "zeroToleranceCount": 10,
+        "combinedCriticalCount": 30
+      },
+      {
+        "auditeeName": "Regional Data Center",
+        "highCount": 15,
+        "zeroToleranceCount": 8,
+        "combinedCriticalCount": 23
+      },
+      {
+        "auditeeName": "Manufacturing Plant A",
+        "highCount": 12,
+        "zeroToleranceCount": 7,
+        "combinedCriticalCount": 19
+      }
+    ]
+  }
+}

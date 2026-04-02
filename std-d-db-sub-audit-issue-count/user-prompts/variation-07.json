@@ -1,0 +1,69 @@
+{
+  "_description": "Data payload for the Sub-audit issues count widget containing aggregated statistics at the global and sub-audit level.",
+  "totalRecords": 150,
+  "meta": {
+    "generatedAt": "2024-05-15T10:00:00Z"
+  },
+  "resolutionAndBacklogHealth": {
+    "_description": "Tracks ageing delays like >21 days and highly resolved metrics (<7 days resolution) for sub-audits.",
+    "totalIssuesAcrossSubAudits": 150,
+    "topDelayedSubAudits": [],
+    "topHealthySubAudits": [
+      {
+        "_description": "Sub-audit types heavily resolved within 7 days. Contains up to 3 items.",
+        "subAuditTypeName": "Compliance Checks",
+        "totalIssues": 50,
+        "issuesResolvedWithin7Days": 49,
+        "percentageResolvedWithin7Days": 98
+      },
+      {
+        "subAuditTypeName": "Financial Controls",
+        "totalIssues": 40,
+        "issuesResolvedWithin7Days": 39,
+        "percentageResolvedWithin7Days": 97.5
+      },
+      {
+        "subAuditTypeName": "Operational Efficiency",
+        "totalIssues": 30,
+        "issuesResolvedWithin7Days": 29,
+        "percentageResolvedWithin7Days": 96.67
+      }
+    ]
+  },
+  "riskAndPriorityExposure": {
+    "_description": "Contains risk composition like High Risk and Zero Tolerance issues globally and across worst-performing sub-audits.",
+    "totalHighRiskIssues": 0,
+    "percentageHighRisk": 0,
+    "totalZeroToleranceIssues": 0,
+    "recurringZeroToleranceIssues": 0,
+    "totalMediumRiskIssues": 5,
+    "topHighRiskSubAudits": []
+  },
+  "exceptionsAndHotspots": {
+    "_description": "Identifies regions/zones with highest exceptions, recurring issues, and delays.",
+    "topZonesByRiskAndAgeing": [
+      {
+        "_description": "Zones sorted by highest occurrences of critical risk, recurrences, and delayed timelines. Top 3 items.",
+        "zoneName": "North Zone",
+        "totalIssues": 45,
+        "highAndCriticalRiskIssues": 0,
+        "recurringIssues": 0,
+        "issuesPendingOver21Days": 0
+      },
+      {
+        "zoneName": "Central Zone",
+        "totalIssues": 35,
+        "highAndCriticalRiskIssues": 0,
+        "recurringIssues": 0,
+        "issuesPendingOver21Days": 0
+      },
+      {
+        "zoneName": "East Zone",
+        "totalIssues": 25,
+        "highAndCriticalRiskIssues": 0,
+        "recurringIssues": 0,
+        "issuesPendingOver21Days": 0
+      }
+    ]
+  }
+}

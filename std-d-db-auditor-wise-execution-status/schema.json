@@ -1,0 +1,311 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "std-d-db-auditor-wise-execution-status",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "totalRecords",
+    "meta",
+    "avgAuditsInProgress",
+    "avgLapsedAudits",
+    "zoneWithMaxDelayedAudits",
+    "auditorStartedAfterSchedule",
+    "topReAuditAuditors"
+  ],
+  "properties": {
+    "totalRecords": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of audit schedules included in this widget payload."
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "generatedAt",
+        "source"
+      ],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "description": "Payload generation timestamp in ISO-8601 format."
+        },
+        "source": {
+          "type": "string",
+          "description": "Source API or transformer identifier."
+        }
+      }
+    },
+
+    "avgAuditsInProgress": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Point 1: Average count of audits currently in 'In Progress' execution status across all auditors.",
+      "required": [
+        "description",
+        "totalInProgressAudits",
+        "totalAuditors",
+        "averagePerAuditor"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable summary of what this section represents."
+        },
+        "totalInProgressAudits": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of audit schedules where Execution Status = 'In Progress' across all auditors."
+        },
+        "totalAuditors": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of distinct auditors who have at least one 'In Progress' audit."
+        },
+        "averagePerAuditor": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Pre-computed average: totalInProgressAudits / totalAuditors. Rounded to 1 decimal place."
+        }
+      }
+    },
+
+    "avgLapsedAudits": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Point 2: Average count of audits in 'Lapsed' execution status across the team.",
+      "required": [
+        "description",
+        "totalLapsedAudits",
+        "totalAuditorsWithLapsed",
+        "averageLapsedPerAuditor"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable summary of what this section represents."
+        },
+        "totalLapsedAudits": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of audit schedules where Execution Status = 'Lapsed'."
+        },
+        "totalAuditorsWithLapsed": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of distinct auditors who have at least one lapsed audit."
+        },
+        "averageLapsedPerAuditor": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Pre-computed average: totalLapsedAudits / totalAuditorsWithLapsed. Rounded to 1 decimal place."
+        }
+      }
+    },
+
+    "zoneWithMaxDelayedAudits": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Point 3: Zone(s) with the highest count of audits in 'Lapsed' or 'Not Executed' status.",
+      "required": [
+        "description",
+        "topZones"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of the section."
+        },
+        "topZones": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 3,
+          "description": "Top zones sorted by total delayed audits descending. Maximum 3 zones shown.",
+          "items": {
+            "$ref": "#/definitions/zoneDelayedItem"
+          }
+        }
+      }
+    },
+
+    "auditorStartedAfterSchedule": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Point 4: Auditors who started audits after the scheduled start date but before the audit end date (delayed start, within period).",
+      "required": [
+        "description",
+        "totalSchedulesWithLateStart",
+        "totalUniqueAuditors",
+        "displayedCount",
+        "remainingCount",
+        "items"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of the section."
+        },
+        "totalSchedulesWithLateStart": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of schedules where Audit Start Date > Schedule Started At AND Audit Start Date <= End Audit Period."
+        },
+        "totalUniqueAuditors": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of distinct auditors appearing in the late-start list."
+        },
+        "displayedCount": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 5,
+          "description": "Number of records actually listed in items[] (capped at 5)."
+        },
+        "remainingCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of additional records beyond the top 5 (totalSchedulesWithLateStart - displayedCount). 0 if total <= 5."
+        },
+        "items": {
+          "type": "array",
+          "maxItems": 5,
+          "description": "Top 5 late-start records with key details.",
+          "items": {
+            "$ref": "#/definitions/lateStartItem"
+          }
+        }
+      }
+    },
+
+    "topReAuditAuditors": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Point 5: Top 10 auditors ranked by re-audit percentage (audits sent to re-audit / total audits * 100).",
+      "required": [
+        "description",
+        "topLimit",
+        "items"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of the section."
+        },
+        "topLimit": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Maximum number of auditors listed (10)."
+        },
+        "items": {
+          "type": "array",
+          "maxItems": 10,
+          "description": "Auditors sorted by reAuditPercentage descending.",
+          "items": {
+            "$ref": "#/definitions/reAuditAuditorItem"
+          }
+        }
+      }
+    }
+  },
+
+  "definitions": {
+    "zoneDelayedItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "zoneName",
+        "totalDelayedAudits",
+        "lapsedCount",
+        "notExecutedCount"
+      ],
+      "properties": {
+        "zoneName": {
+          "type": "string",
+          "description": "Name of the zone."
+        },
+        "totalDelayedAudits": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total count of audits where Execution Status = 'Lapsed' OR 'Not Executed' in this zone."
+        },
+        "lapsedCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of schedules where Execution Status = 'Lapsed' in this zone."
+        },
+        "notExecutedCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of schedules where Execution Status = 'Not Executed' in this zone."
+        }
+      }
+    },
+
+    "lateStartItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "auditorName",
+        "auditType",
+        "auditeeName",
+        "scheduledStartDate",
+        "auditStartDate"
+      ],
+      "properties": {
+        "auditorName": {
+          "type": "string",
+          "description": "Name of the auditor (from Auditor Name column)."
+        },
+        "auditType": {
+          "type": "string",
+          "description": "Type of the audit (Main Audit Type or Sub-Audit Type)."
+        },
+        "auditeeName": {
+          "type": "string",
+          "description": "Name of the auditee entity being audited."
+        },
+        "scheduledStartDate": {
+          "type": "string",
+          "description": "The originally scheduled start date (Schedule Started At), ISO-8601 date string."
+        },
+        "auditStartDate": {
+          "type": "string",
+          "description": "The actual date on which the audit was started (Audit Start Date), ISO-8601 date string."
+        }
+      }
+    },
+
+    "reAuditAuditorItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "auditorName",
+        "totalAudits",
+        "auditsGoneToReAudit",
+        "reAuditPercentage"
+      ],
+      "properties": {
+        "auditorName": {
+          "type": "string",
+          "description": "Name of the auditor."
+        },
+        "totalAudits": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total number of audit schedules assigned to this auditor."
+        },
+        "auditsGoneToReAudit": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of schedules for this auditor where Re Audit Accepted At is not null (sent to re-audit)."
+        },
+        "reAuditPercentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Pre-computed: (auditsGoneToReAudit / totalAudits) * 100. Rounded to 1 decimal place."
+        }
+      }
+    }
+  }
+}

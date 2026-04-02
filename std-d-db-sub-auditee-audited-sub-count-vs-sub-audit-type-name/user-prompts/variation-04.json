@@ -1,0 +1,75 @@
+{
+  "_description": "PI (Primary Identifier) execution analysis payload for sub-audit types — includes PI not-found gaps, found vs not-found summary, reason analysis, and 100% execution sub-audits.",
+  "totalRecords": 200,
+  "totalSubAudits": 5,
+  "meta": {
+    "generatedAt": "2024-07-30T10:00:00Z"
+  },
+  "topSubAuditsByPINotFound": {
+    "_description": "Top 3 sub-audit types with the highest count of PI Not Found, sorted descending by piNotFoundCount.",
+    "items": []
+  },
+  "piFoundVsNotFoundSummary": {
+    "_description": "Aggregate PI found vs not-found statistics across all 5 sub-audit types, with top 3 sub-audits by total PI volume.",
+    "avgPIFoundCount": 40,
+    "avgPINotFoundCount": 0,
+    "avgPIFoundPercent": 100,
+    "topSubAuditsByTotalPI": [
+      {
+        "subAuditTypeName": "Client Onboarding Review",
+        "totalPICount": 60,
+        "piFoundCount": 60,
+        "piFoundPercent": 100,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      },
+      {
+        "subAuditTypeName": "Regulatory Compliance",
+        "totalPICount": 50,
+        "piFoundCount": 50,
+        "piFoundPercent": 100,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      },
+      {
+        "subAuditTypeName": "Transaction Monitoring",
+        "totalPICount": 40,
+        "piFoundCount": 40,
+        "piFoundPercent": 100,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      }
+    ]
+  },
+  "piNotFoundReasonAnalysis": {
+    "_description": "Not Found reason breakdown for top 5 sub-audits by piNotFoundCount. AI narrator identifies recurring reasons across these sub-audits from topSubAuditsWithReasons[].",
+    "topSubAuditsWithReasons": []
+  },
+  "fullPIExecutionSubAudits": {
+    "_description": "Sub-audits with 100% PI execution (piNotFoundCount = 0). 5 of 5 sub-audits achieved full execution.",
+    "totalSubAuditsWithFullExecution": 5,
+    "percentSubAuditsWithFullExecution": 100,
+    "top5ByTotalPI": [
+      {
+        "subAuditTypeName": "Client Onboarding Review",
+        "totalPICount": 60
+      },
+      {
+        "subAuditTypeName": "Regulatory Compliance",
+        "totalPICount": 50
+      },
+      {
+        "subAuditTypeName": "Transaction Monitoring",
+        "totalPICount": 40
+      },
+      {
+        "subAuditTypeName": "Fraud Detection",
+        "totalPICount": 30
+      },
+      {
+        "subAuditTypeName": "Data Privacy Audit",
+        "totalPICount": 20
+      }
+    ]
+  }
+}

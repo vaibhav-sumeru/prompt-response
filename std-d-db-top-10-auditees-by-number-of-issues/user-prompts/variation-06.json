@@ -1,0 +1,61 @@
+{
+  "totalRecords": 158,
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z",
+    "source": "issues_data"
+  },
+  "zoneIssueConcentration": {
+    "description": "Per-zone breakdown of total open issues and distinct auditees contributing those issues, with average issues per auditee. Sorted descending by avgIssuesPerAuditee to surface the zone with the highest issue concentration.",
+    "zones": [
+      {
+        "zoneName": "North Zone",
+        "totalIssues": 55,
+        "distinctAuditees": 11,
+        "avgIssuesPerAuditee": 5
+      },
+      {
+        "zoneName": "South Zone",
+        "totalIssues": 48,
+        "distinctAuditees": 13,
+        "avgIssuesPerAuditee": 3.7
+      },
+      {
+        "zoneName": "West Zone",
+        "totalIssues": 35,
+        "distinctAuditees": 10,
+        "avgIssuesPerAuditee": 3.5
+      },
+      {
+        "zoneName": "East Zone",
+        "totalIssues": 20,
+        "distinctAuditees": 8,
+        "avgIssuesPerAuditee": 2.5
+      }
+    ]
+  },
+  "topGroupsByIssues": {
+    "description": "Top 3 groups by total issue count, with their corresponding audit type names.",
+    "top3": [
+      {
+        "groupName": "Risk Management Dept",
+        "auditTypeName": "Risk Assessment",
+        "issueCount": 40
+      },
+      {
+        "groupName": "IT Operations",
+        "auditTypeName": "IT Audit",
+        "issueCount": 32
+      },
+      {
+        "groupName": "Customer Service",
+        "auditTypeName": "Operational Audit",
+        "issueCount": 25
+      }
+    ]
+  },
+  "topAuditeesByCriticalIssues": {
+    "description": "Top 3 auditees by combined High + Zero Tolerance issue count, with individual breakdown of each risk level.",
+    "totalCriticalIssues": 0,
+    "top3": []
+  }
+}

@@ -1,0 +1,4 @@
+- **Top PI Gaps:** No sub-audits recorded any PI Not Found instances.
+- **PI Execution Overview:** Across 5 sub-audits, the average PI execution shows 40 PIs found and 0 PIs not found, resulting in a 100.0% PI found rate. Among the highest volume sub-audits, Client Onboarding Review processed 60 PIs with 100.0% found, Regulatory Compliance processed 50 PIs with 100.0% found, and Transaction Monitoring processed 40 PIs with 100.0% found.
+- **Common Not-Found Reasons:** No PI Not Found reasons were recorded, as all PIs were found across all sub-audits.
+- **100% PI Execution:** **5** sub-audits, representing 100.0% of all sub-audits, achieved full PI execution. **Client Onboarding Review** leads this group with 60 total PIs, followed by Regulatory Compliance (50 PIs), Transaction Monitoring (40 PIs), Fraud Detection (30 PIs), and Data Privacy Audit (20 PIs).

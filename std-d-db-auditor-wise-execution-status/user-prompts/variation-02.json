@@ -1,0 +1,152 @@
+{
+  "totalRecords": 350,
+  "meta": {
+    "generatedAt": "2026-03-22T10:30:00Z",
+    "source": "audit_schedule_execution_data"
+  },
+  "avgAuditsInProgress": {
+    "description": "Average count of audits currently In Progress per auditor across the full team.",
+    "totalInProgressAudits": 84,
+    "totalAuditors": 7,
+    "averagePerAuditor": 12
+  },
+  "avgLapsedAudits": {
+    "description": "Average count of audits in Lapsed status per auditor across the team.",
+    "totalLapsedAudits": 15,
+    "totalAuditorsWithLapsed": 6,
+    "averageLapsedPerAuditor": 2.5
+  },
+  "zoneWithMaxDelayedAudits": {
+    "description": "Top zones ranked by total count of Lapsed or Not Executed audits.",
+    "topZones": [
+      {
+        "zoneName": "West Zone",
+        "totalDelayedAudits": 22,
+        "lapsedCount": 13,
+        "notExecutedCount": 9
+      },
+      {
+        "zoneName": "North Zone",
+        "totalDelayedAudits": 17,
+        "lapsedCount": 10,
+        "notExecutedCount": 7
+      },
+      {
+        "zoneName": "East Zone",
+        "totalDelayedAudits": 11,
+        "lapsedCount": 6,
+        "notExecutedCount": 5
+      }
+    ]
+  },
+  "auditorStartedAfterSchedule": {
+    "description": "Audit schedules where Audit Start Date is after the scheduled start date but within the audit end date.",
+    "totalSchedulesWithLateStart": 8,
+    "totalUniqueAuditors": 5,
+    "displayedCount": 5,
+    "remainingCount": 3,
+    "items": [
+      {
+        "auditorName": "Anjali Sharma",
+        "auditType": "Branch Compliance Audit",
+        "auditeeName": "Indiranagar Branch",
+        "scheduledStartDate": "2026-02-01",
+        "auditStartDate": "2026-02-04"
+      },
+      {
+        "auditorName": "Rohan Gupta",
+        "auditType": "IT Security Audit",
+        "auditeeName": "Data Center South",
+        "scheduledStartDate": "2026-02-05",
+        "auditStartDate": "2026-02-08"
+      },
+      {
+        "auditorName": "Meena Singh",
+        "auditType": "Warehouse Inventory Audit",
+        "auditeeName": "Logistics Hub A",
+        "scheduledStartDate": "2026-02-07",
+        "auditStartDate": "2026-02-10"
+      },
+      {
+        "auditorName": "Arjun Prasad",
+        "auditType": "Financial Audit",
+        "auditeeName": "Head Office Finance",
+        "scheduledStartDate": "2026-02-10",
+        "auditStartDate": "2026-02-13"
+      },
+      {
+        "auditorName": "Sara Khan",
+        "auditType": "Compliance Review",
+        "auditeeName": "Legal Department",
+        "scheduledStartDate": "2026-02-12",
+        "auditStartDate": "2026-02-15"
+      }
+    ]
+  },
+  "topReAuditAuditors": {
+    "description": "Top 10 auditors by re-audit percentage: audits sent to re-audit divided by total audits.",
+    "topLimit": 10,
+    "items": [
+      {
+        "auditorName": "Vikram Tiwari",
+        "totalAudits": 20,
+        "auditsGoneToReAudit": 17,
+        "reAuditPercentage": 85
+      },
+      {
+        "auditorName": "Fatima Sheikh",
+        "totalAudits": 22,
+        "auditsGoneToReAudit": 18,
+        "reAuditPercentage": 81.8
+      },
+      {
+        "auditorName": "Anand Kulkarni",
+        "totalAudits": 25,
+        "auditsGoneToReAudit": 19,
+        "reAuditPercentage": 76
+      },
+      {
+        "auditorName": "Deepak Rao",
+        "totalAudits": 21,
+        "auditsGoneToReAudit": 15,
+        "reAuditPercentage": 71.4
+      },
+      {
+        "auditorName": "Meena Pillai",
+        "totalAudits": 18,
+        "auditsGoneToReAudit": 12,
+        "reAuditPercentage": 66.7
+      },
+      {
+        "auditorName": "Priya Nair",
+        "totalAudits": 24,
+        "auditsGoneToReAudit": 15,
+        "reAuditPercentage": 62.5
+      },
+      {
+        "auditorName": "Jayam Sharma",
+        "totalAudits": 20,
+        "auditsGoneToReAudit": 12,
+        "reAuditPercentage": 60
+      },
+      {
+        "auditorName": "Salim Khan",
+        "totalAudits": 19,
+        "auditsGoneToReAudit": 9,
+        "reAuditPercentage": 47.4
+      },
+      {
+        "auditorName": "Rahul Verma",
+        "totalAudits": 23,
+        "auditsGoneToReAudit": 10,
+        "reAuditPercentage": 43.5
+      },
+      {
+        "auditorName": "Aishwarya Reddy",
+        "totalAudits": 17,
+        "auditsGoneToReAudit": 7,
+        "reAuditPercentage": 41.2
+      }
+    ]
+  }
+}

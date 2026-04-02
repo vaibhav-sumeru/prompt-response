@@ -1,0 +1,3 @@
+- **Zone Issue Concentration:** **North Zone** records **55** issues across 15 distinct auditees (avg **3.7** per auditee), followed by West Zone: 48 issues, 14 distinct auditees, avg 3.4; East Zone: 30 issues, 10 distinct auditees, avg 3.0; South Zone: 25 issues, 9 distinct auditees, avg 2.8; and Central Zone: 15 issues, 7 distinct auditees, avg 2.1.
+- **Top Groups by Issues:** **Digital Transformation Unit** (IT Audit) leads with **38** issues; Customer Service Division (Operational Audit) has 29 issues; Risk Management Dept (Compliance Audit) has 22 issues.
+- **High & Zero Tolerance Issues – Auditee Level:** Of 25 total critical issues, **Hyderabad HQ Office** has the highest combined critical count with **15** (High: 10, Zero Tolerance: 5).

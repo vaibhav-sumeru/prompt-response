@@ -1,0 +1,276 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "std-d-db-main-audit-type-wise-repeat-and-recurring-issues",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "totalRecords",
+    "meta",
+    "recurringAbove50",
+    "repeatAbove75",
+    "highZeroToleranceRisk",
+    "groupDistribution"
+  ],
+  "properties": {
+    "totalRecords": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of distinct issues included in this widget payload."
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt"],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "description": "Payload generation timestamp in ISO-8601 format."
+        }
+      }
+    },
+    "recurringAbove50": {
+      "type": "object",
+      "description": "Section 1: Main audit types where recurring% > 50%, sorted descending. Top 5 shown.",
+      "additionalProperties": false,
+      "required": ["description", "totalQualifyingAudits", "top5"],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "totalQualifyingAudits": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total count of main audit types with recurringPercent > 50%."
+        },
+        "top5": {
+          "type": "array",
+          "maxItems": 5,
+          "description": "Up to 5 main audit types with highest recurringPercent, all > 50%, sorted descending.",
+          "items": {
+            "$ref": "#/definitions/auditRecurringItem"
+          }
+        }
+      }
+    },
+    "repeatAbove75": {
+      "type": "object",
+      "description": "Section 2: Main audit types where repeat% > 75%, sorted descending. Top 5 shown.",
+      "additionalProperties": false,
+      "required": ["description", "totalQualifyingAudits", "top5"],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "totalQualifyingAudits": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total count of main audit types with repeatPercent > 75%."
+        },
+        "top5": {
+          "type": "array",
+          "maxItems": 5,
+          "description": "Up to 5 main audit types with highest repeatPercent, all > 75%, sorted descending.",
+          "items": {
+            "$ref": "#/definitions/auditRepeatItem"
+          }
+        }
+      }
+    },
+    "highZeroToleranceRisk": {
+      "type": "object",
+      "description": "Section 3: Top 3 main audit types by count of High/Zero Tolerance risk issues, split by recurring and repeat tagging.",
+      "additionalProperties": false,
+      "required": ["description", "byRecurring", "byRepeat"],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "byRecurring": {
+          "type": "object",
+          "description": "Top 3 audits ranked by count of recurring issues with Risk Level = High or Zero Tolerance.",
+          "additionalProperties": false,
+          "required": ["description", "top3"],
+          "properties": {
+            "description": { "type": "string" },
+            "top3": {
+              "type": "array",
+              "maxItems": 3,
+              "items": {
+                "$ref": "#/definitions/auditRiskItem"
+              }
+            }
+          }
+        },
+        "byRepeat": {
+          "type": "object",
+          "description": "Top 3 audits ranked by count of repeat issues with Risk Level = High or Zero Tolerance.",
+          "additionalProperties": false,
+          "required": ["description", "top3"],
+          "properties": {
+            "description": { "type": "string" },
+            "top3": {
+              "type": "array",
+              "maxItems": 3,
+              "items": {
+                "$ref": "#/definitions/auditRiskItem"
+              }
+            }
+          }
+        }
+      }
+    },
+    "groupDistribution": {
+      "type": "object",
+      "description": "Section 4: Top 3 and bottom 3 groups by recurring and repeat issue counts.",
+      "additionalProperties": false,
+      "required": ["description", "recurring", "repeat"],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "recurring": {
+          "type": "object",
+          "description": "Groups ranked by number of recurring issues.",
+          "additionalProperties": false,
+          "required": ["description", "top3", "bottom3"],
+          "properties": {
+            "description": { "type": "string" },
+            "top3": {
+              "type": "array",
+              "maxItems": 3,
+              "items": { "$ref": "#/definitions/groupRecurringItem" }
+            },
+            "bottom3": {
+              "type": "array",
+              "maxItems": 3,
+              "items": { "$ref": "#/definitions/groupRecurringItem" }
+            }
+          }
+        },
+        "repeat": {
+          "type": "object",
+          "description": "Groups ranked by number of repeat issues.",
+          "additionalProperties": false,
+          "required": ["description", "top3", "bottom3"],
+          "properties": {
+            "description": { "type": "string" },
+            "top3": {
+              "type": "array",
+              "maxItems": 3,
+              "items": { "$ref": "#/definitions/groupRepeatItem" }
+            },
+            "bottom3": {
+              "type": "array",
+              "maxItems": 3,
+              "items": { "$ref": "#/definitions/groupRepeatItem" }
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "auditRecurringItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["auditName", "recurringCount", "totalIssues", "recurringPercent"],
+      "properties": {
+        "auditName": {
+          "type": "string",
+          "description": "Main audit type name."
+        },
+        "recurringCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of recurring issues (Recurring Tagging = Yes) in this audit type."
+        },
+        "totalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues in this audit type."
+        },
+        "recurringPercent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Pre-computed: (recurringCount / totalIssues) × 100, rounded to 1 decimal. Always > 50."
+        }
+      }
+    },
+    "auditRepeatItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["auditName", "repeatCount", "totalIssues", "repeatPercent"],
+      "properties": {
+        "auditName": {
+          "type": "string",
+          "description": "Main audit type name."
+        },
+        "repeatCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of repeat issues (Repeat Tagging = Yes) in this audit type."
+        },
+        "totalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues in this audit type."
+        },
+        "repeatPercent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Pre-computed: (repeatCount / totalIssues) × 100, rounded to 1 decimal. Always > 75."
+        }
+      }
+    },
+    "auditRiskItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["auditName", "issueCount"],
+      "properties": {
+        "auditName": {
+          "type": "string",
+          "description": "Main audit type name."
+        },
+        "issueCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of High or Zero Tolerance risk issues under the relevant tagging (recurring or repeat)."
+        }
+      }
+    },
+    "groupRecurringItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["groupName", "recurringCount"],
+      "properties": {
+        "groupName": {
+          "type": "string",
+          "description": "Group name."
+        },
+        "recurringCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of recurring issues in this group."
+        }
+      }
+    },
+    "groupRepeatItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["groupName", "repeatCount"],
+      "properties": {
+        "groupName": {
+          "type": "string",
+          "description": "Group name."
+        },
+        "repeatCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of repeat issues in this group."
+        }
+      }
+    }
+  }
+}

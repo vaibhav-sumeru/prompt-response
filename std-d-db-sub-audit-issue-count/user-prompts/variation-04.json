@@ -1,0 +1,93 @@
+{
+  "totalRecords": 420,
+  "meta": {
+    "generatedAt": "2024-05-15T12:30:00Z"
+  },
+  "resolutionAndBacklogHealth": {
+    "totalIssuesAcrossSubAudits": 420,
+    "topDelayedSubAudits": [
+      {
+        "_description": "Sub-audit types with the highest pending backlog/ageing (>21 days). Contains up to 5 items.",
+        "subAuditTypeName": "Regulatory Compliance",
+        "totalIssues": 180,
+        "issuesPendingOver21Days": 95,
+        "percentagePendingOver21Days": 52.78,
+        "issuesPendingOver28Days": 60,
+        "percentagePendingOver28Days": 33.33
+      },
+      {
+        "subAuditTypeName": "Financial Reporting",
+        "totalIssues": 80,
+        "issuesPendingOver21Days": 30,
+        "percentagePendingOver21Days": 37.5,
+        "issuesPendingOver28Days": 15,
+        "percentagePendingOver28Days": 18.75
+      }
+    ],
+    "topHealthySubAudits": [
+      {
+        "_description": "Sub-audit types heavily resolved within 7 days. Contains up to 3 items.",
+        "subAuditTypeName": "HR Policy Adherence",
+        "totalIssues": 40,
+        "issuesResolvedWithin7Days": 35,
+        "percentageResolvedWithin7Days": 87.5
+      },
+      {
+        "subAuditTypeName": "IT Security",
+        "totalIssues": 60,
+        "issuesResolvedWithin7Days": 50,
+        "percentageResolvedWithin7Days": 83.33
+      }
+    ]
+  },
+  "riskAndPriorityExposure": {
+    "totalHighRiskIssues": 110,
+    "percentageHighRisk": 26.19,
+    "totalZeroToleranceIssues": 28,
+    "recurringZeroToleranceIssues": 15,
+    "totalMediumRiskIssues": 150,
+    "topHighRiskSubAudits": [
+      {
+        "_description": "Sub-audit types sorted by combined high risk and zero tolerance counts. Top 3 items.",
+        "subAuditTypeName": "Regulatory Compliance",
+        "combinedHighRiskAndZeroTolerance": 88,
+        "highRiskIssues": 70,
+        "zeroToleranceIssues": 18,
+        "recurringHighRiskAndZeroTolerance": 12
+      },
+      {
+        "subAuditTypeName": "Operational Safety",
+        "combinedHighRiskAndZeroTolerance": 42,
+        "highRiskIssues": 35,
+        "zeroToleranceIssues": 7,
+        "recurringHighRiskAndZeroTolerance": 5
+      }
+    ]
+  },
+  "exceptionsAndHotspots": {
+    "topZonesByRiskAndAgeing": [
+      {
+        "_description": "Zones sorted by highest occurrences of critical risk, recurrences, and delayed timelines. Top 3 items.",
+        "zoneName": "North-East Zone",
+        "totalIssues": 170,
+        "highAndCriticalRiskIssues": 85,
+        "recurringIssues": 35,
+        "issuesPendingOver21Days": 70
+      },
+      {
+        "zoneName": "South-West Zone",
+        "totalIssues": 90,
+        "highAndCriticalRiskIssues": 30,
+        "recurringIssues": 15,
+        "issuesPendingOver21Days": 25
+      },
+      {
+        "zoneName": "Central Zone",
+        "totalIssues": 75,
+        "highAndCriticalRiskIssues": 20,
+        "recurringIssues": 10,
+        "issuesPendingOver21Days": 18
+      }
+    ]
+  }
+}

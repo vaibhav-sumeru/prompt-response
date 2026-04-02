@@ -1,0 +1,103 @@
+{
+  "totalRecords": 180,
+  "meta": {
+    "generatedAt": "2026-03-20T00:00:00Z",
+    "source": "audit_schedule_execution_data"
+  },
+  "avgAuditsInProgress": {
+    "description": "Average count of audits currently In Progress per auditor across the full team.",
+    "totalInProgressAudits": 48,
+    "totalAuditors": 6,
+    "averagePerAuditor": 8
+  },
+  "avgLapsedAudits": {
+    "description": "Average count of audits in Lapsed status per auditor across the team.",
+    "totalLapsedAudits": 9,
+    "totalAuditorsWithLapsed": 3,
+    "averageLapsedPerAuditor": 3
+  },
+  "zoneWithMaxDelayedAudits": {
+    "description": "Top zones ranked by total count of Lapsed or Not Executed audits.",
+    "topZones": [
+      {
+        "zoneName": "East Zone",
+        "totalDelayedAudits": 15,
+        "lapsedCount": 10,
+        "notExecutedCount": 5
+      }
+    ]
+  },
+  "auditorStartedAfterSchedule": {
+    "description": "Audit schedules where Audit Start Date is after the scheduled start date but within the audit end date.",
+    "totalSchedulesWithLateStart": 7,
+    "totalUniqueAuditors": 4,
+    "displayedCount": 4,
+    "remainingCount": 0,
+    "items": [
+      {
+        "auditorName": "Vikram Kumar",
+        "auditType": "Branch Compliance Audit",
+        "auditeeName": "Anna Salai Branch",
+        "scheduledStartDate": "2026-02-01",
+        "auditStartDate": "2026-02-03"
+      },
+      {
+        "auditorName": "Deepa Singh",
+        "auditType": "HR Policy Audit",
+        "auditeeName": "Corporate Office",
+        "scheduledStartDate": "2026-02-05",
+        "auditStartDate": "2026-02-08"
+      },
+      {
+        "auditorName": "Rohan Patel",
+        "auditType": "Vendor Risk Audit",
+        "auditeeName": "Supplier A Inc.",
+        "scheduledStartDate": "2026-02-10",
+        "auditStartDate": "2026-02-12"
+      },
+      {
+        "auditorName": "Sarah John",
+        "auditType": "IT Security Audit",
+        "auditeeName": "Data Center",
+        "scheduledStartDate": "2026-02-15",
+        "auditStartDate": "2026-02-18"
+      }
+    ]
+  },
+  "topReAuditAuditors": {
+    "description": "Top 10 auditors by re-audit percentage: audits sent to re-audit divided by total audits.",
+    "topLimit": 10,
+    "items": [
+      {
+        "auditorName": "Rahul Sharma",
+        "totalAudits": 25,
+        "auditsGoneToReAudit": 20,
+        "reAuditPercentage": 80
+      },
+      {
+        "auditorName": "Priya Das",
+        "totalAudits": 20,
+        "auditsGoneToReAudit": 15,
+        "reAuditPercentage": 75
+      },
+      {
+        "auditorName": "Amit Gupta",
+        "totalAudits": 18,
+        "auditsGoneToReAudit": 12,
+        "reAuditPercentage": 66.7
+      },
+      {
+        "auditorName": "Sneha Rao",
+        "totalAudits": 22,
+        "auditsGoneToReAudit": 14,
+        "reAuditPercentage": 63.6
+      },
+      {
+        "auditorName": "Arjun Singh",
+        "totalAudits": 15,
+        "auditsGoneToReAudit": 9,
+        "reAuditPercentage": 60
+      }
+    ]
+  }
+}

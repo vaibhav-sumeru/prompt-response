@@ -1,0 +1,94 @@
+{
+  "_description": "PI (Primary Identifier) execution analysis payload for sub-audit types — includes PI not-found gaps, found vs not-found summary, reason analysis, and 100% execution sub-audits.",
+  "totalRecords": 300,
+  "totalSubAudits": 5,
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "topSubAuditsByPINotFound": {
+    "_description": "Top 3 sub-audit types with the highest count of PI Not Found, sorted descending by piNotFoundCount.",
+    "items": [
+      {
+        "subAuditTypeName": "Digital KYC Audit",
+        "totalPICount": 80,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      },
+      {
+        "subAuditTypeName": "Compliance Check",
+        "totalPICount": 70,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      },
+      {
+        "subAuditTypeName": "Operational Review",
+        "totalPICount": 60,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      }
+    ]
+  },
+  "piFoundVsNotFoundSummary": {
+    "_description": "Aggregate PI found vs not-found statistics across all 5 sub-audit types, with top 3 sub-audits by total PI volume.",
+    "avgPIFoundCount": 60,
+    "avgPINotFoundCount": 0,
+    "avgPIFoundPercent": 100,
+    "topSubAuditsByTotalPI": [
+      {
+        "subAuditTypeName": "Digital KYC Audit",
+        "totalPICount": 80,
+        "piFoundCount": 80,
+        "piFoundPercent": 100,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      },
+      {
+        "subAuditTypeName": "Compliance Check",
+        "totalPICount": 70,
+        "piFoundCount": 70,
+        "piFoundPercent": 100,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      },
+      {
+        "subAuditTypeName": "Operational Review",
+        "totalPICount": 60,
+        "piFoundCount": 60,
+        "piFoundPercent": 100,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      }
+    ]
+  },
+  "piNotFoundReasonAnalysis": {
+    "_description": "Not Found reason breakdown for top 5 sub-audits by piNotFoundCount. AI narrator identifies recurring reasons across these sub-audits from topSubAuditsWithReasons[].",
+    "topSubAuditsWithReasons": []
+  },
+  "fullPIExecutionSubAudits": {
+    "_description": "Sub-audits with 100% PI execution (piNotFoundCount = 0). 5 of 5 sub-audits achieved full execution.",
+    "totalSubAuditsWithFullExecution": 5,
+    "percentSubAuditsWithFullExecution": 100,
+    "top5ByTotalPI": [
+      {
+        "subAuditTypeName": "Digital KYC Audit",
+        "totalPICount": 80
+      },
+      {
+        "subAuditTypeName": "Compliance Check",
+        "totalPICount": 70
+      },
+      {
+        "subAuditTypeName": "Operational Review",
+        "totalPICount": 60
+      },
+      {
+        "subAuditTypeName": "Risk Assessment",
+        "totalPICount": 50
+      },
+      {
+        "subAuditTypeName": "System Access Audit",
+        "totalPICount": 40
+      }
+    ]
+  }
+}

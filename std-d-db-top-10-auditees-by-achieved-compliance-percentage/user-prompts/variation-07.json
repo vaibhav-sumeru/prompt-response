@@ -1,0 +1,60 @@
+{
+  "totalRecords": 95,
+  "meta": {
+    "generatedAt": "2026-03-30T00:00:00Z",
+    "source": "audit_schedule_compliance_data"
+  },
+  "complianceBuckets": {
+    "description": "High-performing auditees grouped into compliance percentage buckets (81–95%, 96–99%, 100%), showing auditee count per occupied bucket.",
+    "buckets": [
+      {
+        "bucketLabel": "100%",
+        "bucketMin": 100,
+        "bucketMax": 100,
+        "auditeeCount": 7
+      },
+      {
+        "bucketLabel": "96–99%",
+        "bucketMin": 96,
+        "bucketMax": 99,
+        "auditeeCount": 12
+      },
+      {
+        "bucketLabel": "81–95%",
+        "bucketMin": 81,
+        "bucketMax": 95,
+        "auditeeCount": 18
+      }
+    ]
+  },
+  "top5HighPerformers": {
+    "description": "Top 5 auditees with the absolute highest achieved compliance percentage across all high-compliance buckets combined, sorted descending by achievedPercentage.",
+    "items": [
+      {
+        "auditeeName": "Kochi Port Authority",
+        "achievedPercentage": 100
+      },
+      {
+        "auditeeName": "Goa Financial Hub",
+        "achievedPercentage": 99.2
+      },
+      {
+        "auditeeName": "Chandigarh Tech Park",
+        "achievedPercentage": 98.7
+      },
+      {
+        "auditeeName": "Ahmedabad Logistics Center",
+        "achievedPercentage": 97.5
+      },
+      {
+        "auditeeName": "Bhopal Regional Office",
+        "achievedPercentage": 96.1
+      }
+    ]
+  },
+  "zoneComplianceOverview": {
+    "description": "Count of audits per zone where Achieved Percentage > 50%, sorted by count descending.",
+    "highComplianceThreshold": 50,
+    "zones": []
+  }
+}

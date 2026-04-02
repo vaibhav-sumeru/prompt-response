@@ -1,0 +1,92 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "std-d-db-last-audited-audit-aging",
+  "description": "Last Audited Auditee Aging widget — exposes the top 5 auditees with the highest gap since their last audit and the aggregate count/percentage of auditees exceeding the 90-day threshold. Auditees created without any schedules are excluded from all metrics.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["totalAuditees", "meta", "agingAboveThreshold", "top5AgingAuditees"],
+  "properties": {
+    "totalAuditees": {
+      "description": "Total number of unique auditees that have at least one schedule in the system. Auditees with no schedules are excluded.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt", "disclaimer"],
+      "properties": {
+        "generatedAt": {
+          "description": "ISO 8601 timestamp when this payload was generated.",
+          "type": "string"
+        },
+        "disclaimer": {
+          "description": "Footnote that must appear verbatim in every narrator output. Fixed value: '* Auditees created without any schedules are not included in the above summary.'",
+          "type": "string"
+        }
+      }
+    },
+    "agingAboveThreshold": {
+      "description": "Aggregate metrics for auditees whose gap since last audit exceeds the threshold.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["thresholdDays", "count", "percent"],
+      "properties": {
+        "thresholdDays": {
+          "description": "Threshold in days used to classify an auditee as 'aging'. Current value: 90.",
+          "type": "integer",
+          "minimum": 1
+        },
+        "count": {
+          "description": "Number of auditees whose differenceInDays > thresholdDays.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "percent": {
+          "description": "(count / totalAuditees) * 100, rounded to 1 decimal place.",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "top5AgingAuditees": {
+      "description": "Top 5 auditees with the highest differenceInDays among those exceeding thresholdDays, sorted descending by differenceInDays.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "items"],
+      "properties": {
+        "description": {
+          "description": "Human-readable label describing this section.",
+          "type": "string"
+        },
+        "items": {
+          "description": "Auditee records sorted by differenceInDays descending. Up to 5 entries.",
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["auditeeName", "lastScheduleCreatedDate", "differenceInDays"],
+            "properties": {
+              "auditeeName": {
+                "description": "Display name of the auditee.",
+                "type": "string"
+              },
+              "lastScheduleCreatedDate": {
+                "description": "Date the most recent audit schedule was created for this auditee. Format: DD-MMM-YYYY.",
+                "type": "string"
+              },
+              "differenceInDays": {
+                "description": "Number of days elapsed since lastScheduleCreatedDate as of the report date.",
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

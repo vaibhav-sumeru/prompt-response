@@ -1,0 +1,174 @@
+{
+  "_description": "PI (Primary Identifier) execution analysis payload for sub-audit types — includes PI not-found gaps, found vs not-found summary, reason analysis, and 100% execution sub-audits.",
+  "totalRecords": 470,
+  "totalSubAudits": 10,
+  "meta": {
+    "generatedAt": "2024-07-25T14:30:00Z"
+  },
+  "topSubAuditsByPINotFound": {
+    "_description": "Top 3 sub-audit types with the highest count of PI Not Found, sorted descending by piNotFoundCount.",
+    "items": [
+      {
+        "subAuditTypeName": "Credit Risk Assessment",
+        "totalPICount": 70,
+        "piNotFoundCount": 18,
+        "piNotFoundPercent": 25.71
+      },
+      {
+        "subAuditTypeName": "Vendor Compliance Check",
+        "totalPICount": 45,
+        "piNotFoundCount": 12,
+        "piNotFoundPercent": 26.67
+      },
+      {
+        "subAuditTypeName": "Transaction Monitoring",
+        "totalPICount": 60,
+        "piNotFoundCount": 9,
+        "piNotFoundPercent": 15
+      }
+    ]
+  },
+  "piFoundVsNotFoundSummary": {
+    "_description": "Aggregate PI found vs not-found statistics across all 10 sub-audit types, with top 3 sub-audits by total PI volume.",
+    "avgPIFoundCount": 41.3,
+    "avgPINotFoundCount": 5.7,
+    "avgPIFoundPercent": 87.87,
+    "topSubAuditsByTotalPI": [
+      {
+        "subAuditTypeName": "Credit Risk Assessment",
+        "totalPICount": 70,
+        "piFoundCount": 52,
+        "piFoundPercent": 74.29,
+        "piNotFoundCount": 18,
+        "piNotFoundPercent": 25.71
+      },
+      {
+        "subAuditTypeName": "Data Privacy Review",
+        "totalPICount": 65,
+        "piFoundCount": 65,
+        "piFoundPercent": 100,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      },
+      {
+        "subAuditTypeName": "Transaction Monitoring",
+        "totalPICount": 60,
+        "piFoundCount": 51,
+        "piFoundPercent": 85,
+        "piNotFoundCount": 9,
+        "piNotFoundPercent": 15
+      }
+    ]
+  },
+  "piNotFoundReasonAnalysis": {
+    "_description": "Not Found reason breakdown for top 5 sub-audits by piNotFoundCount. AI narrator identifies recurring reasons across these sub-audits from topSubAuditsWithReasons[].",
+    "topSubAuditsWithReasons": [
+      {
+        "subAuditTypeName": "Credit Risk Assessment",
+        "piNotFoundCount": 18,
+        "topReasons": [
+          {
+            "reason": "Missing Documentation"
+          },
+          {
+            "reason": "Data Entry Error"
+          },
+          {
+            "reason": "Process Non-Adherence"
+          },
+          {
+            "reason": "System Configuration Issue"
+          },
+          {
+            "reason": "Staff Training Gap"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Vendor Compliance Check",
+        "piNotFoundCount": 12,
+        "topReasons": [
+          {
+            "reason": "Data Entry Error"
+          },
+          {
+            "reason": "Missing Documentation"
+          },
+          {
+            "reason": "Process Non-Adherence"
+          },
+          {
+            "reason": "Incorrect Vendor Mapping"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Transaction Monitoring",
+        "piNotFoundCount": 9,
+        "topReasons": [
+          {
+            "reason": "Missing Documentation"
+          },
+          {
+            "reason": "System Configuration Issue"
+          },
+          {
+            "reason": "Data Entry Error"
+          },
+          {
+            "reason": "Alert Management Failure"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "HR Policy Adherence",
+        "piNotFoundCount": 7,
+        "topReasons": [
+          {
+            "reason": "Process Non-Adherence"
+          },
+          {
+            "reason": "Staff Training Gap"
+          },
+          {
+            "reason": "Missing Documentation"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Operational Efficiency",
+        "piNotFoundCount": 6,
+        "topReasons": [
+          {
+            "reason": "Data Entry Error"
+          },
+          {
+            "reason": "Process Non-Adherence"
+          },
+          {
+            "reason": "Workflow Automation Gap"
+          }
+        ]
+      }
+    ]
+  },
+  "fullPIExecutionSubAudits": {
+    "_description": "Sub-audits with 100% PI execution (piNotFoundCount = 0). 3 of 10 sub-audits achieved full execution.",
+    "totalSubAuditsWithFullExecution": 3,
+    "percentSubAuditsWithFullExecution": 30,
+    "top5ByTotalPI": [
+      {
+        "subAuditTypeName": "Data Privacy Review",
+        "totalPICount": 65
+      },
+      {
+        "subAuditTypeName": "IT Security Audit",
+        "totalPICount": 50
+      },
+      {
+        "subAuditTypeName": "Compliance Training",
+        "totalPICount": 40
+      }
+    ]
+  }
+}

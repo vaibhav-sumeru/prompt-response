@@ -1,0 +1,42 @@
+{
+  "totalAuditees": 150,
+  "meta": {
+    "generatedAt": "2024-05-15T11:00:00Z",
+    "disclaimer": "* Auditees created without any schedules are not included in the above summary."
+  },
+  "agingAboveThreshold": {
+    "thresholdDays": 90,
+    "count": 15,
+    "percent": 10
+  },
+  "top5AgingAuditees": {
+    "description": "Top 5 auditees with the highest number of days since last audit among those not audited for more than 90 days.",
+    "items": [
+      {
+        "auditeeName": "MegaCorp Holdings",
+        "lastScheduleCreatedDate": "22-Feb-2022",
+        "differenceInDays": 800
+      },
+      {
+        "auditeeName": "Global Tech Solutions",
+        "lastScheduleCreatedDate": "02-Jun-2022",
+        "differenceInDays": 700
+      },
+      {
+        "auditeeName": "Innovate Labs Ltd.",
+        "lastScheduleCreatedDate": "16-Dec-2023",
+        "differenceInDays": 150
+      },
+      {
+        "auditeeName": "Future Systems Inc.",
+        "lastScheduleCreatedDate": "15-Jan-2024",
+        "differenceInDays": 120
+      },
+      {
+        "auditeeName": "Apex Ventures",
+        "lastScheduleCreatedDate": "04-Feb-2024",
+        "differenceInDays": 100
+      }
+    ]
+  }
+}

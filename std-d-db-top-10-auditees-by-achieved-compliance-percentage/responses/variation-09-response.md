@@ -1,0 +1,3 @@
+- **Auditee Compliance Buckets:** **8** auditees are in the **100%** range, **7** auditees in the **96–99%** range, and **18** auditees in the **81–95%** range.
+- **Top 5 Overall High Performers:** **Bengaluru Tech Hub** achieved **100.00%**, **Hyderabad Innovation Center** achieved **99.50%**, **Chennai Financial Services** achieved **98.25%**, **Mumbai Logistics Park** achieved **97.00%**, and **Pune Manufacturing Unit** achieved **96.10%**.
+- **Zones with High Compliance:** **North Zone** records **40** audit schedules above 50% compliance, followed by South Zone with 30, East Zone with 20, West Zone with 15, Central Zone with 10, and Coastal Zone with 4.

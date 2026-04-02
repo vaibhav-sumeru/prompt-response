@@ -1,0 +1,180 @@
+{
+  "totalRecords": 450,
+  "meta": {
+    "generatedAt": "2024-07-20T12:30:00Z"
+  },
+  "recurringAbove50": {
+    "description": "Main audit types where recurring issues exceed 50% of total issues. Sorted by recurringPercent descending. Top 5 shown out of 8 qualifying audits.",
+    "totalQualifyingAudits": 8,
+    "top5": [
+      {
+        "auditName": "Data Privacy Audit",
+        "recurringCount": 20,
+        "totalIssues": 28,
+        "recurringPercent": 71.4
+      },
+      {
+        "auditName": "Supply Chain Audit",
+        "recurringCount": 18,
+        "totalIssues": 30,
+        "recurringPercent": 60
+      },
+      {
+        "auditName": "Customer Service Audit",
+        "recurringCount": 15,
+        "totalIssues": 26,
+        "recurringPercent": 57.7
+      },
+      {
+        "auditName": "Energy Efficiency Audit",
+        "recurringCount": 12,
+        "totalIssues": 22,
+        "recurringPercent": 54.5
+      },
+      {
+        "auditName": "Environmental Compliance Audit",
+        "recurringCount": 10,
+        "totalIssues": 19,
+        "recurringPercent": 52.6
+      }
+    ]
+  },
+  "repeatAbove75": {
+    "description": "Main audit types where repeat issues exceed 75% of total issues. Sorted by repeatPercent descending. Top 5 shown out of 7 qualifying audits.",
+    "totalQualifyingAudits": 7,
+    "top5": [
+      {
+        "auditName": "Product Quality Audit",
+        "repeatCount": 25,
+        "totalIssues": 30,
+        "repeatPercent": 83.3
+      },
+      {
+        "auditName": "Financial Controls Audit",
+        "repeatCount": 20,
+        "totalIssues": 24,
+        "repeatPercent": 83.3
+      },
+      {
+        "auditName": "Data Privacy Audit",
+        "repeatCount": 18,
+        "totalIssues": 22,
+        "repeatPercent": 81.8
+      },
+      {
+        "auditName": "Legal Compliance Audit",
+        "repeatCount": 15,
+        "totalIssues": 19,
+        "repeatPercent": 78.9
+      },
+      {
+        "auditName": "Supply Chain Audit",
+        "repeatCount": 14,
+        "totalIssues": 18,
+        "repeatPercent": 77.8
+      }
+    ]
+  },
+  "highZeroToleranceRisk": {
+    "description": "Top 3 main audit types by count of High and Zero Tolerance risk issues, split by recurring and repeat tagging.",
+    "byRecurring": {
+      "description": "Top 3 audits ranked by count of recurring issues with Risk Level = High or Zero Tolerance.",
+      "top3": [
+        {
+          "auditName": "Data Privacy Audit",
+          "issueCount": 15
+        },
+        {
+          "auditName": "Supply Chain Audit",
+          "issueCount": 12
+        },
+        {
+          "auditName": "Environmental Compliance Audit",
+          "issueCount": 9
+        }
+      ]
+    },
+    "byRepeat": {
+      "description": "Top 3 audits ranked by count of repeat issues with Risk Level = High or Zero Tolerance.",
+      "top3": [
+        {
+          "auditName": "Product Quality Audit",
+          "issueCount": 18
+        },
+        {
+          "auditName": "Financial Controls Audit",
+          "issueCount": 16
+        },
+        {
+          "auditName": "Data Privacy Audit",
+          "issueCount": 10
+        }
+      ]
+    }
+  },
+  "groupDistribution": {
+    "description": "Top 3 groups with highest and bottom 3 groups with lowest recurring and repeat issue counts.",
+    "recurring": {
+      "description": "Groups ranked by recurring issue count — top 3 highest and bottom 3 lowest.",
+      "top3": [
+        {
+          "groupName": "Northern Region",
+          "recurringCount": 55
+        },
+        {
+          "groupName": "Southern Region",
+          "recurringCount": 48
+        },
+        {
+          "groupName": "Eastern Region",
+          "recurringCount": 40
+        }
+      ],
+      "bottom3": [
+        {
+          "groupName": "Logistics Dept",
+          "recurringCount": 8
+        },
+        {
+          "groupName": "Manufacturing Unit A",
+          "recurringCount": 15
+        },
+        {
+          "groupName": "Retail Operations",
+          "recurringCount": 22
+        }
+      ]
+    },
+    "repeat": {
+      "description": "Groups ranked by repeat issue count — top 3 highest and bottom 3 lowest.",
+      "top3": [
+        {
+          "groupName": "Northern Region",
+          "repeatCount": 50
+        },
+        {
+          "groupName": "Western Region",
+          "repeatCount": 42
+        },
+        {
+          "groupName": "Southern Region",
+          "repeatCount": 35
+        }
+      ],
+      "bottom3": [
+        {
+          "groupName": "Logistics Dept",
+          "repeatCount": 6
+        },
+        {
+          "groupName": "Manufacturing Unit A",
+          "repeatCount": 12
+        },
+        {
+          "groupName": "Retail Operations",
+          "repeatCount": 18
+        }
+      ]
+    }
+  }
+}

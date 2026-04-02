@@ -1,0 +1,178 @@
+{
+  "totalSchedules": 1500,
+  "meta": {
+    "generatedAt": "2024-07-30T10:00:00Z"
+  },
+  "zoneVolume": {
+    "description": "Per-zone schedule counts with top 3 audit types by volume, sorted descending by scheduleCount.",
+    "items": [
+      {
+        "zoneName": "West Zone",
+        "scheduleCount": 330,
+        "percent": 22,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "Operational Audit",
+            "count": 150
+          },
+          {
+            "auditTypeName": "Financial Audit",
+            "count": 100
+          },
+          {
+            "auditTypeName": "IT Audit",
+            "count": 70
+          }
+        ]
+      },
+      {
+        "zoneName": "South Zone",
+        "scheduleCount": 315,
+        "percent": 21,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "Financial Audit",
+            "count": 130
+          },
+          {
+            "auditTypeName": "Operational Audit",
+            "count": 80
+          },
+          {
+            "auditTypeName": "IT Audit",
+            "count": 60
+          }
+        ]
+      },
+      {
+        "zoneName": "North Zone",
+        "scheduleCount": 300,
+        "percent": 20,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "Operational Audit",
+            "count": 120
+          },
+          {
+            "auditTypeName": "Financial Audit",
+            "count": 90
+          },
+          {
+            "auditTypeName": "Compliance Audit",
+            "count": 60
+          }
+        ]
+      },
+      {
+        "zoneName": "East Zone",
+        "scheduleCount": 285,
+        "percent": 19,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "Compliance Audit",
+            "count": 100
+          },
+          {
+            "auditTypeName": "Operational Audit",
+            "count": 75
+          },
+          {
+            "auditTypeName": "HR Audit",
+            "count": 40
+          }
+        ]
+      },
+      {
+        "zoneName": "Central Zone",
+        "scheduleCount": 270,
+        "percent": 18,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "Financial Audit",
+            "count": 110
+          },
+          {
+            "auditTypeName": "Compliance Audit",
+            "count": 80
+          },
+          {
+            "auditTypeName": "Operational Audit",
+            "count": 50
+          }
+        ]
+      }
+    ]
+  },
+  "reAuditAndReAssess": {
+    "description": "Overall re-audit and re-assess exposure, with top 3 audit types by combined rework count (sorted descending by combinedCount).",
+    "totalReAuditCount": 105,
+    "totalReAuditPercent": 7,
+    "totalReAssessCount": 75,
+    "totalReAssessPercent": 5,
+    "top3ByCombined": [
+      {
+        "mainAuditTypeName": "Operational Audit",
+        "reAuditCount": 45,
+        "reAssessCount": 30,
+        "combinedCount": 75
+      },
+      {
+        "mainAuditTypeName": "Financial Audit",
+        "reAuditCount": 35,
+        "reAssessCount": 25,
+        "combinedCount": 60
+      },
+      {
+        "mainAuditTypeName": "Compliance Audit",
+        "reAuditCount": 25,
+        "reAssessCount": 20,
+        "combinedCount": 45
+      }
+    ]
+  },
+  "executionStatusSummary": {
+    "description": "Count and percentage of schedules per execution-status bucket across the full dataset.",
+    "items": [
+      {
+        "status": "Finalized",
+        "count": 800,
+        "percent": 53.3
+      },
+      {
+        "status": "In Progress",
+        "count": 250,
+        "percent": 16.7
+      },
+      {
+        "status": "Lapsed",
+        "count": 120,
+        "percent": 8
+      },
+      {
+        "status": "Re-Audit",
+        "count": 105,
+        "percent": 7
+      },
+      {
+        "status": "Re-Assess",
+        "count": 75,
+        "percent": 5
+      },
+      {
+        "status": "Reopened",
+        "count": 80,
+        "percent": 5.3
+      },
+      {
+        "status": "Not Started",
+        "count": 50,
+        "percent": 3.3
+      },
+      {
+        "status": "Cancelled",
+        "count": 20,
+        "percent": 1.3
+      }
+    ]
+  }
+}

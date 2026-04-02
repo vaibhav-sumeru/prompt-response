@@ -1,0 +1,105 @@
+{
+  "_description": "Data payload for the Sub-audit issues count widget containing aggregated statistics at the global and sub-audit level.",
+  "totalRecords": 280,
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "resolutionAndBacklogHealth": {
+    "_description": "Tracks ageing delays like >21 days and highly resolved metrics (<7 days resolution) for sub-audits.",
+    "totalIssuesAcrossSubAudits": 280,
+    "topDelayedSubAudits": [
+      {
+        "_description": "Sub-audit types with the highest pending backlog/ageing (>21 days). Contains up to 5 items.",
+        "subAuditTypeName": "Financial Controls",
+        "totalIssues": 70,
+        "issuesPendingOver21Days": 0,
+        "percentagePendingOver21Days": 0,
+        "issuesPendingOver28Days": 0,
+        "percentagePendingOver28Days": 0
+      },
+      {
+        "subAuditTypeName": "Compliance Review",
+        "totalIssues": 55,
+        "issuesPendingOver21Days": 12,
+        "percentagePendingOver21Days": 21.82,
+        "issuesPendingOver28Days": 5,
+        "percentagePendingOver28Days": 9.09
+      },
+      {
+        "subAuditTypeName": "Vendor Management",
+        "totalIssues": 40,
+        "issuesPendingOver21Days": 8,
+        "percentagePendingOver21Days": 20,
+        "issuesPendingOver28Days": 0,
+        "percentagePendingOver28Days": 0
+      }
+    ],
+    "topHealthySubAudits": [
+      {
+        "_description": "Sub-audit types heavily resolved within 7 days. Contains up to 3 items.",
+        "subAuditTypeName": "HR Policy Audit",
+        "totalIssues": 60,
+        "issuesResolvedWithin7Days": 50,
+        "percentageResolvedWithin7Days": 83.33
+      },
+      {
+        "subAuditTypeName": "Data Privacy Review",
+        "totalIssues": 45,
+        "issuesResolvedWithin7Days": 38,
+        "percentageResolvedWithin7Days": 84.44
+      }
+    ]
+  },
+  "riskAndPriorityExposure": {
+    "_description": "Contains risk composition like High Risk and Zero Tolerance issues globally and across worst-performing sub-audits.",
+    "totalHighRiskIssues": 65,
+    "percentageHighRisk": 23.21,
+    "totalZeroToleranceIssues": 8,
+    "recurringZeroToleranceIssues": 5,
+    "totalMediumRiskIssues": 90,
+    "topHighRiskSubAudits": [
+      {
+        "_description": "Sub-audit types sorted by combined high risk and zero tolerance counts. Top 3 items.",
+        "subAuditTypeName": "IT Security Audit",
+        "combinedHighRiskAndZeroTolerance": 28,
+        "highRiskIssues": 25,
+        "zeroToleranceIssues": 3,
+        "recurringHighRiskAndZeroTolerance": 0
+      },
+      {
+        "subAuditTypeName": "Compliance Review",
+        "combinedHighRiskAndZeroTolerance": 20,
+        "highRiskIssues": 20,
+        "zeroToleranceIssues": 0,
+        "recurringHighRiskAndZeroTolerance": 5
+      }
+    ]
+  },
+  "exceptionsAndHotspots": {
+    "_description": "Identifies regions/zones with highest exceptions, recurring issues, and delays.",
+    "topZonesByRiskAndAgeing": [
+      {
+        "_description": "Zones sorted by highest occurrences of critical risk, recurrences, and delayed timelines. Top 3 items.",
+        "zoneName": "North Zone",
+        "totalIssues": 85,
+        "highAndCriticalRiskIssues": 30,
+        "recurringIssues": 10,
+        "issuesPendingOver21Days": 0
+      },
+      {
+        "zoneName": "West Zone",
+        "totalIssues": 70,
+        "highAndCriticalRiskIssues": 25,
+        "recurringIssues": 0,
+        "issuesPendingOver21Days": 15
+      },
+      {
+        "zoneName": "Central Zone",
+        "totalIssues": 60,
+        "highAndCriticalRiskIssues": 18,
+        "recurringIssues": 8,
+        "issuesPendingOver21Days": 12
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "totalRecords": 350,
+  "meta": {
+    "generatedAt": "2026-03-20T00:00:00Z",
+    "source": "audit_schedule_execution_data"
+  },
+  "avgAuditsInProgress": {
+    "description": "Average count of audits currently In Progress per auditor across the full team.",
+    "totalInProgressAudits": 75,
+    "totalAuditors": 5,
+    "averagePerAuditor": 15
+  },
+  "avgLapsedAudits": {
+    "description": "Average count of audits in Lapsed status per auditor across the team.",
+    "totalLapsedAudits": 10,
+    "totalAuditorsWithLapsed": 5,
+    "averageLapsedPerAuditor": 2
+  },
+  "zoneWithMaxDelayedAudits": {
+    "description": "Top zones ranked by total count of Lapsed or Not Executed audits.",
+    "topZones": [
+      {
+        "zoneName": "West Zone",
+        "totalDelayedAudits": 22,
+        "lapsedCount": 15,
+        "notExecutedCount": 7
+      },
+      {
+        "zoneName": "East Zone",
+        "totalDelayedAudits": 18,
+        "lapsedCount": 10,
+        "notExecutedCount": 8
+      },
+      {
+        "zoneName": "Central Zone",
+        "totalDelayedAudits": 14,
+        "lapsedCount": 9,
+        "notExecutedCount": 5
+      }
+    ]
+  },
+  "auditorStartedAfterSchedule": {
+    "description": "Audit schedules where Audit Start Date is after the scheduled start date but within the audit end date.",
+    "totalSchedulesWithLateStart": 5,
+    "totalUniqueAuditors": 4,
+    "displayedCount": 5,
+    "remainingCount": 0,
+    "items": [
+      {
+        "auditorName": "Arjun Singh",
+        "auditType": "Branch Compliance Audit",
+        "auditeeName": "Mumbai Branch 1",
+        "scheduledStartDate": "2026-02-01",
+        "auditStartDate": "2026-02-03"
+      },
+      {
+        "auditorName": "Meera Devi",
+        "auditType": "IT Systems Audit",
+        "auditeeName": "Head Office IT",
+        "scheduledStartDate": "2026-02-05",
+        "auditStartDate": "2026-02-07"
+      },
+      {
+        "auditorName": "Rajesh Kumar",
+        "auditType": "Warehouse Inventory Audit",
+        "auditeeName": "Pune Warehouse",
+        "scheduledStartDate": "2026-02-08",
+        "auditStartDate": "2026-02-10"
+      },
+      {
+        "auditorName": "Shweta Sharma",
+        "auditType": "Financial Controls Audit",
+        "auditeeName": "South Zone Finance",
+        "scheduledStartDate": "2026-02-12",
+        "auditStartDate": "2026-02-15"
+      },
+      {
+        "auditorName": "Arjun Singh",
+        "auditType": "Branch Compliance Audit",
+        "auditeeName": "Delhi Branch 2",
+        "scheduledStartDate": "2026-02-16",
+        "auditStartDate": "2026-02-18"
+      }
+    ]
+  },
+  "topReAuditAuditors": {
+    "description": "Top 10 auditors by re-audit percentage: audits sent to re-audit divided by total audits.",
+    "topLimit": 10,
+    "items": [
+      {
+        "auditorName": "Vikram Singh",
+        "totalAudits": 25,
+        "auditsGoneToReAudit": 20,
+        "reAuditPercentage": 80
+      },
+      {
+        "auditorName": "Priya Das",
+        "totalAudits": 22,
+        "auditsGoneToReAudit": 17,
+        "reAuditPercentage": 77.3
+      },
+      {
+        "auditorName": "Sanjay Gupta",
+        "totalAudits": 20,
+        "auditsGoneToReAudit": 14,
+        "reAuditPercentage": 70
+      },
+      {
+        "auditorName": "Neelam Rao",
+        "totalAudits": 18,
+        "auditsGoneToReAudit": 12,
+        "reAuditPercentage": 66.7
+      },
+      {
+        "auditorName": "Anil Kumar",
+        "totalAudits": 28,
+        "auditsGoneToReAudit": 18,
+        "reAuditPercentage": 64.3
+      },
+      {
+        "auditorName": "Seema Reddy",
+        "totalAudits": 15,
+        "auditsGoneToReAudit": 9,
+        "reAuditPercentage": 60
+      },
+      {
+        "auditorName": "Ravi Shankar",
+        "totalAudits": 21,
+        "auditsGoneToReAudit": 12,
+        "reAuditPercentage": 57.1
+      },
+      {
+        "auditorName": "Geeta Sharma",
+        "totalAudits": 19,
+        "auditsGoneToReAudit": 10,
+        "reAuditPercentage": 52.6
+      },
+      {
+        "auditorName": "Mohan Singh",
+        "totalAudits": 16,
+        "auditsGoneToReAudit": 8,
+        "reAuditPercentage": 50
+      },
+      {
+        "auditorName": "Kiran Patel",
+        "totalAudits": 23,
+        "auditsGoneToReAudit": 11,
+        "reAuditPercentage": 47.8
+      }
+    ]
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "_description": "PI (Primary Identifier) execution analysis payload for sub-audit types — includes PI not-found gaps, found vs not-found summary, reason analysis, and 100% execution sub-audits.",
+  "totalRecords": 620,
+  "totalSubAudits": 10,
+  "meta": {
+    "generatedAt": "2024-07-30T14:30:00Z"
+  },
+  "topSubAuditsByPINotFound": {
+    "_description": "Top 3 sub-audit types with the highest count of PI Not Found, sorted descending by piNotFoundCount.",
+    "items": [
+      {
+        "subAuditTypeName": "KYC Verification",
+        "totalPICount": 80,
+        "piNotFoundCount": 25,
+        "piNotFoundPercent": 31.25
+      },
+      {
+        "subAuditTypeName": "Financial Reconciliation",
+        "totalPICount": 100,
+        "piNotFoundCount": 25,
+        "piNotFoundPercent": 25
+      },
+      {
+        "subAuditTypeName": "Loan Application Review",
+        "totalPICount": 70,
+        "piNotFoundCount": 20,
+        "piNotFoundPercent": 28.57
+      }
+    ]
+  },
+  "piFoundVsNotFoundSummary": {
+    "_description": "Aggregate PI found vs not-found statistics across all 10 sub-audit types, with top 3 sub-audits by total PI volume.",
+    "avgPIFoundCount": 52.5,
+    "avgPINotFoundCount": 9.5,
+    "avgPIFoundPercent": 84.7,
+    "topSubAuditsByTotalPI": [
+      {
+        "subAuditTypeName": "Financial Reconciliation",
+        "totalPICount": 100,
+        "piFoundCount": 75,
+        "piFoundPercent": 75,
+        "piNotFoundCount": 25,
+        "piNotFoundPercent": 25
+      },
+      {
+        "subAuditTypeName": "Vendor Onboarding",
+        "totalPICount": 90,
+        "piFoundCount": 85,
+        "piFoundPercent": 94.44,
+        "piNotFoundCount": 5,
+        "piNotFoundPercent": 5.56
+      },
+      {
+        "subAuditTypeName": "KYC Verification",
+        "totalPICount": 80,
+        "piFoundCount": 55,
+        "piFoundPercent": 68.75,
+        "piNotFoundCount": 25,
+        "piNotFoundPercent": 31.25
+      }
+    ]
+  },
+  "piNotFoundReasonAnalysis": {
+    "_description": "Not Found reason breakdown for top 5 sub-audits by piNotFoundCount. AI narrator identifies recurring reasons across these sub-audits from topSubAuditsWithReasons[].",
+    "topSubAuditsWithReasons": [
+      {
+        "subAuditTypeName": "KYC Verification",
+        "piNotFoundCount": 25,
+        "topReasons": [
+          {
+            "reason": "Incorrect Data Entry"
+          },
+          {
+            "reason": "Records Not Maintained"
+          },
+          {
+            "reason": "PI Not Uploaded by Branch"
+          },
+          {
+            "reason": "System Glitch"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Financial Reconciliation",
+        "piNotFoundCount": 25,
+        "topReasons": [
+          {
+            "reason": "Records Not Maintained"
+          },
+          {
+            "reason": "Incorrect Data Entry"
+          },
+          {
+            "reason": "Missing Documentation"
+          },
+          {
+            "reason": "Process Deviation"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Loan Application Review",
+        "piNotFoundCount": 20,
+        "topReasons": [
+          {
+            "reason": "PI Not Uploaded by Branch"
+          },
+          {
+            "reason": "Incorrect Data Entry"
+          },
+          {
+            "reason": "Records Not Maintained"
+          },
+          {
+            "reason": "Incomplete Submission"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Document Verification",
+        "piNotFoundCount": 10,
+        "topReasons": [
+          {
+            "reason": "Missing Documentation"
+          },
+          {
+            "reason": "Incorrect Data Entry"
+          },
+          {
+            "reason": "Records Not Maintained"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Compliance Audit",
+        "piNotFoundCount": 5,
+        "topReasons": [
+          {
+            "reason": "Records Not Maintained"
+          },
+          {
+            "reason": "Incorrect Data Entry"
+          }
+        ]
+      }
+    ]
+  },
+  "fullPIExecutionSubAudits": {
+    "_description": "Sub-audits with 100% PI execution (piNotFoundCount = 0). 3 of 10 sub-audits achieved full execution.",
+    "totalSubAuditsWithFullExecution": 3,
+    "percentSubAuditsWithFullExecution": 30,
+    "top5ByTotalPI": [
+      {
+        "subAuditTypeName": "Risk Assessment",
+        "totalPICount": 50
+      },
+      {
+        "subAuditTypeName": "Fraud Detection",
+        "totalPICount": 40
+      },
+      {
+        "subAuditTypeName": "System Access Review",
+        "totalPICount": 30
+      }
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+- **Avg. Audits In Progress:** The team has **72** audits in progress across 8 auditors, averaging **9** audits per auditor.
+- **Avg. Lapsed Audits:** There are **28** lapsed audits, with 7 auditors having lapsed items, resulting in an average of **4** lapsed audits per auditor.
+- **Zone with Max Delayed Audits:** **West Zone** records the highest count of delayed audits at **25**, comprising 15 lapsed and 10 not executed. North Zone follows with 18 delayed audits.
+- **Late-Start Auditors:** 10 schedules show late starts involving 5 unique auditors: **Jayam Sharma**, **Salim Khan**, **Priya Nair**, **Rahul Verma**, **Aishwarya Reddy**, and 5 more.
+- **Top Re-Audit Auditors:** **Rakesh Singh** has a **100**% re-audit rate (15 of 15 audits). **Meera Devi** follows at **95**%. Other auditors include Arjun Prasad (92%), Neha Gupta (88.9%), and Vikram Joshi (86.4%).

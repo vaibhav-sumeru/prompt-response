@@ -1,0 +1,156 @@
+{
+  "totalSchedules": 850,
+  "meta": {
+    "generatedAt": "2024-07-25T10:30:00Z"
+  },
+  "zoneVolume": {
+    "description": "Per-zone schedule counts with top 3 audit types by volume, sorted descending by scheduleCount.",
+    "items": [
+      {
+        "zoneName": "North Zone",
+        "scheduleCount": 300,
+        "percent": 35.3,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "Operational Audit",
+            "count": 120
+          },
+          {
+            "auditTypeName": "Compliance Audit",
+            "count": 90
+          },
+          {
+            "auditTypeName": "Financial Audit",
+            "count": 70
+          }
+        ]
+      },
+      {
+        "zoneName": "South Zone",
+        "scheduleCount": 280,
+        "percent": 32.9,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "IT Audit",
+            "count": 110
+          },
+          {
+            "auditTypeName": "Operational Audit",
+            "count": 90
+          },
+          {
+            "auditTypeName": "HR Audit",
+            "count": 50
+          }
+        ]
+      },
+      {
+        "zoneName": "East Zone",
+        "scheduleCount": 180,
+        "percent": 21.2,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "Compliance Audit",
+            "count": 80
+          },
+          {
+            "auditTypeName": "Financial Audit",
+            "count": 60
+          }
+        ]
+      },
+      {
+        "zoneName": "West Zone",
+        "scheduleCount": 90,
+        "percent": 10.6,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "Operational Audit",
+            "count": 40
+          },
+          {
+            "auditTypeName": "IT Audit",
+            "count": 30
+          }
+        ]
+      }
+    ]
+  },
+  "reAuditAndReAssess": {
+    "description": "Overall re-audit and re-assess exposure, with top 3 audit types by combined rework count (sorted descending by combinedCount).",
+    "totalReAuditCount": 23,
+    "totalReAuditPercent": 2.7,
+    "totalReAssessCount": 0,
+    "totalReAssessPercent": 0,
+    "top3ByCombined": [
+      {
+        "mainAuditTypeName": "Financial Audit",
+        "reAuditCount": 10,
+        "reAssessCount": 0,
+        "combinedCount": 10
+      },
+      {
+        "mainAuditTypeName": "Operational Audit",
+        "reAuditCount": 8,
+        "reAssessCount": 0,
+        "combinedCount": 8
+      },
+      {
+        "mainAuditTypeName": "IT Audit",
+        "reAuditCount": 5,
+        "reAssessCount": 0,
+        "combinedCount": 5
+      }
+    ]
+  },
+  "executionStatusSummary": {
+    "description": "Count and percentage of schedules per execution-status bucket across the full dataset.",
+    "items": [
+      {
+        "status": "Finalized",
+        "count": 450,
+        "percent": 52.9
+      },
+      {
+        "status": "In Progress",
+        "count": 200,
+        "percent": 23.5
+      },
+      {
+        "status": "Lapsed",
+        "count": 120,
+        "percent": 14.1
+      },
+      {
+        "status": "Re-Audit",
+        "count": 23,
+        "percent": 2.7
+      },
+      {
+        "status": "Reopened",
+        "count": 30,
+        "percent": 3.5
+      },
+      {
+        "status": "Cancelled",
+        "count": 20,
+        "percent": 2.4
+      },
+      {
+        "status": "Not Started",
+        "count": 7,
+        "percent": 0.8
+      },
+      {
+        "status": "Re-Assess",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "status": "Awaiting Approval",
+        "count": 0,
+        "percent": 0
+      }
+    ]
+  }
+}

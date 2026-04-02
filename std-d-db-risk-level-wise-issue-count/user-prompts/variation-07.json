@@ -1,0 +1,137 @@
+{
+  "totalRecords": 120,
+  "meta": {
+    "generatedAt": "2024-10-27T10:30:00Z"
+  },
+  "riskWiseZoneDistribution": {
+    "description": "Distribution of issues across Zero Tolerance, High, Medium, and Low risk levels for each zone. Percentages are relative to each zone's total issues.",
+    "zones": [
+      {
+        "zoneName": "North Zone",
+        "totalIssues": 50,
+        "riskBreakdown": [
+          {
+            "riskLevel": "Zero Tolerance",
+            "count": 8,
+            "percent": 16
+          },
+          {
+            "riskLevel": "High",
+            "count": 15,
+            "percent": 30
+          },
+          {
+            "riskLevel": "Medium",
+            "count": 17,
+            "percent": 34
+          },
+          {
+            "riskLevel": "Low",
+            "count": 10,
+            "percent": 20
+          }
+        ]
+      },
+      {
+        "zoneName": "South Zone",
+        "totalIssues": 40,
+        "riskBreakdown": [
+          {
+            "riskLevel": "Zero Tolerance",
+            "count": 5,
+            "percent": 12.5
+          },
+          {
+            "riskLevel": "High",
+            "count": 10,
+            "percent": 25
+          },
+          {
+            "riskLevel": "Medium",
+            "count": 15,
+            "percent": 37.5
+          },
+          {
+            "riskLevel": "Low",
+            "count": 10,
+            "percent": 25
+          }
+        ]
+      },
+      {
+        "zoneName": "East Zone",
+        "totalIssues": 30,
+        "riskBreakdown": [
+          {
+            "riskLevel": "Zero Tolerance",
+            "count": 2,
+            "percent": 6.7
+          },
+          {
+            "riskLevel": "High",
+            "count": 7,
+            "percent": 23.3
+          },
+          {
+            "riskLevel": "Medium",
+            "count": 12,
+            "percent": 40
+          },
+          {
+            "riskLevel": "Low",
+            "count": 9,
+            "percent": 30
+          }
+        ]
+      }
+    ]
+  },
+  "auditeesHighRiskConcentration": {
+    "description": "Top 3 auditees ranked by combined High and Zero Tolerance issue count, with individual breakdowns and contribution to total critical issues.",
+    "totalCriticalIssues": 47,
+    "top3": [
+      {
+        "auditeeName": "Global Financial Services",
+        "highRiskCount": 20,
+        "zeroToleranceCount": 15,
+        "totalCriticalCount": 35,
+        "contributionPercent": 74.5
+      }
+    ]
+  },
+  "recurringCriticalByZone": {
+    "description": "For each zone, count and percentage of High and Zero Tolerance issues that are flagged as recurring. Sorted by recurringCriticalPercent descending.",
+    "zones": [
+      {
+        "zoneName": "North Zone",
+        "totalCriticalIssues": 23,
+        "recurringCriticalCount": 12,
+        "recurringCriticalPercent": 52.2
+      },
+      {
+        "zoneName": "South Zone",
+        "totalCriticalIssues": 15,
+        "recurringCriticalCount": 7,
+        "recurringCriticalPercent": 46.7
+      },
+      {
+        "zoneName": "East Zone",
+        "totalCriticalIssues": 9,
+        "recurringCriticalCount": 3,
+        "recurringCriticalPercent": 33.3
+      }
+    ]
+  },
+  "recurringCriticalByGroup": {
+    "description": "Top 3 groups by count of High and Zero Tolerance issues that are also recurring, sorted by recurringCriticalCount descending.",
+    "totalRecurringCriticalIssues": 22,
+    "top3": [
+      {
+        "groupName": "Risk Management Dept.",
+        "totalCriticalIssues": 30,
+        "recurringCriticalCount": 18,
+        "recurringCriticalPercent": 60
+      }
+    ]
+  }
+}

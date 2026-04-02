@@ -1,0 +1,74 @@
+{
+  "totalRecords": 173,
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z",
+    "source": "issues_data"
+  },
+  "zoneIssueConcentration": {
+    "description": "Per-zone breakdown of total open issues and distinct auditees contributing those issues, with average issues per auditee. Sorted descending by avgIssuesPerAuditee to surface the zone with the highest issue concentration.",
+    "zones": [
+      {
+        "zoneName": "North Zone",
+        "totalIssues": 55,
+        "distinctAuditees": 15,
+        "avgIssuesPerAuditee": 3.7
+      },
+      {
+        "zoneName": "West Zone",
+        "totalIssues": 48,
+        "distinctAuditees": 14,
+        "avgIssuesPerAuditee": 3.4
+      },
+      {
+        "zoneName": "East Zone",
+        "totalIssues": 30,
+        "distinctAuditees": 10,
+        "avgIssuesPerAuditee": 3
+      },
+      {
+        "zoneName": "South Zone",
+        "totalIssues": 25,
+        "distinctAuditees": 9,
+        "avgIssuesPerAuditee": 2.8
+      },
+      {
+        "zoneName": "Central Zone",
+        "totalIssues": 15,
+        "distinctAuditees": 7,
+        "avgIssuesPerAuditee": 2.1
+      }
+    ]
+  },
+  "topGroupsByIssues": {
+    "description": "Top 3 groups by total issue count, with their corresponding audit type names.",
+    "top3": [
+      {
+        "groupName": "Digital Transformation Unit",
+        "auditTypeName": "IT Audit",
+        "issueCount": 38
+      },
+      {
+        "groupName": "Customer Service Division",
+        "auditTypeName": "Operational Audit",
+        "issueCount": 29
+      },
+      {
+        "groupName": "Risk Management Dept",
+        "auditTypeName": "Compliance Audit",
+        "issueCount": 22
+      }
+    ]
+  },
+  "topAuditeesByCriticalIssues": {
+    "description": "Top 3 auditees by combined High + Zero Tolerance issue count, with individual breakdown of each risk level.",
+    "totalCriticalIssues": 25,
+    "top3": [
+      {
+        "auditeeName": "Hyderabad HQ Office",
+        "highCount": 10,
+        "zeroToleranceCount": 5,
+        "combinedCriticalCount": 15
+      }
+    ]
+  }
+}

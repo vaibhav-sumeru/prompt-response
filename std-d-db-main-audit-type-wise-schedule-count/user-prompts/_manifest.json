@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "normal-balanced",
+    "description": "Balanced schedule distribution across zones, moderate re-audit and re-assess counts"
+  },
+  {
+    "id": "variation-02",
+    "category": "normal-balanced",
+    "description": "Balanced schedule distribution across zones, moderate re-audit and re-assess counts"
+  },
+  {
+    "id": "variation-03",
+    "category": "extreme-skew",
+    "description": "One zone has significantly higher schedule volume than others"
+  },
+  {
+    "id": "variation-04",
+    "category": "extreme-skew",
+    "description": "One zone has significantly higher schedule volume than others"
+  },
+  {
+    "id": "variation-05",
+    "category": "zero-values",
+    "description": "Some re-audit or re-assess counts are zero; some status buckets have zero count"
+  },
+  {
+    "id": "variation-06",
+    "category": "zero-values",
+    "description": "Some re-audit or re-assess counts are zero; some status buckets have zero count"
+  },
+  {
+    "id": "variation-07",
+    "category": "single-zone",
+    "description": "Only one zone present in zoneVolume (edge case: no zone comparison possible)"
+  },
+  {
+    "id": "variation-08",
+    "category": "all-clean",
+    "description": "All schedules finalized; zero re-audit, zero re-assess, zero lapsed"
+  },
+  {
+    "id": "variation-09",
+    "category": "high-rework",
+    "description": "Very high re-audit and re-assess percentages (>20% combined rework)"
+  },
+  {
+    "id": "variation-10",
+    "category": "missing-fields",
+    "description": "top3AuditTypes or top3ByCombined arrays have fewer than 3 entries (partial data)"
+  }
+]

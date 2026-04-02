@@ -1,0 +1,77 @@
+{
+  "totalRecords": 95,
+  "meta": {
+    "generatedAt": "2026-03-30T00:00:00Z",
+    "source": "audit_schedule_compliance_data"
+  },
+  "complianceBuckets": {
+    "description": "High-performing auditees grouped into compliance percentage buckets (81–95%, 96–99%, 100%), showing auditee count per occupied bucket.",
+    "buckets": [
+      {
+        "bucketLabel": "100%",
+        "bucketMin": 100,
+        "bucketMax": 100,
+        "auditeeCount": 3
+      },
+      {
+        "bucketLabel": "96–99%",
+        "bucketMin": 96,
+        "bucketMax": 99,
+        "auditeeCount": 4
+      },
+      {
+        "bucketLabel": "81–95%",
+        "bucketMin": 81,
+        "bucketMax": 95,
+        "auditeeCount": 5
+      }
+    ]
+  },
+  "top5HighPerformers": {
+    "description": "Top 5 auditees with the absolute highest achieved compliance percentage across all high-compliance buckets combined, sorted descending by achievedPercentage.",
+    "items": [
+      {
+        "auditeeName": "Delhi Main Office",
+        "achievedPercentage": 100
+      },
+      {
+        "auditeeName": "Kolkata Regional",
+        "achievedPercentage": 99.5
+      },
+      {
+        "auditeeName": "Bengaluru Tech Park",
+        "achievedPercentage": 97.2
+      },
+      {
+        "auditeeName": "Mumbai Financial District",
+        "achievedPercentage": 95
+      },
+      {
+        "auditeeName": "Ahmedabad Branch",
+        "achievedPercentage": 88.7
+      }
+    ]
+  },
+  "zoneComplianceOverview": {
+    "description": "Count of audits per zone where Achieved Percentage > 50%, sorted by count descending.",
+    "highComplianceThreshold": 50,
+    "zones": [
+      {
+        "zoneName": "Northern Zone",
+        "highComplianceAuditCount": 18
+      },
+      {
+        "zoneName": "Southern Zone",
+        "highComplianceAuditCount": 14
+      },
+      {
+        "zoneName": "Eastern Zone",
+        "highComplianceAuditCount": 10
+      },
+      {
+        "zoneName": "Western Zone",
+        "highComplianceAuditCount": 7
+      }
+    ]
+  }
+}

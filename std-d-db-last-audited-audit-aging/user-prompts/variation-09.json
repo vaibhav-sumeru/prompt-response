@@ -1,0 +1,42 @@
+{
+  "totalAuditees": 500,
+  "meta": {
+    "generatedAt": "2024-05-15T10:00:00Z",
+    "disclaimer": "* Auditees created without any schedules are not included in the above summary."
+  },
+  "agingAboveThreshold": {
+    "thresholdDays": 90,
+    "count": 475,
+    "percent": 95
+  },
+  "top5AgingAuditees": {
+    "description": "Top 5 auditees with the highest number of days since last audit among those not audited for more than 90 days.",
+    "items": [
+      {
+        "auditeeName": "Phoenix Plaza",
+        "lastScheduleCreatedDate": "25-May-2022",
+        "differenceInDays": 720
+      },
+      {
+        "auditeeName": "Grand Central Station",
+        "lastScheduleCreatedDate": "04-Jul-2022",
+        "differenceInDays": 680
+      },
+      {
+        "auditeeName": "Liberty Tower",
+        "lastScheduleCreatedDate": "13-Aug-2022",
+        "differenceInDays": 640
+      },
+      {
+        "auditeeName": "Ocean View Resort",
+        "lastScheduleCreatedDate": "22-Sep-2022",
+        "differenceInDays": 600
+      },
+      {
+        "auditeeName": "Everest Heights",
+        "lastScheduleCreatedDate": "01-Nov-2022",
+        "differenceInDays": 560
+      }
+    ]
+  }
+}

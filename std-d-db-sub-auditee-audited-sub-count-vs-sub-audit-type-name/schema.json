@@ -1,0 +1,217 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "std-d-db-sub-auditee-audited-sub-count-vs-sub-audit-type-name",
+  "description": "PI (Primary Identifier) execution analysis across sub-audit types — covers top PI-gap sub-audits, found vs not-found breakdown, not-found reasons, and 100% execution sub-audits.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "totalRecords",
+    "totalSubAudits",
+    "meta",
+    "topSubAuditsByPINotFound",
+    "piFoundVsNotFoundSummary",
+    "piNotFoundReasonAnalysis",
+    "fullPIExecutionSubAudits"
+  ],
+  "definitions": {
+    "subAuditPISummaryItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "subAuditTypeName",
+        "totalPICount",
+        "piFoundCount",
+        "piFoundPercent",
+        "piNotFoundCount",
+        "piNotFoundPercent"
+      ],
+      "properties": {
+        "subAuditTypeName": { "type": "string" },
+        "totalPICount": { "type": "integer", "minimum": 0 },
+        "piFoundCount": { "type": "integer", "minimum": 0 },
+        "piFoundPercent": { "type": "number", "minimum": 0, "maximum": 100 },
+        "piNotFoundCount": { "type": "integer", "minimum": 0 },
+        "piNotFoundPercent": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "reasonItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["reason"],
+      "properties": {
+        "reason": { "type": "string" }
+      }
+    }
+  },
+  "properties": {
+    "totalRecords": {
+      "description": "Total number of PI records across all sub-audit types.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "totalSubAudits": {
+      "description": "Total number of distinct sub-audit types in this analysis.",
+      "type": "integer",
+      "minimum": 0
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt"],
+      "properties": {
+        "generatedAt": { "type": "string" }
+      }
+    },
+    "topSubAuditsByPINotFound": {
+      "description": "Top 3 sub-audit types with the highest count of PI Not Found, sorted descending by piNotFoundCount.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["_description", "items"],
+      "properties": {
+        "_description": { "type": "string" },
+        "items": {
+          "type": "array",
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "subAuditTypeName",
+              "totalPICount",
+              "piNotFoundCount",
+              "piNotFoundPercent"
+            ],
+            "properties": {
+              "subAuditTypeName": { "type": "string" },
+              "totalPICount": {
+                "description": "Total PI keys in this sub-audit.",
+                "type": "integer",
+                "minimum": 0
+              },
+              "piNotFoundCount": {
+                "description": "Number of PIs marked as Not Found.",
+                "type": "integer",
+                "minimum": 0
+              },
+              "piNotFoundPercent": {
+                "description": "Percentage of PIs Not Found out of totalPICount, rounded to 2 decimal places.",
+                "type": "number",
+                "minimum": 0,
+                "maximum": 100
+              }
+            }
+          }
+        }
+      }
+    },
+    "piFoundVsNotFoundSummary": {
+      "description": "Aggregate PI found vs not-found statistics across all sub-audit types, plus top 3 sub-audits by total PI volume.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "_description",
+        "avgPIFoundCount",
+        "avgPINotFoundCount",
+        "avgPIFoundPercent",
+        "topSubAuditsByTotalPI"
+      ],
+      "properties": {
+        "_description": { "type": "string" },
+        "avgPIFoundCount": {
+          "description": "Average number of PI Found across all sub-audits (1 decimal place).",
+          "type": "number",
+          "minimum": 0
+        },
+        "avgPINotFoundCount": {
+          "description": "Average number of PI Not Found across all sub-audits (1 decimal place).",
+          "type": "number",
+          "minimum": 0
+        },
+        "avgPIFoundPercent": {
+          "description": "Average PI Found percentage across all sub-audits (2 decimal places).",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "topSubAuditsByTotalPI": {
+          "description": "Top 3 sub-audits sorted by totalPICount descending, with full found/not-found breakdown.",
+          "type": "array",
+          "maxItems": 3,
+          "items": { "$ref": "#/definitions/subAuditPISummaryItem" }
+        }
+      }
+    },
+    "piNotFoundReasonAnalysis": {
+      "description": "Analysis of PI Not Found reasons. Top 5 sub-audits (by piNotFoundCount) each with up to 5 reasons. The AI narrator identifies recurring cross-sub-audit patterns from this data.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["_description", "topSubAuditsWithReasons"],
+      "properties": {
+        "_description": { "type": "string" },
+        "topSubAuditsWithReasons": {
+          "description": "Top 5 sub-audits by piNotFoundCount, each with their top 5 Not Found reasons sorted by count descending. Narrator uses this to identify the most recurring reasons across sub-audits.",
+          "type": "array",
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["subAuditTypeName", "piNotFoundCount", "topReasons"],
+            "properties": {
+              "subAuditTypeName": { "type": "string" },
+              "piNotFoundCount": { "type": "integer", "minimum": 0 },
+              "topReasons": {
+                "description": "Up to 5 most frequent Not Found reasons for this sub-audit, sorted by count descending.",
+                "type": "array",
+                "maxItems": 5,
+                "items": { "$ref": "#/definitions/reasonItem" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "fullPIExecutionSubAudits": {
+      "description": "Sub-audit types that achieved 100% PI execution (zero PI Not Found), with count, percentage, and top 5 by total PI volume.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "_description",
+        "totalSubAuditsWithFullExecution",
+        "percentSubAuditsWithFullExecution",
+        "top5ByTotalPI"
+      ],
+      "properties": {
+        "_description": { "type": "string" },
+        "totalSubAuditsWithFullExecution": {
+          "description": "Number of sub-audits with piNotFoundCount = 0.",
+          "type": "integer",
+          "minimum": 0
+        },
+        "percentSubAuditsWithFullExecution": {
+          "description": "Percentage of all sub-audits that achieved 100% PI execution (2 decimal places).",
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "top5ByTotalPI": {
+          "description": "Up to 5 sub-audits with 100% PI execution, sorted by totalPICount descending (most validated first).",
+          "type": "array",
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["subAuditTypeName", "totalPICount"],
+            "properties": {
+              "subAuditTypeName": { "type": "string" },
+              "totalPICount": {
+                "description": "Total PI keys validated (all found) in this sub-audit.",
+                "type": "integer",
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

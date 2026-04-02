@@ -1,0 +1,3 @@
+- **Auditee Compliance Buckets:** There are **6** auditees in the **100%** range, **10** auditees in the **96–99%** range, and **22** auditees in the **81–95%** range.
+- **Top 5 Overall High Performers:** **Delhi Main Office** achieved **100.00%**, **Kolkata Regional Hub** achieved **99.50%**, **Ahmedabad Branch One** achieved **98.75%**, **Surat Zonal Center** achieved **97.20%**, and **Jaipur City Division** achieved **96.10%**.
+- **Zones with High Compliance:** **Western Region** leads with **18** audit schedules above 50% compliance, followed by Northern Region with 14, Eastern Region with 11, and Southern Region with 7.

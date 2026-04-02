@@ -1,0 +1,86 @@
+{
+  "totalRecords": 210,
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z",
+    "source": "issues_data"
+  },
+  "zoneIssueConcentration": {
+    "description": "Per-zone breakdown of total open issues and distinct auditees contributing those issues, with average issues per auditee. Sorted descending by avgIssuesPerAuditee to surface the zone with the highest issue concentration.",
+    "zones": [
+      {
+        "zoneName": "Northwest Region",
+        "totalIssues": 65,
+        "distinctAuditees": 15,
+        "avgIssuesPerAuditee": 4.3
+      },
+      {
+        "zoneName": "Southeast Region",
+        "totalIssues": 52,
+        "distinctAuditees": 13,
+        "avgIssuesPerAuditee": 4
+      },
+      {
+        "zoneName": "Central Plains",
+        "totalIssues": 45,
+        "distinctAuditees": 12,
+        "avgIssuesPerAuditee": 3.8
+      },
+      {
+        "zoneName": "Coastal Belt",
+        "totalIssues": 30,
+        "distinctAuditees": 10,
+        "avgIssuesPerAuditee": 3
+      },
+      {
+        "zoneName": "Mountain States",
+        "totalIssues": 18,
+        "distinctAuditees": 10,
+        "avgIssuesPerAuditee": 1.8
+      }
+    ]
+  },
+  "topGroupsByIssues": {
+    "description": "Top 3 groups by total issue count, with their corresponding audit type names.",
+    "top3": [
+      {
+        "groupName": "IT Systems Division",
+        "auditTypeName": "IT Security Audit",
+        "issueCount": 42
+      },
+      {
+        "groupName": "Supply Chain Operations",
+        "auditTypeName": "Logistics Audit",
+        "issueCount": 35
+      },
+      {
+        "groupName": "Customer Service Dept.",
+        "auditTypeName": "Service Quality Audit",
+        "issueCount": 28
+      }
+    ]
+  },
+  "topAuditeesByCriticalIssues": {
+    "description": "Top 3 auditees by combined High + Zero Tolerance issue count, with individual breakdown of each risk level.",
+    "totalCriticalIssues": 45,
+    "top3": [
+      {
+        "auditeeName": "Hyderabad Tech Park",
+        "highCount": 10,
+        "zeroToleranceCount": 5,
+        "combinedCriticalCount": 15
+      },
+      {
+        "auditeeName": "Chennai Coastal Branch",
+        "highCount": 8,
+        "zeroToleranceCount": 4,
+        "combinedCriticalCount": 12
+      },
+      {
+        "auditeeName": "Bengaluru Innovation Hub",
+        "highCount": 7,
+        "zeroToleranceCount": 3,
+        "combinedCriticalCount": 10
+      }
+    ]
+  }
+}

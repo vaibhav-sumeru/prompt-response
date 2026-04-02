@@ -1,0 +1,170 @@
+{
+  "totalSchedules": 1800,
+  "meta": {
+    "generatedAt": "2026-04-15T10:30:00Z"
+  },
+  "zoneVolume": {
+    "description": "Per-zone schedule counts with top 3 audit types by volume, sorted descending by scheduleCount.",
+    "items": [
+      {
+        "zoneName": "Central Zone",
+        "scheduleCount": 1200,
+        "percent": 66.7,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "Operational Audit",
+            "count": 550
+          },
+          {
+            "auditTypeName": "Financial Audit",
+            "count": 400
+          },
+          {
+            "auditTypeName": "Compliance Audit",
+            "count": 200
+          }
+        ]
+      },
+      {
+        "zoneName": "North Zone",
+        "scheduleCount": 250,
+        "percent": 13.9,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "IT Audit",
+            "count": 100
+          },
+          {
+            "auditTypeName": "Operational Audit",
+            "count": 80
+          },
+          {
+            "auditTypeName": "Financial Audit",
+            "count": 50
+          }
+        ]
+      },
+      {
+        "zoneName": "South Zone",
+        "scheduleCount": 150,
+        "percent": 8.3,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "HR Audit",
+            "count": 60
+          },
+          {
+            "auditTypeName": "Compliance Audit",
+            "count": 50
+          },
+          {
+            "auditTypeName": "Operational Audit",
+            "count": 30
+          }
+        ]
+      },
+      {
+        "zoneName": "East Zone",
+        "scheduleCount": 120,
+        "percent": 6.7,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "Environmental Audit",
+            "count": 50
+          },
+          {
+            "auditTypeName": "Financial Audit",
+            "count": 40
+          }
+        ]
+      },
+      {
+        "zoneName": "West Zone",
+        "scheduleCount": 80,
+        "percent": 4.4,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "Compliance Audit",
+            "count": 40
+          },
+          {
+            "auditTypeName": "Operational Audit",
+            "count": 30
+          }
+        ]
+      }
+    ]
+  },
+  "reAuditAndReAssess": {
+    "description": "Overall re-audit and re-assess exposure, with top 3 audit types by combined rework count (sorted descending by combinedCount).",
+    "totalReAuditCount": 90,
+    "totalReAuditPercent": 5,
+    "totalReAssessCount": 60,
+    "totalReAssessPercent": 3.3,
+    "top3ByCombined": [
+      {
+        "mainAuditTypeName": "Financial Audit",
+        "reAuditCount": 40,
+        "reAssessCount": 25,
+        "combinedCount": 65
+      },
+      {
+        "mainAuditTypeName": "Operational Audit",
+        "reAuditCount": 30,
+        "reAssessCount": 20,
+        "combinedCount": 50
+      },
+      {
+        "mainAuditTypeName": "Compliance Audit",
+        "reAuditCount": 15,
+        "reAssessCount": 10,
+        "combinedCount": 25
+      }
+    ]
+  },
+  "executionStatusSummary": {
+    "description": "Count and percentage of schedules per execution-status bucket across all 1800 schedules.",
+    "items": [
+      {
+        "status": "Finalized",
+        "count": 900,
+        "percent": 50
+      },
+      {
+        "status": "In Progress",
+        "count": 300,
+        "percent": 16.7
+      },
+      {
+        "status": "Lapsed",
+        "count": 150,
+        "percent": 8.3
+      },
+      {
+        "status": "Re-Audit",
+        "count": 90,
+        "percent": 5
+      },
+      {
+        "status": "Re-Assess",
+        "count": 60,
+        "percent": 3.3
+      },
+      {
+        "status": "Reopened",
+        "count": 120,
+        "percent": 6.7
+      },
+      {
+        "status": "Cancelled",
+        "count": 90,
+        "percent": 5
+      },
+      {
+        "status": "Not Started",
+        "count": 90,
+        "percent": 5
+      }
+    ]
+  }
+}

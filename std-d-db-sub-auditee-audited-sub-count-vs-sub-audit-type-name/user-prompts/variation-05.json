@@ -1,0 +1,101 @@
+{
+  "_description": "PI (Primary Identifier) execution analysis payload for sub-audit types — includes PI not-found gaps, found vs not-found summary, reason analysis, and 100% execution sub-audits.",
+  "totalRecords": 490,
+  "totalSubAudits": 10,
+  "meta": {
+    "generatedAt": "2024-07-30T14:30:00Z"
+  },
+  "topSubAuditsByPINotFound": {
+    "_description": "Top 3 sub-audit types with the highest count of PI Not Found, sorted descending by piNotFoundCount.",
+    "items": [
+      {
+        "subAuditTypeName": "Compliance Check",
+        "totalPICount": 80,
+        "piNotFoundCount": 15,
+        "piNotFoundPercent": 18.75
+      }
+    ]
+  },
+  "piFoundVsNotFoundSummary": {
+    "_description": "Aggregate PI found vs not-found statistics across all 10 sub-audit types, with top 3 sub-audits by total PI volume.",
+    "avgPIFoundCount": 47.5,
+    "avgPINotFoundCount": 1.5,
+    "avgPIFoundPercent": 96.9,
+    "topSubAuditsByTotalPI": [
+      {
+        "subAuditTypeName": "Compliance Check",
+        "totalPICount": 80,
+        "piFoundCount": 65,
+        "piFoundPercent": 81.25,
+        "piNotFoundCount": 15,
+        "piNotFoundPercent": 18.75
+      },
+      {
+        "subAuditTypeName": "Risk Assessment",
+        "totalPICount": 70,
+        "piFoundCount": 70,
+        "piFoundPercent": 100,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      },
+      {
+        "subAuditTypeName": "Financial Reporting Review",
+        "totalPICount": 60,
+        "piFoundCount": 60,
+        "piFoundPercent": 100,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      }
+    ]
+  },
+  "piNotFoundReasonAnalysis": {
+    "_description": "Not Found reason breakdown for top 5 sub-audits by piNotFoundCount. AI narrator identifies recurring reasons across these sub-audits from topSubAuditsWithReasons[].",
+    "topSubAuditsWithReasons": [
+      {
+        "subAuditTypeName": "Compliance Check",
+        "piNotFoundCount": 15,
+        "topReasons": [
+          {
+            "reason": "Incomplete Documentation"
+          },
+          {
+            "reason": "Data Entry Error"
+          },
+          {
+            "reason": "System Glitch"
+          },
+          {
+            "reason": "Missing Approvals"
+          }
+        ]
+      }
+    ]
+  },
+  "fullPIExecutionSubAudits": {
+    "_description": "Sub-audits with 100% PI execution (piNotFoundCount = 0). 3 of 10 sub-audits achieved full execution.",
+    "totalSubAuditsWithFullExecution": 9,
+    "percentSubAuditsWithFullExecution": 90,
+    "top5ByTotalPI": [
+      {
+        "subAuditTypeName": "Risk Assessment",
+        "totalPICount": 70
+      },
+      {
+        "subAuditTypeName": "Financial Reporting Review",
+        "totalPICount": 60
+      },
+      {
+        "subAuditTypeName": "Operational Process Audit",
+        "totalPICount": 55
+      },
+      {
+        "subAuditTypeName": "IT Security Audit",
+        "totalPICount": 50
+      },
+      {
+        "subAuditTypeName": "Vendor Management Review",
+        "totalPICount": 45
+      }
+    ]
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "totalRecords": 45,
+  "meta": {
+    "generatedAt": "2026-04-15T10:30:00Z",
+    "source": "audit_issues_data"
+  },
+  "zoneIssueConcentration": {
+    "description": "Per-zone breakdown of total open issues and distinct auditees contributing those issues, with average issues per auditee. Sorted descending by avgIssuesPerAuditee to surface the zone with the highest issue concentration.",
+    "zones": [
+      {
+        "zoneName": "North Zone",
+        "totalIssues": 45,
+        "distinctAuditees": 10,
+        "avgIssuesPerAuditee": 4.5
+      }
+    ]
+  },
+  "topGroupsByIssues": {
+    "description": "Top 3 groups by total issue count, with their corresponding audit type names.",
+    "top3": [
+      {
+        "groupName": "IT Security Group",
+        "auditTypeName": "Cybersecurity Audit",
+        "issueCount": 20
+      },
+      {
+        "groupName": "Logistics Operations",
+        "auditTypeName": "Operational Efficiency Audit",
+        "issueCount": 15
+      },
+      {
+        "groupName": "Vendor Management",
+        "auditTypeName": "Compliance Audit",
+        "issueCount": 10
+      }
+    ]
+  },
+  "topAuditeesByCriticalIssues": {
+    "description": "Top 3 auditees by combined High + Zero Tolerance issue count, with individual breakdown of each risk level.",
+    "totalCriticalIssues": 22,
+    "top3": [
+      {
+        "auditeeName": "Delhi Data Center",
+        "highCount": 7,
+        "zeroToleranceCount": 3,
+        "combinedCriticalCount": 10
+      },
+      {
+        "auditeeName": "Gurgaon Regional Office",
+        "highCount": 5,
+        "zeroToleranceCount": 2,
+        "combinedCriticalCount": 7
+      },
+      {
+        "auditeeName": "Chandigarh Hub",
+        "highCount": 4,
+        "zeroToleranceCount": 1,
+        "combinedCriticalCount": 5
+      }
+    ]
+  }
+}

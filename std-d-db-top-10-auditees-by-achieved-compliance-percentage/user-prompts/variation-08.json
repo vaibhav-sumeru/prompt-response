@@ -1,0 +1,65 @@
+{
+  "totalRecords": 45,
+  "meta": {
+    "generatedAt": "2024-10-26T10:30:00Z",
+    "source": "audit_schedule_compliance_data"
+  },
+  "complianceBuckets": {
+    "description": "High-performing auditees grouped into compliance percentage buckets (81–95%, 96–99%, 100%), showing auditee count per occupied bucket.",
+    "buckets": [
+      {
+        "bucketLabel": "100%",
+        "bucketMin": 100,
+        "bucketMax": 100,
+        "auditeeCount": 7
+      },
+      {
+        "bucketLabel": "96–99%",
+        "bucketMin": 96,
+        "bucketMax": 99,
+        "auditeeCount": 11
+      },
+      {
+        "bucketLabel": "81–95%",
+        "bucketMin": 81,
+        "bucketMax": 95,
+        "auditeeCount": 0
+      }
+    ]
+  },
+  "top5HighPerformers": {
+    "description": "Top 5 auditees with the absolute highest achieved compliance percentage across all high-compliance buckets combined, sorted descending by achievedPercentage.",
+    "items": [
+      {
+        "auditeeName": "Mumbai Metro Branch",
+        "achievedPercentage": 100
+      },
+      {
+        "auditeeName": "Delhi Central Operations",
+        "achievedPercentage": 99.8
+      },
+      {
+        "auditeeName": "Kolkata East Hub",
+        "achievedPercentage": 98.5
+      },
+      {
+        "auditeeName": "Bengaluru Tech Park",
+        "achievedPercentage": 97.2
+      },
+      {
+        "auditeeName": "Hyderabad Financial District",
+        "achievedPercentage": 96.9
+      }
+    ]
+  },
+  "zoneComplianceOverview": {
+    "description": "Count of audits per zone where Achieved Percentage > 50%, sorted by count descending.",
+    "highComplianceThreshold": 50,
+    "zones": [
+      {
+        "zoneName": "West Zone",
+        "highComplianceAuditCount": 28
+      }
+    ]
+  }
+}

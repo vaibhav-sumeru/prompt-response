@@ -1,0 +1,99 @@
+{
+  "totalRecords": 120,
+  "meta": {
+    "generatedAt": "2024-10-27T11:30:00Z"
+  },
+  "riskWiseZoneDistribution": {
+    "description": "Distribution of issues across Zero Tolerance, High, Medium, and Low risk levels for each zone. Percentages are relative to each zone's total issues.",
+    "zones": [
+      {
+        "zoneName": "Central Zone",
+        "totalIssues": 60,
+        "riskBreakdown": [
+          {
+            "riskLevel": "Zero Tolerance",
+            "count": 8,
+            "percent": 13.3
+          },
+          {
+            "riskLevel": "High",
+            "count": 18,
+            "percent": 30
+          },
+          {
+            "riskLevel": "Medium",
+            "count": 24,
+            "percent": 40
+          },
+          {
+            "riskLevel": "Low",
+            "count": 10,
+            "percent": 16.7
+          }
+        ]
+      }
+    ]
+  },
+  "auditeesHighRiskConcentration": {
+    "description": "Top 3 auditees ranked by combined High and Zero Tolerance issue count, with individual breakdowns and contribution to total critical issues.",
+    "totalCriticalIssues": 45,
+    "top3": [
+      {
+        "auditeeName": "ABC Corp – Mumbai",
+        "highRiskCount": 10,
+        "zeroToleranceCount": 4,
+        "totalCriticalCount": 14,
+        "contributionPercent": 31.1
+      },
+      {
+        "auditeeName": "XYZ Services – Delhi",
+        "highRiskCount": 8,
+        "zeroToleranceCount": 3,
+        "totalCriticalCount": 11,
+        "contributionPercent": 24.4
+      },
+      {
+        "auditeeName": "PQR Solutions – Chennai",
+        "highRiskCount": 7,
+        "zeroToleranceCount": 2,
+        "totalCriticalCount": 9,
+        "contributionPercent": 20
+      }
+    ]
+  },
+  "recurringCriticalByZone": {
+    "description": "For each zone, count and percentage of High and Zero Tolerance issues that are flagged as recurring. Sorted by recurringCriticalPercent descending.",
+    "zones": [
+      {
+        "zoneName": "Central Zone",
+        "totalCriticalIssues": 26,
+        "recurringCriticalCount": 12,
+        "recurringCriticalPercent": 46.2
+      }
+    ]
+  },
+  "recurringCriticalByGroup": {
+    "description": "Top 3 groups by count of High and Zero Tolerance issues that are also recurring, sorted by recurringCriticalCount descending.",
+    "totalRecurringCriticalIssues": 30,
+    "top3": [
+      {
+        "groupName": "Product Team",
+        "totalCriticalIssues": 18,
+        "recurringCriticalCount": 9,
+        "recurringCriticalPercent": 50
+      },
+      {
+        "groupName": "Sales Department",
+        "totalCriticalIssues": 15,
+        "recurringCriticalCount": 7,
+        "recurringCriticalPercent": 46.7
+      },
+      {
+        "groupName": "HR Division",
+        "totalCriticalIssues": 12,
+        "recurringCriticalCount": 6,
+        "recurringCriticalPercent": 50
+      }
+    ]
+  }
+}

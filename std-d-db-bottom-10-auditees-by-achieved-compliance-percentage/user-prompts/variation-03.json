@@ -1,0 +1,57 @@
+{
+  "totalRecords": 150,
+  "meta": {
+    "generatedAt": "2026-03-23T00:00:00Z",
+    "source": "audit_schedule_compliance_data"
+  },
+  "complianceBuckets": {
+    "description": "Low-performing auditees grouped into compliance percentage buckets (0–15%, 15–25%, 25–50%), showing auditee count per occupied bucket.",
+    "buckets": [
+      {
+        "bucketLabel": "0–15%",
+        "bucketMin": 0,
+        "bucketMax": 15,
+        "auditeeCount": 7
+      }
+    ]
+  },
+  "top3OverallLowPerformers": {
+    "description": "Top 3 auditees with the absolute lowest achieved compliance percentage across all low-compliance buckets combined, sorted ascending by achievedPercentage.",
+    "items": [
+      {
+        "auditeeName": "Puducherry Branch",
+        "achievedPercentage": 2.1
+      },
+      {
+        "auditeeName": "Ranchi Hub",
+        "achievedPercentage": 6.5
+      },
+      {
+        "auditeeName": "Patna Regional Office",
+        "achievedPercentage": 10.9
+      }
+    ]
+  },
+  "zoneComplianceOverview": {
+    "description": "Count of audits per zone where Achieved Percentage < 50%, sorted by count descending.",
+    "lowComplianceThreshold": 50,
+    "zones": [
+      {
+        "zoneName": "East Zone",
+        "lowComplianceAuditCount": 22
+      },
+      {
+        "zoneName": "Central Zone",
+        "lowComplianceAuditCount": 15
+      },
+      {
+        "zoneName": "North Zone",
+        "lowComplianceAuditCount": 8
+      },
+      {
+        "zoneName": "South Zone",
+        "lowComplianceAuditCount": 4
+      }
+    ]
+  }
+}

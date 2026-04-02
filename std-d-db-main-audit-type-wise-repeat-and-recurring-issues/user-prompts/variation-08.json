@@ -1,0 +1,148 @@
+{
+  "totalRecords": 285,
+  "meta": {
+    "generatedAt": "2024-10-26T11:30:00Z"
+  },
+  "recurringAbove50": {
+    "description": "Main audit types where recurring issues exceed 50% of total issues. Sorted by recurringPercent descending. Top 5 shown out of 6 qualifying audits.",
+    "totalQualifyingAudits": 6,
+    "top5": [
+      {
+        "auditName": "IT Infrastructure Audit",
+        "recurringCount": 17,
+        "totalIssues": 23,
+        "recurringPercent": 73.9
+      },
+      {
+        "auditName": "HR Policy Compliance",
+        "recurringCount": 15,
+        "totalIssues": 21,
+        "recurringPercent": 71.4
+      },
+      {
+        "auditName": "Data Privacy Audit",
+        "recurringCount": 12,
+        "totalIssues": 18,
+        "recurringPercent": 66.7
+      },
+      {
+        "auditName": "Environmental Compliance",
+        "recurringCount": 10,
+        "totalIssues": 16,
+        "recurringPercent": 62.5
+      },
+      {
+        "auditName": "Supply Chain Audit",
+        "recurringCount": 9,
+        "totalIssues": 15,
+        "recurringPercent": 60
+      }
+    ]
+  },
+  "repeatAbove75": {
+    "description": "Main audit types where repeat issues exceed 75% of total issues. Sorted by repeatPercent descending. Top 5 shown out of 4 qualifying audits.",
+    "totalQualifyingAudits": 4,
+    "top5": [
+      {
+        "auditName": "IT Infrastructure Audit",
+        "repeatCount": 18,
+        "totalIssues": 22,
+        "repeatPercent": 81.8
+      },
+      {
+        "auditName": "Vendor Due Diligence",
+        "repeatCount": 14,
+        "totalIssues": 17,
+        "repeatPercent": 82.4
+      },
+      {
+        "auditName": "Financial Reporting Audit",
+        "repeatCount": 12,
+        "totalIssues": 15,
+        "repeatPercent": 80
+      },
+      {
+        "auditName": "Operational Efficiency Review",
+        "repeatCount": 10,
+        "totalIssues": 13,
+        "repeatPercent": 76.9
+      }
+    ]
+  },
+  "highZeroToleranceRisk": {
+    "description": "Top 3 main audit types by count of High and Zero Tolerance risk issues, split by recurring and repeat tagging.",
+    "byRecurring": {
+      "description": "Top 3 audits ranked by count of recurring issues with Risk Level = High or Zero Tolerance.",
+      "top3": []
+    },
+    "byRepeat": {
+      "description": "Top 3 audits ranked by count of repeat issues with Risk Level = High or Zero Tolerance.",
+      "top3": []
+    }
+  },
+  "groupDistribution": {
+    "description": "Top 3 groups with highest and bottom 3 groups with lowest recurring and repeat issue counts.",
+    "recurring": {
+      "description": "Groups ranked by recurring issue count — top 3 highest and bottom 3 lowest.",
+      "top3": [
+        {
+          "groupName": "Operations Division",
+          "recurringCount": 55
+        },
+        {
+          "groupName": "IT Department",
+          "recurringCount": 48
+        },
+        {
+          "groupName": "Compliance Office",
+          "recurringCount": 39
+        }
+      ],
+      "bottom3": [
+        {
+          "groupName": "HR Unit",
+          "recurringCount": 7
+        },
+        {
+          "groupName": "Marketing Team",
+          "recurringCount": 11
+        },
+        {
+          "groupName": "Legal Affairs",
+          "recurringCount": 15
+        }
+      ]
+    },
+    "repeat": {
+      "description": "Groups ranked by repeat issue count — top 3 highest and bottom 3 lowest.",
+      "top3": [
+        {
+          "groupName": "Operations Division",
+          "repeatCount": 49
+        },
+        {
+          "groupName": "IT Department",
+          "repeatCount": 41
+        },
+        {
+          "groupName": "Compliance Office",
+          "repeatCount": 35
+        }
+      ],
+      "bottom3": [
+        {
+          "groupName": "Legal Affairs",
+          "repeatCount": 5
+        },
+        {
+          "groupName": "HR Unit",
+          "repeatCount": 9
+        },
+        {
+          "groupName": "Marketing Team",
+          "repeatCount": 13
+        }
+      ]
+    }
+  }
+}

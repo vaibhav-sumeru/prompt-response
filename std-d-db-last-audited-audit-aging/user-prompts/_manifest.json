@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "normal-balanced",
+    "description": "Balanced values across categories with realistic aging distribution"
+  },
+  {
+    "id": "variation-02",
+    "category": "normal-balanced",
+    "description": "Balanced values across categories with realistic aging distribution"
+  },
+  {
+    "id": "variation-03",
+    "category": "extreme-skew",
+    "description": "One category has significantly higher aging than others"
+  },
+  {
+    "id": "variation-04",
+    "category": "extreme-skew",
+    "description": "One category has significantly higher aging than others"
+  },
+  {
+    "id": "variation-05",
+    "category": "zero-values",
+    "description": "Some key counts and percentages are zero"
+  },
+  {
+    "id": "variation-06",
+    "category": "zero-values",
+    "description": "Some key counts and percentages are zero"
+  },
+  {
+    "id": "variation-07",
+    "category": "single-zone",
+    "description": "Only one top-level entity appears in the dataset"
+  },
+  {
+    "id": "variation-08",
+    "category": "all-perfect",
+    "description": "Best-case aging profile with minimal risk indicators"
+  },
+  {
+    "id": "variation-09",
+    "category": "all-worst",
+    "description": "Worst-case aging profile with severe backlog concentration"
+  },
+  {
+    "id": "variation-10",
+    "category": "missing-fields",
+    "description": "Some optional fields are null or omitted"
+  }
+]

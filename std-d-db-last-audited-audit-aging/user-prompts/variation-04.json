@@ -1,0 +1,42 @@
+{
+  "totalAuditees": 300,
+  "meta": {
+    "generatedAt": "2024-05-15T10:30:00Z",
+    "disclaimer": "* Auditees created without any schedules are not included in the above summary."
+  },
+  "agingAboveThreshold": {
+    "thresholdDays": 90,
+    "count": 80,
+    "percent": 26.7
+  },
+  "top5AgingAuditees": {
+    "description": "Top 5 auditees with the highest number of days since last audit among those not audited for more than 90 days.",
+    "items": [
+      {
+        "auditeeName": "Mega Corp Inc.",
+        "lastScheduleCreatedDate": "15-Feb-2022",
+        "differenceInDays": 820
+      },
+      {
+        "auditeeName": "Global Solutions Ltd.",
+        "lastScheduleCreatedDate": "27-Mar-2022",
+        "differenceInDays": 780
+      },
+      {
+        "auditeeName": "Innovate Systems",
+        "lastScheduleCreatedDate": "10-Jun-2022",
+        "differenceInDays": 700
+      },
+      {
+        "auditeeName": "Alpha Logistics",
+        "lastScheduleCreatedDate": "30-Jul-2022",
+        "differenceInDays": 650
+      },
+      {
+        "auditeeName": "Dynamic Enterprises",
+        "lastScheduleCreatedDate": "28-Sep-2022",
+        "differenceInDays": 590
+      }
+    ]
+  }
+}

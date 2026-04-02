@@ -1,0 +1,32 @@
+{
+  "totalAuditees": 150,
+  "meta": {
+    "generatedAt": "2024-07-20T10:30:00Z",
+    "disclaimer": "* Auditees created without any schedules are not included in the above summary."
+  },
+  "agingAboveThreshold": {
+    "thresholdDays": 90,
+    "count": 15,
+    "percent": 10
+  },
+  "top5AgingAuditees": {
+    "description": "Top 5 auditees with the highest number of days since last audit among those not audited for more than 90 days.",
+    "items": [
+      {
+        "auditeeName": "Connaught Place Outlet",
+        "lastScheduleCreatedDate": "05-Mar-2024",
+        "differenceInDays": 137
+      },
+      {
+        "auditeeName": "Marine Drive Store",
+        "lastScheduleCreatedDate": "15-Mar-2024",
+        "differenceInDays": 127
+      },
+      {
+        "auditeeName": "MG Road Branch",
+        "lastScheduleCreatedDate": "01-Apr-2024",
+        "differenceInDays": 111
+      }
+    ]
+  }
+}

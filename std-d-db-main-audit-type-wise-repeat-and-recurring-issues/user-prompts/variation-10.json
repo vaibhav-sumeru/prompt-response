@@ -1,0 +1,180 @@
+{
+  "totalRecords": 350,
+  "meta": {
+    "generatedAt": "2023-10-27T10:30:00Z"
+  },
+  "recurringAbove50": {
+    "description": "Main audit types where recurring issues exceed 50% of total issues. Sorted by recurringPercent descending. Top 5 shown out of 6 qualifying audits.",
+    "totalQualifyingAudits": 6,
+    "top5": [
+      {
+        "auditName": "Operational Risk Audit",
+        "recurringCount": 19,
+        "totalIssues": 25,
+        "recurringPercent": 76
+      },
+      {
+        "auditName": "Compliance Policy Audit",
+        "recurringCount": 13,
+        "totalIssues": 20,
+        "recurringPercent": 65
+      },
+      {
+        "auditName": "Financial Controls Review",
+        "recurringCount": 26,
+        "totalIssues": 40,
+        "recurringPercent": 65
+      },
+      {
+        "auditName": "IT System Audit",
+        "recurringCount": 10,
+        "totalIssues": 17,
+        "recurringPercent": 58.8
+      },
+      {
+        "auditName": "HR Compliance Audit",
+        "recurringCount": 9,
+        "totalIssues": 16,
+        "recurringPercent": 56.3
+      }
+    ]
+  },
+  "repeatAbove75": {
+    "description": "Main audit types where repeat issues exceed 75% of total issues. Sorted by repeatPercent descending. Top 5 shown out of 6 qualifying audits.",
+    "totalQualifyingAudits": 6,
+    "top5": [
+      {
+        "auditName": "Vendor Contract Audit",
+        "repeatCount": 17,
+        "totalIssues": 20,
+        "repeatPercent": 85
+      },
+      {
+        "auditName": "Data Privacy Audit",
+        "repeatCount": 14,
+        "totalIssues": 18,
+        "repeatPercent": 77.8
+      },
+      {
+        "auditName": "Infrastructure Security",
+        "repeatCount": 13,
+        "totalIssues": 17,
+        "repeatPercent": 76.5
+      },
+      {
+        "auditName": "Procurement Process Audit",
+        "repeatCount": 15,
+        "totalIssues": 20,
+        "repeatPercent": 75
+      },
+      {
+        "auditName": "Supply Chain Audit",
+        "repeatCount": 21,
+        "totalIssues": 28,
+        "repeatPercent": 75
+      }
+    ]
+  },
+  "highZeroToleranceRisk": {
+    "description": "Top 3 main audit types by count of High and Zero Tolerance risk issues, split by recurring and repeat tagging.",
+    "byRecurring": {
+      "description": "Top 3 audits ranked by count of recurring issues with Risk Level = High or Zero Tolerance.",
+      "top3": [
+        {
+          "auditName": "Operational Risk Audit",
+          "issueCount": 12
+        },
+        {
+          "auditName": "Compliance Policy Audit",
+          "issueCount": 10
+        },
+        {
+          "auditName": "Financial Controls Review",
+          "issueCount": 8
+        }
+      ]
+    },
+    "byRepeat": {
+      "description": "Top 3 audits ranked by count of repeat issues with Risk Level = High or Zero Tolerance.",
+      "top3": [
+        {
+          "auditName": "Vendor Contract Audit",
+          "issueCount": 14
+        },
+        {
+          "auditName": "Procurement Process Audit",
+          "issueCount": 9
+        },
+        {
+          "auditName": "Data Privacy Audit",
+          "issueCount": 7
+        }
+      ]
+    }
+  },
+  "groupDistribution": {
+    "description": "Top 3 groups with highest and bottom 3 groups with lowest recurring and repeat issue counts.",
+    "recurring": {
+      "description": "Groups ranked by recurring issue count — top 3 highest and bottom 3 lowest.",
+      "top3": [
+        {
+          "groupName": "North Zone",
+          "recurringCount": 45
+        },
+        {
+          "groupName": "West Zone",
+          "recurringCount": 38
+        },
+        {
+          "groupName": "South Zone",
+          "recurringCount": 30
+        }
+      ],
+      "bottom3": [
+        {
+          "groupName": "East Zone",
+          "recurringCount": 5
+        },
+        {
+          "groupName": "Central Zone",
+          "recurringCount": 8
+        },
+        {
+          "groupName": "Northeast Zone",
+          "recurringCount": 11
+        }
+      ]
+    },
+    "repeat": {
+      "description": "Groups ranked by repeat issue count — top 3 highest and bottom 3 lowest.",
+      "top3": [
+        {
+          "groupName": "North Zone",
+          "repeatCount": 40
+        },
+        {
+          "groupName": "West Zone",
+          "repeatCount": 32
+        },
+        {
+          "groupName": "South Zone",
+          "repeatCount": 25
+        }
+      ],
+      "bottom3": [
+        {
+          "groupName": "Northeast Zone",
+          "repeatCount": 3
+        },
+        {
+          "groupName": "East Zone",
+          "repeatCount": 6
+        },
+        {
+          "groupName": "Central Zone",
+          "repeatCount": 9
+        }
+      ]
+    }
+  }
+}

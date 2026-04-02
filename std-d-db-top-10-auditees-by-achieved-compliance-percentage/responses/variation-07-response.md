@@ -1,0 +1,3 @@
+- **Auditee Compliance Buckets:** **7** auditees are in the **100%** range, **12** auditees are in the **96–99%** range, and **18** auditees are in the **81–95%** range.
+- **Top 5 Overall High Performers:** **Kochi Port Authority** achieved **100.00%**, **Goa Financial Hub** achieved **99.20%**, **Chandigarh Tech Park** achieved **98.70%**, **Ahmedabad Logistics Center** achieved **97.50%**, and **Bhopal Regional Office** achieved **96.10%**.
+- **Zones with High Compliance:** No zones recorded audit schedules above 50% compliance. All zones currently show zero audit counts falling into the high-compliance category.

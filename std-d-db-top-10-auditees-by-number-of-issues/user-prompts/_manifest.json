@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "var-01-normal-balanced",
+    "description": "Realistic balanced payload. 4–5 zones each with totalIssues > 5, distinctAuditees > 3, and varied avgIssuesPerAuditee (1.5–4.5). All 3 groups in topGroupsByIssues with different auditTypeName values. All 3 auditees in topAuditeesByCriticalIssues with non-zero highCount and zeroToleranceCount. Different names and counts across both variations."
+  },
+  {
+    "id": "variation-02",
+    "category": "var-01-normal-balanced",
+    "description": "Realistic balanced payload. 4–5 zones each with totalIssues > 5, distinctAuditees > 3, and varied avgIssuesPerAuditee (1.5–4.5). All 3 groups in topGroupsByIssues with different auditTypeName values. All 3 auditees in topAuditeesByCriticalIssues with non-zero highCount and zeroToleranceCount. Different names and counts across both variations."
+  },
+  {
+    "id": "variation-03",
+    "category": "var-02-single-zone",
+    "description": "zoneIssueConcentration.zones[] has exactly 1 zone with totalIssues = 30+, distinctAuditees = 8+, avgIssuesPerAuditee > 3.0. topGroupsByIssues and topAuditeesByCriticalIssues are normally populated. Tests single-zone narration: narrator must bold zones[0] values and reach 50+ words without comparative language."
+  },
+  {
+    "id": "variation-04",
+    "category": "var-03-empty-zones",
+    "description": "zoneIssueConcentration.zones[] is empty. topGroupsByIssues.top3 has 3 items normally. topAuditeesByCriticalIssues.top3 has 3 items normally. Tests that narrator writes the full contextual absence sentence for empty zones (≥30 words) without inventing zone data."
+  },
+  {
+    "id": "variation-05",
+    "category": "var-04-tied-avg-issues-per-auditee",
+    "description": "Two zones share identical avgIssuesPerAuditee (e.g., both 3.5) but have different totalIssues and distinctAuditees. zones[0] and zones[1] are both at 3.5. Tests that narrator reports both individually in payload order without merging or skipping — bold zones[0] values only."
+  },
+  {
+    "id": "variation-06",
+    "category": "var-05-zero-critical-issues",
+    "description": "topAuditeesByCriticalIssues.totalCriticalIssues = 0 and top3 = [] (empty). zoneIssueConcentration and topGroupsByIssues are normally populated. Tests that narrator writes contextual absence sentence for empty top3 AND explicitly states totalCriticalIssues as 0 (numeric, not suppressed)."
+  },
+  {
+    "id": "variation-07",
+    "category": "var-06-fewer-than-3-groups",
+    "description": "topGroupsByIssues.top3 has exactly 2 items (only 2 qualifying groups). zoneIssueConcentration has 4 zones normally. topAuditeesByCriticalIssues has 3 auditees. Tests that narrator lists exactly the 2 present groups without inventing a third, and does not note the absence."
+  },
+  {
+    "id": "variation-08",
+    "category": "var-07-fewer-than-3-critical-auditees",
+    "description": "topAuditeesByCriticalIssues.top3 has exactly 1 auditee (only 1 qualifying). totalCriticalIssues > 0. topGroupsByIssues and zones normally populated. Tests that narrator reports only the 1 present auditee with bold name and combinedCriticalCount, and states totalCriticalIssues for context."
+  },
+  {
+    "id": "variation-09",
+    "category": "var-08-all-zero-tolerance-no-high",
+    "description": "All 3 auditees in topAuditeesByCriticalIssues have highCount = 0 and zeroToleranceCount > 0. combinedCriticalCount = zeroToleranceCount. Tests that narrator correctly reports highCount as 0 explicitly for each auditee without suppressing it, and does not bold the 0 values."
+  },
+  {
+    "id": "variation-10",
+    "category": "var-09-extreme-high-count-zone",
+    "description": "zones[0] has totalIssues = 100+ and distinctAuditees = 5, giving avgIssuesPerAuditee = 20.0. Other 3 zones have avgIssuesPerAuditee < 5.0. topGroupsByIssues.top3[0].issueCount = 60+. totalCriticalIssues = 80+. Tests accurate reporting of large numeric values without rounding or approximation."
+  }
+]

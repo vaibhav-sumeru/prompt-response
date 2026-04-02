@@ -1,0 +1,92 @@
+{
+  "_description": "Data payload for the Sub-audit issues count widget containing aggregated statistics at the global and sub-audit level.",
+  "totalRecords": 280,
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "resolutionAndBacklogHealth": {
+    "_description": "Tracks ageing delays like >21 days and highly resolved metrics (<7 days resolution) for sub-audits.",
+    "totalIssuesAcrossSubAudits": 280,
+    "topDelayedSubAudits": [
+      {
+        "_description": "Sub-audit types with the highest pending backlog/ageing (>21 days). Contains up to 5 items.",
+        "subAuditTypeName": "Sub-audit Type X",
+        "totalIssues": 70,
+        "issuesPendingOver21Days": 35,
+        "percentagePendingOver21Days": 50
+      },
+      {
+        "subAuditTypeName": "Sub-audit Type Y",
+        "totalIssues": 60,
+        "issuesPendingOver21Days": 24,
+        "percentagePendingOver21Days": 40,
+        "issuesPendingOver28Days": 10,
+        "percentagePendingOver28Days": 16.67
+      }
+    ],
+    "topHealthySubAudits": [
+      {
+        "_description": "Sub-audit types heavily resolved within 7 days. Contains up to 3 items.",
+        "subAuditTypeName": "Sub-audit Type A",
+        "totalIssues": 50,
+        "issuesResolvedWithin7Days": 40,
+        "percentageResolvedWithin7Days": 80
+      },
+      {
+        "subAuditTypeName": "Sub-audit Type B",
+        "totalIssues": 40,
+        "issuesResolvedWithin7Days": 32,
+        "percentageResolvedWithin7Days": 80
+      }
+    ]
+  },
+  "riskAndPriorityExposure": {
+    "_description": "Contains risk composition like High Risk and Zero Tolerance issues globally and across worst-performing sub-audits.",
+    "totalHighRiskIssues": 85,
+    "percentageHighRisk": 30.36,
+    "totalZeroToleranceIssues": 15,
+    "topHighRiskSubAudits": [
+      {
+        "_description": "Sub-audit types sorted by combined high risk and zero tolerance counts. Top 3 items.",
+        "subAuditTypeName": "Sub-audit Type X",
+        "highRiskIssues": 30,
+        "zeroToleranceIssues": 5,
+        "recurringHighRiskAndZeroTolerance": 10
+      },
+      {
+        "subAuditTypeName": "Sub-audit Type Z",
+        "combinedHighRiskAndZeroTolerance": 32,
+        "highRiskIssues": 28,
+        "zeroToleranceIssues": 4,
+        "recurringHighRiskAndZeroTolerance": 8
+      }
+    ]
+  },
+  "exceptionsAndHotspots": {
+    "_description": "Identifies regions/zones with highest exceptions, recurring issues, and delays.",
+    "topZonesByRiskAndAgeing": [
+      {
+        "_description": "Zones sorted by highest occurrences of critical risk, recurrences, and delayed timelines. Top 3 items.",
+        "zoneName": "North Zone",
+        "totalIssues": 90,
+        "highAndCriticalRiskIssues": 40,
+        "recurringIssues": 20,
+        "issuesPendingOver21Days": 25
+      },
+      {
+        "zoneName": "West Zone",
+        "totalIssues": 70,
+        "highAndCriticalRiskIssues": 25,
+        "recurringIssues": 15,
+        "issuesPendingOver21Days": 18
+      },
+      {
+        "zoneName": "Central Zone",
+        "totalIssues": 50,
+        "highAndCriticalRiskIssues": 10,
+        "recurringIssues": 8,
+        "issuesPendingOver21Days": 12
+      }
+    ]
+  }
+}

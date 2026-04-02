@@ -1,0 +1,136 @@
+{
+  "_description": "PI (Primary Identifier) execution analysis payload for sub-audit types — includes PI not-found gaps, found vs not-found summary, reason analysis, and 100% execution sub-audits.",
+  "totalRecords": 450,
+  "totalSubAudits": 10,
+  "meta": {
+    "generatedAt": "2024-07-29T14:30:00Z"
+  },
+  "topSubAuditsByPINotFound": {
+    "_description": "Top 3 sub-audit types with the highest count of PI Not Found, sorted descending by piNotFoundCount.",
+    "items": [
+      {
+        "subAuditTypeName": "Policy Compliance Review",
+        "totalPICount": 70,
+        "piNotFoundCount": 22,
+        "piNotFoundPercent": 31.43
+      },
+      {
+        "subAuditTypeName": "Transaction Monitoring",
+        "totalPICount": 60,
+        "piNotFoundCount": 18,
+        "piNotFoundPercent": 30
+      },
+      {
+        "subAuditTypeName": "KYC Documentation Audit",
+        "totalPICount": 55,
+        "piNotFoundCount": 15,
+        "piNotFoundPercent": 27.27
+      }
+    ]
+  },
+  "piFoundVsNotFoundSummary": {
+    "_description": "Aggregate PI found vs not-found statistics across all 10 sub-audit types, with top 3 sub-audits by total PI volume.",
+    "avgPIFoundCount": 37.4,
+    "avgPINotFoundCount": 7.6,
+    "avgPIFoundPercent": 83.11,
+    "topSubAuditsByTotalPI": [
+      {
+        "subAuditTypeName": "Policy Compliance Review",
+        "totalPICount": 70,
+        "piFoundCount": 48,
+        "piFoundPercent": 68.57,
+        "piNotFoundCount": 22,
+        "piNotFoundPercent": 31.43
+      },
+      {
+        "subAuditTypeName": "Transaction Monitoring",
+        "totalPICount": 60,
+        "piFoundCount": 42,
+        "piFoundPercent": 70,
+        "piNotFoundCount": 18,
+        "piNotFoundPercent": 30
+      },
+      {
+        "subAuditTypeName": "System Access Control",
+        "totalPICount": 50,
+        "piFoundCount": 50,
+        "piFoundPercent": 100,
+        "piNotFoundCount": 0,
+        "piNotFoundPercent": 0
+      }
+    ]
+  },
+  "piNotFoundReasonAnalysis": {
+    "_description": "Not Found reason breakdown for top 5 sub-audits by piNotFoundCount. AI narrator identifies recurring reasons across these sub-audits from topSubAuditsWithReasons[].",
+    "topSubAuditsWithReasons": [
+      {
+        "subAuditTypeName": "Policy Compliance Review",
+        "piNotFoundCount": 22,
+        "topReasons": [
+          {
+            "reason": "Missing Mandatory Document"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Transaction Monitoring",
+        "piNotFoundCount": 18,
+        "topReasons": [
+          {
+            "reason": "Missing Mandatory Document"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "KYC Documentation Audit",
+        "piNotFoundCount": 15,
+        "topReasons": [
+          {
+            "reason": "Missing Mandatory Document"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Risk Assessment Review",
+        "piNotFoundCount": 10,
+        "topReasons": [
+          {
+            "reason": "Missing Mandatory Document"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Fraud Prevention Audit",
+        "piNotFoundCount": 8,
+        "topReasons": [
+          {
+            "reason": "Missing Mandatory Document"
+          }
+        ]
+      }
+    ]
+  },
+  "fullPIExecutionSubAudits": {
+    "_description": "Sub-audits with 100% PI execution (piNotFoundCount = 0). 3 of 10 sub-audits achieved full execution.",
+    "totalSubAuditsWithFullExecution": 4,
+    "percentSubAuditsWithFullExecution": 40,
+    "top5ByTotalPI": [
+      {
+        "subAuditTypeName": "System Access Control",
+        "totalPICount": 50
+      },
+      {
+        "subAuditTypeName": "Data Privacy Compliance",
+        "totalPICount": 40
+      },
+      {
+        "subAuditTypeName": "Vendor Due Diligence",
+        "totalPICount": 35
+      },
+      {
+        "subAuditTypeName": "IT Security Audit",
+        "totalPICount": 25
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "_description": "PI (Primary Identifier) execution analysis payload for sub-audit types — includes PI not-found gaps, found vs not-found summary, reason analysis, and 100% execution sub-audits.",
+  "totalRecords": 390,
+  "totalSubAudits": 10,
+  "meta": {
+    "generatedAt": "2026-03-30T10:00:00Z"
+  },
+  "topSubAuditsByPINotFound": {
+    "_description": "Top 3 sub-audit types with the highest count of PI Not Found, sorted descending by piNotFoundCount.",
+    "items": [
+      {
+        "subAuditTypeName": "KYC Verification",
+        "totalPICount": 70,
+        "piNotFoundCount": 20,
+        "piNotFoundPercent": 28.57
+      },
+      {
+        "subAuditTypeName": "Cash Handling Review",
+        "totalPICount": 40,
+        "piNotFoundCount": 12,
+        "piNotFoundPercent": 30
+      },
+      {
+        "subAuditTypeName": "Loan Eligibility Check",
+        "totalPICount": 50,
+        "piNotFoundCount": 10,
+        "piNotFoundPercent": 20
+      }
+    ]
+  },
+  "piFoundVsNotFoundSummary": {
+    "_description": "Aggregate PI found vs not-found statistics across all 10 sub-audit types, with top 3 sub-audits by total PI volume.",
+    "avgPIFoundCount": 32.1,
+    "avgPINotFoundCount": 6.9,
+    "avgPIFoundPercent": 82.31,
+    "topSubAuditsByTotalPI": [
+      {
+        "subAuditTypeName": "KYC Verification",
+        "totalPICount": 70,
+        "piFoundCount": 50,
+        "piFoundPercent": 71.43,
+        "piNotFoundCount": 20,
+        "piNotFoundPercent": 28.57
+      },
+      {
+        "subAuditTypeName": "Credit Assessment",
+        "totalPICount": 60,
+        "piFoundCount": 53,
+        "piFoundPercent": 88.33,
+        "piNotFoundCount": 7,
+        "piNotFoundPercent": 11.67
+      },
+      {
+        "subAuditTypeName": "Loan Eligibility Check",
+        "totalPICount": 50,
+        "piFoundCount": 40,
+        "piFoundPercent": 80,
+        "piNotFoundCount": 10,
+        "piNotFoundPercent": 20
+      }
+    ]
+  },
+  "piNotFoundReasonAnalysis": {
+    "_description": "Not Found reason breakdown for top 5 sub-audits by piNotFoundCount. AI narrator identifies recurring reasons across these sub-audits from topSubAuditsWithReasons[].",
+    "topSubAuditsWithReasons": [
+      {
+        "subAuditTypeName": "KYC Verification",
+        "piNotFoundCount": 20,
+        "topReasons": [
+          {
+            "reason": "Records Not Maintained"
+          },
+          {
+            "reason": "PI Not Uploaded by Branch"
+          },
+          {
+            "reason": "Incorrect PI Mapping"
+          },
+          {
+            "reason": "Missing Documentation"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Cash Handling Review",
+        "piNotFoundCount": 12,
+        "topReasons": [
+          {
+            "reason": "Records Not Maintained"
+          },
+          {
+            "reason": "Staff Training Gap"
+          },
+          {
+            "reason": "PI Not Uploaded by Branch"
+          },
+          {
+            "reason": "System Data Error"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Loan Eligibility Check",
+        "piNotFoundCount": 10,
+        "topReasons": [
+          {
+            "reason": "System Data Error"
+          },
+          {
+            "reason": "Missing Documentation"
+          },
+          {
+            "reason": "Records Not Maintained"
+          },
+          {
+            "reason": "Incorrect PI Mapping"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Field Verification",
+        "piNotFoundCount": 8,
+        "topReasons": [
+          {
+            "reason": "Incorrect PI Mapping"
+          },
+          {
+            "reason": "PI Not Uploaded by Branch"
+          },
+          {
+            "reason": "Staff Training Gap"
+          },
+          {
+            "reason": "Records Not Maintained"
+          }
+        ]
+      },
+      {
+        "subAuditTypeName": "Credit Assessment",
+        "piNotFoundCount": 7,
+        "topReasons": [
+          {
+            "reason": "Records Not Maintained"
+          },
+          {
+            "reason": "System Data Error"
+          },
+          {
+            "reason": "Missing Documentation"
+          },
+          {
+            "reason": "PI Not Uploaded by Branch"
+          }
+        ]
+      }
+    ]
+  },
+  "fullPIExecutionSubAudits": {
+    "_description": "Sub-audits with 100% PI execution (piNotFoundCount = 0). 0 of 10 sub-audits achieved full execution.",
+    "totalSubAuditsWithFullExecution": 0,
+    "percentSubAuditsWithFullExecution": 0,
+    "top5ByTotalPI": []
+  }
+}

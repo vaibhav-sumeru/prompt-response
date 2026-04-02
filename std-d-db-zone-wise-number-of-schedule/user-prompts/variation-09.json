@@ -1,0 +1,220 @@
+{
+  "totalRecords": 350,
+  "meta": {
+    "generatedAt": "2024-07-29T10:30:00Z"
+  },
+  "zoneExecutionOverview": {
+    "description": "Zone-wise scheduling coverage and execution health. Zones sorted by totalSchedules descending. Execution buckets: Completed (finalized/accepted/closed), In-Progress (submitted/in_review/in_progress/provisionally_submitted), Lapsed (lapsed_not_started/lapsed_in_progress), Re-Audit (reaudit_submitted/reaudit_accepted/reaudit_in_progress).",
+    "zones": [
+      {
+        "zoneName": "South Zone",
+        "totalSchedules": 110,
+        "pctOfTotal": 31.4,
+        "completedCount": 60,
+        "completedPct": 54.5,
+        "inProgressCount": 30,
+        "inProgressPct": 27.3,
+        "lapsedCount": 12,
+        "lapsedPct": 10.9,
+        "reauditCount": 8,
+        "reauditPct": 7.3
+      },
+      {
+        "zoneName": "North Zone",
+        "totalSchedules": 90,
+        "pctOfTotal": 25.7,
+        "completedCount": 50,
+        "completedPct": 55.6,
+        "inProgressCount": 25,
+        "inProgressPct": 27.8,
+        "lapsedCount": 10,
+        "lapsedPct": 11.1,
+        "reauditCount": 5,
+        "reauditPct": 5.6
+      },
+      {
+        "zoneName": "East Zone",
+        "totalSchedules": 70,
+        "pctOfTotal": 20,
+        "completedCount": 40,
+        "completedPct": 57.1,
+        "inProgressCount": 20,
+        "inProgressPct": 28.6,
+        "lapsedCount": 7,
+        "lapsedPct": 10,
+        "reauditCount": 3,
+        "reauditPct": 4.3
+      },
+      {
+        "zoneName": "West Zone",
+        "totalSchedules": 50,
+        "pctOfTotal": 14.3,
+        "completedCount": 30,
+        "completedPct": 60,
+        "inProgressCount": 12,
+        "inProgressPct": 24,
+        "lapsedCount": 5,
+        "lapsedPct": 10,
+        "reauditCount": 3,
+        "reauditPct": 6
+      },
+      {
+        "zoneName": "Central Zone",
+        "totalSchedules": 30,
+        "pctOfTotal": 8.6,
+        "completedCount": 18,
+        "completedPct": 60,
+        "inProgressCount": 7,
+        "inProgressPct": 23.3,
+        "lapsedCount": 3,
+        "lapsedPct": 10,
+        "reauditCount": 2,
+        "reauditPct": 6.7
+      }
+    ],
+    "top3ClustersBySchedules": [
+      {
+        "clusterName": "Cyber Hub, Gurugram",
+        "totalSchedules": 65,
+        "pctOfTotal": 18.6
+      },
+      {
+        "clusterName": "DLF Phase 4, Gurugram",
+        "totalSchedules": 55,
+        "pctOfTotal": 15.7
+      },
+      {
+        "clusterName": "Sector 29, Gurugram",
+        "totalSchedules": 45,
+        "pctOfTotal": 12.9
+      }
+    ]
+  },
+  "clusterAuditeeBottlenecks": {
+    "description": "Cluster and auditee-level execution bottlenecks: highest schedule concentration, most delayed, and most reopened.",
+    "top3ClustersByVolume": [
+      {
+        "clusterName": "Cyber Hub, Gurugram",
+        "totalSchedules": 65,
+        "pctOfTotal": 18.6
+      },
+      {
+        "clusterName": "DLF Phase 4, Gurugram",
+        "totalSchedules": 55,
+        "pctOfTotal": 15.7
+      },
+      {
+        "clusterName": "Sector 29, Gurugram",
+        "totalSchedules": 45,
+        "pctOfTotal": 12.9
+      }
+    ],
+    "top3ClustersByDelay": [
+      {
+        "clusterName": "Cyber Hub, Gurugram",
+        "delayedCount": 35,
+        "avgDelayDays": 25
+      },
+      {
+        "clusterName": "DLF Phase 4, Gurugram",
+        "delayedCount": 20,
+        "avgDelayDays": 15.5
+      },
+      {
+        "clusterName": "Sector 29, Gurugram",
+        "delayedCount": 15,
+        "avgDelayDays": 10.2
+      }
+    ],
+    "top3ClustersByReopening": [
+      {
+        "clusterName": "Cyber Hub, Gurugram",
+        "reopenedCount": 12
+      },
+      {
+        "clusterName": "DLF Phase 4, Gurugram",
+        "reopenedCount": 9
+      },
+      {
+        "clusterName": "Sector 29, Gurugram",
+        "reopenedCount": 6
+      }
+    ],
+    "top3AuditeesByDelay": [
+      {
+        "auditeeName": "Gurugram Corp",
+        "delayedSchedules": 10
+      },
+      {
+        "auditeeName": "Noida Tech",
+        "delayedSchedules": 8
+      },
+      {
+        "auditeeName": "Faridabad Ind",
+        "delayedSchedules": 6
+      }
+    ],
+    "top3AuditeesByReopening": [
+      {
+        "auditeeName": "Gurugram Corp",
+        "reopenedSchedules": 7
+      },
+      {
+        "auditeeName": "Noida Tech",
+        "reopenedSchedules": 5
+      },
+      {
+        "auditeeName": "Ghaziabad Metro",
+        "reopenedSchedules": 3
+      }
+    ]
+  },
+  "outcomeCorrelation": {
+    "description": "AuditRating distribution for delayed schedules and re-audited schedules. Delayed = (AuditStartDate < today OR AuditEndDate < today) AND ExecutionStatus NOT IN [finalized, accepted, closed]. Re-audited = ReAuditAcceptedAt IS NOT NULL OR ReAuditInProgressAt IS NOT NULL.",
+    "delayedSchedules": {
+      "total": 85,
+      "byRating": [
+        {
+          "auditRating": "Not Rated",
+          "count": 45,
+          "pctOfTotal": 52.9
+        },
+        {
+          "auditRating": "c",
+          "count": 25,
+          "pctOfTotal": 29.4
+        },
+        {
+          "auditRating": "b",
+          "count": 10,
+          "pctOfTotal": 11.8
+        },
+        {
+          "auditRating": "a",
+          "count": 5,
+          "pctOfTotal": 5.9
+        }
+      ]
+    },
+    "reauditSchedules": {
+      "total": 25,
+      "byRating": [
+        {
+          "auditRating": "Not Rated",
+          "count": 12,
+          "pctOfTotal": 48
+        },
+        {
+          "auditRating": "c",
+          "count": 8,
+          "pctOfTotal": 32
+        },
+        {
+          "auditRating": "b",
+          "count": 5,
+          "pctOfTotal": 20
+        }
+      ]
+    }
+  }
+}

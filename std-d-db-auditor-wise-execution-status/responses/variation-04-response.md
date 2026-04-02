@@ -1,0 +1,5 @@
+- **Avg. Audits In Progress:** The team has **18** audits in progress across 6 auditors, averaging **3** audits per auditor.
+- **Avg. Lapsed Audits:** There are **72** lapsed audits, affecting 6 auditors, with an average of **12** lapsed audits per auditor.
+- **Zone with Max Delayed Audits:** **South Zone** records **48** delayed audits, comprising 18 lapsed and 30 not executed. East Zone follows with 35 delayed audits.
+- **Late-Start Auditors:** 10 schedules started late, involving 7 unique auditors. These include **Vivek Kumar**, **Sneha Gupta**, **Arjun Singh**, **Deepika Sharma**, **Prakash Raj**, and 5 more.
+- **Top Re-Audit Auditors:** **Vivek Kumar** has an **80%** re-audit rate from 20 re-audits out of 25 total. **Sneha Gupta** follows at **77.3%**. Arjun Singh is at 70%, Deepika Sharma at 66.7%, Prakash Raj at 64.3%, and Meena Pillai at 60%.

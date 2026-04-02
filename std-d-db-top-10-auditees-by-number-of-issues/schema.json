@@ -1,0 +1,170 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "std-d-db-top-10-auditees-by-number-of-issues",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["totalRecords", "meta", "zoneIssueConcentration", "topGroupsByIssues", "topAuditeesByCriticalIssues"],
+  "properties": {
+    "totalRecords": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of open issues included in this widget payload."
+    },
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt", "source"],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "description": "Payload generation timestamp in ISO-8601 format."
+        },
+        "source": {
+          "type": "string",
+          "description": "Source API or transformer identifier."
+        }
+      }
+    },
+
+    "zoneIssueConcentration": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Section 1: For each zone — total issues, distinct auditees contributing those issues, and the average issues per auditee. Sorted descending by avgIssuesPerAuditee. zones[0] is the zone with the highest issue concentration per auditee.",
+      "required": ["description", "zones"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of what this section represents."
+        },
+        "zones": {
+          "type": "array",
+          "minItems": 0,
+          "description": "All zones sorted descending by avgIssuesPerAuditee.",
+          "items": { "$ref": "#/definitions/zoneIssueItem" }
+        }
+      }
+    },
+
+    "topGroupsByIssues": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Section 2: Top 3 groups by total issue count, each with their corresponding audit type name.",
+      "required": ["description", "top3"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of what this section represents."
+        },
+        "top3": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 3,
+          "description": "Top 3 groups sorted descending by issueCount.",
+          "items": { "$ref": "#/definitions/groupIssueItem" }
+        }
+      }
+    },
+
+    "topAuditeesByCriticalIssues": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Section 3: Top 3 auditees by combined High + Zero Tolerance issue count, with individual breakdowns.",
+      "required": ["description", "totalCriticalIssues", "top3"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of what this section represents."
+        },
+        "totalCriticalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total High + Zero Tolerance issues across ALL auditees — context for the top-3 ranking."
+        },
+        "top3": {
+          "type": "array",
+          "minItems": 0,
+          "maxItems": 3,
+          "description": "Top 3 auditees sorted descending by combinedCriticalCount.",
+          "items": { "$ref": "#/definitions/auditeesCriticalItem" }
+        }
+      }
+    }
+  },
+
+  "definitions": {
+    "zoneIssueItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["zoneName", "totalIssues", "distinctAuditees", "avgIssuesPerAuditee"],
+      "properties": {
+        "zoneName": {
+          "type": "string",
+          "description": "Zone name exactly as in the API response."
+        },
+        "totalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total open issues in this zone."
+        },
+        "distinctAuditees": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of distinct auditees those issues belong to in this zone."
+        },
+        "avgIssuesPerAuditee": {
+          "type": "number",
+          "minimum": 0,
+          "description": "Pre-computed: totalIssues / distinctAuditees, rounded to 1 decimal. Sort key (descending)."
+        }
+      }
+    },
+
+    "groupIssueItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["groupName", "auditTypeName", "issueCount"],
+      "properties": {
+        "groupName": {
+          "type": "string",
+          "description": "Name of the group."
+        },
+        "auditTypeName": {
+          "type": "string",
+          "description": "Audit type associated with this group."
+        },
+        "issueCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues attributed to this group. Sort key (descending)."
+        }
+      }
+    },
+
+    "auditeesCriticalItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["auditeeName", "highCount", "zeroToleranceCount", "combinedCriticalCount"],
+      "properties": {
+        "auditeeName": {
+          "type": "string",
+          "description": "Name of the auditee."
+        },
+        "highCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of High risk issues for this auditee."
+        },
+        "zeroToleranceCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of Zero Tolerance issues for this auditee."
+        },
+        "combinedCriticalCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Pre-computed: highCount + zeroToleranceCount. Sort key (descending)."
+        }
+      }
+    }
+  }
+}

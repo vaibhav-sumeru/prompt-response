@@ -1,0 +1,152 @@
+{
+  "totalRecords": 350,
+  "meta": {
+    "generatedAt": "2026-03-20T00:00:00Z",
+    "source": "audit_schedule_execution_data"
+  },
+  "avgAuditsInProgress": {
+    "description": "Average count of audits currently In Progress per auditor across the full team.",
+    "totalInProgressAudits": 91,
+    "totalAuditors": 7,
+    "averagePerAuditor": 13
+  },
+  "avgLapsedAudits": {
+    "description": "Average count of audits in Lapsed status per auditor across the team.",
+    "totalLapsedAudits": 14,
+    "totalAuditorsWithLapsed": 7,
+    "averageLapsedPerAuditor": 2
+  },
+  "zoneWithMaxDelayedAudits": {
+    "description": "Top zones ranked by total count of Lapsed or Not Executed audits.",
+    "topZones": [
+      {
+        "zoneName": "East Zone",
+        "totalDelayedAudits": 28,
+        "lapsedCount": 16,
+        "notExecutedCount": 12
+      },
+      {
+        "zoneName": "Central Zone",
+        "totalDelayedAudits": 28,
+        "lapsedCount": 14,
+        "notExecutedCount": 14
+      },
+      {
+        "zoneName": "North Zone",
+        "totalDelayedAudits": 22,
+        "lapsedCount": 13,
+        "notExecutedCount": 9
+      }
+    ]
+  },
+  "auditorStartedAfterSchedule": {
+    "description": "Audit schedules where Audit Start Date is after the scheduled start date but within the audit end date.",
+    "totalSchedulesWithLateStart": 7,
+    "totalUniqueAuditors": 5,
+    "displayedCount": 5,
+    "remainingCount": 2,
+    "items": [
+      {
+        "auditorName": "Rajesh Kumar",
+        "auditType": "Financial Audit",
+        "auditeeName": "Head Office",
+        "scheduledStartDate": "2026-01-08",
+        "auditStartDate": "2026-01-12"
+      },
+      {
+        "auditorName": "Divya Sharma",
+        "auditType": "IT Systems Audit",
+        "auditeeName": "Data Center A",
+        "scheduledStartDate": "2026-01-15",
+        "auditStartDate": "2026-01-19"
+      },
+      {
+        "auditorName": "Amit Singh",
+        "auditType": "Branch Compliance Audit",
+        "auditeeName": "Connaught Place Branch",
+        "scheduledStartDate": "2026-01-20",
+        "auditStartDate": "2026-01-23"
+      },
+      {
+        "auditorName": "Pooja Reddy",
+        "auditType": "Warehouse Inventory Audit",
+        "auditeeName": "Warehouse Mumbai",
+        "scheduledStartDate": "2026-01-25",
+        "auditStartDate": "2026-01-28"
+      },
+      {
+        "auditorName": "Vikram Singh",
+        "auditType": "Operational Efficiency Audit",
+        "auditeeName": "Production Unit B",
+        "scheduledStartDate": "2026-01-30",
+        "auditStartDate": "2026-02-02"
+      }
+    ]
+  },
+  "topReAuditAuditors": {
+    "description": "Top 10 auditors by re-audit percentage: audits sent to re-audit divided by total audits.",
+    "topLimit": 10,
+    "items": [
+      {
+        "auditorName": "Divya Sharma",
+        "totalAudits": 25,
+        "auditsGoneToReAudit": 20,
+        "reAuditPercentage": 80
+      },
+      {
+        "auditorName": "Rajesh Kumar",
+        "totalAudits": 22,
+        "auditsGoneToReAudit": 17,
+        "reAuditPercentage": 77.3
+      },
+      {
+        "auditorName": "Amit Singh",
+        "totalAudits": 28,
+        "auditsGoneToReAudit": 20,
+        "reAuditPercentage": 71.4
+      },
+      {
+        "auditorName": "Pooja Reddy",
+        "totalAudits": 18,
+        "auditsGoneToReAudit": 12,
+        "reAuditPercentage": 66.7
+      },
+      {
+        "auditorName": "Vikram Singh",
+        "totalAudits": 20,
+        "auditsGoneToReAudit": 12,
+        "reAuditPercentage": 60
+      },
+      {
+        "auditorName": "Sneha Gupta",
+        "totalAudits": 24,
+        "auditsGoneToReAudit": 14,
+        "reAuditPercentage": 58.3
+      },
+      {
+        "auditorName": "Kiran Rao",
+        "totalAudits": 15,
+        "auditsGoneToReAudit": 8,
+        "reAuditPercentage": 53.3
+      },
+      {
+        "auditorName": "Arjun Desai",
+        "totalAudits": 21,
+        "auditsGoneToReAudit": 11,
+        "reAuditPercentage": 52.4
+      },
+      {
+        "auditorName": "Meera Joshi",
+        "totalAudits": 19,
+        "auditsGoneToReAudit": 9,
+        "reAuditPercentage": 47.4
+      },
+      {
+        "auditorName": "Sanjay Kapoor",
+        "totalAudits": 26,
+        "auditsGoneToReAudit": 12,
+        "reAuditPercentage": 46.2
+      }
+    ]
+  }
+}

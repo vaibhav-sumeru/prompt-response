@@ -1,0 +1,92 @@
+{
+  "totalSchedules": 500,
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "zoneVolume": {
+    "description": "Per-zone schedule counts with top 3 audit types by volume, sorted descending by scheduleCount.",
+    "items": [
+      {
+        "zoneName": "Central Zone",
+        "scheduleCount": 500,
+        "percent": 100,
+        "top3AuditTypes": [
+          {
+            "auditTypeName": "Regulatory Compliance",
+            "count": 200
+          },
+          {
+            "auditTypeName": "Operational Efficiency",
+            "count": 180
+          },
+          {
+            "auditTypeName": "Data Security",
+            "count": 120
+          }
+        ]
+      }
+    ]
+  },
+  "reAuditAndReAssess": {
+    "description": "Overall re-audit and re-assess exposure, with top 3 audit types by combined rework count (sorted descending by combinedCount).",
+    "totalReAuditCount": 35,
+    "totalReAuditPercent": 7,
+    "totalReAssessCount": 20,
+    "totalReAssessPercent": 4,
+    "top3ByCombined": [
+      {
+        "mainAuditTypeName": "Operational Efficiency",
+        "reAuditCount": 15,
+        "reAssessCount": 8,
+        "combinedCount": 23
+      },
+      {
+        "mainAuditTypeName": "Regulatory Compliance",
+        "reAuditCount": 10,
+        "reAssessCount": 7,
+        "combinedCount": 17
+      },
+      {
+        "mainAuditTypeName": "Data Security",
+        "reAuditCount": 5,
+        "reAssessCount": 3,
+        "combinedCount": 8
+      }
+    ]
+  },
+  "executionStatusSummary": {
+    "description": "Count and percentage of schedules per execution-status bucket across the full dataset.",
+    "items": [
+      {
+        "status": "Finalized",
+        "count": 300,
+        "percent": 60
+      },
+      {
+        "status": "In Progress",
+        "count": 100,
+        "percent": 20
+      },
+      {
+        "status": "Lapsed",
+        "count": 40,
+        "percent": 8
+      },
+      {
+        "status": "Re-Audit",
+        "count": 35,
+        "percent": 7
+      },
+      {
+        "status": "Re-Assess",
+        "count": 20,
+        "percent": 4
+      },
+      {
+        "status": "Cancelled",
+        "count": 5,
+        "percent": 1
+      }
+    ]
+  }
+}

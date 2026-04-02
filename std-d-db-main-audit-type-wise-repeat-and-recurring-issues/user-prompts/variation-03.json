@@ -1,0 +1,143 @@
+{
+  "totalRecords": 285,
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "recurringAbove50": {
+    "description": "Main audit types where recurring issues exceed 50% of total issues. None qualified.",
+    "totalQualifyingAudits": 0,
+    "top5": []
+  },
+  "repeatAbove75": {
+    "description": "Main audit types where repeat issues exceed 75% of total issues. Sorted by repeatPercent descending. Top 4 shown out of 4 qualifying audits.",
+    "totalQualifyingAudits": 4,
+    "top5": [
+      {
+        "auditName": "Data Privacy Audit",
+        "repeatCount": 15,
+        "totalIssues": 18,
+        "repeatPercent": 83.3
+      },
+      {
+        "auditName": "Regulatory Compliance Check",
+        "repeatCount": 9,
+        "totalIssues": 11,
+        "repeatPercent": 81.8
+      },
+      {
+        "auditName": "Security Vulnerability Scan",
+        "repeatCount": 12,
+        "totalIssues": 15,
+        "repeatPercent": 80
+      },
+      {
+        "auditName": "Access Control Review",
+        "repeatCount": 10,
+        "totalIssues": 13,
+        "repeatPercent": 76.9
+      }
+    ]
+  },
+  "highZeroToleranceRisk": {
+    "description": "Top 3 main audit types by count of High and Zero Tolerance risk issues, split by recurring and repeat tagging.",
+    "byRecurring": {
+      "description": "Top 3 audits ranked by count of recurring issues with Risk Level = High or Zero Tolerance.",
+      "top3": [
+        {
+          "auditName": "IT Governance Audit",
+          "issueCount": 12
+        },
+        {
+          "auditName": "Financial Reporting Audit",
+          "issueCount": 9
+        },
+        {
+          "auditName": "Operational Efficiency Audit",
+          "issueCount": 7
+        }
+      ]
+    },
+    "byRepeat": {
+      "description": "Top 3 audits ranked by count of repeat issues with Risk Level = High or Zero Tolerance.",
+      "top3": [
+        {
+          "auditName": "Data Privacy Audit",
+          "issueCount": 10
+        },
+        {
+          "auditName": "Security Vulnerability Scan",
+          "issueCount": 8
+        },
+        {
+          "auditName": "Vendor Risk Assessment",
+          "issueCount": 6
+        }
+      ]
+    }
+  },
+  "groupDistribution": {
+    "description": "Top 3 groups with highest and bottom 3 groups with lowest recurring and repeat issue counts.",
+    "recurring": {
+      "description": "Groups ranked by recurring issue count — top 3 highest and bottom 3 lowest.",
+      "top3": [
+        {
+          "groupName": "North Zone",
+          "recurringCount": 55
+        },
+        {
+          "groupName": "West Zone",
+          "recurringCount": 48
+        },
+        {
+          "groupName": "South Zone",
+          "recurringCount": 40
+        }
+      ],
+      "bottom3": [
+        {
+          "groupName": "Northeast Zone",
+          "recurringCount": 8
+        },
+        {
+          "groupName": "East Zone",
+          "recurringCount": 15
+        },
+        {
+          "groupName": "Central Zone",
+          "recurringCount": 22
+        }
+      ]
+    },
+    "repeat": {
+      "description": "Groups ranked by repeat issue count — top 3 highest and bottom 3 lowest.",
+      "top3": [
+        {
+          "groupName": "North Zone",
+          "repeatCount": 32
+        },
+        {
+          "groupName": "West Zone",
+          "repeatCount": 28
+        },
+        {
+          "groupName": "South Zone",
+          "repeatCount": 25
+        }
+      ],
+      "bottom3": [
+        {
+          "groupName": "Central Zone",
+          "repeatCount": 5
+        },
+        {
+          "groupName": "Northeast Zone",
+          "repeatCount": 10
+        },
+        {
+          "groupName": "East Zone",
+          "repeatCount": 18
+        }
+      ]
+    }
+  }
+}
