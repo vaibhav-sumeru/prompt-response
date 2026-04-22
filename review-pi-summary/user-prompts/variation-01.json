@@ -1,0 +1,21 @@
+{
+  "currentScheduleId": "SCH-2024-Q3-012",
+  "auditee": "Chennai Regional Office",
+  "mainAuditType": "IT Systems Audit",
+  "totalPIs": 200,
+  "executed": {
+    "count": 140,
+    "percent": 70
+  },
+  "notExecuted": {
+    "count": 45,
+    "percent": 22.5
+  },
+  "notFound": {
+    "count": 15,
+    "percent": 7.5
+  },
+  "meta": {
+    "generatedAt": "2024-07-15T10:30:00Z"
+  }
+}

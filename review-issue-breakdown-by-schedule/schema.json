@@ -1,0 +1,191 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "review-issue-breakdown-by-schedule",
+  "description": "Schema for the Review — Issue Breakdown by Schedule widget. Three narratable sections: (1) per-schedule resolution mix (spot/direct/open), (2) resolution trend across schedules (pre-computed deltas), (3) risk severity resolution — ZT+High unresolved per schedule.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "perScheduleResolution", "resolutionTrend", "riskSeverityResolution"],
+  "definitions": {
+    "resolutionBucket": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["count", "percent"],
+      "properties": {
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Absolute issue count for this resolution type"
+        },
+        "percent": {
+          "type": "number",
+          "description": "This bucket as % of schedule totalIssues; rounded to 1 decimal"
+        }
+      }
+    },
+    "scheduleResolutionItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scheduleId", "scheduleLabel", "isCurrent", "totalIssues", "spotResolution", "directResolution", "openIssues", "resolvedPercent"],
+      "properties": {
+        "scheduleId": {
+          "type": "string",
+          "description": "Schedule identifier (e.g. S-2024-04)"
+        },
+        "scheduleLabel": {
+          "type": "string",
+          "description": "Human label: 'Current', 'Previous 1', 'Previous 2', 'Previous 3'"
+        },
+        "isCurrent": {
+          "type": "boolean",
+          "description": "true if this is the current schedule"
+        },
+        "totalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues in this schedule"
+        },
+        "spotResolution": { "$ref": "#/definitions/resolutionBucket" },
+        "directResolution": { "$ref": "#/definitions/resolutionBucket" },
+        "openIssues": { "$ref": "#/definitions/resolutionBucket" },
+        "resolvedPercent": {
+          "type": "number",
+          "description": "Combined spot + direct as % of totalIssues (pre-computed); rounded to 1 decimal"
+        }
+      }
+    },
+    "scheduleRiskItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scheduleId", "scheduleLabel", "totalUnresolved", "ztUnresolved", "highUnresolved", "ztAndHighUnresolved", "ztAndHighUnresolvedPercent"],
+      "properties": {
+        "scheduleId": {
+          "type": "string",
+          "description": "Schedule identifier"
+        },
+        "scheduleLabel": {
+          "type": "string",
+          "description": "Human label for this schedule"
+        },
+        "totalUnresolved": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total unresolved issues (open issues) for this schedule"
+        },
+        "ztUnresolved": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Unresolved Zero Tolerance issues in this schedule"
+        },
+        "highUnresolved": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Unresolved High risk issues in this schedule"
+        },
+        "ztAndHighUnresolved": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Combined ZT + High unresolved count (pre-computed)"
+        },
+        "ztAndHighUnresolvedPercent": {
+          "type": "number",
+          "description": "ztAndHighUnresolved as % of totalUnresolved; rounded to 1 decimal"
+        }
+      }
+    }
+  },
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt", "scheduleCount", "totalIssuesAllSchedules"],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "description": "ISO 8601 timestamp of payload generation"
+        },
+        "scheduleCount": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4,
+          "description": "Number of schedules in scope (current + up to previous 3)"
+        },
+        "totalIssuesAllSchedules": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Grand total issues across all schedules in scope"
+        }
+      }
+    },
+    "perScheduleResolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Per-schedule resolution mix: spot resolution, direct resolution, open issues for each schedule. Array ordered oldest→current.",
+      "required": ["description", "schedules"],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "schedules": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "description": "Schedules ordered from oldest (index 0) to current (last index). Each entry has full resolution breakdown.",
+          "items": { "$ref": "#/definitions/scheduleResolutionItem" }
+        }
+      }
+    },
+    "resolutionTrend": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Pre-computed percentage-point changes from oldest schedule to current schedule. Positive = increase, negative = decrease.",
+      "required": ["description", "fromScheduleId", "toScheduleId", "spotResolutionPpChange", "directResolutionPpChange", "openIssuesPpChange", "resolvedHealthPpChange"],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "fromScheduleId": {
+          "type": "string",
+          "description": "Schedule ID of the oldest (baseline) schedule"
+        },
+        "toScheduleId": {
+          "type": "string",
+          "description": "Schedule ID of the current schedule"
+        },
+        "spotResolutionPpChange": {
+          "type": "number",
+          "description": "Change in spotResolution % from oldest to current (percentage points, 1 decimal). Negative = declined."
+        },
+        "directResolutionPpChange": {
+          "type": "number",
+          "description": "Change in directResolution % from oldest to current (percentage points, 1 decimal)."
+        },
+        "openIssuesPpChange": {
+          "type": "number",
+          "description": "Change in openIssues % from oldest to current (percentage points, 1 decimal). Positive = more unresolved."
+        },
+        "resolvedHealthPpChange": {
+          "type": "number",
+          "description": "Change in resolvedPercent from oldest to current (percentage points, 1 decimal). Negative = health declined."
+        }
+      }
+    },
+    "riskSeverityResolution": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "ZT + High risk unresolved issue breakdown per schedule. Ordered same as perScheduleResolution (oldest→current).",
+      "required": ["description", "schedules"],
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "schedules": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": { "$ref": "#/definitions/scheduleRiskItem" }
+        }
+      }
+    }
+  }
+}
+

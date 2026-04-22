@@ -1,0 +1,125 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "C360OpenVsCloseMonthly",
+  "description": "Payload for Open vs Close Monthly widget — monthly compliance opened/closed counts with risk-level (High/Medium/Low) breakdown and pre-computed summary metrics. Narrator produces 3 bullets: Monthly Flow Summary, Opened Risk Mix, Closed Risk Mix.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "openVsCloseMonthly"],
+  "definitions": {
+    "riskTotals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["high", "medium", "low", "highPct", "mediumPct", "lowPct"],
+      "properties": {
+        "high":      { "type": "integer", "minimum": 0, "description": "Total High-risk count" },
+        "medium":    { "type": "integer", "minimum": 0, "description": "Total Medium-risk count" },
+        "low":       { "type": "integer", "minimum": 0, "description": "Total Low-risk count" },
+        "highPct":   { "type": "number",  "minimum": 0, "maximum": 100, "description": "High-risk percentage of total, 1 decimal" },
+        "mediumPct": { "type": "number",  "minimum": 0, "maximum": 100, "description": "Medium-risk percentage of total, 1 decimal" },
+        "lowPct":    { "type": "number",  "minimum": 0, "maximum": 100, "description": "Low-risk percentage of total, 1 decimal" }
+      }
+    },
+    "monthDataPoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["month", "count"],
+      "properties": {
+        "month": { "type": "string",  "description": "Month label (e.g. Apr 2025)" },
+        "count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "monthlyEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "month",
+        "opened", "openedHigh", "openedMedium", "openedLow",
+        "closed",  "closedHigh",  "closedMedium",  "closedLow"
+      ],
+      "properties": {
+        "month":         { "type": "string",  "description": "Month label (e.g. Apr 2025)" },
+        "opened":        { "type": "integer", "minimum": 0, "description": "Total compliances opened this month" },
+        "openedHigh":    { "type": "integer", "minimum": 0, "description": "High-risk compliances opened this month" },
+        "openedMedium":  { "type": "integer", "minimum": 0, "description": "Medium-risk compliances opened this month" },
+        "openedLow":     { "type": "integer", "minimum": 0, "description": "Low-risk compliances opened this month" },
+        "closed":        { "type": "integer", "minimum": 0, "description": "Total compliances closed this month" },
+        "closedHigh":    { "type": "integer", "minimum": 0, "description": "High-risk compliances closed this month" },
+        "closedMedium":  { "type": "integer", "minimum": 0, "description": "Medium-risk compliances closed this month" },
+        "closedLow":     { "type": "integer", "minimum": 0, "description": "Low-risk compliances closed this month" }
+      }
+    }
+  },
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt"],
+      "properties": {
+        "generatedAt": { "type": "string", "description": "ISO 8601 timestamp when payload was generated" }
+      }
+    },
+    "openVsCloseMonthly": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Monthly opened vs closed compliance flow with risk-level breakdown and pre-computed summaries.",
+      "required": [
+        "description",
+        "monthRange",
+        "summary",
+        "openedRiskTotals",
+        "closedRiskTotals",
+        "peakOpenMonth",
+        "peakCloseMonth",
+        "monthlyData"
+      ],
+      "properties": {
+        "description": { "type": "string" },
+        "monthRange": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["from", "to"],
+          "properties": {
+            "from": { "type": "string", "description": "First month in range (e.g. Apr 2025)" },
+            "to":   { "type": "string", "description": "Last month in range (e.g. Sep 2025)" }
+          }
+        },
+        "summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "totalOpened",
+            "totalClosed",
+            "backlogTrend"
+          ],
+          "properties": {
+            "totalOpened":  { "type": "integer", "minimum": 0, "description": "Total compliances opened across all months" },
+            "totalClosed":  { "type": "integer", "minimum": 0, "description": "Total compliances closed across all months" },
+            "backlogTrend": { "type": "string", "enum": ["growing", "shrinking", "stable"], "description": "Pre-computed overall direction: growing (opens exceed closes overall), shrinking (closes exceed opens overall), stable (roughly equal)" }
+          }
+        },
+        "openedRiskTotals": {
+          "$ref": "#/definitions/riskTotals",
+          "description": "Aggregate risk-level breakdown for all opened compliances across all months"
+        },
+        "closedRiskTotals": {
+          "$ref": "#/definitions/riskTotals",
+          "description": "Aggregate risk-level breakdown for all closed compliances across all months"
+        },
+        "peakOpenMonth": {
+          "$ref": "#/definitions/monthDataPoint",
+          "description": "Month with the highest opened count"
+        },
+        "peakCloseMonth": {
+          "$ref": "#/definitions/monthDataPoint",
+          "description": "Month with the highest closed count"
+        },
+        "monthlyData": {
+          "type": "array",
+          "minItems": 1,
+          "description": "Per-month entries in chronological order",
+          "items": { "$ref": "#/definitions/monthlyEntry" }
+        }
+      }
+    }
+  }
+}

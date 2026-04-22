@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "C360TotalReopenIssues",
+  "description": "KPI payload for Total Reopen Issues widget — single pre-computed section for AI narrator (1 bullet output). No drill-down. Backend provides totalCompliances, openIssues, reopenedIssues; closedIssues and reopenedPercent are pre-computed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "reopenIssuesSummary"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt"],
+      "properties": {
+        "generatedAt": { "type": "string" }
+      }
+    },
+    "reopenIssuesSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Single KPI section: reopened issues volume and quality signal as percentage of closed issues",
+      "required": ["description", "totalCompliances", "openIssues", "closedIssues", "reopenedIssues", "reopenedPercent"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable label for this section"
+        },
+        "totalCompliances": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total count of distinct compliance records in the selected period (from backend)"
+        },
+        "openIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of issues currently open (from backend)"
+        },
+        "closedIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Pre-computed: totalCompliances - openIssues - reopenedIssues. Issues in Closed/Resolved/Accepted status that have NOT been reopened."
+        },
+        "reopenedIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of issues that were previously closed/resolved but have been reopened (from backend)"
+        },
+        "reopenedPercent": {
+          "anyOf": [
+            { "type": "number", "minimum": 0, "maximum": 100 },
+            { "type": "string", "enum": [""] }
+          ],
+          "description": "Pre-computed: (reopenedIssues / (closedIssues + reopenedIssues)) × 100, rounded to 1 decimal. Denominator = all issues that have gone through a closure event. Empty string when (closedIssues + reopenedIssues) = 0."
+        }
+      }
+    }
+  }
+}

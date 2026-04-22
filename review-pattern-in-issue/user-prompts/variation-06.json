@@ -1,0 +1,113 @@
+{
+  "currentScheduleId": "SCH-2024-Q3-015",
+  "auditee": "Hyderabad Zonal Office",
+  "mainAuditType": "Internal Controls Audit",
+  "previousSchedulesAvailable": 2,
+  "schedules": [
+    {
+      "scheduleId": "SCH-2024-Q3-015",
+      "totalIssues": 220,
+      "newIssues": {
+        "count": 77,
+        "percent": 35
+      },
+      "repeated": {
+        "count": 75,
+        "percent": 34.1
+      },
+      "recurring": {
+        "count": 68,
+        "percent": 30.9
+      },
+      "combinedRecurringRepeated": {
+        "count": 143,
+        "percent": 65
+      }
+    },
+    {
+      "scheduleId": "SCH-2024-Q2-010",
+      "totalIssues": 205,
+      "newIssues": {
+        "count": 91,
+        "percent": 44.4
+      },
+      "repeated": {
+        "count": 59,
+        "percent": 28.8
+      },
+      "recurring": {
+        "count": 55,
+        "percent": 26.8
+      },
+      "combinedRecurringRepeated": {
+        "count": 114,
+        "percent": 55.6
+      }
+    },
+    {
+      "scheduleId": "SCH-2024-Q1-005",
+      "totalIssues": 190,
+      "newIssues": {
+        "count": 105,
+        "percent": 55.3
+      },
+      "repeated": {
+        "count": 45,
+        "percent": 23.7
+      },
+      "recurring": {
+        "count": 40,
+        "percent": 21.1
+      },
+      "combinedRecurringRepeated": {
+        "count": 85,
+        "percent": 44.7
+      }
+    }
+  ],
+  "subAuditRecurrence": {
+    "description": "Sub-audit level breakdown of Recurring + Repeated issue concentration for the current schedule (Q3 2024 Internal Controls Audit). Items are ranked by combined recurrence percentage descending.",
+    "items": [
+      {
+        "rank": 1,
+        "subAuditName": "Client Onboarding",
+        "totalIssues": 60,
+        "recurringCount": 25,
+        "repeatedCount": 20,
+        "combinedRecurringRepeatedCount": 45,
+        "combinedRecurringRepeatedPercent": 75
+      },
+      {
+        "rank": 2,
+        "subAuditName": "Regulatory Compliance",
+        "totalIssues": 55,
+        "recurringCount": 20,
+        "repeatedCount": 18,
+        "combinedRecurringRepeatedCount": 38,
+        "combinedRecurringRepeatedPercent": 69.1
+      },
+      {
+        "rank": 3,
+        "subAuditName": "Data Security",
+        "totalIssues": 45,
+        "recurringCount": 15,
+        "repeatedCount": 13,
+        "combinedRecurringRepeatedCount": 28,
+        "combinedRecurringRepeatedPercent": 62.2
+      }
+    ]
+  },
+  "riskConcentration": {
+    "description": "Measures critical risk (High + Zero Tolerance) concentration within recurring and repeated issues vs the overall issue mix in the current schedule.",
+    "totalIssues": 220,
+    "totalRecurringRepeated": 143,
+    "totalCriticalRisk": 55,
+    "criticalRecurringCount": 42,
+    "recurringCriticalPercent": 29.4,
+    "overallCriticalPercent": 25,
+    "concentrationIndex": 4.4
+  },
+  "meta": {
+    "generatedAt": "2024-07-20T10:30:00Z"
+  }
+}

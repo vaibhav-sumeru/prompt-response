@@ -1,0 +1,21 @@
+{
+  "currentScheduleId": "SCH-2026-Q2-005",
+  "auditee": "Chennai Main Branch",
+  "mainAuditType": "Compliance Review",
+  "totalPIs": 200,
+  "executed": {
+    "count": 150,
+    "percent": 75
+  },
+  "notExecuted": {
+    "count": 50,
+    "percent": 25
+  },
+  "notFound": {
+    "count": 0,
+    "percent": 0
+  },
+  "meta": {
+    "generatedAt": "2026-04-10T10:30:00Z"
+  }
+}

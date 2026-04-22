@@ -1,0 +1,1 @@
+- **Reopened Issues:** For the selected period, 200 total compliances are recorded with 200 open; no closure events recorded — reopened percent is Not Available.

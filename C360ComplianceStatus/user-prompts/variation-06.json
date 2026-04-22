@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-29T10:30:00Z"
+  },
+  "statusDistribution": {
+    "description": "Compliance count by status for the selected period, sorted high to low",
+    "totalCompliances": 980,
+    "items": [
+      {
+        "status": "Open",
+        "count": 450,
+        "percent": 45.9
+      },
+      {
+        "status": "In Progress",
+        "count": 300,
+        "percent": 30.6
+      },
+      {
+        "status": "Pending",
+        "count": 150,
+        "percent": 15.3
+      },
+      {
+        "status": "Under Review",
+        "count": 80,
+        "percent": 8.2
+      }
+    ]
+  }
+}

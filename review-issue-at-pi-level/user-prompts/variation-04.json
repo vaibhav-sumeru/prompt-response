@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "generatedAt": "2024-10-27T10:00:00Z",
+    "scheduleCount": 3,
+    "totalIssues": 200,
+    "totalUniquePIs": 15
+  },
+  "piConcentration": {
+    "description": "Top 5 PIs by total issue count across current and previous 3 schedules, ranked descending.",
+    "top5ConcentrationPercent": 95,
+    "topPIs": [
+      {
+        "piId": "PI-001A",
+        "piName": "Critical System Integration",
+        "totalIssues": 160,
+        "percentOfTotal": 80
+      },
+      {
+        "piId": "PI-002B",
+        "piName": "User Access Management",
+        "totalIssues": 10,
+        "percentOfTotal": 5
+      },
+      {
+        "piId": "PI-003C",
+        "piName": "Data Privacy Controls",
+        "totalIssues": 8,
+        "percentOfTotal": 4
+      },
+      {
+        "piId": "PI-004D",
+        "piName": "Vendor Risk Assessment",
+        "totalIssues": 7,
+        "percentOfTotal": 3.5
+      },
+      {
+        "piId": "PI-005E",
+        "piName": "Incident Response Workflow",
+        "totalIssues": 5,
+        "percentOfTotal": 2.5
+      }
+    ]
+  },
+  "subAuditRiskConcentration": {
+    "description": "Top 3 sub-audits ranked by combined Zero Tolerance + High risk issue count across all schedules.",
+    "topSubAudits": [
+      {
+        "subAuditName": "IT Security Audit",
+        "ztIssues": 15,
+        "highIssues": 30,
+        "ztAndHighIssues": 45,
+        "ztAndHighPercent": 75,
+        "totalIssues": 60
+      },
+      {
+        "subAuditName": "Regulatory Compliance Review",
+        "ztIssues": 10,
+        "highIssues": 25,
+        "ztAndHighIssues": 35,
+        "ztAndHighPercent": 70,
+        "totalIssues": 50
+      },
+      {
+        "subAuditName": "Operational Efficiency Audit",
+        "ztIssues": 5,
+        "highIssues": 20,
+        "ztAndHighIssues": 25,
+        "ztAndHighPercent": 62.5,
+        "totalIssues": 40
+      }
+    ]
+  }
+}

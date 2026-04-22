@@ -1,0 +1,133 @@
+{
+  "currentScheduleId": "SCH-2026-Q2-008",
+  "auditee": "Bengaluru Technology Hub",
+  "mainAuditType": "IT Systems Audit",
+  "previousSchedulesAvailable": 3,
+  "schedules": [
+    {
+      "scheduleId": "SCH-2026-Q2-008",
+      "totalIssues": 200,
+      "newIssues": {
+        "count": 140,
+        "percent": 70
+      },
+      "repeated": {
+        "count": 35,
+        "percent": 17.5
+      },
+      "recurring": {
+        "count": 25,
+        "percent": 12.5
+      },
+      "combinedRecurringRepeated": {
+        "count": 60,
+        "percent": 30
+      }
+    },
+    {
+      "scheduleId": "SCH-2025-Q4-042",
+      "totalIssues": 190,
+      "newIssues": {
+        "count": 135,
+        "percent": 71.1
+      },
+      "repeated": {
+        "count": 32,
+        "percent": 16.8
+      },
+      "recurring": {
+        "count": 23,
+        "percent": 12.1
+      },
+      "combinedRecurringRepeated": {
+        "count": 55,
+        "percent": 28.9
+      }
+    },
+    {
+      "scheduleId": "SCH-2025-Q3-034",
+      "totalIssues": 180,
+      "newIssues": {
+        "count": 128,
+        "percent": 71.1
+      },
+      "repeated": {
+        "count": 30,
+        "percent": 16.7
+      },
+      "recurring": {
+        "count": 22,
+        "percent": 12.2
+      },
+      "combinedRecurringRepeated": {
+        "count": 52,
+        "percent": 28.9
+      }
+    },
+    {
+      "scheduleId": "SCH-2025-Q2-022",
+      "totalIssues": 170,
+      "newIssues": {
+        "count": 120,
+        "percent": 70.6
+      },
+      "repeated": {
+        "count": 30,
+        "percent": 17.6
+      },
+      "recurring": {
+        "count": 20,
+        "percent": 11.8
+      },
+      "combinedRecurringRepeated": {
+        "count": 50,
+        "percent": 29.4
+      }
+    }
+  ],
+  "subAuditRecurrence": {
+    "description": "Sub-audit level breakdown of Recurring + Repeated issue concentration for the current schedule (Q2 2026 IT Systems Audit). Items are ranked by combined recurrence percentage descending.",
+    "items": [
+      {
+        "rank": 1,
+        "subAuditName": "Internal Controls",
+        "totalIssues": 40,
+        "recurringCount": 8,
+        "repeatedCount": 10,
+        "combinedRecurringRepeatedCount": 18,
+        "combinedRecurringRepeatedPercent": 45
+      },
+      {
+        "rank": 2,
+        "subAuditName": "Financial Reporting",
+        "totalIssues": 35,
+        "recurringCount": 6,
+        "repeatedCount": 8,
+        "combinedRecurringRepeatedCount": 14,
+        "combinedRecurringRepeatedPercent": 40
+      },
+      {
+        "rank": 3,
+        "subAuditName": "Regulatory Compliance",
+        "totalIssues": 30,
+        "recurringCount": 5,
+        "repeatedCount": 7,
+        "combinedRecurringRepeatedCount": 12,
+        "combinedRecurringRepeatedPercent": 40
+      }
+    ]
+  },
+  "riskConcentration": {
+    "description": "Measures critical risk (High + Zero Tolerance) concentration within recurring and repeated issues vs the overall issue mix in the current schedule.",
+    "totalIssues": 200,
+    "totalRecurringRepeated": 60,
+    "totalCriticalRisk": 30,
+    "criticalRecurringCount": 8,
+    "recurringCriticalPercent": 13.3,
+    "overallCriticalPercent": 15,
+    "concentrationIndex": -1.7
+  },
+  "meta": {
+    "generatedAt": "2026-06-15T10:30:00Z"
+  }
+}

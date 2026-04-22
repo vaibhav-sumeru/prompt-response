@@ -1,0 +1,3 @@
+- **High Risk Trend:** Across the period from (Apr 2025) to (Sep 2025), High-risk compliances rose from 70 in (Apr 2025) to 120 in (Sep 2025), reflecting a change of **+50**.
+- **Medium Risk Trend:** For Medium-risk compliances from (Apr 2025) to (Sep 2025), the count increased from 180 in (Apr 2025) to 260 in (Sep 2025), a total change of **+80**.
+- **Low Risk Trend:** Low-risk compliances across (Apr 2025) to (Sep 2025) rose from 800 in (Apr 2025) to 1,050 in (Sep 2025), showing an increase of **+250**.

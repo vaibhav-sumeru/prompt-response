@@ -1,0 +1,151 @@
+{
+  "currentScheduleId": "SCH-2024-Q2-011",
+  "auditee": "Hyderabad Regional Office",
+  "mainAuditType": "Compliance Review",
+  "previousSchedulesAvailable": 3,
+  "schedules": [
+    {
+      "scheduleId": "SCH-2024-Q2-011",
+      "totalIssues": 180,
+      "newIssues": {
+        "count": 60,
+        "percent": 33.3
+      },
+      "repeated": {
+        "count": 60,
+        "percent": 33.3
+      },
+      "recurring": {
+        "count": 60,
+        "percent": 33.3
+      },
+      "combinedRecurringRepeated": {
+        "count": 120,
+        "percent": 66.7
+      }
+    },
+    {
+      "scheduleId": "SCH-2024-Q1-008",
+      "totalIssues": 171,
+      "newIssues": {
+        "count": 57,
+        "percent": 33.3
+      },
+      "repeated": {
+        "count": 57,
+        "percent": 33.3
+      },
+      "recurring": {
+        "count": 57,
+        "percent": 33.3
+      },
+      "combinedRecurringRepeated": {
+        "count": 114,
+        "percent": 66.7
+      }
+    },
+    {
+      "scheduleId": "SCH-2023-Q4-045",
+      "totalIssues": 165,
+      "newIssues": {
+        "count": 55,
+        "percent": 33.3
+      },
+      "repeated": {
+        "count": 55,
+        "percent": 33.3
+      },
+      "recurring": {
+        "count": 55,
+        "percent": 33.3
+      },
+      "combinedRecurringRepeated": {
+        "count": 110,
+        "percent": 66.7
+      }
+    },
+    {
+      "scheduleId": "SCH-2023-Q3-030",
+      "totalIssues": 156,
+      "newIssues": {
+        "count": 52,
+        "percent": 33.3
+      },
+      "repeated": {
+        "count": 52,
+        "percent": 33.3
+      },
+      "recurring": {
+        "count": 52,
+        "percent": 33.3
+      },
+      "combinedRecurringRepeated": {
+        "count": 104,
+        "percent": 66.7
+      }
+    }
+  ],
+  "subAuditRecurrence": {
+    "description": "Sub-audit level breakdown of Recurring + Repeated issue concentration for the current schedule (Q2 2024 Compliance Review). Items are ranked by combined recurrence percentage descending.",
+    "items": [
+      {
+        "rank": 1,
+        "subAuditName": "Procurement Processes",
+        "totalIssues": 50,
+        "recurringCount": 20,
+        "repeatedCount": 15,
+        "combinedRecurringRepeatedCount": 35,
+        "combinedRecurringRepeatedPercent": 70
+      },
+      {
+        "rank": 2,
+        "subAuditName": "Data Privacy Compliance",
+        "totalIssues": 40,
+        "recurringCount": 15,
+        "repeatedCount": 10,
+        "combinedRecurringRepeatedCount": 25,
+        "combinedRecurringRepeatedPercent": 62.5
+      },
+      {
+        "rank": 3,
+        "subAuditName": "Employee Expense Review",
+        "totalIssues": 35,
+        "recurringCount": 10,
+        "repeatedCount": 8,
+        "combinedRecurringRepeatedCount": 18,
+        "combinedRecurringRepeatedPercent": 51.4
+      },
+      {
+        "rank": 4,
+        "subAuditName": "IT System Access",
+        "totalIssues": 30,
+        "recurringCount": 8,
+        "repeatedCount": 7,
+        "combinedRecurringRepeatedCount": 15,
+        "combinedRecurringRepeatedPercent": 50
+      },
+      {
+        "rank": 5,
+        "subAuditName": "Environmental Controls",
+        "totalIssues": 25,
+        "recurringCount": 5,
+        "repeatedCount": 5,
+        "combinedRecurringRepeatedCount": 10,
+        "combinedRecurringRepeatedPercent": 40
+      }
+    ]
+  },
+  "riskConcentration": {
+    "description": "Measures critical risk (High + Zero Tolerance) concentration within recurring and repeated issues vs the overall issue mix in the current schedule.",
+    "totalIssues": 180,
+    "totalRecurringRepeated": 120,
+    "totalCriticalRisk": 54,
+    "criticalRecurringCount": 48,
+    "recurringCriticalPercent": 40,
+    "overallCriticalPercent": 30,
+    "concentrationIndex": 10
+  },
+  "meta": {
+    "generatedAt": "2024-05-15T10:30:00Z"
+  }
+}

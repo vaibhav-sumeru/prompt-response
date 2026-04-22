@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "statusDistribution": {
+    "description": "Compliance count by status for the selected period, sorted high to low",
+    "totalCompliances": 2450,
+    "items": [
+      {
+        "status": "Closed",
+        "count": 1300,
+        "percent": 53.1
+      },
+      {
+        "status": "Open",
+        "count": 600,
+        "percent": 24.5
+      },
+      {
+        "status": "In Progress",
+        "count": 300,
+        "percent": 12.2
+      },
+      {
+        "status": "Pending",
+        "count": 150,
+        "percent": 6.1
+      },
+      {
+        "status": "Rejected",
+        "count": 100,
+        "percent": 4.1
+      }
+    ]
+  }
+}

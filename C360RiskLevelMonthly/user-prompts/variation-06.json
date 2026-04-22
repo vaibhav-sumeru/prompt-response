@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-25T10:30:00Z"
+  },
+  "riskLevelMonthlyTrend": {
+    "description": "Monthly compliance counts per risk level — Jan 2024 to Jun 2024",
+    "monthRange": {
+      "from": "Jan 2024",
+      "to": "Jun 2024"
+    },
+    "riskLevels": [
+      {
+        "riskLevel": "High",
+        "trend": "increasing",
+        "changeCount": 70,
+        "firstMonth": {
+          "month": "Jan 2024",
+          "count": 120
+        },
+        "lastMonth": {
+          "month": "Jun 2024",
+          "count": 190
+        },
+        "peakMonth": {
+          "month": "Jun 2024",
+          "count": 190
+        },
+        "lowestMonth": {
+          "month": "Jan 2024",
+          "count": 120
+        },
+        "monthlyData": [
+          {
+            "month": "Jan 2024",
+            "count": 120
+          },
+          {
+            "month": "Feb 2024",
+            "count": 135
+          },
+          {
+            "month": "Mar 2024",
+            "count": 148
+          },
+          {
+            "month": "Apr 2024",
+            "count": 160
+          },
+          {
+            "month": "May 2024",
+            "count": 175
+          },
+          {
+            "month": "Jun 2024",
+            "count": 190
+          }
+        ]
+      },
+      {
+        "riskLevel": "Medium",
+        "trend": "decreasing",
+        "changeCount": -130,
+        "firstMonth": {
+          "month": "Jan 2024",
+          "count": 450
+        },
+        "lastMonth": {
+          "month": "Jun 2024",
+          "count": 320
+        },
+        "peakMonth": {
+          "month": "Jan 2024",
+          "count": 450
+        },
+        "lowestMonth": {
+          "month": "Jun 2024",
+          "count": 320
+        },
+        "monthlyData": [
+          {
+            "month": "Jan 2024",
+            "count": 450
+          },
+          {
+            "month": "Feb 2024",
+            "count": 420
+          },
+          {
+            "month": "Mar 2024",
+            "count": 390
+          },
+          {
+            "month": "Apr 2024",
+            "count": 370
+          },
+          {
+            "month": "May 2024",
+            "count": 350
+          },
+          {
+            "month": "Jun 2024",
+            "count": 320
+          }
+        ]
+      },
+      {
+        "riskLevel": "Low",
+        "trend": "decreasing",
+        "changeCount": -40,
+        "firstMonth": {
+          "month": "Jan 2024",
+          "count": 210
+        },
+        "lastMonth": {
+          "month": "Jun 2024",
+          "count": 170
+        },
+        "peakMonth": {
+          "month": "Mar 2024",
+          "count": 215
+        },
+        "lowestMonth": {
+          "month": "Jun 2024",
+          "count": 170
+        },
+        "monthlyData": [
+          {
+            "month": "Jan 2024",
+            "count": 210
+          },
+          {
+            "month": "Feb 2024",
+            "count": 205
+          },
+          {
+            "month": "Mar 2024",
+            "count": 215
+          },
+          {
+            "month": "Apr 2024",
+            "count": 195
+          },
+          {
+            "month": "May 2024",
+            "count": 180
+          },
+          {
+            "month": "Jun 2024",
+            "count": 170
+          }
+        ]
+      }
+    ]
+  }
+}

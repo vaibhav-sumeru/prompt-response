@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "zero_compliances",
+    "description": "totalCompliances = 0, all counts = 0, all percent = ''. Tests Not Available handling and explicit zero reporting for all 4 risk levels."
+  },
+  {
+    "id": "variation-02",
+    "category": "zero_compliances",
+    "description": "totalCompliances = 0, all counts = 0, all percent = ''. Tests Not Available handling and explicit zero reporting for all 4 risk levels."
+  },
+  {
+    "id": "variation-03",
+    "category": "single_dominant",
+    "description": "One risk level (e.g. High) holds >90% of all compliances. Tests bold formatting on the dominant level and accurate reporting of near-zero counts for remaining levels."
+  },
+  {
+    "id": "variation-04",
+    "category": "single_dominant",
+    "description": "One risk level (e.g. High) holds >90% of all compliances. Tests bold formatting on the dominant level and accurate reporting of near-zero counts for remaining levels."
+  },
+  {
+    "id": "variation-05",
+    "category": "zero_tolerance_dominant",
+    "description": "Zero Tolerance has the highest count and appears as items[0]. Tests that the narrator correctly bolds 'Zero Tolerance' — the most critical risk label — as the dominant level."
+  },
+  {
+    "id": "variation-06",
+    "category": "zero_tolerance_dominant",
+    "description": "Zero Tolerance has the highest count and appears as items[0]. Tests that the narrator correctly bolds 'Zero Tolerance' — the most critical risk label — as the dominant level."
+  },
+  {
+    "id": "variation-07",
+    "category": "large_totals",
+    "description": "All 4 risk levels have count > 1000, requiring comma separators (e.g. 1,234). Tests number formatting for large integers across all items."
+  },
+  {
+    "id": "variation-08",
+    "category": "large_totals",
+    "description": "All 4 risk levels have count > 1000, requiring comma separators (e.g. 1,234). Tests number formatting for large integers across all items."
+  },
+  {
+    "id": "variation-09",
+    "category": "even_distribution",
+    "description": "All 4 risk levels have approximately equal counts and percentages (~25% each). Tests tie-handling — narrator must bold items[0] (first in pre-sorted array) and report all levels accurately."
+  },
+  {
+    "id": "variation-10",
+    "category": "even_distribution",
+    "description": "All 4 risk levels have approximately equal counts and percentages (~25% each). Tests tie-handling — narrator must bold items[0] (first in pre-sorted array) and report all levels accurately."
+  }
+]

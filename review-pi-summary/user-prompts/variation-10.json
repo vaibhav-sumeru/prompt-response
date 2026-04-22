@@ -1,0 +1,21 @@
+{
+  "currentScheduleId": "SCH-2026-Q2-010",
+  "auditee": "Chennai South Branch",
+  "mainAuditType": "Operational Audit",
+  "totalPIs": 15,
+  "executed": {
+    "count": 10,
+    "percent": 66.7
+  },
+  "notExecuted": {
+    "count": 3,
+    "percent": 20
+  },
+  "notFound": {
+    "count": 2,
+    "percent": 13.3
+  },
+  "meta": {
+    "generatedAt": "2026-05-15T10:30:00Z"
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "currentScheduleId": "AUD-2024-Q3-001",
+  "auditee": "Hyderabad Operations",
+  "mainAuditType": "Operational Risk",
+  "previousSchedulesAvailable": 3,
+  "schedules": [
+    {
+      "scheduleId": "AUD-2024-Q3-001",
+      "totalIssues": 120,
+      "newIssues": {
+        "count": 40,
+        "percent": 33.3
+      },
+      "repeated": {
+        "count": 35,
+        "percent": 29.2
+      },
+      "recurring": {
+        "count": 45,
+        "percent": 37.5
+      },
+      "combinedRecurringRepeated": {
+        "count": 80,
+        "percent": 66.7
+      }
+    },
+    {
+      "scheduleId": "AUD-2024-Q2-005",
+      "totalIssues": 110,
+      "newIssues": {
+        "count": 43,
+        "percent": 39.1
+      },
+      "repeated": {
+        "count": 31,
+        "percent": 28.2
+      },
+      "recurring": {
+        "count": 36,
+        "percent": 32.7
+      },
+      "combinedRecurringRepeated": {
+        "count": 67,
+        "percent": 60.9
+      }
+    },
+    {
+      "scheduleId": "AUD-2024-Q1-010",
+      "totalIssues": 100,
+      "newIssues": {
+        "count": 45,
+        "percent": 45
+      },
+      "repeated": {
+        "count": 28,
+        "percent": 28
+      },
+      "recurring": {
+        "count": 27,
+        "percent": 27
+      },
+      "combinedRecurringRepeated": {
+        "count": 55,
+        "percent": 55
+      }
+    },
+    {
+      "scheduleId": "AUD-2023-Q4-015",
+      "totalIssues": 90,
+      "newIssues": {
+        "count": 45,
+        "percent": 50
+      },
+      "repeated": {
+        "count": 22,
+        "percent": 24.4
+      },
+      "recurring": {
+        "count": 23,
+        "percent": 25.6
+      },
+      "combinedRecurringRepeated": {
+        "count": 45,
+        "percent": 50
+      }
+    }
+  ],
+  "subAuditRecurrence": {
+    "description": "Sub-audit level breakdown of Recurring + Repeated issue concentration for the current schedule (Q3 2024 Operational Risk Audit). Items are ranked by combined recurrence percentage descending.",
+    "items": [
+      {
+        "rank": 1,
+        "subAuditName": "All Audit Areas",
+        "totalIssues": 120,
+        "recurringCount": 45,
+        "repeatedCount": 35,
+        "combinedRecurringRepeatedCount": 80,
+        "combinedRecurringRepeatedPercent": 66.7
+      }
+    ]
+  },
+  "riskConcentration": {
+    "description": "Measures critical risk (High + Zero Tolerance) concentration within recurring and repeated issues vs the overall issue mix in the current schedule.",
+    "totalIssues": 120,
+    "totalRecurringRepeated": 80,
+    "totalCriticalRisk": 30,
+    "criticalRecurringCount": 25,
+    "recurringCriticalPercent": 31.3,
+    "overallCriticalPercent": 25,
+    "concentrationIndex": 6.3
+  },
+  "meta": {
+    "generatedAt": "2024-09-15T10:00:00Z"
+  }
+}

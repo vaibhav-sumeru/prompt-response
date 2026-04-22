@@ -1,0 +1,1 @@
+- **Compliance Status Distribution:** Out of 980 total compliances, Open: **450 (45.9%)**, In Progress: **300 (30.6%)**, Pending: **150 (15.3%)**, Under Review: **80 (8.2%)**.

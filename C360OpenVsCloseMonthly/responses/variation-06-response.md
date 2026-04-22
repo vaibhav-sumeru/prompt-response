@@ -1,0 +1,3 @@
+- **Monthly Flow Summary:** Period (Oct 2024)–(Mar 2025) records 900 opened vs 680 closed compliances, with the backlog growing. Peak open activity was 175 (Mar 2025), and peak close activity was 130 (Mar 2025).
+- **Opened Risk Mix:** Of 900 compliances opened (Oct 2024)–(Mar 2025), High-risk accounts for **590 (**65.6%**)**, Medium-risk for 220 (24.4%), and Low-risk for 90 (10.0%). High-risk items represent the dominant tier among opened compliances.
+- **Closed Risk Mix:** Of 680 compliances closed (Oct 2024)–(Mar 2025), High-risk accounts for **200 (**29.4%**)**, Medium-risk for 275 (40.4%), and Low-risk for 205 (30.2%). High-risk closures at 29.4% compare to 65.6% High-risk in opens.

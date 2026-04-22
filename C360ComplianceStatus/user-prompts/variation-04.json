@@ -1,0 +1,10 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "statusDistribution": {
+    "description": "Compliance count by status for the selected period, sorted high to low",
+    "totalCompliances": 0,
+    "items": []
+  }
+}

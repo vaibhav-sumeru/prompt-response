@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "var-01-typical-distribution",
+    "description": "Typical distribution: executed.percent between 60–80%, notExecuted.percent between 15–30%, notFound.percent between 3–10%. All three counts are non-zero and sum to totalPIs."
+  },
+  {
+    "id": "variation-02",
+    "category": "var-01-typical-distribution",
+    "description": "Typical distribution: executed.percent between 60–80%, notExecuted.percent between 15–30%, notFound.percent between 3–10%. All three counts are non-zero and sum to totalPIs."
+  },
+  {
+    "id": "variation-03",
+    "category": "var-01-typical-distribution",
+    "description": "Typical distribution: executed.percent between 60–80%, notExecuted.percent between 15–30%, notFound.percent between 3–10%. All three counts are non-zero and sum to totalPIs."
+  },
+  {
+    "id": "variation-04",
+    "category": "var-02-zero-not-found",
+    "description": "notFound.count = 0, notFound.percent = 0.0. The narrator must report zero explicitly. executed and notExecuted share the full totalPIs."
+  },
+  {
+    "id": "variation-05",
+    "category": "var-02-zero-not-found",
+    "description": "notFound.count = 0, notFound.percent = 0.0. The narrator must report zero explicitly. executed and notExecuted share the full totalPIs."
+  },
+  {
+    "id": "variation-06",
+    "category": "var-03-high-not-found",
+    "description": "notFound.percent is high (15–25%). notFound.count is a significant portion of totalPIs. executed.percent is relatively low as a result."
+  },
+  {
+    "id": "variation-07",
+    "category": "var-03-high-not-found",
+    "description": "notFound.percent is high (15–25%). notFound.count is a significant portion of totalPIs. executed.percent is relatively low as a result."
+  },
+  {
+    "id": "variation-08",
+    "category": "var-04-all-executed",
+    "description": "All PIs are executed: executed.count = totalPIs, executed.percent = 100.0. notExecuted.count = 0, notFound.count = 0. Both zero values must be reported explicitly."
+  },
+  {
+    "id": "variation-09",
+    "category": "var-05-low-total-pis",
+    "description": "Very small totalPIs (10–20 PIs). All three counts present and summing to totalPIs. Tests integer formatting with small numbers and exact 1-decimal percentages."
+  },
+  {
+    "id": "variation-10",
+    "category": "var-05-low-total-pis",
+    "description": "Very small totalPIs (10–20 PIs). All three counts present and summing to totalPIs. Tests integer formatting with small numbers and exact 1-decimal percentages."
+  }
+]

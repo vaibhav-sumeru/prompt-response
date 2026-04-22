@@ -1,0 +1,2 @@
+- **Status Distribution by Source:** RegulatoryWatch (0 total): 0 not_started (Not Available), 0 in_progress (Not Available), 0 resolved (Not Available), 0 accepted (Not Available).
+- **Highest Unresolved Source:** RegulatoryWatch has 0 unresolved (Not Available) out of 0 total compliances.

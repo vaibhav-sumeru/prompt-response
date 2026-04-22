@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-01T00:00:00Z"
+  },
+  "reopenIssuesSummary": {
+    "description": "Reopened issues snapshot for the selected period",
+    "totalCompliances": 200,
+    "openIssues": 200,
+    "closedIssues": 0,
+    "reopenedIssues": 0,
+    "reopenedPercent": ""
+  }
+}

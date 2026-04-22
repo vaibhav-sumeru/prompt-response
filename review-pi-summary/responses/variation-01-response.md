@@ -1,0 +1,2 @@
+- **PI Status Distribution:** 200 PIs records **140 (70.0%) executed**, 45 (22.5%) not executed, and 15 (7.5%) not found.
+- **Not Found PIs:** **15 (7.5%) PIs were not found**, compared to 45 (22.5%) PIs not executed.

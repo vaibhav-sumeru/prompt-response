@@ -1,0 +1,42 @@
+[
+  {
+    "id": "variation-01",
+    "description": "All schedules have 0 ZT unresolved and 0 High unresolved. Tests explicit zero reporting in Paragraph 3 and ensures narrator states each schedule's ZT+High unresolved is 0."
+  },
+  {
+    "id": "variation-02",
+    "description": "All schedules have 0 ZT unresolved and 0 High unresolved. Tests explicit zero reporting in Paragraph 3 and ensures narrator states each schedule's ZT+High unresolved is 0."
+  },
+  {
+    "id": "variation-03",
+    "description": "Only one schedule in scope (meta.scheduleCount=1, single entry in all arrays). Tests that resolutionTrend shows 0 pp change for all metrics and Paragraphs 1 and 3 narrate only one schedule."
+  },
+  {
+    "id": "variation-04",
+    "description": "Only one schedule in scope (meta.scheduleCount=1, single entry in all arrays). Tests that resolutionTrend shows 0 pp change for all metrics and Paragraphs 1 and 3 narrate only one schedule."
+  },
+  {
+    "id": "variation-05",
+    "description": "Positive resolution trend: resolvedHealthPpChange >= +15 pp, openIssuesPpChange <= -15 pp. Tests that narrator reports positive ppChange with + prefix and current schedule has low open-issue rate (<25%)."
+  },
+  {
+    "id": "variation-06",
+    "description": "Positive resolution trend: resolvedHealthPpChange >= +15 pp, openIssuesPpChange <= -15 pp. Tests that narrator reports positive ppChange with + prefix and current schedule has low open-issue rate (<25%)."
+  },
+  {
+    "id": "variation-07",
+    "description": "Large issue counts (1000+ per schedule in current) with very high open rate (70%+ open in current schedule). Tests numeric accuracy at scale and bold formatting on large open-issue counts."
+  },
+  {
+    "id": "variation-08",
+    "description": "Large issue counts (1000+ per schedule in current) with very high open rate (70%+ open in current schedule). Tests numeric accuracy at scale and bold formatting on large open-issue counts."
+  },
+  {
+    "id": "variation-09",
+    "description": "Very high ZT unresolved in current schedule (ztAndHighUnresolvedPercent >= 80%). Tests bold formatting on high ZT+High percent and verbatim accuracy on ztAndHighUnresolvedPercent near the top of the scale."
+  },
+  {
+    "id": "variation-10",
+    "description": "Very high ZT unresolved in current schedule (ztAndHighUnresolvedPercent >= 80%). Tests bold formatting on high ZT+High percent and verbatim accuracy on ztAndHighUnresolvedPercent near the top of the scale."
+  }
+]

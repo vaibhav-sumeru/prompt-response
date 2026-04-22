@@ -1,0 +1,1 @@
+- **Reopened Issues:** For the selected period, 780 total compliances are recorded. Out of 600 closed issues, 0 (0.0%) were reopened.

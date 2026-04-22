@@ -1,0 +1,21 @@
+{
+  "currentScheduleId": "SCH-2026-Q2-012",
+  "auditee": "Chennai Operations Hub",
+  "mainAuditType": "IT Systems Audit",
+  "totalPIs": 180,
+  "executed": {
+    "count": 90,
+    "percent": 50
+  },
+  "notExecuted": {
+    "count": 54,
+    "percent": 30
+  },
+  "notFound": {
+    "count": 36,
+    "percent": 20
+  },
+  "meta": {
+    "generatedAt": "2026-04-09T08:00:00Z"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "generatedAt": "2025-10-01T06:00:00Z"
+  },
+  "openVsCloseMonthly": {
+    "description": "Monthly compliance open vs close flow with risk-level breakdown for Jun 2025 to Jul 2025.",
+    "monthRange": {
+      "from": "Jun 2025",
+      "to": "Jul 2025"
+    },
+    "summary": {
+      "totalOpened": 190,
+      "totalClosed": 190,
+      "backlogTrend": "stable"
+    },
+    "openedRiskTotals": {
+      "high": 70,
+      "medium": 65,
+      "low": 55,
+      "highPct": 36.8,
+      "mediumPct": 34.2,
+      "lowPct": 28.9
+    },
+    "closedRiskTotals": {
+      "high": 70,
+      "medium": 65,
+      "low": 55,
+      "highPct": 36.8,
+      "mediumPct": 34.2,
+      "lowPct": 28.9
+    },
+    "peakOpenMonth": {
+      "month": "Jun 2025",
+      "count": 100
+    },
+    "peakCloseMonth": {
+      "month": "Jul 2025",
+      "count": 100
+    },
+    "monthlyData": [
+      {
+        "month": "Jun 2025",
+        "opened": 100,
+        "openedHigh": 40,
+        "openedMedium": 35,
+        "openedLow": 25,
+        "closed": 90,
+        "closedHigh": 30,
+        "closedMedium": 30,
+        "closedLow": 30
+      },
+      {
+        "month": "Jul 2025",
+        "opened": 90,
+        "openedHigh": 30,
+        "openedMedium": 30,
+        "openedLow": 30,
+        "closed": 100,
+        "closedHigh": 40,
+        "closedMedium": 35,
+        "closedLow": 25
+      }
+    ]
+  }
+}

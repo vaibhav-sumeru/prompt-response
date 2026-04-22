@@ -1,0 +1,13 @@
+{
+  "meta": {
+    "generatedAt": "2024-10-27T10:30:00Z"
+  },
+  "reopenIssuesSummary": {
+    "description": "Reopened issues snapshot for the selected period",
+    "totalCompliances": 295,
+    "openIssues": 80,
+    "closedIssues": 150,
+    "reopenedIssues": 65,
+    "reopenedPercent": 30.2
+  }
+}

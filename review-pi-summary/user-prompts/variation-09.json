@@ -1,0 +1,21 @@
+{
+  "currentScheduleId": "SCH-2024-Q3-009",
+  "auditee": "Chennai Regional Office",
+  "mainAuditType": "Compliance Audit",
+  "totalPIs": 16,
+  "executed": {
+    "count": 10,
+    "percent": 62.5
+  },
+  "notExecuted": {
+    "count": 4,
+    "percent": 25
+  },
+  "notFound": {
+    "count": 2,
+    "percent": 12.5
+  },
+  "meta": {
+    "generatedAt": "2024-07-20T10:30:00Z"
+  }
+}

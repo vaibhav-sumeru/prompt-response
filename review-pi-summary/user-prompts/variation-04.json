@@ -1,0 +1,21 @@
+{
+  "currentScheduleId": "SCH-2026-Q2-015",
+  "auditee": "Hyderabad Regional Office",
+  "mainAuditType": "Operational Audit",
+  "totalPIs": 120,
+  "executed": {
+    "count": 84,
+    "percent": 70
+  },
+  "notExecuted": {
+    "count": 36,
+    "percent": 30
+  },
+  "notFound": {
+    "count": 0,
+    "percent": 0
+  },
+  "meta": {
+    "generatedAt": "2026-05-15T10:30:00Z"
+  }
+}

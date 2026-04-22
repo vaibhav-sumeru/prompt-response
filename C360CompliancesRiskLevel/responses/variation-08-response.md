@@ -1,0 +1,1 @@
+- **Risk Level Distribution:** The total compliance portfolio consists of 10,600 compliances, distributed across risk levels as follows: **Medium: 4,500 (42.0%)**, High: 3,200 (30.0%), Low: 1,800 (17.0%), and Zero Tolerance: 1,100 (10.0%).

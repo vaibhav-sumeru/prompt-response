@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-22T00:00:00Z"
+  },
+  "riskMix": {
+    "description": "Risk distribution across all compliances",
+    "totalCompliances": 0,
+    "items": [
+      {
+        "riskLevel": "Medium",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "riskLevel": "High",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "riskLevel": "Low",
+        "count": 0,
+        "percent": 0
+      },
+      {
+        "riskLevel": "Zero Tolerance",
+        "count": 0,
+        "percent": 0
+      }
+    ]
+  }
+}

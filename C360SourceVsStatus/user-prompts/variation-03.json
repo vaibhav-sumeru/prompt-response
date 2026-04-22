@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-22T00:00:00Z"
+  },
+  "sourceStatusDistribution": {
+    "description": "Top source types by total compliance count with per-status breakdown",
+    "items": [
+      {
+        "sourceTypeName": "Security Incidents",
+        "totalCompliances": 50,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 20,
+            "percent": 40
+          },
+          {
+            "status": "in_progress",
+            "count": 30,
+            "percent": 60
+          },
+          {
+            "status": "resolved",
+            "count": 0,
+            "percent": 0
+          },
+          {
+            "status": "accepted",
+            "count": 0,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "sourceTypeName": "Audit Findings Q2",
+        "totalCompliances": 80,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 30,
+            "percent": 37.5
+          },
+          {
+            "status": "in_progress",
+            "count": 25,
+            "percent": 31.3
+          },
+          {
+            "status": "resolved",
+            "count": 15,
+            "percent": 18.8
+          },
+          {
+            "status": "accepted",
+            "count": 10,
+            "percent": 12.5
+          }
+        ]
+      },
+      {
+        "sourceTypeName": "Regulatory Changes",
+        "totalCompliances": 120,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 30,
+            "percent": 25
+          },
+          {
+            "status": "in_progress",
+            "count": 20,
+            "percent": 16.7
+          },
+          {
+            "status": "resolved",
+            "count": 50,
+            "percent": 41.7
+          },
+          {
+            "status": "accepted",
+            "count": 20,
+            "percent": 16.7
+          }
+        ]
+      },
+      {
+        "sourceTypeName": "Internal Reviews",
+        "totalCompliances": 60,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 5,
+            "percent": 8.3
+          },
+          {
+            "status": "in_progress",
+            "count": 10,
+            "percent": 16.7
+          },
+          {
+            "status": "resolved",
+            "count": 35,
+            "percent": 58.3
+          },
+          {
+            "status": "accepted",
+            "count": 10,
+            "percent": 16.7
+          }
+        ]
+      }
+    ]
+  },
+  "topUnresolvedSources": {
+    "description": "Top 3 source types with the highest unresolved compliance rate (not_started + in_progress), sorted by unresolvedPercent descending",
+    "items": [
+      {
+        "sourceTypeName": "Security Incidents",
+        "unresolvedCount": 50,
+        "totalCompliances": 50,
+        "unresolvedPercent": 100
+      },
+      {
+        "sourceTypeName": "Audit Findings Q2",
+        "unresolvedCount": 55,
+        "totalCompliances": 80,
+        "unresolvedPercent": 68.8
+      },
+      {
+        "sourceTypeName": "Regulatory Changes",
+        "unresolvedCount": 50,
+        "totalCompliances": 120,
+        "unresolvedPercent": 41.7
+      }
+    ]
+  }
+}

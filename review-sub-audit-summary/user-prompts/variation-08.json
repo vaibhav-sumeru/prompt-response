@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-21T10:00:00Z",
+    "scheduleCount": 4
+  },
+  "scheduleExecution": {
+    "description": "Sub-audit execution coverage per schedule — current and up to 3 previous. Each entry shows how many sub-audits were executed vs not executed.",
+    "items": [
+      {
+        "scheduleId": "SCH-2026-04",
+        "label": "Current",
+        "isCurrent": true,
+        "total": 150,
+        "executed": 141,
+        "notExecuted": 9,
+        "coveragePercent": 94,
+        "performanceFlag": "Good"
+      },
+      {
+        "scheduleId": "SCH-2026-03",
+        "label": "Previous 1",
+        "isCurrent": false,
+        "total": 145,
+        "executed": 126,
+        "notExecuted": 19,
+        "coveragePercent": 86.9,
+        "performanceFlag": "Good"
+      },
+      {
+        "scheduleId": "SCH-2026-02",
+        "label": "Previous 2",
+        "isCurrent": false,
+        "total": 140,
+        "executed": 115,
+        "notExecuted": 25,
+        "coveragePercent": 82.1,
+        "performanceFlag": "Good"
+      },
+      {
+        "scheduleId": "SCH-2026-01",
+        "label": "Previous 3",
+        "isCurrent": false,
+        "total": 135,
+        "executed": 111,
+        "notExecuted": 24,
+        "coveragePercent": 82.2,
+        "performanceFlag": "Good"
+      }
+    ]
+  },
+  "subAuditTypeExecution": {
+    "description": "Sub-audit type execution breakdown for the current schedule (SCH-2026-04). Sorted by execution percent ascending — lowest-performing types appear first.",
+    "currentScheduleId": "SCH-2026-04",
+    "items": [
+      {
+        "subAuditName": "Financial Audit",
+        "executed": 35,
+        "notExecuted": 5,
+        "total": 40,
+        "executionPercent": 87.5
+      },
+      {
+        "subAuditName": "Compliance Review",
+        "executed": 46,
+        "notExecuted": 4,
+        "total": 50,
+        "executionPercent": 92
+      },
+      {
+        "subAuditName": "IT Security Audit",
+        "executed": 60,
+        "notExecuted": 0,
+        "total": 60,
+        "executionPercent": 100
+      }
+    ]
+  },
+  "executionTrend": {
+    "classification": "Improving",
+    "currentCoveragePercent": 94,
+    "previousAvgCoveragePercent": 83.7,
+    "coverageChangePct": 10.3
+  }
+}

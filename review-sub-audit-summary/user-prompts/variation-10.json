@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "generatedAt": "2024-04-21T10:00:00Z",
+    "scheduleCount": 4
+  },
+  "scheduleExecution": {
+    "description": "Sub-audit execution coverage per schedule — current and up to 3 previous. Each entry shows how many sub-audits were executed vs not executed.",
+    "items": [
+      {
+        "scheduleId": "SCH-2024-04",
+        "label": "Current",
+        "isCurrent": true,
+        "total": 196,
+        "executed": 155,
+        "notExecuted": 41,
+        "coveragePercent": 79.1,
+        "performanceFlag": "Acceptable"
+      },
+      {
+        "scheduleId": "SCH-2024-03",
+        "label": "Previous 1",
+        "isCurrent": false,
+        "total": 180,
+        "executed": 120,
+        "notExecuted": 60,
+        "coveragePercent": 66.7,
+        "performanceFlag": "Below Target"
+      },
+      {
+        "scheduleId": "SCH-2024-02",
+        "label": "Previous 2",
+        "isCurrent": false,
+        "total": 210,
+        "executed": 180,
+        "notExecuted": 30,
+        "coveragePercent": 85.7,
+        "performanceFlag": "Good"
+      },
+      {
+        "scheduleId": "SCH-2024-01",
+        "label": "Previous 3",
+        "isCurrent": false,
+        "total": 190,
+        "executed": 150,
+        "notExecuted": 40,
+        "coveragePercent": 78.9,
+        "performanceFlag": "Acceptable"
+      }
+    ]
+  },
+  "subAuditTypeExecution": {
+    "description": "Sub-audit type execution breakdown for the current schedule (SCH-2024-04). Sorted by execution percent ascending — lowest-performing types appear first.",
+    "currentScheduleId": "SCH-2024-04",
+    "items": [
+      {
+        "subAuditName": "Data Governance Review",
+        "executed": 10,
+        "notExecuted": 15,
+        "total": 25,
+        "executionPercent": 40
+      },
+      {
+        "subAuditName": "Marketing Compliance",
+        "executed": 20,
+        "notExecuted": 10,
+        "total": 30,
+        "executionPercent": 66.7
+      },
+      {
+        "subAuditName": "Asset Management Audit",
+        "executed": 35,
+        "notExecuted": 10,
+        "total": 45,
+        "executionPercent": 77.8
+      },
+      {
+        "subAuditName": "Supply Chain Audit",
+        "executed": 50,
+        "notExecuted": 5,
+        "total": 55,
+        "executionPercent": 90.9
+      },
+      {
+        "subAuditName": "IT Security Audit",
+        "executed": 40,
+        "notExecuted": 1,
+        "total": 41,
+        "executionPercent": 97.6
+      }
+    ]
+  },
+  "executionTrend": {
+    "classification": "Stable",
+    "currentCoveragePercent": 79.1,
+    "previousAvgCoveragePercent": 77.1,
+    "coverageChangePct": 2
+  }
+}

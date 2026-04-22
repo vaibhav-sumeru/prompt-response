@@ -1,0 +1,142 @@
+{
+  "currentScheduleId": "SCH-2026-Q2-015",
+  "auditee": "Chennai Corporate Office",
+  "mainAuditType": "Financial Compliance",
+  "previousSchedulesAvailable": 3,
+  "schedules": [
+    {
+      "scheduleId": "SCH-2026-Q2-015",
+      "totalIssues": 200,
+      "newIssues": {
+        "count": 80,
+        "percent": 40
+      },
+      "repeated": {
+        "count": 50,
+        "percent": 25
+      },
+      "recurring": {
+        "count": 70,
+        "percent": 35
+      },
+      "combinedRecurringRepeated": {
+        "count": 120,
+        "percent": 60
+      }
+    },
+    {
+      "scheduleId": "SCH-2026-Q1-010",
+      "totalIssues": 180,
+      "newIssues": {
+        "count": 76,
+        "percent": 42.2
+      },
+      "repeated": {
+        "count": 46,
+        "percent": 25.6
+      },
+      "recurring": {
+        "count": 58,
+        "percent": 32.2
+      },
+      "combinedRecurringRepeated": {
+        "count": 104,
+        "percent": 57.8
+      }
+    },
+    {
+      "scheduleId": "SCH-2025-Q4-008",
+      "totalIssues": 170,
+      "newIssues": {
+        "count": 80,
+        "percent": 47.1
+      },
+      "repeated": {
+        "count": 41,
+        "percent": 24.1
+      },
+      "recurring": {
+        "count": 49,
+        "percent": 28.8
+      },
+      "combinedRecurringRepeated": {
+        "count": 90,
+        "percent": 52.9
+      }
+    },
+    {
+      "scheduleId": "SCH-2025-Q3-005",
+      "totalIssues": 160,
+      "newIssues": {
+        "count": 81,
+        "percent": 50.6
+      },
+      "repeated": {
+        "count": 37,
+        "percent": 23.1
+      },
+      "recurring": {
+        "count": 42,
+        "percent": 26.3
+      },
+      "combinedRecurringRepeated": {
+        "count": 79,
+        "percent": 49.4
+      }
+    }
+  ],
+  "subAuditRecurrence": {
+    "description": "Sub-audit level breakdown of Recurring + Repeated issue concentration for the current schedule (Q2 2026 Financial Compliance). Items are ranked by combined recurrence percentage descending.",
+    "items": [
+      {
+        "rank": 1,
+        "subAuditName": "Data Privacy Compliance",
+        "totalIssues": 60,
+        "recurringCount": 22,
+        "repeatedCount": 17,
+        "combinedRecurringRepeatedCount": 39,
+        "combinedRecurringRepeatedPercent": 65
+      },
+      {
+        "rank": 2,
+        "subAuditName": "Vendor Management",
+        "totalIssues": 55,
+        "recurringCount": 18,
+        "repeatedCount": 14,
+        "combinedRecurringRepeatedCount": 32,
+        "combinedRecurringRepeatedPercent": 58.2
+      },
+      {
+        "rank": 3,
+        "subAuditName": "Internal Controls",
+        "totalIssues": 50,
+        "recurringCount": 15,
+        "repeatedCount": 11,
+        "combinedRecurringRepeatedCount": 26,
+        "combinedRecurringRepeatedPercent": 52
+      },
+      {
+        "rank": 4,
+        "subAuditName": "IT Infrastructure",
+        "totalIssues": 35,
+        "recurringCount": 10,
+        "repeatedCount": 7,
+        "combinedRecurringRepeatedCount": 17,
+        "combinedRecurringRepeatedPercent": 48.6
+      }
+    ]
+  },
+  "riskConcentration": {
+    "description": "Measures critical risk (High + Zero Tolerance) concentration within recurring and repeated issues vs the overall issue mix in the current schedule.",
+    "totalIssues": 200,
+    "totalRecurringRepeated": 120,
+    "totalCriticalRisk": 50,
+    "criticalRecurringCount": 37,
+    "recurringCriticalPercent": 30.8,
+    "overallCriticalPercent": 25,
+    "concentrationIndex": 5.8
+  },
+  "meta": {
+    "generatedAt": "2026-05-15T10:30:00Z"
+  }
+}

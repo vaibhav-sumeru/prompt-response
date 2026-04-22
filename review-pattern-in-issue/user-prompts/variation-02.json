@@ -1,0 +1,151 @@
+{
+  "currentScheduleId": "AUD-2024-Q4-012",
+  "auditee": "Apex Corp - Central Division",
+  "mainAuditType": "Operational Efficiency Audit",
+  "previousSchedulesAvailable": 3,
+  "schedules": [
+    {
+      "scheduleId": "AUD-2024-Q4-012",
+      "totalIssues": 210,
+      "newIssues": {
+        "count": 82,
+        "percent": 39
+      },
+      "repeated": {
+        "count": 55,
+        "percent": 26.2
+      },
+      "recurring": {
+        "count": 73,
+        "percent": 34.8
+      },
+      "combinedRecurringRepeated": {
+        "count": 128,
+        "percent": 61
+      }
+    },
+    {
+      "scheduleId": "SCH-2024-Q3-009",
+      "totalIssues": 205,
+      "newIssues": {
+        "count": 86,
+        "percent": 42
+      },
+      "repeated": {
+        "count": 53,
+        "percent": 25.9
+      },
+      "recurring": {
+        "count": 66,
+        "percent": 32.2
+      },
+      "combinedRecurringRepeated": {
+        "count": 119,
+        "percent": 58
+      }
+    },
+    {
+      "scheduleId": "SCH-2024-Q2-005",
+      "totalIssues": 198,
+      "newIssues": {
+        "count": 91,
+        "percent": 46
+      },
+      "repeated": {
+        "count": 50,
+        "percent": 25.3
+      },
+      "recurring": {
+        "count": 57,
+        "percent": 28.8
+      },
+      "combinedRecurringRepeated": {
+        "count": 107,
+        "percent": 54
+      }
+    },
+    {
+      "scheduleId": "SCH-2024-Q1-001",
+      "totalIssues": 180,
+      "newIssues": {
+        "count": 92,
+        "percent": 51.1
+      },
+      "repeated": {
+        "count": 43,
+        "percent": 23.9
+      },
+      "recurring": {
+        "count": 45,
+        "percent": 25
+      },
+      "combinedRecurringRepeated": {
+        "count": 88,
+        "percent": 49
+      }
+    }
+  ],
+  "subAuditRecurrence": {
+    "description": "Sub-audit level breakdown of Recurring + Repeated issue concentration for the current schedule (Q4 2024 Operational Efficiency Audit). Items are ranked by combined recurrence percentage descending.",
+    "items": [
+      {
+        "rank": 1,
+        "subAuditName": "Data Governance",
+        "totalIssues": 60,
+        "recurringCount": 25,
+        "repeatedCount": 20,
+        "combinedRecurringRepeatedCount": 45,
+        "combinedRecurringRepeatedPercent": 75
+      },
+      {
+        "rank": 2,
+        "subAuditName": "Regulatory Compliance",
+        "totalIssues": 55,
+        "recurringCount": 19,
+        "repeatedCount": 16,
+        "combinedRecurringRepeatedCount": 35,
+        "combinedRecurringRepeatedPercent": 63.6
+      },
+      {
+        "rank": 3,
+        "subAuditName": "Vendor Management",
+        "totalIssues": 45,
+        "recurringCount": 14,
+        "repeatedCount": 11,
+        "combinedRecurringRepeatedCount": 25,
+        "combinedRecurringRepeatedPercent": 55.6
+      },
+      {
+        "rank": 4,
+        "subAuditName": "Financial Reporting",
+        "totalIssues": 30,
+        "recurringCount": 9,
+        "repeatedCount": 7,
+        "combinedRecurringRepeatedCount": 16,
+        "combinedRecurringRepeatedPercent": 53.3
+      },
+      {
+        "rank": 5,
+        "subAuditName": "IT Infrastructure",
+        "totalIssues": 20,
+        "recurringCount": 4,
+        "repeatedCount": 3,
+        "combinedRecurringRepeatedCount": 7,
+        "combinedRecurringRepeatedPercent": 35
+      }
+    ]
+  },
+  "riskConcentration": {
+    "description": "Measures critical risk (High + Zero Tolerance) concentration within recurring and repeated issues vs the overall issue mix in the current schedule.",
+    "totalIssues": 210,
+    "totalRecurringRepeated": 128,
+    "totalCriticalRisk": 50,
+    "criticalRecurringCount": 39,
+    "recurringCriticalPercent": 30.5,
+    "overallCriticalPercent": 23.8,
+    "concentrationIndex": 6.7
+  },
+  "meta": {
+    "generatedAt": "2024-12-15T10:30:00Z"
+  }
+}

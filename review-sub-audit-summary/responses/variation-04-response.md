@@ -1,0 +1,3 @@
+- **Schedule Execution:** The Current schedule (SCH-2024-10) records 100 executed sub-audits and **50 not executed** out of 150 total, resulting in **66.7% coverage**. This execution performance is flagged as **Below Target**.
+- **Sub-Audit Type Execution:** Across 5 sub-audit types, **Data Privacy Audit** shows the lowest execution with 10 executed and **15 not executed** out of 25, at **40.0%**. Regulatory Compliance also stands at 40.0% execution. In contrast, IT Security Review has the highest execution at 94.3%.
+- **Execution Trend:** Execution trend is Not Available — this dataset contains only a single schedule with no prior schedules for comparison; coverage change and trend classification cannot be determined from a single data point.

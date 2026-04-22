@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:45:00Z",
+    "scheduleCount": 5,
+    "totalIssues": 1250,
+    "totalUniquePIs": 110
+  },
+  "piConcentration": {
+    "description": "Top 5 PIs by total issue count across current and previous 4 schedules, ranked descending.",
+    "top5ConcentrationPercent": 14,
+    "topPIs": [
+      {
+        "piId": "PI-5101",
+        "piName": "Supply Chain Logistics",
+        "totalIssues": 40,
+        "percentOfTotal": 3.2
+      },
+      {
+        "piId": "PI-5102",
+        "piName": "Data Privacy Compliance",
+        "totalIssues": 38,
+        "percentOfTotal": 3
+      },
+      {
+        "piId": "PI-5103",
+        "piName": "Fraud Detection Systems",
+        "totalIssues": 35,
+        "percentOfTotal": 2.8
+      },
+      {
+        "piId": "PI-5104",
+        "piName": "Employee Expense Management",
+        "totalIssues": 32,
+        "percentOfTotal": 2.6
+      },
+      {
+        "piId": "PI-5105",
+        "piName": "IT Infrastructure Security",
+        "totalIssues": 30,
+        "percentOfTotal": 2.4
+      }
+    ]
+  },
+  "subAuditRiskConcentration": {
+    "description": "Top 3 sub-audits ranked by combined Zero Tolerance + High risk issue count across all schedules.",
+    "topSubAudits": [
+      {
+        "subAuditName": "Vendor Management",
+        "ztIssues": 15,
+        "highIssues": 45,
+        "ztAndHighIssues": 60,
+        "ztAndHighPercent": 33.3,
+        "totalIssues": 180
+      },
+      {
+        "subAuditName": "Regulatory Reporting",
+        "ztIssues": 12,
+        "highIssues": 38,
+        "ztAndHighIssues": 50,
+        "ztAndHighPercent": 33.3,
+        "totalIssues": 150
+      },
+      {
+        "subAuditName": "Quality Assurance Processes",
+        "ztIssues": 10,
+        "highIssues": 30,
+        "ztAndHighIssues": 40,
+        "ztAndHighPercent": 30.8,
+        "totalIssues": 130
+      }
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "review-issue-at-pi-level",
+  "description": "Schema for the Review — Issue at PI Level widget. Two narratable sections: (1) top PI issue concentration across current and previous 3 schedules, and (2) sub-audit zero-tolerance + high-risk issue concentration.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "piConcentration", "subAuditRiskConcentration"],
+  "definitions": {
+    "piItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["piId", "piName", "totalIssues", "percentOfTotal"],
+      "properties": {
+        "piId": {
+          "type": "string",
+          "description": "Unique PI identifier"
+        },
+        "piName": {
+          "type": "string",
+          "description": "PI display name"
+        },
+        "totalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues linked to this PI across all schedules analyzed"
+        },
+        "percentOfTotal": {
+          "type": "number",
+          "description": "This PI's issues as a percentage of grand total issues; rounded to 1 decimal"
+        }
+      }
+    },
+    "subAuditRiskItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subAuditName", "ztIssues", "highIssues", "ztAndHighIssues", "ztAndHighPercent", "totalIssues"],
+      "properties": {
+        "subAuditName": {
+          "type": "string",
+          "description": "Sub-audit display name"
+        },
+        "ztIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of Zero Tolerance risk issues in this sub-audit across all schedules"
+        },
+        "highIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of High risk issues in this sub-audit across all schedules"
+        },
+        "ztAndHighIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Combined ZT + High risk issue count (pre-computed: ztIssues + highIssues)"
+        },
+        "ztAndHighPercent": {
+          "type": "number",
+          "description": "ZT + High issues as a percentage of this sub-audit's totalIssues; rounded to 1 decimal"
+        },
+        "totalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues in this sub-audit across all schedules (all risk levels)"
+        }
+      }
+    }
+  },
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt", "scheduleCount", "totalIssues", "totalUniquePIs"],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp of when this payload was generated"
+        },
+        "scheduleCount": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Number of schedules analyzed (current + up to previous 3)"
+        },
+        "totalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Grand total issues across all schedules in scope"
+        },
+        "totalUniquePIs": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of unique PIs that have at least one issue across all schedules"
+        }
+      }
+    },
+    "piConcentration": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Top PI Issue Concentration: top 5 PIs pre-ranked descending by total issues across all schedules",
+      "required": ["description", "topPIs", "top5ConcentrationPercent"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of this section"
+        },
+        "top5ConcentrationPercent": {
+          "type": "number",
+          "description": "Percentage of grand total issues contributed by the top 5 PIs; rounded to 1 decimal"
+        },
+        "topPIs": {
+          "type": "array",
+          "description": "Top 5 PIs sorted descending by totalIssues. May have fewer items if fewer than 5 PIs exist.",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": { "$ref": "#/definitions/piItem" }
+        }
+      }
+    },
+    "subAuditRiskConcentration": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Sub-Audit Risk Concentration: top 3 sub-audits ranked descending by combined ZT + High risk issue count",
+      "required": ["description", "topSubAudits"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of this section"
+        },
+        "topSubAudits": {
+          "type": "array",
+          "description": "Top 3 sub-audits sorted descending by ztAndHighIssues. May have fewer items if fewer than 3 sub-audits exist.",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": { "$ref": "#/definitions/subAuditRiskItem" }
+        }
+      }
+    }
+  }
+}
+

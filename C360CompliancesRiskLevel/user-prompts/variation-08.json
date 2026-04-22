@@ -1,0 +1,31 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-22T00:00:00Z"
+  },
+  "riskMix": {
+    "description": "Risk distribution across all compliances",
+    "totalCompliances": 10600,
+    "items": [
+      {
+        "riskLevel": "Medium",
+        "count": 4500,
+        "percent": 42
+      },
+      {
+        "riskLevel": "High",
+        "count": 3200,
+        "percent": 30
+      },
+      {
+        "riskLevel": "Low",
+        "count": 1800,
+        "percent": 17
+      },
+      {
+        "riskLevel": "Zero Tolerance",
+        "count": 1100,
+        "percent": 10
+      }
+    ]
+  }
+}

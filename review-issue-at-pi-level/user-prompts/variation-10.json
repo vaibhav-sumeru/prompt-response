@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z",
+    "scheduleCount": 5,
+    "totalIssues": 420,
+    "totalUniquePIs": 95
+  },
+  "piConcentration": {
+    "description": "Top 5 PIs by total issue count across current and previous 4 schedules, ranked descending.",
+    "top5ConcentrationPercent": 56.7,
+    "topPIs": [
+      {
+        "piId": "PI-5001",
+        "piName": "Data Privacy Compliance",
+        "totalIssues": 65,
+        "percentOfTotal": 15.5
+      },
+      {
+        "piId": "PI-5002",
+        "piName": "Fraud Detection & Prevention",
+        "totalIssues": 55,
+        "percentOfTotal": 13.1
+      },
+      {
+        "piId": "PI-5003",
+        "piName": "System Access Controls",
+        "totalIssues": 48,
+        "percentOfTotal": 11.4
+      },
+      {
+        "piId": "PI-5004",
+        "piName": "Vendor Risk Management",
+        "totalIssues": 38,
+        "percentOfTotal": 9
+      },
+      {
+        "piId": "PI-5005",
+        "piName": "Incident Response Protocol",
+        "totalIssues": 32,
+        "percentOfTotal": 7.6
+      }
+    ]
+  },
+  "subAuditRiskConcentration": {
+    "description": "Top 3 sub-audits ranked by combined Zero Tolerance + High risk issue count across all schedules.",
+    "topSubAudits": [
+      {
+        "subAuditName": "Critical Data Integrity",
+        "ztIssues": 70,
+        "highIssues": 20,
+        "ztAndHighIssues": 90,
+        "ztAndHighPercent": 90,
+        "totalIssues": 100
+      },
+      {
+        "subAuditName": "Regulatory Non-Compliance",
+        "ztIssues": 60,
+        "highIssues": 25,
+        "ztAndHighIssues": 85,
+        "ztAndHighPercent": 81,
+        "totalIssues": 105
+      },
+      {
+        "subAuditName": "Security Vulnerabilities",
+        "ztIssues": 50,
+        "highIssues": 30,
+        "ztAndHighIssues": 80,
+        "ztAndHighPercent": 72.7,
+        "totalIssues": 110
+      }
+    ]
+  }
+}

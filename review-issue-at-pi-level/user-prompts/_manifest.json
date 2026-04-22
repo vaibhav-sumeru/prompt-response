@@ -1,0 +1,42 @@
+[
+  {
+    "id": "variation-01",
+    "description": "All sub-audits have 0 Zero Tolerance issues — only High risk issues present. Tests explicit zero-value reporting for ztIssues in the Sub-Audit Risk Concentration paragraph."
+  },
+  {
+    "id": "variation-02",
+    "description": "All sub-audits have 0 Zero Tolerance issues — only High risk issues present. Tests explicit zero-value reporting for ztIssues in the Sub-Audit Risk Concentration paragraph."
+  },
+  {
+    "id": "variation-03",
+    "description": "One PI accounts for 80%+ of all issues — extreme concentration. Tests whether narrator correctly cites top PI dominance and top5ConcentrationPercent near 80%."
+  },
+  {
+    "id": "variation-04",
+    "description": "One PI accounts for 80%+ of all issues — extreme concentration. Tests whether narrator correctly cites top PI dominance and top5ConcentrationPercent near 80%."
+  },
+  {
+    "id": "variation-05",
+    "description": "Very small dataset: totalIssues <= 15, totalUniquePIs <= 5, fewer than 5 PIs in topPIs and fewer than 3 sub-audits. Tests minItems edge cases and small-count narration."
+  },
+  {
+    "id": "variation-06",
+    "description": "Very small dataset: totalIssues <= 15, totalUniquePIs <= 5, fewer than 5 PIs in topPIs and fewer than 3 sub-audits. Tests minItems edge cases and small-count narration."
+  },
+  {
+    "id": "variation-07",
+    "description": "Large dataset: totalIssues >= 1000, issues spread evenly across top PIs (low concentration, top5ConcentrationPercent < 20%). Tests narration of low concentration scenarios."
+  },
+  {
+    "id": "variation-08",
+    "description": "Large dataset: totalIssues >= 1000, issues spread evenly across top PIs (low concentration, top5ConcentrationPercent < 20%). Tests narration of low concentration scenarios."
+  },
+  {
+    "id": "variation-09",
+    "description": "Sub-audits have very high Zero Tolerance issue share — ztIssues dominates highIssues (ZT > High for all 3 sub-audits), and ztAndHighPercent >= 80% for at least one sub-audit."
+  },
+  {
+    "id": "variation-10",
+    "description": "Sub-audits have very high Zero Tolerance issue share — ztIssues dominates highIssues (ZT > High for all 3 sub-audits), and ztAndHighPercent >= 80% for at least one sub-audit."
+  }
+]

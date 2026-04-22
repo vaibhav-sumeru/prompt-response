@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-22T00:00:00Z"
+  },
+  "riskLevelMonthlyTrend": {
+    "description": "Monthly compliance counts per risk level — Apr 2025 to Sep 2025",
+    "monthRange": {
+      "from": "Apr 2025",
+      "to": "Sep 2025"
+    },
+    "riskLevels": [
+      {
+        "riskLevel": "High",
+        "trend": "decreasing",
+        "changeCount": -50,
+        "firstMonth": {
+          "month": "Apr 2025",
+          "count": 150
+        },
+        "lastMonth": {
+          "month": "Sep 2025",
+          "count": 100
+        },
+        "peakMonth": {
+          "month": "Apr 2025",
+          "count": 150
+        },
+        "lowestMonth": {
+          "month": "Sep 2025",
+          "count": 100
+        },
+        "monthlyData": [
+          {
+            "month": "Apr 2025",
+            "count": 150
+          },
+          {
+            "month": "May 2025",
+            "count": 140
+          },
+          {
+            "month": "Jun 2025",
+            "count": 130
+          },
+          {
+            "month": "Jul 2025",
+            "count": 120
+          },
+          {
+            "month": "Aug 2025",
+            "count": 110
+          },
+          {
+            "month": "Sep 2025",
+            "count": 100
+          }
+        ]
+      },
+      {
+        "riskLevel": "Medium",
+        "trend": "decreasing",
+        "changeCount": -100,
+        "firstMonth": {
+          "month": "Apr 2025",
+          "count": 300
+        },
+        "lastMonth": {
+          "month": "Sep 2025",
+          "count": 200
+        },
+        "peakMonth": {
+          "month": "Apr 2025",
+          "count": 300
+        },
+        "lowestMonth": {
+          "month": "Sep 2025",
+          "count": 200
+        },
+        "monthlyData": [
+          {
+            "month": "Apr 2025",
+            "count": 300
+          },
+          {
+            "month": "May 2025",
+            "count": 280
+          },
+          {
+            "month": "Jun 2025",
+            "count": 260
+          },
+          {
+            "month": "Jul 2025",
+            "count": 240
+          },
+          {
+            "month": "Aug 2025",
+            "count": 220
+          },
+          {
+            "month": "Sep 2025",
+            "count": 200
+          }
+        ]
+      },
+      {
+        "riskLevel": "Low",
+        "trend": "decreasing",
+        "changeCount": -25,
+        "firstMonth": {
+          "month": "Apr 2025",
+          "count": 90
+        },
+        "lastMonth": {
+          "month": "Sep 2025",
+          "count": 65
+        },
+        "peakMonth": {
+          "month": "Apr 2025",
+          "count": 90
+        },
+        "lowestMonth": {
+          "month": "Sep 2025",
+          "count": 65
+        },
+        "monthlyData": [
+          {
+            "month": "Apr 2025",
+            "count": 90
+          },
+          {
+            "month": "May 2025",
+            "count": 85
+          },
+          {
+            "month": "Jun 2025",
+            "count": 80
+          },
+          {
+            "month": "Jul 2025",
+            "count": 75
+          },
+          {
+            "month": "Aug 2025",
+            "count": 70
+          },
+          {
+            "month": "Sep 2025",
+            "count": 65
+          }
+        ]
+      }
+    ]
+  }
+}

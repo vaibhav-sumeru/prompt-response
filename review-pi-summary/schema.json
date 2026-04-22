@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Review — PI Summary",
+  "description": "Shows the count and percentage distribution of Process Indicators (PIs) by execution status — Executed, Not Executed, and Not Found — for the current audit schedule.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "currentScheduleId",
+    "auditee",
+    "mainAuditType",
+    "totalPIs",
+    "executed",
+    "notExecuted",
+    "notFound",
+    "meta"
+  ],
+  "properties": {
+    "currentScheduleId": {
+      "type": "string",
+      "description": "Unique identifier of the current audit schedule."
+    },
+    "auditee": {
+      "type": "string",
+      "description": "Name of the auditee entity for which this PI summary is generated."
+    },
+    "mainAuditType": {
+      "type": "string",
+      "description": "Name of the main audit type (e.g., 'Branch Audit', 'Compliance Audit')."
+    },
+    "totalPIs": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Total number of Process Indicators tracked in this schedule. Denominator for all percentage fields."
+    },
+    "executed": {
+      "type": "object",
+      "description": "PIs that were successfully executed during the audit.",
+      "additionalProperties": false,
+      "required": ["count", "percent"],
+      "properties": {
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of Executed PIs."
+        },
+        "percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "(executed.count / totalPIs) × 100. Rounded to 1 decimal."
+        }
+      }
+    },
+    "notExecuted": {
+      "type": "object",
+      "description": "PIs that were planned but not executed during the audit.",
+      "additionalProperties": false,
+      "required": ["count", "percent"],
+      "properties": {
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of Not Executed PIs."
+        },
+        "percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "(notExecuted.count / totalPIs) × 100. Rounded to 1 decimal."
+        }
+      }
+    },
+    "notFound": {
+      "type": "object",
+      "description": "PIs that could not be located during the audit.",
+      "additionalProperties": false,
+      "required": ["count", "percent"],
+      "properties": {
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Number of Not Found PIs."
+        },
+        "percent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "(notFound.count / totalPIs) × 100. Rounded to 1 decimal."
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "description": "Payload generation metadata.",
+      "additionalProperties": false,
+      "required": ["generatedAt"],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp when this payload was generated."
+        }
+      }
+    }
+  }
+}

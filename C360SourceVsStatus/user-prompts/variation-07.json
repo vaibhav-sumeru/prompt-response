@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "sourceStatusDistribution": {
+    "description": "Top source types by total compliance count with per-status breakdown",
+    "items": [
+      {
+        "sourceTypeName": "Regulatory Filings",
+        "totalCompliances": 1850,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 650,
+            "percent": 35.1
+          },
+          {
+            "status": "in_progress",
+            "count": 400,
+            "percent": 21.6
+          },
+          {
+            "status": "resolved",
+            "count": 700,
+            "percent": 37.8
+          },
+          {
+            "status": "accepted",
+            "count": 100,
+            "percent": 5.4
+          }
+        ]
+      },
+      {
+        "sourceTypeName": "Internal Audit",
+        "totalCompliances": 1280,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 250,
+            "percent": 19.5
+          },
+          {
+            "status": "in_progress",
+            "count": 300,
+            "percent": 23.4
+          },
+          {
+            "status": "resolved",
+            "count": 600,
+            "percent": 46.9
+          },
+          {
+            "status": "accepted",
+            "count": 130,
+            "percent": 10.2
+          }
+        ]
+      },
+      {
+        "sourceTypeName": "Vendor Compliance",
+        "totalCompliances": 2100,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 180,
+            "percent": 8.6
+          },
+          {
+            "status": "in_progress",
+            "count": 220,
+            "percent": 10.5
+          },
+          {
+            "status": "resolved",
+            "count": 1400,
+            "percent": 66.7
+          },
+          {
+            "status": "accepted",
+            "count": 300,
+            "percent": 14.3
+          }
+        ]
+      },
+      {
+        "sourceTypeName": "Policy Review",
+        "totalCompliances": 1500,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 350,
+            "percent": 23.3
+          },
+          {
+            "status": "in_progress",
+            "count": 300,
+            "percent": 20
+          },
+          {
+            "status": "resolved",
+            "count": 700,
+            "percent": 46.7
+          },
+          {
+            "status": "accepted",
+            "count": 150,
+            "percent": 10
+          }
+        ]
+      }
+    ]
+  },
+  "topUnresolvedSources": {
+    "description": "Top 3 source types with the highest unresolved compliance rate (not_started + in_progress), sorted by unresolvedPercent descending",
+    "items": [
+      {
+        "sourceTypeName": "Regulatory Filings",
+        "unresolvedCount": 1050,
+        "totalCompliances": 1850,
+        "unresolvedPercent": 56.8
+      },
+      {
+        "sourceTypeName": "Policy Review",
+        "unresolvedCount": 650,
+        "totalCompliances": 1500,
+        "unresolvedPercent": 43.3
+      },
+      {
+        "sourceTypeName": "Internal Audit",
+        "unresolvedCount": 550,
+        "totalCompliances": 1280,
+        "unresolvedPercent": 43
+      }
+    ]
+  }
+}

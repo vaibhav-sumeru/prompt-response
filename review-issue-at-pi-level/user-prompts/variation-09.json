@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:00:00Z",
+    "scheduleCount": 5,
+    "totalIssues": 450,
+    "totalUniquePIs": 95
+  },
+  "piConcentration": {
+    "description": "Top 5 PIs by total issue count across current and previous 3 schedules, ranked descending.",
+    "top5ConcentrationPercent": 44.4,
+    "topPIs": [
+      {
+        "piId": "PI-5101",
+        "piName": "Data Security Management",
+        "totalIssues": 50,
+        "percentOfTotal": 11.1
+      },
+      {
+        "piId": "PI-5125",
+        "piName": "Vendor Due Diligence",
+        "totalIssues": 45,
+        "percentOfTotal": 10
+      },
+      {
+        "piId": "PI-5088",
+        "piName": "Employee Onboarding",
+        "totalIssues": 40,
+        "percentOfTotal": 8.9
+      },
+      {
+        "piId": "PI-5110",
+        "piName": "Incident Response Plan",
+        "totalIssues": 35,
+        "percentOfTotal": 7.8
+      },
+      {
+        "piId": "PI-5099",
+        "piName": "Regulatory Reporting",
+        "totalIssues": 30,
+        "percentOfTotal": 6.7
+      }
+    ]
+  },
+  "subAuditRiskConcentration": {
+    "description": "Top 3 sub-audits ranked by combined Zero Tolerance + High risk issue count across all schedules.",
+    "topSubAudits": [
+      {
+        "subAuditName": "Data Privacy Compliance",
+        "ztIssues": 70,
+        "highIssues": 30,
+        "ztAndHighIssues": 100,
+        "ztAndHighPercent": 90.9,
+        "totalIssues": 110
+      },
+      {
+        "subAuditName": "Fraud Prevention Protocols",
+        "ztIssues": 60,
+        "highIssues": 25,
+        "ztAndHighIssues": 85,
+        "ztAndHighPercent": 85,
+        "totalIssues": 100
+      },
+      {
+        "subAuditName": "Sanctions Screening",
+        "ztIssues": 55,
+        "highIssues": 20,
+        "ztAndHighIssues": 75,
+        "ztAndHighPercent": 83.3,
+        "totalIssues": 90
+      }
+    ]
+  }
+}

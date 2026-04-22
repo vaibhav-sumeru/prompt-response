@@ -1,0 +1,268 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Review — Pattern in Issue",
+  "description": "Analyses the proportion of New, Repeated, and Recurring issues across the current and up to 3 previous audit schedules, with sub-audit recurrence ranking and risk-level concentration focus.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "currentScheduleId",
+    "auditee",
+    "mainAuditType",
+    "previousSchedulesAvailable",
+    "schedules",
+    "subAuditRecurrence",
+    "riskConcentration",
+    "meta"
+  ],
+  "properties": {
+    "currentScheduleId": {
+      "type": "string",
+      "description": "Unique identifier of the current (most recent) audit schedule being analysed."
+    },
+    "auditee": {
+      "type": "string",
+      "description": "Name of the auditee entity for which this pattern analysis is generated."
+    },
+    "mainAuditType": {
+      "type": "string",
+      "description": "Name of the main audit type this schedule belongs to (e.g., 'Branch Audit', 'Compliance Audit')."
+    },
+    "previousSchedulesAvailable": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 3,
+      "description": "Count of previous schedules present in this payload. 0 = current only; 1–3 = that many previous schedules also available. Equals schedules.length - 1."
+    },
+    "schedules": {
+      "type": "array",
+      "description": "Issue pattern breakdown per schedule as an ordered array. Index 0 is always the current (most recent) schedule. Subsequent items are previous schedules in reverse chronological order: index 1 = most recent previous, index 2 = two schedules ago, index 3 = three schedules ago. Length is always previousSchedulesAvailable + 1.",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": { "$ref": "#/definitions/SchedulePatternMetrics" }
+    },
+    "subAuditRecurrence": {
+      "type": "object",
+      "description": "Sub-audit level recurrence analysis for the current schedule only. Items are pre-ranked by combined Recurring + Repeated percentage (highest first).",
+      "additionalProperties": false,
+      "required": ["description", "items"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable summary of what this section represents."
+        },
+        "items": {
+          "type": "array",
+          "description": "Sub-audits in the current schedule ranked descending by combinedRecurringRepeatedPercent.",
+          "items": { "$ref": "#/definitions/SubAuditRecurrenceItem" }
+        }
+      }
+    },
+    "riskConcentration": {
+      "type": "object",
+      "description": "Measures whether recurring/repeated issues are disproportionately concentrated in critical risk categories (High + Zero Tolerance) in the current schedule.",
+      "additionalProperties": false,
+      "required": [
+        "description",
+        "totalIssues",
+        "totalRecurringRepeated",
+        "totalCriticalRisk",
+        "criticalRecurringCount",
+        "recurringCriticalPercent",
+        "overallCriticalPercent",
+        "concentrationIndex"
+      ],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable description of what this section computes."
+        },
+        "totalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues in the current schedule. Denominator for overallCriticalPercent."
+        },
+        "totalRecurringRepeated": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues classified as Recurring or Repeated in the current schedule. Denominator for recurringCriticalPercent."
+        },
+        "totalCriticalRisk": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues with High or Zero Tolerance risk level in the current schedule."
+        },
+        "criticalRecurringCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Issues that are BOTH (Recurring or Repeated) AND (High or Zero Tolerance risk). The intersection count."
+        },
+        "recurringCriticalPercent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percentage of recurring+repeated issues that are critical risk. Formula: (criticalRecurringCount / totalRecurringRepeated) × 100. Rounded to 1 decimal."
+        },
+        "overallCriticalPercent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Percentage of ALL issues that are critical risk. Formula: (totalCriticalRisk / totalIssues) × 100. Rounded to 1 decimal."
+        },
+        "concentrationIndex": {
+          "type": "number",
+          "description": "Difference in percentage points: recurringCriticalPercent − overallCriticalPercent. Positive = recurring issues are more concentrated in critical risk than the overall mix. Rounded to 1 decimal."
+        }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "description": "Payload generation metadata.",
+      "additionalProperties": false,
+      "required": ["generatedAt"],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "ISO 8601 timestamp when this payload was generated."
+        }
+      }
+    }
+  },
+  "definitions": {
+    "SchedulePatternMetrics": {
+      "type": "object",
+      "description": "Issue pattern breakdown (New / Repeated / Recurring) for one audit schedule.",
+      "additionalProperties": false,
+      "required": [
+        "scheduleId",
+        "totalIssues",
+        "newIssues",
+        "repeated",
+        "recurring",
+        "combinedRecurringRepeated"
+      ],
+      "properties": {
+        "scheduleId": {
+          "type": "string",
+          "description": "Unique identifier for this audit schedule. Use this as the label when narrating."
+        },
+        "totalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issue count for this schedule. Denominator for all percentage fields within this object."
+        },
+        "newIssues": {
+          "type": "object",
+          "description": "Issues that appear for the first time in this schedule (Pattern Type = New).",
+          "additionalProperties": false,
+          "required": ["count", "percent"],
+          "properties": {
+            "count": { "type": "integer", "minimum": 0 },
+            "percent": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100,
+              "description": "(newIssues.count / totalIssues) × 100. Rounded to 1 decimal."
+            }
+          }
+        },
+        "repeated": {
+          "type": "object",
+          "description": "Issues that appeared in one previous schedule (Pattern Type = Repeated).",
+          "additionalProperties": false,
+          "required": ["count", "percent"],
+          "properties": {
+            "count": { "type": "integer", "minimum": 0 },
+            "percent": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100,
+              "description": "(repeated.count / totalIssues) × 100. Rounded to 1 decimal."
+            }
+          }
+        },
+        "recurring": {
+          "type": "object",
+          "description": "Issues that have appeared across two or more previous schedules (Pattern Type = Recurring).",
+          "additionalProperties": false,
+          "required": ["count", "percent"],
+          "properties": {
+            "count": { "type": "integer", "minimum": 0 },
+            "percent": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100,
+              "description": "(recurring.count / totalIssues) × 100. Rounded to 1 decimal."
+            }
+          }
+        },
+        "combinedRecurringRepeated": {
+          "type": "object",
+          "description": "Pre-computed combined count and percentage of Recurring + Repeated issues. Represents all non-first-time issues in this schedule.",
+          "additionalProperties": false,
+          "required": ["count", "percent"],
+          "properties": {
+            "count": { "type": "integer", "minimum": 0 },
+            "percent": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100,
+              "description": "((recurring.count + repeated.count) / totalIssues) × 100. Rounded to 1 decimal."
+            }
+          }
+        }
+      }
+    },
+    "SubAuditRecurrenceItem": {
+      "type": "object",
+      "description": "Recurrence metrics for a single sub-audit within the current schedule.",
+      "additionalProperties": false,
+      "required": [
+        "rank",
+        "subAuditName",
+        "totalIssues",
+        "recurringCount",
+        "repeatedCount",
+        "combinedRecurringRepeatedCount",
+        "combinedRecurringRepeatedPercent"
+      ],
+      "properties": {
+        "rank": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Rank of this sub-audit by combinedRecurringRepeatedPercent descending (rank 1 = highest recurrence rate)."
+        },
+        "subAuditName": {
+          "type": "string",
+          "description": "Name of the sub-audit."
+        },
+        "totalIssues": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Total issues in this sub-audit in the current schedule."
+        },
+        "recurringCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of Recurring issues in this sub-audit."
+        },
+        "repeatedCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of Repeated issues in this sub-audit."
+        },
+        "combinedRecurringRepeatedCount": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "recurringCount + repeatedCount."
+        },
+        "combinedRecurringRepeatedPercent": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "(combinedRecurringRepeatedCount / totalIssues) × 100. Rounded to 1 decimal."
+        }
+      }
+    }
+  }
+}

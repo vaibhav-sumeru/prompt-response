@@ -1,0 +1,93 @@
+{
+  "currentScheduleId": "SCH-2024-Q3-005",
+  "auditee": "Hyderabad Operations",
+  "mainAuditType": "IT Systems Audit",
+  "previousSchedulesAvailable": 1,
+  "schedules": [
+    {
+      "scheduleId": "SCH-2024-Q3-005",
+      "totalIssues": 120,
+      "newIssues": {
+        "count": 36,
+        "percent": 30
+      },
+      "repeated": {
+        "count": 30,
+        "percent": 25
+      },
+      "recurring": {
+        "count": 54,
+        "percent": 45
+      },
+      "combinedRecurringRepeated": {
+        "count": 84,
+        "percent": 70
+      }
+    },
+    {
+      "scheduleId": "SCH-2024-Q2-003",
+      "totalIssues": 100,
+      "newIssues": {
+        "count": 60,
+        "percent": 60
+      },
+      "repeated": {
+        "count": 20,
+        "percent": 20
+      },
+      "recurring": {
+        "count": 20,
+        "percent": 20
+      },
+      "combinedRecurringRepeated": {
+        "count": 40,
+        "percent": 40
+      }
+    }
+  ],
+  "subAuditRecurrence": {
+    "description": "Sub-audit level breakdown of Recurring + Repeated issue concentration for the current schedule (Q3 2024 IT Systems Audit). Items are ranked by combined recurrence percentage descending.",
+    "items": [
+      {
+        "rank": 1,
+        "subAuditName": "Network Security",
+        "totalIssues": 40,
+        "recurringCount": 15,
+        "repeatedCount": 10,
+        "combinedRecurringRepeatedCount": 25,
+        "combinedRecurringRepeatedPercent": 62.5
+      },
+      {
+        "rank": 2,
+        "subAuditName": "Database Management",
+        "totalIssues": 35,
+        "recurringCount": 12,
+        "repeatedCount": 8,
+        "combinedRecurringRepeatedCount": 20,
+        "combinedRecurringRepeatedPercent": 57.1
+      },
+      {
+        "rank": 3,
+        "subAuditName": "User Access Controls",
+        "totalIssues": 30,
+        "recurringCount": 9,
+        "repeatedCount": 6,
+        "combinedRecurringRepeatedCount": 15,
+        "combinedRecurringRepeatedPercent": 50
+      }
+    ]
+  },
+  "riskConcentration": {
+    "description": "Measures critical risk (High + Zero Tolerance) concentration within recurring and repeated issues vs the overall issue mix in the current schedule.",
+    "totalIssues": 120,
+    "totalRecurringRepeated": 84,
+    "totalCriticalRisk": 30,
+    "criticalRecurringCount": 25,
+    "recurringCriticalPercent": 29.8,
+    "overallCriticalPercent": 25,
+    "concentrationIndex": 4.8
+  },
+  "meta": {
+    "generatedAt": "2024-07-20T10:30:00Z"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T12:00:00Z"
+  },
+  "sourceStatusDistribution": {
+    "description": "Top source types by total compliance count with per-status breakdown",
+    "items": [
+      {
+        "sourceTypeName": "External_Audit_Q4",
+        "totalCompliances": 120,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 40,
+            "percent": 33.3
+          },
+          {
+            "status": "in_progress",
+            "count": 25,
+            "percent": 20.8
+          },
+          {
+            "status": "resolved",
+            "count": 45,
+            "percent": 37.5
+          },
+          {
+            "status": "accepted",
+            "count": 10,
+            "percent": 8.3
+          }
+        ]
+      }
+    ]
+  },
+  "topUnresolvedSources": {
+    "description": "Top 3 source types with the highest unresolved compliance rate (not_started + in_progress), sorted by unresolvedPercent descending",
+    "items": [
+      {
+        "sourceTypeName": "External_Audit_Q4",
+        "unresolvedCount": 65,
+        "totalCompliances": 120,
+        "unresolvedPercent": 54.2
+      }
+    ]
+  }
+}

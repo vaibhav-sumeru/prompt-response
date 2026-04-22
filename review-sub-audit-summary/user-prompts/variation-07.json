@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-21T10:00:00Z",
+    "scheduleCount": 4
+  },
+  "scheduleExecution": {
+    "description": "Sub-audit execution coverage per schedule — current and up to 3 previous. Each entry shows how many sub-audits were executed vs not executed.",
+    "items": [
+      {
+        "scheduleId": "SCH-2026-04",
+        "label": "Current",
+        "isCurrent": true,
+        "total": 190,
+        "executed": 171,
+        "notExecuted": 19,
+        "coveragePercent": 90,
+        "performanceFlag": "Good"
+      },
+      {
+        "scheduleId": "SCH-2026-03",
+        "label": "Previous 1",
+        "isCurrent": false,
+        "total": 180,
+        "executed": 144,
+        "notExecuted": 36,
+        "coveragePercent": 80,
+        "performanceFlag": "Acceptable"
+      },
+      {
+        "scheduleId": "SCH-2026-02",
+        "label": "Previous 2",
+        "isCurrent": false,
+        "total": 170,
+        "executed": 130,
+        "notExecuted": 40,
+        "coveragePercent": 76.5,
+        "performanceFlag": "Acceptable"
+      },
+      {
+        "scheduleId": "SCH-2026-01",
+        "label": "Previous 3",
+        "isCurrent": false,
+        "total": 160,
+        "executed": 115,
+        "notExecuted": 45,
+        "coveragePercent": 71.9,
+        "performanceFlag": "Below Target"
+      }
+    ]
+  },
+  "subAuditTypeExecution": {
+    "description": "Sub-audit type execution breakdown for the current schedule (SCH-2026-04). Sorted by execution percent ascending — lowest-performing types appear first.",
+    "currentScheduleId": "SCH-2026-04",
+    "items": [
+      {
+        "subAuditName": "Compliance Review",
+        "executed": 26,
+        "notExecuted": 4,
+        "total": 30,
+        "executionPercent": 86.7
+      },
+      {
+        "subAuditName": "Financial Audit",
+        "executed": 31,
+        "notExecuted": 4,
+        "total": 35,
+        "executionPercent": 88.6
+      },
+      {
+        "subAuditName": "IT Security Audit",
+        "executed": 25,
+        "notExecuted": 3,
+        "total": 28,
+        "executionPercent": 89.3
+      },
+      {
+        "subAuditName": "Branch Operations",
+        "executed": 36,
+        "notExecuted": 4,
+        "total": 40,
+        "executionPercent": 90
+      },
+      {
+        "subAuditName": "Process Review",
+        "executed": 23,
+        "notExecuted": 2,
+        "total": 25,
+        "executionPercent": 92
+      },
+      {
+        "subAuditName": "Operational Controls",
+        "executed": 30,
+        "notExecuted": 2,
+        "total": 32,
+        "executionPercent": 93.8
+      }
+    ]
+  },
+  "executionTrend": {
+    "classification": "Improving",
+    "currentCoveragePercent": 90,
+    "previousAvgCoveragePercent": 76.1,
+    "coverageChangePct": 13.9
+  }
+}

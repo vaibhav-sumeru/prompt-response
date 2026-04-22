@@ -1,0 +1,1 @@
+- **Risk Level Distribution:** 1020 total compliances are distributed across risk levels, with **Medium: 260 (25.0%)**, followed by High: 255 (25.0%), Low: 253 (25.0%), and Zero Tolerance: 252 (25.0%).

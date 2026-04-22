@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "zero_compliances",
+    "description": "One or more source types have totalCompliances = 0, causing percent = '' for all their statusBreakdown items and unresolvedPercent = '' in topUnresolvedSources. Tests Not Available handling."
+  },
+  {
+    "id": "variation-02",
+    "category": "zero_compliances",
+    "description": "One or more source types have totalCompliances = 0, causing percent = '' for all their statusBreakdown items and unresolvedPercent = '' in topUnresolvedSources. Tests Not Available handling."
+  },
+  {
+    "id": "variation-03",
+    "category": "all_unresolved",
+    "description": "One source type has 100% of its compliances in unresolved statuses (not_started + in_progress = totalCompliances), resulting in unresolvedPercent = 100.0. Tests maximum-value boundary and bold formatting."
+  },
+  {
+    "id": "variation-04",
+    "category": "all_unresolved",
+    "description": "One source type has 100% of its compliances in unresolved statuses (not_started + in_progress = totalCompliances), resulting in unresolvedPercent = 100.0. Tests maximum-value boundary and bold formatting."
+  },
+  {
+    "id": "variation-05",
+    "category": "single_source",
+    "description": "sourceStatusDistribution.items[] has exactly 1 item and topUnresolvedSources.items[] has exactly 1 item. Tests single-entity handling — no 'followed by' ranking context in Bullet 2."
+  },
+  {
+    "id": "variation-06",
+    "category": "single_source",
+    "description": "sourceStatusDistribution.items[] has exactly 1 item and topUnresolvedSources.items[] has exactly 1 item. Tests single-entity handling — no 'followed by' ranking context in Bullet 2."
+  },
+  {
+    "id": "variation-07",
+    "category": "large_totals_mixed",
+    "description": "All source types have totalCompliances > 1000, with varied unresolved rates spread across not_started, in_progress, and pending statuses. Tests number formatting (comma separator for > 999) and mixed distribution narrative."
+  },
+  {
+    "id": "variation-08",
+    "category": "large_totals_mixed",
+    "description": "All source types have totalCompliances > 1000, with varied unresolved rates spread across not_started, in_progress, and pending statuses. Tests number formatting (comma separator for > 999) and mixed distribution narrative."
+  },
+  {
+    "id": "variation-09",
+    "category": "minimal_unresolved",
+    "description": "All source types have unresolvedPercent < 5.0 (e.g., nearly all compliances are resolved or accepted). Tests low-signal detection and accurate reporting of small unresolved counts — narrator must not skip near-zero values."
+  },
+  {
+    "id": "variation-10",
+    "category": "minimal_unresolved",
+    "description": "All source types have unresolvedPercent < 5.0 (e.g., nearly all compliances are resolved or accepted). Tests low-signal detection and accurate reporting of small unresolved counts — narrator must not skip near-zero values."
+  }
+]

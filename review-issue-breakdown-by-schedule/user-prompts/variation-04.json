@@ -1,0 +1,54 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:00:00Z",
+    "scheduleCount": 1,
+    "totalIssuesAllSchedules": 180
+  },
+  "perScheduleResolution": {
+    "description": "Resolution mix (Spot Resolution, Direct Resolution, Open Issues) for each schedule, ordered oldest to current.",
+    "schedules": [
+      {
+        "scheduleId": "S-2024-05",
+        "scheduleLabel": "Current",
+        "isCurrent": true,
+        "totalIssues": 180,
+        "spotResolution": {
+          "count": 60,
+          "percent": 33.3
+        },
+        "directResolution": {
+          "count": 75,
+          "percent": 41.7
+        },
+        "openIssues": {
+          "count": 45,
+          "percent": 25
+        },
+        "resolvedPercent": 75
+      }
+    ]
+  },
+  "resolutionTrend": {
+    "description": "Percentage-point change from oldest schedule (S-2024-05) to current schedule (S-2024-05).",
+    "fromScheduleId": "S-2024-05",
+    "toScheduleId": "S-2024-05",
+    "spotResolutionPpChange": 0,
+    "directResolutionPpChange": 0,
+    "openIssuesPpChange": 0,
+    "resolvedHealthPpChange": 0
+  },
+  "riskSeverityResolution": {
+    "description": "Zero Tolerance and High risk unresolved issues per schedule, ordered oldest to current.",
+    "schedules": [
+      {
+        "scheduleId": "S-2024-05",
+        "scheduleLabel": "Current",
+        "totalUnresolved": 45,
+        "ztUnresolved": 10,
+        "highUnresolved": 18,
+        "ztAndHighUnresolved": 28,
+        "ztAndHighUnresolvedPercent": 62.2
+      }
+    ]
+  }
+}

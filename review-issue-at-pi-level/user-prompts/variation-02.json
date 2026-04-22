@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "generatedAt": "2024-10-27T10:00:00Z",
+    "scheduleCount": 5,
+    "totalIssues": 420,
+    "totalUniquePIs": 95
+  },
+  "piConcentration": {
+    "description": "Top 5 PIs by total issue count across current and previous 3 schedules, ranked descending.",
+    "top5ConcentrationPercent": 37.9,
+    "topPIs": [
+      {
+        "piId": "PI-5001",
+        "piName": "User Access Management",
+        "totalIssues": 48,
+        "percentOfTotal": 11.4
+      },
+      {
+        "piId": "PI-5002",
+        "piName": "Incident Response Protocol",
+        "totalIssues": 36,
+        "percentOfTotal": 8.6
+      },
+      {
+        "piId": "PI-5003",
+        "piName": "Data Loss Prevention",
+        "totalIssues": 28,
+        "percentOfTotal": 6.7
+      },
+      {
+        "piId": "PI-5004",
+        "piName": "Change Management Process",
+        "totalIssues": 25,
+        "percentOfTotal": 6
+      },
+      {
+        "piId": "PI-5005",
+        "piName": "Third-Party Risk Assessment",
+        "totalIssues": 22,
+        "percentOfTotal": 5.2
+      }
+    ]
+  },
+  "subAuditRiskConcentration": {
+    "description": "Top 3 sub-audits ranked by combined Zero Tolerance + High risk issue count across all schedules.",
+    "topSubAudits": [
+      {
+        "subAuditName": "Data Privacy Compliance",
+        "ztIssues": 0,
+        "highIssues": 60,
+        "ztAndHighIssues": 60,
+        "ztAndHighPercent": 54.5,
+        "totalIssues": 110
+      },
+      {
+        "subAuditName": "Vendor Risk Management",
+        "ztIssues": 0,
+        "highIssues": 45,
+        "ztAndHighIssues": 45,
+        "ztAndHighPercent": 52.9,
+        "totalIssues": 85
+      },
+      {
+        "subAuditName": "IT Security Audit",
+        "ztIssues": 0,
+        "highIssues": 30,
+        "ztAndHighIssues": 30,
+        "ztAndHighPercent": 42.9,
+        "totalIssues": 70
+      }
+    ]
+  }
+}

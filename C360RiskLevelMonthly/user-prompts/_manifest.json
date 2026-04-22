@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "all_increasing",
+    "description": "High, Medium, and Low all have trend='increasing' with positive changeCount. Tests that bold is applied to all 3 risk levels' names and changeCounts, and that all trend descriptions use increasing vocabulary."
+  },
+  {
+    "id": "variation-02",
+    "category": "all_increasing",
+    "description": "High, Medium, and Low all have trend='increasing' with positive changeCount. Tests that bold is applied to all 3 risk levels' names and changeCounts, and that all trend descriptions use increasing vocabulary."
+  },
+  {
+    "id": "variation-03",
+    "category": "all_decreasing",
+    "description": "High, Medium, and Low all have trend='decreasing' with negative changeCount. Tests that no bolding is applied and that decreasing vocabulary is used for all 3 bullets."
+  },
+  {
+    "id": "variation-04",
+    "category": "all_decreasing",
+    "description": "High, Medium, and Low all have trend='decreasing' with negative changeCount. Tests that no bolding is applied and that decreasing vocabulary is used for all 3 bullets."
+  },
+  {
+    "id": "variation-05",
+    "category": "high_increasing_others_decreasing",
+    "description": "High has trend='increasing' (bold applied), Medium and Low have trend='decreasing' (no bold). This is the most realistic pattern. Tests selective bolding — only High bullet gets bold."
+  },
+  {
+    "id": "variation-06",
+    "category": "high_increasing_others_decreasing",
+    "description": "High has trend='increasing' (bold applied), Medium and Low have trend='decreasing' (no bold). This is the most realistic pattern. Tests selective bolding — only High bullet gets bold."
+  },
+  {
+    "id": "variation-07",
+    "category": "stable_and_fluctuating",
+    "description": "At least one risk level has trend='stable' (changeCount near 0) and another has trend='fluctuating'. Tests that stable/fluctuating vocabulary is used correctly and no bold is applied."
+  },
+  {
+    "id": "variation-08",
+    "category": "stable_and_fluctuating",
+    "description": "At least one risk level has trend='stable' (changeCount near 0) and another has trend='fluctuating'. Tests that stable/fluctuating vocabulary is used correctly and no bold is applied."
+  },
+  {
+    "id": "variation-09",
+    "category": "large_counts_short_period",
+    "description": "All counts > 1000 (requiring comma separators), monthlyData[] has only 2 entries (first and last month are the same as peakMonth/lowestMonth). Tests peakMonth omission rule and comma formatting."
+  },
+  {
+    "id": "variation-10",
+    "category": "large_counts_short_period",
+    "description": "All counts > 1000 (requiring comma separators), monthlyData[] has only 2 entries (first and last month are the same as peakMonth/lowestMonth). Tests peakMonth omission rule and comma formatting."
+  }
+]

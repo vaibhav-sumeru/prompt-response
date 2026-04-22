@@ -1,0 +1,57 @@
+[
+  {
+    "id": "variation-01",
+    "category": "var-01-full-history-normal",
+    "description": "3 previous schedules available (previousSchedulesAvailable = 3, schedules array has 4 items). Recurring % in current schedule is between 30–40%. combinedRecurringRepeated between 55–65%. subAuditRecurrence has 4–5 items with varied recurrence rates. concentrationIndex is a moderate positive value (4–8 pts)."
+  },
+  {
+    "id": "variation-02",
+    "category": "var-01-full-history-normal",
+    "description": "3 previous schedules available (previousSchedulesAvailable = 3, schedules array has 4 items). Recurring % in current schedule is between 30–40%. combinedRecurringRepeated between 55–65%. subAuditRecurrence has 4–5 items with varied recurrence rates. concentrationIndex is a moderate positive value (4–8 pts)."
+  },
+  {
+    "id": "variation-03",
+    "category": "var-02-no-history",
+    "description": "No previous schedules exist (previousSchedulesAvailable = 0, schedules array has exactly 1 item). Current schedule only. All pattern fields are present for the current schedule. subAuditRecurrence items must still be present. Narrator must describe current pattern only with no historical comparison."
+  },
+  {
+    "id": "variation-04",
+    "category": "var-02-no-history",
+    "description": "No previous schedules exist (previousSchedulesAvailable = 0, schedules array has exactly 1 item). Current schedule only. All pattern fields are present for the current schedule. subAuditRecurrence items must still be present. Narrator must describe current pattern only with no historical comparison."
+  },
+  {
+    "id": "variation-05",
+    "category": "var-03-partial-history-one",
+    "description": "Exactly 1 previous schedule (previousSchedulesAvailable = 1, schedules array has 2 items). Only schedules[0] (current) and schedules[1] (previous1) are present. Trend comparison uses schedules[1] as the oldest. Recurring % shows a noticeable shift between the two schedules."
+  },
+  {
+    "id": "variation-06",
+    "category": "var-04-partial-history-two",
+    "description": "Exactly 2 previous schedules (previousSchedulesAvailable = 2, schedules array has 3 items). Oldest schedule for trend comparison is schedules[2]. Recurring % has a clear direction from schedules[2] to schedules[0]."
+  },
+  {
+    "id": "variation-07",
+    "category": "var-05-high-recurring",
+    "description": "Current schedule has very high Recurring % (>50%). recurring.count is the largest category. combinedRecurringRepeated.percent exceeds 75%. 3 previous schedules available showing a steady rise in recurring %. concentrationIndex is high (>10 pts)."
+  },
+  {
+    "id": "variation-08",
+    "category": "var-06-mostly-new",
+    "description": "Current schedule has predominantly New issues (newIssues.percent > 65%). recurring.percent is below 15% and repeated.percent is below 20%. combinedRecurringRepeated.percent is below 35%. 3 previous schedules available showing recurring % was low across history. concentrationIndex is near 0 or negative."
+  },
+  {
+    "id": "variation-09",
+    "category": "var-07-zero-critical-recurring",
+    "description": "riskConcentration.criticalRecurringCount = 0. recurringCriticalPercent = 0.0. concentrationIndex is negative (overall critical % is non-zero but recurring has no critical overlap). totalRecurringRepeated must be > 0. Narrator must report zero explicitly."
+  },
+  {
+    "id": "variation-10",
+    "category": "var-08-single-sub-audit",
+    "description": "subAuditRecurrence.items has exactly 1 item (rank 1 only). The single sub-audit has totalIssues equal to the current schedule's total. combinedRecurringRepeatedPercent for that sub-audit matches the overall combinedRecurringRepeated.percent in schedules[0]. Narrator must handle top-3 gracefully with only 1 item available."
+  },
+  {
+    "id": "variation-11",
+    "category": "var-09-equal-pattern-split",
+    "description": "Current schedule has an exactly equal three-way split: newIssues.percent = repeated.percent = recurring.percent ≈ 33.3%. totalIssues must be divisible by 3. combinedRecurringRepeated.percent ≈ 66.7%. 3 previous schedules available with similarly balanced distributions."
+  }
+]

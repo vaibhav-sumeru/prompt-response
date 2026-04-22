@@ -1,0 +1,21 @@
+{
+  "currentScheduleId": "SCH-2026-Q2-012",
+  "auditee": "Hyderabad Operations Hub",
+  "mainAuditType": "Operational Resilience Audit",
+  "totalPIs": 240,
+  "executed": {
+    "count": 108,
+    "percent": 45
+  },
+  "notExecuted": {
+    "count": 72,
+    "percent": 30
+  },
+  "notFound": {
+    "count": 60,
+    "percent": 25
+  },
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  }
+}

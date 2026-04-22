@@ -1,0 +1,64 @@
+{
+  "currentScheduleId": "AUD-2024-Q3-001",
+  "auditee": "Chennai Operations Hub",
+  "mainAuditType": "IT Security Audit",
+  "previousSchedulesAvailable": 0,
+  "schedules": [
+    {
+      "scheduleId": "AUD-2024-Q3-001",
+      "totalIssues": 120,
+      "newIssues": {
+        "count": 50,
+        "percent": 41.7
+      },
+      "repeated": {
+        "count": 40,
+        "percent": 33.3
+      },
+      "recurring": {
+        "count": 30,
+        "percent": 25
+      },
+      "combinedRecurringRepeated": {
+        "count": 70,
+        "percent": 58.3
+      }
+    }
+  ],
+  "subAuditRecurrence": {
+    "description": "Sub-audit level breakdown of Recurring + Repeated issue concentration for the current schedule (Q3 2024 IT Security Audit). Items are ranked by combined recurrence percentage descending.",
+    "items": [
+      {
+        "rank": 1,
+        "subAuditName": "Access Controls",
+        "totalIssues": 40,
+        "recurringCount": 15,
+        "repeatedCount": 10,
+        "combinedRecurringRepeatedCount": 25,
+        "combinedRecurringRepeatedPercent": 62.5
+      },
+      {
+        "rank": 2,
+        "subAuditName": "Network Security",
+        "totalIssues": 35,
+        "recurringCount": 10,
+        "repeatedCount": 8,
+        "combinedRecurringRepeatedCount": 18,
+        "combinedRecurringRepeatedPercent": 51.4
+      }
+    ]
+  },
+  "riskConcentration": {
+    "description": "Measures critical risk (High + Zero Tolerance) concentration within recurring and repeated issues vs the overall issue mix in the current schedule.",
+    "totalIssues": 120,
+    "totalRecurringRepeated": 70,
+    "totalCriticalRisk": 30,
+    "criticalRecurringCount": 12,
+    "recurringCriticalPercent": 17.1,
+    "overallCriticalPercent": 25,
+    "concentrationIndex": -7.9
+  },
+  "meta": {
+    "generatedAt": "2024-07-22T10:30:00Z"
+  }
+}

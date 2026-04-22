@@ -1,0 +1,3 @@
+- **Monthly Flow Summary:** The reporting period (Jan 2024)–(Jun 2024) shows 875 compliances opened against 750 closed, with the backlog growing. Peak open activity was 170 (Jun 2024), and peak close activity was 150 (Jun 2024).
+- **Opened Risk Mix:** Of 875 compliances opened (Jan 2024)–(Jun 2024), High-risk accounts for **350 (**40%**)**, Medium-risk for 315 (36%), and Low-risk for 210 (24%). High-risk is the dominant tier among opened compliances.
+- **Closed Risk Mix:** Of 750 compliances closed (Jan 2024)–(Jun 2024), High-risk accounts for **270 (**36%**)**, Medium-risk for 285 (38%), and Low-risk for 195 (26%). High-risk closures at 36% compare to 40% High-risk in opens.

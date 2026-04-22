@@ -1,0 +1,21 @@
+{
+  "currentScheduleId": "SCH-2024-Q3-003",
+  "auditee": "Pune Regional Office",
+  "mainAuditType": "Operational Audit",
+  "totalPIs": 250,
+  "executed": {
+    "count": 175,
+    "percent": 70
+  },
+  "notExecuted": {
+    "count": 55,
+    "percent": 22
+  },
+  "notFound": {
+    "count": 20,
+    "percent": 8
+  },
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  }
+}

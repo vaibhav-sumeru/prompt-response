@@ -1,0 +1,3 @@
+- **Resolution Mix by Schedule:** **S-2024-05 (Current)**: 180 total issues — spot 60 (33.3%), direct 75 (41.7%), open **45** (**25.0%**), resolved 75.0%.
+- **Resolution Trend (S-2024-05 → S-2024-05):** Spot resolution from 33.3% to 33.3% (0.0 pp); open issues from 25.0% to 25.0% (0.0 pp); resolved health from 75.0% to 75.0% (0.0 pp); direct resolution 0.0 pp.
+- **Risk Severity — ZT+High Unresolved:** **S-2024-05 (Current)**: 10 Zero Tolerance unresolved, 18 High unresolved → combined **28** (**62.2%**) of 45 total unresolved.

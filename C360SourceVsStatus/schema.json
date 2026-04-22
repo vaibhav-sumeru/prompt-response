@@ -1,0 +1,129 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "C360SourceVsStatus",
+  "description": "Payload for Source vs Status widget — compliance distribution across source types by backend-native status values (e.g. not_started, in_progress, resolved, accepted). Groups data by Source Type Name, computes per-source status counts and percents, and ranks source types by unresolved rate.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "sourceStatusDistribution", "topUnresolvedSources"],
+  "definitions": {
+    "statusBreakdownItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "count", "percent"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "description": "Compliance status as returned by backend (e.g. not_started, in_progress, resolved, accepted)"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 0,
+          "description": "Count of compliances in this status for the source type"
+        },
+        "percent": {
+          "anyOf": [
+            { "type": "number", "minimum": 0, "maximum": 100 },
+            { "type": "string", "enum": [""] }
+          ],
+          "description": "Pre-computed: (count / sourceTotal) × 100, rounded to 1 decimal. Empty string when sourceTotal = 0."
+        }
+      }
+    }
+  },
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt"],
+      "properties": {
+        "generatedAt": { "type": "string", "description": "ISO 8601 timestamp of when this payload was generated" }
+      }
+    },
+    "sourceStatusDistribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Category 1: compliance counts per source type broken down by backend-native status. Sorted by totalCompliances descending. Unresolved statuses = not_started, in_progress, pending (any non-resolved/accepted/closed status).",
+      "required": ["description", "items"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable label for this section"
+        },
+        "items": {
+          "type": "array",
+          "description": "Source types sorted by totalCompliances descending (up to top 5)",
+          "minItems": 0,
+          "maxItems": 5,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["sourceTypeName", "totalCompliances", "statusBreakdown"],
+            "properties": {
+              "sourceTypeName": {
+                "type": "string",
+                "description": "Source type name as returned by backend (e.g. EWS Quater 1, IIFLC360New)"
+              },
+              "totalCompliances": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Total count of compliances for this source type in the selected period"
+              },
+              "statusBreakdown": {
+                "type": "array",
+                "description": "All statuses present for this source type with counts and percents",
+                "minItems": 0,
+                "items": { "$ref": "#/definitions/statusBreakdownItem" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "topUnresolvedSources": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Category 2: top 3 source types with the highest unresolved compliance rate. Unresolved = count of compliances in not_started + in_progress + pending statuses. Sorted by unresolvedPercent descending.",
+      "required": ["description", "items"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Human-readable label for this section"
+        },
+        "items": {
+          "type": "array",
+          "description": "Top 3 source types by unresolvedPercent descending",
+          "minItems": 0,
+          "maxItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["sourceTypeName", "unresolvedCount", "totalCompliances", "unresolvedPercent"],
+            "properties": {
+              "sourceTypeName": {
+                "type": "string",
+                "description": "Source type name as returned by backend"
+              },
+              "unresolvedCount": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Pre-computed: sum of counts for not_started + in_progress + pending statuses"
+              },
+              "totalCompliances": {
+                "type": "integer",
+                "minimum": 0,
+                "description": "Total compliances for this source type"
+              },
+              "unresolvedPercent": {
+                "anyOf": [
+                  { "type": "number", "minimum": 0, "maximum": 100 },
+                  { "type": "string", "enum": [""] }
+                ],
+                "description": "Pre-computed: (unresolvedCount / totalCompliances) × 100, rounded to 1 decimal. Empty string when totalCompliances = 0."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

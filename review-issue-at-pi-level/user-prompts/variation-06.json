@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-21T08:30:00Z",
+    "scheduleCount": 1,
+    "totalIssues": 10,
+    "totalUniquePIs": 3
+  },
+  "piConcentration": {
+    "description": "Top 5 PIs by total issue count across current and previous 3 schedules, ranked descending.",
+    "top5ConcentrationPercent": 100,
+    "topPIs": [
+      {
+        "piId": "PI-101",
+        "piName": "Small Scale Operations",
+        "totalIssues": 5,
+        "percentOfTotal": 50
+      },
+      {
+        "piId": "PI-102",
+        "piName": "Basic Compliance Check",
+        "totalIssues": 3,
+        "percentOfTotal": 30
+      },
+      {
+        "piId": "PI-103",
+        "piName": "Data Entry Validation",
+        "totalIssues": 2,
+        "percentOfTotal": 20
+      }
+    ]
+  },
+  "subAuditRiskConcentration": {
+    "description": "Top 3 sub-audits ranked by combined Zero Tolerance + High risk issue count across all schedules.",
+    "topSubAudits": [
+      {
+        "subAuditName": "Core Process A",
+        "ztIssues": 2,
+        "highIssues": 3,
+        "ztAndHighIssues": 5,
+        "ztAndHighPercent": 71.4,
+        "totalIssues": 7
+      },
+      {
+        "subAuditName": "Core Process B",
+        "ztIssues": 1,
+        "highIssues": 1,
+        "ztAndHighIssues": 2,
+        "ztAndHighPercent": 66.7,
+        "totalIssues": 3
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+- **High Risk Trend:** Across the period from (Jan 2024) to (Feb 2024), High-risk compliances rose from 1,200 in (Jan 2024) to 1,550 in (Feb 2024), representing a change of **+350**.
+- **Medium Risk Trend:** Across the period from (Jan 2024) to (Feb 2024), Medium-risk compliances fell from 2,800 in (Jan 2024) to 2,100 in (Feb 2024), representing a change of -700.
+- **Low Risk Trend:** Across the period from (Jan 2024) to (Feb 2024), Low-risk compliances remained stable, holding at 1,850 from (Jan 2024) to (Feb 2024), with a change of +0.

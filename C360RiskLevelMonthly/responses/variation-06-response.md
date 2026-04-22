@@ -1,0 +1,3 @@
+- **High Risk Trend:** From (Jan 2024) to (Jun 2024), High-risk compliances were increasing, rising from 120 in (Jan 2024) to 190 in (Jun 2024), marking a change of **+70** over the period.
+- **Medium Risk Trend:** Over the period (Jan 2024) to (Jun 2024), Medium-risk compliances were decreasing, falling from 450 in (Jan 2024) to 320 in (Jun 2024), a change of -130.
+- **Low Risk Trend:** Between (Jan 2024) and (Jun 2024), Low-risk compliances were decreasing, starting at 210 in (Jan 2024) and ending at 170 in (Jun 2024). The count peaked at 215 in (Mar 2024), with a total change of -40.

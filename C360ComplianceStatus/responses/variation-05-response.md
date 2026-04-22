@@ -1,0 +1,1 @@
+- **Compliance Status Distribution:** Out of 550 total compliances, Closed: **550 (100.0%)**.

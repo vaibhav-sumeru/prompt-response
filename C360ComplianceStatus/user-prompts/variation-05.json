@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z"
+  },
+  "statusDistribution": {
+    "description": "Compliance count by status for the selected period, sorted high to low",
+    "totalCompliances": 550,
+    "items": [
+      {
+        "status": "Closed",
+        "count": 550,
+        "percent": 100
+      }
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "meta": {
+    "generatedAt": "2024-11-20T10:30:00Z"
+  },
+  "openVsCloseMonthly": {
+    "description": "Monthly compliance open vs close flow with risk-level breakdown for Oct 2025 to Nov 2025.",
+    "monthRange": {
+      "from": "Oct 2025",
+      "to": "Nov 2025"
+    },
+    "summary": {
+      "totalOpened": 200,
+      "totalClosed": 200,
+      "backlogTrend": "stable"
+    },
+    "openedRiskTotals": {
+      "high": 70,
+      "medium": 70,
+      "low": 60,
+      "highPct": 35,
+      "mediumPct": 35,
+      "lowPct": 30
+    },
+    "closedRiskTotals": {
+      "high": 67,
+      "medium": 78,
+      "low": 55,
+      "highPct": 33.5,
+      "mediumPct": 39,
+      "lowPct": 27.5
+    },
+    "peakOpenMonth": {
+      "month": "Oct 2025",
+      "count": 105
+    },
+    "peakCloseMonth": {
+      "month": "Oct 2025",
+      "count": 100
+    },
+    "monthlyData": [
+      {
+        "month": "Oct 2025",
+        "opened": 105,
+        "openedHigh": 40,
+        "openedMedium": 35,
+        "openedLow": 30,
+        "closed": 100,
+        "closedHigh": 35,
+        "closedMedium": 38,
+        "closedLow": 27
+      },
+      {
+        "month": "Nov 2025",
+        "opened": 95,
+        "openedHigh": 30,
+        "openedMedium": 35,
+        "openedLow": 30,
+        "closed": 100,
+        "closedHigh": 32,
+        "closedMedium": 40,
+        "closedLow": 28
+      }
+    ]
+  }
+}

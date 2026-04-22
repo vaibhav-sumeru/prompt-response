@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-21T08:30:00Z",
+    "scheduleCount": 5,
+    "totalIssues": 500,
+    "totalUniquePIs": 95
+  },
+  "piConcentration": {
+    "description": "Top 5 PIs by total issue count across current and previous 3 schedules, ranked descending.",
+    "top5ConcentrationPercent": 96,
+    "topPIs": [
+      {
+        "piId": "PI-4900",
+        "piName": "Customer Data Management",
+        "totalIssues": 410,
+        "percentOfTotal": 82
+      },
+      {
+        "piId": "PI-4855",
+        "piName": "Financial Reporting",
+        "totalIssues": 25,
+        "percentOfTotal": 5
+      },
+      {
+        "piId": "PI-4720",
+        "piName": "Procurement Process",
+        "totalIssues": 20,
+        "percentOfTotal": 4
+      },
+      {
+        "piId": "PI-4912",
+        "piName": "Employee Onboarding",
+        "totalIssues": 15,
+        "percentOfTotal": 3
+      },
+      {
+        "piId": "PI-4789",
+        "piName": "IT Infrastructure Support",
+        "totalIssues": 10,
+        "percentOfTotal": 2
+      }
+    ]
+  },
+  "subAuditRiskConcentration": {
+    "description": "Top 3 sub-audits ranked by combined Zero Tolerance + High risk issue count across all schedules.",
+    "topSubAudits": [
+      {
+        "subAuditName": "Data Governance",
+        "ztIssues": 30,
+        "highIssues": 60,
+        "ztAndHighIssues": 90,
+        "ztAndHighPercent": 60,
+        "totalIssues": 150
+      },
+      {
+        "subAuditName": "Regulatory Compliance",
+        "ztIssues": 25,
+        "highIssues": 45,
+        "ztAndHighIssues": 70,
+        "ztAndHighPercent": 58.3,
+        "totalIssues": 120
+      },
+      {
+        "subAuditName": "IT Security Audit",
+        "ztIssues": 15,
+        "highIssues": 35,
+        "ztAndHighIssues": 50,
+        "ztAndHighPercent": 55.6,
+        "totalIssues": 90
+      }
+    ]
+  }
+}

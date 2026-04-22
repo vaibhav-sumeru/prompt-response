@@ -1,0 +1,133 @@
+{
+  "currentScheduleId": "SCH-2026-Q1-009",
+  "auditee": "Hyderabad Operations Hub",
+  "mainAuditType": "Operational Audit",
+  "previousSchedulesAvailable": 3,
+  "schedules": [
+    {
+      "scheduleId": "SCH-2026-Q1-009",
+      "totalIssues": 180,
+      "newIssues": {
+        "count": 80,
+        "percent": 44.4
+      },
+      "repeated": {
+        "count": 50,
+        "percent": 27.8
+      },
+      "recurring": {
+        "count": 50,
+        "percent": 27.8
+      },
+      "combinedRecurringRepeated": {
+        "count": 100,
+        "percent": 55.6
+      }
+    },
+    {
+      "scheduleId": "SCH-2025-Q4-045",
+      "totalIssues": 170,
+      "newIssues": {
+        "count": 75,
+        "percent": 44.1
+      },
+      "repeated": {
+        "count": 48,
+        "percent": 28.2
+      },
+      "recurring": {
+        "count": 47,
+        "percent": 27.6
+      },
+      "combinedRecurringRepeated": {
+        "count": 95,
+        "percent": 55.9
+      }
+    },
+    {
+      "scheduleId": "SCH-2025-Q3-038",
+      "totalIssues": 160,
+      "newIssues": {
+        "count": 70,
+        "percent": 43.8
+      },
+      "repeated": {
+        "count": 45,
+        "percent": 28.1
+      },
+      "recurring": {
+        "count": 45,
+        "percent": 28.1
+      },
+      "combinedRecurringRepeated": {
+        "count": 90,
+        "percent": 56.3
+      }
+    },
+    {
+      "scheduleId": "SCH-2025-Q2-025",
+      "totalIssues": 150,
+      "newIssues": {
+        "count": 65,
+        "percent": 43.3
+      },
+      "repeated": {
+        "count": 42,
+        "percent": 28
+      },
+      "recurring": {
+        "count": 43,
+        "percent": 28.7
+      },
+      "combinedRecurringRepeated": {
+        "count": 85,
+        "percent": 56.7
+      }
+    }
+  ],
+  "subAuditRecurrence": {
+    "description": "Sub-audit level breakdown of Recurring + Repeated issue concentration for the current schedule (Q1 2026 Operational Audit). Items are ranked by combined recurrence percentage descending.",
+    "items": [
+      {
+        "rank": 1,
+        "subAuditName": "HR Operations",
+        "totalIssues": 40,
+        "recurringCount": 10,
+        "repeatedCount": 8,
+        "combinedRecurringRepeatedCount": 18,
+        "combinedRecurringRepeatedPercent": 45
+      },
+      {
+        "rank": 2,
+        "subAuditName": "Vendor Management",
+        "totalIssues": 35,
+        "recurringCount": 9,
+        "repeatedCount": 6,
+        "combinedRecurringRepeatedCount": 15,
+        "combinedRecurringRepeatedPercent": 42.9
+      },
+      {
+        "rank": 3,
+        "subAuditName": "Procurement",
+        "totalIssues": 30,
+        "recurringCount": 7,
+        "repeatedCount": 5,
+        "combinedRecurringRepeatedCount": 12,
+        "combinedRecurringRepeatedPercent": 40
+      }
+    ]
+  },
+  "riskConcentration": {
+    "description": "Measures critical risk (High + Zero Tolerance) concentration within recurring and repeated issues vs the overall issue mix in the current schedule.",
+    "totalIssues": 180,
+    "totalRecurringRepeated": 100,
+    "totalCriticalRisk": 20,
+    "criticalRecurringCount": 0,
+    "recurringCriticalPercent": 0,
+    "overallCriticalPercent": 11.1,
+    "concentrationIndex": -11.1
+  },
+  "meta": {
+    "generatedAt": "2026-04-15T10:30:00Z"
+  }
+}

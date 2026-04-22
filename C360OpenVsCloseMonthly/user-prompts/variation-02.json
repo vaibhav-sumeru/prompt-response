@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-20T10:30:00Z"
+  },
+  "openVsCloseMonthly": {
+    "description": "Monthly compliance open vs close flow with risk-level breakdown for Jan 2024 to Jun 2024.",
+    "monthRange": {
+      "from": "Jan 2024",
+      "to": "Jun 2024"
+    },
+    "summary": {
+      "totalOpened": 875,
+      "totalClosed": 750,
+      "backlogTrend": "growing"
+    },
+    "openedRiskTotals": {
+      "high": 350,
+      "medium": 315,
+      "low": 210,
+      "highPct": 40,
+      "mediumPct": 36,
+      "lowPct": 24
+    },
+    "closedRiskTotals": {
+      "high": 270,
+      "medium": 285,
+      "low": 195,
+      "highPct": 36,
+      "mediumPct": 38,
+      "lowPct": 26
+    },
+    "peakOpenMonth": {
+      "month": "Jun 2024",
+      "count": 170
+    },
+    "peakCloseMonth": {
+      "month": "Jun 2024",
+      "count": 150
+    },
+    "monthlyData": [
+      {
+        "month": "Jan 2024",
+        "opened": 120,
+        "openedHigh": 50,
+        "openedMedium": 40,
+        "openedLow": 30,
+        "closed": 100,
+        "closedHigh": 35,
+        "closedMedium": 45,
+        "closedLow": 20
+      },
+      {
+        "month": "Feb 2024",
+        "opened": 150,
+        "openedHigh": 60,
+        "openedMedium": 55,
+        "openedLow": 35,
+        "closed": 130,
+        "closedHigh": 45,
+        "closedMedium": 50,
+        "closedLow": 35
+      },
+      {
+        "month": "Mar 2024",
+        "opened": 135,
+        "openedHigh": 55,
+        "openedMedium": 50,
+        "openedLow": 30,
+        "closed": 110,
+        "closedHigh": 40,
+        "closedMedium": 40,
+        "closedLow": 30
+      },
+      {
+        "month": "Apr 2024",
+        "opened": 160,
+        "openedHigh": 65,
+        "openedMedium": 60,
+        "openedLow": 35,
+        "closed": 140,
+        "closedHigh": 50,
+        "closedMedium": 55,
+        "closedLow": 35
+      },
+      {
+        "month": "May 2024",
+        "opened": 140,
+        "openedHigh": 50,
+        "openedMedium": 50,
+        "openedLow": 40,
+        "closed": 120,
+        "closedHigh": 40,
+        "closedMedium": 45,
+        "closedLow": 35
+      },
+      {
+        "month": "Jun 2024",
+        "opened": 170,
+        "openedHigh": 70,
+        "openedMedium": 60,
+        "openedLow": 40,
+        "closed": 150,
+        "closedHigh": 60,
+        "closedMedium": 50,
+        "closedLow": 40
+      }
+    ]
+  }
+}

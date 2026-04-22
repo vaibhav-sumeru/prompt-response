@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-01T00:00:00Z"
+  },
+  "statusDistribution": {
+    "description": "Compliance count by status for the selected period, sorted high to low",
+    "totalCompliances": 420,
+    "items": [
+      {
+        "status": "Submitted",
+        "count": 420,
+        "percent": 100
+      }
+    ]
+  }
+}

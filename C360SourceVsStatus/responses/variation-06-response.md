@@ -1,0 +1,2 @@
+- **Status Distribution by Source:** External_Audit_Q4 (120 total) records **40 (33.3%) not_started**, **25 (20.8%) in_progress**, 45 (37.5%) resolved, and 10 (8.3%) accepted compliances.
+- **Highest Unresolved Source:** The highest unresolved source is **External_Audit_Q4** with **65** unresolved compliances (**54.2%**) out of 120 total.

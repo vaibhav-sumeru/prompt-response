@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "generatedAt": "2026-04-22T00:00:00Z"
+  },
+  "sourceStatusDistribution": {
+    "description": "Top source types by total compliance count with per-status breakdown",
+    "items": [
+      {
+        "sourceTypeName": "RegulatoryWatch",
+        "totalCompliances": 0,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 0,
+            "percent": ""
+          },
+          {
+            "status": "in_progress",
+            "count": 0,
+            "percent": ""
+          },
+          {
+            "status": "resolved",
+            "count": 0,
+            "percent": ""
+          },
+          {
+            "status": "accepted",
+            "count": 0,
+            "percent": ""
+          }
+        ]
+      }
+    ]
+  },
+  "topUnresolvedSources": {
+    "description": "Top 3 source types with the highest unresolved compliance rate (not_started + in_progress), sorted by unresolvedPercent descending",
+    "items": [
+      {
+        "sourceTypeName": "RegulatoryWatch",
+        "unresolvedCount": 0,
+        "totalCompliances": 0,
+        "unresolvedPercent": ""
+      }
+    ]
+  }
+}

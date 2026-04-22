@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "generatedAt": "2023-10-27T14:35:00Z",
+    "scheduleCount": 4
+  },
+  "scheduleExecution": {
+    "description": "Sub-audit execution coverage per schedule — current and up to 3 previous. Each entry shows how many sub-audits were executed vs not executed.",
+    "items": [
+      {
+        "scheduleId": "SCH-2023-10",
+        "label": "Current",
+        "isCurrent": true,
+        "total": 250,
+        "executed": 100,
+        "notExecuted": 150,
+        "coveragePercent": 40,
+        "performanceFlag": "Below Target"
+      },
+      {
+        "scheduleId": "SCH-2023-09",
+        "label": "Previous 1",
+        "isCurrent": false,
+        "total": 240,
+        "executed": 204,
+        "notExecuted": 36,
+        "coveragePercent": 85,
+        "performanceFlag": "Good"
+      },
+      {
+        "scheduleId": "SCH-2023-08",
+        "label": "Previous 2",
+        "isCurrent": false,
+        "total": 230,
+        "executed": 202,
+        "notExecuted": 28,
+        "coveragePercent": 87.8,
+        "performanceFlag": "Good"
+      },
+      {
+        "scheduleId": "SCH-2023-07",
+        "label": "Previous 3",
+        "isCurrent": false,
+        "total": 220,
+        "executed": 196,
+        "notExecuted": 24,
+        "coveragePercent": 89.1,
+        "performanceFlag": "Good"
+      }
+    ]
+  },
+  "subAuditTypeExecution": {
+    "description": "Sub-audit type execution breakdown for the current schedule (SCH-2023-10). Sorted by execution percent ascending — lowest-performing types appear first.",
+    "currentScheduleId": "SCH-2023-10",
+    "items": [
+      {
+        "subAuditName": "IT Security Audit",
+        "executed": 10,
+        "notExecuted": 40,
+        "total": 50,
+        "executionPercent": 20
+      },
+      {
+        "subAuditName": "Data Privacy Compliance",
+        "executed": 9,
+        "notExecuted": 31,
+        "total": 40,
+        "executionPercent": 22.5
+      },
+      {
+        "subAuditName": "Vendor Risk Assessment",
+        "executed": 20,
+        "notExecuted": 40,
+        "total": 60,
+        "executionPercent": 33.3
+      },
+      {
+        "subAuditName": "Operational Efficiency",
+        "executed": 25,
+        "notExecuted": 25,
+        "total": 50,
+        "executionPercent": 50
+      },
+      {
+        "subAuditName": "Financial Controls Review",
+        "executed": 36,
+        "notExecuted": 14,
+        "total": 50,
+        "executionPercent": 72
+      }
+    ]
+  },
+  "executionTrend": {
+    "classification": "Deteriorating",
+    "currentCoveragePercent": 40,
+    "previousAvgCoveragePercent": 87.3,
+    "coverageChangePct": -47.3
+  }
+}

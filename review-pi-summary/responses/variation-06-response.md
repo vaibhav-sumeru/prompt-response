@@ -1,0 +1,2 @@
+- **PI Status Distribution:** Out of 240 PIs, **108 (45.0%)** were executed, 72 (30.0%) were not executed, and 60 (25.0%) were not found.
+- **Not Found PIs:** Of the total PIs, **60 (25.0%)** were not found, compared to 72 (30.0%) that were not executed.

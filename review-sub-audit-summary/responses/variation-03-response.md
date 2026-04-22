@@ -1,0 +1,3 @@
+- **Schedule Execution:** The Current schedule (SCH-2024-07) shows 110 executed sub-audits and **40 not executed** out of 150 total, resulting in **73.3% coverage**. This performance is flagged as **Below Target**.
+- **Sub-Audit Type Execution:** Among 4 sub-audit types, "Financial Audit" is the lowest performing with 20 executed and **15 not executed** out of 35, achieving **57.1% execution**. This is followed by "IT Security Audit" at 71.4%. The highest performing type is "Process Review" with 87.5% execution.
+- **Execution Trend:** Execution trend is Not Available — this dataset contains only a single schedule with no prior schedules for comparison; coverage change and trend classification cannot be determined from a single data point.

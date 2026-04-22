@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T00:00:00Z"
+  },
+  "sourceStatusDistribution": {
+    "description": "Top source types by total compliance count with per-status breakdown",
+    "items": [
+      {
+        "sourceTypeName": "CompliancePro",
+        "totalCompliances": 120,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 1,
+            "percent": 0.8
+          },
+          {
+            "status": "in_progress",
+            "count": 2,
+            "percent": 1.7
+          },
+          {
+            "status": "resolved",
+            "count": 100,
+            "percent": 83.3
+          },
+          {
+            "status": "accepted",
+            "count": 17,
+            "percent": 14.2
+          }
+        ]
+      },
+      {
+        "sourceTypeName": "RegulatoryWatch",
+        "totalCompliances": 80,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 0,
+            "percent": 0
+          },
+          {
+            "status": "in_progress",
+            "count": 3,
+            "percent": 3.8
+          },
+          {
+            "status": "resolved",
+            "count": 65,
+            "percent": 81.2
+          },
+          {
+            "status": "accepted",
+            "count": 12,
+            "percent": 15
+          }
+        ]
+      },
+      {
+        "sourceTypeName": "AuditMaster",
+        "totalCompliances": 95,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 2,
+            "percent": 2.1
+          },
+          {
+            "status": "in_progress",
+            "count": 1,
+            "percent": 1.1
+          },
+          {
+            "status": "resolved",
+            "count": 80,
+            "percent": 84.2
+          },
+          {
+            "status": "accepted",
+            "count": 12,
+            "percent": 12.6
+          }
+        ]
+      },
+      {
+        "sourceTypeName": "PolicyGuard",
+        "totalCompliances": 150,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 0,
+            "percent": 0
+          },
+          {
+            "status": "in_progress",
+            "count": 4,
+            "percent": 2.7
+          },
+          {
+            "status": "resolved",
+            "count": 130,
+            "percent": 86.6
+          },
+          {
+            "status": "accepted",
+            "count": 16,
+            "percent": 10.7
+          }
+        ]
+      }
+    ]
+  },
+  "topUnresolvedSources": {
+    "description": "Top 3 source types with the highest unresolved compliance rate (not_started + in_progress), sorted by unresolvedPercent descending",
+    "items": [
+      {
+        "sourceTypeName": "RegulatoryWatch",
+        "unresolvedCount": 3,
+        "totalCompliances": 80,
+        "unresolvedPercent": 3.8
+      },
+      {
+        "sourceTypeName": "AuditMaster",
+        "unresolvedCount": 3,
+        "totalCompliances": 95,
+        "unresolvedPercent": 3.2
+      },
+      {
+        "sourceTypeName": "CompliancePro",
+        "unresolvedCount": 3,
+        "totalCompliances": 120,
+        "unresolvedPercent": 2.5
+      }
+    ]
+  }
+}

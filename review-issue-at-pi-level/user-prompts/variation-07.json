@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-29T10:00:00Z",
+    "scheduleCount": 5,
+    "totalIssues": 1250,
+    "totalUniquePIs": 150
+  },
+  "piConcentration": {
+    "description": "Top 5 PIs by total issue count across current and previous 4 schedules, ranked descending.",
+    "top5ConcentrationPercent": 18.5,
+    "topPIs": [
+      {
+        "piId": "PI-DG001",
+        "piName": "Data Governance Framework",
+        "totalIssues": 48,
+        "percentOfTotal": 3.8
+      },
+      {
+        "piId": "PI-VRM002",
+        "piName": "Vendor Risk Management",
+        "totalIssues": 47,
+        "percentOfTotal": 3.8
+      },
+      {
+        "piId": "PI-SIR003",
+        "piName": "Security Incident Response",
+        "totalIssues": 46,
+        "percentOfTotal": 3.7
+      },
+      {
+        "piId": "PI-CTP004",
+        "piName": "Compliance Training Program",
+        "totalIssues": 45,
+        "percentOfTotal": 3.6
+      },
+      {
+        "piId": "PI-BCP005",
+        "piName": "Business Continuity Planning",
+        "totalIssues": 45,
+        "percentOfTotal": 3.6
+      }
+    ]
+  },
+  "subAuditRiskConcentration": {
+    "description": "Top 3 sub-audits ranked by combined Zero Tolerance + High risk issue count across all schedules.",
+    "topSubAudits": [
+      {
+        "subAuditName": "IT Infrastructure Security",
+        "ztIssues": 35,
+        "highIssues": 65,
+        "ztAndHighIssues": 100,
+        "ztAndHighPercent": 45.5,
+        "totalIssues": 220
+      },
+      {
+        "subAuditName": "Data Privacy Compliance",
+        "ztIssues": 0,
+        "highIssues": 75,
+        "ztAndHighIssues": 75,
+        "ztAndHighPercent": 41.7,
+        "totalIssues": 180
+      },
+      {
+        "subAuditName": "Third-Party Vendor Oversight",
+        "ztIssues": 20,
+        "highIssues": 40,
+        "ztAndHighIssues": 60,
+        "ztAndHighPercent": 37.5,
+        "totalIssues": 160
+      }
+    ]
+  }
+}

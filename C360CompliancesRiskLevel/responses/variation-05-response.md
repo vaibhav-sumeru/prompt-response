@@ -1,0 +1,1 @@
+- **Risk Level Distribution:** Across 2,000 total compliances, the risk profile is dominated by **Zero Tolerance: 800 (40.0%)**, followed by High: 600 (30.0%), Medium: 400 (20.0%), and Low: 200 (10.0%).

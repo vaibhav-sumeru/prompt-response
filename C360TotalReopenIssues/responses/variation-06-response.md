@@ -1,0 +1,1 @@
+- **Reopened Issues:** For the selected period, 295 total compliances were recorded. Out of 150 closed issues, **65 (30.2%)** were reopened, representing the resolution quality from 215 total closure events.

@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "normal-mixed",
+    "description": "Typical distribution with 4–5 status buckets (Closed, Open, In Progress, Pending, Rejected), moderate counts, realistic percents"
+  },
+  {
+    "id": "variation-02",
+    "category": "normal-mixed",
+    "description": "Typical distribution with 4–5 status buckets (Closed, Open, In Progress, Pending, Rejected), moderate counts, realistic percents"
+  },
+  {
+    "id": "variation-03",
+    "category": "normal-mixed",
+    "description": "Typical distribution with 4–5 status buckets (Closed, Open, In Progress, Pending, Rejected), moderate counts, realistic percents"
+  },
+  {
+    "id": "variation-04",
+    "category": "zero-total",
+    "description": "totalCompliances = 0, items array empty — test Not Available path for percents"
+  },
+  {
+    "id": "variation-05",
+    "category": "all-closed",
+    "description": "All compliances are Closed (single status bucket) — test single-item narration"
+  },
+  {
+    "id": "variation-06",
+    "category": "all-open",
+    "description": "All compliances are Open or In Progress, no Closed — test multi-status narration without Closed bucket"
+  },
+  {
+    "id": "variation-07",
+    "category": "all-open",
+    "description": "All compliances are Open or In Progress, no Closed — test multi-status narration without Closed bucket"
+  },
+  {
+    "id": "variation-08",
+    "category": "large-numbers",
+    "description": "totalCompliances > 5000, multiple status buckets with large counts — test comma-separator formatting"
+  },
+  {
+    "id": "variation-09",
+    "category": "large-numbers",
+    "description": "totalCompliances > 5000, multiple status buckets with large counts — test comma-separator formatting"
+  },
+  {
+    "id": "variation-10",
+    "category": "single-status",
+    "description": "Only 1 status bucket present in items[] — test single-item narration without implying others exist"
+  }
+]

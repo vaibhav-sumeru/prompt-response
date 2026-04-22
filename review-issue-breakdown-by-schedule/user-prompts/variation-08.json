@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:00:00Z",
+    "scheduleCount": 4,
+    "totalIssuesAllSchedules": 5200
+  },
+  "perScheduleResolution": {
+    "description": "Resolution mix (Spot Resolution, Direct Resolution, Open Issues) for each schedule, ordered oldest to current.",
+    "schedules": [
+      {
+        "scheduleId": "S-2024-01",
+        "scheduleLabel": "Previous 3",
+        "isCurrent": false,
+        "totalIssues": 1000,
+        "spotResolution": {
+          "count": 300,
+          "percent": 30
+        },
+        "directResolution": {
+          "count": 200,
+          "percent": 20
+        },
+        "openIssues": {
+          "count": 500,
+          "percent": 50
+        },
+        "resolvedPercent": 50
+      },
+      {
+        "scheduleId": "S-2024-02",
+        "scheduleLabel": "Previous 2",
+        "isCurrent": false,
+        "totalIssues": 1200,
+        "spotResolution": {
+          "count": 300,
+          "percent": 25
+        },
+        "directResolution": {
+          "count": 204,
+          "percent": 17
+        },
+        "openIssues": {
+          "count": 696,
+          "percent": 58
+        },
+        "resolvedPercent": 42
+      },
+      {
+        "scheduleId": "S-2024-03",
+        "scheduleLabel": "Previous 1",
+        "isCurrent": false,
+        "totalIssues": 1400,
+        "spotResolution": {
+          "count": 280,
+          "percent": 20
+        },
+        "directResolution": {
+          "count": 210,
+          "percent": 15
+        },
+        "openIssues": {
+          "count": 910,
+          "percent": 65
+        },
+        "resolvedPercent": 35
+      },
+      {
+        "scheduleId": "S-2024-04",
+        "scheduleLabel": "Current",
+        "isCurrent": true,
+        "totalIssues": 1600,
+        "spotResolution": {
+          "count": 240,
+          "percent": 15
+        },
+        "directResolution": {
+          "count": 208,
+          "percent": 13
+        },
+        "openIssues": {
+          "count": 1152,
+          "percent": 72
+        },
+        "resolvedPercent": 28
+      }
+    ]
+  },
+  "resolutionTrend": {
+    "description": "Percentage-point change from oldest schedule (S-2024-01) to current schedule (S-2024-04).",
+    "fromScheduleId": "S-2024-01",
+    "toScheduleId": "S-2024-04",
+    "spotResolutionPpChange": -15,
+    "directResolutionPpChange": -7,
+    "openIssuesPpChange": 22,
+    "resolvedHealthPpChange": -22
+  },
+  "riskSeverityResolution": {
+    "description": "Zero Tolerance and High risk unresolved issues per schedule, ordered oldest to current.",
+    "schedules": [
+      {
+        "scheduleId": "S-2024-01",
+        "scheduleLabel": "Previous 3",
+        "totalUnresolved": 500,
+        "ztUnresolved": 50,
+        "highUnresolved": 100,
+        "ztAndHighUnresolved": 150,
+        "ztAndHighUnresolvedPercent": 30
+      },
+      {
+        "scheduleId": "S-2024-02",
+        "scheduleLabel": "Previous 2",
+        "totalUnresolved": 696,
+        "ztUnresolved": 70,
+        "highUnresolved": 140,
+        "ztAndHighUnresolved": 210,
+        "ztAndHighUnresolvedPercent": 30.2
+      },
+      {
+        "scheduleId": "S-2024-03",
+        "scheduleLabel": "Previous 1",
+        "totalUnresolved": 910,
+        "ztUnresolved": 100,
+        "highUnresolved": 190,
+        "ztAndHighUnresolved": 290,
+        "ztAndHighUnresolvedPercent": 31.9
+      },
+      {
+        "scheduleId": "S-2024-04",
+        "scheduleLabel": "Current",
+        "totalUnresolved": 1152,
+        "ztUnresolved": 150,
+        "highUnresolved": 250,
+        "ztAndHighUnresolved": 400,
+        "ztAndHighUnresolvedPercent": 34.7
+      }
+    ]
+  }
+}

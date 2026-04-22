@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "C360RiskLevelMonthly",
+  "description": "Payload for Risk Level Monthly widget — monthly compliance counts per risk level (High, Medium, Low) with pre-computed trend summaries. Backend provides one row per month per risk level. Narrator produces 3 bullets: High trend, Medium trend, Low trend.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "riskLevelMonthlyTrend"],
+  "definitions": {
+    "monthDataPoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["month", "count"],
+      "properties": {
+        "month": { "type": "string", "description": "Month label as returned by backend (e.g. Apr 2025)" },
+        "count": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "riskLevelTrend": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["riskLevel", "trend", "changeCount", "firstMonth", "lastMonth", "peakMonth", "lowestMonth", "monthlyData"],
+      "properties": {
+        "riskLevel": {
+          "type": "string",
+          "description": "Risk level label (High | Medium | Low)"
+        },
+        "trend": {
+          "type": "string",
+          "enum": ["increasing", "decreasing", "stable", "fluctuating"],
+          "description": "Pre-computed overall direction: increasing (last > first), decreasing (last < first), stable (within 5%), fluctuating (no consistent direction)"
+        },
+        "changeCount": {
+          "type": "integer",
+          "description": "Pre-computed: lastMonth.count − firstMonth.count (positive = increase, negative = decrease)"
+        },
+        "firstMonth": { "$ref": "#/definitions/monthDataPoint", "description": "Earliest month in range" },
+        "lastMonth":  { "$ref": "#/definitions/monthDataPoint", "description": "Most recent month in range" },
+        "peakMonth":  { "$ref": "#/definitions/monthDataPoint", "description": "Month with the highest count" },
+        "lowestMonth":{ "$ref": "#/definitions/monthDataPoint", "description": "Month with the lowest count" },
+        "monthlyData": {
+          "type": "array",
+          "description": "All months in chronological order",
+          "minItems": 1,
+          "items": { "$ref": "#/definitions/monthDataPoint" }
+        }
+      }
+    }
+  },
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt"],
+      "properties": {
+        "generatedAt": { "type": "string" }
+      }
+    },
+    "riskLevelMonthlyTrend": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Monthly compliance counts per risk level with pre-computed trend summaries. Order: High first, then Medium, then Low.",
+      "required": ["description", "monthRange", "riskLevels"],
+      "properties": {
+        "description": { "type": "string" },
+        "monthRange": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["from", "to"],
+          "properties": {
+            "from": { "type": "string", "description": "First month label (e.g. Apr 2025)" },
+            "to":   { "type": "string", "description": "Last month label (e.g. Sep 2025)" }
+          }
+        },
+        "riskLevels": {
+          "type": "array",
+          "description": "3 risk levels in fixed order: High, Medium, Low",
+          "minItems": 1,
+          "maxItems": 3,
+          "items": { "$ref": "#/definitions/riskLevelTrend" }
+        }
+      }
+    }
+  }
+}

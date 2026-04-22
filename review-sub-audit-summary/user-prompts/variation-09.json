@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T12:00:00Z",
+    "scheduleCount": 4
+  },
+  "scheduleExecution": {
+    "description": "Sub-audit execution coverage per schedule — current and up to 3 previous. Each entry shows how many sub-audits were executed vs not executed.",
+    "items": [
+      {
+        "scheduleId": "SCH-2024-07",
+        "label": "Current",
+        "isCurrent": true,
+        "total": 200,
+        "executed": 156,
+        "notExecuted": 44,
+        "coveragePercent": 78,
+        "performanceFlag": "Acceptable"
+      },
+      {
+        "scheduleId": "SCH-2024-06",
+        "label": "Previous 1",
+        "isCurrent": false,
+        "total": 180,
+        "executed": 126,
+        "notExecuted": 54,
+        "coveragePercent": 70,
+        "performanceFlag": "Below Target"
+      },
+      {
+        "scheduleId": "SCH-2024-05",
+        "label": "Previous 2",
+        "isCurrent": false,
+        "total": 210,
+        "executed": 185,
+        "notExecuted": 25,
+        "coveragePercent": 88.1,
+        "performanceFlag": "Good"
+      },
+      {
+        "scheduleId": "SCH-2024-04",
+        "label": "Previous 3",
+        "isCurrent": false,
+        "total": 190,
+        "executed": 152,
+        "notExecuted": 38,
+        "coveragePercent": 80,
+        "performanceFlag": "Acceptable"
+      }
+    ]
+  },
+  "subAuditTypeExecution": {
+    "description": "Sub-audit type execution breakdown for the current schedule (SCH-2024-07). Sorted by execution percent ascending — lowest-performing types appear first.",
+    "currentScheduleId": "SCH-2024-07",
+    "items": [
+      {
+        "subAuditName": "Data Privacy Review",
+        "executed": 9,
+        "notExecuted": 11,
+        "total": 20,
+        "executionPercent": 45
+      },
+      {
+        "subAuditName": "Fraud Detection Audit",
+        "executed": 19,
+        "notExecuted": 11,
+        "total": 30,
+        "executionPercent": 63.3
+      },
+      {
+        "subAuditName": "Operational Efficiency",
+        "executed": 37,
+        "notExecuted": 13,
+        "total": 50,
+        "executionPercent": 74
+      },
+      {
+        "subAuditName": "Regulatory Compliance",
+        "executed": 33,
+        "notExecuted": 7,
+        "total": 40,
+        "executionPercent": 82.5
+      },
+      {
+        "subAuditName": "IT Infrastructure Audit",
+        "executed": 58,
+        "notExecuted": 2,
+        "total": 60,
+        "executionPercent": 96.7
+      }
+    ]
+  },
+  "executionTrend": {
+    "classification": "Stable",
+    "currentCoveragePercent": 78,
+    "previousAvgCoveragePercent": 79.4,
+    "coverageChangePct": -1.4
+  }
+}

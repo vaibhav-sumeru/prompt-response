@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "normal-typical",
+    "description": "Typical values — moderate totalCompliances (300–600), moderate reopenedIssues (10–15% of closedIssues), reopenedPercent > 0"
+  },
+  {
+    "id": "variation-02",
+    "category": "normal-typical",
+    "description": "Typical values — moderate totalCompliances (300–600), moderate reopenedIssues (10–15% of closedIssues), reopenedPercent > 0"
+  },
+  {
+    "id": "variation-03",
+    "category": "zero-reopened",
+    "description": "reopenedIssues = 0 and reopenedPercent = 0.0 — test no-bold path and explicit zero reporting"
+  },
+  {
+    "id": "variation-04",
+    "category": "zero-reopened",
+    "description": "reopenedIssues = 0 and reopenedPercent = 0.0 — test no-bold path and explicit zero reporting"
+  },
+  {
+    "id": "variation-05",
+    "category": "high-reopen-rate",
+    "description": "reopenedIssues represents 30–50% of closedIssues — high reopenedPercent; test bold emphasis on a strong signal"
+  },
+  {
+    "id": "variation-06",
+    "category": "high-reopen-rate",
+    "description": "reopenedIssues represents 30–50% of closedIssues — high reopenedPercent; test bold emphasis on a strong signal"
+  },
+  {
+    "id": "variation-07",
+    "category": "large-numbers",
+    "description": "totalCompliances > 1000 — test comma-separator formatting on integers"
+  },
+  {
+    "id": "variation-08",
+    "category": "large-numbers",
+    "description": "totalCompliances > 1000 — test comma-separator formatting on integers"
+  },
+  {
+    "id": "variation-09",
+    "category": "zero-closed-base",
+    "description": "closedIssues = 0 (totalCompliances = openIssues) — reopenedPercent must be empty string; test Not Available path"
+  },
+  {
+    "id": "variation-10",
+    "category": "all-closed-no-open",
+    "description": "openIssues = 0, all compliances are closed — closedIssues = totalCompliances; test full-base denominator path"
+  }
+]

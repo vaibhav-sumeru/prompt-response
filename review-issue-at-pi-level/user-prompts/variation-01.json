@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-30T10:30:00Z",
+    "scheduleCount": 5,
+    "totalIssues": 480,
+    "totalUniquePIs": 95
+  },
+  "piConcentration": {
+    "description": "Top 5 PIs by total issue count across current and previous 3 schedules, ranked descending.",
+    "top5ConcentrationPercent": 43.4,
+    "topPIs": [
+      {
+        "piId": "PI-5001",
+        "piName": "Vendor Management Review",
+        "totalIssues": 55,
+        "percentOfTotal": 11.5
+      },
+      {
+        "piId": "PI-5002",
+        "piName": "IT Security Access Control",
+        "totalIssues": 48,
+        "percentOfTotal": 10
+      },
+      {
+        "piId": "PI-5003",
+        "piName": "Data Privacy Compliance",
+        "totalIssues": 40,
+        "percentOfTotal": 8.3
+      },
+      {
+        "piId": "PI-5004",
+        "piName": "Supply Chain Risk Assessment",
+        "totalIssues": 35,
+        "percentOfTotal": 7.3
+      },
+      {
+        "piId": "PI-5005",
+        "piName": "Employee Expense Reimbursement",
+        "totalIssues": 30,
+        "percentOfTotal": 6.3
+      }
+    ]
+  },
+  "subAuditRiskConcentration": {
+    "description": "Top 3 sub-audits ranked by combined Zero Tolerance + High risk issue count across all schedules.",
+    "topSubAudits": [
+      {
+        "subAuditName": "IT General Controls",
+        "ztIssues": 0,
+        "highIssues": 60,
+        "ztAndHighIssues": 60,
+        "ztAndHighPercent": 54.5,
+        "totalIssues": 110
+      },
+      {
+        "subAuditName": "Operational Resilience",
+        "ztIssues": 0,
+        "highIssues": 50,
+        "ztAndHighIssues": 50,
+        "ztAndHighPercent": 55.6,
+        "totalIssues": 90
+      },
+      {
+        "subAuditName": "Anti-Money Laundering (AML)",
+        "ztIssues": 0,
+        "highIssues": 45,
+        "ztAndHighIssues": 45,
+        "ztAndHighPercent": 56.3,
+        "totalIssues": 80
+      }
+    ]
+  }
+}

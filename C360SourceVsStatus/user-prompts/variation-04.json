@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "generatedAt": "2024-07-29T10:30:00Z"
+  },
+  "sourceStatusDistribution": {
+    "description": "Top source types by total compliance count with per-status breakdown",
+    "items": [
+      {
+        "sourceTypeName": "Compliance_Audit_2023",
+        "totalCompliances": 50,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 20,
+            "percent": 40
+          },
+          {
+            "status": "in_progress",
+            "count": 30,
+            "percent": 60
+          },
+          {
+            "status": "resolved",
+            "count": 0,
+            "percent": 0
+          },
+          {
+            "status": "accepted",
+            "count": 0,
+            "percent": 0
+          }
+        ]
+      },
+      {
+        "sourceTypeName": "Regulatory_Updates",
+        "totalCompliances": 40,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 10,
+            "percent": 25
+          },
+          {
+            "status": "in_progress",
+            "count": 15,
+            "percent": 37.5
+          },
+          {
+            "status": "resolved",
+            "count": 10,
+            "percent": 25
+          },
+          {
+            "status": "accepted",
+            "count": 5,
+            "percent": 12.5
+          }
+        ]
+      },
+      {
+        "sourceTypeName": "Internal_Policy_Review",
+        "totalCompliances": 60,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 10,
+            "percent": 16.7
+          },
+          {
+            "status": "in_progress",
+            "count": 10,
+            "percent": 16.7
+          },
+          {
+            "status": "resolved",
+            "count": 30,
+            "percent": 50
+          },
+          {
+            "status": "accepted",
+            "count": 10,
+            "percent": 16.7
+          }
+        ]
+      },
+      {
+        "sourceTypeName": "External_Audits",
+        "totalCompliances": 30,
+        "statusBreakdown": [
+          {
+            "status": "not_started",
+            "count": 2,
+            "percent": 6.7
+          },
+          {
+            "status": "in_progress",
+            "count": 3,
+            "percent": 10
+          },
+          {
+            "status": "resolved",
+            "count": 20,
+            "percent": 66.7
+          },
+          {
+            "status": "accepted",
+            "count": 5,
+            "percent": 16.7
+          }
+        ]
+      }
+    ]
+  },
+  "topUnresolvedSources": {
+    "description": "Top 3 source types with the highest unresolved compliance rate (not_started + in_progress), sorted by unresolvedPercent descending",
+    "items": [
+      {
+        "sourceTypeName": "Compliance_Audit_2023",
+        "unresolvedCount": 50,
+        "totalCompliances": 50,
+        "unresolvedPercent": 100
+      },
+      {
+        "sourceTypeName": "Regulatory_Updates",
+        "unresolvedCount": 25,
+        "totalCompliances": 40,
+        "unresolvedPercent": 62.5
+      },
+      {
+        "sourceTypeName": "Internal_Policy_Review",
+        "unresolvedCount": 20,
+        "totalCompliances": 60,
+        "unresolvedPercent": 33.3
+      }
+    ]
+  }
+}

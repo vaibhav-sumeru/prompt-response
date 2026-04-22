@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "persistent_backlog_growth",
+    "description": "All months have opened > closed (netChange > 0 every month). backlogTrend='growing', backlogGrowthMonths = total months, backlogReductionMonths = 0. Tests that narrator reports 0 reduction months explicitly and uses growing-trend vocabulary. Bold on overallNetChange must be present."
+  },
+  {
+    "id": "variation-02",
+    "category": "persistent_backlog_growth",
+    "description": "All months have opened > closed (netChange > 0 every month). backlogTrend='growing', backlogGrowthMonths = total months, backlogReductionMonths = 0. Tests that narrator reports 0 reduction months explicitly and uses growing-trend vocabulary. Bold on overallNetChange must be present."
+  },
+  {
+    "id": "variation-03",
+    "category": "consistent_burndown",
+    "description": "All months have closed >= opened (netChange <= 0 every month). backlogTrend='shrinking', backlogReductionMonths = total months, backlogGrowthMonths = 0. Tests that narrator uses shrinking vocabulary and reports 0 growth months explicitly. No bold on overallNetChange (negative signal not growing)."
+  },
+  {
+    "id": "variation-04",
+    "category": "consistent_burndown",
+    "description": "All months have closed >= opened (netChange <= 0 every month). backlogTrend='shrinking', backlogReductionMonths = total months, backlogGrowthMonths = 0. Tests that narrator uses shrinking vocabulary and reports 0 growth months explicitly. No bold on overallNetChange (negative signal not growing)."
+  },
+  {
+    "id": "variation-05",
+    "category": "high_risk_dominates_opened",
+    "description": "openedRiskTotals.highPct > 60%, closedRiskTotals.highPct < 35%. mixed backlogTrend='growing'. Tests that narrator clearly contrasts opened High% vs closed High% in Bullet 3, and that bold is applied to both openedRiskTotals.high and closedRiskTotals.high."
+  },
+  {
+    "id": "variation-06",
+    "category": "high_risk_dominates_opened",
+    "description": "openedRiskTotals.highPct > 60%, closedRiskTotals.highPct < 35%. mixed backlogTrend='growing'. Tests that narrator clearly contrasts opened High% vs closed High% in Bullet 3, and that bold is applied to both openedRiskTotals.high and closedRiskTotals.high."
+  },
+  {
+    "id": "variation-07",
+    "category": "zero_low_risk",
+    "description": "openedRiskTotals.low = 0, openedRiskTotals.lowPct = 0.0, closedRiskTotals.low = 0, closedRiskTotals.lowPct = 0.0. Tests that narrator explicitly reports 0 Low-risk items with 0.0% in both bullets 2 and 3 — never skipping or omitting zero-value risk buckets."
+  },
+  {
+    "id": "variation-08",
+    "category": "zero_low_risk",
+    "description": "openedRiskTotals.low = 0, openedRiskTotals.lowPct = 0.0, closedRiskTotals.low = 0, closedRiskTotals.lowPct = 0.0. Tests that narrator explicitly reports 0 Low-risk items with 0.0% in both bullets 2 and 3 — never skipping or omitting zero-value risk buckets."
+  },
+  {
+    "id": "variation-09",
+    "category": "stable_balanced_short_period",
+    "description": "Only 2 months in monthlyData. One month has slight growth, one has slight reduction. backlogTrend='stable', backlogGrowthMonths=1, backlogReductionMonths=1, overallNetChange near 0. Tests stable vocabulary, minimal data handling, and that highestNetGrowthMonth and highestNetReductionMonth are still reported correctly."
+  },
+  {
+    "id": "variation-10",
+    "category": "stable_balanced_short_period",
+    "description": "Only 2 months in monthlyData. One month has slight growth, one has slight reduction. backlogTrend='stable', backlogGrowthMonths=1, backlogReductionMonths=1, overallNetChange near 0. Tests stable vocabulary, minimal data handling, and that highestNetGrowthMonth and highestNetReductionMonth are still reported correctly."
+  }
+]

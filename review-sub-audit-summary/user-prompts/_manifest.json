@@ -1,0 +1,52 @@
+[
+  {
+    "id": "variation-01",
+    "category": "zero-not-executed",
+    "description": "All schedules have notExecuted = 0 and coveragePercent = 100.0. Sub-audit types all show executionPercent = 100.0. Trend is Improving or Stable. Tests that narrator reports zero values explicitly and does not skip them."
+  },
+  {
+    "id": "variation-02",
+    "category": "zero-not-executed",
+    "description": "All schedules have notExecuted = 0 and coveragePercent = 100.0. Sub-audit types all show executionPercent = 100.0. Trend is Improving or Stable. Tests that narrator reports zero values explicitly and does not skip them."
+  },
+  {
+    "id": "variation-03",
+    "category": "single-schedule-only",
+    "description": "meta.scheduleCount = 1. scheduleExecution.items[] has exactly one entry with isCurrent = true. NO previous schedules exist. executionTrend should state Not Available. Tests narrator handles absence of previous schedule data and omits trend comparison."
+  },
+  {
+    "id": "variation-04",
+    "category": "single-schedule-only",
+    "description": "meta.scheduleCount = 1. scheduleExecution.items[] has exactly one entry with isCurrent = true. NO previous schedules exist. executionTrend should state Not Available. Tests narrator handles absence of previous schedule data and omits trend comparison."
+  },
+  {
+    "id": "variation-05",
+    "category": "severe-deterioration",
+    "description": "Current schedule has notExecuted > 40% of total, coveragePercent < 60%, performanceFlag = 'Below Target'. executionTrend.classification = 'Deteriorating' with coverageChangePct < -10. Sub-audit types mostly below 70%. Tests bold formatting on negative signals."
+  },
+  {
+    "id": "variation-06",
+    "category": "severe-deterioration",
+    "description": "Current schedule has notExecuted > 40% of total, coveragePercent < 60%, performanceFlag = 'Below Target'. executionTrend.classification = 'Deteriorating' with coverageChangePct < -10. Sub-audit types mostly below 70%. Tests bold formatting on negative signals."
+  },
+  {
+    "id": "variation-07",
+    "category": "improving-strong",
+    "description": "Current schedule has the highest coveragePercent across all 4 schedules (>= 90%, performanceFlag = 'Good'). executionTrend.classification = 'Improving' with positive coverageChangePct > 5. Sub-audit types all have executionPercent >= 85%. Tests narrator uses Improving classification without causal language."
+  },
+  {
+    "id": "variation-08",
+    "category": "improving-strong",
+    "description": "Current schedule has the highest coveragePercent across all 4 schedules (>= 90%, performanceFlag = 'Good'). executionTrend.classification = 'Improving' with positive coverageChangePct > 5. Sub-audit types all have executionPercent >= 85%. Tests narrator uses Improving classification without causal language."
+  },
+  {
+    "id": "variation-09",
+    "category": "mixed-spread",
+    "description": "Sub-audit types have a wide spread: items[0].executionPercent <= 50% and items[last].executionPercent >= 95%. Schedules have varied coverage (some Good, some Below Target). Trend is Stable (coverageChangePct within ±2). Tests accurate min-max spread reporting and stable classification."
+  },
+  {
+    "id": "variation-10",
+    "category": "mixed-spread",
+    "description": "Sub-audit types have a wide spread: items[0].executionPercent <= 50% and items[last].executionPercent >= 95%. Schedules have varied coverage (some Good, some Below Target). Trend is Stable (coverageChangePct within ±2). Tests accurate min-max spread reporting and stable classification."
+  }
+]

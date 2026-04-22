@@ -1,0 +1,73 @@
+{
+  "currentScheduleId": "AUD-2024-Q3-003",
+  "auditee": "Hyderabad Operations Center",
+  "mainAuditType": "Operational Resilience Audit",
+  "previousSchedulesAvailable": 0,
+  "schedules": [
+    {
+      "scheduleId": "AUD-2024-Q3-003",
+      "totalIssues": 120,
+      "newIssues": {
+        "count": 40,
+        "percent": 33.3
+      },
+      "repeated": {
+        "count": 35,
+        "percent": 29.2
+      },
+      "recurring": {
+        "count": 45,
+        "percent": 37.5
+      },
+      "combinedRecurringRepeated": {
+        "count": 80,
+        "percent": 66.7
+      }
+    }
+  ],
+  "subAuditRecurrence": {
+    "description": "Sub-audit level breakdown of Recurring + Repeated issue concentration for the current schedule (Q3 2024 Operational Resilience Audit). Items are ranked by combined recurrence percentage descending.",
+    "items": [
+      {
+        "rank": 1,
+        "subAuditName": "Client Onboarding Process",
+        "totalIssues": 40,
+        "recurringCount": 15,
+        "repeatedCount": 10,
+        "combinedRecurringRepeatedCount": 25,
+        "combinedRecurringRepeatedPercent": 62.5
+      },
+      {
+        "rank": 2,
+        "subAuditName": "Regulatory Compliance",
+        "totalIssues": 35,
+        "recurringCount": 12,
+        "repeatedCount": 8,
+        "combinedRecurringRepeatedCount": 20,
+        "combinedRecurringRepeatedPercent": 57.1
+      },
+      {
+        "rank": 3,
+        "subAuditName": "Data Security Protocols",
+        "totalIssues": 30,
+        "recurringCount": 10,
+        "repeatedCount": 5,
+        "combinedRecurringRepeatedCount": 15,
+        "combinedRecurringRepeatedPercent": 50
+      }
+    ]
+  },
+  "riskConcentration": {
+    "description": "Measures critical risk (High + Zero Tolerance) concentration within recurring and repeated issues vs the overall issue mix in the current schedule.",
+    "totalIssues": 120,
+    "totalRecurringRepeated": 80,
+    "totalCriticalRisk": 30,
+    "criticalRecurringCount": 25,
+    "recurringCriticalPercent": 31.3,
+    "overallCriticalPercent": 25,
+    "concentrationIndex": 6.3
+  },
+  "meta": {
+    "generatedAt": "2024-07-20T10:30:00Z"
+  }
+}

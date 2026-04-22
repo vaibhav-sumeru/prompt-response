@@ -1,0 +1,1 @@
+- **Reopened Issues:** For 310 total compliances, 150 issues were closed, with **60 (28.6%)** subsequently reopened out of 210 closure-event issues.

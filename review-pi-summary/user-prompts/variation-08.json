@@ -1,0 +1,21 @@
+{
+  "currentScheduleId": "SCH-2027-Q2-008",
+  "auditee": "Chennai Corporate Office",
+  "mainAuditType": "Compliance Audit",
+  "totalPIs": 120,
+  "executed": {
+    "count": 120,
+    "percent": 100
+  },
+  "notExecuted": {
+    "count": 0,
+    "percent": 0
+  },
+  "notFound": {
+    "count": 0,
+    "percent": 0
+  },
+  "meta": {
+    "generatedAt": "2024-10-26T10:30:00Z"
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "review-sub-audit-summary",
+  "description": "Schema for the Review — Sub Audit Summary widget. Captures sub-audit execution (executed vs not executed) across current and up to 3 previous schedules, per sub-audit type for the current schedule, and an overall trend classification.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "scheduleExecution", "subAuditTypeExecution", "executionTrend"],
+  "definitions": {
+    "scheduleExecutionItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scheduleId",
+        "label",
+        "isCurrent",
+        "total",
+        "executed",
+        "notExecuted",
+        "coveragePercent",
+        "performanceFlag"
+      ],
+      "properties": {
+        "scheduleId": {
+          "type": "string",
+          "description": "Unique schedule identifier"
+        },
+        "label": {
+          "type": "string",
+          "description": "Human-readable label: 'Current', 'Previous 1', 'Previous 2', 'Previous 3'"
+        },
+        "isCurrent": {
+          "type": "boolean",
+          "description": "True only for the current schedule"
+        },
+        "total": {
+          "type": "integer",
+          "description": "Total sub-audits planned for this schedule"
+        },
+        "executed": {
+          "type": "integer",
+          "description": "Count of sub-audits with Executed status"
+        },
+        "notExecuted": {
+          "type": "integer",
+          "description": "Count of sub-audits with Not Executed status"
+        },
+        "coveragePercent": {
+          "type": "number",
+          "description": "executed / total * 100, rounded to 1 decimal"
+        },
+        "performanceFlag": {
+          "type": "string",
+          "enum": ["Good", "Acceptable", "Below Target"],
+          "description": "Good: coveragePercent >= 85; Acceptable: >= 75; Below Target: < 75"
+        }
+      }
+    },
+    "subAuditTypeItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["subAuditName", "executed", "notExecuted", "total", "executionPercent"],
+      "properties": {
+        "subAuditName": {
+          "type": "string",
+          "description": "Name of the sub-audit type"
+        },
+        "executed": {
+          "type": "integer",
+          "description": "Count executed in the current schedule"
+        },
+        "notExecuted": {
+          "type": "integer",
+          "description": "Count not executed in the current schedule"
+        },
+        "total": {
+          "type": "integer",
+          "description": "Total planned in the current schedule"
+        },
+        "executionPercent": {
+          "type": "number",
+          "description": "executed / total * 100, rounded to 1 decimal"
+        }
+      }
+    }
+  },
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["generatedAt", "scheduleCount"],
+      "properties": {
+        "generatedAt": {
+          "type": "string",
+          "description": "ISO 8601 timestamp when the payload was generated"
+        },
+        "scheduleCount": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4,
+          "description": "Total number of schedules included (current + up to 3 previous)"
+        }
+      }
+    },
+    "scheduleExecution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "items"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Section description for the narrator"
+        },
+        "items": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": { "$ref": "#/definitions/scheduleExecutionItem" },
+          "description": "Schedules ordered from current (index 0) to oldest (last). Current schedule always first."
+        }
+      }
+    },
+    "subAuditTypeExecution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "currentScheduleId", "items"],
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Section description for the narrator"
+        },
+        "currentScheduleId": {
+          "type": "string",
+          "description": "Schedule ID of the current schedule these types belong to"
+        },
+        "items": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/subAuditTypeItem" },
+          "description": "Sub-audit types sorted by executionPercent ascending (lowest/most problematic first)"
+        }
+      }
+    },
+    "executionTrend": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "classification",
+        "currentCoveragePercent",
+        "previousAvgCoveragePercent",
+        "coverageChangePct"
+      ],
+      "properties": {
+        "classification": {
+          "type": "string",
+          "enum": ["Improving", "Stable", "Deteriorating"],
+          "description": "Improving: coverageChangePct > 2; Stable: within ±2; Deteriorating: < -2"
+        },
+        "currentCoveragePercent": {
+          "type": "number",
+          "description": "Coverage percent of the current schedule"
+        },
+        "previousAvgCoveragePercent": {
+          "type": "number",
+          "description": "Average coverage percent across all previous schedules included"
+        },
+        "coverageChangePct": {
+          "type": "number",
+          "description": "currentCoveragePercent - previousAvgCoveragePercent; negative means decline"
+        }
+      }
+    }
+  }
+}

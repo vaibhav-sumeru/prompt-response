@@ -1,0 +1,1 @@
+- **Compliance Status Distribution:** Out of 2,450 total compliances, Closed: **1,300 (53.1%)**, Open: **600 (24.5%)**, In Progress: **300 (12.2%)**, Pending: **150 (6.1%)**, Rejected: **100 (4.1%)**.
